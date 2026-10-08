@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-08T11:38:02Z)
+# VERIFY — PL Fair Price (2026-10-08T11:38:07Z)
 
 GW6 deadline 2026-10-10T10:00:00Z. 72 XO PL markets; 43 priced (high 1, medium 9, low 33).
 
@@ -6,30 +6,30 @@ GW6 deadline 2026-10-10T10:00:00Z. 72 XO PL markets; 43 priced (high 1, medium 9
 
 | Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|
-| ARS-LEE | 6 | 70.5/18.5/10.5 | 70.9/18.6/10.6 | 70.9/18.6/10.6 | 2.21-0.73 | $30,581 |
-| SUN-BHA | 6 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.7/27.6/41.7 | 1.15-1.38 | $213,064 |
-| IPS-FUL | 6 | 33.5/26.5/39.5 | 33.7/26.6/39.7 | 33.7/26.6/39.7 | 1.29-1.42 | $1,530 |
-| AVL-BRE | 6 | 35.5/27.5/37.5 | 35.3/27.4/37.3 | 35.3/27.4/37.3 | 1.28-1.32 | $3,428 |
+| ARS-LEE | 6 | 70.5/18.5/10.5 | 70.9/18.6/10.6 | 70.9/18.6/10.6 | 2.21-0.73 | $30,482 |
+| SUN-BHA | 6 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.7/27.6/41.7 | 1.15-1.38 | $213,057 |
+| IPS-FUL | 6 | 34.5/26.5/39.5 | 34.3/26.4/39.3 | 34.3/26.4/39.3 | 1.33-1.44 | $1,525 |
+| AVL-BRE | 6 | 35.5/27.5/37.5 | 35.3/27.4/37.3 | 35.3/27.4/37.3 | 1.28-1.32 | $3,423 |
 | CHE-BOU | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $11,214 |
-| MUN-TOT | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $83,324 |
-| HUL-EVE | 6 | 25.5/28.5/46.5 | 25.4/28.4/46.3 | 25.4/28.4/46.3 | 0.95-1.38 | $1,569 |
-| CRY-NFO | 6 | 35.5/29.5/35.5 | 35.3/29.4/35.3 | 35.3/29.4/35.3 | 1.16-1.16 | $688 |
+| MUN-TOT | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $83,315 |
+| HUL-EVE | 6 | 25.5/28.5/46.5 | 25.4/28.4/46.3 | 25.4/28.4/46.3 | 0.95-1.38 | $1,561 |
+| CRY-NFO | 6 | 35.5/29.5/35.5 | 35.3/29.4/35.3 | 35.3/29.4/35.3 | 1.16-1.16 | $682 |
 | LIV-MCI | 6 | 36.5/25.5/38.5 | 36.3/25.4/38.3 | 36.3/25.4/38.3 | 1.46-1.50 | $24,420 |
-| COV-NEW | 6 | 27.5/26.5/45.5 | 27.6/26.6/45.7 | 27.6/26.6/45.7 | 1.12-1.51 | $907 |
+| COV-NEW | 6 | 27.5/26.5/45.5 | 27.6/26.6/45.7 | 27.6/26.6/45.7 | 1.12-1.51 | $903 |
 | EVE-CHE | 7 | 34.0/25.5/41.0 | 33.8/25.4/40.8 | 33.8/25.4/40.8 | 1.40-1.55 | $217 |
 | BRE-LIV | 7 | 34.0/25.5/39.5 | 34.3/25.8/39.9 | 34.3/25.8/39.9 | 1.38-1.50 | $385 |
 | FUL-HUL | 7 | 57.0/24.0/19.5 | 56.7/23.9/19.4 | 56.7/23.9/19.4 | 1.80-0.96 | $20 |
-| MCI-IPS | 7 | 80.5/12.0/6.5 | 81.3/12.1/6.6 | 81.3/12.1/6.6 | 3.02-0.80 | $1,315 |
-| NEW-AVL | 7 | 46.0/25.5/29.0 | 45.8/25.4/28.9 | 45.8/25.4/28.9 | 1.62-1.24 | $222 |
+| MCI-IPS | 7 | 80.5/12.5/6.5 | 80.9/12.6/6.5 | 80.9/12.6/6.5 | 2.91-0.75 | $1,315 |
+| NEW-AVL | 7 | 45.5/25.5/29.0 | 45.5/25.5/29.0 | 45.5/25.5/29.0 | 1.61-1.24 | $222 |
 | BHA-CRY | 7 | 59.0/22.0/19.0 | 59.0/22.0/19.0 | 59.0/22.0/19.0 | 2.01-1.06 | $2 |
-| BOU-SUN | 7 | 47.5/26.0/26.5 | 47.5/26.0/26.5 | 47.5/26.0/26.5 | 1.58-1.12 | $50 |
+| BOU-SUN | 7 | 47.5/26.5/26.5 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 1.54-1.09 | $50 |
 | LEE-MUN | 7 | 34.0/26.0/40.5 | 33.8/25.9/40.3 | 33.8/25.9/40.3 | 1.35-1.50 | $238 |
 | NFO-ARS | 7 | 15.5/24.0/61.0 | 15.4/23.9/60.7 | 15.4/23.9/60.7 | 0.76-1.76 | $1,993 |
 | TOT-COV | 7 | 64.0/21.0/15.0 | 64.0/21.0/15.0 | 64.0/21.0/15.0 | 2.06-0.89 | $5 |
 
-League average 2.82 goals per game from 50 finished matches; Dixon-Coles rho -0.04; mean fitted total 2.83.
+League average 2.82 goals per game from 50 finished matches; Dixon-Coles rho -0.04; mean fitted total 2.82.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.153, max 0.564.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.154, max 0.563.
 
 ## Current table (from finished FPL fixtures)
 
@@ -60,12 +60,12 @@ Team-ratings refit error on the priced matches: mean |Δlog λ| 0.153, max 0.564
 
 | Team | P(1st) | P(bottom 3) | mean pts |
 |---|---|---|---|
-| MCI | 75.9% | 0.0% | 22.5 |
+| MCI | 76.0% | 0.0% | 22.5 |
 | ARS | 16.8% | 0.0% | 19.7 |
-| LIV | 0.9% | 0.0% | 14.4 |
-| TOT | 0.0% | 55.4% | 6.9 |
-| COV | 0.0% | 67.0% | 6.6 |
-| IPS | 0.0% | 14.9% | 10.0 |
+| LIV | 1.0% | 0.0% | 14.4 |
+| TOT | 0.0% | 55.5% | 6.9 |
+| COV | 0.0% | 66.9% | 6.7 |
+| IPS | 0.0% | 14.6% | 10.0 |
 
 ## Captain inputs (Haaland)
 
@@ -92,7 +92,7 @@ qg 0.332, qa 0.058, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | medium | 68 | 66.7 | -1 | match_model | Will Chelsea's PL clean-sheet drought reach 22 matches after Bournemouth? | Chance Chelsea concede at least once, so no clean sheet. Poisson model fitted to Polymarket's match prices. |
 | low | 55 | 49.1 | -6 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
 | low | 22 | 25.4 | 3 | player_model | Will Cole Palmer score against Bournemouth on October 10, 2026? | Chance Palmer score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match m |
-| low | 60 | 22.2 | -38 | match_model | Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9? | Coventry score the fewest (or joint-fewest) league goals across MW6-9. |
+| low | 60 | 22.0 | -38 | match_model | Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9? | Coventry score the fewest (or joint-fewest) league goals across MW6-9. |
 | medium | 44 | 45.1 | 1 | table_sim | Will Coventry be above Tottenham in the Premier League table after GW8? | Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 55 | 38.0 | -17 | player_model | Will Erling Haaland score vs Liverpool on October 11, 2026? | Chance Haaland score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match  |
 | medium | 44 | 45.9 | 2 | captain_model | Will FPL's most-captained player score 3 or fewer points in Gameweek 6? | Assumes Haaland is GW6's most-captained player (he was in GW5). Blank = no goal and no assist; goal and assist rates come from bookmaker odd |
