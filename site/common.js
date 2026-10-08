@@ -11,7 +11,7 @@ const CONFIG = {
 const CHANGELOG = [
   { version: 'v1', date: 'Thu 8 Oct 2026', notes: 'First public version: XO vs Fair for every Premier League market, GW numbers for FPL managers.' },
   { version: 'v1.1', date: 'Thu 8 Oct 2026', notes: 'Gameweek numbers moved to their own page. Low-confidence prices now read "Rough".' },
-  { version: 'v1.2', date: 'Thu 8 Oct 2026', notes: "Added elevenify's predicted goals for each gameweek match as a second opinion." },
+  { version: 'v1.2', date: 'Thu 8 Oct 2026', notes: "Added elevenify's predicted goals, win chances and clean-sheet chances as a second opinion." },
 ];
 
 const TEAMS = {
@@ -151,19 +151,25 @@ async function loadData() {
   return true;
 }
 
-// elevenify's predicted goals [home, away] for a fixture in the current gameweek, or null. Their goals table is keyed by
-// gameweek, so a stale chart shows nothing; a team with two fixtures that week is skipped (their number would be a sum).
-function elevenGoals(home, away) {
-  const gw = state.proj && state.proj.gw, teams = state.eleven && state.eleven.goals, fx = (state.proj && state.proj.fixtures) || [];
-  if (!gw || !Array.isArray(teams) || !fx.some((f) => f.home === home && f.away === away)) return null;
-  const goals = (code) => {
-    const t = teams.find((x) => x.team === code);
-    return t && fx.filter((f) => f.home === code || f.away === code).length === 1 ? num(t.gw && t.gw[gw]) : null;
-  };
-  const h = goals(home), a = goals(away);
-  return h !== null && a !== null ? [h, a] : null;
+// elevenify numbers are for the current gameweek only. A per-team table is keyed by gameweek, so a stale chart shows nothing.
+// A team with two fixtures that week is skipped (its number would be a sum). A match is shown only if it is one of this week's fixtures.
+const isFixture = (home, away) => ((state.proj && state.proj.fixtures) || []).some((f) => f.home === home && f.away === away);
+
+function elevenTeam(part, code) {
+  const gw = state.proj && state.proj.gw, rows = state.eleven && state.eleven[part], fx = (state.proj && state.proj.fixtures) || [];
+  const t = gw && Array.isArray(rows) ? rows.find((x) => x.team === code) : null;
+  return t && fx.filter((f) => f.home === code || f.away === code).length === 1 ? num(t.gw && t.gw[gw]) : null;
 }
-const elevenText = (g) => `elevenify: ${g[0].toFixed(2)} to ${g[1].toFixed(2)} goals`;
+
+// "elevenify: 1.95 to 0.69 goals · H 67 · D 21 · A 12" for a fixture in the current gameweek, or null.
+function elevenText(home, away) {
+  if (!isFixture(home, away)) return null;
+  const hg = elevenTeam('goals', home), ag = elevenTeam('goals', away);
+  const m = state.eleven && Array.isArray(state.eleven.matches) ? state.eleven.matches.find((x) => x.home === home && x.away === away) : null;
+  const res = m && [m.p_home, m.p_draw, m.p_away].every((p) => num(p) !== null) ? `H ${Math.round(m.p_home * 100)} · D ${Math.round(m.p_draw * 100)} · A ${Math.round(m.p_away * 100)}` : null;
+  const parts = [hg !== null && ag !== null ? `${hg.toFixed(2)} to ${ag.toFixed(2)} goals` : null, res].filter(Boolean);
+  return parts.length ? 'elevenify: ' + parts.join(' · ') : null;
+}
 
 function setupPage() {
   const name = document.getElementById('site-name'), tag = document.getElementById('site-tagline');

@@ -145,7 +145,7 @@ const rank = (m) => (m.is_ours ? 0 : 2) + (m.fair ? 0 : 1);
 const byOursPriced = (a, b) => rank(a) - rank(b);
 
 function groupHead(left, meta) {
-  return h('div', { class: 'ghead' }, left, h('div', { class: 'gmeta' }, meta));
+  return h('div', { class: 'ghead' }, left, h('div', { class: 'gmeta', text: meta }));
 }
 
 function renderMarkets() {
@@ -193,10 +193,10 @@ function renderMarkets() {
     rows.sort(byOursPriced);
     const left = h('div', { class: 'gmatch' }, crest(f.home, 24), h('span', { class: 'gname', text: `${f.home_name || teamName(f.home)} v ${f.away_name || teamName(f.away)}` }), crest(f.away, 24));
     const isLive = state.live.has(`${f.home}-${f.away}`);
-    const eg = elevenGoals(f.home, f.away);
-    const head = groupHead(isLive ? h('div', { class: 'gmatch' }, left, h('span', { class: 'live' }, 'Live')) : left,
-      [f.kickoff_utc ? kickoffFmt(f.kickoff_utc) + ' · ' : null, eg ? elevenText(eg) + ' · ' : null, plural(rows.length)]);
+    const et = elevenText(f.home, f.away);
+    const head = groupHead(isLive ? h('div', { class: 'gmatch' }, left, h('span', { class: 'live' }, 'Live')) : left, `${f.kickoff_utc ? kickoffFmt(f.kickoff_utc) + ' · ' : ''}${plural(rows.length)}`);
     if (isLive) head.append(h('p', { class: 'gnote', text: 'Prices update every 20 minutes during matches.' }));
+    if (et) head.append(h('p', { class: 'gnote', text: et }));
     addGroup(head, rows);
   });
   if (weekend.length) { weekend.sort(byOursPriced); addGroup(groupHead(h('div', { class: 'gname', text: 'Across the weekend' }), plural(weekend.length)), weekend); }

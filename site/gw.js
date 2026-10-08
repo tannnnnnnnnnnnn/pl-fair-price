@@ -162,6 +162,8 @@ function renderConsensus(cons, gwId) {
 
 /* ---------- (d) clean-sheet chances, all teams ---------- */
 
+const elevenLink = () => h('a', { href: 'https://www.elevenify.com', target: '_blank', rel: 'noopener', text: 'elevenify' });
+
 function renderCS(proj) {
   const body = document.getElementById('cs-body');
   const rows = [];
@@ -171,18 +173,22 @@ function renderCS(proj) {
   });
   if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: 'Clean-sheet chances appear once the match model has run.' })); return; }
   rows.sort((a, b) => b.p - a.p);
-  const top = Math.min(1, Math.ceil(rows[0].p * 10) / 10);
+  rows.forEach((r) => { r.e = elevenTeam('clean_sheets', r.team); });
+  const hasE = rows.some((r) => r.e !== null);
+  const top = Math.min(1, Math.ceil(Math.max(...rows.map((r) => Math.max(r.p, r.e || 0))) * 10) / 10);
+  const legend = hasE ? h('div', { class: 'legend2' }, key('away', 'Our model'), key('mk', elevenLink())) : null;
   const list = h('ul', { class: 'cs-list' }, rows.map((r) => {
     const li = h('li', { class: 'csr' },
       crest(r.team, 20) || h('span', { class: 'crest-ph' }),
       h('div', { class: 'cs-t' }, h('b', { text: r.name }), h('span', { text: `${r.home ? 'v' : 'at'} ${r.opp}` })),
-      h('div', { class: 'bar', role: 'img', 'aria-label': `${r.name} clean sheet ${pct0(r.p)}` }, h('i', { style: `width:${(r.p / top) * 100}%` })),
+      h('div', { class: 'bar', role: 'img', 'aria-label': `${r.name} clean sheet ${pct0(r.p)}${r.e !== null ? `, elevenify ${pct0(r.e)}` : ''}` },
+        h('i', { style: `width:${(r.p / top) * 100}%` }), r.e !== null ? h('b', { class: 'emk', style: `left:${(r.e / top) * 100}%` }) : null),
       h('b', { class: 'cs-v', text: pct0(r.p) }));
-    attachTip(li, [`${pct0(r.p)} clean sheet`, `${r.name} ${r.home ? 'v' : 'at'} ${r.opp}`]);
+    attachTip(li, [`${pct0(r.p)} clean sheet`, `${r.name} ${r.home ? 'v' : 'at'} ${r.opp}`, r.e !== null ? `elevenify ${pct0(r.e)}` : null].filter(Boolean));
     return li;
   }));
-  body.replaceChildren(list, h('p', { class: 'note', text: `Bars run from 0% to ${Math.round(top * 100)}%.` }),
-    tableView(['Team', 'Opponent', 'Clean sheet'], rows.map((r) => [r.name, `${r.home ? 'v' : 'at'} ${r.opp}`, pct0(r.p)])));
+  body.replaceChildren(...[legend, list, h('p', { class: 'note', text: `Bars run from 0% to ${Math.round(top * 100)}%.` }),
+    tableView(['Team', 'Opponent', 'Clean sheet', ...(hasE ? ['elevenify'] : [])], rows.map((r) => [r.name, `${r.home ? 'v' : 'at'} ${r.opp}`, pct0(r.p), ...(hasE ? [r.e !== null ? pct0(r.e) : '–'] : [])]))].filter(Boolean));
 }
 
 /* ---------- (e) goals expected per match ---------- */
@@ -196,7 +202,7 @@ function renderGoals(proj) {
   const legend = h('div', { class: 'legend2' }, key('home', 'Home'), key('draw', 'Draw'), key('away', 'Away'));
   const list = h('ul', { class: 'gm-list' }, fx.map((f) => {
     const hn = f.home_name || teamName(f.home), an = f.away_name || teamName(f.away);
-    const vol = num(f.poly_volume), eg = elevenGoals(f.home, f.away);
+    const vol = num(f.poly_volume), et = elevenText(f.home, f.away);
     const volText = vol === null ? 'Polymarket volume not available' : `${vol < 2000 ? 'Thin market: ' : ''}$${Math.round(vol).toLocaleString('en-US')} traded on Polymarket`;
     const li = h('li', { class: 'gm' },
       h('div', { class: 'gm-head' }, h('span', { class: 'gm-teams' }, crest(f.home, 20), h('b', { text: `${hn} v ${an}` }), crest(f.away, 20)), h('span', { class: 'gm-ko', text: f.kickoff_utc ? kickoffFmt(f.kickoff_utc) : '' })),
@@ -209,14 +215,14 @@ function renderGoals(proj) {
       h('div', { class: 'gm-1x2', role: 'img', 'aria-label': `${hn} ${pct0(f.p_home)}, draw ${pct0(f.p_draw)}, ${an} ${pct0(f.p_away)}` },
         h('i', { class: 'home', style: `flex:${f.p_home}` }), h('i', { class: 'draw', style: `flex:${f.p_draw}` }), h('i', { class: 'away', style: `flex:${f.p_away}` })),
       h('div', { class: 'gm-p' }, h('span', { text: `${hn} ${pct0(f.p_home)}` }), h('span', { text: `Draw ${pct0(f.p_draw)}` }), h('span', { text: `${an} ${pct0(f.p_away)}` })),
-      eg ? h('p', { class: 'gm-note', text: elevenText(eg) }) : null,
+      et ? h('p', { class: 'gm-note', text: et }) : null,
       h('p', { class: 'gm-note' }, volText, safeUrl(f.source_url) ? h('a', { href: safeUrl(f.source_url), target: '_blank', rel: 'noopener', text: ' source' }) : null));
     attachTip(li, [`${Number(f.lam_home).toFixed(2)} to ${Number(f.lam_away).toFixed(2)} expected goals`, `${hn} ${pct0(f.p_home)} · Draw ${pct0(f.p_draw)} · ${an} ${pct0(f.p_away)}`]);
     return li;
   }));
-  const credit = fx.some((f) => elevenGoals(f.home, f.away))
-    ? h('p', { class: 'credits' }, 'Second opinion on goals: ', h('a', { href: 'https://www.elevenify.com', target: '_blank', rel: 'noopener', text: 'elevenify' }), '.') : null;
-  body.replaceChildren(...[credit, legend, list, h('p', { class: 'note', text: `Goal bars run from 0 to ${max.toFixed(1)}.` }),
+  const shown = fx.some((f) => elevenText(f.home, f.away));
+  const credit = shown ? h('p', { class: 'credits' }, 'Second opinion on goals and results: ', elevenLink(), '.') : null;
+  body.replaceChildren(...[credit, legend, list, h('p', { class: 'note', text: `Goal bars run from 0 to ${max.toFixed(1)}.` + (shown ? " elevenify's H, D and A are the chances of a home win, draw and away win, in %." : '') }),
     tableView(['Match', 'xG H', 'xG A', 'H / D / A'], fx.map((f) => [`${f.home} v ${f.away}`, Number(f.lam_home).toFixed(2), Number(f.lam_away).toFixed(2), `${pct0(f.p_home)} / ${pct0(f.p_draw)} / ${pct0(f.p_away)}`]))].filter(Boolean));
 }
 
