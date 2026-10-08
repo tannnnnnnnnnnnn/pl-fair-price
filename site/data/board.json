@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T23:35:14Z",
+ "generated_at": "2026-10-08T23:45:46Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -421,60 +421,6 @@
    }
   },
   {
-   "slug": "wahala-will-man-united-vs-tottenham-produce-10-cor-1480",
-   "title": "Wahala: Will Man United vs Tottenham produce 10+ corners?",
-   "url": "https://beta.xo.market/event/wahala-will-man-united-vs-tottenham-produce-10-cor-1480?r=cryptotan01",
-   "creator": "nokaramo",
-   "is_ours": false,
-   "xo_price": 0.6,
-   "best_bid": 0.6,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-10-10T19:00:00.000Z",
-   "group": "fixture",
-   "fixture": {
-    "home": "MUN",
-    "away": "TOT",
-    "home_name": "Man Utd",
-    "away_name": "Spurs",
-    "kickoff_utc": "2026-10-10T16:30:00Z"
-   },
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Wahala: Will Man United vs Tottenham produce 10+ corners?",
-   "description": "This market resolves based on whether The total number of corners in the Premier League fixture between Manchester United and Tottenham Hotspur on October 10, 2026, is greater than 9 according to official Premier League records. Friendly matches or other competitions outside the English Premier League do not count. Post-match disciplinary corners or training sessions do not count. Primary source: Premier League (https://www. premierleague. com). the primary source governs. If the match is cancelled or postponed past the cutoff or official corner statistics are permanently unavailable, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.6,
-       "size": 16.666666
-      }
-     ],
-     "asks": [],
-     "last": 0.6
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.4,
-       "size": 16.666666
-      }
-     ],
-     "last": 0.4
-    }
-   }
-  },
-  {
    "slug": "will-var-change-an-on-field-goal-decision-in-liver-7216",
    "title": "Will VAR change an on-field goal decision in Liverpool vs Man City?",
    "url": "https://beta.xo.market/event/will-var-change-an-on-field-goal-decision-in-liver-7216?r=cryptotan01",
@@ -526,6 +472,60 @@
      ],
      "asks": [],
      "last": 0.62
+    }
+   }
+  },
+  {
+   "slug": "wahala-will-man-united-vs-tottenham-produce-10-cor-1480",
+   "title": "Wahala: Will Man United vs Tottenham produce 10+ corners?",
+   "url": "https://beta.xo.market/event/wahala-will-man-united-vs-tottenham-produce-10-cor-1480?r=cryptotan01",
+   "creator": "nokaramo",
+   "is_ours": false,
+   "xo_price": 0.6,
+   "best_bid": 0.6,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-10-10T19:00:00.000Z",
+   "group": "fixture",
+   "fixture": {
+    "home": "MUN",
+    "away": "TOT",
+    "home_name": "Man Utd",
+    "away_name": "Spurs",
+    "kickoff_utc": "2026-10-10T16:30:00Z"
+   },
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Wahala: Will Man United vs Tottenham produce 10+ corners?",
+   "description": "This market resolves based on whether The total number of corners in the Premier League fixture between Manchester United and Tottenham Hotspur on October 10, 2026, is greater than 9 according to official Premier League records. Friendly matches or other competitions outside the English Premier League do not count. Post-match disciplinary corners or training sessions do not count. Primary source: Premier League (https://www. premierleague. com). the primary source governs. If the match is cancelled or postponed past the cutoff or official corner statistics are permanently unavailable, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.6,
+       "size": 16.666666
+      }
+     ],
+     "asks": [],
+     "last": 0.6
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.4,
+       "size": 16.666666
+      }
+     ],
+     "last": 0.4
     }
    }
   },
@@ -1038,7 +1038,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($30,432 traded)",
+      "label": "Polymarket Liverpool v Man City ($31,355 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -1265,9 +1265,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5756,
-    "low": 0.4756,
-    "high": 0.6756,
+    "p": 0.5754,
+    "low": 0.4754,
+    "high": 0.6754,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1289,7 +1289,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.5%",
+      "value": "8.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1734,7 +1734,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($30,432 traded)",
+      "label": "Polymarket Liverpool v Man City ($31,355 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -2685,7 +2685,7 @@
     "method_text": "Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($33,507 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,509 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -2758,7 +2758,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Sunderland v Brighton ($214,002 traded)",
+      "label": "Polymarket Sunderland v Brighton ($214,008 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-sun-bri-2026-10-10"
      },
@@ -2898,7 +2898,7 @@
     "method_text": "Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($33,507 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,509 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3019,7 +3019,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($33,507 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,509 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3564,7 +3564,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/pipeline/ref/captain_odds.json"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($30,432 traded)",
+      "label": "Polymarket Liverpool v Man City ($31,355 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -3695,7 +3695,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "60.5% (spread 1c, $1,172,668 traded on this market)",
+      "value": "60.5% (spread 1c, $1,172,718 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -3759,9 +3759,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5311,
-    "low": 0.4311,
-    "high": 0.6311,
+    "p": 0.5309,
+    "low": 0.4309,
+    "high": 0.6309,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3783,7 +3783,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.5%",
+      "value": "8.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3870,7 +3870,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Man Utd v Spurs ($84,468 traded)",
+      "label": "Polymarket Man Utd v Spurs ($84,474 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mun-tot-2026-10-10"
      },
@@ -4307,7 +4307,7 @@
     "method_text": "Two readings: joint-lowest of the 6 games that day counts: 21%. only the strict lowest counts: 8%. We show the first, at low confidence.",
     "inputs": [
      {
-      "label": "Polymarket Man Utd v Spurs ($84,468 traded)",
+      "label": "Polymarket Man Utd v Spurs ($84,474 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mun-tot-2026-10-10"
      },
@@ -4408,7 +4408,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($33,507 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,509 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -4656,16 +4656,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.736,
-    "low": 0.636,
-    "high": 0.836,
+    "p": 0.737,
+    "low": 0.637,
+    "high": 0.837,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "26.4% (spread 42c, $621 traded on this market)",
+      "value": "26.3% (spread 42c, $621 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
