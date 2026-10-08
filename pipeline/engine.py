@@ -884,6 +884,7 @@ for r in xo:
                fair_reason=None if fair else out.get("reason"),
                gap_pts=round((fair["p"] - xo_p) * 100) if fair and xo_p is not None else None, status=mk["status"],
                horizon=horizon, taker_fee_bps=int((mk.get("effectiveFeeConfig") or {}).get("takerFeeBps") or 0),
+               pitch=r.get("description") or "",
                description=resolution_description(r),
                resolution_sources=mk.get("resolutionSources") or [],
                books=dict(yes=clean_book(yes_book), no=clean_book(no_book)))
@@ -1008,8 +1009,11 @@ for pid, p in EL.items():
 flags.sort(key=lambda x: -x["owned_pct"])
 xg_table = sorted((dict(id=p["id"], name=p["web_name"], team=TEAMS[p["team"]], pos=POS[p["element_type"]], minutes=p["minutes"],
                         goals=p["goals_scored"], xg=round(num(p["expected_goals"]) or 0, 2), assists=p["assists"],
-                        xa=round(num(p["expected_assists"]) or 0, 2), owned_pct=num(p["selected_by_percent"]))
-                   for p in EL.values() if p["minutes"] >= 180), key=lambda x: -(x["xg"] + x["xa"]))[:40]
+                        xa=round(num(p["expected_assists"]) or 0, 2), owned_pct=num(p["selected_by_percent"]),
+                        xo_markets=[b["slug"] for b in board
+                                    if re.search(rf'\b{re.escape(fold(p["web_name"]))}\b', fold(b["title"]))
+                                    or fold(f'{p["first_name"]} {p["second_name"]}') in fold(b["title"])])
+                   for p in EL.values() if p["minutes"] >= 180), key=lambda x: -(x["xg"] + x["xa"]))
 (OUT / "projections.json").write_text(json.dumps(dict(generated_at=GEN, gw=GW, deadline_utc=NEXT["deadline_time"],
                                                       fixtures=proj_fx, players=players, captain=captain, flags=flags,
                                                       set_pieces=set_pieces,

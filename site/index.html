@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="common.js" defer></script>
 <script src="stake.js" defer></script>
+<script src="posters.js" defer></script>
 <script src="app.js" defer></script>
 </head>
 <body>
@@ -64,19 +65,29 @@
   <section class="sec" id="gaps" aria-labelledby="gaps-h">
     <div class="sec-head">
       <div>
-        <h2 id="gaps-h">Best value per $10</h2>
-        <p class="sec-sub">Ranked by expected value at our fair point estimate, after the spread and taker fee.</p>
+        <h2 id="gaps-h"><span data-explain="best_value">Best value per $10</span></h2>
+        <p class="sec-sub">The strongest value available after XO's fee.</p>
       </div>
     </div>
     <div class="list" id="gaps-list"></div>
   </section>
 
+  <section class="sec" id="my-markets" aria-labelledby="my-h">
+    <div class="sec-head">
+      <div>
+        <h2 id="my-h">My markets</h2>
+        <p class="sec-sub">Markets created by CryptoTan01, with my original call.</p>
+      </div>
+    </div>
+    <div class="my-list" id="my-list"></div>
+  </section>
+
   <section class="sec" id="markets" aria-labelledby="mk-h">
     <div class="sec-head">
       <div>
-        <h2 id="mk-h">XO vs Fair</h2>
+        <h2 id="mk-h">XO vs our price</h2>
         <p class="sec-sub" id="mk-count"></p>
-        <p class="legend"><b>Fair</b> = priced from deep markets. <b>Rough</b> = our model with big assumptions.</p>
+        <p class="legend">Our price = our model (from Polymarket odds). <span class="eleven-badge">elevenify</span> is a separate second opinion.</p>
       </div>
       <div class="pills" role="group" aria-label="Sort markets">
         <button type="button" class="pill is-on" data-sort="match" aria-pressed="true">By match</button>
@@ -85,7 +96,7 @@
     </div>
     <label class="search"><span class="sr-only">Search markets</span><input id="market-search" type="search" placeholder="Search markets, teams or players" autocomplete="off"></label>
     <div id="mk-list"><p class="empty">Loading markets…</p></div>
-    <noscript><p class="empty">Prices need JavaScript. Turn it on to see every XO market beside its fair price.</p></noscript>
+    <noscript><p class="empty">Prices need JavaScript. Turn it on to compare XO with our price.</p></noscript>
   </section>
 
   <section class="sec" id="receipts" hidden aria-labelledby="rc-h">
@@ -93,7 +104,7 @@
       <span id="rc-deek-slot"></span>
       <div>
         <h2 id="rc-h">Receipts</h2>
-        <p class="sec-sub">Receipts land after the games. Last XO price, last fair price, then the result.</p>
+    <p class="sec-sub">What XO and our model said before the result.</p>
       </div>
     </div>
     <div id="rc-sum"></div>
@@ -104,21 +115,18 @@
 <footer class="foot">
   <div class="wrap">
     <p class="foot-on">Markets on <img class="wm" src="assets/logos/xo-wordmark-white.webp" width="56" height="20" alt="XO" loading="lazy"></p>
-    <div class="foot-cols">
-      <div>
-        <h3>How it works</h3>
-        <p>Fair prices come from deep markets on Polymarket and a Poisson match model fitted to them. Player numbers use FPL expected goals and assists. Every row says how it was priced.</p>
-      </div>
-      <div>
-        <h3>Sources</h3>
+    <details class="foot-method">
+      <summary>How we worked this out</summary>
+      <div class="foot-cols">
+        <p>Our prices use liquid Polymarket odds, a match model and public FPL data. Open any market's Details for its exact method.</p>
         <ul>
           <li><a href="https://beta.xo.market/?r=cryptotan01" target="_blank" rel="noopener">XO</a> for prices and liquidity</li>
           <li><a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> for match and season odds</li>
           <li><a href="https://fantasy.premierleague.com/" target="_blank" rel="noopener">Fantasy Premier League</a> for players and fixtures</li>
-          <li><a href="https://www.elevenify.com" target="_blank" rel="noopener">elevenify</a> for predicted goals, win chances and clean sheets, as a second opinion</li>
+          <li><a href="https://www.elevenify.com" target="_blank" rel="noopener">elevenify</a> for a second opinion</li>
         </ul>
       </div>
-    </div>
+    </details>
     <p class="foot-by">Built by <a href="https://x.com/CryptoTan01" target="_blank" rel="noopener">@CryptoTan01</a> with public XO, Polymarket, FPL and elevenify data.</p>
     <p class="foot-na">Not affiliated with any club.</p>
     <details class="changelog">

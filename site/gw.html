@@ -59,51 +59,55 @@
       <div class="dl-boxes" id="dl-boxes"></div>
     </div>
     <details class="how">
-      <summary>How this works</summary>
+      <summary>How we worked this out</summary>
       <p id="how-text">Match odds come from Polymarket. Average goals are calibrated to the league's average. Player shares, defensive contributions and set-piece roles come from FPL; bonus is modelled from last season.</p>
     </details>
   </section>
 
   <section class="sec" id="flags" aria-labelledby="fl-h">
     <h2 id="fl-h">Doubts for <span data-gw>GW</span></h2>
-    <p class="sec-sub lead">FPL's injury flags and news. Team news at Friday's press conferences decides these.</p>
+    <p class="sec-sub lead">Injury flags and team news from FPL.</p>
     <div id="fl-body"><p class="empty">Loading doubts…</p></div>
   </section>
 
   <section class="sec" id="captain" aria-labelledby="cp-h">
     <h2 id="cp-h">Captain picks</h2>
-    <p class="sec-sub">Top 10 by expected points (xPts). Blank means 3 points or fewer. Our model: team goals from Polymarket match odds, player shares from FPL xG/xA, plus clean sheets, defensive-contribution points (from each player's per-90 rate) and bonus (fitted to 7,815 player-matches from 2025/26). Saves and cards not counted.</p>
+    <p class="sec-sub">Top 10 by <span data-explain="xpts">xPts</span>; higher means a stronger points forecast.</p>
+    <details class="how projection-how">
+      <summary>How we project points</summary>
+      <p>Appearance points × chance of playing 60+ minutes; goals × position points; assists × 3; <span data-explain="clean_sheet">clean-sheet chance</span> × position points; <span data-explain="defcon">DEFCON</span> chance × 2; plus <span data-explain="expected_bonus">expected bonus</span>. Goal and assist chances come from goalscorer odds or each player's share of team <span data-explain="xg">xG</span> and <span data-explain="xa">xA</span>. Saves and cards are not counted.</p>
+    </details>
     <div id="cp-body"></div>
   </section>
 
-  <section class="sec" aria-labelledby="dc-h"><h2 id="dc-h">Defensive contributions</h2><p class="sec-sub">Top 10 defenders and midfielders by chance of earning defensive-contribution points this gameweek.</p><div id="dc-body"></div></section>
-  <section class="sec" aria-labelledby="bn-h"><h2 id="bn-h">Expected bonus</h2><p class="sec-sub">Top 10 by expected bonus points this gameweek.</p><div id="bn-body"></div></section>
-  <section class="sec" aria-labelledby="df-h"><h2 id="df-h">Differentials</h2><p class="sec-sub">Top 10 expected points among players owned by under 5%.</p><div id="df-body"></div></section>
+  <section class="sec" aria-labelledby="dc-h"><h2 id="dc-h">Defensive contributions (<span data-explain="defcon">DEFCON</span>)</h2><p class="sec-sub">Top 10 defenders and midfielders by chance of earning two points.</p><div id="dc-body"></div></section>
+  <section class="sec" aria-labelledby="bn-h"><h2 id="bn-h"><span data-explain="expected_bonus">Expected bonus</span></h2><p class="sec-sub">Top 10 by projected FPL bonus points.</p><div id="bn-body"></div></section>
+  <section class="sec" aria-labelledby="df-h"><h2 id="df-h"><span data-explain="differential">Differentials</span></h2><p class="sec-sub">Top 10 <span data-explain="xpts">xPts</span> among players owned by under 5%.</p><div id="df-body"></div></section>
   <section class="sec" aria-labelledby="sp-h"><h2 id="sp-h">Set pieces &amp; penalties</h2><p class="sec-sub">First-choice takers in the current FPL bootstrap data. A dash means FPL lists none.</p><div id="sp-body"></div></section>
-  <section class="sec" aria-labelledby="vl-h"><h2 id="vl-h">Value</h2><p class="sec-sub">Top 10 expected points per £m, among players projected for at least 2 points.</p><div id="vl-body"></div></section>
+  <section class="sec" aria-labelledby="vl-h"><h2 id="vl-h">Value</h2><p class="sec-sub">Top 10 <span data-explain="xpts">xPts</span> per £m, among players projected for 2+ points.</p><div id="vl-body"></div></section>
 
   <section class="sec" id="consensus" aria-labelledby="co-h">
     <h2 id="co-h">Projection consensus</h2>
-    <p class="sec-sub">Expected points for <span data-gw>GW</span> from free public models, side by side. Where they agree, trust it more.</p>
+    <p class="sec-sub">Public expected-points models, side by side.</p>
     <p class="credits">Sources: our model, <a href="https://fpl.solioanalytics.com" target="_blank" rel="noopener">Solio Analytics</a>, <a href="https://www.fantasyfootballpundit.com/fpl-points-predictor/" target="_blank" rel="noopener">Fantasy Football Pundit</a>, FPL.</p>
     <div id="co-body"><p class="empty">Loading projections…</p></div>
   </section>
 
   <section class="sec" id="cs" aria-labelledby="cs-h">
-    <h2 id="cs-h">Clean-sheet chances</h2>
-    <p class="sec-sub">Chance each team keeps a clean sheet this gameweek, from the match model.</p>
+    <h2 id="cs-h"><span data-explain="clean_sheet">Clean-sheet chances</span></h2>
+    <p class="sec-sub">Our Polymarket-based model is the main figure; elevenify is a separate second opinion.</p>
     <div id="cs-body"></div>
   </section>
 
   <section class="sec" id="goals" aria-labelledby="gl-h">
     <h2 id="gl-h">Goals expected per match</h2>
-    <p class="sec-sub">Expected goals for each side, then the chance of a home win, draw or away win.</p>
+    <p class="sec-sub">Our Polymarket-based model is the main figure; elevenify is a separate second opinion.</p>
     <div id="gl-body"></div>
   </section>
 
   <section class="sec" id="perf" aria-labelledby="pf-h">
     <h2 id="pf-h">Over- and under-performers</h2>
-    <p class="sec-sub">Expected goal involvements (xG + xA) against actual (goals + assists) this season.</p>
+    <p class="sec-sub">Expected involvements (<span data-explain="xg">xG</span> + <span data-explain="xa">xA</span>) against goals + assists.</p>
     <div id="pf-body"></div>
   </section>
 
@@ -113,21 +117,18 @@
 <footer class="foot">
   <div class="wrap">
     <p class="foot-on">Markets on <img class="wm" src="assets/logos/xo-wordmark-white.webp" width="56" height="20" alt="XO" loading="lazy"></p>
-    <div class="foot-cols">
-      <div>
-        <h3>How it works</h3>
-        <p>Fair prices come from deep markets on Polymarket and a Poisson match model fitted to them. Player numbers use FPL expected goals and assists. Every row says how it was priced.</p>
-      </div>
-      <div>
-        <h3>Sources</h3>
+    <details class="foot-method">
+      <summary>How we worked this out</summary>
+      <div class="foot-cols">
+        <p>Our match model starts with liquid Polymarket odds. Player forecasts add public FPL data; elevenify is shown separately as a second opinion.</p>
         <ul>
-          <li><a href="https://beta.xo.market/?r=cryptotan01" target="_blank" rel="noopener">XO</a> for prices and liquidity</li>
-          <li><a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> for match and season odds</li>
+          <li><a href="https://beta.xo.market/?r=cryptotan01" target="_blank" rel="noopener">XO</a> for market links and prices</li>
+          <li><a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> for match odds</li>
           <li><a href="https://fantasy.premierleague.com/" target="_blank" rel="noopener">Fantasy Premier League</a> for players and fixtures</li>
-          <li><a href="https://www.elevenify.com" target="_blank" rel="noopener">elevenify</a> for predicted goals, win chances and clean sheets, as a second opinion</li>
+          <li><a href="https://www.elevenify.com" target="_blank" rel="noopener">elevenify</a> for a second opinion</li>
         </ul>
       </div>
-    </div>
+    </details>
     <p class="foot-by">Built by <a href="https://x.com/CryptoTan01" target="_blank" rel="noopener">@CryptoTan01</a> with public XO, Polymarket, FPL and elevenify data.</p>
     <p class="foot-na">Not affiliated with any club.</p>
     <details class="changelog">

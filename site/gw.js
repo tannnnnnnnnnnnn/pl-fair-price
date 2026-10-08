@@ -91,12 +91,34 @@ function xoChips(p) {
   return chips.length ? h('div', { class: 'xchips' }, chips) : null;
 }
 
+function captainParts(c, p) {
+  const pp = num(p.p_start), goalP = num(c.p_goal), assistP = num(c.p_assist);
+  if (pp === null || pp <= 0 || goalP === null || assistP === null) return [];
+  const lambda = (prob) => -Math.log(Math.max(0.000001, 1 - Math.min(prob / pp, 0.999999)));
+  const goalPts = { FWD: 4, MID: 5, DEF: 6, GK: 6 }[p.pos] || 0;
+  const csPts = { FWD: 0, MID: 1, DEF: 4, GK: 4 }[p.pos] || 0;
+  return [
+    { key: 'appearance', label: 'Appearance', value: pp * 2 },
+    { key: 'goals', label: 'Goals', value: pp * lambda(goalP) * goalPts },
+    { key: 'assists', label: 'Assists', value: pp * lambda(assistP) * 3 },
+    { key: 'clean', label: 'Clean sheet', value: pp * (num(p.p_cs) || 0) * csPts },
+    { key: 'defcon', label: 'DEFCON', value: pp * 2 * (num(c.p_defcon) || 0) },
+    { key: 'bonus', label: 'Bonus', value: num(c.xbonus) || 0 },
+  ];
+}
+
+function breakdownBar(c, p) {
+  const parts = captainParts(c, p), total = parts.reduce((sum, part) => sum + part.value, 0);
+  if (!parts.length || total <= 0) return null;
+  return h('div', { class: 'xbreak', role: 'img', 'aria-label': parts.map((part) => `${part.label} ${part.value.toFixed(1)} points`).join(', ') },
+    parts.map((part) => h('i', { class: 'xb-' + part.key, style: `width:${(part.value / total) * 100}%`, title: `${part.label}: ${part.value.toFixed(1)}` })));
+}
+
 function renderCaptain(proj) {
   const body = document.getElementById('cp-body');
   const rows = ((proj && proj.captain) || []).map((c) => ({ c, p: state.players[c.id] || {} }))
     .sort((a, b) => Number(b.c.xpts) - Number(a.c.xpts)).slice(0, 10);
   if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: 'Captain picks appear once the model has run for this gameweek.' })); return; }
-  const max = Math.max(...rows.map((r) => Number(r.c.xpts))) || 1;
   const list = h('ol', { class: 'plist' }, rows.map(({ c, p }, i) => {
     const sub = [c.team, p.pos, p.price ? '£' + Number(p.price).toFixed(1) + 'm' : null, num(p.owned_pct) !== null ? Math.round(p.owned_pct) + '% owned' : null].filter(Boolean).join(' · ');
     const tag = num(p.owned_pct) >= 25 ? 'Template' : num(p.owned_pct) < 10 ? 'Punt' : null;
@@ -104,18 +126,25 @@ function renderCaptain(proj) {
     const li = h('li', { class: 'pcard' },
       h('span', { class: 'prank', text: String(i + 1) }),
       h('div', { class: 'pmain' },
-        h('div', { class: 'pname' }, crest(c.team, 20), h('span', { text: c.name }), tag ? h('i', { class: 'pick-tag', text: tag }) : null),
+        h('div', { class: 'pname' }, crest(c.team, 20), h('span', { text: c.name }), tag ? h('span', { class: 'pick-tag' }, explain(tag, 'template_punt')) : null),
         h('p', { class: 'psub', text: sub }),
-        h('div', { class: 'xbar', role: 'img', 'aria-label': `${Number(c.xpts).toFixed(1)} expected points` }, h('i', { style: `width:${(Number(c.xpts) / max) * 100}%` })),
+        breakdownBar(c, p),
         h('div', { class: 'stats' },
           num(c.p_goal) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(c.p_goal) }), ' goal') : null,
           num(c.p_assist) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(c.p_assist) }), ' assist') : null,
           num(c.p_blank) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(c.p_blank) }), ' blank') : null),
         news, xoChips(p)),
-      h('div', { class: 'pbig' }, h('b', { text: Number(c.xpts).toFixed(1) }), h('i', { text: 'xPts' })));
+      h('div', { class: 'pbig' }, h('b', { text: Number(c.xpts).toFixed(1) }), h('i', null, explain('xPts', 'xpts'))));
     return li;
   }));
-  body.replaceChildren(h('p', { class: 'note', text: 'Template and Punt tags are based on ownership: Template is 25%+, Punt is under 10%.' }), list, tableView(['Player', 'xPts', 'Goal', 'Assist', 'Blank'], rows.map(({ c }) => [`${c.name} (${c.team})`, Number(c.xpts).toFixed(1), pct0(c.p_goal), pct0(c.p_assist), pct0(c.p_blank)])));
+  const breakdownLabels = {
+    appearance: 'appearance', goals: 'goals', assists: 'assists',
+    clean: explain('clean-sheet chance', 'clean_sheet'), defcon: explain('DEFCON', 'defcon'), bonus: explain('expected bonus', 'expected_bonus'),
+  };
+  const breakdownLegend = h('div', { class: 'break-legend' },
+    Object.keys(breakdownLabels).map((x) => h('span', null, h('i', { class: 'xb-' + x }), breakdownLabels[x])));
+  body.replaceChildren(h('p', { class: 'note' }, explain('Template / Punt', 'template_punt'), ' tags are based on ownership.'), breakdownLegend, list,
+    tableView(['Player', 'xPts', 'Goal', 'Assist', 'Blank'], rows.map(({ c }) => [`${c.name} (${c.team})`, Number(c.xpts).toFixed(1), pct0(c.p_goal), pct0(c.p_assist), pct0(c.p_blank)])));
 }
 
 /* ---------- requested FPL shortlists ---------- */
@@ -133,9 +162,9 @@ function playerList(id, rows, value) {
 function renderFridayLists(proj) {
   const players = (proj.players || []).filter((p) => num(p.xpts) !== null);
   playerList('dc-body', players.filter((p) => ['DEF', 'MID'].includes(p.pos)).sort((a, b) => b.p_defcon - a.p_defcon).slice(0, 10), (p) => pct0(p.p_defcon));
-  playerList('bn-body', [...players].sort((a, b) => b.xbonus - a.xbonus).slice(0, 10), (p) => `${Number(p.xbonus).toFixed(2)} xBonus`);
-  playerList('df-body', players.filter((p) => p.owned_pct < 5).sort((a, b) => b.xpts - a.xpts).slice(0, 10), (p) => `${Number(p.xpts).toFixed(1)} xPts`);
-  playerList('vl-body', players.filter((p) => p.xpts >= 2 && p.price > 0).sort((a, b) => b.xpts / b.price - a.xpts / a.price).slice(0, 10), (p) => `${(p.xpts / p.price).toFixed(2)} / £m`);
+  playerList('bn-body', [...players].sort((a, b) => b.xbonus - a.xbonus).slice(0, 10), (p) => `${Number(p.xbonus).toFixed(2)} pts`);
+  playerList('df-body', players.filter((p) => p.owned_pct < 5).sort((a, b) => b.xpts - a.xpts).slice(0, 10), (p) => `${Number(p.xpts).toFixed(1)} pts`);
+  playerList('vl-body', players.filter((p) => p.xpts >= 2 && p.price > 0).sort((a, b) => b.xpts / b.price - a.xpts / a.price).slice(0, 10), (p) => `${(p.xpts / p.price).toFixed(2)} pts / £m`);
   const sp = document.getElementById('sp-body');
   const rows = proj.set_pieces || [];
   sp.replaceChildren(rows.length ? h('div', { class: 'set-grid' }, rows.map((r) => h('article', { class: 'set-row' },
@@ -192,6 +221,12 @@ function renderConsensus(cons, gwId) {
 
 const elevenLink = () => h('a', { href: 'https://www.elevenify.com', target: '_blank', rel: 'noopener', text: 'elevenify' });
 
+function modelLegend(hasEleven) {
+  return h('div', { class: 'model-legend' },
+    h('strong', { text: 'Our model (from Polymarket odds)' }),
+    hasEleven ? h('span', null, h('span', { class: 'eleven-badge', text: 'elevenify' }), ' separate second opinion') : null);
+}
+
 function renderCS(proj) {
   const body = document.getElementById('cs-body');
   const rows = [];
@@ -204,18 +239,18 @@ function renderCS(proj) {
   rows.forEach((r) => { r.e = elevenTeam('clean_sheets', r.team); });
   const hasE = rows.some((r) => r.e !== null);
   const top = Math.min(1, Math.ceil(Math.max(...rows.map((r) => Math.max(r.p, r.e || 0))) * 10) / 10);
-  const legend = hasE ? h('div', { class: 'legend2' }, key('away', 'Our model'), key('mk', elevenLink())) : null;
   const list = h('ul', { class: 'cs-list' }, rows.map((r) => {
     const li = h('li', { class: 'csr' },
       crest(r.team, 20) || h('span', { class: 'crest-ph' }),
       h('div', { class: 'cs-t' }, h('b', { text: r.name }), h('span', { text: `${r.home ? 'v' : 'at'} ${r.opp}` })),
       h('div', { class: 'bar', role: 'img', 'aria-label': `${r.name} clean sheet ${pct0(r.p)}${r.e !== null ? `, elevenify ${pct0(r.e)}` : ''}` },
         h('i', { style: `width:${(r.p / top) * 100}%` }), r.e !== null ? h('b', { class: 'emk', style: `left:${(r.e / top) * 100}%` }) : null),
-      h('b', { class: 'cs-v', text: pct0(r.p) }));
+      h('b', { class: 'cs-v', text: pct0(r.p) }),
+      r.e !== null ? elevenLine(pct0(r.e)) : null);
     attachTip(li, [`${pct0(r.p)} clean sheet`, `${r.name} ${r.home ? 'v' : 'at'} ${r.opp}`, r.e !== null ? `elevenify ${pct0(r.e)}` : null].filter(Boolean));
     return li;
   }));
-  body.replaceChildren(...[legend, list, h('p', { class: 'note', text: `Bars run from 0% to ${Math.round(top * 100)}%.` }),
+  body.replaceChildren(...[modelLegend(hasE), list, h('p', { class: 'note', text: `Bars run from 0% to ${Math.round(top * 100)}%.` }),
     tableView(['Team', 'Opponent', 'Clean sheet', ...(hasE ? ['elevenify'] : [])], rows.map((r) => [r.name, `${r.home ? 'v' : 'at'} ${r.opp}`, pct0(r.p), ...(hasE ? [r.e !== null ? pct0(r.e) : '–'] : [])]))].filter(Boolean));
 }
 
@@ -243,14 +278,13 @@ function renderGoals(proj) {
       h('div', { class: 'gm-1x2', role: 'img', 'aria-label': `${hn} ${pct0(f.p_home)}, draw ${pct0(f.p_draw)}, ${an} ${pct0(f.p_away)}` },
         h('i', { class: 'home', style: `flex:${f.p_home}` }), h('i', { class: 'draw', style: `flex:${f.p_draw}` }), h('i', { class: 'away', style: `flex:${f.p_away}` })),
       h('div', { class: 'gm-p' }, h('span', { text: `${hn} ${pct0(f.p_home)}` }), h('span', { text: `Draw ${pct0(f.p_draw)}` }), h('span', { text: `${an} ${pct0(f.p_away)}` })),
-      et ? h('p', { class: 'gm-note', text: et }) : null,
+      elevenLine(et),
       h('p', { class: 'gm-note' }, volText, safeUrl(f.source_url) ? h('a', { href: safeUrl(f.source_url), target: '_blank', rel: 'noopener', text: ' source' }) : null));
     attachTip(li, [`${Number(f.lam_home).toFixed(2)} to ${Number(f.lam_away).toFixed(2)} expected goals`, `${hn} ${pct0(f.p_home)} · Draw ${pct0(f.p_draw)} · ${an} ${pct0(f.p_away)}`]);
     return li;
   }));
   const shown = fx.some((f) => elevenText(f.home, f.away));
-  const credit = shown ? h('p', { class: 'credits' }, 'Second opinion on goals and results: ', elevenLink(), '.') : null;
-  body.replaceChildren(...[credit, legend, list, h('p', { class: 'note', text: `Goal bars run from 0 to ${max.toFixed(1)}.` + (shown ? " elevenify's H, D and A are the chances of a home win, draw and away win, in %." : '') }),
+  body.replaceChildren(...[modelLegend(shown), legend, list, h('p', { class: 'note', text: `Goal bars run from 0 to ${max.toFixed(1)}.` + (shown ? " elevenify's H, D and A are home-win, draw and away-win chances." : '') }),
     tableView(['Match', 'xG H', 'xG A', 'H / D / A'], fx.map((f) => [`${f.home} v ${f.away}`, Number(f.lam_home).toFixed(2), Number(f.lam_away).toFixed(2), `${pct0(f.p_home)} / ${pct0(f.p_draw)} / ${pct0(f.p_away)}`]))].filter(Boolean));
 }
 
@@ -265,81 +299,101 @@ function sv(tag, attrs, text) {
 
 function renderPerf(proj) {
   const body = document.getElementById('pf-body');
-  const pts = ((proj && proj.xg_table) || []).map((p) => ({ ...p, x: Number(p.xg) + Number(p.xa), y: Number(p.goals) + Number(p.assists) }))
+  const allPts = ((proj && proj.xg_table) || []).map((p) => ({ ...p, x: Number(p.xg) + Number(p.xa), y: Number(p.goals) + Number(p.assists),
+    hasMarket: (Array.isArray(p.xo_markets) && p.xo_markets.length > 0) || (((state.players[p.id] || {}).xo_markets || []).length > 0) }))
     .filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
-  if (!pts.length) { body.replaceChildren(h('p', { class: 'empty', text: 'Expected-involvement numbers are not available yet.' })); return; }
+  if (!allPts.length) { body.replaceChildren(h('p', { class: 'empty', text: 'Expected-involvement numbers are not available yet.' })); return; }
 
-  const W = 360, M = { l: 36, r: 14, t: 10, b: 40 };
-  const maxV = Math.max(...pts.map((p) => Math.max(p.x, p.y)));
-  const top = Math.max(4, Math.ceil(maxV / 2) * 2);
-  const pw = W - M.l - M.r, H = pw + M.t + M.b, s = pw / top;
-  const X = (v) => M.l + v * s, Y = (v) => M.t + pw - v * s;
+  const controls = h('div', { class: 'pf-filters', role: 'group', 'aria-label': 'Filter by position' });
+  const chart = h('div');
+  const buttons = ['All', 'FWD', 'MID', 'DEF'].map((pos) => h('button', { type: 'button', class: 'pill' + (pos === 'All' ? ' is-on' : ''), 'aria-pressed': pos === 'All' ? 'true' : 'false', text: pos }));
+  controls.append(...buttons);
+  body.replaceChildren(controls, chart);
 
-  const svg = sv('svg', { viewBox: `0 0 ${W} ${H}`, class: 'sc', role: 'img', 'aria-label': 'Scatter of expected against actual goal involvements' });
-  for (let t = 0; t <= top; t += 2) {
-    svg.append(sv('line', { x1: X(0), x2: X(top), y1: Y(t), y2: Y(t), stroke: COL.hair, 'stroke-width': 1 }));
-    svg.append(sv('line', { x1: X(t), x2: X(t), y1: Y(0), y2: Y(top), stroke: COL.hair, 'stroke-width': 1 }));
-    svg.append(sv('text', { x: M.l - 6, y: Y(t) + 3.5, 'text-anchor': 'end', class: 'tk' }, String(t)));
-    svg.append(sv('text', { x: X(t), y: Y(0) + 15, 'text-anchor': 'middle', class: 'tk' }, String(t)));
-  }
-  svg.append(sv('text', { x: M.l + pw / 2, y: H - 6, 'text-anchor': 'middle', class: 'ax' }, 'Expected: xG + xA'));
-  const yl = sv('text', { transform: `translate(11 ${M.t + pw / 2}) rotate(-90)`, 'text-anchor': 'middle', class: 'ax' }, 'Actual: goals + assists');
-  svg.append(yl);
-  svg.append(sv('line', { x1: X(0), y1: Y(0), x2: X(top), y2: Y(top), stroke: COL.furniture, 'stroke-width': 1.5 }));
-
-  const cls = (p) => (p.y - p.x >= 1 ? 'over' : p.y - p.x <= -1 ? 'under' : 'even');
-  const fill = { over: COL.pink, under: COL.ink, even: '#b4b4bd' };
-  const dots = [...pts].sort((a, b) => Math.abs(a.y - a.x) - Math.abs(b.y - b.x)); // biggest gaps drawn last, on top
-  dots.forEach((p) => { p.el = sv('circle', { cx: X(p.x), cy: Y(p.y), r: 4.5, fill: fill[cls(p)], stroke: '#fff', 'stroke-width': 1.5 }); svg.append(p.el); });
-
-  // Label the 6 furthest from the line; greedy placement so labels never sit on each other or on a dot.
-  const far = [...pts].sort((a, b) => Math.abs(b.y - b.x) - Math.abs(a.y - a.x)).slice(0, 6);
-  const boxes = [];
-  const clash = (b) => boxes.some((o) => b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y)
-    || pts.some((p) => { const cx = X(p.x), cy = Y(p.y); return cx > b.x - 4 && cx < b.x + b.w + 4 && cy > b.y - 4 && cy < b.y + b.h + 4; });
-  far.forEach((p) => {
-    const w = p.name.length * 6 + 4, hh = 13, cx = X(p.x), cy = Y(p.y);
-    const opts = [[cx + 8, cy - hh / 2, 'start'], [cx - 8 - w, cy - hh / 2, 'start'], [cx - w / 2, cy - 9 - hh, 'start'], [cx - w / 2, cy + 9, 'start'], [cx + 8, cy - hh - 6, 'start'], [cx + 8, cy + 4, 'start']];
-    let pick = null;
-    for (const [bx, by] of opts) {
-      const b = { x: bx, y: by, w, h: hh };
-      if (b.x < 2 || b.x + w > W - 2 || b.y < 2 || b.y + hh > H - 20) continue;
-      const others = pts.filter((q) => q !== p);
-      const hitsDot = others.some((q) => { const qx = X(q.x), qy = Y(q.y); return qx > b.x - 4 && qx < b.x + w + 4 && qy > b.y - 4 && qy < b.y + hh + 4; });
-      if (!hitsDot && !boxes.some((o) => b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y)) { pick = b; break; }
+  const draw = (position) => {
+    buttons.forEach((button) => { const on = button.textContent === position; button.classList.toggle('is-on', on); button.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+    const pts = position === 'All' ? allPts : allPts.filter((p) => p.pos === position);
+    const W = 360, M = { l: 36, r: 14, t: 10, b: 40 };
+    const maxV = Math.max(...pts.map((p) => Math.max(p.x, p.y)));
+    const top = Math.max(4, Math.ceil(maxV / 2) * 2);
+    const pw = W - M.l - M.r, H = pw + M.t + M.b, s = pw / top;
+    const X = (v) => M.l + v * s, Y = (v) => M.t + pw - v * s;
+    const svg = sv('svg', { viewBox: `0 0 ${W} ${H}`, class: 'sc', role: 'img', 'aria-label': `Expected against actual goal involvements for ${position === 'All' ? 'all positions' : position}` });
+    for (let t = 0; t <= top; t += 2) {
+      svg.append(sv('line', { x1: X(0), x2: X(top), y1: Y(t), y2: Y(t), stroke: COL.hair, 'stroke-width': 1 }));
+      svg.append(sv('line', { x1: X(t), x2: X(t), y1: Y(0), y2: Y(top), stroke: COL.hair, 'stroke-width': 1 }));
+      svg.append(sv('text', { x: M.l - 6, y: Y(t) + 3.5, 'text-anchor': 'end', class: 'tk' }, String(t)));
+      svg.append(sv('text', { x: X(t), y: Y(0) + 15, 'text-anchor': 'middle', class: 'tk' }, String(t)));
     }
-    if (!pick) pick = { x: Math.min(cx + 8, W - w - 2), y: cy - hh / 2, w, h: hh };
-    boxes.push(pick);
-    svg.append(sv('text', { x: pick.x, y: pick.y + 10.5, class: 'pl' }, p.name));
-  });
+    svg.append(sv('text', { x: M.l + pw / 2, y: H - 6, 'text-anchor': 'middle', class: 'ax' }, 'Expected: xG + xA'));
+    svg.append(sv('text', { transform: `translate(11 ${M.t + pw / 2}) rotate(-90)`, 'text-anchor': 'middle', class: 'ax' }, 'Actual: goals + assists'));
+    svg.append(sv('line', { x1: X(0), y1: Y(0), x2: X(top), y2: Y(top), stroke: COL.furniture, 'stroke-width': 1.5 }));
 
-  // Nearest-point hover layer: the pointer only has to be close, never dead-center.
-  const hit = sv('rect', { x: 0, y: 0, width: W, height: H, fill: 'transparent' });
-  svg.append(hit);
-  let hot = null;
-  const move = (e) => {
-    const m = svg.getScreenCTM().inverse();
-    const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
-    const q = pt.matrixTransform(m);
-    let best = null, bd = 1e9;
-    pts.forEach((p) => { const d = Math.hypot(X(p.x) - q.x, Y(p.y) - q.y); if (d < bd) { bd = d; best = p; } });
-    if (hot && hot !== best) hot.el.setAttribute('r', 4.5);
-    if (best && bd <= 30) {
-      hot = best; best.el.setAttribute('r', 6.5);
-      const r = best.el.getBoundingClientRect();
-      showTip(best.el, [`${best.y} goals + assists from ${best.x.toFixed(1)} expected`, `${best.name}, ${teamName(best.team)}`, `${best.minutes} minutes`], r);
-    } else { if (hot) hot.el.setAttribute('r', 4.5); hot = null; hideTip(); }
+    const cls = (p) => (p.y - p.x >= 1 ? 'over' : p.y - p.x <= -1 ? 'under' : 'even');
+    const fill = { over: COL.pink, under: COL.ink, even: '#b4b4bd' };
+    const dots = [...pts].sort((a, b) => Math.abs(a.y - a.x) - Math.abs(b.y - b.x));
+    dots.forEach((p) => {
+      p.radius = Math.min(9, 3 + Math.sqrt(Math.max(0, Number(p.owned_pct) || 0)) * 0.55);
+      if (p.hasMarket) svg.append(sv('circle', { cx: X(p.x), cy: Y(p.y), r: p.radius + 2.2, fill: 'none', stroke: COL.pink, 'stroke-width': 2 }));
+      p.el = sv('circle', { cx: X(p.x), cy: Y(p.y), r: p.radius, fill: fill[cls(p)], stroke: '#fff', 'stroke-width': 1.3 });
+      svg.append(p.el);
+    });
+
+    const far = [...pts].sort((a, b) => Math.abs(b.y - b.x) - Math.abs(a.y - a.x)).slice(0, 6);
+    const boxes = [];
+    far.forEach((p) => {
+      const w = p.name.length * 6 + 4, hh = 13, cx = X(p.x), cy = Y(p.y);
+      const opts = [[cx + 9, cy - hh / 2], [cx - 9 - w, cy - hh / 2], [cx - w / 2, cy - 10 - hh], [cx - w / 2, cy + 10]];
+      let pick = null;
+      for (const [bx, by] of opts) {
+        const b = { x: bx, y: by, w, h: hh };
+        if (b.x >= 2 && b.x + w <= W - 2 && b.y >= 2 && b.y + hh <= H - 20 && !boxes.some((o) => b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y)) { pick = b; break; }
+      }
+      if (!pick) pick = { x: Math.min(cx + 9, W - w - 2), y: cy - hh / 2, w, h: hh };
+      boxes.push(pick);
+      svg.append(sv('text', { x: pick.x, y: pick.y + 10.5, class: 'pl' }, p.name));
+    });
+
+    const hit = sv('rect', { x: 0, y: 0, width: W, height: H, fill: 'transparent' });
+    svg.append(hit);
+    let hot = null;
+    const resetHot = () => { if (hot) hot.el.setAttribute('r', hot.radius); hot = null; hideTip(); };
+    const move = (e) => {
+      const matrix = svg.getScreenCTM();
+      if (!matrix) return;
+      const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
+      const q = pt.matrixTransform(matrix.inverse());
+      let nearest = null, distance = Infinity;
+      pts.forEach((p) => { const d = Math.hypot(X(p.x) - q.x, Y(p.y) - q.y); if (d < distance) { distance = d; nearest = p; } });
+      if (hot && hot !== nearest) hot.el.setAttribute('r', hot.radius);
+      if (nearest && distance <= 30) {
+        hot = nearest; hot.el.setAttribute('r', hot.radius + 2);
+        const gap = hot.y - hot.x;
+        showTip(hot.el, [`${hot.name} · ${teamName(hot.team)} · ${hot.pos}`, `xG+xA ${hot.x.toFixed(1)} · G+A ${hot.y}`, `Difference ${gap >= 0 ? '+' : ''}${gap.toFixed(1)} · ${Number(hot.owned_pct || 0).toFixed(1)}% owned`], hot.el.getBoundingClientRect());
+      } else resetHot();
+    };
+    hit.addEventListener('pointermove', move);
+    hit.addEventListener('pointerdown', move);
+    hit.addEventListener('pointerleave', resetHot);
+
+    const rankedList = (title, rows) => h('section', { class: 'perf-rank' }, h('h3', { text: title }),
+      h('ol', null, rows.map((p, i) => {
+        const gap = p.y - p.x;
+        return h('li', null, h('span', { class: 'prank', text: String(i + 1) }), h('span', { class: 'perf-name' }, h('b', { text: p.name }), h('i', { text: `${p.team} · ${p.pos} · ${Number(p.owned_pct || 0).toFixed(1)}% owned` })),
+          h('strong', { text: `${gap >= 0 ? '+' : ''}${gap.toFixed(1)}` }), h('small', { text: `${p.y} G+A / ${p.x.toFixed(1)} xG+xA` }));
+      })));
+    const hotRows = [...pts].filter((p) => p.y > p.x).sort((a, b) => (b.y - b.x) - (a.y - a.x)).slice(0, 8);
+    const dueRows = [...pts].filter((p) => p.y < p.x).sort((a, b) => (a.y - a.x) - (b.y - b.x)).slice(0, 8);
+    const legend = h('div', { class: 'legend2' }, key('over', 'Scoring more than chances suggest'), key('under', 'Unlucky so far'), key('even', 'About as expected'), key('market', 'Has an XO market'));
+    const sorted = [...pts].sort((a, b) => (b.y - b.x) - (a.y - a.x));
+    chart.replaceChildren(legend, h('div', { class: 'scwrap' }, svg),
+      h('p', { class: 'note', text: 'Above the line = scoring more than chances suggest (may cool off). Below = unlucky so far. Bigger dots are more highly owned.' }),
+      h('div', { class: 'perf-lists' }, rankedList('Running hot (may cool off)', hotRows), rankedList('Due a goal (unlucky so far)', dueRows)),
+      tableView(['Player', 'Pos', 'Owned', 'xG+xA', 'G+A', 'Gap'], sorted.map((p) => [`${p.name} (${p.team})`, p.pos, `${Number(p.owned_pct || 0).toFixed(1)}%`, p.x.toFixed(1), p.y, (p.y - p.x >= 0 ? '+' : '') + (p.y - p.x).toFixed(1)])),
+      h('p', { class: 'note', text: 'Source: FPL (Opta) data.' }));
   };
-  hit.addEventListener('pointermove', move);
-  hit.addEventListener('pointerdown', move);
-  hit.addEventListener('pointerleave', () => { if (hot) hot.el.setAttribute('r', 4.5); hot = null; hideTip(); });
-
-  const legend = h('div', { class: 'legend2' }, key('over', 'Scoring more than chances suggest'), key('under', 'Unlucky so far'), key('even', 'About as expected'));
-  const sorted = [...pts].sort((a, b) => (b.y - b.x) - (a.y - a.x));
-  body.replaceChildren(legend, h('div', { class: 'scwrap' }, svg),
-    h('p', { class: 'note', text: 'Above the line = scoring more than chances suggest (may cool off). Below = unlucky so far.' }),
-    h('p', { class: 'note', text: 'Source: FPL (Opta) data.' }),
-    tableView(['Player', 'xG+xA', 'G+A', 'Gap'], sorted.map((p) => [`${p.name} (${p.team})`, p.x.toFixed(1), p.y, (p.y - p.x >= 0 ? '+' : '') + (p.y - p.x).toFixed(1)])));
+  buttons.forEach((button) => button.addEventListener('click', () => draw(button.textContent)));
+  draw('All');
 }
 
 /* ---------- init ---------- */

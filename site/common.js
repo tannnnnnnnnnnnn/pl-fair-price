@@ -64,6 +64,82 @@ function h(tag, props, ...kids) {
   return el;
 }
 
+const EXPLAINERS = {
+  fair_price: 'Our estimate of the real chance of YES, using stronger outside markets and our model.',
+  rough: 'A useful estimate with bigger assumptions. Treat it with more caution than our other prices.',
+  ev: 'What this bet is worth on average if our fair price is right. Positive = good value.',
+  buy_sell_last: 'Buy is the cheapest price available now. Sell is the best current bid; Last is the most recent trade.',
+  fee: 'XO adds a small taker fee when your order matches immediately. It is included in every calculation here.',
+  liquidity: 'Money available to trade near the current price. Low liquidity can mean your full stake will not fill.',
+  confidence: 'How much trust to place in our estimate. Lower confidence means a wider likely range.',
+  best_value: 'The trades with the highest expected profit for a $10 stake, after price spread and fees.',
+  xpts: 'Projected Fantasy Premier League points for this gameweek, before any captain multiplier.',
+  defcon: 'The chance of earning two FPL points from defensive contributions such as tackles, blocks and clearances.',
+  expected_bonus: 'The average FPL bonus points we project, including the chance of earning none.',
+  differential: 'A low-owned FPL player who could help your team gain rank if they return points.',
+  template_punt: 'Template means owned by at least 25%; Punt means owned by under 10%.',
+  xg: 'Expected goals: the number of goals a player would usually score from the chances they had.',
+  xa: 'Expected assists: the number of assists a player would usually earn from the chances they created.',
+  clean_sheet: 'The chance a team concedes no goals in the match.',
+};
+
+let explainerId = 0;
+let activeExplainer = null;
+
+function closeExplainer() {
+  if (!activeExplainer) return;
+  activeExplainer.pop.hidden = true;
+  activeExplainer.button.setAttribute('aria-expanded', 'false');
+  activeExplainer = null;
+}
+
+function openExplainer(button, pop) {
+  closeExplainer();
+  pop.hidden = false;
+  button.setAttribute('aria-expanded', 'true');
+  const r = button.getBoundingClientRect(), w = pop.offsetWidth, hgt = pop.offsetHeight;
+  const left = Math.max(8, Math.min(r.left + r.width / 2 - w / 2, document.documentElement.clientWidth - w - 8));
+  let top = r.bottom + 7;
+  if (top + hgt > document.documentElement.clientHeight - 8) top = Math.max(8, r.top - hgt - 7);
+  pop.style.left = left + 'px';
+  pop.style.top = top + 'px';
+  activeExplainer = { button, pop };
+}
+
+function tipButton(key) {
+  const copy = EXPLAINERS[key];
+  if (!copy) return null;
+  explainerId += 1;
+  const id = `explain-${explainerId}`;
+  const pop = h('span', { id, class: 'explainer-pop', role: 'tooltip', text: copy, hidden: true });
+  const button = h('button', { type: 'button', class: 'explainer-button', 'aria-label': 'Explain this term', 'aria-describedby': id, 'aria-expanded': 'false', text: '?' });
+  button.addEventListener('pointerenter', () => openExplainer(button, pop));
+  button.addEventListener('focus', () => openExplainer(button, pop));
+  button.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); openExplainer(button, pop); });
+  button.addEventListener('pointerleave', () => { if (document.activeElement !== button) closeExplainer(); });
+  button.addEventListener('blur', closeExplainer);
+  return h('span', { class: 'explainer' }, button, pop);
+}
+
+function explain(label, key) {
+  return h('span', { class: 'explained' }, label, tipButton(key));
+}
+
+function setupExplainers() {
+  document.querySelectorAll('[data-explain]').forEach((el) => {
+    if (el.querySelector('.explainer')) return;
+    el.classList.add('explained');
+    el.append(tipButton(el.dataset.explain));
+  });
+}
+
+document.addEventListener('pointerdown', (e) => {
+  if (activeExplainer && !activeExplainer.button.parentElement.contains(e.target)) closeExplainer();
+});
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeExplainer(); });
+window.addEventListener('scroll', closeExplainer, { passive: true });
+window.addEventListener('resize', closeExplainer);
+
 const num = (v) => {
   if (v === null || v === undefined || v === '') return null;
   const n = Number(v);
@@ -178,20 +254,25 @@ function elevenTeam(part, code) {
   return t && fx.filter((f) => f.home === code || f.away === code).length === 1 ? num(t.gw && t.gw[gw]) : null;
 }
 
-// "elevenify: 1.95 to 0.69 goals · H 67 · D 21 · A 12" for a fixture in the current gameweek, or null.
+// "1.95–0.69 goals · H 67 · D 21 · A 12" for a fixture in the current gameweek, or null.
 function elevenText(home, away) {
   if (!isFixture(home, away)) return null;
   const hg = elevenTeam('goals', home), ag = elevenTeam('goals', away);
   const m = state.eleven && Array.isArray(state.eleven.matches) ? state.eleven.matches.find((x) => x.home === home && x.away === away) : null;
   const res = m && [m.p_home, m.p_draw, m.p_away].every((p) => num(p) !== null) ? `H ${Math.round(m.p_home * 100)} · D ${Math.round(m.p_draw * 100)} · A ${Math.round(m.p_away * 100)}` : null;
-  const parts = [hg !== null && ag !== null ? `${hg.toFixed(2)} to ${ag.toFixed(2)} goals` : null, res].filter(Boolean);
-  return parts.length ? 'elevenify: ' + parts.join(' · ') : null;
+  const parts = [hg !== null && ag !== null ? `${hg.toFixed(2)}–${ag.toFixed(2)} goals` : null, res].filter(Boolean);
+  return parts.length ? parts.join(' · ') : null;
+}
+
+function elevenLine(text) {
+  return text ? h('p', { class: 'eleven-line' }, h('span', { class: 'eleven-badge', text: 'elevenify' }), h('span', { text: `says: ${text}` })) : null;
 }
 
 function setupPage() {
   const name = document.getElementById('site-name'), tag = document.getElementById('site-tagline');
   if (name) name.textContent = CONFIG.name;
   if (tag) tag.textContent = CONFIG.tagline;
+  setupExplainers();
   const cl = document.getElementById('changelog');
   if (cl) cl.replaceChildren(...CHANGELOG.map((e) => h('li', null, h('b', { text: e.version }), ` · ${e.date} · ${e.notes}`)));
   try { state.odds = localStorage.getItem('odds-format') || 'percent'; } catch (e) { state.odds = 'percent'; }
@@ -203,6 +284,7 @@ function setupPage() {
       try { localStorage.setItem('odds-format', state.odds); } catch (e) { /* storage is optional */ }
       if (typeof renderMarkets === 'function') renderMarkets();
       if (typeof renderGaps === 'function') renderGaps();
+      if (typeof renderMyMarkets === 'function') renderMyMarkets();
       if (typeof renderCaptain === 'function' && state.proj) renderCaptain(state.proj);
     });
   }
