@@ -21,14 +21,14 @@ from scipy.optimize import minimize
 
 TOOL = Path(__file__).resolve().parent.parent
 RAW, OUT = TOOL / "pipeline" / "raw", TOOL / "site" / "data"
-STUDY = TOOL.parent / "production" / "analysis" / "baserates" / "results" / "q1_table_lag24h.csv"
+REFD = TOOL / "pipeline" / "ref"
 REF = "cryptotan01"
 N = 20000
 RNG = np.random.default_rng(20261008)
 FH_SHARE = 0.45  # share of goals scored in the first half (assumption)
 RHO = -0.12  # Dixon-Coles low-score correction; plain Poisson fitted to 1X2 understates goals
-LAST = TOOL.parent / "production" / "analysis" / "data" / "mgw_2025-26.csv"
-CAPTAIN = TOOL.parent / "production" / "analysis" / "captain_model.json"
+LAST = REFD / "last_season_2025_26.csv"
+CAPTAIN = REFD / "captain_odds.json"
 POLY = "https://polymarket.com/event/"
 FPL = "https://fantasy.premierleague.com/api/bootstrap-static/"
 FPL_FIX = "https://fantasy.premierleague.com/api/fixtures/"
@@ -261,31 +261,14 @@ for p in boot["elements"]:
     team_xg[TEAMS[p["team"]]] += num(p["expected_goals"]) or 0
 last = {}  # 2025/26 totals by player name: minutes, xG, goals, xA, assists
 for r in csv.DictReader(LAST.open()):
-    t = last.setdefault(fold(r["name"]), [0.0] * 5)
-    for k, c in enumerate(("minutes", "expected_goals", "goals_scored", "expected_assists", "assists")):
-        t[k] += num(r[c]) or 0
-
-study = {r["subset"]: r for r in csv.DictReader(STUDY.open())}
-
+    last[r["name"]] = [float(r[c]) for c in ("minutes", "xg", "goals", "xa", "assists")]
 
 def flag_start(p, regular):
-    """Start chance for a flagged player from Tan's 2,250-case FPL flag study."""
+    """Flagged players: FPL's own chance of playing, as published. No historical adjustment."""
     c = p["chance_of_playing_next_round"]
     if c is None or c == 100:
         return None, None
-    if c == 0:
-        return 0.0, "0% flag"
-    if c <= 25:
-        return 0.04, "25% flag: 2-7% started in the study"
-    if c <= 50:
-        return 0.12, "50% flag: 6-19% started in the study"
-    if not regular:
-        return float(study["non-regular, 75% flag"]["pct_started"]), "75% flag, not a regular starter"
-    age = (DEADLINE - ts(p["news_added"])).days if p.get("news_added") else 0
-    row = ("regular, flag unchanged >=21 days (news_added)" if age >= 21 else
-           "regular, flag unchanged >=14 days (news_added)" if age >= 14 else
-           "regular, flag age 7-14 days" if age >= 7 else "regular, flag age <7 days (fresh)")
-    return float(study[row]["pct_started"]), f"75% flag, {age} days old at the deadline"
+    return c / 100, f"FPL: {c}% chance of playing"
 
 
 def player(pid):
@@ -307,7 +290,7 @@ def player(pid):
     base = min(max(start_rate, 3 * em), 0.95)  # bench players get cameos; nailed starters keep a 5% miss chance
     mpg = min(em / base, 1.0) if base else 0.0
     fs, why = flag_start(p, regular)
-    nxt = fs if fs is not None else (0.0 if p["status"] in ("i", "s", "u", "n") else base)
+    nxt = base * fs if fs is not None else (0.0 if p["status"] in ("i", "s", "u", "n") else base)
     return dict(id=pid, name=p["web_name"], team=t, pos=pos, qg=min(xg90 / txg, 0.8) * mpg,
                 qa=min(xa90 / txg, 0.6) * mpg, p_next=nxt, p_later=base, flag_note=why,
                 xg=num(p["expected_goals"]) or 0, xa=num(p["expected_assists"]) or 0, mins=p["minutes"],
@@ -525,8 +508,8 @@ def m_team_table(kind):
 
 
 def m_captain():
-    c = json.loads(CAPTAIN.read_text())["model"]
-    lg, la_, sub = c["chart_case"]["lambda_g"], c["chart_case"]["lambda_a"], c["assumptions"]["p_sub60"]
+    c = json.loads(CAPTAIN.read_text())
+    lg, la_, sub = c["lambda_g"], c["lambda_a"], c["p_sub60"]
     v = sub + (1 - sub) * math.exp(-lg - la_)
     i = next_fx("MCI")
     return res(v, "medium", "captain_model",
@@ -535,18 +518,6 @@ def m_captain():
                f"plus a {sub:.0%} chance he misses out or plays under 60 minutes.",
                [dict(label="Haaland expected goals at Anfield (from anytime-scorer odds)", value=f"{lg:.2f}", source_url=FPL),
                 dict(label="Haaland expected assists (from assist odds)", value=f"{la_:.2f}", source_url=FPL)] + fx_in(i), i) | dict(pid=411)
-
-
-def m_start(name, team):
-    pid = find(name, team)
-    m = player(pid)
-    i = next_fx(team)
-    note = m["flag_note"] or f"no flag; started {m['starts']} of {m['team_games']}"
-    p = EL[pid]
-    return res(m["p_next"], "medium" if m["flag_note"] else "low", "flag_study",
-               f"Start chance from Tan's study of 2,250 FPL injury flags since 2019 ({note}). Press-conference news can move this a lot.",
-               [dict(label=f'FPL status: {p["status"]}, chance of playing {p["chance_of_playing_next_round"]}%',
-                     value=p["news"] or "no news", source_url=FPL)], i) | dict(pid=pid)
 
 
 def m_fpl_vs(a, ta, b, tb, gws):
@@ -745,7 +716,7 @@ SPECS = [
     (r"Tottenham be in the Premier League bottom three after Matchweek 9", lambda: m_team_table("spurs_b3")),
     (r"Man City be 3\+ points clear at the top", lambda: m_team_table("city_clear")),
     (r"most-captained player score 3 or fewer", m_captain),
-    (r"Jo.o Pedro start for Chelsea vs Bournemouth", lambda: m_start("João Pedro", "CHE")),
+    (r"Jo.o Pedro start for Chelsea vs Bournemouth", lambda: unp("Comes down to team news: the press conference, then lineups 75 minutes before kick-off.")),
     (r"Haaland be the most selected Captain", lambda: U("captain_share")),
     (r"Josh King score more FPL points than Pascal", lambda: m_fpl_vs("King", "FUL", "Groß", "BHA", {6})),
     (r"outscore Chelsea, Arsenal, and Man Utd combined in GW7", lambda: (lambda c: res((goals("MCI", sel(team="MCI", gws={7})) > sum((goals(t, sel(team=t, gws={7})) for t in ("CHE", "ARS", "MUN")), np.zeros(N, np.int32))).mean(), fx_conf(sel(team="MCI", gws={7})), "match_model", "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.", fx_in(sel(team="MCI", gws={7})[0])))(None)),
@@ -906,15 +877,16 @@ for pid, p in EL.items():
 players.sort(key=lambda x: -x["xpts"])
 captain = [dict(id=x["id"], name=x["name"], team=x["team"], xpts=x["xpts"], p_goal=x["p_goal"],
                 p_assist=x["p_assist"], p_blank=x["p_blank"]) for x in players[:10]]
-flags = []  # every flagged player owned by 1%+: FPL's chance vs the start rate in Tan's flag study
+flags = []  # every flagged player owned by 1%+: FPL's published chance and news
 for pid, p in EL.items():
     c = p["chance_of_playing_next_round"]
     if c is None or c == 100 or (num(p["selected_by_percent"]) or 0) < 1:
         continue
     m = player(pid)
     flags.append(dict(id=pid, name=m["name"], team=m["team"], pos=POS[m["pos"]], owned_pct=num(p["selected_by_percent"]),
-                      fpl_chance=c, study_start=round(m["p_next"], 3), regular=m["regular"], note=m["flag_note"],
-                      news=p["news"], flag_days=(DEADLINE - ts(p["news_added"])).days if p.get("news_added") else None))
+                      fpl_chance=c, news=p["news"], regular=m["regular"],
+                      xo_markets=[b["slug"] for b in board if fold(p["web_name"]) in fold(b["title"])
+                                  or fold(f'{p["first_name"]} {p["second_name"]}') in fold(b["title"])]))
 flags.sort(key=lambda x: -x["owned_pct"])
 xg_table = sorted((dict(id=p["id"], name=p["web_name"], team=TEAMS[p["team"]], pos=POS[p["element_type"]], minutes=p["minutes"],
                         goals=p["goals_scored"], xg=round(num(p["expected_goals"]) or 0, 2), assists=p["assists"],
