@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T20:04:29Z",
+ "generated_at": "2026-10-08T20:11:42Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -1016,7 +1016,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($29,167 traded)",
+      "label": "Polymarket Liverpool v Man City ($29,195 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -1243,21 +1243,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5796,
-    "low": 0.4796,
-    "high": 0.6796,
+    "p": 0.5743,
+    "low": 0.4743,
+    "high": 0.6743,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "14.5%",
+      "value": "14.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "0.9%",
+      "value": "2.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1282,13 +1282,13 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "19.8%",
+      "value": "19.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 53,
+   "gap_pts": 52,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1653,6 +1653,68 @@
    }
   },
   {
+   "slug": "will-brighton-outscore-arsenal-across-premier-leag-6832",
+   "title": "Will Brighton outscore Arsenal across Premier League Matchweeks 6\u20138?",
+   "url": "https://beta.xo.market/event/will-brighton-outscore-arsenal-across-premier-leag-6832?r=cryptotan01",
+   "creator": "xouser56971",
+   "is_ours": false,
+   "xo_price": 0.45,
+   "best_bid": null,
+   "best_ask": 0.45,
+   "liquidity_usd": 4.5,
+   "volume_usd": 20.31,
+   "expires_at": "2026-10-25T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.3555,
+    "low": 0.2555,
+    "high": 0.4555,
+    "confidence": "low",
+    "method": "match_model",
+    "method_text": "Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO.",
+    "inputs": [
+     {
+      "label": "Fixtures",
+      "value": "3 for BHA, 3 for ARS",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": -9,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "I\u2019m backing YES: Brighton outscore Arsenal across MW6\u20138. Arsenal fans , does your fixture list beat Brighton\u2019s attack?",
+   "description": "Compare each club\u2019s total goals across these Premier League Matchweek 6\u20138 fixtures only: Brighton:\u2022 Sunderland vs Brighton\u2022 Brighton vs Crystal Palace\u2022 Liverpool vs BrightonArsenal:\u2022 Arsenal vs Leeds United\u2022 Nottingham Forest vs Arsenal\u2022 Arsenal vs EvertonAdd the goals scored by each club across its three listed matches. Individual match results, league points and goal difference do not matter. Use the official Premier League final scores. Own goals count towards the team total credited in the official score. Only regulation time and stoppage time count. Cup matches, European matches and penalty shootouts do not count. Do not substitute other fixtures if the schedule changes. Postponed matches count only if completed by the deadline. If any listed match is not completed by the deadline, the outcome is NO. Resolution deadline: 25 October 2026 at 22:00 UTC. Resolution source: PremierLeague. com",
+   "resolution_sources": [
+    "https://PremierLeague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 10.0
+      }
+     ],
+     "last": 0.45
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 10.0
+      }
+     ],
+     "asks": [],
+     "last": 0.55
+    }
+   }
+  },
+  {
    "slug": "will-haaland-score-in-at-least-2-of-man-citys-next-5947",
    "title": "Will Haaland score in at least 2 of Man City's next 3 Premier League matches?",
    "url": "https://beta.xo.market/event/will-haaland-score-in-at-least-2-of-man-citys-next-5947?r=cryptotan01",
@@ -1680,7 +1742,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($29,167 traded)",
+      "label": "Polymarket Liverpool v Man City ($29,195 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -2534,7 +2596,7 @@
     "method_text": "Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($33,267 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,336 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -2802,7 +2864,7 @@
     "method_text": "Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($33,267 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,336 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -2923,7 +2985,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($33,267 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,336 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3468,7 +3530,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/pipeline/ref/captain_odds.json"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($29,167 traded)",
+      "label": "Polymarket Liverpool v Man City ($29,195 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -3663,21 +3725,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5361,
-    "low": 0.4361,
-    "high": 0.6361,
+    "p": 0.5311,
+    "low": 0.4311,
+    "high": 0.6311,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "14.5%",
+      "value": "14.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "0.9%",
+      "value": "2.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3702,13 +3764,13 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "19.8%",
+      "value": "19.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 21,
+   "gap_pts": 20,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -4312,7 +4374,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($33,267 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,336 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -4354,68 +4416,6 @@
      "bids": [],
      "asks": [],
      "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-brighton-outscore-arsenal-across-premier-leag-6832",
-   "title": "Will Brighton outscore Arsenal across Premier League Matchweeks 6\u20138?",
-   "url": "https://beta.xo.market/event/will-brighton-outscore-arsenal-across-premier-leag-6832?r=cryptotan01",
-   "creator": "xouser56971",
-   "is_ours": false,
-   "xo_price": 0.45,
-   "best_bid": null,
-   "best_ask": 0.45,
-   "liquidity_usd": 4.5,
-   "volume_usd": 20.31,
-   "expires_at": "2026-10-25T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.3555,
-    "low": 0.2555,
-    "high": 0.4555,
-    "confidence": "low",
-    "method": "match_model",
-    "method_text": "Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO.",
-    "inputs": [
-     {
-      "label": "Fixtures",
-      "value": "3 for BHA, 3 for ARS",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": -9,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "I\u2019m backing YES: Brighton outscore Arsenal across MW6\u20138. Arsenal fans , does your fixture list beat Brighton\u2019s attack?",
-   "description": "Compare each club\u2019s total goals across these Premier League Matchweek 6\u20138 fixtures only: Brighton:\u2022 Sunderland vs Brighton\u2022 Brighton vs Crystal Palace\u2022 Liverpool vs BrightonArsenal:\u2022 Arsenal vs Leeds United\u2022 Nottingham Forest vs Arsenal\u2022 Arsenal vs EvertonAdd the goals scored by each club across its three listed matches. Individual match results, league points and goal difference do not matter. Use the official Premier League final scores. Own goals count towards the team total credited in the official score. Only regulation time and stoppage time count. Cup matches, European matches and penalty shootouts do not count. Do not substitute other fixtures if the schedule changes. Postponed matches count only if completed by the deadline. If any listed match is not completed by the deadline, the outcome is NO. Resolution deadline: 25 October 2026 at 22:00 UTC. Resolution source: PremierLeague. com",
-   "resolution_sources": [
-    "https://PremierLeague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.45,
-       "size": 10.0
-      }
-     ],
-     "last": 0.45
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.55,
-       "size": 10.0
-      }
-     ],
-     "asks": [],
-     "last": 0.55
     }
    }
   },
