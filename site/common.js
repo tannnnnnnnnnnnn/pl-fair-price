@@ -11,6 +11,7 @@ const CONFIG = {
 const CHANGELOG = [
   { version: 'v1', date: 'Thu 8 Oct 2026', notes: 'First public version: XO vs Fair for every Premier League market, GW numbers for FPL managers.' },
   { version: 'v1.1', date: 'Thu 8 Oct 2026', notes: 'Gameweek numbers moved to their own page. Low-confidence prices now read "Rough".' },
+  { version: 'v1.2', date: 'Thu 8 Oct 2026', notes: "Added elevenify's predicted goals for each gameweek match as a second opinion." },
 ];
 
 const TEAMS = {
@@ -39,7 +40,7 @@ const teamCode = (x) => {
 };
 const CRESTS = new Set(['ARS', 'AVL', 'BHA', 'BOU', 'BRE', 'CHE', 'COV', 'CRY', 'EVE', 'FUL', 'HUL', 'IPS', 'LEE', 'LIV', 'MCI', 'MUN', 'NEW', 'NFO', 'SUN', 'TOT']);
 
-const state = { board: null, proj: null, markets: [], live: new Set(), bySlug: {}, players: {}, sort: 'match', mock: false };
+const state = { board: null, proj: null, eleven: null, markets: [], live: new Set(), bySlug: {}, players: {}, sort: 'match', mock: false };
 
 /* ---------- tiny helpers ---------- */
 
@@ -106,7 +107,8 @@ async function loadSet(dir) {
   const board = await getJSON(`${dir}/board.json?v=${bust}`);
   const v = encodeURIComponent(board.generated_at || bust);
   const proj = await getJSON(`${dir}/projections.json?v=${v}`).catch(() => null);
-  return { board, proj };
+  const eleven = await getJSON(`${dir}/elevenify.json?v=${v}`).catch(() => null);
+  return { board, proj, eleven };
 }
 
 function cleanMarket(m) {
@@ -141,12 +143,27 @@ async function loadData() {
   if (!set) return false;
   state.board = set.board;
   state.proj = set.proj;
+  state.eleven = set.eleven;
   state.live = new Set(Array.isArray(set.board.live) ? set.board.live : []);
   state.markets = set.board.markets.map(cleanMarket);
   state.markets.forEach((m) => { state.bySlug[m.slug] = m; });
   ((set.proj && set.proj.players) || []).forEach((p) => { state.players[p.id] = p; });
   return true;
 }
+
+// elevenify's predicted goals [home, away] for a fixture in the current gameweek, or null. Their goals table is keyed by
+// gameweek, so a stale chart shows nothing; a team with two fixtures that week is skipped (their number would be a sum).
+function elevenGoals(home, away) {
+  const gw = state.proj && state.proj.gw, teams = state.eleven && state.eleven.goals, fx = (state.proj && state.proj.fixtures) || [];
+  if (!gw || !Array.isArray(teams) || !fx.some((f) => f.home === home && f.away === away)) return null;
+  const goals = (code) => {
+    const t = teams.find((x) => x.team === code);
+    return t && fx.filter((f) => f.home === code || f.away === code).length === 1 ? num(t.gw && t.gw[gw]) : null;
+  };
+  const h = goals(home), a = goals(away);
+  return h !== null && a !== null ? [h, a] : null;
+}
+const elevenText = (g) => `elevenify: ${g[0].toFixed(2)} to ${g[1].toFixed(2)} goals`;
 
 function setupPage() {
   const name = document.getElementById('site-name'), tag = document.getElementById('site-tagline');

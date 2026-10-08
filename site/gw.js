@@ -196,7 +196,7 @@ function renderGoals(proj) {
   const legend = h('div', { class: 'legend2' }, key('home', 'Home'), key('draw', 'Draw'), key('away', 'Away'));
   const list = h('ul', { class: 'gm-list' }, fx.map((f) => {
     const hn = f.home_name || teamName(f.home), an = f.away_name || teamName(f.away);
-    const vol = num(f.poly_volume);
+    const vol = num(f.poly_volume), eg = elevenGoals(f.home, f.away);
     const volText = vol === null ? 'Polymarket volume not available' : `${vol < 2000 ? 'Thin market: ' : ''}$${Math.round(vol).toLocaleString('en-US')} traded on Polymarket`;
     const li = h('li', { class: 'gm' },
       h('div', { class: 'gm-head' }, h('span', { class: 'gm-teams' }, crest(f.home, 20), h('b', { text: `${hn} v ${an}` }), crest(f.away, 20)), h('span', { class: 'gm-ko', text: f.kickoff_utc ? kickoffFmt(f.kickoff_utc) : '' })),
@@ -209,12 +209,15 @@ function renderGoals(proj) {
       h('div', { class: 'gm-1x2', role: 'img', 'aria-label': `${hn} ${pct0(f.p_home)}, draw ${pct0(f.p_draw)}, ${an} ${pct0(f.p_away)}` },
         h('i', { class: 'home', style: `flex:${f.p_home}` }), h('i', { class: 'draw', style: `flex:${f.p_draw}` }), h('i', { class: 'away', style: `flex:${f.p_away}` })),
       h('div', { class: 'gm-p' }, h('span', { text: `${hn} ${pct0(f.p_home)}` }), h('span', { text: `Draw ${pct0(f.p_draw)}` }), h('span', { text: `${an} ${pct0(f.p_away)}` })),
+      eg ? h('p', { class: 'gm-note', text: elevenText(eg) }) : null,
       h('p', { class: 'gm-note' }, volText, safeUrl(f.source_url) ? h('a', { href: safeUrl(f.source_url), target: '_blank', rel: 'noopener', text: ' source' }) : null));
     attachTip(li, [`${Number(f.lam_home).toFixed(2)} to ${Number(f.lam_away).toFixed(2)} expected goals`, `${hn} ${pct0(f.p_home)} · Draw ${pct0(f.p_draw)} · ${an} ${pct0(f.p_away)}`]);
     return li;
   }));
-  body.replaceChildren(legend, list, h('p', { class: 'note', text: `Goal bars run from 0 to ${max.toFixed(1)}.` }),
-    tableView(['Match', 'xG H', 'xG A', 'H / D / A'], fx.map((f) => [`${f.home} v ${f.away}`, Number(f.lam_home).toFixed(2), Number(f.lam_away).toFixed(2), `${pct0(f.p_home)} / ${pct0(f.p_draw)} / ${pct0(f.p_away)}`])));
+  const credit = fx.some((f) => elevenGoals(f.home, f.away))
+    ? h('p', { class: 'credits' }, 'Second opinion on goals: ', h('a', { href: 'https://www.elevenify.com', target: '_blank', rel: 'noopener', text: 'elevenify' }), '.') : null;
+  body.replaceChildren(...[credit, legend, list, h('p', { class: 'note', text: `Goal bars run from 0 to ${max.toFixed(1)}.` }),
+    tableView(['Match', 'xG H', 'xG A', 'H / D / A'], fx.map((f) => [`${f.home} v ${f.away}`, Number(f.lam_home).toFixed(2), Number(f.lam_away).toFixed(2), `${pct0(f.p_home)} / ${pct0(f.p_draw)} / ${pct0(f.p_away)}`]))].filter(Boolean));
 }
 
 /* ---------- (f) over- and under-performers: scatter with a parity line ---------- */
