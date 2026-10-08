@@ -53,38 +53,29 @@ const kickoffFmt = (iso) => {
 };
 const pct0 = (p) => Math.round(p * 100) + '%';
 
-/* ---------- (b) flag check: FPL says vs history says ---------- */
+/* ---------- (b) doubts: FPL's injury flags and news, nothing else ---------- */
 
-function flagRow(f) {
-  const fpl = Number(f.fpl_chance), hist = Number(f.study_start) * 100;
-  const lo = Math.min(fpl, hist), hi = Math.max(fpl, hist);
-  const meta = [f.owned_pct !== null && f.owned_pct !== undefined ? `${Number(f.owned_pct).toFixed(f.owned_pct >= 10 ? 0 : 1)}% owned` : null,
-    f.flag_days !== null && f.flag_days !== undefined ? `flag ${f.flag_days} day${f.flag_days === 1 ? '' : 's'} old` : null].filter(Boolean).join(' · ');
-  const row = h('li', { class: 'fl' },
-    h('div', { class: 'fl-top' },
-      h('span', { class: 'fl-id' }, crest(f.team, 20), h('span', { class: 'fl-name', text: f.name }), h('span', { class: 'fl-pos', text: f.pos })),
-      h('span', { class: 'fl-vals' }, h('i', { class: 'lgd fpl' }), h('span', { text: Math.round(fpl) + '%' }), h('i', { class: 'lgd hist' }), h('b', { text: Math.round(hist) + '%' }))),
-    h('div', { class: 'rail2', role: 'img', 'aria-label': `FPL says ${Math.round(fpl)}%, history says ${Math.round(hist)}%` },
-      h('i', { class: 'link', style: `left:${lo}%;width:${hi - lo}%` }),
-      h('i', { class: 'd fpl', style: `left:${fpl}%` }),
-      h('i', { class: 'd hist', style: `left:${hist}%` })),
-    h('div', { class: 'fl-meta', text: meta }));
-  attachTip(row, [`History ${Math.round(hist)}% vs FPL ${Math.round(fpl)}%`, `${f.name}, ${teamName(f.team)}`, meta, f.news || '']);
-  return row;
+function doubtRow(f) {
+  const chance = Math.round(Number(f.fpl_chance));
+  const tier = chance >= 75 ? 'c75' : chance >= 50 ? 'c50' : chance >= 25 ? 'c25' : 'c0';
+  const own = num(f.owned_pct) !== null ? `${Number(f.owned_pct).toFixed(f.owned_pct >= 10 ? 0 : 1)}% owned` : null;
+  return h('li', { class: 'db' },
+    h('div', { class: 'db-top' },
+      h('span', { class: 'db-id' }, crest(f.team, 20), h('span', { class: 'db-name', text: f.name }), h('span', { class: 'db-pos', text: f.pos })),
+      h('span', { class: 'fpl-pill ' + tier, text: `FPL ${chance}%`, title: `FPL's chance of playing: ${chance}%` })),
+    f.news ? h('p', { class: 'db-news', text: f.news }) : null,
+    h('div', { class: 'db-foot' }, own ? h('span', { class: 'db-own', text: own }) : null, xoChips(f)));
 }
 
-function renderFlags(proj) {
+function renderDoubts(proj) {
   const body = document.getElementById('fl-body');
-  const flags = ((proj && proj.flags) || []).filter((f) => num(f.fpl_chance) !== null && num(f.study_start) !== null && (num(f.owned_pct) || 0) >= 1)
-    .sort((a, b) => b.owned_pct - a.owned_pct);
-  if (!flags.length) { body.replaceChildren(h('p', { class: 'empty', text: 'No flagged players owned by 1% or more right now.' })); return; }
+  const flags = ((proj && proj.flags) || []).filter((f) => num(f.fpl_chance) !== null)
+    .sort((a, b) => (num(b.owned_pct) || 0) - (num(a.owned_pct) || 0));
+  if (!flags.length) { body.replaceChildren(h('p', { class: 'empty', text: 'No injury doubts flagged by FPL for this gameweek.' })); return; }
   const top = flags.slice(0, 12), rest = flags.slice(12);
-  const legend = h('div', { class: 'legend2 fl-legend' }, key('fpl', 'FPL says'), key('hist', 'History says'), h('span', { class: 'lg-note', text: 'Sorted by ownership' }));
-  const scale = h('div', { class: 'scale' }, h('span', { text: '0%' }), h('span', { text: '50%' }), h('span', { text: '100%' }));
-  const kids = [legend, scale, h('ul', { class: 'fl-list' }, top.map(flagRow))];
-  if (rest.length) kids.push(h('details', { class: 'more' }, h('summary', { text: `${rest.length} more flagged player${rest.length === 1 ? '' : 's'}` }), h('ul', { class: 'fl-list' }, rest.map(flagRow))));
-  kids.push(h('p', { class: 'note', text: 'History, not news. Press conferences can change this.' }));
-  kids.push(tableView(['Player', 'FPL', 'History', 'Owned'], flags.map((f) => [`${f.name} (${f.team})`, Math.round(f.fpl_chance) + '%', Math.round(f.study_start * 100) + '%', Number(f.owned_pct).toFixed(1) + '%'])));
+  const kids = [h('p', { class: 'db-legend' }, 'The pill is FPL\'s chance of playing. ', h('span', { class: 'fpl-pill c75', text: '75%' }), h('span', { class: 'fpl-pill c50', text: '50%' }), h('span', { class: 'fpl-pill c25', text: '25%' }), h('span', { class: 'fpl-pill c0', text: '0%' }), ' Greyer is safer, pinker is riskier. Sorted by ownership.'),
+    h('ul', { class: 'db-list' }, top.map(doubtRow))];
+  if (rest.length) kids.push(h('details', { class: 'more' }, h('summary', { text: `${rest.length} more doubt${rest.length === 1 ? '' : 's'}` }), h('ul', { class: 'db-list' }, rest.map(doubtRow))));
   body.replaceChildren(...kids);
 }
 
@@ -93,7 +84,7 @@ function renderFlags(proj) {
 function xoChips(p) {
   const chips = (Array.isArray(p.xo_markets) ? p.xo_markets : []).map((s) => state.bySlug[s]).filter(Boolean).map((m) => {
     const t = m.title.toLowerCase();
-    const kind = /assist/.test(t) ? 'Assist' : /clean sheet/.test(t) ? 'Clean sheet' : /(score|goal)/.test(t) ? 'Goal' : /captain/.test(t) ? 'Captain' : 'Market';
+    const kind = /\bstart\b/.test(t) ? 'Starts' : /\bvs\b/.test(t) && /(more|most|outscore)/.test(t) ? 'Head to head' : /assist/.test(t) ? 'Assist' : /clean sheet/.test(t) ? 'Clean sheet' : /(score|goal)/.test(t) ? 'Goal' : /captain/.test(t) ? 'Captain' : 'Market';
     return h('a', { class: 'xchip', href: tradeUrl(m), target: '_blank', rel: 'noopener', title: m.title },
       `${kind} · XO ${m.xo_price !== null ? pct(m.xo_price) : 'no trades'}`);
   });
@@ -286,7 +277,7 @@ async function init() {
   if (num(proj.league_avg_goals) !== null) {
     document.getElementById('how-text').textContent = `Match odds come from Polymarket. Average goals are calibrated to the league's ${Number(proj.league_avg_goals).toFixed(2)} goals per game. Player shares come from FPL xG and xA. Rough model, no bonus or defensive points.`;
   }
-  renderFlags(proj);
+  renderDoubts(proj);
   renderCaptain(proj);
   renderCS(proj);
   renderGoals(proj);

@@ -33,6 +33,8 @@ POLY = "https://polymarket.com/event/"
 FPL = "https://fantasy.premierleague.com/api/bootstrap-static/"
 FPL_FIX = "https://fantasy.premierleague.com/api/fixtures/"
 BAND = {"high": 0.03, "medium": 0.06, "low": 0.10}
+REPO = "https://github.com/tannnnnnnnnnnnn/pl-fair-price"
+VERIFY_URL = REPO + "/blob/main/VERIFY.md"
 
 
 def load(name):
@@ -345,14 +347,15 @@ def fx_in(i):
                 source_url=z["url"]) if z["url"] else
            dict(label=f'{TNAME[z["h"]]} v {TNAME[z["a"]]}', value="team ratings (no Polymarket market yet)",
                 source_url=FPL_FIX))
-    lam = dict(label=f'Expected goals {z["h"]}-{z["a"]}', value=f'{z["lh"]:.2f}-{z["la"]:.2f}', source_url=FPL_FIX)
+    lam = dict(label=f'Model expected goals {z["h"]}-{z["a"]}', value=f'{z["lh"]:.2f}-{z["la"]:.2f}', source_url=VERIFY_URL)
     return [src, lam]
 
 
 def fx_conf(ix):
     if all(FX[i]["vol"] > 20000 for i in ix):
         return "high"
-    return "medium" if all(FX[i]["url"] for i in ix) else "low"  # team-ratings fixtures are too noisy for medium
+    # medium needs a real Polymarket price ($1,000+ traded) on every fixture; thin or ratings-only fixtures are low
+    return "medium" if all(FX[i]["url"] and FX[i]["vol"] >= 1000 for i in ix) else "low"
 
 
 def team_fx(team, gw=GW):
@@ -373,21 +376,21 @@ def poly_ev(title, picks):
     for m in e["markets"]:
         if any(k in m["question"] for k in picks):
             pr, spread = pprice(m)
-            out.append((m["question"], pr, spread))
+            out.append((m["question"], pr, spread, num(m.get("volume")) or 0))
     return e, out
 
 
-def direct(title, pick, xo_side=True):
+def direct(title, pick, xo_side=True, note=""):
     got = poly_ev(title, [pick])
     if not got or not got[1]:
         return unp("Matching Polymarket market not found")
     e, ms = got
-    q, pr, spread = ms[0]
+    q, pr, spread, vol = ms[0]
     spread = spread if spread is not None else 1
-    conf = "high" if e.get("volume", 0) > 20000 and spread <= 0.04 else "medium" if spread <= 0.04 else "low"
+    conf = "high" if vol > 20000 and spread <= 0.04 else "medium" if spread <= 0.04 else "low"
     p = pr if xo_side else 1 - pr
-    return res(p, conf, "polymarket", f"Taken straight from Polymarket's matching market: \"{q}\"",
-               [dict(label=q, value=f"{pr:.1%} (spread {spread*100:.0f}c, ${e.get('volume', 0):,.0f} traded)",
+    return res(p, conf, "polymarket", f"Taken straight from Polymarket's matching market: \"{q}\"" + (f" {note}" if note else ""),
+               [dict(label=q, value=f"{pr:.1%} (spread {spread*100:.0f}c, ${vol:,.0f} traded on this market)",
                      source_url=POLY + e["slug"])])
 
 
@@ -459,6 +462,9 @@ def m_player_total(name, team, need, until):
     G, _, m = psim(pid, ix)
     have = EL[pid]["goals_scored"]
     v = (G.sum(axis=1) >= need).mean()
+    if have > 0:
+        return readings((have + G.sum(axis=1) >= need).mean(), v, f"season total (he has {have} already)",
+                        "only goals from now", "low", "player_model", [p_in(m)]) | dict(pid=pid)
     return res(v, "low", "player_model",
                f"Chance {m['name']} scores {need}+ more league goals by {until:%d %b} across {len(ix)} fixtures. He has {have} already; the market opened during the international break, so we count only new goals (our reading).",
                [p_in(m), dict(label="Goals so far", value=str(have), source_url=FPL)]) | dict(pid=pid)
@@ -516,8 +522,10 @@ def m_captain():
                "Assumes Haaland is GW6's most-captained player (he was in GW5). Blank = no goal and no assist; "
                "goal and assist rates come from bookmaker odds for Liverpool v City (Tan's captain model, 6 Oct), "
                f"plus a {sub:.0%} chance he misses out or plays under 60 minutes.",
-               [dict(label="Haaland expected goals at Anfield (from anytime-scorer odds)", value=f"{lg:.2f}", source_url=FPL),
-                dict(label="Haaland expected assists (from assist odds)", value=f"{la_:.2f}", source_url=FPL)] + fx_in(i), i) | dict(pid=411)
+               [dict(label="Haaland expected goals at Anfield (bookmaker anytime-scorer odds, 6 Oct)", value=f"{lg:.2f}",
+                     source_url=REPO + "/blob/main/pipeline/ref/captain_odds.json"),
+                dict(label="Haaland expected assists (bookmaker assist odds, 6 Oct)", value=f"{la_:.2f}",
+                     source_url=REPO + "/blob/main/pipeline/ref/captain_odds.json")] + fx_in(i), i) | dict(pid=411)
 
 
 def m_fpl_vs(a, ta, b, tb, gws):
@@ -560,9 +568,8 @@ def m_lowest_game():
     ix = sel(date=FX[i]["ko"].date().isoformat())
     tot = {j: GH[:, j].astype(np.int32) + GA[:, j] for j in ix}
     others = np.min(np.array([tot[j] for j in ix if j != i]), axis=0)
-    return res((tot[i] <= others).mean(), "medium", "match_model",
-               f"Chance Man Utd v Spurs has the fewest goals of the {len(ix)} league games that day. Joint-lowest counts as YES (our reading).",
-               fx_in(i), i)
+    return readings((tot[i] <= others).mean(), (tot[i] < others).mean(), f"joint-lowest of the {len(ix)} games that day counts",
+                    "only the strict lowest counts", "low", "match_model", fx_in(i), i)
 
 
 def m_goals_on(date, need):
@@ -622,17 +629,19 @@ def m_any_big3_lose():
     lose_mci = ga("MCI", i1) > gf("MCI", i1)
     lose_liv = ga("LIV", i1) > gf("LIV", i1) if "LIV" in (FX[i1]["h"], FX[i1]["a"]) else np.zeros(N, bool)
     lose_mun = ga("MUN", i2) > gf("MUN", i2)
-    return res((lose_mci | lose_liv | lose_mun).mean(), fx_conf([i1, i2]), "match_model",
-               "Liverpool v City only avoids a loser with a draw; add Man Utd losing to Spurs.", fx_in(i1) + fx_in(i2))
+    return readings((lose_mci | lose_liv | lose_mun).mean(), lose_mun.mean(), "whole matchweek (Liverpool v City only avoids a loser with a draw)",
+                    "only games before the XO market closes on Saturday (just Man Utd v Spurs)", "low", "match_model",
+                    fx_in(i1) + fx_in(i2))
 
 
 def m_ipswich_coventry():
     got = poly_ev("Premier League: Teams relegated (2026-27)", ["Ipswich", "Coventry"])
     e, ms = got
-    p = {("IPS" if "Ipswich" in q else "COV"): pr for q, pr, _ in ms}
-    return res(p["IPS"] * p["COV"], "medium", "polymarket",
-               "Polymarket's relegation prices for each club multiplied together (treats the two as independent).",
-               [dict(label=q, value=f"{pr:.1%}", source_url=POLY + e["slug"]) for q, pr, _ in ms])
+    p = {("IPS" if "Ipswich" in q else "COV"): pr for q, pr, _, _ in ms}
+    return res(p["IPS"] * p["COV"], "low", "polymarket",
+               "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two "
+               "compete, so the true chance is a few points lower (about 21% under a correlated model).",
+               [dict(label=q, value=f"{pr:.1%}", source_url=POLY + e["slug"]) for q, pr, _, _ in ms])
 
 
 def m_chelsea_spurs():
@@ -641,12 +650,17 @@ def m_chelsea_spurs():
     sc = goals("TOT", t)
     season = ((table["CHE"]["ga"] + conc) > (table["TOT"]["gf"] + sc)).mean()
     fresh = (conc > sc).mean()
-    return res(season, "low", "match_model",
-               f"Two readings. Season totals by 1 Nov (Chelsea have conceded {table['CHE']['ga']}, Spurs have scored "
-               f"{table['TOT']['gf']}): {season:.0%}. Only goals from now to 1 Nov: {fresh:.0%}. The question doesn't say "
-               "which, so we show the season-total reading at low confidence.",
-               [dict(label="Fixtures to 1 Nov", value=f"{len(c)} Chelsea, {len(t)} Spurs", source_url=FPL_FIX),
-                dict(label="From-now reading", value=f"{fresh:.1%}", source_url=FPL_FIX)])
+    return readings(season, fresh, f"season totals (Chelsea have conceded {table['CHE']['ga']}, Spurs have scored {table['TOT']['gf']})",
+                    "only goals from now to 1 Nov", "low", "match_model",
+                    [dict(label="Fixtures to 1 Nov", value=f"{len(c)} Chelsea, {len(t)} Spurs", source_url=FPL_FIX)])
+
+
+def readings(a, b, label_a, label_b, conf, method, inputs, fx=None):
+    """Two fair readings of an ambiguous question: no number if they differ by more than 25 pts."""
+    txt = f"Two readings: {label_a}: {a:.0%}. {label_b}: {b:.0%}."
+    if abs(a - b) > 0.25:
+        return unp(txt + " They differ too much to show one number.")
+    return res(a, "low", method, txt + " We show the first, at low confidence.", inputs, fx)
 
 
 UNPRICED = {
@@ -725,7 +739,7 @@ SPECS = [
     (r"Next Premier League Hat-Trick", lambda: U("ambiguous")),
     (r"Saka score 3\+ EPL goals", lambda: m_player_total("Saka", "ARS", 3, XMAS)),
     (r"over 20 points docked", lambda: deduction(21)),
-    (r"Man City Premier League title be stripped", lambda: direct("Man City to be stripped of EPL title by June 30, 2027?", "stripped")),
+    (r"Man City Premier League title be stripped", lambda: direct("Man City to be stripped of EPL title by June 30, 2027?", "stripped", note="Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.") | dict(conf="low")),
     (r"10 or more points deducted", lambda: deduction(10)),
     (r"Isak vs Jo.o Pedro", lambda: m_player_vs("Isak", "LIV", "João Pedro", "CHE", until=dt.datetime(2027, 5, 31, tzinfo=dt.timezone.utc), season=True)),
     (r"Haaland \+ Saka outscore Tottenham", lambda: (lambda: (lambda h, s, t: res(((h[0].sum(1) + s[0].sum(1)) > goals("TOT", t)).mean(), "low", "player_model", "Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES.", [p_in(h[2]), p_in(s[2])] + fx_in(t[0])))(psim(411, sel(team="MCI", gws={6})), psim(find("Saka", "ARS"), sel(team="ARS", gws={6})), sel(team="TOT", gws={6})))()),
@@ -733,7 +747,7 @@ SPECS = [
     (r"Haaland will score more goals than Tottenham Hotspurs by Boxing Day", lambda: m_player_vs_team("Haaland", "MCI", "TOT", BOXING)),
     (r"Miss Their Next Penalty", lambda: U("pen")),
     (r"Haaland vs Bruno Fernandes", lambda: m_player_vs("Haaland", "MCI", "Fernandes", "MUN", until=XMAS, season=True)),
-    (r"fewer than 4 Premier League wins by Christmas", lambda: m_team_count("TOT", "wins_lt", 4, sel(team="TOT", until=dt.datetime(2026, 12, 18, 14, tzinfo=dt.timezone.utc)), f"Spurs (now {table['TOT']['w']} wins) finish the run to 18 Dec with fewer than 4 league wins.")),
+    (r"fewer than 4 Premier League wins by Christmas", lambda: m_team_count("TOT", "wins_lt", 4, sel(team="TOT", until=XMAS), f"Spurs (now {table['TOT']['w']} wins) have fewer than 4 league wins by Christmas.")),
     (r"Man Utd win fewer than 2 Premier League matches in October", lambda: (lambda ix: res(
         (sum((gf("MUN", i) > ga("MUN", i) for i in ix), np.zeros(N, np.int32)) < 2).mean(), fx_conf(ix), "match_model",
         f"Man Utd win 0 or 1 of their {len(ix)} October league matches.",
@@ -763,8 +777,12 @@ for r in xo:
     bids = [num(b["price"]) for b in book.get("bids") or [] if num(b.get("price"))]
     asks = [num(a["price"]) for a in book.get("asks") or [] if num(a.get("price"))]
     bb, ba = (max(bids) if bids else None), (min(asks) if asks else None)
+    outs = mk.get("outcomes") or []
+    yes = next((o for o in outs if str(o.get("title", "")).lower() == "yes"), outs[0] if outs else {})
+    cp = num(yes.get("currentPrice"))
+    cp = cp / 1e6 if cp is not None and cp > 1 else cp
     ltp = num(book.get("lastTradePrice"))
-    xo_p = ltp if ltp is not None else ((bb + ba) / 2 if bb is not None and ba is not None else None)
+    xo_p = cp if cp is not None else ltp  # XO's own displayed price; never a wide bid/ask midpoint
     spec = next((fn for pat, fn in SPECS if re.search(pat, r["title"], re.I)), None)
     try:
         out = spec() if spec else unp("Fair price coming: not modelled yet.")
