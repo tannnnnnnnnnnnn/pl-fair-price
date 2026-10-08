@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T19:04:14Z",
+ "generated_at": "2026-10-08T19:14:10Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -16,8 +16,8 @@
    "xo_price": 0.2,
    "best_bid": 0.15,
    "best_ask": 0.25,
-   "liquidity_usd": 5.07,
-   "volume_usd": 60.91,
+   "liquidity_usd": 4.19,
+   "volume_usd": 66.79,
    "expires_at": "2026-10-10T22:00:00.000Z",
    "group": "fixture",
    "fixture": {
@@ -66,7 +66,7 @@
      "bids": [
       {
        "price": 0.15,
-       "size": 18.811767
+       "size": 12.929421
       },
       {
        "price": 0.02,
@@ -103,7 +103,7 @@
      "asks": [
       {
        "price": 0.85,
-       "size": 18.811767
+       "size": 12.929421
       },
       {
        "price": 0.98,
@@ -1174,9 +1174,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5714,
-    "low": 0.4714,
-    "high": 0.6714,
+    "p": 0.5746,
+    "low": 0.4746,
+    "high": 0.6746,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1188,7 +1188,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "3.3%",
+      "value": "2.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1213,7 +1213,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "20.0%",
+      "value": "19.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1757,83 +1757,6 @@
    }
   },
   {
-   "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
-   "title": "Will Gyokeres outscore Bruno Fernandes across Premier League Matchweeks 6\u20137?",
-   "url": "https://beta.xo.market/event/will-gyokeres-outscore-bruno-fernandes-across-prem-4590?r=cryptotan01",
-   "creator": "xouser56971",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.45,
-   "best_ask": 0.55,
-   "liquidity_usd": 8.48,
-   "volume_usd": 20.83,
-   "expires_at": "2026-10-18T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.0386,
-    "low": 0,
-    "high": 0.1386,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
-    "inputs": [
-     {
-      "label": "Gy\u00f6keres: xG 0.00, xA 0.23 in 29 min, 0/5 starts",
-      "value": "10% of team goals, plays 19% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "B.Fernandes: xG 2.56, xA 1.32 in 450 min, 5/5 starts",
-      "value": "19% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": -46,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://theanalyst.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.45,
-       "size": 9.87192
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.55,
-       "size": 7.34546
-      }
-     ],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.45,
-       "size": 7.34546
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.55,
-       "size": 9.87192
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "will-chelseas-pl-clean-sheet-drought-reach-22-matc-1309",
    "title": "Will Chelsea's PL clean-sheet drought reach 22 matches after Bournemouth?",
    "url": "https://beta.xo.market/event/will-chelseas-pl-clean-sheet-drought-reach-22-matc-1309?r=cryptotan01",
@@ -1924,6 +1847,83 @@
       }
      ],
      "last": 0.275
+    }
+   }
+  },
+  {
+   "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
+   "title": "Will Gyokeres outscore Bruno Fernandes across Premier League Matchweeks 6\u20137?",
+   "url": "https://beta.xo.market/event/will-gyokeres-outscore-bruno-fernandes-across-prem-4590?r=cryptotan01",
+   "creator": "xouser56971",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": 0.45,
+   "best_ask": 0.55,
+   "liquidity_usd": 4.39,
+   "volume_usd": 29.92,
+   "expires_at": "2026-10-18T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.0386,
+    "low": 0,
+    "high": 0.1386,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
+    "inputs": [
+     {
+      "label": "Gy\u00f6keres: xG 0.00, xA 0.23 in 29 min, 0/5 starts",
+      "value": "10% of team goals, plays 19% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "B.Fernandes: xG 2.56, xA 1.32 in 450 min, 5/5 starts",
+      "value": "19% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": -46,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://theanalyst.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 0.781014
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 7.34546
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 7.34546
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 0.781014
+      }
+     ],
+     "last": 0.5
     }
    }
   },
@@ -3636,9 +3636,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5313,
-    "low": 0.4313,
-    "high": 0.6313,
+    "p": 0.5343,
+    "low": 0.4343,
+    "high": 0.6343,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3650,7 +3650,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "3.3%",
+      "value": "2.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3675,7 +3675,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "20.0%",
+      "value": "19.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
