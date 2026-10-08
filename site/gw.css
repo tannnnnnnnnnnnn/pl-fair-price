@@ -117,24 +117,18 @@
 .bar i { display: block; height: 100%; border-radius: 0 4px 4px 0; background: var(--pink); }
 .cs-v { text-align: right; font-size: 14px; font-weight: 800; font-variant-numeric: tabular-nums; }
 
-/* (e) goals per match: two-sided bar plus a thin 1X2 stack */
+/* (e) goals per match: xG numbers plus one 1X2 stack */
 .gm-list { display: grid; gap: 8px; }
 .gm { padding: 11px 12px; border: 1px solid var(--line); border-radius: 14px; min-width: 0; }
 .gm-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2px 10px; }
 .gm-teams { display: flex; align-items: center; gap: 7px; min-width: 0; font-size: 14.5px; }
 .gm-teams b { min-width: 0; overflow-wrap: anywhere; font-weight: 700; }
 .gm-ko { font-size: 12px; font-weight: 600; color: var(--ink-3); }
-.gm-bars { display: grid; grid-template-columns: 30px minmax(0, 1fr) 30px; column-gap: 8px; align-items: center; margin-top: 10px; }
-.gm-n { font: 900 16px/1 'Rubik', sans-serif; }
-.gm-n:last-child { text-align: right; }
-.gm-axis { position: relative; display: grid; grid-template-columns: 1fr 1fr; height: 12px; }
-.gm-axis::after { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; margin-left: -.5px; background: #cfcfd6; }
-.gm-half { display: flex; min-width: 0; }
-.gm-half.l { justify-content: flex-end; padding-right: 1px; }
-.gm-half.r { padding-left: 1px; }
-.gm-half i { display: block; height: 100%; }
-.gm-half.l i { background: var(--ink); border-radius: 4px 0 0 4px; }
-.gm-half.r i { background: var(--pink); border-radius: 0 4px 4px 0; }
+.gm-xg { display: flex; justify-content: space-between; margin-top: 11px; }
+.gm-xg span { display: flex; flex-direction: column; }
+.gm-xg span:last-child { align-items: flex-end; text-align: right; }
+.gm-xg b { font: 900 22px/1 'Rubik', sans-serif; }
+.gm-xg i { margin-top: 3px; color: var(--ink-3); font-size: 10px; font-style: normal; }
 .gm-1x2 { display: flex; gap: 2px; height: 6px; margin-top: 12px; }
 .gm-1x2 i { display: block; min-width: 2px; }
 .gm-1x2 .home { background: var(--ink); border-radius: 3px 0 0 3px; }
@@ -157,8 +151,6 @@
 .sc .tk { font: 500 10.5px 'Figtree', sans-serif; fill: #85858f; }
 .sc .ax { font: 600 11px 'Figtree', sans-serif; fill: #4b4b54; }
 .sc .pl { font: 700 11px 'Figtree', sans-serif; fill: #0a0a0a; stroke: #fff; stroke-width: 3px; paint-order: stroke; stroke-linejoin: round; }
-.pf-filters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-.pf-filters .pill { min-height: 30px; padding: 0 12px; }
 .perf-lists { display: grid; gap: 10px; margin-top: 14px; }
 .perf-rank { min-width: 0; padding: 11px; border: 1px solid var(--line); border-radius: 14px; }
 .perf-rank h3 { font: 800 14px/1.2 'Rubik', sans-serif; }
@@ -174,9 +166,19 @@
 /* table-view twin */
 .tview { margin-top: 12px; }
 .tview .tv { width: 100%; margin-top: 8px; table-layout: fixed; border-collapse: collapse; font-size: 12.5px; }
-.tv th, .tv td { padding: 5px 6px; text-align: left; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; vertical-align: top; }
+.tv th, .tv td { padding: 6px 5px; text-align: left; border-bottom: 1px solid #f0f0f3; overflow-wrap: anywhere; vertical-align: middle; }
 .tv th { font-weight: 700; color: var(--ink-2); }
-.tv .n { text-align: right; }
+.tv .n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tv-player b, .tv-player i { display: block; }
+.tv-player i { margin-top: 1px; color: var(--ink-3); font-size: 10.5px; font-style: normal; }
+.tv td.tv-pos { color: var(--pink); font-weight: 800; }
+.tv td.tv-neg { color: var(--ink-3); font-weight: 700; }
+
+@media (max-width: 430px) {
+  .tview .tv { font-size: 11.5px; }
+  .tv th, .tv td { padding-right: 3px; padding-left: 3px; }
+  .tv .tv-low { display: none; }
+}
 
 #tip { position: fixed; z-index: 20; max-width: 260px; padding: 8px 10px; border-radius: 10px; background: #000; color: #fff; font-size: 12px; line-height: 1.35; pointer-events: none; }
 #tip .tip-v { font-weight: 800; font-size: 13px; }

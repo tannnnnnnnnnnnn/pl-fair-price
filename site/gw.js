@@ -40,10 +40,14 @@ function key(cls, text) {
   return h('span', { class: 'lg' }, h('i', { class: 'lgd ' + cls }), text);
 }
 
-function tableView(cols, rows) {
+function tableView(cols, rows, opts = {}) {
   const t = h('table', { class: 'tv' },
-    h('thead', null, h('tr', null, cols.map((c, i) => h('th', { class: i ? 'n' : '', text: c })))),
-    h('tbody', null, rows.map((r) => h('tr', null, r.map((c, i) => h('td', { class: i ? 'n' : '', text: String(c) }))))));
+    h('thead', null, h('tr', null, cols.map((c, i) => h('th', { class: [i ? 'n' : '', (opts.hide || []).includes(i) ? 'tv-low' : ''].filter(Boolean).join(' '), text: c })))),
+    h('tbody', null, rows.map((r) => h('tr', null, r.map((c, i) => {
+      const cls = [i ? 'n' : '', (opts.hide || []).includes(i) ? 'tv-low' : '', opts.diff === i ? (Number(c) > 0 ? 'tv-pos' : 'tv-neg') : ''].filter(Boolean).join(' ');
+      if (i === 0 && c && typeof c === 'object') return h('td', { class: cls }, h('span', { class: 'tv-player' }, h('b', { text: c.name }), h('i', { text: `${c.team} · ${c.pos}` })));
+      return h('td', { class: cls, text: String(c) });
+    })))));
   return h('details', { class: 'tview' }, h('summary', { text: 'Table view' }), t);
 }
 
@@ -261,7 +265,6 @@ function renderGoals(proj) {
   const fx = [...((proj && proj.fixtures) || [])].filter((f) => num(f.lam_home) !== null && num(f.lam_away) !== null)
     .sort((a, b) => new Date(a.kickoff_utc) - new Date(b.kickoff_utc));
   if (!fx.length) { body.replaceChildren(h('p', { class: 'empty', text: 'Match numbers appear once the match model has run.' })); return; }
-  const max = Math.ceil(Math.max(...fx.flatMap((f) => [f.lam_home, f.lam_away])) * 2) / 2;
   const legend = h('div', { class: 'legend2' }, key('home', 'Home'), key('draw', 'Draw'), key('away', 'Away'));
   const list = h('ul', { class: 'gm-list' }, fx.map((f) => {
     const hn = f.home_name || teamName(f.home), an = f.away_name || teamName(f.away);
@@ -269,12 +272,9 @@ function renderGoals(proj) {
     const volText = vol === null ? 'Polymarket volume not available' : `${vol < 2000 ? 'Thin market: ' : ''}$${Math.round(vol).toLocaleString('en-US')} traded on Polymarket`;
     const li = h('li', { class: 'gm' },
       h('div', { class: 'gm-head' }, h('span', { class: 'gm-teams' }, crest(f.home, 20), h('b', { text: `${hn} v ${an}` }), crest(f.away, 20)), h('span', { class: 'gm-ko', text: f.kickoff_utc ? kickoffFmt(f.kickoff_utc) : '' })),
-      h('div', { class: 'gm-bars' },
-        h('b', { class: 'gm-n', text: Number(f.lam_home).toFixed(1) }),
-        h('div', { class: 'gm-axis', role: 'img', 'aria-label': `Expected goals ${Number(f.lam_home).toFixed(1)} to ${Number(f.lam_away).toFixed(1)}` },
-          h('div', { class: 'gm-half l' }, h('i', { style: `width:${(f.lam_home / max) * 100}%` })),
-          h('div', { class: 'gm-half r' }, h('i', { style: `width:${(f.lam_away / max) * 100}%` }))),
-        h('b', { class: 'gm-n', text: Number(f.lam_away).toFixed(1) })),
+      h('div', { class: 'gm-xg', 'aria-label': `Expected goals ${Number(f.lam_home).toFixed(1)} to ${Number(f.lam_away).toFixed(1)}` },
+        h('span', null, h('b', { text: Number(f.lam_home).toFixed(1) }), h('i', { text: 'expected goals' })),
+        h('span', null, h('b', { text: Number(f.lam_away).toFixed(1) }), h('i', { text: 'expected goals' }))),
       h('div', { class: 'gm-1x2', role: 'img', 'aria-label': `${hn} ${pct0(f.p_home)}, draw ${pct0(f.p_draw)}, ${an} ${pct0(f.p_away)}` },
         h('i', { class: 'home', style: `flex:${f.p_home}` }), h('i', { class: 'draw', style: `flex:${f.p_draw}` }), h('i', { class: 'away', style: `flex:${f.p_away}` })),
       h('div', { class: 'gm-p' }, h('span', { text: `${hn} ${pct0(f.p_home)}` }), h('span', { text: `Draw ${pct0(f.p_draw)}` }), h('span', { text: `${an} ${pct0(f.p_away)}` })),
@@ -284,7 +284,7 @@ function renderGoals(proj) {
     return li;
   }));
   const shown = fx.some((f) => elevenText(f.home, f.away));
-  body.replaceChildren(...[modelLegend(shown), legend, list, h('p', { class: 'note', text: `Goal bars run from 0 to ${max.toFixed(1)}.` + (shown ? " elevenify's H, D and A are home-win, draw and away-win chances." : '') }),
+  body.replaceChildren(...[modelLegend(shown), legend, list, h('p', { class: 'note', text: `The numbers are expected goals; the single bar shows home-win, draw and away-win chances.` + (shown ? " elevenify's H, D and A are its separate result chances." : '') }),
     tableView(['Match', 'xG H', 'xG A', 'H / D / A'], fx.map((f) => [`${f.home} v ${f.away}`, Number(f.lam_home).toFixed(2), Number(f.lam_away).toFixed(2), `${pct0(f.p_home)} / ${pct0(f.p_draw)} / ${pct0(f.p_away)}`]))].filter(Boolean));
 }
 
@@ -297,103 +297,104 @@ function sv(tag, attrs, text) {
   return e;
 }
 
-function renderPerf(proj) {
-  const body = document.getElementById('pf-body');
-  const allPts = ((proj && proj.xg_table) || []).map((p) => ({ ...p, x: Number(p.xg) + Number(p.xa), y: Number(p.goals) + Number(p.assists),
-    hasMarket: (Array.isArray(p.xo_markets) && p.xo_markets.length > 0) || (((state.players[p.id] || {}).xo_markets || []).length > 0) }))
-    .filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
-  if (!allPts.length) { body.replaceChildren(h('p', { class: 'empty', text: 'Expected-involvement numbers are not available yet.' })); return; }
+/* Shared clean scatter used by all three expected-v-actual charts. */
+function drawScatter(allPts, config) {
+  const pts = [...allPts].sort((a, b) => b.x - a.x).slice(0, 40);
+  const W = 360, M = { l: 36, r: 14, t: 10, b: 40 };
+  const maxV = Math.max(...pts.map((p) => Math.max(p.x, p.y)));
+  const top = Math.max(4, Math.ceil(maxV / 2) * 2);
+  const pw = W - M.l - M.r, H = pw + M.t + M.b, s = pw / top;
+  const X = (v) => M.l + v * s, Y = (v) => M.t + pw - v * s;
+  const svg = sv('svg', { viewBox: `0 0 ${W} ${H}`, class: 'sc', role: 'img', 'aria-label': config.aria });
 
-  const controls = h('div', { class: 'pf-filters', role: 'group', 'aria-label': 'Filter by position' });
-  const chart = h('div');
-  const buttons = ['All', 'FWD', 'MID', 'DEF'].map((pos) => h('button', { type: 'button', class: 'pill' + (pos === 'All' ? ' is-on' : ''), 'aria-pressed': pos === 'All' ? 'true' : 'false', text: pos }));
-  controls.append(...buttons);
-  body.replaceChildren(controls, chart);
+  for (let t = 0; t <= top; t += 2) {
+    svg.append(sv('line', { x1: X(0), x2: X(top), y1: Y(t), y2: Y(t), stroke: COL.hair, 'stroke-width': 1 }));
+    svg.append(sv('line', { x1: X(t), x2: X(t), y1: Y(0), y2: Y(top), stroke: COL.hair, 'stroke-width': 1 }));
+    svg.append(sv('text', { x: M.l - 6, y: Y(t) + 3.5, 'text-anchor': 'end', class: 'tk' }, String(t)));
+    svg.append(sv('text', { x: X(t), y: Y(0) + 15, 'text-anchor': 'middle', class: 'tk' }, String(t)));
+  }
+  svg.append(sv('text', { x: M.l + pw / 2, y: H - 6, 'text-anchor': 'middle', class: 'ax' }, config.xLabel));
+  svg.append(sv('text', { transform: `translate(11 ${M.t + pw / 2}) rotate(-90)`, 'text-anchor': 'middle', class: 'ax' }, config.yLabel));
+  svg.append(sv('line', { x1: X(0), y1: Y(0), x2: X(top), y2: Y(top), stroke: COL.furniture, 'stroke-width': 1.5 }));
 
-  const draw = (position) => {
-    buttons.forEach((button) => { const on = button.textContent === position; button.classList.toggle('is-on', on); button.setAttribute('aria-pressed', on ? 'true' : 'false'); });
-    const pts = position === 'All' ? allPts : allPts.filter((p) => p.pos === position);
-    const W = 360, M = { l: 36, r: 14, t: 10, b: 40 };
-    const maxV = Math.max(...pts.map((p) => Math.max(p.x, p.y)));
-    const top = Math.max(4, Math.ceil(maxV / 2) * 2);
-    const pw = W - M.l - M.r, H = pw + M.t + M.b, s = pw / top;
-    const X = (v) => M.l + v * s, Y = (v) => M.t + pw - v * s;
-    const svg = sv('svg', { viewBox: `0 0 ${W} ${H}`, class: 'sc', role: 'img', 'aria-label': `Expected against actual goal involvements for ${position === 'All' ? 'all positions' : position}` });
-    for (let t = 0; t <= top; t += 2) {
-      svg.append(sv('line', { x1: X(0), x2: X(top), y1: Y(t), y2: Y(t), stroke: COL.hair, 'stroke-width': 1 }));
-      svg.append(sv('line', { x1: X(t), x2: X(t), y1: Y(0), y2: Y(top), stroke: COL.hair, 'stroke-width': 1 }));
-      svg.append(sv('text', { x: M.l - 6, y: Y(t) + 3.5, 'text-anchor': 'end', class: 'tk' }, String(t)));
-      svg.append(sv('text', { x: X(t), y: Y(0) + 15, 'text-anchor': 'middle', class: 'tk' }, String(t)));
+  const cls = (p) => (p.y - p.x >= 1 ? 'over' : p.y - p.x <= -1 ? 'under' : 'even');
+  const fill = { over: COL.pink, under: COL.ink, even: '#b4b4bd' };
+  [...pts].sort((a, b) => Math.abs(a.y - a.x) - Math.abs(b.y - b.x)).forEach((p) => {
+    p.el = sv('circle', { cx: X(p.x), cy: Y(p.y), r: 4.5, fill: fill[cls(p)], stroke: '#fff', 'stroke-width': 1.5 });
+    svg.append(p.el);
+  });
+
+  const boxes = [];
+  [...pts].sort((a, b) => Math.abs(b.y - b.x) - Math.abs(a.y - a.x)).slice(0, 6).forEach((p) => {
+    const w = p.name.length * 6 + 4, hh = 13, cx = X(p.x), cy = Y(p.y);
+    const opts = [[cx + 8, cy - hh / 2], [cx - 8 - w, cy - hh / 2], [cx - w / 2, cy - 9 - hh], [cx - w / 2, cy + 9], [cx + 8, cy - hh - 6], [cx + 8, cy + 4]];
+    let pick = null;
+    for (const [bx, by] of opts) {
+      const b = { x: bx, y: by, w, h: hh };
+      const hitsDot = pts.some((q) => q !== p && X(q.x) > b.x - 4 && X(q.x) < b.x + w + 4 && Y(q.y) > b.y - 4 && Y(q.y) < b.y + hh + 4);
+      if (b.x >= 2 && b.x + w <= W - 2 && b.y >= 2 && b.y + hh <= H - 20 && !hitsDot && !boxes.some((o) => b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y)) { pick = b; break; }
     }
-    svg.append(sv('text', { x: M.l + pw / 2, y: H - 6, 'text-anchor': 'middle', class: 'ax' }, 'Expected: xG + xA'));
-    svg.append(sv('text', { transform: `translate(11 ${M.t + pw / 2}) rotate(-90)`, 'text-anchor': 'middle', class: 'ax' }, 'Actual: goals + assists'));
-    svg.append(sv('line', { x1: X(0), y1: Y(0), x2: X(top), y2: Y(top), stroke: COL.furniture, 'stroke-width': 1.5 }));
+    if (!pick) pick = { x: Math.min(cx + 8, W - w - 2), y: cy - hh / 2, w, h: hh };
+    boxes.push(pick);
+    svg.append(sv('text', { x: pick.x, y: pick.y + 10.5, class: 'pl' }, p.name));
+  });
 
-    const cls = (p) => (p.y - p.x >= 1 ? 'over' : p.y - p.x <= -1 ? 'under' : 'even');
-    const fill = { over: COL.pink, under: COL.ink, even: '#b4b4bd' };
-    const dots = [...pts].sort((a, b) => Math.abs(a.y - a.x) - Math.abs(b.y - b.x));
-    dots.forEach((p) => {
-      p.radius = Math.min(9, 3 + Math.sqrt(Math.max(0, Number(p.owned_pct) || 0)) * 0.55);
-      if (p.hasMarket) svg.append(sv('circle', { cx: X(p.x), cy: Y(p.y), r: p.radius + 2.2, fill: 'none', stroke: COL.pink, 'stroke-width': 2 }));
-      p.el = sv('circle', { cx: X(p.x), cy: Y(p.y), r: p.radius, fill: fill[cls(p)], stroke: '#fff', 'stroke-width': 1.3 });
-      svg.append(p.el);
-    });
-
-    const far = [...pts].sort((a, b) => Math.abs(b.y - b.x) - Math.abs(a.y - a.x)).slice(0, 6);
-    const boxes = [];
-    far.forEach((p) => {
-      const w = p.name.length * 6 + 4, hh = 13, cx = X(p.x), cy = Y(p.y);
-      const opts = [[cx + 9, cy - hh / 2], [cx - 9 - w, cy - hh / 2], [cx - w / 2, cy - 10 - hh], [cx - w / 2, cy + 10]];
-      let pick = null;
-      for (const [bx, by] of opts) {
-        const b = { x: bx, y: by, w, h: hh };
-        if (b.x >= 2 && b.x + w <= W - 2 && b.y >= 2 && b.y + hh <= H - 20 && !boxes.some((o) => b.x < o.x + o.w && b.x + b.w > o.x && b.y < o.y + o.h && b.y + b.h > o.y)) { pick = b; break; }
-      }
-      if (!pick) pick = { x: Math.min(cx + 9, W - w - 2), y: cy - hh / 2, w, h: hh };
-      boxes.push(pick);
-      svg.append(sv('text', { x: pick.x, y: pick.y + 10.5, class: 'pl' }, p.name));
-    });
-
-    const hit = sv('rect', { x: 0, y: 0, width: W, height: H, fill: 'transparent' });
-    svg.append(hit);
-    let hot = null;
-    const resetHot = () => { if (hot) hot.el.setAttribute('r', hot.radius); hot = null; hideTip(); };
-    const move = (e) => {
-      const matrix = svg.getScreenCTM();
-      if (!matrix) return;
-      const pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
-      const q = pt.matrixTransform(matrix.inverse());
-      let nearest = null, distance = Infinity;
-      pts.forEach((p) => { const d = Math.hypot(X(p.x) - q.x, Y(p.y) - q.y); if (d < distance) { distance = d; nearest = p; } });
-      if (hot && hot !== nearest) hot.el.setAttribute('r', hot.radius);
-      if (nearest && distance <= 30) {
-        hot = nearest; hot.el.setAttribute('r', hot.radius + 2);
-        const gap = hot.y - hot.x;
-        showTip(hot.el, [`${hot.name} · ${teamName(hot.team)} · ${hot.pos}`, `xG+xA ${hot.x.toFixed(1)} · G+A ${hot.y}`, `Difference ${gap >= 0 ? '+' : ''}${gap.toFixed(1)} · ${Number(hot.owned_pct || 0).toFixed(1)}% owned`], hot.el.getBoundingClientRect());
-      } else resetHot();
-    };
-    hit.addEventListener('pointermove', move);
-    hit.addEventListener('pointerdown', move);
-    hit.addEventListener('pointerleave', resetHot);
-
-    const rankedList = (title, rows) => h('section', { class: 'perf-rank' }, h('h3', { text: title }),
-      h('ol', null, rows.map((p, i) => {
-        const gap = p.y - p.x;
-        return h('li', null, h('span', { class: 'prank', text: String(i + 1) }), h('span', { class: 'perf-name' }, h('b', { text: p.name }), h('i', { text: `${p.team} · ${p.pos} · ${Number(p.owned_pct || 0).toFixed(1)}% owned` })),
-          h('strong', { text: `${gap >= 0 ? '+' : ''}${gap.toFixed(1)}` }), h('small', { text: `${p.y} G+A / ${p.x.toFixed(1)} xG+xA` }));
-      })));
-    const hotRows = [...pts].filter((p) => p.y > p.x).sort((a, b) => (b.y - b.x) - (a.y - a.x)).slice(0, 8);
-    const dueRows = [...pts].filter((p) => p.y < p.x).sort((a, b) => (a.y - a.x) - (b.y - b.x)).slice(0, 8);
-    const legend = h('div', { class: 'legend2' }, key('over', 'Scoring more than chances suggest'), key('under', 'Unlucky so far'), key('even', 'About as expected'), key('market', 'Has an XO market'));
-    const sorted = [...pts].sort((a, b) => (b.y - b.x) - (a.y - a.x));
-    chart.replaceChildren(legend, h('div', { class: 'scwrap' }, svg),
-      h('p', { class: 'note', text: 'Above the line = scoring more than chances suggest (may cool off). Below = unlucky so far. Bigger dots are more highly owned.' }),
-      h('div', { class: 'perf-lists' }, rankedList('Running hot (may cool off)', hotRows), rankedList('Due a goal (unlucky so far)', dueRows)),
-      tableView(['Player', 'Pos', 'Owned', 'xG+xA', 'G+A', 'Gap'], sorted.map((p) => [`${p.name} (${p.team})`, p.pos, `${Number(p.owned_pct || 0).toFixed(1)}%`, p.x.toFixed(1), p.y, (p.y - p.x >= 0 ? '+' : '') + (p.y - p.x).toFixed(1)])),
-      h('p', { class: 'note', text: 'Source: FPL (Opta) data.' }));
+  const hit = sv('rect', { x: 0, y: 0, width: W, height: H, fill: 'transparent' });
+  svg.append(hit);
+  let hot = null;
+  const reset = () => { if (hot) hot.el.setAttribute('r', 4.5); hot = null; hideTip(); };
+  const move = (e) => {
+    const matrix = svg.getScreenCTM();
+    if (!matrix) return;
+    const point = svg.createSVGPoint(); point.x = e.clientX; point.y = e.clientY;
+    const q = point.matrixTransform(matrix.inverse());
+    let nearest = null, distance = Infinity;
+    pts.forEach((p) => { const d = Math.hypot(X(p.x) - q.x, Y(p.y) - q.y); if (d < distance) { distance = d; nearest = p; } });
+    if (hot && hot !== nearest) hot.el.setAttribute('r', 4.5);
+    if (nearest && distance <= 30) {
+      hot = nearest; hot.el.setAttribute('r', 6.5);
+      showTip(hot.el, config.tooltip(hot), hot.el.getBoundingClientRect());
+    } else reset();
   };
-  buttons.forEach((button) => button.addEventListener('click', () => draw(button.textContent)));
-  draw('All');
+  hit.addEventListener('pointermove', move);
+  hit.addEventListener('pointerdown', move);
+  hit.addEventListener('pointerleave', reset);
+
+  const sorted = [...pts].sort((a, b) => (b.y - b.x) - (a.y - a.x));
+  return [
+    h('div', { class: 'legend2' }, key('over', config.over), key('under', config.under), key('even', 'About as expected')),
+    h('div', { class: 'scwrap' }, svg),
+    h('p', { class: 'note', text: config.note }),
+    tableView(['Player', config.xCol, config.yCol, 'Difference'], sorted.map((p) => [{ name: p.name, team: p.team, pos: p.pos }, p.x.toFixed(1), p.y, `${p.y - p.x >= 0 ? '+' : ''}${(p.y - p.x).toFixed(1)}`]), { diff: 3, hide: [2] }),
+  ];
+}
+
+function perfRank(title, rows) {
+  return h('section', { class: 'perf-rank' }, h('h3', { text: title }), h('ol', null, rows.map((p, i) => {
+    const gap = p.y - p.x;
+    return h('li', null, h('span', { class: 'prank', text: String(i + 1) }), h('span', { class: 'perf-name' }, h('b', { text: p.name }), h('i', { text: `${p.team} · ${p.pos} · ${Number(p.owned_pct || 0).toFixed(1)}% owned` })), h('strong', { text: `${gap >= 0 ? '+' : ''}${gap.toFixed(1)}` }), h('small', { text: `${p.y} G+A / ${p.x.toFixed(1)} xG+xA` }));
+  })));
+}
+
+function renderPerf(proj) {
+  const all = (proj.xg_table || []).map((p) => ({ ...p, x: Number(p.xg) + Number(p.xa), y: Number(p.goals) + Number(p.assists) })).filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
+  if (!all.length) { document.getElementById('pf-body').replaceChildren(h('p', { class: 'empty', text: 'Expected-involvement numbers are not available yet.' })); return; }
+  const parts = drawScatter(all, { aria: 'Scatter of expected against actual goal involvements', xLabel: 'Expected: xG + xA', yLabel: 'Actual: goals + assists', xCol: 'xG+xA', yCol: 'G+A', over: 'Scoring more than chances suggest', under: 'Unlucky so far', note: 'Above the line = scoring more than chances suggest (may cool off). Below = unlucky so far.', tooltip: (p) => [`${p.y} goals + assists from ${p.x.toFixed(1)} expected`, `${p.name}, ${teamName(p.team)}`, `${p.minutes} minutes`] });
+  const hot = [...all].filter((p) => p.y > p.x).sort((a, b) => (b.y - b.x) - (a.y - a.x)).slice(0, 8);
+  const due = [...all].filter((p) => p.y < p.x).sort((a, b) => (a.y - a.x) - (b.y - b.x)).slice(0, 8);
+  document.getElementById('pf-body').replaceChildren(...parts.slice(0, 3), h('div', { class: 'perf-lists' }, perfRank('Running hot (may cool off)', hot), perfRank('Due a goal (unlucky so far)', due)), parts[3], h('p', { class: 'note', text: 'Source: FPL (Opta) data.' }));
+}
+
+function renderExtraScatters(proj) {
+  const rows = proj.xg_table || [];
+  const charts = [
+    ['fn-body', 'xg', 'goals', { aria: 'Scatter of goals against expected goals', xLabel: 'Expected goals: xG', yLabel: 'Actual goals', xCol: 'xG', yCol: 'Goals', over: 'Finishing above chances', under: 'Fewer goals than expected', note: 'Above the line = finishing above chances. Below = fewer goals than expected.', tooltip: (p) => [`${p.y} goals from ${p.x.toFixed(1)} xG`, `${p.name}, ${teamName(p.team)}`, `${p.minutes} minutes`] }],
+    ['cr-body', 'xa', 'assists', { aria: 'Scatter of assists against expected assists', xLabel: 'Expected assists: xA', yLabel: 'Actual assists', xCol: 'xA', yCol: 'Assists', over: 'More assists than expected', under: 'Fewer assists than expected', note: 'Above the line = more assists than chances suggest. Below = fewer assists than expected.', tooltip: (p) => [`${p.y} assists from ${p.x.toFixed(1)} xA`, `${p.name}, ${teamName(p.team)}`, `${p.minutes} minutes`] }],
+  ];
+  charts.forEach(([id, xKey, yKey, config]) => {
+    const pts = rows.map((p) => ({ ...p, x: Number(p[xKey]), y: Number(p[yKey]) })).filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
+    document.getElementById(id).replaceChildren(...drawScatter(pts, config), h('p', { class: 'note', text: 'Source: FPL (Opta) data.' }));
+  });
 }
 
 /* ---------- init ---------- */
@@ -419,6 +420,7 @@ async function init() {
   renderCS(proj);
   renderGoals(proj);
   renderPerf(proj);
+  renderExtraScatters(proj);
 }
 
 init();
