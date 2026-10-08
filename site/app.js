@@ -295,12 +295,11 @@ function liveBook(raw, token) {
 }
 
 async function fetchXO() {
-  const rows = [];
-  for (let page = 1; ; page += 1) {
-    const payload = await getJSON(`https://api-mainnet.xo.market/api/convictions?take=50&page=${page}`);
-    rows.push(...(payload.data || []));
-    if (!(payload.meta || {}).hasNextPage) break;
-  }
+  const url = (page) => `https://api-mainnet.xo.market/api/convictions?take=50&page=${page}`;
+  const first = await getJSON(url(1));
+  const pages = Math.min(((first.meta || {}).pageCount) || 1, 10);
+  const rest = await Promise.all(Array.from({ length: pages - 1 }, (_, i) => getJSON(url(i + 2))));
+  const rows = [first, ...rest].flatMap((payload) => payload.data || []);
   rows.forEach((raw) => {
     const m = state.bySlug[raw.slug];
     if (!m) return;
