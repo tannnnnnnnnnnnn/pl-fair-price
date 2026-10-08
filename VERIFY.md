@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-08T22:25:16Z)
+# VERIFY — PL Fair Price (2026-10-08T22:35:13Z)
 
 GW6 deadline 2026-10-10T10:00:00Z. 79 XO PL markets; 44 priced (high 1, medium 8, low 35).
 
@@ -6,9 +6,9 @@ GW6 deadline 2026-10-10T10:00:00Z. 79 XO PL markets; 44 priced (high 1, medium 8
 
 | Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|
-| ARS-LEE | 6 | 70.5/18.5/10.5 | 70.9/18.6/10.6 | 70.9/18.6/10.6 | 2.21-0.73 | $33,373 |
+| ARS-LEE | 6 | 70.5/18.5/10.5 | 70.9/18.6/10.6 | 70.9/18.6/10.6 | 2.21-0.73 | $33,375 |
 | SUN-BHA | 6 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.7/27.6/41.7 | 1.15-1.38 | $213,972 |
-| IPS-FUL | 6 | 33.5/26.5/39.5 | 33.7/26.6/39.7 | 33.7/26.6/39.7 | 1.29-1.42 | $1,893 |
+| IPS-FUL | 6 | 33.5/26.5/39.5 | 33.7/26.6/39.7 | 33.7/26.6/39.7 | 1.29-1.42 | $1,896 |
 | AVL-BRE | 6 | 35.5/27.5/37.5 | 35.3/27.4/37.3 | 35.3/27.4/37.3 | 1.28-1.32 | $16,575 |
 | CHE-BOU | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $11,654 |
 | MUN-TOT | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $84,468 |
@@ -17,8 +17,8 @@ GW6 deadline 2026-10-10T10:00:00Z. 79 XO PL markets; 44 priced (high 1, medium 8
 | LIV-MCI | 6 | 35.5/25.5/38.5 | 35.7/25.6/38.7 | 35.7/25.6/38.7 | 1.42-1.49 | $29,358 |
 | COV-NEW | 6 | 27.5/26.5/45.5 | 27.6/26.6/45.7 | 27.6/26.6/45.7 | 1.12-1.51 | $929 |
 | EVE-CHE | 7 | 34.0/25.5/41.0 | 33.8/25.4/40.8 | 33.8/25.4/40.8 | 1.40-1.55 | $221 |
-| BRE-LIV | 7 | 34.0/25.5/40.0 | 34.2/25.6/40.2 | 34.2/25.6/40.2 | 1.38-1.52 | $388 |
-| FUL-HUL | 7 | 57.0/24.0/19.0 | 57.0/24.0/19.0 | 57.0/24.0/19.0 | 1.78-0.93 | $20 |
+| BRE-LIV | 7 | 34.0/25.5/40.0 | 34.2/25.6/40.2 | 34.2/25.6/40.2 | 1.38-1.52 | $390 |
+| FUL-HUL | 7 | 57.0/24.0/19.0 | 57.0/24.0/19.0 | 57.0/24.0/19.0 | 1.78-0.93 | $22 |
 | MCI-IPS | 7 | 81.0/12.0/6.5 | 81.4/12.1/6.5 | 81.4/12.1/6.5 | 3.03-0.80 | $1,316 |
 | NEW-AVL | 7 | 46.0/25.5/29.0 | 45.8/25.4/28.9 | 45.8/25.4/28.9 | 1.62-1.24 | $222 |
 | BHA-CRY | 7 | 59.0/22.0/18.5 | 59.3/22.1/18.6 | 59.3/22.1/18.6 | 1.99-1.03 | $2 |
@@ -111,7 +111,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 5 | 58.2 | 53 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 20.6 | -29 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
 | low | 9 | 2.4 | -7 | player_model | Will Martin Ødegaard record a G/A in each of Arsenal's next three PL matches from Oct. 10? | Chance Ødegaard score or assist in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come fr |
-| low | 50 | 73.8 | 24 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
+| low | 50 | 73.7 | 24 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | low | 50 | 23.1 | -27 | player_model | Will Pascal Groß score or assist in at least 2 of Brighton's next 4 Premier League matches? | Chance Groß score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the |
 | medium | 47 | 54.9 | 8 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 65 | 91.0 | 26 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
