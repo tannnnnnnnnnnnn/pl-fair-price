@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GW numbers for FPL managers | PL Fair Price</title>
+<meta name="description" content="Captain picks, clean-sheet chances, expected goals and an FPL flag check, from the same match model that prices the XO markets.">
+<meta name="theme-color" content="#ff87a6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GW numbers for FPL managers | PL Fair Price">
+<meta property="og:description" content="Captain picks, clean sheets and a flag check: what FPL says against what history says.">
+<meta property="og:image" content="https://tannnnnnnnnnnnn.github.io/pl-fair-price/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GW numbers for FPL managers | PL Fair Price">
+<meta name="twitter:description" content="Captain picks, clean sheets and a flag check: what FPL says against what history says.">
+<meta name="twitter:image" content="https://tannnnnnnnnnnnn.github.io/pl-fair-price/assets/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/logos/xo-wordmark-black.webp">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&family=Rubik:wght@600..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="gw.css">
+<script src="common.js" defer></script>
+<script src="gw.js" defer></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="topnav" aria-label="Pages">
+      <a href="index.html" class="navlink">Markets</a>
+      <a href="gw.html" class="navlink is-on" aria-current="page" data-gw-label>GW numbers</a>
+    </nav>
+  </div>
+  <div class="wrap hero-grid">
+    <p class="eyebrow">Markets on <img class="wm" src="assets/logos/xo-wordmark-black.webp" width="56" height="20" alt="XO"></p>
+    <h1 class="title"><span class="hl" id="site-name">PL Fair Price</span></h1>
+    <p class="by">by <a href="https://x.com/CryptoTan01" target="_blank" rel="noopener">@CryptoTan01</a></p>
+    <p class="tagline" id="site-tagline">What every Premier League market on XO should cost, priced from the markets with real money.</p>
+    <picture class="deek">
+      <source media="(prefers-reduced-motion: reduce)" srcset="assets/deek/deek-binoculars-still.webp">
+      <img src="assets/deek/deek-binoculars.webp" width="200" height="200" alt="Deek the mascot peeking through binoculars" decoding="async" fetchpriority="low">
+    </picture>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="sample" id="sample" hidden>Sample data. Live numbers are not loaded.</p>
+
+  <section class="sec" id="intro" aria-labelledby="in-h">
+    <h2 id="in-h"><span data-gw>GW</span> numbers</h2>
+    <p class="sec-sub">For FPL managers. Same match model that prices the markets.</p>
+    <div class="deadline gw-deadline" id="deadline">
+      <span class="dl-label" id="dl-label">GW deadline</span>
+      <div class="dl-boxes" id="dl-boxes"></div>
+    </div>
+    <details class="how">
+      <summary>How this works</summary>
+      <p id="how-text">Match odds come from Polymarket. Average goals are calibrated to the league's average. Player shares come from FPL xG and xA. Rough model, no bonus or defensive points.</p>
+    </details>
+  </section>
+
+  <section class="sec" id="flags" aria-labelledby="fl-h">
+    <h2 id="fl-h">Flag check</h2>
+    <p class="sec-sub lead">FPL's flag is a hint, not a probability. Across 2,250 flags since 2019, a 75% flag meant a 37% chance to start, and less as the flag ages.</p>
+    <div id="fl-body"><p class="empty">Loading flag check…</p></div>
+  </section>
+
+  <section class="sec" id="captain" aria-labelledby="cp-h">
+    <h2 id="cp-h">Captain picks</h2>
+    <p class="sec-sub">Top 10 by expected points (xPts). Blank means 3 points or fewer. Counts appearance, goals, assists and clean sheets only.</p>
+    <div id="cp-body"></div>
+  </section>
+
+  <section class="sec" id="cs" aria-labelledby="cs-h">
+    <h2 id="cs-h">Clean-sheet chances</h2>
+    <p class="sec-sub">Chance each team keeps a clean sheet this gameweek, from the match model.</p>
+    <div id="cs-body"></div>
+  </section>
+
+  <section class="sec" id="goals" aria-labelledby="gl-h">
+    <h2 id="gl-h">Goals expected per match</h2>
+    <p class="sec-sub">Expected goals for each side, then the chance of a home win, draw or away win.</p>
+    <div id="gl-body"></div>
+  </section>
+
+  <section class="sec" id="perf" aria-labelledby="pf-h">
+    <h2 id="pf-h">Over- and under-performers</h2>
+    <p class="sec-sub">Expected goal involvements (xG + xA) against actual (goals + assists) this season.</p>
+    <div id="pf-body"></div>
+  </section>
+
+  <p class="back"><a class="navlink" href="index.html">&larr; Back to the markets</a></p>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot-on">Markets on <img class="wm" src="assets/logos/xo-wordmark-white.webp" width="56" height="20" alt="XO" loading="lazy"></p>
+    <div class="foot-cols">
+      <div>
+        <h3>How it works</h3>
+        <p>Fair prices come from deep markets on Polymarket and a Poisson match model fitted to them. Player numbers use FPL expected goals and assists. Every row says how it was priced.</p>
+      </div>
+      <div>
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="https://beta.xo.market/?r=cryptotan01" target="_blank" rel="noopener">XO</a> for prices and liquidity</li>
+          <li><a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> for match and season odds</li>
+          <li><a href="https://fantasy.premierleague.com/" target="_blank" rel="noopener">Fantasy Premier League</a> for players and fixtures</li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-by">Built by <a href="https://x.com/CryptoTan01" target="_blank" rel="noopener">@CryptoTan01</a> with public XO, Polymarket and FPL data.</p>
+    <p class="foot-na">Not affiliated with any club.</p>
+    <details class="changelog">
+      <summary>Changelog</summary>
+      <ul id="changelog"></ul>
+    </details>
+  </div>
+</footer>
+
+<div id="tip" role="tooltip" hidden></div>
+</body>
+</html>

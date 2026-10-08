@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<meta name="robots" content="noindex">
+<title>PL Fair Price card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&family=Rubik:wght@600..900&display=swap" rel="stylesheet">
+<style>
+/* Share card for one market: card.html?slug=<slug>. Fixed 1200x675. */
+:root { --pink: #ff87a6; --ink: #0a0a0a; --ink-2: #4b4b54; --ink-3: #85858f; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1200px; height: 675px; background: #fff; color: var(--ink); font-family: 'Figtree', system-ui, sans-serif; overflow: hidden; }
+.card { position: relative; width: 1200px; height: 675px; padding: 44px 64px 0; }
+.top { display: flex; align-items: center; justify-content: space-between; }
+.brand { font: 900 34px/1 'Rubik', sans-serif; letter-spacing: -.01em; }
+.brand span { background: linear-gradient(transparent 64%, var(--pink) 64%, var(--pink) 90%, transparent 90%); padding: 0 6px; margin: 0 -6px; }
+.brand small { margin-left: 14px; font: 600 22px/1 'Figtree', sans-serif; color: var(--ink-2); letter-spacing: 0; }
+.on { display: flex; align-items: center; gap: 12px; font: 600 22px/1 'Figtree', sans-serif; color: var(--ink-2); }
+.on img { height: 36px; width: auto; }
+.fx { font: 700 22px/1 'Figtree', sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); }
+.q { margin-top: 30px; font: 800 52px/1.14 'Rubik', sans-serif; letter-spacing: -.01em; max-width: 1000px; overflow-wrap: anywhere; }
+.q.m { font-size: 44px; }
+.q.s { font-size: 37px; }
+.nums { display: flex; align-items: baseline; gap: 34px; margin-top: 26px; font-family: 'Rubik', sans-serif; font-weight: 900; line-height: 1; white-space: nowrap; }
+.nums .lab { font-size: 44px; margin-right: 12px; }
+.nums .num { font-size: 132px; letter-spacing: -.03em; }
+.nums .vs { font: 600 30px/1 'Figtree', sans-serif; color: var(--ink-3); }
+.nums .xo { color: var(--pink); }
+.nums .none { color: var(--ink-3); font-size: 60px; }
+.nums .rough .num, .nums .rough .lab { color: var(--ink-3); }
+.track { position: relative; margin: 30px 20px 0; height: 44px; }
+.rail { position: relative; height: 44px; }
+.rail::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 8px; margin-top: -4px; border-radius: 8px; background: #dcdce2; }
+.seg { position: absolute; top: 50%; height: 22px; margin-top: -11px; border-radius: 22px; background: rgba(255, 135, 166, .38); }
+.ring.rough { border: 8px dashed #9a9aa4; background: #fff; }
+.seg.rough { background: #e8e8ed; }
+.dot, .ring { position: absolute; top: 50%; width: 38px; height: 38px; margin: -19px 0 0 -19px; border-radius: 50%; }
+.dot { background: var(--pink); }
+.ring { border: 8px solid #000; box-shadow: 0 0 0 4px #fff; }
+.gap { display: inline-block; margin-top: 22px; padding: 10px 22px; border-radius: 999px; background: rgba(24, 218, 235, .16); color: #08353a; font: 700 28px/1.2 'Figtree', sans-serif; }
+.gap.plain { background: #f6f6f8; color: var(--ink-2); }
+.deek { position: absolute; right: 78px; bottom: 66px; height: 150px; width: auto; }
+.bar .on { color: #fff; }
+.bar .src { color: #d8d8de; font: 600 22px/1 'Figtree', sans-serif; margin: 0; }
+.bar { position: absolute; left: 0; right: 0; bottom: 0; height: 66px; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; background: #000; color: #fff; font: 700 24px/1 'Figtree', sans-serif; }
+.bar img { height: 42px; width: auto; }
+.miss { padding-top: 120px; font: 800 44px/1.2 'Rubik', sans-serif; }
+</style>
+</head>
+<body>
+<div class="card" id="card"><p class="miss">Loading</p></div>
+<script>
+const TEAMS = { ARS: 'Arsenal', AVL: 'Aston Villa', BHA: 'Brighton', BOU: 'Bournemouth', BRE: 'Brentford', BUR: 'Burnley', CHE: 'Chelsea', COV: 'Coventry', CRY: 'Crystal Palace', EVE: 'Everton', FUL: 'Fulham', HUL: 'Hull', IPS: 'Ipswich', LEE: 'Leeds', LEI: 'Leicester', LIV: 'Liverpool', MCI: 'Man City', MUN: 'Man United', NEW: 'Newcastle', NFO: "Nott'm Forest", SOU: 'Southampton', SUN: 'Sunderland', TOT: 'Spurs', WHU: 'West Ham', WOL: 'Wolves' };
+const num = (v) => { if (v === null || v === undefined || v === '') return null; const n = Number(v); return Number.isFinite(n) ? n : null; };
+const pct = (p) => (p >= 0.995 ? '>99%' : p <= 0.005 ? '<1%' : Math.round(p * 100) + '%');
+const h = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
+
+(async () => {
+  const card = document.getElementById('card');
+  const slug = new URLSearchParams(location.search).get('slug');
+  let m = null;
+  try {
+    const board = await (await fetch('data/board.json?v=' + Date.now())).json();
+    m = (board.markets || []).find((x) => x.slug === slug);
+  } catch (e) { /* falls through to the not-found card */ }
+  if (!m) { card.replaceChildren(h('p', 'miss', 'Market not found')); document.title = 'ready'; return; }
+
+  const xo = num(m.xo_price);
+  const fair = m.fair && num(m.fair.p) !== null ? m.fair : null;
+  let gap = num(m.gap_pts);
+  if (gap === null && fair && xo !== null) gap = Math.round((fair.p - xo) * 100);
+  const conf = fair ? fair.confidence : null;
+  const rough = conf === 'low';
+
+  const top = h('div', 'top');
+  const brand = h('div', 'brand'); brand.append(h('span', null, 'PL Fair Price'), h('small', null, 'by @CryptoTan01'));
+  const f = m.fixture;
+  const fx = h('div', 'fx', f ? `${f.home_name || TEAMS[f.home] || f.home} v ${f.away_name || TEAMS[f.away] || f.away}` : (m.horizon === 'weekend' ? 'This weekend' : 'Longer range'));
+  top.append(brand, fx);
+  const len = (m.title || '').length;
+  const q = h('h1', 'q' + (len > 95 ? ' s' : len > 62 ? ' m' : ''), m.title);
+
+  const nums = h('div', 'nums');
+  const xoBox = h('span', 'xo');
+  if (xo !== null) xoBox.append(h('span', 'lab', 'XO'), h('span', 'num', pct(xo))); else xoBox.append(h('span', 'none', 'No XO trades yet'));
+  const faBox = h('span', rough ? 'fair rough' : 'fair');
+  if (fair) faBox.append(h('span', 'lab', rough ? 'Rough' : 'Fair'), h('span', 'num', pct(fair.p))); else faBox.append(h('span', 'none', 'Fair price coming'));
+  nums.append(xoBox, h('span', 'vs', 'vs'), faBox);
+
+  const track = h('div', 'track'); const rail = h('div', 'rail');
+  if (xo !== null && fair) { const a = Math.min(xo, fair.p), b = Math.max(xo, fair.p); const s = h('i', rough ? 'seg rough' : 'seg'); s.style.left = a * 100 + '%'; s.style.width = (b - a) * 100 + '%'; rail.append(s); }
+  if (xo !== null) { const d = h('i', 'dot'); d.style.left = xo * 100 + '%'; rail.append(d); }
+  if (fair) { const r = h('i', rough ? 'ring rough' : 'ring'); r.style.left = fair.p * 100 + '%'; rail.append(r); }
+  track.append(rail);
+
+  const kids = [top, q, nums, track];
+  if (fair && gap !== null && !rough && (conf === 'high' || conf === 'medium') && Math.abs(gap) >= 8) {
+    kids.push(h('div', 'gap', `Fair price is ${Math.abs(gap)} pts ${gap > 0 ? 'higher' : 'lower'}`));
+  } else if (fair) {
+    kids.push(h('div', 'gap plain', rough ? 'Rough estimate: heavy assumptions, treat with care.' : 'Fair price from deep markets and our models'));
+  }
+
+  const deek = document.createElement('img'); deek.className = 'deek'; deek.src = 'assets/og/deek-og.png'; deek.alt = '';
+  const bar = h('div', 'bar'); const l = h('div', 'on'); l.append(document.createTextNode('Markets on '));
+  const wm2 = document.createElement('img'); wm2.src = 'assets/logos/xo-wordmark-white.webp'; wm2.alt = 'XO'; l.append(wm2);
+  bar.append(l, h('span', 'src', 'Priced from Polymarket and FPL data'));
+
+  card.replaceChildren(...kids, deek, bar);
+  await document.fonts.ready;
+  document.title = 'ready';
+})();
+</script>
+</body>
+</html>
