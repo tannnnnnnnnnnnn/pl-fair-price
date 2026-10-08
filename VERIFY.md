@@ -1,6 +1,6 @@
-# VERIFY — PL Fair Price (2026-10-08T17:53:19Z)
+# VERIFY — PL Fair Price (2026-10-08T17:55:33Z)
 
-GW6 deadline 2026-10-10T10:00:00Z. 80 XO PL markets; 44 priced (high 1, medium 8, low 35).
+GW6 deadline 2026-10-10T10:00:00Z. 78 XO PL markets; 44 priced (high 1, medium 8, low 35).
 
 ## 1X2 fit (Polymarket de-vigged vs Poisson model), max error 0.0 pts
 
@@ -126,7 +126,6 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | - | 65 | - |  | - | Man United: 12+ corners in next 2 matches? | Fair price coming: not modelled yet. |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
 | - | 60 | - |  | - | Wahala: Will Man United vs Tottenham produce 10+ corners? | Fair price coming: not modelled yet. |
-| - | 40 | - |  | - | Will 5 or more home teams win in Premier League Gameweek 6? | Fair price coming: not modelled yet. |
 | - | 45 | - |  | - | Will Arsenal score directly from a corner in their next two Premier League matches? | No clean data on set-piece or corner goals. |
 | - | 50 | - |  | - | Will Brentford announce a new contract for Kevin Schade by November 5, 2026? | Contract news has no market or data reference. |
 | - | 40 | - |  | - | Will Carrick or De Zerbi be sacked by Oct 31, 2026? | No Polymarket market prices this manager's job by this date. |
@@ -141,7 +140,6 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | - | 50 | - |  | - | Will Mainoo play at least 180 minutes across Man United’s next 3 PL matches? | Minutes questions need team news; check the press conference. |
 | - | 45 | - |  | - | Will Merino play more minutes than Gyökeres vs Leeds? | Minutes questions need team news; check the press conference. |
 | - | 20 | - |  | - | Will Richarlison start a match for Tottenham before November 1st? | Minutes questions need team news; check the press conference. |
-| - | 50 | - |  | - | Will Roberto De Zerbi be sacked before Michael Carrick? | Only reference is a $212 Polymarket market with a 37-point spread. |
 | - | 50 | - |  | - | Will Roberto De Zerbi still be Spurs manager on November 1? | No Polymarket market prices this manager's job by this date. |
 | - | 60 | - |  | - | Will Spurs have more possession & shots than United yet fail to win? | Needs match stats (possession, distance, shots) we don't model. |
 | - | 57 | - |  | - | Will Tottenham Miss Their Next Penalty? | Too few penalties for a reliable base rate. |

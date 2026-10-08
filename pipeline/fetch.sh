@@ -19,6 +19,40 @@ json.dump(rows, open(sys.argv[1], "w"))
 PY
 valid "$tmp/xo.json" && mv "$tmp/xo.json" raw/xo_convictions.json
 
+# XO resolution rules live in immutable metadata documents, separate from conviction pitches.
+# Cache Premier League metadata individually; a missing document must not abort the wider fetch.
+python3 - <<'PY'
+import json, os, subprocess
+from pathlib import Path
+from urllib.parse import urlparse
+
+rows = json.load(open("raw/xo_convictions.json"))
+cache = Path("raw/xo_meta")
+cache.mkdir(parents=True, exist_ok=True)
+for row in rows:
+    market = row.get("market") or {}
+    if not any(category.get("id") == 27 for category in market.get("categoryPath") or []):
+        continue
+    uri = market.get("metadataUri") or (row.get("metadata") or {}).get("metadataUri")
+    name = Path(urlparse(uri or "").path).name
+    if not uri or not name or not name.endswith(".json") or (cache / name).exists():
+        continue
+    out = subprocess.run(["curl", "-sf", "--retry", "3", "--max-time", "30", uri], capture_output=True)
+    if out.returncode != 0:
+        print(f"warning: could not fetch XO metadata {uri}")
+        continue
+    try:
+        data = json.loads(out.stdout)
+        if not data:
+            raise ValueError("empty JSON")
+    except (json.JSONDecodeError, ValueError):
+        print(f"warning: invalid XO metadata {uri}")
+        continue
+    temp = cache / (name + ".tmp")
+    temp.write_bytes(out.stdout)
+    os.replace(temp, cache / name)
+PY
+
 # Closed or expired markets we priced: fetch their result once (XO keeps them at /api/markets/{id})
 python3 - <<'PY'
 import datetime as dt, json, os, subprocess

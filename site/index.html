@@ -23,6 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&family=Rubik:wght@600..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="common.js" defer></script>
+<script src="stake.js" defer></script>
 <script src="app.js" defer></script>
 </head>
 <body>
@@ -43,6 +44,7 @@
       <span class="dl-label" id="dl-label">GW deadline</span>
       <div class="dl-boxes" id="dl-boxes"></div>
     </div>
+    <div class="livebar"><span id="live-status">XO prices from cached data</span><label class="odds-label">Odds <select id="odds-format"><option value="percent">%</option><option value="cents">¢</option><option value="decimal">decimal</option><option value="fractional">fractional</option></select></label></div>
     <picture class="deek">
       <source media="(prefers-reduced-motion: reduce)" srcset="assets/deek/deek-binoculars-still.webp">
       <img src="assets/deek/deek-binoculars.webp" width="200" height="200" alt="Deek the mascot peeking through binoculars" decoding="async" fetchpriority="low">
@@ -59,11 +61,11 @@
     <span class="gwcard-go" aria-hidden="true">&rarr;</span>
   </a>
 
-  <section class="sec" id="gaps" hidden aria-labelledby="gaps-h">
+  <section class="sec" id="gaps" aria-labelledby="gaps-h">
     <div class="sec-head">
       <div>
-        <h2 id="gaps-h">Biggest gaps</h2>
-        <p class="sec-sub">Where the fair price sits furthest from the XO price.</p>
+        <h2 id="gaps-h">Best value per $10</h2>
+        <p class="sec-sub">Ranked by expected value at our fair point estimate, after the spread and taker fee.</p>
       </div>
     </div>
     <div class="list" id="gaps-list"></div>
@@ -81,6 +83,7 @@
         <button type="button" class="pill" data-sort="closing" aria-pressed="false">Closing soon</button>
       </div>
     </div>
+    <label class="search"><span class="sr-only">Search markets</span><input id="market-search" type="search" placeholder="Search markets, teams or players" autocomplete="off"></label>
     <div id="mk-list"><p class="empty">Loading markets…</p></div>
     <noscript><p class="empty">Prices need JavaScript. Turn it on to see every XO market beside its fair price.</p></noscript>
   </section>

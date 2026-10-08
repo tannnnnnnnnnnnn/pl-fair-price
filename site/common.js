@@ -40,7 +40,7 @@ const teamCode = (x) => {
 };
 const CRESTS = new Set(['ARS', 'AVL', 'BHA', 'BOU', 'BRE', 'CHE', 'COV', 'CRY', 'EVE', 'FUL', 'HUL', 'IPS', 'LEE', 'LIV', 'MCI', 'MUN', 'NEW', 'NFO', 'SUN', 'TOT']);
 
-const state = { board: null, proj: null, eleven: null, markets: [], live: new Set(), bySlug: {}, players: {}, sort: 'match', mock: false };
+const state = { board: null, proj: null, eleven: null, markets: [], live: new Set(), bySlug: {}, players: {}, sort: 'match', mock: false, odds: 'percent', query: '' };
 
 /* ---------- tiny helpers ---------- */
 
@@ -69,7 +69,22 @@ const num = (v) => {
   const n = Number(v);
   return Number.isFinite(n) ? n : null;
 };
-const pct = (p) => (p >= 0.995 ? '>99%' : p <= 0.005 ? '<1%' : Math.round(p * 100) + '%');
+function fraction(p) {
+  const x = p > 0 ? (1 - p) / p : Infinity;
+  let best = [Math.round(x), 1], err = Infinity;
+  for (let d = 1; d <= 16; d += 1) {
+    const n = Math.round(x * d), e = Math.abs(x - n / d);
+    if (e < err) { best = [n, d]; err = e; }
+  }
+  return `${best[0]}/${best[1]}`;
+}
+function pct(p) {
+  if (p === null || p === undefined || !Number.isFinite(Number(p))) return '–';
+  if (state.odds === 'cents') return `${Math.round(p * 100)}¢`;
+  if (state.odds === 'decimal') return p > 0 ? Number(1 / p).toFixed(2) : '–';
+  if (state.odds === 'fractional') return p > 0 ? fraction(p) : '–';
+  return p >= 0.995 ? '>99%' : p <= 0.005 ? '<1%' : Math.round(p * 100) + '%';
+}
 const safeUrl = (u) => {
   try { const x = new URL(u); return x.protocol === 'https:' || x.protocol === 'http:' ? x.href : null; } catch (e) { return null; }
 };
@@ -123,6 +138,8 @@ function cleanMarket(m) {
   return {
     ...m, xo_price: xo, fair, gap_pts: gap,
     liquidity_usd: num(m.liquidity_usd), volume_usd: num(m.volume_usd), best_bid: num(m.best_bid), best_ask: num(m.best_ask),
+    taker_fee_bps: num(m.taker_fee_bps) || 0,
+    books: m.books || { yes: { bids: [], asks: [], last: null }, no: { bids: [], asks: [], last: null } },
     exp: m.expires_at ? new Date(m.expires_at).getTime() : null,
     fixture: m.fixture && m.fixture.home ? m.fixture : null,
   };
@@ -177,6 +194,18 @@ function setupPage() {
   if (tag) tag.textContent = CONFIG.tagline;
   const cl = document.getElementById('changelog');
   if (cl) cl.replaceChildren(...CHANGELOG.map((e) => h('li', null, h('b', { text: e.version }), ` · ${e.date} · ${e.notes}`)));
+  try { state.odds = localStorage.getItem('odds-format') || 'percent'; } catch (e) { state.odds = 'percent'; }
+  const select = document.getElementById('odds-format');
+  if (select) {
+    select.value = state.odds;
+    select.addEventListener('change', () => {
+      state.odds = select.value;
+      try { localStorage.setItem('odds-format', state.odds); } catch (e) { /* storage is optional */ }
+      if (typeof renderMarkets === 'function') renderMarkets();
+      if (typeof renderGaps === 'function') renderGaps();
+      if (typeof renderCaptain === 'function' && state.proj) renderCaptain(state.proj);
+    });
+  }
 }
 
 // Fills every "GW numbers" label from the data so the number is never hard-coded.

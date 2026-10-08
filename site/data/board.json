@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T17:53:19Z",
+ "generated_at": "2026-10-08T17:55:33Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -55,27 +55,68 @@
    "fair_reason": null,
    "gap_pts": 8,
    "status": "ACTIVE",
-   "horizon": "weekend"
-  },
-  {
-   "slug": "will-5-or-more-home-teams-win-in-premier-league-ga-2962",
-   "title": "Will 5 or more home teams win in Premier League Gameweek 6?",
-   "url": "https://beta.xo.market/event/will-5-or-more-home-teams-win-in-premier-league-ga-2962?r=cryptotan01",
-   "creator": "Ralphitoball",
-   "is_ours": false,
-   "xo_price": 0.4,
-   "best_bid": 0.4,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-10-12T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market concerns Chelsea vs Bournemouth in the Premier League, scheduled for 10 October 2026. Resolve YES if both conditions are met:\n1. The match is completed by 22:00 UTC on 10 October 2026.\n2. Cole Palmer is officially credited with at least one goal in that match. Otherwise, resolve NO. Goals scored during regulation time and stoppage time count, including penalties. Own goals, disallowed goals and penalty-shootout goals do not count. Palmer does not need to start. A goal scored after entering as a substitute counts. If Palmer does not play, remains an unused substitute, or plays without scoring, resolve NO. Assists do not count. Chelsea's result does not affect settlement. Only this named fixture counts. If it is postponed or abandoned and is not completed by the deadline, resolve NO. Resolution source: PremierLeague. com.",
+   "resolution_sources": [
+    "https://www.premierleague.com/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.15,
+       "size": 18.811767
+      },
+      {
+       "price": 0.02,
+       "size": 5.797496
+      },
+      {
+       "price": 0.01,
+       "size": 50.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.25,
+       "size": 0.520012
+      },
+      {
+       "price": 0.3,
+       "size": 5.0
+      }
+     ],
+     "last": 0.2
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.75,
+       "size": 0.520012
+      },
+      {
+       "price": 0.7,
+       "size": 5.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.85,
+       "size": 18.811767
+      },
+      {
+       "price": 0.98,
+       "size": 5.797496
+      },
+      {
+       "price": 0.99,
+       "size": 50.0
+      }
+     ],
+     "last": 0.8
+    }
+   }
   },
   {
    "slug": "will-tottenham-sack-roberto-de-zerbi-before-11-nov-3885",
@@ -95,7 +136,37 @@
    "fair_reason": "Fair price coming: not modelled yet.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Tottenham Hotspur officially dismisses or sacks Roberto De Zerbi as head coach before 2026-11-11T23:59:59Z. Voluntary resignation or departure due to health reasons does not count as a sacking. Primary source: Tottenham Hotspur (https://www. tottenhamhotspur. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com) or Sky Sports (https://www. skysports. com). The primary source governs. If The official announcement is officially retracted or The club ceases operations, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.tottenhamhotspur.com",
+    "https://www.bbc.com",
+    "https://www.skysports.com",
+    "https://www.football.london"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.39,
+       "size": 16.393442
+      }
+     ],
+     "last": 0.39
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.61,
+       "size": 16.393442
+      }
+     ],
+     "asks": [],
+     "last": 0.61
+    }
+   }
   },
   {
    "slug": "will-cole-palmer-score-or-assist-vs-bournemouth-1923",
@@ -115,7 +186,37 @@
    "fair_reason": "Fair price coming: not modelled yet.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Cole Palmer records at least one official goal or assist for Chelsea in the Premier League match against Bournemouth on October 10, 2026. Friendly matches or any other competitions outside of this specific Premier League fixture do not count. If Cole Palmer does not appear in the match, the market resolves to No. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://www. bbc. com) or DAZN (https://www. dazn. com). The primary source governs. If the named fixture is cancelled or the match is abandoned without a validated official result, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com",
+    "https://www.dazn.com",
+    "https://www.goal.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "wahala-will-man-united-vs-tottenham-produce-10-cor-1480",
@@ -141,7 +242,34 @@
    "fair_reason": "Fair price coming: not modelled yet.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether The total number of corners in the Premier League fixture between Manchester United and Tottenham Hotspur on October 10, 2026, is greater than 9 according to official Premier League records. Friendly matches or other competitions outside the English Premier League do not count. Post-match disciplinary corners or training sessions do not count. Primary source: Premier League (https://www. premierleague. com). the primary source governs. If the match is cancelled or postponed past the cutoff or official corner statistics are permanently unavailable, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.6,
+       "size": 16.666666
+      }
+     ],
+     "asks": [],
+     "last": 0.6
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.4,
+       "size": 16.666666
+      }
+     ],
+     "last": 0.4
+    }
+   }
   },
   {
    "slug": "will-man-utd-win-fewer-than-2-premier-league-match-3055",
@@ -175,7 +303,37 @@
    "fair_reason": null,
    "gap_pts": -6,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Manchester United wins fewer than 2 Premier League matches during October 2026 according to official league results. Matches in competitions other than the Premier League (such as European competitions or domestic cups) do not count toward the win total. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official Premier League competition is permanently abandoned or cancelled before all scheduled October 2026 matches are played, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.premierleague.com",
+    "https://Manchester United Premier League fixtures and results",
+    "https://Manchester United 2026/27 fixtures"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "will-the-premier-league-announce-a-points-deductio-7531",
@@ -195,7 +353,36 @@
    "fair_reason": "Fair price coming: not modelled yet.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether The Premier League officially announces a points deduction against Manchester City on or before October 31, 2026. Financial penalties or sanctions that do not involve a direct points deduction do not count toward a Yes resolution. Primary source: Premier League (https://premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://bbc. com) or Sky Sports (https://skysports. com). The primary source governs. If The official Premier League proceedings are permanently cancelled or terminated without a ruling or The governing body officially retracts the announcement made prior to the cutoff, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://bbc.com",
+    "https://skysports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.05,
+       "size": 10.526315
+      }
+     ],
+     "last": 0.05
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.95,
+       "size": 10.526315
+      }
+     ],
+     "asks": [],
+     "last": 0.95
+    }
+   }
   },
   {
    "slug": "will-joo-pedro-start-for-chelsea-vs-bournemouth-9641",
@@ -221,7 +408,35 @@
    "fair_reason": "Comes down to team news: the press conference, then lineups 75 minutes before kick-off.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Whether Jo\u00e3o Pedro starts in the starting XI for Chelsea against AFC Bournemouth on October 10, 2026, as confirmed by official league team sheets. Appearances as a substitute do not count as starting the match. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Chelsea FC (https://www. chelseafc. com). The primary source governs. If The match is permanently cancelled or abandoned without a final official starting lineup declared or The player is completely omitted from the matchday squad due to a registration error or fixture cancellation, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.chelseafc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.3,
+       "size": 61.428574
+      }
+     ],
+     "asks": [],
+     "last": 0.3
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.7,
+       "size": 61.428574
+      }
+     ],
+     "last": 0.7
+    }
+   }
   },
   {
    "slug": "will-var-overturn-a-decision-in-liverpool-vs-man-c-2085",
@@ -247,7 +462,35 @@
    "fair_reason": "No reliable public source prices VAR decisions.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether The Video Assistant Referee (VAR) officially overturns at least one referee decision during the Premier League match between Liverpool and Manchester City on October 10, 2026, as recorded by official Premier League match data. VAR checks that do not result in a final decision overturn do not count. Primary source: Premier League (https://premierleague. com). The primary source governs. If The match is abandoned without a final official result or The match is postponed past the cutoff time or cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://mancity.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.35,
+       "size": 28.571428
+      }
+     ],
+     "asks": [],
+     "last": 0.35
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.65,
+       "size": 28.571428
+      }
+     ],
+     "last": 0.65
+    }
+   }
   },
   {
    "slug": "will-londons-clubs-outscore-the-norths-clubs-in-ga-6349",
@@ -281,27 +524,34 @@
    "fair_reason": null,
    "gap_pts": -8,
    "status": "ACTIVE",
-   "horizon": "weekend"
-  },
-  {
-   "slug": "will-roberto-de-zerbi-be-sacked-before-michael-car-6307",
-   "title": "Will Roberto De Zerbi be sacked before Michael Carrick?",
-   "url": "https://beta.xo.market/event/will-roberto-de-zerbi-be-sacked-before-michael-car-6307?r=cryptotan01",
-   "creator": "NikolaiStromme",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": 0.5,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-05T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Only reference is a $212 Polymarket market with a 37-point spread.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether London's six Premier League clubs score more combined goals than the North's eight clubs in Gameweek 6 of the 2026/27 Premier League season. Goals scored outside of Gameweek 6 fixtures do not count. Goals scored by clubs not explicitly categorized within the specified London or North groups do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The Gameweek 6 fixtures are cancelled or abandoned without official results or The Premier League season is suspended or voided, the market voids and all positions resolve equally. The London teams: Arsenal, Brentford, Chelsea, Fulham, Spurs, Crystal PalaceThe Northern teams: Leeds, Sunderland, Man Utd, Hull, Everton, Liverpool, Man City, Newcastle",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.4,
+       "size": 25.0
+      }
+     ],
+     "asks": [],
+     "last": 0.4
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.6,
+       "size": 25.0
+      }
+     ],
+     "last": 0.6
+    }
+   }
   },
   {
    "slug": "will-brighton-score-in-every-premier-league-match--9358",
@@ -335,7 +585,34 @@
    "fair_reason": null,
    "gap_pts": 10,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market covers every Premier League match Brighton & Hove Albion play between 1 October 2026 and 31 October 2026, 23:59 UTC. The scheduled matches are:- Sunderland vs Brighton, 10 Oct- Brighton vs Crystal Palace, 17 Oct- Liverpool vs Brighton, 24 Oct- Manchester City vs Brighton, 31 OctA \"goal\" means any goal added to Brighton's score in the official result, including own goals by the opposition. Only the 90 minutes plus stoppage time count, which is the official Premier League result. If a match is postponed out of October, it is excluded and does not count either way. The market is decided using premierleague. com official match reports. The market closes on 31 October 2026, 23:59 UTC.",
+   "resolution_sources": [
+    "https://premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.25,
+       "size": 40.0
+      }
+     ],
+     "asks": [],
+     "last": 0.25
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.75,
+       "size": 40.0
+      }
+     ],
+     "last": 0.75
+    }
+   }
   },
   {
    "slug": "will-man-united-earn-more-pl-points-than-spurs-in--6054",
@@ -375,7 +652,35 @@
    "fair_reason": null,
    "gap_pts": 1,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "Resolves YES if Manchester United earn more Premier League points than Tottenham Hotspur across Matchweeks 6\u20139 of the 2026/27 season. Otherwise resolves NO. Matches counted: Man United: Spurs (H) 10 Oct, Leeds (A) 18 Oct, Bournemouth (H) 25 Oct, Chelsea (A) 31 OctSpurs: Man United (A) 10 Oct, Coventry (H) 19 Oct, Chelsea (A) 24 Oct, Crystal Palace (H) 31 OctPoints: win = 3, draw = 1, loss = 0, official results only. Any points deduction applied to either club is ignored. Only the seven specified matches completed by 23:59 UTC on 1 November 2026 count. Any match not completed by this deadline is excluded. If both clubs have played the same number of counted matches, YES requires Manchester United to earn strictly more total points than Tottenham. If the clubs have played different numbers of counted matches, YES requires Manchester United to earn strictly more points per counted match than Tottenham. Points per match are compared without rounding. A tie in total points, or in points per match where applicable, resolves NO.",
+   "resolution_sources": [
+    "https://www.premierleague.com/results",
+    "https://www.bbc.com/sport/football/premier-league/scores-fixtures"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 7.0
+      }
+     ],
+     "last": 0.55
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 7.0
+      }
+     ],
+     "asks": [],
+     "last": 0.45
+    }
+   }
   },
   {
    "slug": "will-spurs-have-more-possession-shots-than-united--2186",
@@ -401,7 +706,35 @@
    "fair_reason": "Needs match stats (possession, distance, shots) we don't model.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Tottenham Hotspur registers higher match possession percentage and more total shots than Manchester United while failing to win the Premier League fixture on October 10, 2026. Friendly matches or any other competitions outside the specified Premier League fixture do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to RotoWire (https://www. rotowire. com). The primary source governs. If The match is abandoned without a declared official result or The match is postponed past the settlement cutoff, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.rotowire.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.6,
+       "size": 25.0
+      }
+     ],
+     "last": 0.6
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.4,
+       "size": 25.0
+      }
+     ],
+     "asks": [],
+     "last": 0.4
+    }
+   }
   },
   {
    "slug": "will-brentford-announce-a-new-contract-for-kevin-s-1810",
@@ -421,7 +754,34 @@
    "fair_reason": "Contract news has no market or data reference.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves YES if Brentford FC officially announces that Kevin Schade has signed a new contract or a contract extension with the club after this market\u2019s creation and by 5 November 2026 at 23:59 UTC. The announcement must be published on BrentfordFC. com. Reports of negotiations, offers, verbal agreements or an expected signing do not count. The announcement date determines eligibility, regardless of when the contract takes effect. If no qualifying announcement is published by the deadline, the market resolves NO. Temporary website unavailability does not by itself establish a NO outcome; resolution waits until the announcement record can be verified.",
+   "resolution_sources": [
+    "https://www.brentfordfc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "will-chelsea-concede-2-or-more-goals-this-matchwee-9097",
@@ -466,7 +826,35 @@
    "fair_reason": null,
    "gap_pts": 9,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Chelsea concedes 2 or more goals in its Premier League Matchweek 6 fixture against AFC Bournemouth, according to official match statistics. Only that Matchweek 6 league match counts. Friendly matches, domestic cup matches, European competitions, and other Premier League gameweeks do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the match is abandoned without a declared official result, postponed past the cutoff date, or official statistics are permanently retracted or unavailable, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.chelseafc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.21,
+       "size": 47.619047
+      }
+     ],
+     "asks": [],
+     "last": 0.21
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.79,
+       "size": 47.619047
+      }
+     ],
+     "last": 0.79
+    }
+   }
   },
   {
    "slug": "will-any-premier-league-club-keep-a-clean-sheet-in-9459",
@@ -500,7 +888,34 @@
    "fair_reason": null,
    "gap_pts": 3,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether any single Premier League club keeps a clean sheet in all four October 2026 gameweeks. A clean sheet means the club concedes zero goals in that Premier League match, as recorded in the official full-time result. Own goals conceded count against a clean sheet. Goals in domestic cups or European competitions do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the competition is cancelled or abandoned before the October fixtures are completed, or official match data for those fixtures is permanently unavailable, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.1,
+       "size": 100.0
+      }
+     ],
+     "asks": [],
+     "last": 0.1
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.9,
+       "size": 100.0
+      }
+     ],
+     "last": 0.9
+    }
+   }
   },
   {
    "slug": "will-erling-haaland-score-vs-liverpool-on-october--3762",
@@ -550,7 +965,36 @@
    "fair_reason": null,
    "gap_pts": -11,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "Resolves Yes if Erling Haaland scores at least one goal for Manchester City in the Premier League match Liverpool v Manchester City at Anfield on Sunday 11 October 2026 (16:30 UK time), as credited by the Premier League official match centre (fallback: BBC Sport match report). Normal time plus stoppage time, penalties included. Own goals do not count. If Haaland does not play, it resolves No. If the match is postponed or abandoned and not completed by 18 October 2026, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com",
+    "https://www.goal.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 18.181818
+      }
+     ],
+     "asks": [],
+     "last": 0.55
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 18.181818
+      }
+     ],
+     "last": 0.45
+    }
+   }
   },
   {
    "slug": "will-gonzalo-garcia-outscore-josh-king-in-fpl-poin-6978",
@@ -589,7 +1033,36 @@
    "fair_reason": null,
    "gap_pts": 11,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Gonzalo Garcia outscores Josh King in total official Fantasy Premier League points across Gameweeks 6 to 8 of the 2026/27 season. Points scored outside of Gameweeks 6, 7, and 8 of the 2026/27 season do not count. Bonus points or points adjusted outside of official Premier League and FPL post-match processing do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Fantasy Premier League (https://fantasy. premierleague. com). The primary source governs. If the official FPL points data for either player across GW6-8 is permanently unavailable or retracted or the 2026/27 Premier League season is cancelled before the completion of Gameweek 8, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://fantasy.premierleague.com",
+    "https://www.premierleague.com",
+    "https://www.fulhamfc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 22.222222
+      }
+     ],
+     "asks": [],
+     "last": 0.45
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 22.222222
+      }
+     ],
+     "last": 0.55
+    }
+   }
   },
   {
    "slug": "will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305",
@@ -609,7 +1082,34 @@
    "fair_reason": "No Polymarket market prices this manager's job by this date.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market will resolve based on whether Roberto De Zerbi is still manager of Tottenham Hotspur at 11:59 PM UTC on November 1, 2026.\n\nThe market resolves to \u201cYes\u201d if De Zerbi remains Spurs manager through the deadline and no official announcement of his departure has been made by then.\n\nThe market resolves to \u201cNo\u201d if De Zerbi leaves the club at any point between October 6, 2026 and November 1, 2026, 11:59 PM UTC, or if Tottenham officially announces his resignation, dismissal, or mutual departure by the deadline, regardless of when that departure takes effect.\n\nA caretaker, interim, or \u201cuntil a replacement is appointed\u201d arrangement after he has left still counts as No. A poor run of results, fan pressure, or reports that he is under threat do not count unless he actually leaves or an official departure is announced. Rumors and unconfirmed media speculation do not qualify. Timing is decided by the official club announcement. Primary source: Tottenham Hotspur. A consensus of credible reporting will also suffice. If the outcome cannot be reasonably determined, the market will be voided.",
+   "resolution_sources": [
+    "https://www.tottenhamhotspur.com/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "next-premier-league-hat-trick-before-christmas-5957",
@@ -629,7 +1129,35 @@
    "fair_reason": "The question's wording is open to more than one reading.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Whether a Premier League hat-trick is scored on or before December 25, 2026, 23:59:59 UTC, as confirmed by the official league records. A hat-trick is three or more goals by the same player in one Premier League match, counted in the official Premier League match report. Hat-tricks scored in other domestic or international competitions (such as the FA Cup, League Cup, or UEFA competitions) do not count. Hat-tricks scored prior to the reference date do not count toward this specific timeframe. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Sky Sports (https://www. skysports. com). The primary source governs. If the official Premier League season is permanently cancelled or records are officially retracted by the league governing body, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.skysports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.28,
+       "size": 42.857142
+      }
+     ],
+     "asks": [],
+     "last": 0.28
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.72,
+       "size": 42.857142
+      }
+     ],
+     "last": 0.72
+    }
+   }
   },
   {
    "slug": "will-manchester-city-have-10-or-more-points-deduct-5209",
@@ -693,7 +1221,85 @@
    "fair_reason": null,
    "gap_pts": 50,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Manchester City is officially penalized with a point deduction of 10 or more points applicable to their 2026/27 Premier League season total due to the 115-charge case. Point deductions applied to any season other than 2026/27 are excluded. Financial fines or transfer bans without a point deduction do not count toward the threshold. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com/sport/football). If the 2026/27 Premier League season is abandoned or cancelled before a ruling is issued or the charges are completely dropped or annulled without any sporting sanction, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.05,
+       "size": 94.73686
+      },
+      {
+       "price": 0.04,
+       "size": 100.0
+      },
+      {
+       "price": 0.03,
+       "size": 100.0
+      },
+      {
+       "price": 0.02,
+       "size": 100.0
+      },
+      {
+       "price": 0.01,
+       "size": 100.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 10.0
+      },
+      {
+       "price": 0.5,
+       "size": 10.0
+      }
+     ],
+     "last": 0.25
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 10.0
+      },
+      {
+       "price": 0.5,
+       "size": 10.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.95,
+       "size": 94.73686
+      },
+      {
+       "price": 0.96,
+       "size": 100.0
+      },
+      {
+       "price": 0.97,
+       "size": 100.0
+      },
+      {
+       "price": 0.98,
+       "size": 100.0
+      },
+      {
+       "price": 0.99,
+       "size": 100.0
+      }
+     ],
+     "last": 0.75
+    }
+   }
   },
   {
    "slug": "alexander-isak-vs-joo-pedro-most-premier-league-go-4016",
@@ -732,7 +1338,35 @@
    "fair_reason": null,
    "gap_pts": -8,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Alexander Isak or Jo\u00e3o Pedro scores more official Premier League goals during the 2026/27 season (running from August 21, 2026, to May 30, 2027). Goals scored in domestic cup competitions, European competitions, and international fixtures are excluded. Friendly matches are excluded. If both players finish the season with the same number of official Premier League goals, the market voids and all positions resolve equally. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com/sport/football). The primary source governs in all cases. Secondary sources are used only if the primary source is unavailable. If the Premier League season is permanently abandoned before any matches are played or official statistics are permanently unavailable from all designated sources, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.44,
+       "size": 5.0
+      }
+     ],
+     "asks": [],
+     "last": 0.44
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.56,
+       "size": 5.0
+      }
+     ],
+     "last": 0.56
+    }
+   }
   },
   {
    "slug": "will-any-man-city-premier-league-title-be-stripped-7797",
@@ -766,7 +1400,35 @@
    "fair_reason": null,
    "gap_pts": -40,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Manchester City has at least one Premier League title officially stripped or revoked by the Premier League or an independent regulatory commission. Fines, point deductions, or other sporting sanctions that do not result in the complete stripping of a title are excluded. Titles from other domestic or international competitions (such as the FA Cup, UEFA Champions League, or League Cup) are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com/sport). The primary source governs over secondary sources. If the Premier League competition is permanently dissolved before an official ruling is made, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 10.0
+      }
+     ],
+     "asks": [],
+     "last": 0.55
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 10.0
+      }
+     ],
+     "last": 0.45
+    }
+   }
   },
   {
    "slug": "arsenal-120-combined-xg-conceded-vs-leeds-forest-8053",
@@ -792,7 +1454,34 @@
    "fair_reason": "Fair price coming: not modelled yet.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on the combined expected goals (xG) conceded by Arsenal across their Premier League matches against Leeds United on October 10, 2026 and Nottingham Forest on October 18, 2026, using FotMob's xG figures. Only these two specified Premier League matches count. The xG recorded for Leeds United against Arsenal and Nottingham Forest against Arsenal will be added together. Yes: Resolves Yes if the combined xG conceded by Arsenal across the two matches is strictly less than 1.\n20. No: Resolves No if the combined xG conceded by Arsenal across the two matches is 1.20 or greater. Resolution source: FotMob.",
+   "resolution_sources": [
+    "https://www.fotmob.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.37,
+       "size": 27.027027
+      }
+     ],
+     "asks": [],
+     "last": 0.37
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.63,
+       "size": 27.027027
+      }
+     ],
+     "last": 0.63
+    }
+   }
   },
   {
    "slug": "man-united-12-corners-in-next-2-matches-4742",
@@ -812,7 +1501,34 @@
    "fair_reason": "Fair price coming: not modelled yet.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Manchester United records 12 or more total corner kicks across their next two Premier League matches against Tottenham Hotspur and Leeds United as officially recorded by the Premier League. Corner kicks recorded in any other competitions or friendly matches do not count. Corner kicks recorded outside of the specified two fixtures do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the matches are cancelled or permanently abandoned without official statistics or official statistics are permanently retracted by the governing body, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.65,
+       "size": 15.384615
+      }
+     ],
+     "asks": [],
+     "last": 0.65
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.35,
+       "size": 15.384615
+      }
+     ],
+     "last": 0.35
+    }
+   }
   },
   {
    "slug": "will-a-defender-be-the-highest-scoring-fpl-player--1361",
@@ -832,7 +1548,34 @@
    "fair_reason": "Fair price coming: not modelled yet.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether a defender achieves the highest individual Fantasy Premier League point total in Gameweek 6 of the 2026/27 season, as published by the official Fantasy Premier League platform. If a defender is tied with one or more players for the highest point total, this counts as Yes. Only official Fantasy Premier League points awarded for Gameweek 6 count. Points or scoring from any other fantasy football platform do not count. Primary source: Premier League (premierleague. com). If official Gameweek 6 scores are not published, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://fantasy.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.35,
+       "size": 15.384615
+      }
+     ],
+     "last": 0.35
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.65,
+       "size": 15.384615
+      }
+     ],
+     "asks": [],
+     "last": 0.65
+    }
+   }
   },
   {
    "slug": "will-brighton-outscore-arsenal-across-premier-leag-6832",
@@ -866,7 +1609,52 @@
    "fair_reason": null,
    "gap_pts": -17,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "Compare each club\u2019s total goals across these Premier League Matchweek 6\u20138 fixtures only: Brighton:\u2022 Sunderland vs Brighton\u2022 Brighton vs Crystal Palace\u2022 Liverpool vs BrightonArsenal:\u2022 Arsenal vs Leeds United\u2022 Nottingham Forest vs Arsenal\u2022 Arsenal vs EvertonAdd the goals scored by each club across its three listed matches. Individual match results, league points and goal difference do not matter. Use the official Premier League final scores. Own goals count towards the team total credited in the official score. Only regulation time and stoppage time count. Cup matches, European matches and penalty shootouts do not count. Do not substitute other fixtures if the schedule changes. Postponed matches count only if completed by the deadline. If any listed match is not completed by the deadline, the outcome is NO. Resolution deadline: 25 October 2026 at 22:00 UTC. Resolution source: PremierLeague. com",
+   "resolution_sources": [
+    "https://PremierLeague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 2.333337
+      },
+      {
+       "price": 0.45,
+       "size": 11.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 9.16364
+      }
+     ],
+     "last": 0.525
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 9.16364
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 2.333337
+      },
+      {
+       "price": 0.55,
+       "size": 11.0
+      }
+     ],
+     "last": 0.475
+    }
+   }
   },
   {
    "slug": "will-haaland-score-in-at-least-2-of-man-citys-next-5947",
@@ -920,7 +1708,53 @@
    "fair_reason": null,
    "gap_pts": 4,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market concerns Erling Haaland scoring in the following three Manchester City Premier League fixtures: Liverpool vs Manchester City , scheduled for October 11, 2026. Manchester City vs Ipswich Town, scheduled for October 17, 2026. Aston Villa vs Manchester City , scheduled for October 24, 2026. Resolve YES if Haaland scores at least one goal in at least two of these three specified fixtures. Resolve NO if he scores in zero or one of these fixtures. Count the number of separate fixtures in which he scores, not his total number of goals. Two or more goals in one fixture count as one scoring fixture. Goals officially credited to Haaland during regulation time, including stoppage time and penalties, count. Own goals do not count. He does not have to start. A substitute appearance counts. If he does not play in a specified fixture, that fixture counts as a non-scoring fixture. Do not replace it with a later appearance. Match results do not matter: a goal counts whether Manchester City win, draw or lose. Only the three listed Premier League fixtures count. Exclude all other competitions and fixtures. All three fixtures must be completed by October 24, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Settlement is scheduled after the listed fixtures. Source: official Premier League match results and goalscorer records available at the resolution deadline.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://theanalyst.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 1.000002
+      },
+      {
+       "price": 0.45,
+       "size": 11.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 7.36364
+      }
+     ],
+     "last": 0.525
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 7.36364
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 1.000002
+      },
+      {
+       "price": 0.55,
+       "size": 11.0
+      }
+     ],
+     "last": 0.475
+    }
+   }
   },
   {
    "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
@@ -959,7 +1793,45 @@
    "fair_reason": null,
    "gap_pts": -46,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://theanalyst.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 9.87192
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 7.34546
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 7.34546
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 9.87192
+      }
+     ],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "will-chelseas-pl-clean-sheet-drought-reach-22-matc-1309",
@@ -1004,7 +1876,56 @@
    "fair_reason": null,
    "gap_pts": -1,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Chelsea keep a clean sheet in their Premier League match against Bournemouth on 10 October 2026. The market reaches 22 consecutive matches without a clean sheet if Chelsea concede at least one goal during the match. The primary resolution source is the official Premier League match report, with Chelsea FC as a secondary source.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.chelseafc.com/en",
+    "https://www.premierleague.com/en/news/4726854/ten-things-weve-learned-from-202627-season-so-far",
+    "https://www.tntsports.co.uk/football/premier-league/2026-2027/chelsea-worrying-numbers-brentford-bullied-xabi-alonso_sto23338574/story.shtml",
+    "https://www.skysports.com/football/chelsea-vs-bournemouth/7344304273628933232"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.6,
+       "size": 100.0
+      },
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.85,
+       "size": 100.0
+      }
+     ],
+     "last": 0.725
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.15,
+       "size": 100.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.4,
+       "size": 100.0
+      },
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.275
+    }
+   }
   },
   {
    "slug": "will-tottenham-score-at-least-3-goals-in-october-2-5449",
@@ -1038,7 +1959,42 @@
    "fair_reason": null,
    "gap_pts": 26,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Tottenham Hotspur scores a cumulative total of at least 3 goals across their four scheduled Premier League matches in October 2026. Tottenham Hotspur four Premier League matches in October 2026: Manchester United (A), Coventry City (H), Chelsea (A), Crystal Palace (H)Goals scored in competitions other than the Premier League do not count. Matches played outside of the month of October 2026 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the named fixtures are permanently cancelled or abandoned without official results or official statistics are retracted by the league, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.65,
+       "size": 100.0
+      },
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.65
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.35,
+       "size": 100.0
+      },
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.35
+    }
+   }
   },
   {
    "slug": "will-19-goals-be-scored-across-all-premier-league--1030",
@@ -1072,7 +2028,34 @@
    "fair_reason": null,
    "gap_pts": -6,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Total combined goals scored across all English Premier League matches played on October 10, 2026 reaches or exceeds 19 according to official league records. Goals scored in matches outside of the English Premier League on October 10, 2026 do not count. Friendly matches or fixtures rescheduled outside of this specific date do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The designated matches are permanently cancelled or abandoned without official results or Official match data is retracted or unavailable, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.4,
+       "size": 25.0
+      }
+     ],
+     "asks": [],
+     "last": 0.4
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.6,
+       "size": 25.0
+      }
+     ],
+     "last": 0.6
+    }
+   }
   },
   {
    "slug": "man-city-sanctions-announced-before-nov-6-3294",
@@ -1106,7 +2089,42 @@
    "fair_reason": null,
    "gap_pts": -14,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Official sanctions against Manchester City are announced by the Premier League or an independent commission before 23:59:59 UTC on November 6, 2026. Unofficial leaks, rumors, or unconfirmed media reports do not count as an official announcement. Primary source: Premier League (https://premierleague. com). The primary source governs. If The official Premier League website becomes inaccessible or permanently retracts the relevant reporting without issuing a definitive announcement, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.21,
+       "size": 200.0
+      },
+      {
+       "price": 0.22,
+       "size": 12.820512
+      }
+     ],
+     "last": 0.21
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.79,
+       "size": 200.0
+      },
+      {
+       "price": 0.78,
+       "size": 12.820512
+      }
+     ],
+     "asks": [],
+     "last": 0.79
+    }
+   }
   },
   {
    "slug": "will-coventry-city-be-the-lowest-or-joint-lowest-s-3849",
@@ -1140,7 +2158,34 @@
    "fair_reason": null,
    "gap_pts": -38,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Coventry City is the lowest or joint lowest-scoring team by total goals across Premier League Matchweeks 6 through 9 of the 2026/27 season. Goals scored outside of Premier League Matchweeks 6 through 9 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the named record is retracted or the competition season is cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.6,
+       "size": 16.666666
+      }
+     ],
+     "asks": [],
+     "last": 0.6
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.4,
+       "size": 16.666666
+      }
+     ],
+     "last": 0.4
+    }
+   }
   },
   {
    "slug": "will-arsenal-score-directly-from-a-corner-in-their-5067",
@@ -1160,7 +2205,36 @@
    "fair_reason": "No clean data on set-piece or corner goals.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves on whether Arsenal score a goal directly from a corner kick in both of these Premier League matches: against Leeds United on 10 October 2026, and against Nottingham Forest on 18 October 2026. Only 90 minutes plus stoppage time count. A goal counts only if the ball is played in from the corner arc and goes into the net from that same delivery. The scorer may be the corner taker or any other Arsenal player who heads or shoots the delivery on the first contact after the corner is taken. A touch by a defender or goalkeeper that deflects that same delivery into the net still counts. It does not count if the corner is cleared, punched, blocked or otherwise leaves the delivery, and Arsenal then score from the loose ball, a rebound, a second cross or any later phase. Penalties, free kicks, throw-ins and open-play goals do not count. Yes requires one qualifying goal in each match. A qualifying goal in only one match is No. The source is the official match report and event data on premierleague. com. BBC Sport may be used only if that report is unavailable and it quotes or links the official description. If the report does not clearly show that the goal came from the corner delivery itself, the goal does not count. If either match is not completed within 14 days of its scheduled kick-off, or the official record cannot establish the method of a disputed goal, the market is void.",
+   "resolution_sources": [
+    "https://www.arsenal.com",
+    "https://www.premierleague.com",
+    "https://www.bbc.co.uk"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 18.181818
+      }
+     ],
+     "last": 0.45
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 18.181818
+      }
+     ],
+     "asks": [],
+     "last": 0.55
+    }
+   }
   },
   {
    "slug": "will-any-premier-league-team-win-with-under-30-pos-1858",
@@ -1180,7 +2254,34 @@
    "fair_reason": "Needs match stats (possession, distance, shots) we don't model.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Any Premier League team wins a match with under 30% possession during Matchday 6 or Matchday 7 of the 2026/27 season as recorded by the official Premier League statistics provider. Matches outside of Matchday 6 and Matchday 7 of the 2026/27 Premier League season do not count. Matches in other competitions such as domestic cups or European tournaments do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official match record is permanently retracted or unavailable or the relevant matches are permanently cancelled before a result is declared, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.4,
+       "size": 16.666666
+      }
+     ],
+     "last": 0.4
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.6,
+       "size": 16.666666
+      }
+     ],
+     "asks": [],
+     "last": 0.6
+    }
+   }
   },
   {
    "slug": "will-merino-play-more-minutes-than-gykeres-vs-leed-9893",
@@ -1200,7 +2301,35 @@
    "fair_reason": "Minutes questions need team news; check the press conference.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "Resolves YES if Mikel Merino plays more minutes than Viktor Gy\u00f6keres for Arsenal in the Premier League match against Leeds United at the Emirates Stadium on 10 October 2026. Resolves NO if Gy\u00f6keres plays more minutes, or if both play the same number of minutes (including both playing 0). A player who is not in the squad or stays on the bench counts as 0 minutes. Minutes are taken from the official match data on premierleague. com; if a figure is unclear, the official substitution times in the match report decide. If the match is not played on 10 October 2026, the market resolves NO. Trading closes at 09:00 UTC on 10 October 2026, two and a half hours before the 11:30 UTC (12:30 UK) kickoff.",
+   "resolution_sources": [
+    "https://www.premierleague.com/results",
+    "https://www.arsenal.com/fixtures"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 5.0
+      }
+     ],
+     "last": 0.45
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 5.0
+      }
+     ],
+     "asks": [],
+     "last": 0.55
+    }
+   }
   },
   {
    "slug": "will-liverpool-earn-at-least-7-points-in-their-nex-3876",
@@ -1234,7 +2363,35 @@
    "fair_reason": null,
    "gap_pts": -15,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Liverpool FC earns at least 7 points in total from these four Premier League fixtures only: Liverpool vs Manchester City, Brentford vs Liverpool, Liverpool vs Brighton & Hove Albion, and Liverpool vs Arsenal as determined by the official Premier League standings and match records. Matches outside the designated four-game sequence do not count toward the point total. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official Premier League record is permanently retracted or unavailable or Any match in the four-game sequence is permanently cancelled or abandoned without an official result, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.liverpoolfc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "will-leeds-united-score-from-a-non-penalty-set-pie-7211",
@@ -1260,7 +2417,36 @@
    "fair_reason": "No clean data on set-piece or corner goals.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves on whether Leeds United score at least one goal from a non-penalty set piece in their Premier League match against Arsenal on 10 October 2026. Only 90 minutes plus stoppage time count. Extra time does not apply. A non-penalty set piece is a corner, a direct free kick, an indirect free kick, a throw-in, or a goal kick. A penalty is not a non-penalty set piece. Yes: Leeds score at least one goal from such a set piece. The goal counts if it is scored directly from the set piece, or from the immediate set-piece sequence before open play resumes, including a header, flick-on, or rebound from the first contact. An own goal forced in that same sequence counts as a Leeds goal. No: Leeds do not score from a non-penalty set piece. Penalties, goals from open play, and goals scored only after the set-piece sequence has ended do not count. The primary source is the official match report and event data on premierleague. com. BBC Sport or Sky Sports may be used only if that report is unavailable and they quote or link it. If the match is abandoned and not completed within 14 days of the scheduled kick-off, the market is void.",
+   "resolution_sources": [
+    "https://www.premierleague.com/en/match/2645245/essenal-vs-leeds-united/info",
+    "https://www.premierleague.com/en/clubs/2/leeds-united/stats",
+    "https://essential.football/most-premier-league-set-piece-goals-2026-27/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "will-joelinton-play-30-minutes-at-coventry-on-mond-5857",
@@ -1280,7 +2466,35 @@
    "fair_reason": "Minutes questions need team news; check the press conference.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "Resolves YES if Joelinton plays 30 or more minutes for Newcastle United in the Premier League match Coventry City v Newcastle United on Monday 12 October 2026 (kick-off 19:00 UTC). Minutes are counted on the 90-minute match clock from the official substitution times in the Premier League match report; stoppage time is not counted (45+2 counts as 45, 90+3 as 90). His minutes equal the minute he leaves the pitch (90 if he is on the pitch at full time) minus the minute he comes on (0 if he starts). For example, a starter who leaves in the 30th minute or later, or a substitute who comes on in the 60th minute or earlier and stays on, plays 30 or more minutes. Resolves NO if he plays fewer than 30 minutes, is an unused substitute or is not in the matchday squad. If the match is postponed, abandoned or not played on 12 October 2026, the market resolves NO. Trading closes at 17:45 UTC on 12 October 2026, before the team sheets are published.",
+   "resolution_sources": [
+    "https://www.premierleague.com/results",
+    "https://www.bbc.com/sport/football/premier-league/scores-fixtures"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "will-arsenal-fail-to-score-a-first-half-goal-this--7623",
@@ -1325,7 +2539,35 @@
    "fair_reason": null,
    "gap_pts": 13,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Whether Arsenal scores a goal in the first half of their Premier League fixture against Leeds United on October 10, 2026. Goals scored in the second half or extra time do not count toward first-half statistics. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Arsenal (https://www. arsenal. com). The primary source governs. If The match is cancelled or permanently abandoned before the end of the first half or Official statistics are retracted without a replacement, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.arsenal.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.24,
+       "size": 41.666666
+      }
+     ],
+     "asks": [],
+     "last": 0.24
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.76,
+       "size": 41.666666
+      }
+     ],
+     "last": 0.76
+    }
+   }
   },
   {
    "slug": "will-pascal-gro-score-or-assist-in-at-least-2-of-b-1609",
@@ -1379,7 +2621,35 @@
    "fair_reason": null,
    "gap_pts": -26,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Pascal Gro\u00df registers a goal or an assist in at least 2 of Brighton & Hove Albion's next 4 Premier League matches as recorded by official Premier League statistics. Appearances in competitions other than the English Premier League do not count. Matches played outside of Brighton's specified next 4 Premier League fixtures do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to ESPN (https://www. espn. com). The primary source governs. If the named record is retracted or the matches are cancelled or permanently abandoned without official results, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.espn.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "both-teams-to-score-before-two-goal-lead-in-liverp-9362",
@@ -1405,7 +2675,36 @@
    "fair_reason": "Depends on the order of goals, which our model doesn't track.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Both Liverpool and Manchester City score a goal before either team leads by two goals during the Premier League match on October 11, 2026. Goals scored after either team has already established a two-goal lead do not count towards the Yes outcome. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Goal (https://www. goal. com). The primary source governs. If The match is abandoned without an official result declared or The fixture is cancelled or postponed indefinitely, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.goal.com",
+    "https://www.liverpoolfc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.57,
+       "size": 17.543859
+      }
+     ],
+     "asks": [],
+     "last": 0.57
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.43,
+       "size": 17.543859
+      }
+     ],
+     "last": 0.43
+    }
+   }
   },
   {
    "slug": "will-var-change-an-on-field-goal-decision-in-liver-7216",
@@ -1431,7 +2730,35 @@
    "fair_reason": "No reliable public source prices VAR decisions.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether VAR changes an on-field goal decision during the Premier League match between Liverpool and Manchester City on October 11, 2026. Pre-match or post-match disciplinary reviews not affecting a goal decision do not count. VAR checks that do not result in changing the on-field decision do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Liverpool FC (https://www. liverpoolfc. com). The primary source governs. If The match is permanently abandoned without an official result or The fixture is cancelled or rescheduled outside the gameweek window, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.liverpoolfc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.38,
+       "size": 16.129032
+      }
+     ],
+     "last": 0.38
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.62,
+       "size": 16.129032
+      }
+     ],
+     "asks": [],
+     "last": 0.62
+    }
+   }
   },
   {
    "slug": "will-arsenals-first-goal-against-leeds-come-after--5781",
@@ -1476,7 +2803,34 @@
    "fair_reason": null,
    "gap_pts": -13,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Arsenal's first goal in the Premier League fixture against Leeds United on October 10, 2026, is scored after half-time. Goals scored in pre-season friendlies or other competitions do not count. Own goals scored by opponents do not count as Arsenal's goal for the purpose of timing the first goal unless officially credited. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The match is cancelled or permanently abandoned without an official result declared or Official fixture statistics are retracted or unavailable, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.39,
+       "size": 16.393442
+      }
+     ],
+     "last": 0.39
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.61,
+       "size": 16.393442
+      }
+     ],
+     "asks": [],
+     "last": 0.61
+    }
+   }
   },
   {
    "slug": "will-richarlison-start-a-match-for-tottenham-befor-7479",
@@ -1496,7 +2850,35 @@
    "fair_reason": "Minutes questions need team news; check the press conference.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market is about whether Richarlison starts an official competitive match for any Tottenham Hotspur team between 7 October 2026 and 31 October 2026, 23:59 UTC. Qualifying teams and competitions:- The Tottenham first team in the Premier League;- Tottenham U21 in Premier League 2, the Premier League International Cup or the EFL Trophy. A \"start\" means Richarlison is named in the official starting XI before kick-off. Coming on as a substitute does not count. Friendlies, behind-closed-doors games and training matches do not count. The market is decided using the official line-ups on premierleague. com's match centre. If a line-up is not listed there, tottenhamhotspur. com match reports are used as the backup source. The market closes on 31 October 2026, 23:59 UTC.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://tottenhamhotspur.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.2,
+       "size": 12.5
+      }
+     ],
+     "last": 0.2
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.8,
+       "size": 12.5
+      }
+     ],
+     "asks": [],
+     "last": 0.8
+    }
+   }
   },
   {
    "slug": "will-martin-degaard-record-a-ga-in-each-of-arsenal-8125",
@@ -1550,7 +2932,34 @@
    "fair_reason": null,
    "gap_pts": -7,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market covers Arsenal's next three Premier League matches: Arsenal vs Leeds (10 Oct), Nottingham Forest vs Arsenal (17 Oct) and Arsenal vs Everton (24 Oct). A \"goal or assist\" means a goal or an assist credited to \u00d8degaard in the official premierleague. com match stats.- Goals that opponents score into their own net do not count as his goals.- Stats are taken as shown on premierleague. com 48 hours after the final qualifying match, so any official corrections are included. He can record his goal or assist as a starter or as a substitute. If any of the three matches is postponed, the next Premier League match Arsenal play replaces it.",
+   "resolution_sources": [
+    "https://premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.09,
+       "size": 10.98901
+      }
+     ],
+     "last": 0.09
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.91,
+       "size": 10.98901
+      }
+     ],
+     "asks": [],
+     "last": 0.91
+    }
+   }
   },
   {
    "slug": "will-frank-lampard-still-be-coventry-citys-manager-2683",
@@ -1570,7 +2979,35 @@
    "fair_reason": "No Polymarket market prices this manager's job by this date.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market refers to whether Frank Lampard remains Coventry City\u2019s first-team manager through 23:59 UTC on 6 November 2026. It resolves on whether Coventry City or the Premier League has officially announced before that deadline that he is leaving the role.\n\nYes resolves if, at 23:59 UTC on 6 November 2026, Frank Lampard is Coventry City\u2019s first-team manager and no departure has been officially announced. A temporary absence, such as illness or a touchline ban, does not count as leaving.\n\nNo resolves if, before 23:59 UTC on 6 November 2026, Coventry City or the Premier League officially announces that Lampard is leaving the role. This covers being sacked, resigning, or leaving by mutual consent, and it applies even if the departure takes effect after 6 November. \n\nResolution will be based on official announcements from Coventry City or the Premier League as the primary source. BBC Sport or Sky Sports will be used as a secondary source only if the official announcement is not available on the primary sources within a timely manner, and only if they quote or link it. A later reversal or delay does not change the result once a qualifying departure has been announced. If no official record can reasonably establish Lampard\u2019s status by the deadline, the market will be voided.",
+   "resolution_sources": [
+    "https://ccfc.co.uk",
+    "https://premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.88,
+       "size": 11.363636
+      }
+     ],
+     "asks": [],
+     "last": 0.88
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.12,
+       "size": 11.363636
+      }
+     ],
+     "last": 0.12
+    }
+   }
   },
   {
    "slug": "will-a-premier-league-coach-be-sacked-before-novem-4400",
@@ -1590,7 +3027,35 @@
    "fair_reason": "No Polymarket market prices this manager's job by this date.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether An official English Premier League manager is dismissed from their position before November 1, 2026, 00:00:00 UTC. Temporary leave of absence due to health or personal reasons without permanent dismissal does not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Squawka (https://www. squawka. com). The primary source governs. If the named record is retracted or the event or season is cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.squawka.com",
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.35,
+       "size": 28.571428
+      }
+     ],
+     "asks": [],
+     "last": 0.35
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.65,
+       "size": 28.571428
+      }
+     ],
+     "last": 0.65
+    }
+   }
   },
   {
    "slug": "will-haaland-have-more-premier-league-goals-than-t-7197",
@@ -1629,7 +3094,34 @@
    "fair_reason": null,
    "gap_pts": 4,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Erling Haaland scores more total Premier League goals than Tottenham Hotspur as a team by November 1, 2026, as measured by official Premier League match statistics. Goals scored in competitions outside of the English Premier League do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The Premier League season is cancelled or permanently abandoned before November 1, 2026, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "will-coventry-be-above-tottenham-in-the-premier-le-3599",
@@ -1663,7 +3155,35 @@
    "fair_reason": null,
    "gap_pts": 0,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Coventry City is positioned above Tottenham Hotspur in the official Premier League table at the conclusion of Matchweek 8 of the 2026/27 season. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to NBC Sports (https://www. nbcsports. com). The primary source governs. If The 2026/27 Premier League season is cancelled or abandoned before Matchweek 8 is completed, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.nbcsports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.44,
+       "size": 22.727272
+      }
+     ],
+     "asks": [],
+     "last": 0.44
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.56,
+       "size": 22.727272
+      }
+     ],
+     "last": 0.56
+    }
+   }
   },
   {
    "slug": "will-chelsea-concede-more-premier-league-goals-tha-9396",
@@ -1683,7 +3203,36 @@
    "fair_reason": "Two readings: season totals (Chelsea have conceded 12, Spurs have scored 2): 100%. only goals from now to 1 Nov: 39%. They differ too much to show one number.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Chelsea concedes more Premier League goals than Tottenham Hotspur scores from market launch until November 1, 2026, 23:59 UTC. Only Premier League goals in matches played after market launch count. Goals already scored or conceded before launch, and goals in domestic cups or European matches, do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season is officially cancelled or abandoned before November 1, 2026, and the outcome cannot be determined, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.chelseafc.com",
+    "https://www.tottenhamhotspur.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 18.181818
+      }
+     ],
+     "asks": [],
+     "last": 0.55
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 18.181818
+      }
+     ],
+     "last": 0.45
+    }
+   }
   },
   {
    "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
@@ -1717,7 +3266,35 @@
    "fair_reason": null,
    "gap_pts": 0,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves on the overall Premier League table at premierleague. com/tables (not home/away or form), as shown at 23:59 UTC Mon 2 Nov 2026. The table counts as shown at that time, whether or not every Matchweek 9 match has been played. Any points deductions applied by then count. Primary source: premierleague. com/tables. Secondary: BBC Sport table. If the primary is unavailable at the check time, use the secondary; if they conflict, the primary prevails. If neither can be verified within 48h of the check time, the market is void and settles per XO rules. Later corrections after the check time are ignored.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://www.bbc.co.uk/sport/football/premier-league/table"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.47,
+       "size": 21.276595
+      }
+     ],
+     "asks": [],
+     "last": 0.47
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.53,
+       "size": 21.276595
+      }
+     ],
+     "last": 0.53
+    }
+   }
   },
   {
    "slug": "will-haaland-be-the-most-selected-captain-in-fpl-f-3778",
@@ -1737,7 +3314,34 @@
    "fair_reason": "FPL publishes captaincy only after the deadline.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves YES if Erling Haaland (FPL element ID 411) is the most captained player in Fantasy Premier League Gameweek 6 of the 2026/27 season, including if he ties for the highest captaincy percentage with one or more other players, and NO otherwise. Resolution source: the most_captained field for event ID 6 in the official FPL API (https://fantasy. premierleague. com/api/bootstrap-static/), checked 24 hours after the Gameweek 6 deadline (10 October 2026, 10:00 UTC). If the API is unavailable, the most captained player shown on fantasy. premierleague. com is used, followed by the official Fantasy Premier League X account (@OfficialFPL). Third-party sites, polls and estimates do not count. Trading closes at the Gameweek 6 deadline (10 October 2026, 10:00 UTC). If no official source has published the Gameweek 6 most captained player within 7 days of the deadline, the market is voided and settled under XO Market's standard void rules.",
+   "resolution_sources": [
+    "https://premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.35,
+       "size": 28.571428
+      }
+     ],
+     "asks": [],
+     "last": 0.35
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.65,
+       "size": 28.571428
+      }
+     ],
+     "last": 0.65
+    }
+   }
   },
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
@@ -1771,7 +3375,35 @@
    "fair_reason": null,
    "gap_pts": 8,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves on the overall Premier League table at premierleague. com/tables (not home/away or form), as shown at 23:59 UTC Mon 2 Nov 2026. The table counts as shown at that time, whether or not every Matchweek 9 match has been played. Any points deductions applied by then count. Primary source: premierleague. com/tables. Secondary: BBC Sport table. If the primary is unavailable at the check time, use the secondary; if they conflict, the primary prevails. If neither can be verified within 48h of the check time, the market is void and settles per XO rules. Later corrections after the check time are ignored.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.co.uk/sport/football/premier-league/table"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.47,
+       "size": 18.867924
+      }
+     ],
+     "last": 0.47
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.53,
+       "size": 18.867924
+      }
+     ],
+     "asks": [],
+     "last": 0.53
+    }
+   }
   },
   {
    "slug": "will-fpls-most-captained-player-score-3-or-fewer-p-6410",
@@ -1826,7 +3458,35 @@
    "fair_reason": null,
    "gap_pts": 2,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves on the official FPL points of Gameweek 6's most-captained player, as published by fantasy. premierleague. com (including the most_captained field for GW6 in the public FPL API). Points are that player's own GW6 points including bonus, excluding the captain multiplier. Checked at 06:00 UTC Tue 13 Oct. If FPL publishes no most-captained player for GW6, the market is void and settles per XO rules. Later corrections after the check time are ignored.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://fantasy.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.44,
+       "size": 17.857142
+      }
+     ],
+     "last": 0.44
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.56,
+       "size": 17.857142
+      }
+     ],
+     "asks": [],
+     "last": 0.56
+    }
+   }
   },
   {
    "slug": "will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898",
@@ -1860,7 +3520,34 @@
    "fair_reason": null,
    "gap_pts": 67,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Bukayo Saka scores 3 or more English Premier League goals for Arsenal prior to December 25, 2026 based on official Premier League match statistics. Goals scored in UEFA competitions, domestic cup matches, or international fixtures do not count. Goals scored on or after December 25, 2026 do not count. Primary source: Premier League (https://www. premierleague. com). the primary source governs. If the named record is officially retracted by the Premier League or the season is permanently cancelled before the threshold is met, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.33,
+       "size": 30.30303
+      }
+     ],
+     "asks": [],
+     "last": 0.33
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.67,
+       "size": 30.30303
+      }
+     ],
+     "last": 0.67
+    }
+   }
   },
   {
    "slug": "will-arsenal-win-the-202627-premier-league-9148",
@@ -1894,7 +3581,45 @@
    "fair_reason": null,
    "gap_pts": 15,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Arsenal FC finishes the 2026/27 Premier League season in first place in the official standings. The market will resolve after the final matchweek, or earlier if the outcome is mathematically certain before then. Other domestic or international competitions are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport Football (https://www. bbc. com/sport/football); the primary source governs. If the Premier League season is abandoned before an official winner is declared, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.42,
+       "size": 108.784899
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.98,
+       "size": 5000.0
+      }
+     ],
+     "last": 0.7
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.02,
+       "size": 5000.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.58,
+       "size": 108.784899
+      }
+     ],
+     "last": 0.3
+    }
+   }
   },
   {
    "slug": "manchester-city-over-20-points-docked-in-202627-se-4746",
@@ -1958,7 +3683,35 @@
    "fair_reason": null,
    "gap_pts": 18,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Manchester City receives a cumulative total of more than 20 points deducted in the 2026/27 Premier League season. Point deductions applied in any season other than 2026/27 are excluded. Points deductions totaling exactly 20 points or fewer are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com/sport/football). The primary source governs in the event of any discrepancy. If the 2026/27 Premier League season is abandoned or cancelled entirely before completion, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.33,
+       "size": 14.925373
+      }
+     ],
+     "last": 0.33
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.67,
+       "size": 14.925373
+      }
+     ],
+     "asks": [],
+     "last": 0.67
+    }
+   }
   },
   {
    "slug": "haaland-saka-outscore-tottenham-in-epl-mw6-1027",
@@ -2007,7 +3760,35 @@
    "fair_reason": null,
    "gap_pts": -6,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether the combined goals scored by Erling Haaland and Bukayo Saka in Premier League Matchweek 6 is greater than the total goals scored by Tottenham Hotspur in Matchweek 6 (October 10\u201312, 2026). Goals scored in competitions other than the English Premier League are excluded. Penalty shootouts are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport Football (https://www. bbc. com/sport/football). If the Premier League Matchweek 6 fixtures involving Manchester City, Arsenal, or Tottenham Hotspur are abandoned or not completed, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.4,
+       "size": 23.333335
+      }
+     ],
+     "asks": [],
+     "last": 0.4
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.6,
+       "size": 23.333335
+      }
+     ],
+     "last": 0.6
+    }
+   }
   },
   {
    "slug": "will-any-of-man-city-man-united-or-liverpool-lose--4792",
@@ -2033,7 +3814,35 @@
    "fair_reason": "Two readings: whole matchweek (Liverpool v City only avoids a loser with a draw): 80%. only games before the XO market closes on Saturday (just Man Utd v Spurs): 20%. They differ too much to show one number.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Manchester City, Manchester United or Liverpool lose their scheduled Premier League Matchweek 6 fixture for the 2026/27 season (taking place between October 10 and October 12, 2026). Matches outside of Premier League Matchweek 6 are excluded. Competitions other than the Premier League (e. g. FA Cup, League Cup, UEFA competitions) are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport Football (https://www. bbc. co. uk/sport/football). The primary source governs in the event of any discrepancies. If any of the specified fixtures are abandoned or permanently postponed and not completed before the official league settlement window or the Premier League Matchweek 6 matches are cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.co.uk/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 30.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 30.0
+      }
+     ],
+     "last": 0.5
+    }
+   }
   },
   {
    "slug": "haaland-will-score-more-goals-than-tottenham-hotsp-9602",
@@ -2072,7 +3881,34 @@
    "fair_reason": null,
    "gap_pts": -2,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market compares Erling Haaland\u2019s official goals with Tottenham Hotspur\u2019s official team goals from the start of the 2026/27 season through Boxing Day, December 26, 2026, 23:59 UTC.\n\nThe market resolves Yes if Haaland has more official goals than Tottenham by the cutoff.\n\nThe market resolves No if Haaland has the same number of official goals as Tottenham, or fewer.\n\nOnly official goals in first-team matches count (Premier League, domestic cups, and UEFA competitions). Own goals against Tottenham do not count as Tottenham goals. Penalty shootout goals do not count. Goals scored after the cutoff do not count. Primary sources are the official Premier League, Tottenham Hotspur, and Manchester City websites. ESPN or BBC Sport may be used only if a primary source is unavailable. If the totals cannot be reasonably determined from these sources within a reasonable time after the cutoff, the market will be voided. Later revisions after resolution will not change the result.",
+   "resolution_sources": [
+    "https://www.premierleague.com/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.78,
+       "size": 5.0
+      }
+     ],
+     "last": 0.78
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.22,
+       "size": 5.0
+      }
+     ],
+     "asks": [],
+     "last": 0.22
+    }
+   }
   },
   {
    "slug": "will-tottenham-miss-their-next-penalty-1947",
@@ -2092,7 +3928,35 @@
    "fair_reason": "Too few penalties for a reliable base rate.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves Yes if Tottenham Hotspur are awarded a Premier League penalty in the 2026/27 season and miss it, meaning the kick is not scored. The market resolves No if Tottenham score their next awarded Premier League penalty in 2026/27 or if they are not awarded any Premier League penalty for the remainder of the 2026/27 season. Only penalties awarded in Premier League matches count. Penalty shootouts are excluded. Cancelled, overturned or rescinded penalties do not count, and any goals or points arising from such penalties are ignored. If a penalty is ordered to be retaken, only the retake counts. This market will be void if the 2026/27 Premier League season is abandoned, voided or otherwise not completed in a way that prevents a clear official resolution.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.co.uk/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.57,
+       "size": 46.511627
+      }
+     ],
+     "last": 0.57
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.43,
+       "size": 46.511627
+      }
+     ],
+     "asks": [],
+     "last": 0.43
+    }
+   }
   },
   {
    "slug": "luke-shaw-injury-within-2-weeks-of-gta-vi-launch-9286",
@@ -2112,7 +3976,43 @@
    "fair_reason": "Not a football question we can price.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Luke Shaw is officially confirmed injured in the 14-day window starting on the official GTA VI launch date. \"Yes\" if, from that launch date through the 14th calendar day after it (both inclusive), Manchester United, The FA, or Shaw via an official club, national-team, or verified personal channel confirms he sustained an injury. \"No\" if no such official confirmation is issued for an injury occurring or first reported in that window. If Shaw retires, leaves professional football before the window, the market resolves \"No\". If Shaw is confirmed injured before the official GTA VI launch date and remains injured at the time of launch, the market resolves \"No\". The market is void if GTA VI has no official commercial launch by 31 December 2026, if launch slips past that date with no replacement official date, or if the launch date cannot be reasonably determined. Only the official first commercial release of GTA VI on PS5 and/or Xbox Series X|S, as stated by Rockstar Games or Take-Two, counts. Preloads, embargoes, marketing, leaks, later platform releases, and unofficial dates do not. \u201cInjured\u201d means an official statement of a physical injury or medical issue ruling Shaw out of training and/or matches, or a setback requiring medical assessment or time on the sidelines. Illness without an injury label, rest/rotation, suspension, personal reasons, and unconfirmed media reports do not count. A pre-existing injury mentioned again does not count unless an official source states a new injury or setback in the window. Primary sources: Rockstar/Take-Two for the launch date; Manchester United, The FA, or Shaw\u2019s verified official channels for the injury. Major-outlet consensus may be used only if official sources are delayed or incomplete. Conflicting or undeterminable outcomes void the market.",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.bbc.com/sport"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.03,
+       "size": 49.999999
+      },
+      {
+       "price": 0.02,
+       "size": 1000.0
+      }
+     ],
+     "asks": [],
+     "last": 0.03
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.97,
+       "size": 49.999999
+      },
+      {
+       "price": 0.98,
+       "size": 1000.0
+      }
+     ],
+     "last": 0.97
+    }
+   }
   },
   {
    "slug": "erling-haaland-vs-bruno-fernandes-more-premier-lea-5450",
@@ -2151,7 +4051,35 @@
    "fair_reason": null,
    "gap_pts": 42,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Erling Haaland scores more official Premier League goals than Bruno Fernandes before Christmas 2026. Goals scored in competitions other than the Premier League (such as UEFA Champions League, FA Cup, League Cup, or international fixtures) are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to ESPN FC (https://www. espn. com/soccer/). the primary source governs. If the Premier League season is permanently abandoned or cancelled before the cutoff time or official statistics for either player are permanently unavailable or corrupted, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.espn.com/soccer/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.56,
+       "size": 53.571428
+      }
+     ],
+     "asks": [],
+     "last": 0.56
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.44,
+       "size": 53.571428
+      }
+     ],
+     "last": 0.44
+    }
+   }
   },
   {
    "slug": "will-both-ipswich-town-and-coventry-city-be-relega-5411",
@@ -2190,7 +4118,34 @@
    "fair_reason": null,
    "gap_pts": -29,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether both Ipswich Town and Coventry City are officially confirmed as relegated from the Premier League in the final standings of the 2026/27 season. Primary source: Official Premier League Website (https://www. premierleague. com). If the 2026/27 season is abandoned before final standings are officially confirmed, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 36.363636
+      }
+     ],
+     "asks": [],
+     "last": 0.55
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 36.363636
+      }
+     ],
+     "last": 0.45
+    }
+   }
   },
   {
    "slug": "will-man-utd-vs-spurs-be-the-lowest-scoring-game-o-4062",
@@ -2235,7 +4190,24 @@
    "fair_reason": null,
    "gap_pts": -14,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Whether the total goals scored in the Manchester United vs Tottenham Hotspur match on October 10, 2026, is less than or equal to the total goals scored in every other concurrent Premier League fixture on that day. Friendly matches or matches outside the specified competition on that day do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The match is abandoned without a declared official result or The official match records are permanently retracted, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-mainoo-play-at-least-180-minutes-across-man-u-1433",
@@ -2255,7 +4227,25 @@
    "fair_reason": "Minutes questions need team news; check the press conference.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Kobbie Mainoo plays a cumulative total of at least 180 minutes across Manchester United's these three specified Premier League fixtures: Manchester United vs Tottenham Hotspur (10 October 2026), Leeds United vs Manchester United (18 October 2026), and Manchester United vs AFC Bournemouth (25 October 2026) as recorded by the official Premier League source. Minutes played in any other competition such as the Champions League, FA Cup, or Carabao Cup do not count. Friendly matches or exhibition games do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the specified player permanently leaves Manchester United or is removed from squads before completing the three matches or any of the three target matches are permanently abandoned without an official result, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.manutd.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-viktor-gykeres-score-in-each-of-arsenals-next-6828",
@@ -2309,7 +4299,25 @@
    "fair_reason": null,
    "gap_pts": -50,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Viktor Gy\u00f6keres scores at least one goal in each of Arsenal's next three consecutive Premier League matches: Arsenal vs Leeds United, Nottingham Forest vs Arsenal and Arsenal vs Everton, scheduled for 10, 18 and 24 October 2026 respectively, as recorded by the official competition source before the cutoff time. Goals scored in UEFA competitions, domestic cups, or international fixtures do not count. Friendly matches do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Arsenal (https://www. arsenal. com). The primary source governs. If The player is permanently transferred or retires before playing all three matches without having scored in the required sequence or The matches are cancelled entirely without official rescheduling, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.arsenal.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-carrick-or-de-zerbi-be-sacked-by-oct-31-2026-4607",
@@ -2329,7 +4337,28 @@
    "fair_reason": "No Polymarket market prices this manager's job by this date.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Michael Carrick (Manchester United) or Roberto De Zerbi (Tottenham Hotspur) officially leaves his post as head coach on or before 23:59 UK time on October 31, 2026. A sacking, resignation, mutual-consent exit or move to another role all count. Media reports or leaks without an official club statement do not count. Temporary leave due to illness or personal reasons does not count. Primary source: official club statements ([www. manutd. com](https://www. manutd. com/), [www. tottenhamhotspur. com](https://www. tottenhamhotspur. com/)). If unavailable, resolution falls back to BBC Sport ([www. bbc. com/sport](https://www. bbc. com/sport)) or Sky Sports ([www. skysports. com](https://www. skysports. com/)). The primary source governs over secondary reporting. If official records are permanently retracted or proven fraudulent, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.tottenhamhotspur.com",
+    "https://www.bbc.com",
+    "https://www.skysports.com",
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512",
@@ -2368,7 +4397,25 @@
    "fair_reason": null,
    "gap_pts": -5,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "Resolves YES if Rayan Cherki (Manchester City) records more Premier League goals plus assists than Florian Wirtz (Liverpool) across Matchweeks 6\u20139 of the 2026/27 season. Resolves NO if Wirtz records more, or if both have the same total. Matches counted for Wirtz: Liverpool v Man City, Brentford v Liverpool, Liverpool v Brighton, Liverpool v Arsenal. Matches counted for Cherki: Liverpool v Man City, Man City v Ipswich, Aston Villa v Man City, Man City v Brighton. Goals and assists are counted as credited in official Premier League statistics on premierleague. com; own goals do not count. A player who does not play in a listed match gets 0 for that match. Only listed matches completed by 23:30 UTC on 2 November 2026 count; a listed match not completed by then is excluded. Trading closes at 23:30 UTC on 2 November 2026.",
+   "resolution_sources": [
+    "https://www.premierleague.com/stats",
+    "https://www.premierleague.com/results"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-tottenham-cover-more-total-distance-km-than-m-9897",
@@ -2394,7 +4441,24 @@
    "fair_reason": "Needs match stats (possession, distance, shots) we don't model.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Tottenham Hotspur covers strictly more total distance in kilometers than Manchester United in their head-to-head Premier League fixture. Friendly matches and competitions outside of the Premier League do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If it is unavailable, incomplete, or does not publish distance for this match, Sky Sports (https://www. skysports. com) may be used, then Opta Analyst (https://theanalyst. com). Only official tracking distance for this fixture counts. If the match is cancelled or abandoned without distance statistics from any of these sources, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-liverpool-register-more-shots-on-target-than--8270",
@@ -2420,7 +4484,24 @@
    "fair_reason": "Needs match stats (possession, distance, shots) we don't model.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Liverpool registers strictly more shots on target than Manchester City during their Premier League Matchweek 6 fixture on October 11, 2026, as counted by the official Premier League match center. Friendly matches or any other fixtures between the teams outside of the specified Premier League Matchweek 6 fixture do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official match statistics are permanently retracted without replacement or The match is abandoned before completion and not officially concluded within the matchweek window, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
@@ -2454,7 +4535,27 @@
    "fair_reason": null,
    "gap_pts": 24,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Michael Carrick is officially the Manchester United men's first-team manager or head coach at 23:59:59 UTC on 31 October 2026. Official Manchester United or Premier League confirmation will be used for resolution. If Carrick has been officially removed, replaced, resigned, or otherwise ceased to hold that role before the resolution time, the market resolves NO. If he remains officially in the role at the resolution time, including in an interim or caretaker capacity, the market resolves YES.",
+   "resolution_sources": [
+    "https://www.manutd.com/en/man-utd-head-coach-and-staff/michael-carrick",
+    "https://www.theguardian.com",
+    "https://www.skysports.com",
+    "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-josh-king-score-more-fpl-points-than-pascal-g-1882",
@@ -2493,7 +4594,24 @@
    "fair_reason": null,
    "gap_pts": -16,
    "status": "ACTIVE",
-   "horizon": "weekend"
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Josh King scores more Fantasy Premier League points than Pascal Gro\u00df during Gameweek 6 of the 2026/27 Premier League season. A tie counts as a win for Pascal Gro\u00df. Bonus points or points scored in any gameweek other than Gameweek 6 do not count. Unofficial fantasy points calculations from third-party aggregators do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official Gameweek 6 fixtures are permanently cancelled or postponed past the cutoff time without a declared official result, or either player is officially removed or does not participate in the respective Gameweek 6 squad such that zero points are recordable due to match cancellation, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-manchester-city-outscore-chelsea-arsenal-and--1017",
@@ -2532,7 +4650,24 @@
    "fair_reason": null,
    "gap_pts": -29,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Manchester City scores strictly more goals than Chelsea, Arsenal, and Manchester United combined during Gameweek 7 of the 2026/27 Premier League season. Friendly matches, domestic cup competitions, and European fixtures outside of Premier League Gameweek 7 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official match schedule for Gameweek 7 is abandoned or cancelled without a recorded result or official statistics are permanently retracted by the Premier League, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "will-any-premier-league-manager-lose-their-job-bef-6301",
@@ -2552,7 +4687,25 @@
    "fair_reason": "No Polymarket market prices this manager's job by this date.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Whether any English Premier League club manager is sacked, leaves by mutual consent, or departs due to managerial change before Matchweek 11 of the 2026/27 season as recorded by the official governing body. Interim or caretaker managers appointed and subsequently leaving do not count unless they were the permanent manager at the start of the relevant window. Departures occurring after Matchweek 11 begins or concludes do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com). The primary source governs. If The official Premier League season is permanently abandoned or cancelled before Matchweek 11 or Official governing body registration data is officially retracted, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "tottenham-hotspur-to-have-fewer-than-4-premier-lea-9167",
@@ -2586,7 +4739,25 @@
    "fair_reason": null,
    "gap_pts": 20,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Tottenham Hotspur achieves fewer than 4 Premier League wins by Christmas Day. Matches in other competitions such as domestic cups or European tournaments are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. co. uk/sport/football). The primary source governs over secondary sources. If the Premier League season is permanently abandoned before Christmas Day, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.co.uk/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   },
   {
    "slug": "fulham-to-sack-or-replace-head-coach-before-1-nove-6485",
@@ -2606,7 +4777,25 @@
    "fair_reason": "No Polymarket market prices this manager's job by this date.",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long"
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "description": "This market resolves based on whether Fulham FC officially sacks or permanently replaces its head coach before 1 November 2026. Interim appointments acting temporarily without dismissal of the head coach do not count. Primary source: Fulham FC Official Website (https://www. fulhamfc. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Premier League Official Website (https://www. premierleague. com). The primary source governs over secondary sources. If the club dissolves or ceases operation before the cutoff time, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.fulhamfc.com",
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
   }
  ],
  "receipts": [],
@@ -2617,5 +4806,43 @@
   "brier_fair": null,
   "brier_xo": null
  },
+ "best_value": [
+  {
+   "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
+   "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
+   "fair": 0.5506,
+   "side": "YES",
+   "ev": 1.3328,
+   "ev_low": 0.2007,
+   "ev_high": 2.4648,
+   "roi": 0.1472,
+   "buy_price": 0.47,
+   "fillable": 9.0559
+  },
+  {
+   "slug": "will-19-goals-be-scored-across-all-premier-league--1030",
+   "title": "Will 19+ goals be scored across all Premier League games on 10th October 2026?",
+   "fair": 0.3407,
+   "side": "NO",
+   "ev": 0.8153,
+   "ev_low": -0.169,
+   "ev_high": 1.7995,
+   "roi": 0.0815,
+   "buy_price": 0.6,
+   "fillable": 10.0
+  },
+  {
+   "slug": "will-fpls-most-captained-player-score-3-or-fewer-p-6410",
+   "title": "Will FPL's most-captained player score 3 or fewer points in Gameweek 6?",
+   "fair": 0.4594,
+   "side": "YES",
+   "ev": 0.1704,
+   "ev_low": -0.901,
+   "ev_high": 1.2419,
+   "roi": 0.0212,
+   "buy_price": 0.44,
+   "fillable": 8.0331
+  }
+ ],
  "live": []
 }

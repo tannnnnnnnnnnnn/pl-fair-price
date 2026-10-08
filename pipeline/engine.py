@@ -15,6 +15,7 @@ import math
 import re
 import unicodedata
 from pathlib import Path
+from urllib.parse import urlparse
 
 import numpy as np
 from scipy.optimize import minimize
@@ -59,6 +60,58 @@ def ts(s):
 
 def fold(s):
     return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+
+
+def resolution_description(row):
+    """Load and lightly format immutable XO resolution rules from the metadata cache."""
+    market = row.get("market") or {}
+    uri = market.get("metadataUri") or (row.get("metadata") or {}).get("metadataUri")
+    name = Path(urlparse(uri or "").path).name
+    path = RAW / "xo_meta" / name
+    if not name or not path.is_file():
+        return ""
+    try:
+        description = json.loads(path.read_text()).get("rules", {}).get("description") or ""
+    except (OSError, json.JSONDecodeError, AttributeError):
+        return ""
+    # Space after a full stop or colon glued to the next word, but not inside times (22:00) or decimals.
+    description = re.sub(r"(?<!\d)([.:])(?=[A-Za-z0-9])|([.:])(?=[A-Za-z])", lambda m: (m.group(1) or m.group(2)) + " ", str(description).strip())
+    # Numbered items ("1. ", "2. ") start a new line; years like "2026." are left alone.
+    return re.sub(r"(?<=[.:])\s*(?=\b\d{1,2}\.\s)", "\n", description)
+
+
+def clean_book(book):
+    """Small, stable order-book shape used by the static site and live refresh."""
+    return dict(
+        bids=[dict(price=num(x.get("price")), size=num(x.get("size"))) for x in (book or {}).get("bids", [])
+              if num(x.get("price")) is not None and num(x.get("size")) is not None],
+        asks=[dict(price=num(x.get("price")), size=num(x.get("size"))) for x in (book or {}).get("asks", [])
+              if num(x.get("price")) is not None and num(x.get("size")) is not None],
+        last=num((book or {}).get("lastTradePrice")),
+    )
+
+
+def stake_result(stake, side, asks, fee_base, fair):
+    """Walk asks with fees included in the spend. This does not affect fair pricing."""
+    remaining = stake
+    shares = fill_cost = fee = 0.0
+    for level in sorted(asks, key=lambda x: x["price"]):
+        p, available = level["price"], level["size"]
+        unit_fee = fee_base * p * (1 - p)
+        take = min(available, remaining / (p + unit_fee))
+        shares += take
+        fill_cost += take * p
+        fee += take * unit_fee
+        remaining -= take * (p + unit_fee)
+        if remaining <= 1e-9:
+            break
+    cost = fill_cost + fee
+    f, lo, hi = fair["p"], fair["low"], fair["high"]
+    if side == "no":
+        f, lo, hi = 1 - f, 1 - hi, 1 - lo
+    return dict(side=side.upper(), ev=shares * f - cost, ev_low=shares * lo - cost,
+                ev_high=shares * hi - cost, roi=(shares * f - cost) / cost if cost else 0,
+                buy_price=fill_cost / shares if shares else None, fillable=cost)
 
 
 # ---------------------------------------------------------------- FPL data
@@ -768,7 +821,8 @@ SPECS = [
 
 # ---------------------------------------------------------------- board
 xo = [r for r in load("xo_convictions.json")
-      if r.get("categoryId") == 27 and (r.get("market") or {}).get("status") == "ACTIVE"]
+      if any(c.get("id") == 27 for c in (r.get("market") or {}).get("categoryPath") or [])
+      and (r.get("market") or {}).get("status") == "ACTIVE"]
 board, verify_rows, player_links = [], [], {}
 gw_idx = [i for i, z in enumerate(FX) if z["gw"] == GW]
 ALIASES = {s: {fold(TNAME[s]), s.lower()} for s in SHORT}
@@ -780,12 +834,17 @@ for s_, extra in {"MUN": ["man utd", "man united", "manchester united", "united"
     ALIASES[s_] |= set(extra)
 ALIASES = {k: {a for a in v if len(a) > 3} for k, v in ALIASES.items()}
 for r in xo:
-    mk, book = r["market"], (r.get("books") or [{}])[0]
+    mk = r["market"]
+    outs = mk.get("outcomes") or []
+    yes = next((o for o in outs if str(o.get("title", "")).lower() == "yes"), outs[0] if outs else {})
+    no = next((o for o in outs if str(o.get("title", "")).lower() == "no"), outs[1] if len(outs) > 1 else {})
+    raw_books = r.get("books") or []
+    yes_book = next((b for b in raw_books if str(b.get("assetId")) == str(yes.get("outcomeTokenId"))), {})
+    no_book = next((b for b in raw_books if str(b.get("assetId")) == str(no.get("outcomeTokenId"))), {})
+    book = yes_book
     bids = [num(b["price"]) for b in book.get("bids") or [] if num(b.get("price"))]
     asks = [num(a["price"]) for a in book.get("asks") or [] if num(a.get("price"))]
     bb, ba = (max(bids) if bids else None), (min(asks) if asks else None)
-    outs = mk.get("outcomes") or []
-    yes = next((o for o in outs if str(o.get("title", "")).lower() == "yes"), outs[0] if outs else {})
     cp = num(yes.get("currentPrice"))
     cp = cp / 1e6 if cp is not None and cp > 1 else cp
     ltp = num(book.get("lastTradePrice"))
@@ -824,8 +883,23 @@ for r in xo:
                group="fixture" if fx else "season", fixture=fx, fair=fair,
                fair_reason=None if fair else out.get("reason"),
                gap_pts=round((fair["p"] - xo_p) * 100) if fair and xo_p is not None else None, status=mk["status"],
-               horizon=horizon)
+               horizon=horizon, taker_fee_bps=int((mk.get("effectiveFeeConfig") or {}).get("takerFeeBps") or 0),
+               description=resolution_description(r),
+               resolution_sources=mk.get("resolutionSources") or [],
+               books=dict(yes=clean_book(yes_book), no=clean_book(no_book)))
     board.append(row)
+
+best_value = []
+for b in board:
+    if not b["fair"] or b["fair"]["confidence"] not in ("high", "medium"):
+        continue
+    fee_base = b["taker_fee_bps"] / 10000
+    choices = [stake_result(10, side, b["books"][side]["asks"], fee_base, b["fair"]) for side in ("yes", "no")]
+    pick = max(choices, key=lambda x: x["ev"])
+    if pick["ev"] > 0:
+        best_value.append(dict(slug=b["slug"], title=b["title"], fair=b["fair"]["p"], **{
+            k: (round(v, 4) if isinstance(v, float) else v) for k, v in pick.items()}))
+best_value.sort(key=lambda x: x["ev"], reverse=True)
 
 GEN = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 tracked_path, receipts_path = OUT / "tracked.json", OUT / "receipts.json"
@@ -864,7 +938,8 @@ OUT.mkdir(parents=True, exist_ok=True)
     generated_at=GEN, name="PL Fair Price",
     tagline="What every Premier League market on XO should cost, priced from the markets with real money.",
     gw=dict(id=GW, deadline_utc=NEXT["deadline_time"]), markets=board, receipts=receipts,
-    receipt_summary=RECEIPT_SUMMARY, live=[f'{z["h"]}-{z["a"]}' for z in FX if z["live"]]), indent=1))
+    receipt_summary=RECEIPT_SUMMARY, best_value=best_value[:5],
+    live=[f'{z["h"]}-{z["a"]}' for z in FX if z["live"]]), indent=1))
 
 # ---------------------------------------------------------------- projections
 gw_fx = [i for i, z in enumerate(FX) if z["gw"] == GW]
@@ -896,7 +971,8 @@ for pid, p in EL.items():
     blank = (1 - pp) + pp * math.exp(-lg - la_) * ((1 - pcs) if CS_PTS[m["pos"]] >= 4 else 1) * (1 - m["p_dc"])
     own = num(p["selected_by_percent"]) or 0
     if p_goal > 0.03 or own > 5 or m["pos"] in (1, 2) and pp > 0.5 and own > 1:
-        players.append(dict(id=pid, name=m["name"], team=t, pos=POS[m["pos"]], price=p["now_cost"] / 10,
+        opponent = z["a"] if z["h"] == t else z["h"]
+        players.append(dict(id=pid, name=m["name"], team=t, opponent=opponent, pos=POS[m["pos"]], price=p["now_cost"] / 10,
                             owned_pct=own, chance_playing=p["chance_of_playing_next_round"], news=p["news"],
                             p_start=round(pp, 3), p_goal=round(p_goal, 4), p_assist=round(p_ast, 4),
                             p_cs=round(pcs, 4), p_defcon=round(m["p_dc"], 3), xbonus=round(pp * bonus, 2),
@@ -906,6 +982,19 @@ players.sort(key=lambda x: -x["xpts"])
 captain = [dict(id=x["id"], name=x["name"], team=x["team"], xpts=x["xpts"], p_goal=x["p_goal"],
                 p_assist=x["p_assist"], p_blank=x["p_blank"], p_defcon=x["p_defcon"], xbonus=x["xbonus"],
                 fpl_ep=x["fpl_ep"]) for x in players[:10]]
+set_pieces = []
+for team_id, team in TEAMS.items():
+    row = dict(team=team, penalties=[], direct_freekicks=[], corners=[])
+    for p in boot["elements"]:
+        if p["team"] != team_id:
+            continue
+        if p.get("penalties_order") == 1:
+            row["penalties"].append(p["web_name"])
+        if p.get("direct_freekicks_order") == 1:
+            row["direct_freekicks"].append(p["web_name"])
+        if p.get("corners_and_indirect_freekicks_order") == 1:
+            row["corners"].append(p["web_name"])
+    set_pieces.append(row)
 flags = []  # every flagged player owned by 1%+: FPL's published chance and news
 for pid, p in EL.items():
     c = p["chance_of_playing_next_round"]
@@ -923,8 +1012,21 @@ xg_table = sorted((dict(id=p["id"], name=p["web_name"], team=TEAMS[p["team"]], p
                    for p in EL.values() if p["minutes"] >= 180), key=lambda x: -(x["xg"] + x["xa"]))[:40]
 (OUT / "projections.json").write_text(json.dumps(dict(generated_at=GEN, gw=GW, deadline_utc=NEXT["deadline_time"],
                                                       fixtures=proj_fx, players=players, captain=captain, flags=flags,
+                                                      set_pieces=set_pieces,
                                                       xg_table=xg_table, league_avg_goals=round(LEAGUE_AVG, 2)), indent=1))
-# History: keep a point when either price moved or 3 hours passed, so the file stays small.
+# Detailed order-book history for charts added from Friday onward; preserve prior runs and cap per slug.
+history_path = OUT / "history.json"
+history = json.loads(history_path.read_text()) if history_path.exists() else {}
+for b in board:
+    yes = b["books"]["yes"]
+    bids = [x["price"] for x in yes["bids"]]
+    asks = [x["price"] for x in yes["asks"]]
+    history.setdefault(b["slug"], []).append([GEN, b["xo_price"], max(bids) if bids else None,
+                                               min(asks) if asks else None, b["fair"]["p"] if b["fair"] else None])
+    history[b["slug"]] = history[b["slug"]][-600:]
+history_path.write_text(json.dumps(history, indent=1))
+
+# Legacy compact history continues to feed receipts.
 hist_path = OUT / "history.jsonl"
 hist = [json.loads(l) for l in hist_path.read_text().splitlines() if l.strip()] if hist_path.exists() else []
 hist += [dict(ts=GEN, slug=b["slug"], xo_price=b["xo_price"], fair=b["fair"]["p"] if b["fair"] else None) for b in board]

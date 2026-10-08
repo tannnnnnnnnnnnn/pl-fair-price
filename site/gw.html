@@ -40,6 +40,7 @@
     <h1 class="title"><span class="hl" id="site-name">PL Fair Price</span></h1>
     <p class="by">by <a href="https://x.com/CryptoTan01" target="_blank" rel="noopener">@CryptoTan01</a></p>
     <p class="tagline" id="site-tagline">What every Premier League market on XO should cost, priced from the markets with real money.</p>
+    <label class="odds-label">Odds <select id="odds-format"><option value="percent">%</option><option value="cents">¢</option><option value="decimal">decimal</option><option value="fractional">fractional</option></select></label>
     <picture class="deek">
       <source media="(prefers-reduced-motion: reduce)" srcset="assets/deek/deek-binoculars-still.webp">
       <img src="assets/deek/deek-binoculars.webp" width="200" height="200" alt="Deek the mascot peeking through binoculars" decoding="async" fetchpriority="low">
@@ -59,7 +60,7 @@
     </div>
     <details class="how">
       <summary>How this works</summary>
-      <p id="how-text">Match odds come from Polymarket. Average goals are calibrated to the league's average. Player shares come from FPL xG and xA. Rough model, no bonus or defensive points.</p>
+      <p id="how-text">Match odds come from Polymarket. Average goals are calibrated to the league's average. Player shares, defensive contributions and set-piece roles come from FPL; bonus is modelled from last season.</p>
     </details>
   </section>
 
@@ -74,6 +75,12 @@
     <p class="sec-sub">Top 10 by expected points (xPts). Blank means 3 points or fewer. Our model: team goals from Polymarket match odds, player shares from FPL xG/xA, plus clean sheets, defensive-contribution points (from each player's per-90 rate) and bonus (fitted to 7,815 player-matches from 2025/26). Saves and cards not counted.</p>
     <div id="cp-body"></div>
   </section>
+
+  <section class="sec" aria-labelledby="dc-h"><h2 id="dc-h">Defensive contributions</h2><p class="sec-sub">Top 10 defenders and midfielders by chance of earning defensive-contribution points this gameweek.</p><div id="dc-body"></div></section>
+  <section class="sec" aria-labelledby="bn-h"><h2 id="bn-h">Expected bonus</h2><p class="sec-sub">Top 10 by expected bonus points this gameweek.</p><div id="bn-body"></div></section>
+  <section class="sec" aria-labelledby="df-h"><h2 id="df-h">Differentials</h2><p class="sec-sub">Top 10 expected points among players owned by under 5%.</p><div id="df-body"></div></section>
+  <section class="sec" aria-labelledby="sp-h"><h2 id="sp-h">Set pieces &amp; penalties</h2><p class="sec-sub">First-choice takers in the current FPL bootstrap data. A dash means FPL lists none.</p><div id="sp-body"></div></section>
+  <section class="sec" aria-labelledby="vl-h"><h2 id="vl-h">Value</h2><p class="sec-sub">Top 10 expected points per £m, among players projected for at least 2 points.</p><div id="vl-body"></div></section>
 
   <section class="sec" id="consensus" aria-labelledby="co-h">
     <h2 id="co-h">Projection consensus</h2>

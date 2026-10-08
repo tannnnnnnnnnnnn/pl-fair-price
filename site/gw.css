@@ -59,6 +59,7 @@
 .pmain { min-width: 0; }
 .pname { display: flex; align-items: center; gap: 7px; min-width: 0; font-weight: 700; font-size: 15px; line-height: 1.2; }
 .pname span { min-width: 0; overflow-wrap: anywhere; }
+.pick-tag { flex: none; padding: 2px 6px; border-radius: 999px; background: var(--pink-soft); color: var(--ink); font-style: normal; font-size: 10px; }
 .psub { margin-top: 2px; font-size: 12px; color: var(--ink-3); }
 .xbar { height: 8px; margin-top: 8px; border-radius: 8px; background: #ececf0; overflow: hidden; }
 .xbar i { display: block; height: 100%; border-radius: 0 4px 4px 0; background: var(--pink); }
@@ -152,6 +153,16 @@
 #tip .tip-l:empty { display: none; }
 
 .back { margin-top: 36px; }
+.mini-list { display: grid; gap: 6px; }
+.mini-row { display: grid; grid-template-columns: 22px 20px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 9px 10px; border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+.mini-name { min-width: 0; }
+.mini-name b, .mini-name i { display: block; overflow-wrap: anywhere; }
+.mini-name i { margin-top: 1px; color: var(--ink-3); font-style: normal; font-size: 11px; }
+.mini-row strong { text-align: right; font-size: 12px; }
+.set-grid { display: grid; gap: 8px; }
+.set-row { padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; }
+.set-row h3 { display: flex; align-items: center; gap: 7px; font: 700 14px 'Figtree', sans-serif; }
+.set-row p { margin-top: 3px; color: var(--ink-2); font-size: 12px; }
 
 @media (min-width: 720px) {
   .cons-cards { display: none; }
@@ -172,4 +183,5 @@
   .gm-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cs-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
   .db-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mini-list, .set-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

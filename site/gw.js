@@ -99,11 +99,12 @@ function renderCaptain(proj) {
   const max = Math.max(...rows.map((r) => Number(r.c.xpts))) || 1;
   const list = h('ol', { class: 'plist' }, rows.map(({ c, p }, i) => {
     const sub = [c.team, p.pos, p.price ? '£' + Number(p.price).toFixed(1) + 'm' : null, num(p.owned_pct) !== null ? Math.round(p.owned_pct) + '% owned' : null].filter(Boolean).join(' · ');
+    const tag = num(p.owned_pct) >= 25 ? 'Template' : num(p.owned_pct) < 10 ? 'Punt' : null;
     const news = num(p.chance_playing) !== null && p.chance_playing < 1 ? h('p', { class: 'pnews', text: `${Math.round(p.chance_playing * 100)}% chance of playing${p.news ? ': ' + p.news : ''}` }) : null;
     const li = h('li', { class: 'pcard' },
       h('span', { class: 'prank', text: String(i + 1) }),
       h('div', { class: 'pmain' },
-        h('div', { class: 'pname' }, crest(c.team, 20), h('span', { text: c.name })),
+        h('div', { class: 'pname' }, crest(c.team, 20), h('span', { text: c.name }), tag ? h('i', { class: 'pick-tag', text: tag }) : null),
         h('p', { class: 'psub', text: sub }),
         h('div', { class: 'xbar', role: 'img', 'aria-label': `${Number(c.xpts).toFixed(1)} expected points` }, h('i', { style: `width:${(Number(c.xpts) / max) * 100}%` })),
         h('div', { class: 'stats' },
@@ -114,7 +115,34 @@ function renderCaptain(proj) {
       h('div', { class: 'pbig' }, h('b', { text: Number(c.xpts).toFixed(1) }), h('i', { text: 'xPts' })));
     return li;
   }));
-  body.replaceChildren(list, tableView(['Player', 'xPts', 'Goal', 'Assist', 'Blank'], rows.map(({ c }) => [`${c.name} (${c.team})`, Number(c.xpts).toFixed(1), pct0(c.p_goal), pct0(c.p_assist), pct0(c.p_blank)])));
+  body.replaceChildren(h('p', { class: 'note', text: 'Template and Punt tags are based on ownership: Template is 25%+, Punt is under 10%.' }), list, tableView(['Player', 'xPts', 'Goal', 'Assist', 'Blank'], rows.map(({ c }) => [`${c.name} (${c.team})`, Number(c.xpts).toFixed(1), pct0(c.p_goal), pct0(c.p_assist), pct0(c.p_blank)])));
+}
+
+/* ---------- requested FPL shortlists ---------- */
+
+function playerList(id, rows, value) {
+  const body = document.getElementById(id);
+  if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: 'No qualifying players.' })); return; }
+  const list = h('ol', { class: 'mini-list' }, rows.map((p, i) => h('li', { class: 'mini-row' },
+    h('span', { class: 'prank', text: String(i + 1) }), crest(p.team, 20),
+    h('span', { class: 'mini-name' }, h('b', { text: p.name }), h('i', { text: `${p.team} · v ${p.opponent || '–'} · ${Number(p.owned_pct).toFixed(1)}% owned` })),
+    h('strong', { text: value(p) }))));
+  body.replaceChildren(list);
+}
+
+function renderFridayLists(proj) {
+  const players = (proj.players || []).filter((p) => num(p.xpts) !== null);
+  playerList('dc-body', players.filter((p) => ['DEF', 'MID'].includes(p.pos)).sort((a, b) => b.p_defcon - a.p_defcon).slice(0, 10), (p) => pct0(p.p_defcon));
+  playerList('bn-body', [...players].sort((a, b) => b.xbonus - a.xbonus).slice(0, 10), (p) => `${Number(p.xbonus).toFixed(2)} xBonus`);
+  playerList('df-body', players.filter((p) => p.owned_pct < 5).sort((a, b) => b.xpts - a.xpts).slice(0, 10), (p) => `${Number(p.xpts).toFixed(1)} xPts`);
+  playerList('vl-body', players.filter((p) => p.xpts >= 2 && p.price > 0).sort((a, b) => b.xpts / b.price - a.xpts / a.price).slice(0, 10), (p) => `${(p.xpts / p.price).toFixed(2)} / £m`);
+  const sp = document.getElementById('sp-body');
+  const rows = proj.set_pieces || [];
+  sp.replaceChildren(rows.length ? h('div', { class: 'set-grid' }, rows.map((r) => h('article', { class: 'set-row' },
+    h('h3', null, crest(r.team, 20), teamName(r.team)),
+    h('p', { text: `Pens: ${(r.penalties || []).join(', ') || '–'}` }),
+    h('p', { text: `Free kicks: ${(r.direct_freekicks || []).join(', ') || '–'}` }),
+    h('p', { text: `Corners: ${(r.corners || []).join(', ') || '–'}` })))) : h('p', { class: 'empty', text: 'Set-piece data is not available.' }));
 }
 
 /* ---------- (c2) projection consensus: our xPts next to free public models ---------- */
@@ -327,10 +355,11 @@ async function init() {
   startCountdown(document.getElementById('dl-label'), document.getElementById('dl-boxes'), document.getElementById('deadline'),
     proj.deadline_utc || (state.board.gw || {}).deadline_utc, gwId);
   if (num(proj.league_avg_goals) !== null) {
-    document.getElementById('how-text').textContent = `Match odds come from Polymarket. Average goals are calibrated to the league's ${Number(proj.league_avg_goals).toFixed(2)} goals per game. Player shares come from FPL xG and xA. Rough model, no bonus or defensive points.`;
+    document.getElementById('how-text').textContent = `Match odds come from Polymarket. Average goals are calibrated to the league's ${Number(proj.league_avg_goals).toFixed(2)} goals per game. Player shares and defensive contributions come from FPL; bonus is modelled from last season.`;
   }
   renderDoubts(proj);
   renderCaptain(proj);
+  renderFridayLists(proj);
   (state.mock ? Promise.resolve(null) : getJSON(`data/consensus.json?v=${Math.floor(Date.now() / 60000)}`).catch(() => null))
     .then((cons) => renderConsensus(cons, gwId));
   renderCS(proj);

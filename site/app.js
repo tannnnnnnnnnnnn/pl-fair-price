@@ -14,12 +14,17 @@ async function init() {
 
   if (!(await loadData())) { document.getElementById('mk-list').replaceChildren(h('p', { class: 'empty', text: 'Could not load the board. Try again in a minute.' })); return; }
 
+  const search = document.getElementById('market-search');
+  search.addEventListener('input', () => { state.query = search.value.trim().toLowerCase(); renderMarkets(); });
+
   document.getElementById('sample').hidden = !state.mock;
   setGwLabels();
   startCountdown(document.getElementById('dl-label'), document.getElementById('dl-boxes'), document.getElementById('deadline'), (state.board.gw || {}).deadline_utc, (state.board.gw || {}).id);
   renderGaps();
   renderMarkets();
   renderReceipts();
+  updateLiveStatus(false);
+  startPolling();
 }
 
 /* ---------- market row ---------- */
@@ -48,6 +53,48 @@ function liquidityText(v) {
 function paysText(p) {
   if (p === null || p <= 0 || p >= 1) return null;
   return `Pays ×${(1 / p).toFixed(2)} YES · ×${(1 / (1 - p)).toFixed(2)} NO`;
+}
+
+const levels = (m, side, kind) => ((((m.books || {})[side] || {})[kind]) || []);
+const best = (m, side, kind) => {
+  const ps = levels(m, side, kind).map((x) => num(x.price)).filter((x) => x !== null);
+  return ps.length ? (kind === 'asks' ? Math.min(...ps) : Math.max(...ps)) : null;
+};
+const last = (m, side) => num((((m.books || {})[side] || {}).last));
+function edgePick(m) {
+  if (!m.fair) return null;
+  const options = [{ side: 'yes', buy: best(m, 'yes', 'asks'), fair: m.fair.p },
+    { side: 'no', buy: best(m, 'no', 'asks'), fair: 1 - m.fair.p }].filter((x) => x.buy !== null);
+  if (!options.length) return null;
+  return options.map((x) => ({ ...x, edge: x.fair - x.buy })).sort((a, b) => b.edge - a.edge)[0];
+}
+
+function stakePanel(m) {
+  const pick = edgePick(m), panel = h('div', { class: 'calc' });
+  let side = pick ? pick.side : 'yes';
+  const amount = h('input', { type: 'number', min: '0', step: '1', value: '10', 'aria-label': 'Stake in dollars' });
+  const yes = h('button', { type: 'button', class: 'toggle', text: 'YES' }), no = h('button', { type: 'button', class: 'toggle', text: 'NO' });
+  const out = h('div', { class: 'calc-out' });
+  const draw = () => {
+    yes.classList.toggle('is-on', side === 'yes'); no.classList.toggle('is-on', side === 'no');
+    const stake = Math.max(0, Number(amount.value) || 0);
+    const r = calculateStake(stake, side, levels(m, side, 'asks'), m.taker_fee_bps / 10000, m.fair);
+    const money = (x, plus) => `${plus && x >= 0 ? '+' : x < 0 ? '−' : ''}$${Math.abs(x).toFixed(2)}`;
+    const rows = [`${r.shares.toFixed(2)} shares · average ${r.averagePrice === null ? '–' : pct(r.averagePrice)}`,
+      `Fee $${r.fee.toFixed(2)} · total cost $${r.cost.toFixed(2)}`,
+      `If it wins: $${r.payout.toFixed(2)} (profit ${money(r.profit, false)})`];
+    if (m.fair) {
+      rows.push(`Expected value at fair: ${money(r.ev, true)} (range ${money(r.evLow, true)} to ${money(r.evHigh, true)})`);
+      rows.push(`ROI ${r.roi === null ? '–' : (r.roi * 100).toFixed(1) + '%'}`);
+    } else rows.push('No fair price for this market');
+    if (r.unfilled > 0.005) rows.push(`Only $${r.cost.toFixed(2)} can fill right now. The book is empty above ${r.topPrice === null ? '–' : pct(r.topPrice)}.`);
+    out.replaceChildren(...rows.map((x) => h('p', { text: x })));
+  };
+  yes.addEventListener('click', () => { side = 'yes'; draw(); }); no.addEventListener('click', () => { side = 'no'; draw(); }); amount.addEventListener('input', draw);
+  const chips = h('span', { class: 'stake-chips' }, [5, 10, 25, 50].map((x) => h('button', { type: 'button', text: `$${x}`, onclick: () => { amount.value = x; draw(); } })));
+  panel.append(h('h4', { text: 'What would I win?' }), h('div', { class: 'calc-controls' }, amount, chips, yes, no), out);
+  draw();
+  return panel;
 }
 
 function gapText(m) { return `Fair price is ${Math.abs(m.gap_pts)} pts ${m.gap_pts > 0 ? 'higher' : 'lower'}`; }
@@ -93,6 +140,12 @@ function whyDetails(m, open) {
     if (pays) body.append(h('p', { class: 'why-pays', text: pays }));
     body.append(h('p', { class: 'why-text', text: m.fair_reason || 'No clean reference market exists for this question yet.' }));
   }
+  const source = Array.isArray(m.resolution_sources) ? m.resolution_sources.find(safeUrl) : null;
+  if (m.description || source) body.append(h('div', { class: 'resolution' },
+    m.description ? h('h4', { text: 'How it resolves' }) : null,
+    m.description ? h('p', { class: 'resolution-text', text: m.description }) : null,
+    source ? safeLink(source, 'Resolution source', 'in-src') : null));
+  body.append(stakePanel(m));
   return h('details', { class: 'why', open: open ? true : null }, h('summary', { text: label }), body);
 }
 
@@ -100,24 +153,28 @@ function marketRow(m, extra, openWhy) {
   const hasFair = !!m.fair;
   const chipCls = 'chip' + (m.gap_pts > 0 ? ' up' : ' down');
   const gap = showChip(m) ? gapText(m) : null;
-  const pays = paysText(m.xo_price);
+  const pays = m.fair && m.xo_price ? `XO pays ×${(1 / m.xo_price).toFixed(2)} · fair ×${(1 / m.fair.p).toFixed(2)}` : paysText(m.xo_price);
   const closes = closesText(m.exp), liq = liquidityText(m.liquidity_usd);
 
   const q = h('h3', { class: 'q' }, h('span', { class: 'qt', text: m.title }), m.is_ours ? h('span', { class: 'ours', text: 'ours' }) : null);
-  const vals = h('div', { class: 'vals' },
-    h('span', { class: 'v-xo' + (m.xo_price === null ? ' none' : ''), text: m.xo_price !== null ? `XO ${pct(m.xo_price)}` : 'No trades yet' }),
+  const buy = best(m, 'yes', 'asks'), sell = best(m, 'yes', 'bids'), traded = last(m, 'yes');
+  const edge = edgePick(m);
+  const vals = h('div', { class: 'vals book-vals' },
+    h('span', { class: 'v-xo', text: `Buy ${pct(buy)}` }), h('span', { text: `Sell ${pct(sell)}` }), h('span', { text: `Last ${pct(traded)}` }),
     gap ? h('span', { class: chipCls + ' chip-d', 'aria-hidden': 'true', text: gap }) : null,
     h('span', { class: 'v-fair' + (hasFair ? '' : ' none') + (isRough(m) ? ' rough' : ''), text: hasFair ? `${isRough(m) ? 'Rough' : 'Fair'} ${pct(m.fair.p)}` : 'Fair coming' }),
   );
   const info = h('div', { class: 'mi' },
     gap ? h('span', { class: chipCls + ' chip-m', 'aria-hidden': 'true', text: gap }) : null,
     closes ? h('span', { text: closes }) : null,
-    liq ? h('span', { text: liq }) : null);
+    liq ? h('span', { text: liq }) : null,
+    edge ? h('span', { class: 'edge', text: edge.edge > 0 ? `Buy ${edge.side.toUpperCase()} at ${pct(edge.buy)} · fair ${pct(edge.fair)}` : 'No edge after the spread' }) : null);
   const act = h('div', { class: 'act' },
+    h('button', { type: 'button', class: 'win', text: 'What would I win?', onclick: (e) => { const d = e.currentTarget.closest('.mrow').querySelector('.why'); d.open = true; d.scrollIntoView({ block: 'nearest' }); } }),
     h('a', { class: 'trade', href: tradeUrl(m), target: '_blank', rel: 'noopener', 'aria-label': 'Trade on XO' }, 'Trade on', wordmark('wm')),
     pays ? h('p', { class: 'pays-out', text: pays }) : null,
   );
-  return h('article', { class: 'mrow' + (extra ? ' ' + extra : '') + (m.is_ours ? ' is-ours' : '') },
+  return h('article', { id: m.slug, class: 'mrow' + (extra ? ' ' + extra : '') + (m.is_ours ? ' is-ours' : '') },
     q, h('div', { class: 'cmp' }, track(m), vals), act, h('div', { class: 'meta' }, info, whyDetails(m, openWhy)));
 }
 
@@ -125,11 +182,18 @@ function marketRow(m, extra, openWhy) {
 
 function renderGaps() {
   const sec = document.getElementById('gaps');
-  const noTrades = (m) => !m.volume_usd && m.best_bid === null && m.best_ask === null;
-  const list = state.markets.filter((m) => showChip(m) && !noTrades(m)).sort((a, b) => Math.abs(b.gap_pts) - Math.abs(a.gap_pts)).slice(0, 5);
-  sec.hidden = !list.length;
+  const list = state.markets.filter((m) => m.fair && ['high', 'medium'].includes(m.fair.confidence)).map((m) => {
+    const choices = ['yes', 'no'].map((side) => ({ side, r: calculateStake(10, side, levels(m, side, 'asks'), m.taker_fee_bps / 10000, m.fair) }));
+    return { m, ...choices.sort((a, b) => (b.r.ev || -Infinity) - (a.r.ev || -Infinity))[0] };
+  }).filter((x) => x.r.ev > 0).sort((a, b) => b.r.ev - a.r.ev).slice(0, 5);
+  sec.hidden = false;
   const el = document.getElementById('gaps-list');
-  el.replaceChildren(...list.map((m) => marketRow(m, 'is-gap')));
+  if (!list.length) { el.replaceChildren(h('p', { class: 'empty', text: 'No positive-value trades right now' })); return; }
+  el.replaceChildren(...list.map(({ m, side, r }) => h('article', { class: 'value-row' },
+    h('a', { href: `#${m.slug}`, text: m.title }),
+    h('b', { text: side.toUpperCase() }),
+    h('span', { text: `buy ${pct(r.averagePrice)} · fair ${pct(side === 'yes' ? m.fair.p : 1 - m.fair.p)}` }),
+    h('span', { text: `EV ${r.ev >= 0 ? '+' : ''}$${r.ev.toFixed(2)} (${r.evLow >= 0 ? '+' : ''}$${r.evLow.toFixed(2)} to ${r.evHigh >= 0 ? '+' : ''}$${r.evHigh.toFixed(2)}) · fills $${r.cost.toFixed(2)}` }))));
 }
 
 /* ---------- All markets ---------- */
@@ -150,8 +214,9 @@ function groupHead(left, meta) {
 
 function renderMarkets() {
   const root = document.getElementById('mk-list');
-  const all = state.markets;
+  const all = state.markets.filter((m) => !state.query || `${m.title} ${m.fixture ? `${m.fixture.home_name} ${m.fixture.away_name}` : ''}`.toLowerCase().includes(state.query));
   document.getElementById('mk-count').textContent = `${all.length} live market${all.length === 1 ? '' : 's'} on XO`;
+  if (!all.length) { root.replaceChildren(h('p', { class: 'empty', text: 'No markets match' })); return; }
   const frag = document.createDocumentFragment();
   const addGroup = (head, rows, after) => {
     frag.append(h('section', { class: 'group' }, head, rows.length ? h('div', { class: 'list' }, rows.map((m) => marketRow(m))) : null, after || null));
@@ -209,6 +274,67 @@ function renderMarkets() {
     addGroup(groupHead(h('div', { class: 'gname', text: 'Longer range' }), plural(long.length)), priced, box);
   }
   root.replaceChildren(frag);
+}
+
+/* ---------- live XO ---------- */
+
+let liveAt = null, liveTimer = null, boardTimer = null;
+function updateLiveStatus(live) {
+  const el = document.getElementById('live-status');
+  if (!el) return;
+  if (live && liveAt) el.textContent = `Live · updated ${Math.max(0, Math.floor((Date.now() - liveAt) / 1000))}s ago`;
+  else {
+    const d = new Date((state.board && state.board.generated_at) || Date.now());
+    el.textContent = `XO prices from ${d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
+  }
+}
+
+function liveBook(raw, token) {
+  const b = (raw.books || []).find((x) => String(x.assetId) === String(token)) || {};
+  return { bids: b.bids || [], asks: b.asks || [], last: num(b.lastTradePrice) };
+}
+
+async function fetchXO() {
+  const rows = [];
+  for (let page = 1; ; page += 1) {
+    const payload = await getJSON(`https://api-mainnet.xo.market/api/convictions?take=50&page=${page}`);
+    rows.push(...(payload.data || []));
+    if (!(payload.meta || {}).hasNextPage) break;
+  }
+  rows.forEach((raw) => {
+    const m = state.bySlug[raw.slug];
+    if (!m) return;
+    const outcomes = (raw.market || {}).outcomes || [];
+    const yes = outcomes.find((x) => String(x.title).toLowerCase() === 'yes') || outcomes[0] || {};
+    const no = outcomes.find((x) => String(x.title).toLowerCase() === 'no') || outcomes[1] || {};
+    m.books = { yes: liveBook(raw, yes.outcomeTokenId), no: liveBook(raw, no.outcomeTokenId) };
+    const cp = num(yes.currentPrice);
+    m.xo_price = cp !== null ? (cp > 1 ? cp / 1e6 : cp) : m.books.yes.last;
+    m.best_bid = best(m, 'yes', 'bids'); m.best_ask = best(m, 'yes', 'asks');
+    m.liquidity_usd = (raw.books || []).reduce((s, x) => s + (num(x.totalLiquidity) || 0), 0);
+  });
+  liveAt = Date.now(); updateLiveStatus(true); renderGaps(); renderMarkets();
+}
+
+async function refreshFair() {
+  const board = await getJSON(`data/board.json?v=${Date.now()}`);
+  (board.markets || []).forEach((raw) => {
+    const m = state.bySlug[raw.slug];
+    if (!m) return;
+    const clean = cleanMarket(raw);
+    m.fair = clean.fair; m.fair_reason = clean.fair_reason; m.gap_pts = clean.gap_pts;
+    m.description = clean.description; m.resolution_sources = clean.resolution_sources;
+  });
+  state.board.generated_at = board.generated_at; renderGaps(); renderMarkets();
+}
+
+function startPolling() {
+  const poll = () => { if (!document.hidden) fetchXO().catch(() => updateLiveStatus(false)); };
+  fetchXO().catch(() => updateLiveStatus(false));
+  liveTimer = setInterval(poll, 30000);
+  boardTimer = setInterval(() => { if (!document.hidden) refreshFair().catch(() => {}); }, 300000);
+  setInterval(() => { if (liveAt) updateLiveStatus(true); }, 1000);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) poll(); });
 }
 
 /* ---------- Receipts ---------- */
