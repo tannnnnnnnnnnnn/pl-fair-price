@@ -733,7 +733,7 @@ SPECS = [
     (r"Jo.o Pedro start for Chelsea vs Bournemouth", lambda: unp("Comes down to team news: the press conference, then lineups 75 minutes before kick-off.")),
     (r"Haaland be the most selected Captain", lambda: U("captain_share")),
     (r"Josh King score more FPL points than Pascal", lambda: m_fpl_vs("King", "FUL", "Groß", "BHA", {6})),
-    (r"outscore Chelsea, Arsenal, and Man Utd combined in GW7", lambda: (lambda c: res((goals("MCI", sel(team="MCI", gws={7})) > sum((goals(t, sel(team=t, gws={7})) for t in ("CHE", "ARS", "MUN")), np.zeros(N, np.int32))).mean(), fx_conf(sel(team="MCI", gws={7})), "match_model", "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.", fx_in(sel(team="MCI", gws={7})[0])))(None)),
+    (r"outscore Chelsea, Arsenal, and Man Utd combined in GW7", lambda: (lambda c: res((goals("MCI", sel(team="MCI", gws={7})) > sum((goals(t, sel(team=t, gws={7})) for t in ("CHE", "ARS", "MUN")), np.zeros(N, np.int32))).mean(), fx_conf(sum((sel(team=t, gws={7}) for t in ("MCI", "CHE", "ARS", "MUN")), [])), "match_model", "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.", fx_in(sel(team="MCI", gws={7})[0])))(None)),
     (r"manager lose their job before GW11", lambda: U("manager")),
     (r"De Zerbi still be Spurs manager", lambda: U("manager")),
     (r"Next Premier League Hat-Trick", lambda: U("ambiguous")),
