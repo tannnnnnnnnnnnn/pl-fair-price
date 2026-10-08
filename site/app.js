@@ -145,6 +145,14 @@ function whyDetails(m, open) {
     h('p', null, explain('Liquidity', 'liquidity'), h('b', { text: liquidityText(m.liquidity_usd) || '–' })),
     pays ? h('p', { class: 'detail-wide' }, h('span', { text: pays })) : null));
   const worked = h('details', { class: 'worked' }, h('summary', { text: 'How we worked this out' }));
+  worked.append(researchBody(m));
+  body.append(worked);
+  body.append(stakePanel(m));
+  return h('details', { class: 'why market-details', open: open ? true : null }, h('summary', { text: 'Details' }), body);
+}
+
+/* How our price was built: method, inputs, sources and resolution rules. */
+function researchBody(m) {
   const workedBody = h('div', { class: 'worked-body' });
   if (m.fair) {
     if (isRough(m)) workedBody.append(h('p', { class: 'why-rough' }, explain('Rough', 'rough'), ': bigger assumptions, so treat this price with care.'));
@@ -166,10 +174,7 @@ function whyDetails(m, open) {
     m.description ? h('h4', { text: 'How it resolves' }) : null,
     m.description ? h('p', { class: 'resolution-text', text: m.description }) : null,
     source ? safeLink(source, 'Resolution source', 'in-src') : null));
-  worked.append(workedBody);
-  body.append(worked);
-  body.append(stakePanel(m));
-  return h('details', { class: 'why market-details', open: open ? true : null }, h('summary', { text: 'Details' }), body);
+  return workedBody;
 }
 
 function marketRow(m, extra, openWhy) {
@@ -199,7 +204,10 @@ function renderGaps() {
     marketLink(m),
     h('b', { text: side.toUpperCase() }),
     h('span', { text: `You'd buy at ${pct(r.averagePrice)} · our price ${pct(side === 'yes' ? m.fair.p : 1 - m.fair.p)}` }),
-    h('span', null, explain('Expected value', 'ev'), ` ${money(r.ev, true)} per $10`))));
+    h('span', null, explain('Expected value', 'ev'), ` ${money(r.ev, true)} per $10`),
+    h('details', { class: 'worked research' }, h('summary', { text: 'Show the research' }),
+      h('p', { class: 'why-text', text: `$10 on ${side.toUpperCase()} buys ${r.shares.toFixed(2)} shares at an average ${pct(r.averagePrice)}, plus a ${money(r.fee)} fee. If it wins you get ${money(r.payout)}. Expected value ranges from ${money(r.evLow, true)} to ${money(r.evHigh, true)} across our price range.` }),
+      researchBody(m)))));
 }
 
 /* ---------- My markets ---------- */
@@ -216,7 +224,7 @@ function renderMyMarkets() {
         h('span', { class: 'my-summary-main' }, marketLink(m, 'market-title'), h('span', { class: 'my-meta', text: [closesText(m.exp), volumeText(m.volume_usd)].filter(Boolean).join(' · ') })),
         h('span', { class: 'my-summary-price' }, h('b', { text: `XO ${pct(m.xo_price)} · Ours ${m.fair ? pct(m.fair.p) : '–'}` }), verdict(m))),
       h('div', { class: 'my-body' },
-        m.pitch ? h('div', { class: 'my-call' }, h('h3', { text: 'My call' }), h('p', { text: m.pitch })) : null,
+        m.pitch ? h('div', { class: 'my-call' }, h('h3', { text: 'My call when I made it' }), h('p', { text: m.pitch })) : null,
         pricePair(m),
         h('div', { class: 'my-actions' }, h('a', { class: 'trade', href: tradeUrl(m), target: '_blank', rel: 'noopener' }, 'Trade on', wordmark('wm'))),
         stakePanel(m),
