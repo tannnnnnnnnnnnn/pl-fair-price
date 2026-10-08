@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T22:45:18Z",
+ "generated_at": "2026-10-08T22:55:09Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -1265,9 +1265,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5829,
-    "low": 0.4829,
-    "high": 0.6829,
+    "p": 0.5831,
+    "low": 0.4831,
+    "high": 0.6831,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1525,6 +1525,108 @@
    }
   },
   {
+   "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
+   "title": "Will Gyokeres outscore Bruno Fernandes across Premier League Matchweeks 6\u20137?",
+   "url": "https://beta.xo.market/event/will-gyokeres-outscore-bruno-fernandes-across-prem-4590?r=cryptotan01",
+   "creator": "xouser56971",
+   "is_ours": false,
+   "xo_price": 0.54,
+   "best_bid": 0.53,
+   "best_ask": 0.55,
+   "liquidity_usd": 14.57,
+   "volume_usd": 44.22,
+   "expires_at": "2026-10-18T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.0363,
+    "low": 0,
+    "high": 0.1363,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
+    "inputs": [
+     {
+      "label": "Gy\u00f6keres: xG 0.00, xA 0.23 in 29 min, 0/5 starts",
+      "value": "10% of team goals, plays 19% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "B.Fernandes: xG 2.56, xA 1.32 in 450 min, 5/5 starts",
+      "value": "19% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": -50,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Sweden's scorer or United's captain? I'm backing Gyokeres over two PL games. Bruno fans, prove me wrong. Ties = NO.",
+   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://theanalyst.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.53,
+       "size": 0.489364
+      },
+      {
+       "price": 0.5,
+       "size": 11.0
+      },
+      {
+       "price": 0.45,
+       "size": 0.781014
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 2.727275
+      },
+      {
+       "price": 0.58,
+       "size": 12.0
+      }
+     ],
+     "last": 0.54
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 2.727275
+      },
+      {
+       "price": 0.42,
+       "size": 12.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.47,
+       "size": 0.489364
+      },
+      {
+       "price": 0.5,
+       "size": 11.0
+      },
+      {
+       "price": 0.55,
+       "size": 0.781014
+      }
+     ],
+     "last": 0.46
+    }
+   }
+  },
+  {
    "slug": "will-brighton-outscore-arsenal-across-premier-leag-6832",
    "title": "Will Brighton outscore Arsenal across Premier League Matchweeks 6\u20138?",
    "url": "https://beta.xo.market/event/will-brighton-outscore-arsenal-across-premier-leag-6832?r=cryptotan01",
@@ -1619,9 +1721,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5605,
-    "low": 0.4605,
-    "high": 0.6605,
+    "p": 0.5522,
+    "low": 0.4522,
+    "high": 0.6522,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -1654,7 +1756,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 0,
+   "gap_pts": -1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1917,92 +2019,6 @@
       }
      ],
      "last": 0.5
-    }
-   }
-  },
-  {
-   "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
-   "title": "Will Gyokeres outscore Bruno Fernandes across Premier League Matchweeks 6\u20137?",
-   "url": "https://beta.xo.market/event/will-gyokeres-outscore-bruno-fernandes-across-prem-4590?r=cryptotan01",
-   "creator": "xouser56971",
-   "is_ours": false,
-   "xo_price": 0.54,
-   "best_bid": 0.53,
-   "best_ask": 0.55,
-   "liquidity_usd": 2.11,
-   "volume_usd": 44.22,
-   "expires_at": "2026-10-18T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.0365,
-    "low": 0,
-    "high": 0.1366,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
-    "inputs": [
-     {
-      "label": "Gy\u00f6keres: xG 0.00, xA 0.23 in 29 min, 0/5 starts",
-      "value": "10% of team goals, plays 19% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "B.Fernandes: xG 2.56, xA 1.32 in 450 min, 5/5 starts",
-      "value": "19% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": -50,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Sweden's scorer or United's captain? I'm backing Gyokeres over two PL games. Bruno fans, prove me wrong. Ties = NO.",
-   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://theanalyst.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.53,
-       "size": 0.489364
-      },
-      {
-       "price": 0.45,
-       "size": 0.781014
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.55,
-       "size": 2.727275
-      }
-     ],
-     "last": 0.54
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.45,
-       "size": 2.727275
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.47,
-       "size": 0.489364
-      },
-      {
-       "price": 0.55,
-       "size": 0.781014
-      }
-     ],
-     "last": 0.46
     }
    }
   },
@@ -2729,9 +2745,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2306,
-    "low": 0.1306,
-    "high": 0.3306,
+    "p": 0.2371,
+    "low": 0.1371,
+    "high": 0.3371,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2764,7 +2780,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -27,
+   "gap_pts": -26,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2990,9 +3006,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.024,
+    "p": 0.0252,
     "low": 0,
-    "high": 0.124,
+    "high": 0.1252,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance \u00d8degaard score or assist in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -3025,7 +3041,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -7,
+   "gap_pts": -6,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3170,9 +3186,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5315,
-    "low": 0.4315,
-    "high": 0.6315,
+    "p": 0.5364,
+    "low": 0.4365,
+    "high": 0.6364,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -3190,7 +3206,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 3,
+   "gap_pts": 4,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3743,9 +3759,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5395,
-    "low": 0.4395,
-    "high": 0.6395,
+    "p": 0.5398,
+    "low": 0.4398,
+    "high": 0.6398,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3836,9 +3852,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3433,
-    "low": 0.2433,
-    "high": 0.4434,
+    "p": 0.3453,
+    "low": 0.2452,
+    "high": 0.4453,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES.",
@@ -3866,7 +3882,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -6,
+   "gap_pts": -5,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -3969,9 +3985,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.442,
-    "low": 0.342,
-    "high": 0.542,
+    "p": 0.4391,
+    "low": 0.3391,
+    "high": 0.5391,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -4142,8 +4158,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9801,
-    "low": 0.8801,
+    "p": 0.9802,
+    "low": 0.8802,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -4494,9 +4510,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5046,
-    "low": 0.4046,
-    "high": 0.6046,
+    "p": 0.4996,
+    "low": 0.3996,
+    "high": 0.5996,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -4695,9 +4711,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3381,
-    "low": 0.2381,
-    "high": 0.4381,
+    "p": 0.3423,
+    "low": 0.2423,
+    "high": 0.4424,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-6. A tie counts as NO.",
