@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-08T17:26:44Z)
+# VERIFY — PL Fair Price (2026-10-08T17:30:12Z)
 
 GW6 deadline 2026-10-10T10:00:00Z. 80 XO PL markets; 44 priced (high 1, medium 8, low 35).
 
