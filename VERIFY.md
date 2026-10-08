@@ -1,20 +1,20 @@
-# VERIFY — PL Fair Price (2026-10-08T19:34:06Z)
+# VERIFY — PL Fair Price (2026-10-08T19:45:58Z)
 
-GW6 deadline 2026-10-10T10:00:00Z. 78 XO PL markets; 44 priced (high 1, medium 8, low 35).
+GW6 deadline 2026-10-10T10:00:00Z. 79 XO PL markets; 44 priced (high 1, medium 8, low 35).
 
 ## 1X2 fit (Polymarket de-vigged vs Poisson model), max error 0.0 pts
 
 | Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|
-| ARS-LEE | 6 | 70.5/18.5/10.5 | 70.9/18.6/10.6 | 70.9/18.6/10.6 | 2.21-0.73 | $33,242 |
-| SUN-BHA | 6 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.7/27.6/41.7 | 1.15-1.38 | $213,958 |
+| ARS-LEE | 6 | 70.5/18.5/10.5 | 70.9/18.6/10.6 | 70.9/18.6/10.6 | 2.21-0.73 | $33,250 |
+| SUN-BHA | 6 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.7/27.6/41.7 | 1.15-1.38 | $213,962 |
 | IPS-FUL | 6 | 33.5/26.5/39.5 | 33.7/26.6/39.7 | 33.7/26.6/39.7 | 1.29-1.42 | $1,893 |
-| AVL-BRE | 6 | 35.5/27.5/37.5 | 35.3/27.4/37.3 | 35.3/27.4/37.3 | 1.28-1.32 | $4,329 |
-| CHE-BOU | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $11,641 |
+| AVL-BRE | 6 | 35.5/27.5/37.5 | 35.3/27.4/37.3 | 35.3/27.4/37.3 | 1.28-1.32 | $15,488 |
+| CHE-BOU | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $11,647 |
 | MUN-TOT | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $84,421 |
 | HUL-EVE | 6 | 25.5/28.5/46.5 | 25.4/28.4/46.3 | 25.4/28.4/46.3 | 0.95-1.38 | $1,606 |
-| CRY-NFO | 6 | 35.5/29.5/35.5 | 35.3/29.4/35.3 | 35.3/29.4/35.3 | 1.16-1.16 | $764 |
-| LIV-MCI | 6 | 35.5/25.5/38.5 | 35.7/25.6/38.7 | 35.7/25.6/38.7 | 1.42-1.49 | $28,397 |
+| CRY-NFO | 6 | 35.5/29.5/35.5 | 35.3/29.4/35.3 | 35.3/29.4/35.3 | 1.16-1.16 | $824 |
+| LIV-MCI | 6 | 35.5/25.5/38.5 | 35.7/25.6/38.7 | 35.7/25.6/38.7 | 1.42-1.49 | $29,167 |
 | COV-NEW | 6 | 27.5/26.5/45.5 | 27.6/26.6/45.7 | 27.6/26.6/45.7 | 1.12-1.51 | $929 |
 | EVE-CHE | 7 | 34.0/25.5/41.0 | 33.8/25.4/40.8 | 33.8/25.4/40.8 | 1.40-1.55 | $217 |
 | BRE-LIV | 7 | 34.0/25.5/40.0 | 34.2/25.6/40.2 | 34.2/25.6/40.2 | 1.38-1.52 | $388 |
@@ -80,13 +80,13 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 40 | 34.1 | -6 | player_model | Haaland + Saka outscore Tottenham in EPL MW6? | Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES. |
 | low | 47 | 44.2 | -3 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES. |
 | medium | 22 | 8.5 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 52.9 | 20 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 52.6 | 20 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 69.4 | 19 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | medium | 40 | 34.1 | -6 | match_model | Will 19+ goals be scored across all Premier League games on 10th October 2026? | Total goals across the 6 league games on 2026-10-10; needs 19+. |
 | low | 24 | 36.9 | 13 | match_model | Will Arsenal fail to score a First-Half goal this Matchweek? | Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half. |
 | high | 46 | 61.5 | 15 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 39 | 26.0 | -13 | match_model | Will Arsenal's first goal against Leeds come after half-time? | Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO |
-| low | 50 | 35.5 | -14 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
+| low | 45 | 35.5 | -9 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
 | low | 25 | 34.3 | 9 | match_model | Will Brighton score in every Premier League match they play in October? | Brighton score in every October league match. (4 fixtures) |
 | low | 33 | 99.9 | 67 | player_model | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 76%. We show the first, at low confidence. |
 | medium | 21 | 30.2 | 9 | match_model | Will Chelsea concede 2 or more goals this Matchweek? | Chance Chelsea concede 2+ in the match. Poisson model fitted to Polymarket's match prices. |
@@ -108,7 +108,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 55 | 55.6 | 1 | match_model | Will Man United earn more PL points than Spurs in Matchweeks 6–9? | Man Utd take more league points than Spurs in MW6-9. A tie counts as NO. |
 | low | 35 | 20.7 | -14 | match_model | Will Man Utd vs Spurs be the lowest-scoring game of the day? | Two readings: joint-lowest of the 6 games that day counts: 21%. only the strict lowest counts: 8%. We show the first, at low confidence. |
 | low | 50 | 43.9 | -6 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
-| low | 5 | 57.1 | 52 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 56.8 | 52 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 20.2 | -30 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
 | low | 9 | 2.4 | -7 | player_model | Will Martin Ødegaard record a G/A in each of Arsenal's next three PL matches from Oct. 10? | Chance Ødegaard score or assist in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come fr |
 | low | 50 | 73.8 | 24 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
@@ -132,6 +132,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | - | 55 | - |  | - | Will Chelsea concede more Premier League goals than Spurs score by Nov 1, 2026? | Two readings: season totals (Chelsea have conceded 12, Spurs have scored 2): 100%. only goals from now to 1 Nov: 39%. They differ too much t |
 | - | 50 | - |  | - | Will Cole Palmer score or assist vs Bournemouth? | Fair price coming: not modelled yet. |
 | - | 88 | - |  | - | Will Frank Lampard still be Coventry City's manager at 23:59 UTC on 6 November 2026? | No Polymarket market prices this manager's job by this date. |
+| - | 35 | - |  | - | Will Fulham earn more PL points than Chelsea in MW6–9? | Fair price coming: not modelled yet. |
 | - | 35 | - |  | - | Will Haaland be the most selected Captain in FPL for Gameweek 6? | FPL publishes captaincy only after the deadline. |
 | - | 50 | - |  | - | Will Joelinton play 30+ minutes at Coventry on Monday? | Minutes questions need team news; check the press conference. |
 | - | 30 | - |  | - | Will João Pedro start for Chelsea vs Bournemouth? | Comes down to team news: the press conference, then lineups 75 minutes before kick-off. |
