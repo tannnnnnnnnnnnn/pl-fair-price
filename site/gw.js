@@ -117,6 +117,49 @@ function renderCaptain(proj) {
   body.replaceChildren(list, tableView(['Player', 'xPts', 'Goal', 'Assist', 'Blank'], rows.map(({ c }) => [`${c.name} (${c.team})`, Number(c.xpts).toFixed(1), pct0(c.p_goal), pct0(c.p_assist), pct0(c.p_blank)])));
 }
 
+/* ---------- (c2) projection consensus: our xPts next to free public models ---------- */
+
+const CONS_COLS = [['ours', 'Ours'], ['solio', 'Solio'], ['pundit', 'Pundit'], ['fpl', 'FPL']];
+const pts1 = (v) => (num(v) === null ? '–' : Number(v).toFixed(1));
+
+// Keys of the highest of the three models in the average (FPL is not one of them). No highlight when they all agree.
+function topModels(p) {
+  const v = ['ours', 'solio', 'pundit'].filter((k) => num(p[k]) !== null).map((k) => [k, pts1(p[k])]);
+  const mx = Math.max(...v.map((x) => Number(x[1])));
+  return v.length > 1 && v.some((x) => Number(x[1]) < mx) ? new Set(v.filter((x) => Number(x[1]) === mx).map((x) => x[0])) : new Set();
+}
+
+function renderConsensus(cons, gwId) {
+  const body = document.getElementById('co-body');
+  const rows = cons && cons.gw === gwId && Array.isArray(cons.players) ? cons.players.filter((p) => num(p.avg) !== null).sort((a, b) => b.avg - a.avg) : [];
+  if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: 'The consensus appears once the free sources have published numbers for this gameweek.' })); return; }
+  const hiTitle = 'Highest of the three models';
+
+  const cards = h('ol', { class: 'cons-cards' }, rows.map((p, i) => {
+    const hi = topModels(p);
+    return h('li', { class: 'ccard' },
+      h('div', { class: 'ctop' },
+        h('span', { class: 'prank', text: String(i + 1) }),
+        h('div', { class: 'pmain' }, h('div', { class: 'pname' }, crest(p.team, 20), h('span', { text: p.name })), h('p', { class: 'psub', text: `${p.team} · ${p.pos}` })),
+        h('div', { class: 'pbig' }, h('b', { text: pts1(p.avg) }), h('i', { text: 'Average' }))),
+      h('div', { class: 'cvals' }, CONS_COLS.map(([k, label]) =>
+        h('div', { class: 'cv' + (hi.has(k) ? ' hi' : '') + (k === 'fpl' ? ' off' : ''), title: hi.has(k) ? hiTitle : null }, h('i', { text: label }), h('b', { text: pts1(p[k]) })))));
+  }));
+
+  const table = h('table', { class: 'ctable', 'aria-label': 'Expected points by source' },
+    h('thead', null, h('tr', null, h('th', { class: 'cp', text: 'Player' }), CONS_COLS.map(([k, label]) => h('th', { class: 'n' + (k === 'fpl' ? ' off' : ''), text: label })), h('th', { class: 'n', text: 'Average' }))),
+    h('tbody', null, rows.map((p, i) => {
+      const hi = topModels(p);
+      return h('tr', null,
+        h('td', { class: 'cp' }, h('span', { class: 'cpid' }, h('span', { class: 'prank', text: String(i + 1) }), crest(p.team, 20), h('span', { class: 'cpn' }, h('b', { text: p.name }), h('i', { text: `${p.team} · ${p.pos}` })))),
+        CONS_COLS.map(([k]) => h('td', { class: 'n' + (k === 'fpl' ? ' off' : '') }, h('span', { class: 'v' + (hi.has(k) ? ' hi' : ''), title: hi.has(k) ? hiTitle : null, text: pts1(p[k]) }))),
+        h('td', { class: 'n avg' }, h('span', { class: 'v', text: pts1(p.avg) })));
+    })));
+
+  body.replaceChildren(cards, table,
+    h('p', { class: 'note', text: `Top ${rows.length} by average. The average is the mean of Ours, Solio and Pundit. FPL is shown but left out of it: its number is form-based and erratic. The shaded number is the highest of those three. A dash means that source does not publish the player.` }));
+}
+
 /* ---------- (d) clean-sheet chances, all teams ---------- */
 
 function renderCS(proj) {
@@ -279,6 +322,8 @@ async function init() {
   }
   renderDoubts(proj);
   renderCaptain(proj);
+  (state.mock ? Promise.resolve(null) : getJSON(`data/consensus.json?v=${Math.floor(Date.now() / 60000)}`).catch(() => null))
+    .then((cons) => renderConsensus(cons, gwId));
   renderCS(proj);
   renderGoals(proj);
   renderPerf(proj);
