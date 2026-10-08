@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-08T20:11:42Z)
+# VERIFY — PL Fair Price (2026-10-08T20:14:18Z)
 
 GW6 deadline 2026-10-10T10:00:00Z. 79 XO PL markets; 44 priced (high 1, medium 8, low 35).
 
@@ -86,7 +86,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 24 | 36.9 | 13 | match_model | Will Arsenal fail to score a First-Half goal this Matchweek? | Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half. |
 | high | 46 | 61.5 | 15 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 39 | 26.0 | -13 | match_model | Will Arsenal's first goal against Leeds come after half-time? | Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO |
-| low | 45 | 35.5 | -9 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
+| low | 42 | 35.5 | -7 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
 | low | 25 | 34.3 | 9 | match_model | Will Brighton score in every Premier League match they play in October? | Brighton score in every October league match. (4 fixtures) |
 | low | 33 | 99.9 | 67 | player_model | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 76%. We show the first, at low confidence. |
 | medium | 21 | 30.2 | 9 | match_model | Will Chelsea concede 2 or more goals this Matchweek? | Chance Chelsea concede 2+ in the match. Poisson model fitted to Polymarket's match prices. |
