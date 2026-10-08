@@ -18,6 +18,9 @@ from pathlib import Path
 
 import numpy as np
 from scipy.optimize import minimize
+from scipy.stats import poisson as _poisson
+
+poisson_cdf = _poisson.cdf
 
 TOOL = Path(__file__).resolve().parent.parent
 RAW, OUT = TOOL / "pipeline" / "raw", TOOL / "site" / "data"
@@ -29,6 +32,8 @@ FH_SHARE = 0.45  # share of goals scored in the first half (assumption)
 RHO = -0.12  # Dixon-Coles low-score correction; plain Poisson fitted to 1X2 understates goals
 LAST = REFD / "last_season_2025_26.csv"
 CAPTAIN = REFD / "captain_odds.json"
+BONUS = json.loads((REFD / "bonus_model.json").read_text())
+DC_CAL = 0.89  # Poisson DEFCON estimate ran 2.4 pts high vs 309 players in 2025/26
 POLY = "https://polymarket.com/event/"
 FPL = "https://fantasy.premierleague.com/api/bootstrap-static/"
 FPL_FIX = "https://fantasy.premierleague.com/api/fixtures/"
@@ -277,15 +282,14 @@ def player(pid):
     p = EL[pid]
     t, pos = TEAMS[p["team"]], p["element_type"]
     g = max(table[t]["p"], 1)
-    # Scoring rate = half xG, half actual goals (assists: half xA, half FPL assists), this season plus
-    # 2025/26 at 60% weight, shrunk toward a positional prior worth 2.5 matches.
+    # Rates from xG/xA only (actual goals are too noisy over 5 games): this season plus 2025/26 at 60% weight,
+    # shrunk toward a positional prior worth 4 matches. The team's xG per game is shrunk toward the league
+    # average (5 matches' weight), so a team that has barely scored can't inflate one player's share.
     lm, lxg, lg_, lxa, la_ = last.get(fold(f'{p["first_name"]} {p["second_name"]}'), [0.0] * 5)
     n90 = (p["minutes"] + 0.6 * lm) / 90
-    gsum = 0.5 * ((num(p["expected_goals"]) or 0) + p["goals_scored"] + 0.6 * (lxg + lg_))
-    asum = 0.5 * ((num(p["expected_assists"]) or 0) + p["assists"] + 0.6 * (lxa + la_))
-    xg90 = (gsum + 2.5 * PRIOR_G[pos]) / (n90 + 2.5)
-    xa90 = (asum + 2.5 * PRIOR_A[pos]) / (n90 + 2.5)
-    txg = max(0.5 * (team_xg[t] + table[t]["gf"]) / g, 0.5)
+    xg90 = ((num(p["expected_goals"]) or 0) + 0.6 * lxg + 4 * PRIOR_G[pos]) / (n90 + 4)
+    xa90 = ((num(p["expected_assists"]) or 0) + 0.6 * lxa + 4 * PRIOR_A[pos]) / (n90 + 4)
+    txg = (team_xg[t] + 5 * LEAGUE_AVG / 2) / (g + 5)
     start_rate = min(p["starts"] / g, 1.0)
     regular = start_rate >= 0.6
     em = p["minutes"] / (g * 90)  # share of the team's minutes he has played
@@ -293,7 +297,10 @@ def player(pid):
     mpg = min(em / base, 1.0) if base else 0.0
     fs, why = flag_start(p, regular)
     nxt = base * fs if fs is not None else (0.0 if p["status"] in ("i", "s", "u", "n") else base)
-    return dict(id=pid, name=p["web_name"], team=t, pos=pos, qg=min(xg90 / txg, 0.8) * mpg,
+    dc90 = num(p.get("defensive_contribution_per_90")) or 0
+    thr = BONUS["defcon_threshold"]["DEF" if pos == 2 else "MID"]
+    p_dc = 0.0 if pos == 1 or p["minutes"] < 90 else DC_CAL * float(1 - poisson_cdf(thr - 1, dc90 * mpg))
+    return dict(id=pid, name=p["web_name"], team=t, pos=pos, p_dc=p_dc, qg=min(xg90 / txg, 0.8) * mpg,
                 qa=min(xa90 / txg, 0.6) * mpg, p_next=nxt, p_later=base, flag_note=why,
                 xg=num(p["expected_goals"]) or 0, xa=num(p["expected_assists"]) or 0, mins=p["minutes"],
                 starts=p["starts"], team_games=g, regular=regular)
@@ -883,18 +890,22 @@ for pid, p in EL.items():
     _g = grid(z["lh"], z["la"])
     pcs = float(_g[:, 0].sum() if z["h"] == t else _g[0, :].sum())
     p_goal, p_ast = pp * (1 - math.exp(-lg)), pp * (1 - math.exp(-la_))
-    xpts = pp * (2 + lg * GOAL_PTS[m["pos"]] + la_ * 3 + pcs * CS_PTS[m["pos"]])
-    blank = (1 - pp) + pp * math.exp(-lg - la_) * ((1 - pcs) if CS_PTS[m["pos"]] >= 4 else 1)
+    cs_def = pcs if m["pos"] in (1, 2) else 0.0
+    bonus = max(0.0, BONUS["const"] + BONUS["goal"] * lg + BONUS["assist"] * la_ + BONUS["cs_def"] * cs_def + BONUS["defcon"] * m["p_dc"])
+    xpts = pp * (2 + lg * GOAL_PTS[m["pos"]] + la_ * 3 + pcs * CS_PTS[m["pos"]] + 2 * m["p_dc"] + bonus)
+    blank = (1 - pp) + pp * math.exp(-lg - la_) * ((1 - pcs) if CS_PTS[m["pos"]] >= 4 else 1) * (1 - m["p_dc"])
     own = num(p["selected_by_percent"]) or 0
     if p_goal > 0.03 or own > 5 or m["pos"] in (1, 2) and pp > 0.5 and own > 1:
         players.append(dict(id=pid, name=m["name"], team=t, pos=POS[m["pos"]], price=p["now_cost"] / 10,
                             owned_pct=own, chance_playing=p["chance_of_playing_next_round"], news=p["news"],
                             p_start=round(pp, 3), p_goal=round(p_goal, 4), p_assist=round(p_ast, 4),
-                            p_cs=round(pcs, 4), xpts=round(xpts, 2), p_blank=round(blank, 4),
+                            p_cs=round(pcs, 4), p_defcon=round(m["p_dc"], 3), xbonus=round(pp * bonus, 2),
+                            xpts=round(xpts, 2), p_blank=round(blank, 4), fpl_ep=num(p.get("ep_next")),
                             xo_markets=player_links.get(pid, [])))
 players.sort(key=lambda x: -x["xpts"])
 captain = [dict(id=x["id"], name=x["name"], team=x["team"], xpts=x["xpts"], p_goal=x["p_goal"],
-                p_assist=x["p_assist"], p_blank=x["p_blank"]) for x in players[:10]]
+                p_assist=x["p_assist"], p_blank=x["p_blank"], p_defcon=x["p_defcon"], xbonus=x["xbonus"],
+                fpl_ep=x["fpl_ep"]) for x in players[:10]]
 flags = []  # every flagged player owned by 1%+: FPL's published chance and news
 for pid, p in EL.items():
     c = p["chance_of_playing_next_round"]

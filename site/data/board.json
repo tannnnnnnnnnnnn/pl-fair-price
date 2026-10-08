@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T11:39:18Z",
+ "generated_at": "2026-10-08T11:48:56Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -28,16 +28,16 @@
     "kickoff_utc": "2026-10-10T14:00:00Z"
    },
    "fair": {
-    "p": 0.2541,
-    "low": 0.1541,
-    "high": 0.3541,
+    "p": 0.28,
+    "low": 0.18,
+    "high": 0.38,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Palmer score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
     "inputs": [
      {
       "label": "Palmer: xG 1.31, xA 0.79 in 442 min, 5/5 starts (FPL: 75% chance of playing)",
-      "value": "23% of team goals, plays 71% next match",
+      "value": "26% of team goals, plays 71% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -53,7 +53,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 3,
+   "gap_pts": 6,
    "status": "ACTIVE",
    "horizon": "weekend"
   },
@@ -437,16 +437,16 @@
     "kickoff_utc": "2026-10-11T15:30:00Z"
    },
    "fair": {
-    "p": 0.3795,
-    "low": 0.2795,
-    "high": 0.4796,
+    "p": 0.445,
+    "low": 0.345,
+    "high": 0.545,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
     "inputs": [
      {
       "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "33% of team goals, plays 95% next match",
+      "value": "42% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -462,7 +462,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -17,
+   "gap_pts": -11,
    "status": "ACTIVE",
    "horizon": "weekend"
   },
@@ -481,27 +481,27 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4712,
-    "low": 0.3711,
-    "high": 0.5712,
+    "p": 0.5544,
+    "low": 0.4545,
+    "high": 0.6544,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
     "inputs": [
      {
       "label": "Gonzalo: xG 2.33, xA 0.58 in 425 min, 5/5 starts",
-      "value": "28% of team goals, plays 95% next match",
+      "value": "30% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
       "label": "King: xG 1.54, xA 0.46 in 425 min, 5/5 starts",
-      "value": "16% of team goals, plays 95% next match",
+      "value": "14% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 2,
+   "gap_pts": 10,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -520,27 +520,27 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3698,
-    "low": 0.2698,
-    "high": 0.4698,
+    "p": 0.3363,
+    "low": 0.2363,
+    "high": 0.4364,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-6. A tie counts as NO.",
     "inputs": [
      {
       "label": "King: xG 1.54, xA 0.46 in 425 min, 5/5 starts",
-      "value": "16% of team goals, plays 95% next match",
+      "value": "14% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
       "label": "Gro\u00df: xG 1.77, xA 0.86 in 450 min, 5/5 starts",
-      "value": "7% of team goals, plays 95% next match",
+      "value": "9% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": -13,
+   "gap_pts": -16,
    "status": "ACTIVE",
    "horizon": "weekend"
   },
@@ -643,27 +643,27 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6069,
-    "low": 0.507,
-    "high": 0.7069,
+    "p": 0.3726,
+    "low": 0.2726,
+    "high": 0.4726,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
     "inputs": [
      {
       "label": "Isak: xG 3.54, xA 0.08 in 413 min, 5/5 starts (FPL: 75% chance of playing)",
-      "value": "34% of team goals, plays 71% next match",
+      "value": "31% of team goals, plays 71% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
       "label": "Jo\u00e3o Pedro: xG 2.17, xA 0.19 in 360 min, 4/5 starts (FPL: 75% chance of playing)",
-      "value": "25% of team goals, plays 71% next match",
+      "value": "29% of team goals, plays 71% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 16,
+   "gap_pts": -8,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -761,9 +761,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0386,
+    "p": 0.0375,
     "low": 0,
-    "high": 0.1386,
+    "high": 0.1375,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
@@ -775,7 +775,7 @@
      },
      {
       "label": "B.Fernandes: xG 2.56, xA 1.32 in 450 min, 5/5 starts",
-      "value": "18% of team goals, plays 95% next match",
+      "value": "19% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
@@ -834,16 +834,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4462,
-    "low": 0.3462,
-    "high": 0.5462,
+    "p": 0.5519,
+    "low": 0.4519,
+    "high": 0.6519,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
     "inputs": [
      {
       "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "33% of team goals, plays 95% next match",
+      "value": "42% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -869,7 +869,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -20,
+   "gap_pts": -10,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -1130,16 +1130,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2253,
-    "low": 0.1253,
-    "high": 0.3253,
+    "p": 0.2357,
+    "low": 0.1357,
+    "high": 0.3357,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
     "inputs": [
      {
       "label": "Gro\u00df: xG 1.77, xA 0.86 in 450 min, 5/5 starts",
-      "value": "7% of team goals, plays 95% next match",
+      "value": "9% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -1165,7 +1165,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -27,
+   "gap_pts": -26,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -1346,16 +1346,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0297,
+    "p": 0.0242,
     "low": 0,
-    "high": 0.1297,
+    "high": 0.1242,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance \u00d8degaard score or assist in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
     "inputs": [
      {
       "label": "\u00d8degaard: xG 1.08, xA 1.32 in 377 min, 5/5 starts",
-      "value": "9% of team goals, plays 95% next match",
+      "value": "8% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -1381,7 +1381,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -6,
+   "gap_pts": -7,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -1440,16 +1440,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.462,
-    "low": 0.3619,
-    "high": 0.562,
+    "p": 0.5439,
+    "low": 0.4439,
+    "high": 0.6439,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
     "inputs": [
      {
       "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "33% of team goals, plays 95% next match",
+      "value": "42% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -1460,7 +1460,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -4,
+   "gap_pts": 4,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -1695,9 +1695,23 @@
    "expires_at": "2026-12-25T00:00:00.000Z",
    "group": "season",
    "fixture": null,
-   "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 73%. They differ too much to show one number.",
-   "gap_pts": null,
+   "fair": {
+    "p": 0.999,
+    "low": 0.899,
+    "high": 1,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Two readings: season total (he has 3 already): 100%. only goals from now: 76%. We show the first, at low confidence.",
+    "inputs": [
+     {
+      "label": "Saka: xG 3.22, xA 0.98 in 416 min, 5/5 starts",
+      "value": "22% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": 67,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -1848,21 +1862,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2929,
-    "low": 0.1929,
-    "high": 0.393,
+    "p": 0.3399,
+    "low": 0.2399,
+    "high": 0.4399,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES.",
     "inputs": [
      {
       "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "33% of team goals, plays 95% next match",
+      "value": "42% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
       "label": "Saka: xG 3.22, xA 0.98 in 416 min, 5/5 starts",
-      "value": "21% of team goals, plays 95% next match",
+      "value": "22% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -1878,7 +1892,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -11,
+   "gap_pts": -6,
    "status": "ACTIVE",
    "horizon": "weekend"
   },
@@ -1923,16 +1937,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2892,
-    "low": 0.1892,
-    "high": 0.3892,
+    "p": 0.4467,
+    "low": 0.3468,
+    "high": 0.5467,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
     "inputs": [
      {
       "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "33% of team goals, plays 95% next match",
+      "value": "42% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -1943,7 +1957,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -18,
+   "gap_pts": -2,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -2002,8 +2016,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9586,
-    "low": 0.8586,
+    "p": 0.9779,
+    "low": 0.8779,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -2011,18 +2025,18 @@
     "inputs": [
      {
       "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "33% of team goals, plays 95% next match",
+      "value": "42% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
       "label": "B.Fernandes: xG 2.56, xA 1.32 in 450 min, 5/5 starts",
-      "value": "18% of team goals, plays 95% next match",
+      "value": "19% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 40,
+   "gap_pts": 42,
    "status": "ACTIVE",
    "horizon": "long"
   },
@@ -2219,9 +2233,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4948,
-    "low": 0.3948,
-    "high": 0.5948,
+    "p": 0.4961,
+    "low": 0.3962,
+    "high": 0.5961,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -2233,13 +2247,13 @@
      },
      {
       "label": "Wirtz: xG 1.00, xA 0.40 in 402 min, 5/5 starts",
-      "value": "12% of team goals, plays 95% next match",
+      "value": "14% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": -6,
+   "gap_pts": -5,
    "status": "ACTIVE",
    "horizon": "long"
   },
