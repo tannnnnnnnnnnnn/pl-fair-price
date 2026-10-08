@@ -176,7 +176,7 @@ function renderFridayLists(proj) {
 
 /* ---------- (c2) projection consensus: our xPts next to free public models ---------- */
 
-const CONS_COLS = [['ours', 'Ours'], ['solio', 'Solio'], ['pundit', 'Pundit'], ['fpl', 'FPL']];
+const CONS_COLS = [['ours', 'Ours'], ['solio', 'Solio'], ['pundit', 'Pundit'], ['fpl', 'FPL form']];
 const pts1 = (v) => (num(v) === null ? '–' : Number(v).toFixed(1));
 
 // Keys of the highest of the three models in the average (FPL is not one of them). No highlight when they all agree.
