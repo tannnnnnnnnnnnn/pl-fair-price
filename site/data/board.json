@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T17:41:18Z",
+ "generated_at": "2026-10-09T17:51:17Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -16,8 +16,8 @@
    "xo_price": 0.2,
    "best_bid": 0.15,
    "best_ask": 0.25,
-   "liquidity_usd": 10.03,
-   "volume_usd": 75.43,
+   "liquidity_usd": 7.43,
+   "volume_usd": 78.33,
    "expires_at": "2026-10-10T22:00:00.000Z",
    "group": "fixture",
    "fixture": {
@@ -41,7 +41,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Chelsea v Bournemouth ($51,953 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($52,253 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -81,7 +81,7 @@
      "asks": [
       {
        "price": 0.25,
-       "size": 20.0
+       "size": 9.600004
       }
      ],
      "last": 0.2
@@ -90,7 +90,7 @@
      "bids": [
       {
        "price": 0.75,
-       "size": 20.0
+       "size": 9.600004
       }
      ],
      "asks": [
@@ -188,7 +188,7 @@
     "method_text": "Chance Chelsea concede at least once, so no clean sheet. Poisson model fitted to Polymarket's match prices.",
     "inputs": [
      {
-      "label": "Polymarket Chelsea v Bournemouth ($51,953 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($52,253 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -634,9 +634,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3421,
-    "low": 0.2421,
-    "high": 0.4421,
+    "p": 0.3422,
+    "low": 0.2422,
+    "high": 0.4422,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score in every October league match. (4 fixtures)",
@@ -1080,7 +1080,7 @@
     "method_text": "Chance Chelsea concede 2+ in the match. Poisson model fitted to Polymarket's match prices.",
     "inputs": [
      {
-      "label": "Polymarket Chelsea v Bournemouth ($51,953 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($52,253 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -1140,9 +1140,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1356,
-    "low": 0.0355,
-    "high": 0.2356,
+    "p": 0.1358,
+    "low": 0.0358,
+    "high": 0.2358,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -1250,9 +1250,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5463,
-    "low": 0.4463,
-    "high": 0.6462,
+    "p": 0.5548,
+    "low": 0.4548,
+    "high": 0.6548,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
@@ -1416,9 +1416,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6442,
-    "low": 0.5442,
-    "high": 0.7442,
+    "p": 0.645,
+    "low": 0.545,
+    "high": 0.745,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1430,12 +1430,12 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "2.4%",
+      "value": "2.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "7.5%",
+      "value": "7.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1445,7 +1445,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "13.3%",
+      "value": "13.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1461,7 +1461,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 59,
+   "gap_pts": 60,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1559,9 +1559,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3253,
-    "low": 0.2253,
-    "high": 0.4254,
+    "p": 0.3235,
+    "low": 0.2235,
+    "high": 0.4235,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1579,7 +1579,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -12,
+   "gap_pts": -13,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1740,9 +1740,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5488,
-    "low": 0.4488,
-    "high": 0.6488,
+    "p": 0.5458,
+    "low": 0.4458,
+    "high": 0.6458,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2001,9 +2001,9 @@
     "kickoff_utc": "2026-10-11T15:30:00Z"
    },
    "fair": {
-    "p": 0.4528,
-    "low": 0.3528,
-    "high": 0.5528,
+    "p": 0.457,
+    "low": 0.3569,
+    "high": 0.557,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2026,7 +2026,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -10,
+   "gap_pts": -9,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -2075,9 +2075,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.037,
+    "p": 0.0382,
     "low": 0,
-    "high": 0.137,
+    "high": 0.1381,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
@@ -2169,9 +2169,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3578,
-    "low": 0.2578,
-    "high": 0.4577,
+    "p": 0.3579,
+    "low": 0.2579,
+    "high": 0.4579,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO.",
@@ -2345,9 +2345,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4403,
-    "low": 0.3403,
-    "high": 0.5403,
+    "p": 0.4415,
+    "low": 0.3415,
+    "high": 0.5414,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
@@ -2513,8 +2513,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9196,
-    "low": 0.8196,
+    "p": 0.9195,
+    "low": 0.8195,
     "high": 1,
     "confidence": "low",
     "method": "match_model",
@@ -2900,9 +2900,9 @@
     "kickoff_utc": "2026-10-10T16:30:00Z"
    },
    "fair": {
-    "p": 0.5534,
-    "low": 0.4535,
-    "high": 0.6534,
+    "p": 0.5536,
+    "low": 0.4536,
+    "high": 0.6536,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
@@ -2977,7 +2977,7 @@
     "method_text": "Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($51,886 traded)",
+      "label": "Polymarket Arsenal v Leeds ($52,286 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3037,9 +3037,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3247,
-    "low": 0.2247,
-    "high": 0.4247,
+    "p": 0.3246,
+    "low": 0.2246,
+    "high": 0.4246,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -3205,9 +3205,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2357,
-    "low": 0.1357,
-    "high": 0.3357,
+    "p": 0.2301,
+    "low": 0.1301,
+    "high": 0.3301,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -3240,7 +3240,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -26,
+   "gap_pts": -27,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3358,7 +3358,7 @@
     "method_text": "Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($51,886 traded)",
+      "label": "Polymarket Arsenal v Leeds ($52,286 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3466,9 +3466,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0272,
+    "p": 0.0248,
     "low": 0,
-    "high": 0.1272,
+    "high": 0.1248,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance \u00d8degaard score or assist in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -3479,7 +3479,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($51,886 traded)",
+      "label": "Polymarket Arsenal v Leeds ($52,286 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3501,7 +3501,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -6,
+   "gap_pts": -7,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3646,9 +3646,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4442,
-    "low": 0.3842,
-    "high": 0.5042,
+    "p": 0.4439,
+    "low": 0.3839,
+    "high": 0.5039,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -3709,9 +3709,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5031,
-    "low": 0.4031,
-    "high": 0.6031,
+    "p": 0.5022,
+    "low": 0.4022,
+    "high": 0.6022,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -3826,9 +3826,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4863,
-    "low": 0.4263,
-    "high": 0.5463,
+    "p": 0.4858,
+    "low": 0.4258,
+    "high": 0.5457,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -3889,9 +3889,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5432,
-    "low": 0.4832,
-    "high": 0.6032,
+    "p": 0.5429,
+    "low": 0.4829,
+    "high": 0.6029,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -4098,16 +4098,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.61,
-    "low": 0.58,
-    "high": 0.64,
+    "p": 0.615,
+    "low": 0.585,
+    "high": 0.645,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "61.0% (spread 2c, $1,174,423 traded on this market)",
+      "value": "61.5% (spread 1c, $1,174,423 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -4171,9 +4171,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5538,
-    "low": 0.4538,
-    "high": 0.6538,
+    "p": 0.5552,
+    "low": 0.4552,
+    "high": 0.6552,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -4185,12 +4185,12 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "2.4%",
+      "value": "2.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "7.5%",
+      "value": "7.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -4200,7 +4200,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "13.3%",
+      "value": "13.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -4216,7 +4216,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 22,
+   "gap_pts": 23,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -4264,9 +4264,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.336,
-    "low": 0.236,
-    "high": 0.436,
+    "p": 0.3372,
+    "low": 0.2372,
+    "high": 0.4372,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES.",
@@ -4282,7 +4282,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Man Utd v Spurs ($109,318 traded)",
+      "label": "Polymarket Man Utd v Spurs ($109,913 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mun-tot-2026-10-10"
      },
@@ -4342,9 +4342,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4094,
-    "low": 0.3094,
-    "high": 0.5094,
+    "p": 0.4101,
+    "low": 0.3101,
+    "high": 0.5101,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -4515,8 +4515,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9752,
-    "low": 0.8752,
+    "p": 0.9761,
+    "low": 0.8761,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -4664,7 +4664,7 @@
     "method_text": "Two readings: joint-lowest of the 6 games that day counts: 19%. only the strict lowest counts: 7%. We show the first, at low confidence.",
     "inputs": [
      {
-      "label": "Polymarket Man Utd v Spurs ($109,318 traded)",
+      "label": "Polymarket Man Utd v Spurs ($109,913 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mun-tot-2026-10-10"
      },
@@ -4765,7 +4765,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($51,886 traded)",
+      "label": "Polymarket Arsenal v Leeds ($52,286 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -4867,9 +4867,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4988,
-    "low": 0.3988,
-    "high": 0.5988,
+    "p": 0.5026,
+    "low": 0.4026,
+    "high": 0.6026,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -5068,9 +5068,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3303,
-    "low": 0.2303,
-    "high": 0.4303,
+    "p": 0.3333,
+    "low": 0.2333,
+    "high": 0.4333,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-6. A tie counts as NO.",
@@ -5125,9 +5125,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1715,
-    "low": 0.0715,
-    "high": 0.2715,
+    "p": 0.1728,
+    "low": 0.0728,
+    "high": 0.2728,
     "confidence": "low",
     "method": "match_model",
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
@@ -5221,9 +5221,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6849,
-    "low": 0.5849,
-    "high": 0.7849,
+    "p": 0.6845,
+    "low": 0.5846,
+    "high": 0.7845,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -5311,12 +5311,12 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.5432,
+   "fair": 0.5429,
    "side": "YES",
-   "ev": 1.1931,
-   "ev_low": 0.0611,
-   "ev_high": 2.3252,
-   "roi": 0.1318,
+   "ev": 1.1875,
+   "ev_low": 0.0554,
+   "ev_high": 2.3195,
+   "roi": 0.1311,
    "buy_price": 0.47,
    "fillable": 9.0559
   },
