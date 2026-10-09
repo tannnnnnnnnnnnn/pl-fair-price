@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-09T22:42:51Z)
+# VERIFY — PL Fair Price (2026-10-09T22:52:49Z)
 
 GW6 deadline 2026-10-10T10:00:00Z. 87 XO PL markets; 44 priced (high 3, medium 7, low 34).
 
@@ -80,7 +80,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 40 | 33.1 | -7 | player_model | Haaland + Saka outscore Tottenham in EPL MW6? | Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES. |
 | low | 47 | 41.8 | -5 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES. |
 | medium | 22 | 8.5 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 53.2 | 20 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 53.3 | 20 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 68.3 | 18 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | medium | 40 | 30.9 | -9 | match_model | Will 19+ goals be scored across all Premier League games on 10th October 2026? | Total goals across the 6 league games on 2026-10-10; needs 19+. |
 | low | 24 | 38.5 | 14 | match_model | Will Arsenal fail to score a First-Half goal this Matchweek? | Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half. |
@@ -118,7 +118,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 50 | 0.1 | -50 | player_model | Will Viktor Gyökeres score in each of Arsenal’s next three Premier League matches? | Chance Gyökeres score in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the mat |
 | low | 66 | 26.5 | -40 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 13.9 | 4 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
-| low | 55 | 26.4 | -29 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 26.2 | -29 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 37 | - |  | - | Arsenal < 1.20 combined xG conceded vs Leeds & Forest? | Fair price coming: not modelled yet. |
 | - | 57 | - |  | - | Both teams to score before two-goal lead in Liverpool vs Man City? | Depends on the order of goals, which our model doesn't track. |
 | - | 45 | - |  | - | Fulham to sack or replace head coach before 1 November 2026 | No Polymarket market prices this manager's job by this date. |

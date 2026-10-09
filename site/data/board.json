@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T22:42:51Z",
+ "generated_at": "2026-10-09T22:52:49Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -4239,9 +4239,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.532,
-    "low": 0.432,
-    "high": 0.632,
+    "p": 0.533,
+    "low": 0.433,
+    "high": 0.633,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -4651,16 +4651,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.264,
-    "low": 0.164,
-    "high": 0.364,
+    "p": 0.262,
+    "low": 0.162,
+    "high": 0.362,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "66.0%",
+      "value": "65.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
