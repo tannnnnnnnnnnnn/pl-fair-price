@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T06:47:54Z",
+ "generated_at": "2026-10-09T07:18:42Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -41,7 +41,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Chelsea v Bournemouth ($13,357 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($13,363 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -130,7 +130,7 @@
     "method_text": "Chance Chelsea concede at least once, so no clean sheet. Poisson model fitted to Polymarket's match prices.",
     "inputs": [
      {
-      "label": "Polymarket Chelsea v Bournemouth ($13,357 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($13,363 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -575,56 +575,6 @@
    }
   },
   {
-   "slug": "will-the-premier-league-announce-a-points-deductio-7531",
-   "title": "Will the Premier League announce a points deduction against Man City by 31 Oct 2026?",
-   "url": "https://beta.xo.market/event/will-the-premier-league-announce-a-points-deductio-7531?r=cryptotan01",
-   "creator": "CryptoMokado",
-   "is_ours": false,
-   "xo_price": 0.05,
-   "best_bid": null,
-   "best_ask": 0.05,
-   "liquidity_usd": 0.53,
-   "volume_usd": 0,
-   "expires_at": "2026-10-31T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "No sanctions hearing date yet, a slow process, and a deduction isn't guaranteed. Oct 31 looks too soon.",
-   "description": "This market resolves based on whether The Premier League officially announces a points deduction against Manchester City on or before October 31, 2026. Financial penalties or sanctions that do not involve a direct points deduction do not count toward a Yes resolution. Primary source: Premier League (https://premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://bbc. com) or Sky Sports (https://skysports. com). The primary source governs. If The official Premier League proceedings are permanently cancelled or terminated without a ruling or The governing body officially retracts the announcement made prior to the cutoff, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://premierleague.com",
-    "https://bbc.com",
-    "https://skysports.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.05,
-       "size": 10.526315
-      }
-     ],
-     "last": 0.05
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.95,
-       "size": 10.526315
-      }
-     ],
-     "asks": [],
-     "last": 0.95
-    }
-   }
-  },
-  {
    "slug": "will-var-overturn-a-decision-in-liverpool-vs-man-c-2085",
    "title": "Will VAR overturn a decision in Liverpool vs Man City?",
    "url": "https://beta.xo.market/event/will-var-overturn-a-decision-in-liverpool-vs-man-c-2085?r=cryptotan01",
@@ -676,6 +626,56 @@
       }
      ],
      "last": 0.65
+    }
+   }
+  },
+  {
+   "slug": "will-the-premier-league-announce-a-points-deductio-7531",
+   "title": "Will the Premier League announce a points deduction against Man City by 31 Oct 2026?",
+   "url": "https://beta.xo.market/event/will-the-premier-league-announce-a-points-deductio-7531?r=cryptotan01",
+   "creator": "CryptoMokado",
+   "is_ours": false,
+   "xo_price": 0.05,
+   "best_bid": null,
+   "best_ask": 0.05,
+   "liquidity_usd": 0.53,
+   "volume_usd": 0,
+   "expires_at": "2026-10-31T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "No sanctions hearing date yet, a slow process, and a deduction isn't guaranteed. Oct 31 looks too soon.",
+   "description": "This market resolves based on whether The Premier League officially announces a points deduction against Manchester City on or before October 31, 2026. Financial penalties or sanctions that do not involve a direct points deduction do not count toward a Yes resolution. Primary source: Premier League (https://premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://bbc. com) or Sky Sports (https://skysports. com). The primary source governs. If The official Premier League proceedings are permanently cancelled or terminated without a ruling or The governing body officially retracts the announcement made prior to the cutoff, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://bbc.com",
+    "https://skysports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.05,
+       "size": 10.526315
+      }
+     ],
+     "last": 0.05
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.95,
+       "size": 10.526315
+      }
+     ],
+     "asks": [],
+     "last": 0.95
     }
    }
   },
@@ -839,7 +839,7 @@
     "method_text": "Chance Chelsea concede 2+ in the match. Poisson model fitted to Polymarket's match prices.",
     "inputs": [
      {
-      "label": "Polymarket Chelsea v Bournemouth ($13,357 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($13,363 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -1255,16 +1255,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6107,
-    "low": 0.5107,
-    "high": 0.7107,
+    "p": 0.625,
+    "low": 0.525,
+    "high": 0.725,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "14.5%",
+      "value": "14.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1274,17 +1274,17 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "4.0%",
+      "value": "4.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.0%",
+      "value": "8.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "9.6%",
+      "value": "11.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1300,7 +1300,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 56,
+   "gap_pts": 57,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2499,7 +2499,7 @@
     "method_text": "Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($35,688 traded)",
+      "label": "Polymarket Arsenal v Leeds ($35,693 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -2740,7 +2740,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Sunderland v Brighton ($214,595 traded)",
+      "label": "Polymarket Sunderland v Brighton ($215,735 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-sun-bri-2026-10-10"
      },
@@ -2880,7 +2880,7 @@
     "method_text": "Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($35,688 traded)",
+      "label": "Polymarket Arsenal v Leeds ($35,693 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3001,7 +3001,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($35,688 traded)",
+      "label": "Polymarket Arsenal v Leeds ($35,693 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3741,16 +3741,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5538,
-    "low": 0.4538,
-    "high": 0.6538,
+    "p": 0.5669,
+    "low": 0.4669,
+    "high": 0.6669,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "14.5%",
+      "value": "14.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3760,17 +3760,17 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "4.0%",
+      "value": "4.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.0%",
+      "value": "8.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "9.6%",
+      "value": "11.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3786,7 +3786,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 22,
+   "gap_pts": 24,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -4390,7 +4390,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($35,688 traded)",
+      "label": "Polymarket Arsenal v Leeds ($35,693 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -4638,9 +4638,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7365,
-    "low": 0.6365,
-    "high": 0.8365,
+    "p": 0.736,
+    "low": 0.636,
+    "high": 0.836,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
