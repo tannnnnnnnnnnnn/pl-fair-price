@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-09T09:18:59Z)
+# VERIFY — PL Fair Price (2026-10-09T09:29:07Z)
 
 GW6 deadline 2026-10-10T10:00:00Z. 81 XO PL markets; 44 priced (high 1, medium 8, low 35).
 
@@ -6,8 +6,8 @@ GW6 deadline 2026-10-10T10:00:00Z. 81 XO PL markets; 44 priced (high 1, medium 8
 
 | Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|
-| ARS-LEE | 6 | 70.5/18.5/10.5 | 70.9/18.6/10.6 | 70.9/18.6/10.6 | 2.21-0.73 | $36,191 |
-| SUN-BHA | 6 | 31.5/27.5/41.5 | 31.3/27.4/41.3 | 31.3/27.4/41.3 | 1.18-1.39 | $216,789 |
+| ARS-LEE | 6 | 70.5/18.5/10.5 | 70.9/18.6/10.6 | 70.9/18.6/10.6 | 2.21-0.73 | $36,193 |
+| SUN-BHA | 6 | 31.5/27.5/41.5 | 31.3/27.4/41.3 | 31.3/27.4/41.3 | 1.18-1.39 | $216,791 |
 | IPS-FUL | 6 | 33.5/27.5/39.5 | 33.3/27.4/39.3 | 33.3/27.4/39.3 | 1.23-1.36 | $2,056 |
 | AVL-BRE | 6 | 35.5/27.5/37.5 | 35.3/27.4/37.3 | 35.3/27.4/37.3 | 1.28-1.32 | $16,773 |
 | CHE-BOU | 6 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 57.2/22.4/20.4 | 1.98-1.11 | $13,487 |
@@ -80,7 +80,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 40 | 34.2 | -6 | player_model | Haaland + Saka outscore Tottenham in EPL MW6? | Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES. |
 | low | 47 | 41.2 | -6 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES. |
 | medium | 22 | 8.5 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 57.0 | 24 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 58.8 | 26 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 69.5 | 19 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | medium | 40 | 33.1 | -7 | match_model | Will 19+ goals be scored across all Premier League games on 10th October 2026? | Total goals across the 6 league games on 2026-10-10; needs 19+. |
 | low | 24 | 36.9 | 13 | match_model | Will Arsenal fail to score a First-Half goal this Matchweek? | Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half. |
@@ -108,7 +108,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 55 | 55.5 | 1 | match_model | Will Man United earn more PL points than Spurs in Matchweeks 6–9? | Man Utd take more league points than Spurs in MW6-9. A tie counts as NO. |
 | low | 35 | 20.5 | -14 | match_model | Will Man Utd vs Spurs be the lowest-scoring game of the day? | Two readings: joint-lowest of the 6 games that day counts: 21%. only the strict lowest counts: 8%. We show the first, at low confidence. |
 | low | 50 | 44.0 | -6 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
-| low | 5 | 61.9 | 57 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 63.4 | 58 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 17.5 | -33 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
 | low | 9 | 2.7 | -6 | player_model | Will Martin Ødegaard record a G/A in each of Arsenal's next three PL matches from Oct. 10? | Chance Ødegaard score or assist in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come fr |
 | low | 50 | 73.8 | 24 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
