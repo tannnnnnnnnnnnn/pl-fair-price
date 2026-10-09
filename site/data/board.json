@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T07:28:58Z",
+ "generated_at": "2026-10-09T07:38:34Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -98,6 +98,56 @@
       }
      ],
      "last": 0.85
+    }
+   }
+  },
+  {
+   "slug": "will-szoboszlai-score-a-direct-free-kick-before-no-3635",
+   "title": "Will Szoboszlai score a direct free kick before November 2026?",
+   "url": "https://beta.xo.market/event/will-szoboszlai-score-a-direct-free-kick-before-no-3635?r=cryptotan01",
+   "creator": "shreyash108",
+   "is_ours": false,
+   "xo_price": 0.25,
+   "best_bid": null,
+   "best_ask": 0.25,
+   "liquidity_usd": 4.0,
+   "volume_usd": 0,
+   "expires_at": "2026-10-31T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "4 free kicks last season was the outlier. None this season yet. Love him, but it's a no before November.",
+   "description": "This market resolves based on whether Dominik Szoboszlai scores a goal directly from a free kick after this market opens and before November 1, 2026, 00:00 UTC. Goals scored before the market opens do not count. The primary source is the official match report of the competition in which the goal is scored: the Premier League (premierleague. com), UEFA (uefa. com), or the Carabao Cup via the English Football League (efl. com). If the official report is unavailable or inconsistent, BBC Sport, Sky Sports, ESPN, Flashscore, Sofascore, or The Athletic may be used. Only a direct free kick counts, and the goal must be credited to Szoboszlai. A deflection still counts if the goal is officially awarded to him. Penalties, free-kick routines in which another player scores, and goals from open play do not count. Premier League, UEFA Champions League, and Carabao Cup matches count. Friendlies and Hungary national-team matches do not. The market resolves YES if such a goal is recorded in that window. The market resolves NO if no such goal is recorded in that window. If a match in which a claimed goal was scored is abandoned and the official record does not credit the goal, that goal does not count. If the required sources are unavailable, unverifiable, or the goal cannot be clearly attributed, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.liverpoolfc.com",
+    "https://www.wikipedia.org"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.25,
+       "size": 16.0
+      }
+     ],
+     "last": 0.25
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.75,
+       "size": 16.0
+      }
+     ],
+     "asks": [],
+     "last": 0.75
     }
    }
   },
@@ -995,86 +1045,6 @@
    }
   },
   {
-   "slug": "will-erling-haaland-score-vs-liverpool-on-october--3762",
-   "title": "Will Erling Haaland score vs Liverpool on October 11, 2026?",
-   "url": "https://beta.xo.market/event/will-erling-haaland-score-vs-liverpool-on-october--3762?r=cryptotan01",
-   "creator": "shreyash108",
-   "is_ours": false,
-   "xo_price": 0.55,
-   "best_bid": 0.55,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-10-11T17:45:00.000Z",
-   "group": "fixture",
-   "fixture": {
-    "home": "LIV",
-    "away": "MCI",
-    "home_name": "Liverpool",
-    "away_name": "Man City",
-    "kickoff_utc": "2026-10-11T15:30:00Z"
-   },
-   "fair": {
-    "p": 0.4434,
-    "low": 0.3434,
-    "high": 0.5434,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Haaland score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
-    "inputs": [
-     {
-      "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "42% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Polymarket Liverpool v Man City ($31,634 traded)",
-      "value": "1X2 prices",
-      "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
-     },
-     {
-      "label": "Model expected goals LIV-MCI",
-      "value": "1.42-1.49",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": -11,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "5 goals in his last 3 vs Liverpool and the winner here last season. He'll score.",
-   "description": "Resolves Yes if Erling Haaland scores at least one goal for Manchester City in the Premier League match Liverpool v Manchester City at Anfield on Sunday 11 October 2026 (16:30 UK time), as credited by the Premier League official match centre (fallback: BBC Sport match report). Normal time plus stoppage time, penalties included. Own goals do not count. If Haaland does not play, it resolves No. If the match is postponed or abandoned and not completed by 18 October 2026, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.com",
-    "https://www.goal.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.55,
-       "size": 18.181818
-      }
-     ],
-     "asks": [],
-     "last": 0.55
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.45,
-       "size": 18.181818
-      }
-     ],
-     "last": 0.45
-    }
-   }
-  },
-  {
    "slug": "will-gonzalo-garcia-outscore-josh-king-in-fpl-poin-6978",
    "title": "Will Gonzalo Garcia outscore Josh King in FPL points across GW6-8?",
    "url": "https://beta.xo.market/event/will-gonzalo-garcia-outscore-josh-king-in-fpl-poin-6978?r=cryptotan01",
@@ -1089,9 +1059,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5517,
-    "low": 0.4517,
-    "high": 0.6517,
+    "p": 0.5494,
+    "low": 0.4494,
+    "high": 0.6493,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
@@ -1255,9 +1225,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6256,
-    "low": 0.5256,
-    "high": 0.7256,
+    "p": 0.617,
+    "low": 0.517,
+    "high": 0.717,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1269,7 +1239,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.6%",
+      "value": "2.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1279,7 +1249,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.3%",
+      "value": "8.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1300,7 +1270,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 58,
+   "gap_pts": 57,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1398,9 +1368,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3607,
-    "low": 0.2607,
-    "high": 0.4607,
+    "p": 0.361,
+    "low": 0.2611,
+    "high": 0.461,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1529,9 +1499,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0386,
+    "p": 0.0382,
     "low": 0,
-    "high": 0.1386,
+    "high": 0.1383,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
@@ -1623,9 +1593,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5583,
-    "low": 0.4583,
-    "high": 0.6583,
+    "p": 0.5544,
+    "low": 0.4544,
+    "high": 0.6543,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2727,9 +2697,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2371,
-    "low": 0.1371,
-    "high": 0.3371,
+    "p": 0.2352,
+    "low": 0.1352,
+    "high": 0.3352,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2925,6 +2895,86 @@
    }
   },
   {
+   "slug": "will-erling-haaland-score-vs-liverpool-on-october--3762",
+   "title": "Will Erling Haaland score vs Liverpool on October 11, 2026?",
+   "url": "https://beta.xo.market/event/will-erling-haaland-score-vs-liverpool-on-october--3762?r=cryptotan01",
+   "creator": "shreyash108",
+   "is_ours": false,
+   "xo_price": 0.55,
+   "best_bid": 0.55,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-10-11T17:45:00.000Z",
+   "group": "fixture",
+   "fixture": {
+    "home": "LIV",
+    "away": "MCI",
+    "home_name": "Liverpool",
+    "away_name": "Man City",
+    "kickoff_utc": "2026-10-11T15:30:00Z"
+   },
+   "fair": {
+    "p": 0.4386,
+    "low": 0.3386,
+    "high": 0.5386,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Haaland score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
+    "inputs": [
+     {
+      "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
+      "value": "42% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Polymarket Liverpool v Man City ($31,634 traded)",
+      "value": "1X2 prices",
+      "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
+     },
+     {
+      "label": "Model expected goals LIV-MCI",
+      "value": "1.42-1.49",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": -11,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "5 goals in his last 3 vs Liverpool and the winner here last season. He'll score.",
+   "description": "Resolves Yes if Erling Haaland scores at least one goal for Manchester City in the Premier League match Liverpool v Manchester City at Anfield on Sunday 11 October 2026 (16:30 UK time), as credited by the Premier League official match centre (fallback: BBC Sport match report). Normal time plus stoppage time, penalties included. Own goals do not count. If Haaland does not play, it resolves No. If the match is postponed or abandoned and not completed by 18 October 2026, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com",
+    "https://www.goal.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 18.181818
+      }
+     ],
+     "asks": [],
+     "last": 0.55
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 18.181818
+      }
+     ],
+     "last": 0.45
+    }
+   }
+  },
+  {
    "slug": "will-richarlison-start-a-match-for-tottenham-befor-7479",
    "title": "Will Richarlison start a match for Tottenham before November 1st?",
    "url": "https://beta.xo.market/event/will-richarlison-start-a-match-for-tottenham-befor-7479?r=cryptotan01",
@@ -2988,9 +3038,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0248,
+    "p": 0.0234,
     "low": 0,
-    "high": 0.1248,
+    "high": 0.1235,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance \u00d8degaard score or assist in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -3168,9 +3218,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5483,
-    "low": 0.4483,
-    "high": 0.6482,
+    "p": 0.5513,
+    "low": 0.4513,
+    "high": 0.6512,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -3741,9 +3791,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5675,
-    "low": 0.4675,
-    "high": 0.6675,
+    "p": 0.5596,
+    "low": 0.4596,
+    "high": 0.6596,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3755,7 +3805,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.6%",
+      "value": "2.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3765,7 +3815,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.3%",
+      "value": "8.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3786,7 +3836,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 24,
+   "gap_pts": 23,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3834,9 +3884,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3447,
-    "low": 0.2447,
-    "high": 0.4447,
+    "p": 0.3462,
+    "low": 0.2462,
+    "high": 0.4462,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES.",
@@ -3864,7 +3914,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -6,
+   "gap_pts": -5,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -3967,9 +4017,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4572,
-    "low": 0.3572,
-    "high": 0.5572,
+    "p": 0.4547,
+    "low": 0.3548,
+    "high": 0.5547,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -3987,7 +4037,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -1,
+   "gap_pts": -2,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -4141,7 +4191,7 @@
    "fixture": null,
    "fair": {
     "p": 0.9779,
-    "low": 0.8779,
+    "low": 0.878,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -4492,9 +4542,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5012,
-    "low": 0.4012,
-    "high": 0.6012,
+    "p": 0.5051,
+    "low": 0.4052,
+    "high": 0.6051,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -4512,7 +4562,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -5,
+   "gap_pts": -4,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -4638,16 +4688,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.737,
-    "low": 0.637,
-    "high": 0.837,
+    "p": 0.7375,
+    "low": 0.6375,
+    "high": 0.8375,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "26.3% (spread 42c, $621 traded on this market)",
+      "value": "26.2% (spread 42c, $621 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
@@ -4693,9 +4743,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.337,
-    "low": 0.237,
-    "high": 0.437,
+    "p": 0.3398,
+    "low": 0.2398,
+    "high": 0.4398,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-6. A tie counts as NO.",
