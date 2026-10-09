@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T11:29:24Z",
+ "generated_at": "2026-10-09T11:40:15Z",
  "gw": 6,
  "deadline_utc": "2026-10-10T10:00:00Z",
  "fixtures": [
@@ -16,7 +16,7 @@
    "lam_away": 0.733,
    "cs_home": 0.4804,
    "cs_away": 0.1092,
-   "poly_volume": 45761,
+   "poly_volume": 46180,
    "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
   },
   {
@@ -64,7 +64,7 @@
    "lam_away": 1.361,
    "cs_home": 0.2564,
    "cs_away": 0.2913,
-   "poly_volume": 2299,
+   "poly_volume": 2302,
    "source_url": "https://polymarket.com/event/epl-ips-ful-2026-10-10"
   },
   {
@@ -80,7 +80,7 @@
    "lam_away": 1.394,
    "cs_home": 0.2482,
    "cs_away": 0.3067,
-   "poly_volume": 218561,
+   "poly_volume": 218578,
    "source_url": "https://polymarket.com/event/epl-sun-bri-2026-10-10"
   },
   {
@@ -172,7 +172,7 @@
    "opponent": "LEE",
    "pos": "MID",
    "price": 9.6,
-   "owned_pct": 15.1,
+   "owned_pct": 15.2,
    "chance_playing": null,
    "news": "",
    "p_start": 0.95,
@@ -776,7 +776,7 @@
    "opponent": "IPS",
    "pos": "FWD",
    "price": 6.0,
-   "owned_pct": 4.9,
+   "owned_pct": 5.0,
    "chance_playing": null,
    "news": "",
    "p_start": 0.95,
@@ -1147,27 +1147,6 @@
    "xpts": 3.99,
    "p_blank": 0.6349,
    "fpl_ep": 1.1,
-   "xo_markets": []
-  },
-  {
-   "id": 254,
-   "name": "Robinson",
-   "team": "FUL",
-   "opponent": "IPS",
-   "pos": "DEF",
-   "price": 4.5,
-   "owned_pct": 1.6,
-   "chance_playing": null,
-   "news": "",
-   "p_start": 0.95,
-   "p_goal": 0.0482,
-   "p_assist": 0.0669,
-   "p_cs": 0.2913,
-   "p_defcon": 0.109,
-   "xbonus": 0.27,
-   "xpts": 3.99,
-   "p_blank": 0.5793,
-   "fpl_ep": 4.0,
    "xo_markets": []
   },
   {
@@ -2449,7 +2428,7 @@
    "opponent": "SUN",
    "pos": "FWD",
    "price": 5.6,
-   "owned_pct": 5.8,
+   "owned_pct": 5.9,
    "chance_playing": null,
    "news": "",
    "p_start": 0.95,
@@ -2680,7 +2659,7 @@
    "opponent": "LEE",
    "pos": "DEF",
    "price": 4.6,
-   "owned_pct": 18.6,
+   "owned_pct": 18.5,
    "chance_playing": 75,
    "news": "Unspecified injury - 75% chance of playing",
    "p_start": 0.712,
@@ -2827,7 +2806,7 @@
    "opponent": "LEE",
    "pos": "MID",
    "price": 7.4,
-   "owned_pct": 11.2,
+   "owned_pct": 11.1,
    "chance_playing": 75,
    "news": "Unspecified injury - 75% chance of playing",
    "p_start": 0.712,
@@ -3387,6 +3366,27 @@
    "xpts": 2.99,
    "p_blank": 0.867,
    "fpl_ep": 3.0,
+   "xo_markets": []
+  },
+  {
+   "id": 254,
+   "name": "Robinson",
+   "team": "FUL",
+   "opponent": "IPS",
+   "pos": "DEF",
+   "price": 4.5,
+   "owned_pct": 1.6,
+   "chance_playing": 75,
+   "news": "Ankle injury - 75% chance of playing",
+   "p_start": 0.712,
+   "p_goal": 0.0362,
+   "p_assist": 0.0502,
+   "p_cs": 0.2913,
+   "p_defcon": 0.109,
+   "xbonus": 0.2,
+   "xpts": 2.99,
+   "p_blank": 0.6845,
+   "fpl_ep": 4.0,
    "xo_markets": []
   },
   {
@@ -4845,7 +4845,7 @@
    "opponent": "BRE",
    "pos": "MID",
    "price": 5.9,
-   "owned_pct": 0.5,
+   "owned_pct": 0.6,
    "chance_playing": 100,
    "news": "",
    "p_start": 0.653,
@@ -5474,7 +5474,7 @@
    "name": "Konsa",
    "team": "ARS",
    "pos": "DEF",
-   "owned_pct": 18.6,
+   "owned_pct": 18.5,
    "fpl_chance": 75,
    "news": "Unspecified injury - 75% chance of playing",
    "regular": true,
@@ -5507,7 +5507,7 @@
    "name": "Rice",
    "team": "ARS",
    "pos": "MID",
-   "owned_pct": 11.2,
+   "owned_pct": 11.1,
    "fpl_chance": 75,
    "news": "Unspecified injury - 75% chance of playing",
    "regular": true,
@@ -5686,6 +5686,17 @@
    "owned_pct": 1.7,
    "fpl_chance": 0,
    "news": "Suspended until 17 Oct",
+   "regular": true,
+   "xo_markets": []
+  },
+  {
+   "id": 254,
+   "name": "Robinson",
+   "team": "FUL",
+   "pos": "DEF",
+   "owned_pct": 1.6,
+   "fpl_chance": 75,
+   "news": "Ankle injury - 75% chance of playing",
    "regular": true,
    "xo_markets": []
   },
@@ -6101,7 +6112,7 @@
    "xg": 3.22,
    "assists": 0,
    "xa": 0.98,
-   "owned_pct": 15.1,
+   "owned_pct": 15.2,
    "xo_markets": [
     "will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898",
     "haaland-saka-outscore-tottenham-in-epl-mw6-1027"
@@ -6250,7 +6261,7 @@
    "xg": 2.33,
    "assists": 0,
    "xa": 0.58,
-   "owned_pct": 4.9,
+   "owned_pct": 5.0,
    "xo_markets": [
     "will-gonzalo-garcia-outscore-josh-king-in-fpl-poin-6978"
    ]
@@ -6662,7 +6673,7 @@
    "xg": 1.35,
    "assists": 3,
    "xa": 0.06,
-   "owned_pct": 5.8,
+   "owned_pct": 5.9,
    "xo_markets": []
   },
   {
@@ -7355,7 +7366,7 @@
    "xg": 0.12,
    "assists": 2,
    "xa": 0.69,
-   "owned_pct": 11.2,
+   "owned_pct": 11.1,
    "xo_markets": []
   },
   {
@@ -8270,7 +8281,7 @@
    "xg": 0.23,
    "assists": 0,
    "xa": 0.02,
-   "owned_pct": 18.6,
+   "owned_pct": 18.5,
    "xo_markets": []
   },
   {
