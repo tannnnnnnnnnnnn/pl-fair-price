@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T03:36:28Z",
+ "generated_at": "2026-10-09T03:46:44Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -1255,9 +1255,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.575,
-    "low": 0.475,
-    "high": 0.675,
+    "p": 0.5757,
+    "low": 0.4757,
+    "high": 0.6757,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1294,13 +1294,13 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "18.1%",
+      "value": "18.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 52,
+   "gap_pts": 53,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2562,7 +2562,7 @@
     "method_text": "Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($33,874 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,875 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -2880,7 +2880,7 @@
     "method_text": "Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($33,874 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,875 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3001,7 +3001,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($33,874 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,875 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3741,9 +3741,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.518,
-    "low": 0.418,
-    "high": 0.618,
+    "p": 0.5186,
+    "low": 0.4186,
+    "high": 0.6186,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3780,7 +3780,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "18.1%",
+      "value": "18.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -4390,7 +4390,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($33,874 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,875 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -4638,16 +4638,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7375,
-    "low": 0.6375,
-    "high": 0.8375,
+    "p": 0.7365,
+    "low": 0.6365,
+    "high": 0.8365,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "26.2% (spread 42c, $621 traded on this market)",
+      "value": "26.4% (spread 42c, $621 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
