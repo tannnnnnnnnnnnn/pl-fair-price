@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Projection consensus: next-gameweek expected points from free public sources, side by side.
 
-Reads site/data/projections.json (ours, plus FPL's ep_next) and pipeline/raw/fpl_bootstrap.json, fetches
-Solio Analytics (JSON) and Fantasy Football Pundit (the page's embedded data) with curl, and writes
-site/data/consensus.json: the top players by average of ours, Solio and Pundit.
+Reads site/data/projections.json (ours, plus FPL's ep_next), site/data/elevenify.json and
+pipeline/raw/fpl_bootstrap.json, fetches Solio Analytics (JSON) and Fantasy Football Pundit (the page's embedded data)
+with curl, and writes site/data/consensus.json: every player with a number from any source. The page blends them.
+elevenify publishes no points, so its column is our points formula run on elevenify's team goals, clean-sheet chances
+and player goal and assist rates (minutes, DEFCON and the bonus fit stay ours).
 
 Usage: consensus.py            fetch Solio and Pundit, save raw copies to raw/solio.json and raw/pundit.html
        consensus.py --cached   reuse those raw copies (fetches only a file that is missing)
@@ -12,6 +14,7 @@ previous consensus.json is kept.
 """
 import datetime as dt
 import json
+import math
 import re
 import subprocess
 import sys
@@ -24,8 +27,9 @@ UA = "pl-fair-price/1.0"
 SOLIO_PAGE = "https://fpl.solioanalytics.com"
 SOLIO_URL = SOLIO_PAGE + "/api/data/latest.json"  # listed in https://fpl.solioanalytics.com/llms.txt
 PUNDIT_URL = "https://www.fantasyfootballpundit.com/fpl-points-predictor/"
-TOP = 15
 POS = {1: "GK", 2: "DEF", 3: "MID", 4: "FWD"}
+GOAL_PTS, CS_PTS = {"GK": 6, "DEF": 6, "MID": 5, "FWD": 4}, {"GK": 4, "DEF": 4, "MID": 1, "FWD": 0}  # as engine.py
+BONUS = json.loads((TOOL / "pipeline" / "ref" / "bonus_model.json").read_text())
 
 
 def log(msg):
@@ -100,6 +104,72 @@ def parse_pundit(data):
     return by_gw
 
 
+def eleven_name(name, cands):
+    """'E. Haaland' / 'J. Pedro' / 'Estêvão' -> the one FPL id in cands (that team's elements), else None."""
+    ini, _, sur = name.partition(". ")
+    if not sur:
+        ini, sur = "", name
+    ini, sur, full = fold(ini), fold(sur), fold(name)
+    first = lambda e: not ini or fold(e["first_name"]).startswith(ini)
+    tests = [lambda e: fold(e["web_name"]) == full,
+             lambda e: fold(e["web_name"]).split(".")[-1] == sur and first(e),
+             lambda e: (sur in fold(e["second_name"]).split() or fold(e["web_name"]).endswith(sur)) and first(e)]
+    for t in tests:
+        hit = [e["id"] for e in cands if t(e)]
+        if len(hit) == 1:
+            return hit[0]
+    return None
+
+
+def eleven_xpts(ours, gw, fixtures, boot, teams):
+    """{pid: xPts}: our points formula on elevenify's numbers. Their clean-sheet chance and predicted team goals for this
+    week; their per-match goal and assist rates where they publish the player (scaled to this opponent by predicted goals
+    over attack rating), otherwise our player's share of their team goals. Minutes, DEFCON and the bonus fit stay ours."""
+    try:
+        e = json.loads((OUT / "elevenify.json").read_text())
+    except Exception as ex:  # noqa: BLE001
+        log(f"elevenify unavailable: {ex}")
+        return {}
+    key = str(gw)
+    per_team = lambda part: {r["team"]: num((r.get("gw") or {}).get(key)) for r in e.get(part) or []}
+    goals, cs = per_team("goals"), per_team("clean_sheets")
+    attack = {r["team"]: num(r.get("attack")) for r in e.get("ratings") or []}
+    games, lam = {}, {}
+    for f in fixtures:
+        games[f["home"]], games[f["away"]] = games.get(f["home"], 0) + 1, games.get(f["away"], 0) + 1
+        lam[f["home"]], lam[f["away"]] = num(f.get("lam_home")), num(f.get("lam_away"))
+    by_team = {}
+    for el in boot["elements"]:
+        by_team.setdefault(teams[el["team"]], []).append(el)
+    rates, miss = {}, []
+    for r in e.get("players") or []:
+        t, g, a = r.get("team"), num(r.get("goal")), num(r.get("assist"))
+        pid = eleven_name(r.get("name") or "", by_team.get(t, []))
+        if pid is None:
+            miss.append(f"{r.get('name')} {t}")
+        elif g is not None and a is not None and goals.get(t) and attack.get(t):
+            rates[pid] = (g * goals[t] / attack[t], a * goals[t] / attack[t])
+    if miss:
+        log("elevenify players not matched: " + ", ".join(miss))
+    out = {}
+    for pid, o in ours.items():
+        t, pp = o["team"], num(o["p_start"]) or 0
+        if games.get(t) != 1 or cs.get(t) is None or pp <= 0:
+            continue
+        if pid in rates:
+            lg, la = rates[pid]
+        elif goals.get(t) and lam.get(t):
+            share = lambda p: -math.log(1 - min((num(p) or 0) / pp, 0.999999))  # our expected goals/assists if he starts
+            lg, la = share(o["p_goal"]) * goals[t] / lam[t], share(o["p_assist"]) * goals[t] / lam[t]
+        else:
+            continue
+        pos, pdc, pcs = o["pos"], num(o["p_defcon"]) or 0, cs[t]
+        cs_def = pcs if pos in ("GK", "DEF") else 0
+        bonus = max(0.0, BONUS["const"] + BONUS["goal"] * lg + BONUS["assist"] * la + BONUS["cs_def"] * cs_def + BONUS["defcon"] * pdc)
+        out[pid] = pp * (2 + lg * GOAL_PTS[pos] + la * 3 + pcs * CS_PTS[pos] + 2 * pdc + bonus)
+    return out
+
+
 # ---------------------------------------------------------------- build
 
 
@@ -109,10 +179,10 @@ def build(cached):
     els = {e["id"]: e for e in boot["elements"]}
     by_code = {e["code"]: e["id"] for e in boot["elements"]}
 
-    ours, gw = {}, None
+    ours, gw, fixtures = {}, None, []
     try:
         proj = json.loads((OUT / "projections.json").read_text())
-        gw = proj["gw"]
+        gw, fixtures = proj["gw"], proj.get("fixtures") or []
         ours = {p["id"]: p for p in proj["players"]}
     except Exception as e:  # noqa: BLE001
         log(f"our projections unavailable: {e}")
@@ -153,30 +223,28 @@ def build(cached):
     except Exception as e:  # noqa: BLE001
         log(f"Pundit failed: {e}")
 
-    print(f"match rate: Solio {solio_hit}/{solio_total}, Pundit {pundit_hit}/{pundit_total}, ours {len(ours)} players")
+    eleven = eleven_xpts(ours, gw, fixtures, boot, teams)
+    print(f"match rate: Solio {solio_hit}/{solio_total}, Pundit {pundit_hit}/{pundit_total}, elevenify {len(eleven)}, ours {len(ours)} players")
     if not solio and not pundit:
         return None
 
-    need = min(2, bool(ours) + bool(solio) + bool(pundit))  # at least two models, or all that are live
     cand = []
-    for pid in set(ours) | set(solio) | set(pundit):
+    for pid in set(ours) | set(eleven) | set(solio) | set(pundit):
         if pid not in els:
             continue
         o = ours.get(pid)
-        vals = dict(ours=num(o["xpts"]) if o else None, solio=solio.get(pid), pundit=pundit.get(pid))
-        got = [v for v in vals.values() if v is not None]
-        if len(got) < need:
-            continue
+        vals = dict(ours=num(o["xpts"]) if o else None, eleven=eleven.get(pid), solio=solio.get(pid), pundit=pundit.get(pid))
         e = els[pid]
         fpl = num(o["fpl_ep"]) if o and num(o.get("fpl_ep")) is not None else num(e.get("ep_next"))
         cand.append(dict(id=pid, name=o["name"] if o else e["web_name"], team=teams[e["team"]], pos=POS[e["element_type"]],
-                         **{k: (round(v, 2) if v is not None else None) for k, v in vals.items()},
-                         fpl=fpl, avg=round(sum(got) / len(got), 2)))
-    cand.sort(key=lambda p: (-p["avg"], p["name"]))
+                         **{k: (round(v, 2) if v is not None else None) for k, v in vals.items()}, fpl=fpl))
+    cand.sort(key=lambda p: (-(p["ours"] or 0), p["name"]))
 
     sources = [
         dict(key="ours", name="Our model", url=None,
              note="Match odds from Polymarket, player shares from FPL xG and xA, plus clean sheets, defensive contribution and bonus."),
+        dict(key="eleven", name="elevenify", url="https://www.elevenify.com",
+             note="elevenify publishes no points, so this is our points formula run on elevenify's team goals, clean-sheet chances and player goal and assist rates."),
         dict(key="solio", name="Solio Analytics", url=SOLIO_PAGE,
              note="Solio's public projected points for the gameweek. It publishes only its top players, so some rows are blank."),
         dict(key="pundit", name="Fantasy Football Pundit", url=PUNDIT_URL,
@@ -185,7 +253,7 @@ def build(cached):
              note="FPL's own expected points (ep_next). Form-based and erratic, so it is shown but left out of the average."),
     ]
     return dict(generated_at=dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), gw=gw,
-                sources=sources, players=cand[:TOP])
+                sources=sources, players=cand)
 
 
 def main():
@@ -198,8 +266,8 @@ def main():
     tmp = OUT / "consensus.json.tmp"
     tmp.write_text(json.dumps(res, indent=1, ensure_ascii=False))
     tmp.replace(OUT / "consensus.json")
-    for i, p in enumerate(res["players"], 1):
-        print(f"{i:>2} {p['name']:<14}{p['team']} {p['pos']:<4} ours={p['ours']} solio={p['solio']} pundit={p['pundit']} fpl={p['fpl']} avg={p['avg']}")
+    for i, p in enumerate(res["players"][:15], 1):
+        print(f"{i:>2} {p['name']:<14}{p['team']} {p['pos']:<4} ours={p['ours']} eleven={p['eleven']} solio={p['solio']} pundit={p['pundit']} fpl={p['fpl']}")
     return 0
 
 

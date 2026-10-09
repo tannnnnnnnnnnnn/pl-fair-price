@@ -314,13 +314,15 @@ button { font: inherit; color: inherit; }
 }
 
 /* ---------- simplification pass ---------- */
-.explained { display: inline-flex; align-items: baseline; gap: 4px; max-width: 100%; }
-.explainer { position: relative; display: inline-flex; flex: none; vertical-align: middle; }
+/* The "?" sits inline after its term, centred on the letters, with room on both sides so brackets never touch it. */
+.explained { display: inline; }
+.explainer { position: relative; top: -.08em; display: inline-flex; vertical-align: middle; margin: 0 .12em 0 .32em; }
 .explainer-button {
   display: inline-grid; place-items: center; width: 17px; height: 17px; padding: 0;
   border: 1px solid #b9b9c2; border-radius: 50%; background: #fff; color: var(--ink-2);
   font: 800 11px/1 'Figtree', sans-serif; cursor: help;
 }
+.sec h2 .explainer-button { width: 19px; height: 19px; font-size: 12px; }
 .explainer-button:hover, .explainer-button:focus-visible { border-color: var(--ink); color: var(--ink); outline: 2px solid var(--pink-soft); }
 /* Doubled class keeps the tip white whatever row it sits in. */
 .explainer-pop.explainer-pop {

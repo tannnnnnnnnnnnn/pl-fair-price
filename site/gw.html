@@ -73,6 +73,7 @@
   <section class="sec" id="captain" aria-labelledby="cp-h">
     <h2 id="cp-h">Captain picks</h2>
     <p class="sec-sub">Top 10 by <span data-explain="xpts">xPts</span>; higher means a stronger points forecast.</p>
+    <div class="mix" id="cp-mix"></div>
     <details class="how projection-how">
       <summary>How we project points</summary>
       <p>Appearance points × chance of playing 60+ minutes; goals × position points; assists × 3; <span data-explain="clean_sheet">clean-sheet chance</span> × position points; <span data-explain="defcon">DEFCON</span> chance × 2; plus <span data-explain="expected_bonus">expected bonus</span>. Goal and assist chances come from goalscorer odds or each player's share of team <span data-explain="xg">xG</span> and <span data-explain="xa">xA</span>. Saves and cards are not counted.</p>
@@ -80,16 +81,21 @@
     <div id="cp-body"></div>
   </section>
 
-  <section class="sec" aria-labelledby="dc-h"><h2 id="dc-h">Defensive contributions (<span data-explain="defcon">DEFCON</span>)</h2><p class="sec-sub">Top 10 defenders and midfielders by chance of earning two points.</p><div id="dc-body"></div></section>
-  <section class="sec" aria-labelledby="bn-h"><h2 id="bn-h"><span data-explain="expected_bonus">Expected bonus</span></h2><p class="sec-sub">Top 10 by projected FPL bonus points.</p><div id="bn-body"></div></section>
-  <section class="sec" aria-labelledby="df-h"><h2 id="df-h"><span data-explain="differential">Differentials</span></h2><p class="sec-sub">Top 10 <span data-explain="xpts">xPts</span> among players owned by under 5%.</p><div id="df-body"></div></section>
-  <section class="sec" aria-labelledby="sp-h"><h2 id="sp-h">Set pieces &amp; penalties</h2><p class="sec-sub">First-choice takers in the current FPL bootstrap data. A dash means FPL lists none.</p><div id="sp-body"></div></section>
-  <section class="sec" aria-labelledby="vl-h"><h2 id="vl-h">Value</h2><p class="sec-sub">Top 10 <span data-explain="xpts">xPts</span> per £m, among players projected for 2+ points.</p><div id="vl-body"></div></section>
+  <section class="sec" id="lists" aria-labelledby="ls-h">
+    <h2 id="ls-h">Player lists</h2>
+    <p class="sec-sub">Tap a list to open it.</p>
+    <details class="fold"><summary><span class="fold-t"><h3 id="dc-h"><span data-explain="defcon">Defensive contributions (DEFCON)</span></h3><span class="fold-sub">Top 10 defenders and midfielders by chance of earning two points.</span></span><span class="fold-top" id="dc-top"></span></summary><div class="fold-body" id="dc-body"></div></details>
+    <details class="fold"><summary><span class="fold-t"><h3 id="bn-h"><span data-explain="expected_bonus">Expected bonus</span></h3><span class="fold-sub">Top 10 by projected FPL bonus points.</span></span><span class="fold-top" id="bn-top"></span></summary><div class="fold-body" id="bn-body"></div></details>
+    <details class="fold"><summary><span class="fold-t"><h3 id="df-h"><span data-explain="differential">Differentials</span></h3><span class="fold-sub">Top 10 by xPts among players owned by under 5%.</span></span><span class="fold-top" id="df-top"></span></summary><div class="fold-body" id="df-body"></div></details>
+    <details class="fold"><summary><span class="fold-t"><h3 id="sp-h">Set pieces &amp; penalties</h3><span class="fold-sub">First-choice takers listed by FPL. A dash means none listed.</span></span><span class="fold-top" id="sp-top"></span></summary><div class="fold-body" id="sp-body"></div></details>
+    <details class="fold"><summary><span class="fold-t"><h3 id="vl-h">Value</h3><span class="fold-sub">Top 10 by xPts per £m, among players projected for 2+ points.</span></span><span class="fold-top" id="vl-top"></span></summary><div class="fold-body" id="vl-body"></div></details>
+  </section>
 
   <section class="sec" id="consensus" aria-labelledby="co-h">
     <h2 id="co-h">Projection consensus</h2>
     <p class="sec-sub">Public expected-points models, side by side.</p>
-    <p class="credits">Sources: our model, <a href="https://fpl.solioanalytics.com" target="_blank" rel="noopener">Solio Analytics</a>, <a href="https://www.fantasyfootballpundit.com/fpl-points-predictor/" target="_blank" rel="noopener">Fantasy Football Pundit</a>. FPL form is FPL's own recent-points number, not a projection, so it is not in the average.</p>
+    <p class="credits">Sources: our model, <a href="https://www.elevenify.com" target="_blank" rel="noopener">elevenify</a>, <a href="https://fpl.solioanalytics.com" target="_blank" rel="noopener">Solio Analytics</a>, <a href="https://www.fantasyfootballpundit.com/fpl-points-predictor/" target="_blank" rel="noopener">Fantasy Football Pundit</a>. elevenify publishes no points, so its column is our points formula run on their team goals, clean-sheet chances and player goal and assist rates. FPL form is FPL's own recent-points number, not a projection, so it is never in the mix.</p>
+    <div class="mix" id="co-mix"></div>
     <div id="co-body"><p class="empty">Loading projections…</p></div>
   </section>
 

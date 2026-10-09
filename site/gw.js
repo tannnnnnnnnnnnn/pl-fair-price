@@ -118,28 +118,29 @@ function breakdownBar(c, p) {
     parts.map((part) => h('i', { class: 'xb-' + part.key, style: `width:${(part.value / total) * 100}%`, title: `${part.label}: ${part.value.toFixed(1)}` })));
 }
 
-function renderCaptain(proj) {
+function renderCaptain(models, w) {
   const body = document.getElementById('cp-body');
-  const rows = ((proj && proj.captain) || []).map((c) => ({ c, p: state.players[c.id] || {} }))
-    .sort((a, b) => Number(b.c.xpts) - Number(a.c.xpts)).slice(0, 10);
-  if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: 'Captain picks appear once the model has run for this gameweek.' })); return; }
-  const list = h('ol', { class: 'plist' }, rows.map(({ c, p }, i) => {
-    const sub = [c.team, p.pos, p.price ? '£' + Number(p.price).toFixed(1) + 'm' : null, num(p.owned_pct) !== null ? Math.round(p.owned_pct) + '% owned' : null].filter(Boolean).join(' · ');
+  const oursOnly = MIX_SRC.every(([k]) => k === 'ours' || !w[k]);
+  const rows = models.map((m) => ({ m, v: mixValue(m, w), p: state.players[m.id] || {} })).filter((r) => r.v !== null)
+    .sort((a, b) => b.v - a.v).slice(0, 10);
+  if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: Object.values(w).some((x) => x > 0) ? 'Captain picks appear once the model has run for this gameweek.' : 'Move a slider above 0% to pick a source.' })); return; }
+  const list = h('ol', { class: 'plist' }, rows.map(({ m, v, p }, i) => {
+    const sub = [m.team, m.pos, p.price ? '£' + Number(p.price).toFixed(1) + 'm' : null, num(p.owned_pct) !== null ? Math.round(p.owned_pct) + '% owned' : null].filter(Boolean).join(' · ');
     const tag = num(p.owned_pct) >= 25 ? 'Template' : num(p.owned_pct) < 10 ? 'Punt' : null;
     const news = num(p.chance_playing) !== null && p.chance_playing < 1 ? h('p', { class: 'pnews', text: `${Math.round(p.chance_playing * 100)}% chance of playing${p.news ? ': ' + p.news : ''}` }) : null;
-    const li = h('li', { class: 'pcard' },
+    const srcs = oursOnly ? null : h('p', { class: 'msrc' }, MIX_SRC.filter(([k]) => w[k] > 0).map(([k]) => h('span', null, MIX_SHORT[k] + ' ', h('b', { text: pts1(m[k]) }))));
+    return h('li', { class: 'pcard' },
       h('span', { class: 'prank', text: String(i + 1) }),
       h('div', { class: 'pmain' },
-        h('div', { class: 'pname' }, crest(c.team, 20), h('span', { text: c.name }), tag ? h('span', { class: 'pick-tag' }, explain(tag, 'template_punt')) : null),
+        h('div', { class: 'pname' }, crest(m.team, 20), h('span', { text: m.name }), tag ? h('span', { class: 'pick-tag' }, explain(tag, 'template_punt')) : null),
         h('p', { class: 'psub', text: sub }),
-        breakdownBar(c, p),
+        breakdownBar(p, p),
         h('div', { class: 'stats' },
-          num(c.p_goal) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(c.p_goal) }), ' goal') : null,
-          num(c.p_assist) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(c.p_assist) }), ' assist') : null,
-          num(c.p_blank) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(c.p_blank) }), ' blank') : null),
-        news, xoChips(p)),
-      h('div', { class: 'pbig' }, h('b', { text: Number(c.xpts).toFixed(1) }), h('i', null, explain('xPts', 'xpts'))));
-    return li;
+          num(p.p_goal) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(p.p_goal) }), ' goal') : null,
+          num(p.p_assist) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(p.p_assist) }), ' assist') : null,
+          num(p.p_blank) !== null ? h('span', { class: 'stat' }, h('b', { text: pct0(p.p_blank) }), ' blank') : null),
+        srcs, news, xoChips(p)),
+      h('div', { class: 'pbig' }, h('b', { text: v.toFixed(1) }), h('i', null, explain('xPts', 'xpts'))));
   }));
   const breakdownLabels = {
     appearance: 'appearance', goals: 'goals', assists: 'assists',
@@ -147,8 +148,8 @@ function renderCaptain(proj) {
   };
   const breakdownLegend = h('div', { class: 'break-legend' },
     Object.keys(breakdownLabels).map((x) => h('span', null, h('i', { class: 'xb-' + x }), breakdownLabels[x])));
-  body.replaceChildren(h('p', { class: 'note' }, explain('Template / Punt', 'template_punt'), ' tags are based on ownership.'), breakdownLegend, list,
-    tableView(['Player', 'xPts', 'Goal', 'Assist', 'Blank'], rows.map(({ c }) => [`${c.name} (${c.team})`, Number(c.xpts).toFixed(1), pct0(c.p_goal), pct0(c.p_assist), pct0(c.p_blank)])));
+  body.replaceChildren(h('p', { class: 'note' }, explain('Template / Punt', 'template_punt'), ' tags are based on ownership.', oursOnly ? null : ' The bar and the goal, assist and blank chances come from our model.'), breakdownLegend, list,
+    tableView(['Player', 'xPts', 'Goal', 'Assist', 'Blank'], rows.map(({ m, v, p }) => [`${m.name} (${m.team})`, v.toFixed(1), num(p.p_goal) !== null ? pct0(p.p_goal) : '–', num(p.p_assist) !== null ? pct0(p.p_assist) : '–', num(p.p_blank) !== null ? pct0(p.p_blank) : '–'])));
 }
 
 /* ---------- requested FPL shortlists ---------- */
@@ -161,6 +162,7 @@ function playerList(id, rows, value) {
     h('span', { class: 'mini-name' }, h('b', { text: p.name }), h('i', { text: `${p.team} · v ${p.opponent || '–'} · ${Number(p.owned_pct).toFixed(1)}% owned` })),
     h('strong', { text: value(p) }))));
   body.replaceChildren(list);
+  document.getElementById(id.replace('-body', '-top')).textContent = `Top: ${rows[0].name} · ${value(rows[0])}`;
 }
 
 function renderFridayLists(proj) {
@@ -176,25 +178,98 @@ function renderFridayLists(proj) {
     h('p', { text: `Pens: ${(r.penalties || []).join(', ') || '–'}` }),
     h('p', { text: `Free kicks: ${(r.direct_freekicks || []).join(', ') || '–'}` }),
     h('p', { text: `Corners: ${(r.corners || []).join(', ') || '–'}` })))) : h('p', { class: 'empty', text: 'Set-piece data is not available.' }));
+  document.getElementById('sp-top').textContent = rows.length ? `${rows.length} teams` : '';
 }
 
-/* ---------- (c2) projection consensus: our xPts next to free public models ---------- */
+/* ---------- source mix: which projections drive the captain picks and the consensus ---------- */
 
-const CONS_COLS = [['ours', 'Ours'], ['solio', 'Solio'], ['pundit', 'Pundit'], ['fpl', 'FPL form']];
+const MIX_SRC = [['ours', 'Our model'], ['eleven', 'elevenify'], ['solio', 'Solio'], ['pundit', 'Pundit']];
+const MIX_SHORT = { ours: 'Ours', eleven: 'elevenify', solio: 'Solio', pundit: 'Pundit' };
+const EQUAL = { ours: 25, eleven: 25, solio: 25, pundit: 25 };
 const pts1 = (v) => (num(v) === null ? '–' : Number(v).toFixed(1));
 
-// Keys of the highest of the three models in the average (FPL is not one of them). No highlight when they all agree.
+// One row per player with every source's number: ours from projections.json, the rest from consensus.json.
+function buildModels(proj, cons, gwId) {
+  const out = {};
+  (proj.players || []).forEach((p) => { out[p.id] = { id: p.id, name: p.name, team: p.team, pos: p.pos, ours: num(p.xpts) }; });
+  if (cons && cons.gw === gwId && Array.isArray(cons.players)) cons.players.forEach((c) => {
+    const m = out[c.id] || (out[c.id] = { id: c.id, name: c.name, team: c.team, pos: c.pos, ours: null });
+    m.eleven = num(c.eleven); m.solio = num(c.solio); m.pundit = num(c.pundit); m.fpl = num(c.fpl);
+  });
+  return Object.values(out);
+}
+
+// Weighted mean of the sources in the mix; null unless every one of them has a number for this player,
+// so a source that leaves a player out (Solio lists only its top players) cannot lift him up the ranking.
+function mixValue(m, w) {
+  let sum = 0, all = 0;
+  for (const [k] of MIX_SRC) {
+    const wk = w[k] || 0;
+    if (!wk) continue;
+    if (num(m[k]) === null) return null;
+    sum += wk * m[k];
+    all += wk;
+  }
+  return all ? sum / all : null;
+}
+
+// Pills pick one source or Blend; Blend shows a slider per source. The choice is kept per section in this browser.
+function mixPicker(el, id, avail, def, onChange) {
+  let mix = def;
+  try { const v = JSON.parse(localStorage.getItem('mix-' + id)); if (v && v.mode && v.w) mix = v; } catch (e) { /* storage is optional */ }
+  if (mix.mode !== 'blend' && !avail.includes(mix.mode)) mix = def;
+  const weights = () => (mix.mode === 'blend' ? Object.fromEntries(avail.map((k) => [k, mix.w[k] || 0])) : { [mix.mode]: 100 });
+  const save = () => { try { localStorage.setItem('mix-' + id, JSON.stringify(mix)); } catch (e) { /* storage is optional */ } };
+  const draw = () => {
+    const pill = (mode, label) => {
+      const b = h('button', { type: 'button', class: 'pill' + (mix.mode === mode ? ' is-on' : ''), 'aria-pressed': String(mix.mode === mode), text: label });
+      b.addEventListener('click', () => { mix = { ...mix, mode }; save(); draw(); });
+      return b;
+    };
+    const kids = [h('div', { class: 'mix-row' }, h('span', { class: 'mix-l', text: 'Numbers from' }),
+      h('div', { class: 'pills', role: 'group', 'aria-label': 'Projection source' },
+        MIX_SRC.filter(([k]) => avail.includes(k)).map(([k, label]) => pill(k, label)), pill('blend', 'Blend')))];
+    if (mix.mode === 'blend') {
+      const shares = {};
+      const sliders = avail.map((k) => {
+        const input = h('input', { type: 'range', min: '0', max: '100', step: '5', value: String(mix.w[k] || 0), 'aria-label': `${MIX_SRC.find((x) => x[0] === k)[1]} weight` });
+        shares[k] = h('b', { class: 'mix-pct' });
+        input.addEventListener('input', () => { mix = { ...mix, w: { ...mix.w, [k]: Number(input.value) } }; save(); update(); });
+        return h('label', { class: 'mix-s' }, h('span', { text: MIX_SRC.find((x) => x[0] === k)[1] }), input, shares[k]);
+      });
+      const update = () => {
+        const w = weights(), total = Object.values(w).reduce((x, y) => x + y, 0);
+        avail.forEach((k) => { shares[k].textContent = total ? Math.round((w[k] / total) * 100) + '%' : '0%'; });
+        onChange(w);
+      };
+      kids.push(h('div', { class: 'mix-sl' }, sliders), h('p', { class: 'mix-note', text: 'Shares rescale to 100%. Only players that every source in your mix covers are ranked; Solio publishes only its top players.' }));
+      el.replaceChildren(...kids);
+      update();
+      return;
+    }
+    el.replaceChildren(...kids);
+    onChange(weights());
+  };
+  draw();
+}
+
+/* ---------- (c2) projection consensus: every model side by side, ranked by the chosen mix ---------- */
+
+const CONS_COLS = [['ours', 'Ours'], ['eleven', 'elevenify'], ['solio', 'Solio'], ['pundit', 'Pundit'], ['fpl', 'FPL form']];
+
+// Keys of the highest model (FPL form is not a model). No highlight when they all agree.
 function topModels(p) {
-  const v = ['ours', 'solio', 'pundit'].filter((k) => num(p[k]) !== null).map((k) => [k, pts1(p[k])]);
+  const v = MIX_SRC.map(([k]) => k).filter((k) => num(p[k]) !== null).map((k) => [k, pts1(p[k])]);
   const mx = Math.max(...v.map((x) => Number(x[1])));
   return v.length > 1 && v.some((x) => Number(x[1]) < mx) ? new Set(v.filter((x) => Number(x[1]) === mx).map((x) => x[0])) : new Set();
 }
 
-function renderConsensus(cons, gwId) {
+function renderConsensus(models, w) {
   const body = document.getElementById('co-body');
-  const rows = cons && cons.gw === gwId && Array.isArray(cons.players) ? cons.players.filter((p) => num(p.avg) !== null).sort((a, b) => b.avg - a.avg) : [];
-  if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: 'The consensus appears once the free sources have published numbers for this gameweek.' })); return; }
-  const hiTitle = 'Highest of the three models';
+  const rows = models.filter((m) => MIX_SRC.filter(([k]) => num(m[k]) !== null).length >= 2)
+    .map((m) => ({ ...m, mix: mixValue(m, w) })).filter((m) => m.mix !== null).sort((a, b) => b.mix - a.mix).slice(0, 15);
+  if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: Object.values(w).some((x) => x > 0) ? 'The consensus appears once the free sources have published numbers for this gameweek.' : 'Move a slider above 0% to pick a source.' })); return; }
+  const hiTitle = 'Highest of the models';
 
   const cards = h('ol', { class: 'cons-cards' }, rows.map((p, i) => {
     const hi = topModels(p);
@@ -202,23 +277,23 @@ function renderConsensus(cons, gwId) {
       h('div', { class: 'ctop' },
         h('span', { class: 'prank', text: String(i + 1) }),
         h('div', { class: 'pmain' }, h('div', { class: 'pname' }, crest(p.team, 20), h('span', { text: p.name })), h('p', { class: 'psub', text: `${p.team} · ${p.pos}` })),
-        h('div', { class: 'pbig' }, h('b', { text: pts1(p.avg) }), h('i', { text: 'Average' }))),
+        h('div', { class: 'pbig' }, h('b', { text: pts1(p.mix) }), h('i', { text: 'Your mix' }))),
       h('div', { class: 'cvals' }, CONS_COLS.map(([k, label]) =>
         h('div', { class: 'cv' + (hi.has(k) ? ' hi' : '') + (k === 'fpl' ? ' off' : ''), title: hi.has(k) ? hiTitle : null }, h('i', { text: label }), h('b', { text: pts1(p[k]) })))));
   }));
 
   const table = h('table', { class: 'ctable', 'aria-label': 'Expected points by source' },
-    h('thead', null, h('tr', null, h('th', { class: 'cp', text: 'Player' }), CONS_COLS.map(([k, label]) => h('th', { class: 'n' + (k === 'fpl' ? ' off' : ''), text: label })), h('th', { class: 'n', text: 'Average' }))),
+    h('thead', null, h('tr', null, h('th', { class: 'cp', text: 'Player' }), CONS_COLS.map(([k, label]) => h('th', { class: 'n' + (k === 'fpl' ? ' off' : ''), text: label })), h('th', { class: 'n', text: 'Your mix' }))),
     h('tbody', null, rows.map((p, i) => {
       const hi = topModels(p);
       return h('tr', null,
         h('td', { class: 'cp' }, h('span', { class: 'cpid' }, h('span', { class: 'prank', text: String(i + 1) }), crest(p.team, 20), h('span', { class: 'cpn' }, h('b', { text: p.name }), h('i', { text: `${p.team} · ${p.pos}` })))),
         CONS_COLS.map(([k]) => h('td', { class: 'n' + (k === 'fpl' ? ' off' : '') }, h('span', { class: 'v' + (hi.has(k) ? ' hi' : ''), title: hi.has(k) ? hiTitle : null, text: pts1(p[k]) }))),
-        h('td', { class: 'n avg' }, h('span', { class: 'v', text: pts1(p.avg) })));
+        h('td', { class: 'n avg' }, h('span', { class: 'v', text: pts1(p.mix) })));
     })));
 
   body.replaceChildren(cards, table,
-    h('p', { class: 'note', text: `Top ${rows.length} by average. The average is the mean of Ours, Solio and Pundit. FPL is shown but left out of it: its number is form-based and erratic. The shaded number is the highest of those three. A dash means that source does not publish the player.` }));
+    h('p', { class: 'note', text: `Top ${rows.length} by your mix, among players with at least two models. The shaded number is the highest model. A dash means that source does not publish the player. FPL form is shown but never in the mix: it is form-based and erratic.` }));
 }
 
 /* ---------- (d) clean-sheet chances, all teams ---------- */
@@ -412,15 +487,19 @@ async function init() {
   if (num(proj.league_avg_goals) !== null) {
     document.getElementById('how-text').textContent = `Match odds come from Polymarket. Average goals are calibrated to the league's ${Number(proj.league_avg_goals).toFixed(2)} goals per game. Player shares and defensive contributions come from FPL; bonus is modelled from last season.`;
   }
+  const consP = state.mock ? Promise.resolve(null) : getJSON(`data/consensus.json?v=${Math.floor(Date.now() / 60000)}`).catch(() => null);
   renderDoubts(proj);
-  renderCaptain(proj);
   renderFridayLists(proj);
-  (state.mock ? Promise.resolve(null) : getJSON(`data/consensus.json?v=${Math.floor(Date.now() / 60000)}`).catch(() => null))
-    .then((cons) => renderConsensus(cons, gwId));
   renderCS(proj);
   renderGoals(proj);
   renderPerf(proj);
   renderExtraScatters(proj);
+  const models = buildModels(proj, await consP, gwId);
+  const avail = MIX_SRC.map(([k]) => k).filter((k) => models.some((m) => num(m[k]) !== null));
+  if (avail.length > 1) mixPicker(document.getElementById('cp-mix'), 'captain', avail, { mode: 'ours', w: EQUAL }, (w) => renderCaptain(models, w));
+  else renderCaptain(models, { ours: 100 });
+  if (avail.length > 1) mixPicker(document.getElementById('co-mix'), 'consensus', avail, { mode: 'blend', w: EQUAL }, (w) => renderConsensus(models, w));
+  else renderConsensus([], EQUAL);
 }
 
 init();

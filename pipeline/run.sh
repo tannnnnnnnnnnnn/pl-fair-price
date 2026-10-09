@@ -5,5 +5,5 @@ set -euo pipefail
 cd "$(dirname "$0")"
 [ "${1:-}" = "--cached" ] || ./fetch.sh
 python3 engine.py
-python3 consensus.py "$@" || true
 python3 elevenify.py "$@" || true
+python3 consensus.py "$@" || true

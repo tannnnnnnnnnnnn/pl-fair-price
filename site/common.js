@@ -12,6 +12,7 @@ const CHANGELOG = [
   { version: 'v1', date: 'Thu 8 Oct 2026', notes: 'First public version: XO vs Fair for every Premier League market, GW numbers for FPL managers.' },
   { version: 'v1.1', date: 'Thu 8 Oct 2026', notes: 'Gameweek numbers moved to their own page. Low-confidence prices now read "Rough".' },
   { version: 'v1.2', date: 'Thu 8 Oct 2026', notes: "Added elevenify's predicted goals, win chances and clean-sheet chances as a second opinion." },
+  { version: 'v1.3', date: 'Fri 9 Oct 2026', notes: 'Captain picks and the projection consensus can use our model, elevenify, Solio, Pundit or your own blend. Player lists fold into dropdowns.' },
 ];
 
 const TEAMS = {
