@@ -214,7 +214,7 @@ function renderGaps() {
 
 function renderMyMarkets() {
   const root = document.getElementById('my-list');
-  const rows = state.markets.filter((m) => m.is_ours);
+  const rows = state.markets.filter((m) => m.is_ours).sort((a, b) => (a.exp || Infinity) - (b.exp || Infinity));
   const wasOpen = new Set([...root.querySelectorAll('.my-card[open]')].map((x) => x.dataset.slug));
   if (!rows.length) { root.replaceChildren(h('p', { class: 'empty', text: 'No CryptoTan01 markets are live right now.' })); return; }
   root.replaceChildren(...rows.map((m) => {

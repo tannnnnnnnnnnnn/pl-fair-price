@@ -57,6 +57,29 @@ const kickoffFmt = (iso) => {
 };
 const pct0 = (p) => Math.round(p * 100) + '%';
 
+/* ---------- my calls: CryptoTan01's own XO markets ---------- */
+
+function callRow(m) {
+  const d = m.exp ? new Date(m.exp) : null;
+  const closes = d ? `Closes ${d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: d.getFullYear() === new Date().getFullYear() ? undefined : 'numeric' })}` : null;
+  const rough = m.fair && m.fair.confidence === 'low';
+  return h('li', { class: 'call' },
+    h('div', { class: 'call-main' },
+      h('a', { class: 'call-q market-title', href: tradeUrl(m), target: '_blank', rel: 'noopener', text: m.title }),
+      closes ? h('span', { class: 'call-meta', text: closes }) : null),
+    h('div', { class: 'call-nums' },
+      h('span', { class: 'call-n xo' }, h('i', { text: 'XO price' }), h('b', { text: m.xo_price !== null ? pct(m.xo_price) : '–' })),
+      h('span', { class: 'call-n' + (rough ? ' rough' : '') }, h('i', null, rough ? explain('Rough', 'rough') : 'Our price'), h('b', { text: m.fair ? pct(m.fair.p) : '–' })),
+      h('a', { class: 'trade', href: tradeUrl(m), target: '_blank', rel: 'noopener' }, 'Trade on', wordmark('wm'))));
+}
+
+function renderCalls() {
+  const mine = state.markets.filter((m) => m.is_ours && (!m.exp || m.exp > Date.now())).sort((a, b) => (a.exp || Infinity) - (b.exp || Infinity));
+  document.getElementById('calls').hidden = !mine.length;
+  document.getElementById('calls-body').replaceChildren(...mine.map(callRow));
+  document.getElementById('cp-call').replaceChildren(...mine.filter((m) => /most-captained/i.test(m.title)).map(callRow));
+}
+
 /* ---------- (b) doubts: FPL's injury flags and news, nothing else ---------- */
 
 function doubtRow(f) {
@@ -488,6 +511,7 @@ async function init() {
     document.getElementById('how-text').textContent = `Match odds come from Polymarket. Average goals are calibrated to the league's ${Number(proj.league_avg_goals).toFixed(2)} goals per game. Player shares and defensive contributions come from FPL; bonus is modelled from last season.`;
   }
   const consP = state.mock ? Promise.resolve(null) : getJSON(`data/consensus.json?v=${Math.floor(Date.now() / 60000)}`).catch(() => null);
+  renderCalls();
   renderDoubts(proj);
   renderFridayLists(proj);
   renderCS(proj);
