@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T02:58:16Z",
+ "generated_at": "2026-10-09T03:06:26Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -1255,9 +1255,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5737,
-    "low": 0.4737,
-    "high": 0.6737,
+    "p": 0.5734,
+    "low": 0.4734,
+    "high": 0.6734,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1279,7 +1279,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.0%",
+      "value": "7.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2534,62 +2534,6 @@
    }
   },
   {
-   "slug": "will-leeds-united-score-from-a-non-penalty-set-pie-7211",
-   "title": "Will Leeds United score from a non-penalty set piece against Arsenal?",
-   "url": "https://beta.xo.market/event/will-leeds-united-score-from-a-non-penalty-set-pie-7211?r=cryptotan01",
-   "creator": "aaditpatadia",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": 0.5,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-10-10T15:00:00.000Z",
-   "group": "fixture",
-   "fixture": {
-    "home": "ARS",
-    "away": "LEE",
-    "home_name": "Arsenal",
-    "away_name": "Leeds",
-    "kickoff_utc": "2026-10-10T11:30:00Z"
-   },
-   "fair": null,
-   "fair_reason": "No clean data on set-piece or corner goals.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Leeds are dangerous from set pieces, but Arsenal should be able to keep them out.",
-   "description": "This market resolves on whether Leeds United score at least one goal from a non-penalty set piece in their Premier League match against Arsenal on 10 October 2026. Only 90 minutes plus stoppage time count. Extra time does not apply. A non-penalty set piece is a corner, a direct free kick, an indirect free kick, a throw-in, or a goal kick. A penalty is not a non-penalty set piece. Yes: Leeds score at least one goal from such a set piece. The goal counts if it is scored directly from the set piece, or from the immediate set-piece sequence before open play resumes, including a header, flick-on, or rebound from the first contact. An own goal forced in that same sequence counts as a Leeds goal. No: Leeds do not score from a non-penalty set piece. Penalties, goals from open play, and goals scored only after the set-piece sequence has ended do not count. The primary source is the official match report and event data on premierleague. com. BBC Sport or Sky Sports may be used only if that report is unavailable and they quote or link it. If the match is abandoned and not completed within 14 days of the scheduled kick-off, the market is void.",
-   "resolution_sources": [
-    "https://www.premierleague.com/en/match/2645245/essenal-vs-leeds-united/info",
-    "https://www.premierleague.com/en/clubs/2/leeds-united/stats",
-    "https://essential.football/most-premier-league-set-piece-goals-2026-27/"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "will-arsenal-fail-to-score-a-first-half-goal-this--7623",
    "title": "Will Arsenal fail to score a First-Half goal this Matchweek?",
    "url": "https://beta.xo.market/event/will-arsenal-fail-to-score-a-first-half-goal-this--7623?r=cryptotan01",
@@ -2660,6 +2604,62 @@
       }
      ],
      "last": 0.76
+    }
+   }
+  },
+  {
+   "slug": "will-leeds-united-score-from-a-non-penalty-set-pie-7211",
+   "title": "Will Leeds United score from a non-penalty set piece against Arsenal?",
+   "url": "https://beta.xo.market/event/will-leeds-united-score-from-a-non-penalty-set-pie-7211?r=cryptotan01",
+   "creator": "aaditpatadia",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": 0.5,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-10-10T15:00:00.000Z",
+   "group": "fixture",
+   "fixture": {
+    "home": "ARS",
+    "away": "LEE",
+    "home_name": "Arsenal",
+    "away_name": "Leeds",
+    "kickoff_utc": "2026-10-10T11:30:00Z"
+   },
+   "fair": null,
+   "fair_reason": "No clean data on set-piece or corner goals.",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Leeds are dangerous from set pieces, but Arsenal should be able to keep them out.",
+   "description": "This market resolves on whether Leeds United score at least one goal from a non-penalty set piece in their Premier League match against Arsenal on 10 October 2026. Only 90 minutes plus stoppage time count. Extra time does not apply. A non-penalty set piece is a corner, a direct free kick, an indirect free kick, a throw-in, or a goal kick. A penalty is not a non-penalty set piece. Yes: Leeds score at least one goal from such a set piece. The goal counts if it is scored directly from the set piece, or from the immediate set-piece sequence before open play resumes, including a header, flick-on, or rebound from the first contact. An own goal forced in that same sequence counts as a Leeds goal. No: Leeds do not score from a non-penalty set piece. Penalties, goals from open play, and goals scored only after the set-piece sequence has ended do not count. The primary source is the official match report and event data on premierleague. com. BBC Sport or Sky Sports may be used only if that report is unavailable and they quote or link it. If the match is abandoned and not completed within 14 days of the scheduled kick-off, the market is void.",
+   "resolution_sources": [
+    "https://www.premierleague.com/en/match/2645245/essenal-vs-leeds-united/info",
+    "https://www.premierleague.com/en/clubs/2/leeds-united/stats",
+    "https://essential.football/most-premier-league-set-piece-goals-2026-27/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
     }
    }
   },
@@ -3741,9 +3741,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5168,
-    "low": 0.4168,
-    "high": 0.6168,
+    "p": 0.5166,
+    "low": 0.4166,
+    "high": 0.6166,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3765,7 +3765,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.0%",
+      "value": "7.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -4638,16 +4638,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.736,
-    "low": 0.636,
-    "high": 0.836,
+    "p": 0.737,
+    "low": 0.637,
+    "high": 0.837,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "26.4% (spread 42c, $621 traded on this market)",
+      "value": "26.3% (spread 42c, $621 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
