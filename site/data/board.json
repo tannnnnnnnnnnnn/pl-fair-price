@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T01:45:58Z",
+ "generated_at": "2026-10-09T01:55:48Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -1255,9 +1255,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5671,
-    "low": 0.4671,
-    "high": 0.6671,
+    "p": 0.571,
+    "low": 0.471,
+    "high": 0.671,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1274,12 +1274,12 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.1%",
+      "value": "3.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.2%",
+      "value": "8.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1515,6 +1515,201 @@
    }
   },
   {
+   "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
+   "title": "Will Gyokeres outscore Bruno Fernandes across Premier League Matchweeks 6\u20137?",
+   "url": "https://beta.xo.market/event/will-gyokeres-outscore-bruno-fernandes-across-prem-4590?r=cryptotan01",
+   "creator": "xouser56971",
+   "is_ours": false,
+   "xo_price": 0.555,
+   "best_bid": 0.53,
+   "best_ask": 0.58,
+   "liquidity_usd": 12.57,
+   "volume_usd": 46.58,
+   "expires_at": "2026-10-18T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.0374,
+    "low": 0,
+    "high": 0.1374,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
+    "inputs": [
+     {
+      "label": "Gy\u00f6keres: xG 0.00, xA 0.23 in 29 min, 0/5 starts",
+      "value": "10% of team goals, plays 19% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "B.Fernandes: xG 2.56, xA 1.32 in 450 min, 5/5 starts",
+      "value": "19% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": -52,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Sweden's scorer or United's captain? I'm backing Gyokeres over two PL games. Bruno fans, prove me wrong. Ties = NO.",
+   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://theanalyst.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.53,
+       "size": 0.489364
+      },
+      {
+       "price": 0.5,
+       "size": 11.0
+      },
+      {
+       "price": 0.45,
+       "size": 0.781014
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.58,
+       "size": 11.137936
+      }
+     ],
+     "last": 0.555
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.42,
+       "size": 11.137936
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.47,
+       "size": 0.489364
+      },
+      {
+       "price": 0.5,
+       "size": 11.0
+      },
+      {
+       "price": 0.55,
+       "size": 0.781014
+      }
+     ],
+     "last": 0.445
+    }
+   }
+  },
+  {
+   "slug": "will-haaland-score-in-at-least-2-of-man-citys-next-5947",
+   "title": "Will Haaland score in at least 2 of Man City's next 3 Premier League matches?",
+   "url": "https://beta.xo.market/event/will-haaland-score-in-at-least-2-of-man-citys-next-5947?r=cryptotan01",
+   "creator": "xouser56971",
+   "is_ours": false,
+   "xo_price": 0.565,
+   "best_bid": 0.55,
+   "best_ask": 0.58,
+   "liquidity_usd": 11.78,
+   "volume_usd": 37.93,
+   "expires_at": "2026-10-24T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.5552,
+    "low": 0.4552,
+    "high": 0.6552,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
+    "inputs": [
+     {
+      "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
+      "value": "42% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Polymarket Liverpool v Man City ($31,380 traded)",
+      "value": "1X2 prices",
+      "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
+     },
+     {
+      "label": "Model expected goals LIV-MCI",
+      "value": "1.42-1.49",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     },
+     {
+      "label": "Polymarket Man City v Ipswich Town ($1,316 traded)",
+      "value": "1X2 prices",
+      "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
+     },
+     {
+      "label": "Model expected goals MCI-IPS",
+      "value": "3.03-0.80",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": -1,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Two scoring games out of three. Easy for Haaland? I'm backing NO. City fans, which two does he score in?",
+   "description": "This market concerns Erling Haaland scoring in the following three Manchester City Premier League fixtures: Liverpool vs Manchester City , scheduled for October 11, 2026. Manchester City vs Ipswich Town, scheduled for October 17, 2026. Aston Villa vs Manchester City , scheduled for October 24, 2026. Resolve YES if Haaland scores at least one goal in at least two of these three specified fixtures. Resolve NO if he scores in zero or one of these fixtures. Count the number of separate fixtures in which he scores, not his total number of goals. Two or more goals in one fixture count as one scoring fixture. Goals officially credited to Haaland during regulation time, including stoppage time and penalties, count. Own goals do not count. He does not have to start. A substitute appearance counts. If he does not play in a specified fixture, that fixture counts as a non-scoring fixture. Do not replace it with a later appearance. Match results do not matter: a goal counts whether Manchester City win, draw or lose. Only the three listed Premier League fixtures count. Exclude all other competitions and fixtures. All three fixtures must be completed by October 24, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Settlement is scheduled after the listed fixtures. Source: official Premier League match results and goalscorer records available at the resolution deadline.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://theanalyst.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 16.0
+      },
+      {
+       "price": 0.5,
+       "size": 1.000002
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.58,
+       "size": 4.275864
+      }
+     ],
+     "last": 0.565
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.42,
+       "size": 4.275864
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 16.0
+      },
+      {
+       "price": 0.5,
+       "size": 1.000002
+      }
+     ],
+     "last": 0.435
+    }
+   }
+  },
+  {
    "slug": "will-brighton-outscore-arsenal-across-premier-leag-6832",
    "title": "Will Brighton outscore Arsenal across Premier League Matchweeks 6\u20138?",
    "url": "https://beta.xo.market/event/will-brighton-outscore-arsenal-across-premier-leag-6832?r=cryptotan01",
@@ -1591,209 +1786,6 @@
       }
      ],
      "last": 0.56
-    }
-   }
-  },
-  {
-   "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
-   "title": "Will Gyokeres outscore Bruno Fernandes across Premier League Matchweeks 6\u20137?",
-   "url": "https://beta.xo.market/event/will-gyokeres-outscore-bruno-fernandes-across-prem-4590?r=cryptotan01",
-   "creator": "xouser56971",
-   "is_ours": false,
-   "xo_price": 0.54,
-   "best_bid": 0.53,
-   "best_ask": 0.55,
-   "liquidity_usd": 14.57,
-   "volume_usd": 44.22,
-   "expires_at": "2026-10-18T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.0374,
-    "low": 0,
-    "high": 0.1374,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
-    "inputs": [
-     {
-      "label": "Gy\u00f6keres: xG 0.00, xA 0.23 in 29 min, 0/5 starts",
-      "value": "10% of team goals, plays 19% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "B.Fernandes: xG 2.56, xA 1.32 in 450 min, 5/5 starts",
-      "value": "19% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": -50,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Sweden's scorer or United's captain? I'm backing Gyokeres over two PL games. Bruno fans, prove me wrong. Ties = NO.",
-   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://theanalyst.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.53,
-       "size": 0.489364
-      },
-      {
-       "price": 0.5,
-       "size": 11.0
-      },
-      {
-       "price": 0.45,
-       "size": 0.781014
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.55,
-       "size": 2.727275
-      },
-      {
-       "price": 0.58,
-       "size": 12.0
-      }
-     ],
-     "last": 0.54
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.45,
-       "size": 2.727275
-      },
-      {
-       "price": 0.42,
-       "size": 12.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.47,
-       "size": 0.489364
-      },
-      {
-       "price": 0.5,
-       "size": 11.0
-      },
-      {
-       "price": 0.55,
-       "size": 0.781014
-      }
-     ],
-     "last": 0.46
-    }
-   }
-  },
-  {
-   "slug": "will-haaland-score-in-at-least-2-of-man-citys-next-5947",
-   "title": "Will Haaland score in at least 2 of Man City's next 3 Premier League matches?",
-   "url": "https://beta.xo.market/event/will-haaland-score-in-at-least-2-of-man-citys-next-5947?r=cryptotan01",
-   "creator": "xouser56971",
-   "is_ours": false,
-   "xo_price": 0.565,
-   "best_bid": 0.55,
-   "best_ask": 0.58,
-   "liquidity_usd": 12.78,
-   "volume_usd": 36.93,
-   "expires_at": "2026-10-24T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.5552,
-    "low": 0.4552,
-    "high": 0.6552,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
-    "inputs": [
-     {
-      "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "42% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Polymarket Liverpool v Man City ($31,380 traded)",
-      "value": "1X2 prices",
-      "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
-     },
-     {
-      "label": "Model expected goals LIV-MCI",
-      "value": "1.42-1.49",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     },
-     {
-      "label": "Polymarket Man City v Ipswich Town ($1,316 traded)",
-      "value": "1X2 prices",
-      "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
-     },
-     {
-      "label": "Model expected goals MCI-IPS",
-      "value": "3.03-0.80",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": -1,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Two scoring games out of three. Easy for Haaland? I'm backing NO. City fans, which two does he score in?",
-   "description": "This market concerns Erling Haaland scoring in the following three Manchester City Premier League fixtures: Liverpool vs Manchester City , scheduled for October 11, 2026. Manchester City vs Ipswich Town, scheduled for October 17, 2026. Aston Villa vs Manchester City , scheduled for October 24, 2026. Resolve YES if Haaland scores at least one goal in at least two of these three specified fixtures. Resolve NO if he scores in zero or one of these fixtures. Count the number of separate fixtures in which he scores, not his total number of goals. Two or more goals in one fixture count as one scoring fixture. Goals officially credited to Haaland during regulation time, including stoppage time and penalties, count. Own goals do not count. He does not have to start. A substitute appearance counts. If he does not play in a specified fixture, that fixture counts as a non-scoring fixture. Do not replace it with a later appearance. Match results do not matter: a goal counts whether Manchester City win, draw or lose. Only the three listed Premier League fixtures count. Exclude all other competitions and fixtures. All three fixtures must be completed by October 24, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Settlement is scheduled after the listed fixtures. Source: official Premier League match results and goalscorer records available at the resolution deadline.",
-   "resolution_sources": [
-    "https://premierleague.com",
-    "https://theanalyst.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.55,
-       "size": 16.0
-      },
-      {
-       "price": 0.5,
-       "size": 1.000002
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.58,
-       "size": 6.0
-      }
-     ],
-     "last": 0.565
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.42,
-       "size": 6.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.45,
-       "size": 16.0
-      },
-      {
-       "price": 0.5,
-       "size": 1.000002
-      }
-     ],
-     "last": 0.435
     }
    }
   },
@@ -2626,7 +2618,7 @@
     "method_text": "Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($33,588 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,590 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -2888,7 +2880,7 @@
     "method_text": "Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($33,588 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,590 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3009,7 +3001,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($33,588 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,590 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3749,9 +3741,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5201,
-    "low": 0.4201,
-    "high": 0.6201,
+    "p": 0.5171,
+    "low": 0.4171,
+    "high": 0.6171,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3768,12 +3760,12 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.1%",
+      "value": "3.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.2%",
+      "value": "8.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -4398,7 +4390,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($33,588 traded)",
+      "label": "Polymarket Arsenal v Leeds ($33,590 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -4646,16 +4638,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7375,
-    "low": 0.6375,
-    "high": 0.8375,
+    "p": 0.736,
+    "low": 0.636,
+    "high": 0.836,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "26.2% (spread 42c, $621 traded on this market)",
+      "value": "26.4% (spread 42c, $621 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
