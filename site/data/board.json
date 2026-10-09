@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T05:56:59Z",
+ "generated_at": "2026-10-09T06:07:11Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -2471,69 +2471,6 @@
    }
   },
   {
-   "slug": "will-liverpool-earn-at-least-7-points-in-their-nex-3876",
-   "title": "Will Liverpool earn at least 7 points in their next 4 Premier League matches?",
-   "url": "https://beta.xo.market/event/will-liverpool-earn-at-least-7-points-in-their-nex-3876?r=cryptotan01",
-   "creator": "RudolfAdi",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-01T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.3424,
-    "low": 0.2424,
-    "high": 0.4424,
-    "confidence": "low",
-    "method": "match_model",
-    "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
-    "inputs": [
-     {
-      "label": "Fixtures",
-      "value": "LIV-MCI, BRE-LIV, LIV-BHA, LIV-ARS",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": -16,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Four games. Twelve points up for grabs. I\u2019m backing Liverpool to take at least seven from a tough run.",
-   "description": "This market resolves based on whether Liverpool FC earns at least 7 points in total from these four Premier League fixtures only: Liverpool vs Manchester City, Brentford vs Liverpool, Liverpool vs Brighton & Hove Albion, and Liverpool vs Arsenal as determined by the official Premier League standings and match records. Matches outside the designated four-game sequence do not count toward the point total. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official Premier League record is permanently retracted or unavailable or Any match in the four-game sequence is permanently cancelled or abandoned without an official result, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.liverpoolfc.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "will-arsenal-fail-to-score-a-first-half-goal-this--7623",
    "title": "Will Arsenal fail to score a First-Half goal this Matchweek?",
    "url": "https://beta.xo.market/event/will-arsenal-fail-to-score-a-first-half-goal-this--7623?r=cryptotan01",
@@ -2604,6 +2541,69 @@
       }
      ],
      "last": 0.76
+    }
+   }
+  },
+  {
+   "slug": "will-liverpool-earn-at-least-7-points-in-their-nex-3876",
+   "title": "Will Liverpool earn at least 7 points in their next 4 Premier League matches?",
+   "url": "https://beta.xo.market/event/will-liverpool-earn-at-least-7-points-in-their-nex-3876?r=cryptotan01",
+   "creator": "RudolfAdi",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": 0.5,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-11-01T23:59:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.3424,
+    "low": 0.2424,
+    "high": 0.4424,
+    "confidence": "low",
+    "method": "match_model",
+    "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
+    "inputs": [
+     {
+      "label": "Fixtures",
+      "value": "LIV-MCI, BRE-LIV, LIV-BHA, LIV-ARS",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": -16,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Four games. Twelve points up for grabs. I\u2019m backing Liverpool to take at least seven from a tough run.",
+   "description": "This market resolves based on whether Liverpool FC earns at least 7 points in total from these four Premier League fixtures only: Liverpool vs Manchester City, Brentford vs Liverpool, Liverpool vs Brighton & Hove Albion, and Liverpool vs Arsenal as determined by the official Premier League standings and match records. Matches outside the designated four-game sequence do not count toward the point total. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official Premier League record is permanently retracted or unavailable or Any match in the four-game sequence is permanently cancelled or abandoned without an official result, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.liverpoolfc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
     }
    }
   },
