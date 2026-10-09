@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T00:45:28Z",
+ "generated_at": "2026-10-09T00:55:58Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -1265,9 +1265,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5751,
-    "low": 0.4751,
-    "high": 0.6751,
+    "p": 0.5773,
+    "low": 0.4773,
+    "high": 0.6773,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1279,7 +1279,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "2.1%",
+      "value": "1.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2608,55 +2608,6 @@
    }
   },
   {
-   "slug": "will-joelinton-play-30-minutes-at-coventry-on-mond-5857",
-   "title": "Will Joelinton play 30+ minutes at Coventry on Monday?",
-   "url": "https://beta.xo.market/event/will-joelinton-play-30-minutes-at-coventry-on-mond-5857?r=cryptotan01",
-   "creator": "EmilOnTheBall",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": 0.5,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-10-12T17:45:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Minutes questions need team news; check the press conference.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Newcastle need him with Bruno and Tonali gone. After a season out, I think Jaissle gives him 20 minutes, not 30.",
-   "description": "Resolves YES if Joelinton plays 30 or more minutes for Newcastle United in the Premier League match Coventry City v Newcastle United on Monday 12 October 2026 (kick-off 19:00 UTC). Minutes are counted on the 90-minute match clock from the official substitution times in the Premier League match report; stoppage time is not counted (45+2 counts as 45, 90+3 as 90). His minutes equal the minute he leaves the pitch (90 if he is on the pitch at full time) minus the minute he comes on (0 if he starts). For example, a starter who leaves in the 30th minute or later, or a substitute who comes on in the 60th minute or earlier and stays on, plays 30 or more minutes. Resolves NO if he plays fewer than 30 minutes, is an unused substitute or is not in the matchday squad. If the match is postponed, abandoned or not played on 12 October 2026, the market resolves NO. Trading closes at 17:45 UTC on 12 October 2026, before the team sheets are published.",
-   "resolution_sources": [
-    "https://www.premierleague.com/results",
-    "https://www.bbc.com/sport/football/premier-league/scores-fixtures"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "will-arsenal-fail-to-score-a-first-half-goal-this--7623",
    "title": "Will Arsenal fail to score a First-Half goal this Matchweek?",
    "url": "https://beta.xo.market/event/will-arsenal-fail-to-score-a-first-half-goal-this--7623?r=cryptotan01",
@@ -2727,6 +2678,55 @@
       }
      ],
      "last": 0.76
+    }
+   }
+  },
+  {
+   "slug": "will-joelinton-play-30-minutes-at-coventry-on-mond-5857",
+   "title": "Will Joelinton play 30+ minutes at Coventry on Monday?",
+   "url": "https://beta.xo.market/event/will-joelinton-play-30-minutes-at-coventry-on-mond-5857?r=cryptotan01",
+   "creator": "EmilOnTheBall",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": 0.5,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-10-12T17:45:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Minutes questions need team news; check the press conference.",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Newcastle need him with Bruno and Tonali gone. After a season out, I think Jaissle gives him 20 minutes, not 30.",
+   "description": "Resolves YES if Joelinton plays 30 or more minutes for Newcastle United in the Premier League match Coventry City v Newcastle United on Monday 12 October 2026 (kick-off 19:00 UTC). Minutes are counted on the 90-minute match clock from the official substitution times in the Premier League match report; stoppage time is not counted (45+2 counts as 45, 90+3 as 90). His minutes equal the minute he leaves the pitch (90 if he is on the pitch at full time) minus the minute he comes on (0 if he starts). For example, a starter who leaves in the 30th minute or later, or a substitute who comes on in the 60th minute or earlier and stays on, plays 30 or more minutes. Resolves NO if he plays fewer than 30 minutes, is an unused substitute or is not in the matchday squad. If the match is postponed, abandoned or not played on 12 October 2026, the market resolves NO. Trading closes at 17:45 UTC on 12 October 2026, before the team sheets are published.",
+   "resolution_sources": [
+    "https://www.premierleague.com/results",
+    "https://www.bbc.com/sport/football/premier-league/scores-fixtures"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
     }
    }
   },
@@ -3759,9 +3759,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5262,
-    "low": 0.4262,
-    "high": 0.6262,
+    "p": 0.5282,
+    "low": 0.4282,
+    "high": 0.6282,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3773,7 +3773,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "2.1%",
+      "value": "1.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
