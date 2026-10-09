@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T22:23:11Z",
+ "generated_at": "2026-10-09T22:33:43Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -41,7 +41,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Chelsea v Bournemouth ($52,671 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($52,772 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -245,7 +245,7 @@
     "method_text": "Chance Chelsea concede at least once, so no clean sheet. Poisson model fitted to Polymarket's match prices.",
     "inputs": [
      {
-      "label": "Polymarket Chelsea v Bournemouth ($52,671 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($52,772 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -795,57 +795,6 @@
    }
   },
   {
-   "slug": "will-cole-palmer-score-or-assist-vs-bournemouth-1923",
-   "title": "Will Cole Palmer score or assist vs Bournemouth?",
-   "url": "https://beta.xo.market/event/will-cole-palmer-score-or-assist-vs-bournemouth-1923?r=cryptotan01",
-   "creator": "0XBaseMessiah",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-10-10T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "He skipped England duty to stay fit after missing the World Cup. Chelsea at home to Bournemouth is his statement game",
-   "description": "This market resolves based on whether Cole Palmer records at least one official goal or assist for Chelsea in the Premier League match against Bournemouth on October 10, 2026. Friendly matches or any other competitions outside of this specific Premier League fixture do not count. If Cole Palmer does not appear in the match, the market resolves to No. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://www. bbc. com) or DAZN (https://www. dazn. com). The primary source governs. If the named fixture is cancelled or the match is abandoned without a validated official result, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.com",
-    "https://www.dazn.com",
-    "https://www.goal.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "will-joo-pedro-start-for-chelsea-vs-bournemouth-9641",
    "title": "Will Jo\u00e3o Pedro start for Chelsea vs Bournemouth?",
    "url": "https://beta.xo.market/event/will-joo-pedro-start-for-chelsea-vs-bournemouth-9641?r=cryptotan01",
@@ -897,6 +846,57 @@
       }
      ],
      "last": 0.7
+    }
+   }
+  },
+  {
+   "slug": "will-cole-palmer-score-or-assist-vs-bournemouth-1923",
+   "title": "Will Cole Palmer score or assist vs Bournemouth?",
+   "url": "https://beta.xo.market/event/will-cole-palmer-score-or-assist-vs-bournemouth-1923?r=cryptotan01",
+   "creator": "0XBaseMessiah",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": 0.5,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-10-10T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "He skipped England duty to stay fit after missing the World Cup. Chelsea at home to Bournemouth is his statement game",
+   "description": "This market resolves based on whether Cole Palmer records at least one official goal or assist for Chelsea in the Premier League match against Bournemouth on October 10, 2026. Friendly matches or any other competitions outside of this specific Premier League fixture do not count. If Cole Palmer does not appear in the match, the market resolves to No. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://www. bbc. com) or DAZN (https://www. dazn. com). The primary source governs. If the named fixture is cancelled or the match is abandoned without a validated official result, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com",
+    "https://www.dazn.com",
+    "https://www.goal.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
     }
    }
   },
@@ -1088,7 +1088,7 @@
     "method_text": "Chance Chelsea concede 2+ in the match. Poisson model fitted to Polymarket's match prices.",
     "inputs": [
      {
-      "label": "Polymarket Chelsea v Bournemouth ($52,671 traded)",
+      "label": "Polymarket Chelsea v Bournemouth ($52,772 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-che-bou-2026-10-10"
      },
@@ -1424,9 +1424,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6225,
-    "low": 0.5225,
-    "high": 0.7225,
+    "p": 0.6286,
+    "low": 0.5286,
+    "high": 0.7286,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1438,7 +1438,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "3.0%",
+      "value": "2.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1453,7 +1453,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "13.1%",
+      "value": "13.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1469,7 +1469,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 57,
+   "gap_pts": 58,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3094,7 +3094,7 @@
     "method_text": "Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($149,494 traded)",
+      "label": "Polymarket Arsenal v Leeds ($149,697 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3286,7 +3286,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Sunderland v Brighton ($236,787 traded)",
+      "label": "Polymarket Sunderland v Brighton ($236,940 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-sun-bri-2026-10-10"
      },
@@ -3426,7 +3426,7 @@
     "method_text": "Chance Arsenal score none before half-time but at least one after, assuming 45% of goals come in the first half. No goal at all counts as NO.",
     "inputs": [
      {
-      "label": "Polymarket Arsenal v Leeds ($149,494 traded)",
+      "label": "Polymarket Arsenal v Leeds ($149,697 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -3547,7 +3547,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($149,494 traded)",
+      "label": "Polymarket Arsenal v Leeds ($149,697 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
@@ -4239,9 +4239,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5284,
-    "low": 0.4284,
-    "high": 0.6284,
+    "p": 0.534,
+    "low": 0.434,
+    "high": 0.634,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -4253,7 +4253,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "3.0%",
+      "value": "2.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -4268,7 +4268,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "13.1%",
+      "value": "13.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -4350,7 +4350,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Man Utd v Spurs ($116,849 traded)",
+      "label": "Polymarket Man Utd v Spurs ($116,855 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mun-tot-2026-10-10"
      },
@@ -4732,7 +4732,7 @@
     "method_text": "Two readings: joint-lowest of the 6 games that day counts: 20%. only the strict lowest counts: 7%. We show the first, at low confidence.",
     "inputs": [
      {
-      "label": "Polymarket Man Utd v Spurs ($116,849 traded)",
+      "label": "Polymarket Man Utd v Spurs ($116,855 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mun-tot-2026-10-10"
      },
@@ -4833,7 +4833,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Arsenal v Leeds ($149,494 traded)",
+      "label": "Polymarket Arsenal v Leeds ($149,697 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-ars-lee-2026-10-10"
      },
