@@ -255,19 +255,3 @@
   .mini-list, .set-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .perf-lists { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-
-/* my calls: CryptoTan01's own XO markets */
-.calls { display: grid; gap: 8px; margin-top: 12px; }
-.calls:empty { display: none; }
-.call { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px 16px; align-items: center; padding: 12px 13px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
-.call-main { min-width: 0; }
-.call-q { display: block; font-weight: 700; font-size: 14.5px; line-height: 1.3; overflow-wrap: anywhere; }
-.call-meta { display: block; margin-top: 3px; font-size: 11.5px; color: var(--ink-3); }
-.call-nums { display: flex; align-items: center; gap: 14px; }
-.call-n { display: flex; flex-direction: column; min-width: 50px; }
-.call-n i { font-style: normal; font-size: 10.5px; font-weight: 600; color: var(--ink-3); }
-.call-n b { margin-top: 1px; font: 900 20px/1 'Rubik', sans-serif; }
-.call-n.xo b { color: #d84970; }
-.call-n.rough b { color: var(--ink-3); }
-.call-nums .trade { margin-left: auto; }
-@media (max-width: 560px) { .call { grid-template-columns: minmax(0, 1fr); } }
