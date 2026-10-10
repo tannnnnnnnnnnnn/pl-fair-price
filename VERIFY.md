@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-10T05:15:40Z)
+# VERIFY — PL Fair Price (2026-10-10T05:25:10Z)
 
 GW6 deadline 2026-10-10T10:00:00Z. 87 XO PL markets; 44 priced (high 4, medium 6, low 34).
 
@@ -81,7 +81,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 40 | 33.0 | -7 | player_model | Haaland + Saka outscore Tottenham in EPL MW6? | Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES. |
 | low | 47 | 42.3 | -5 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES. |
 | medium | 22 | 8.5 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 54.4 | 21 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 54.5 | 21 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 67.6 | 18 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 40 | 31.1 | -9 | match_model | Will 19+ goals be scored across all Premier League games on 10th October 2026? | Total goals across the 6 league games on 2026-10-10; needs 19+. |
 | low | 24 | 39.1 | 15 | match_model | Will Arsenal fail to score a First-Half goal this Matchweek? | Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half. |
