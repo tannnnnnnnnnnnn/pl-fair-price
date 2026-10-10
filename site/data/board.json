@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T01:26:53Z",
+ "generated_at": "2026-10-10T01:33:37Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -1010,52 +1010,72 @@
    }
   },
   {
-   "slug": "will-the-premier-league-announce-a-points-deductio-7531",
-   "title": "Will the Premier League announce a points deduction against Man City by 31 Oct 2026?",
-   "url": "https://beta.xo.market/event/will-the-premier-league-announce-a-points-deductio-7531?r=cryptotan01",
+   "slug": "will-tottenham-score-at-least-3-goals-in-october-2-5449",
+   "title": "Will Tottenham score at least 3 goals in October 2026 Premier League matches?",
+   "url": "https://beta.xo.market/event/will-tottenham-score-at-least-3-goals-in-october-2-5449?r=cryptotan01",
    "creator": "CryptoMokado",
    "is_ours": false,
-   "xo_price": 0.05,
-   "best_bid": null,
-   "best_ask": 0.05,
-   "liquidity_usd": 0.53,
+   "xo_price": 0.65,
+   "best_bid": 0.65,
+   "best_ask": null,
+   "liquidity_usd": 75.0,
    "volume_usd": 0,
-   "expires_at": "2026-10-31T23:59:59.000Z",
+   "expires_at": "2026-11-01T00:00:00.000Z",
    "group": "season",
    "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "gap_pts": null,
+   "fair": {
+    "p": 0.9106,
+    "low": 0.8106,
+    "high": 1,
+    "confidence": "low",
+    "method": "match_model",
+    "method_text": "Spurs score 3+ league goals in October. (4 fixtures)",
+    "inputs": [
+     {
+      "label": "Fixtures",
+      "value": "MUN-TOT, TOT-COV, CHE-TOT, TOT-CRY",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": 26,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
-   "pitch": "No sanctions hearing date yet, a slow process, and a deduction isn't guaranteed. Oct 31 looks too soon.",
-   "description": "This market resolves based on whether The Premier League officially announces a points deduction against Manchester City on or before October 31, 2026. Financial penalties or sanctions that do not involve a direct points deduction do not count toward a Yes resolution. Primary source: Premier League (https://premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://bbc. com) or Sky Sports (https://skysports. com). The primary source governs. If The official Premier League proceedings are permanently cancelled or terminated without a ruling or The governing body officially retracts the announcement made prior to the cutoff, the market voids and all positions resolve equally.",
+   "pitch": "Yes. Home matches against Coventry and Palace, should help Spurs clear 3 goals or more across their 4 October fixtures",
+   "description": "This market resolves based on whether Tottenham Hotspur scores a cumulative total of at least 3 goals across their four scheduled Premier League matches in October 2026. Tottenham Hotspur four Premier League matches in October 2026: Manchester United (A), Coventry City (H), Chelsea (A), Crystal Palace (H)Goals scored in competitions other than the Premier League do not count. Matches played outside of the month of October 2026 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the named fixtures are permanently cancelled or abandoned without official results or official statistics are retracted by the league, the market voids and all positions resolve equally.",
    "resolution_sources": [
-    "https://premierleague.com",
-    "https://bbc.com",
-    "https://skysports.com"
+    "https://www.premierleague.com"
    ],
    "books": {
     "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.05,
-       "size": 10.526315
-      }
-     ],
-     "last": 0.05
-    },
-    "no": {
      "bids": [
       {
-       "price": 0.95,
-       "size": 10.526315
+       "price": 0.65,
+       "size": 100.0
+      },
+      {
+       "price": 0.5,
+       "size": 20.0
       }
      ],
      "asks": [],
-     "last": 0.95
+     "last": 0.65
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.35,
+       "size": 100.0
+      },
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.35
     }
    }
   },
@@ -1424,9 +1444,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6316,
-    "low": 0.5316,
-    "high": 0.7316,
+    "p": 0.6349,
+    "low": 0.5349,
+    "high": 0.7349,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1443,7 +1463,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "8.2%",
+      "value": "8.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1453,7 +1473,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "13.1%",
+      "value": "13.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2616,72 +2636,52 @@
    }
   },
   {
-   "slug": "will-tottenham-score-at-least-3-goals-in-october-2-5449",
-   "title": "Will Tottenham score at least 3 goals in October 2026 Premier League matches?",
-   "url": "https://beta.xo.market/event/will-tottenham-score-at-least-3-goals-in-october-2-5449?r=cryptotan01",
+   "slug": "will-the-premier-league-announce-a-points-deductio-7531",
+   "title": "Will the Premier League announce a points deduction against Man City by 31 Oct 2026?",
+   "url": "https://beta.xo.market/event/will-the-premier-league-announce-a-points-deductio-7531?r=cryptotan01",
    "creator": "CryptoMokado",
    "is_ours": false,
-   "xo_price": 0.65,
-   "best_bid": 0.65,
-   "best_ask": null,
-   "liquidity_usd": 75.0,
+   "xo_price": 0.05,
+   "best_bid": null,
+   "best_ask": 0.05,
+   "liquidity_usd": 0.53,
    "volume_usd": 0,
-   "expires_at": "2026-11-01T00:00:00.000Z",
+   "expires_at": "2026-10-31T23:59:59.000Z",
    "group": "season",
    "fixture": null,
-   "fair": {
-    "p": 0.9106,
-    "low": 0.8106,
-    "high": 1,
-    "confidence": "low",
-    "method": "match_model",
-    "method_text": "Spurs score 3+ league goals in October. (4 fixtures)",
-    "inputs": [
-     {
-      "label": "Fixtures",
-      "value": "MUN-TOT, TOT-COV, CHE-TOT, TOT-CRY",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": 26,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "gap_pts": null,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
-   "pitch": "Yes. Home matches against Coventry and Palace, should help Spurs clear 3 goals or more across their 4 October fixtures",
-   "description": "This market resolves based on whether Tottenham Hotspur scores a cumulative total of at least 3 goals across their four scheduled Premier League matches in October 2026. Tottenham Hotspur four Premier League matches in October 2026: Manchester United (A), Coventry City (H), Chelsea (A), Crystal Palace (H)Goals scored in competitions other than the Premier League do not count. Matches played outside of the month of October 2026 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the named fixtures are permanently cancelled or abandoned without official results or official statistics are retracted by the league, the market voids and all positions resolve equally.",
+   "pitch": "No sanctions hearing date yet, a slow process, and a deduction isn't guaranteed. Oct 31 looks too soon.",
+   "description": "This market resolves based on whether The Premier League officially announces a points deduction against Manchester City on or before October 31, 2026. Financial penalties or sanctions that do not involve a direct points deduction do not count toward a Yes resolution. Primary source: Premier League (https://premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://bbc. com) or Sky Sports (https://skysports. com). The primary source governs. If The official Premier League proceedings are permanently cancelled or terminated without a ruling or The governing body officially retracts the announcement made prior to the cutoff, the market voids and all positions resolve equally.",
    "resolution_sources": [
-    "https://www.premierleague.com"
+    "https://premierleague.com",
+    "https://bbc.com",
+    "https://skysports.com"
    ],
    "books": {
     "yes": {
-     "bids": [
-      {
-       "price": 0.65,
-       "size": 100.0
-      },
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.65
-    },
-    "no": {
      "bids": [],
      "asks": [
       {
-       "price": 0.35,
-       "size": 100.0
-      },
-      {
-       "price": 0.5,
-       "size": 20.0
+       "price": 0.05,
+       "size": 10.526315
       }
      ],
-     "last": 0.35
+     "last": 0.05
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.95,
+       "size": 10.526315
+      }
+     ],
+     "asks": [],
+     "last": 0.95
     }
    }
   },
@@ -4239,9 +4239,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5362,
-    "low": 0.4362,
-    "high": 0.6362,
+    "p": 0.5388,
+    "low": 0.4388,
+    "high": 0.6388,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -4258,7 +4258,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "8.2%",
+      "value": "8.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -4268,7 +4268,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "13.1%",
+      "value": "13.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
