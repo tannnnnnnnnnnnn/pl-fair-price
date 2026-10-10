@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T23:29:43Z",
+ "generated_at": "2026-10-10T23:39:37Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -216,6 +216,62 @@
    }
   },
   {
+   "slug": "will-haaland-be-the-most-selected-captain-in-fpl-f-3778",
+   "title": "Will Haaland be the most selected Captain in FPL for Gameweek 6?",
+   "url": "https://beta.xo.market/event/will-haaland-be-the-most-selected-captain-in-fpl-f-3778?r=cryptotan01",
+   "creator": "TheBallQuant",
+   "is_ours": false,
+   "xo_price": 0.35,
+   "best_bid": 0.5,
+   "best_ask": null,
+   "liquidity_usd": 15.0,
+   "volume_usd": 10.0,
+   "expires_at": "2026-10-11T10:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "FPL publishes captaincy only after the deadline.",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Controversy rumbles on for Man City and Anfield away is next. However, Haaland is inevitable and managers will pick him",
+   "description": "This market resolves YES if Erling Haaland (FPL element ID 411) is the most captained player in Fantasy Premier League Gameweek 6 of the 2026/27 season, including if he ties for the highest captaincy percentage with one or more other players, and NO otherwise. Resolution source: the most_captained field for event ID 6 in the official FPL API (https://fantasy. premierleague. com/api/bootstrap-static/), checked 24 hours after the Gameweek 6 deadline (10 October 2026, 10:00 UTC). If the API is unavailable, the most captained player shown on fantasy. premierleague. com is used, followed by the official Fantasy Premier League X account (@OfficialFPL). Third-party sites, polls and estimates do not count. Trading closes at the Gameweek 6 deadline (10 October 2026, 10:00 UTC). If no official source has published the Gameweek 6 most captained player within 7 days of the deadline, the market is voided and settled under XO Market's standard void rules.",
+   "resolution_sources": [
+    "https://premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 10.0
+      },
+      {
+       "price": 0.35,
+       "size": 28.571428
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 10.0
+      },
+      {
+       "price": 0.65,
+       "size": 28.571428
+      }
+     ],
+     "last": 0.5
+    }
+   }
+  },
+  {
    "slug": "will-brighton-be-in-the-top-4-after-mw9-3814",
    "title": "Will Brighton be in the top 4 after MW9?",
    "url": "https://beta.xo.market/event/will-brighton-be-in-the-top-4-after-mw9-3814?r=cryptotan01",
@@ -358,62 +414,6 @@
       }
      ],
      "last": 0.62
-    }
-   }
-  },
-  {
-   "slug": "will-haaland-be-the-most-selected-captain-in-fpl-f-3778",
-   "title": "Will Haaland be the most selected Captain in FPL for Gameweek 6?",
-   "url": "https://beta.xo.market/event/will-haaland-be-the-most-selected-captain-in-fpl-f-3778?r=cryptotan01",
-   "creator": "TheBallQuant",
-   "is_ours": false,
-   "xo_price": 0.35,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 15.0,
-   "volume_usd": 0,
-   "expires_at": "2026-10-11T10:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "FPL publishes captaincy only after the deadline.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Controversy rumbles on for Man City and Anfield away is next. However, Haaland is inevitable and managers will pick him",
-   "description": "This market resolves YES if Erling Haaland (FPL element ID 411) is the most captained player in Fantasy Premier League Gameweek 6 of the 2026/27 season, including if he ties for the highest captaincy percentage with one or more other players, and NO otherwise. Resolution source: the most_captained field for event ID 6 in the official FPL API (https://fantasy. premierleague. com/api/bootstrap-static/), checked 24 hours after the Gameweek 6 deadline (10 October 2026, 10:00 UTC). If the API is unavailable, the most captained player shown on fantasy. premierleague. com is used, followed by the official Fantasy Premier League X account (@OfficialFPL). Third-party sites, polls and estimates do not count. Trading closes at the Gameweek 6 deadline (10 October 2026, 10:00 UTC). If no official source has published the Gameweek 6 most captained player within 7 days of the deadline, the market is voided and settled under XO Market's standard void rules.",
-   "resolution_sources": [
-    "https://premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 10.0
-      },
-      {
-       "price": 0.35,
-       "size": 28.571428
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 10.0
-      },
-      {
-       "price": 0.65,
-       "size": 28.571428
-      }
-     ],
-     "last": 0.5
     }
    }
   },
@@ -3582,16 +3582,16 @@
     "kickoff_utc": "2026-10-17T14:00:00Z"
    },
    "fair": {
-    "p": 0.2211,
-    "low": 0.1211,
-    "high": 0.3211,
+    "p": 0.2228,
+    "low": 0.1228,
+    "high": 0.3228,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "67.0%",
+      "value": "67.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
