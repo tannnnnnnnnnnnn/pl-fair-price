@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T14:24:25Z",
+ "generated_at": "2026-10-10T14:27:58Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -22,15 +22,15 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5946,
-    "low": 0.4946,
-    "high": 0.6946,
+    "p": 0.5735,
+    "low": 0.4735,
+    "high": 0.6734,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Palmer score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
     "inputs": [
      {
-      "label": "Palmer: xG 1.31, xA 0.86 in 457 min, 6/5 starts",
+      "label": "Palmer: xG 1.31, xA 0.86 in 466 min, 6/5 starts",
       "value": "25% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
@@ -47,7 +47,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 34,
+   "gap_pts": 32,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -212,9 +212,9 @@
    "creator": "aaditpatadia",
    "is_ours": false,
    "xo_price": 0.6,
-   "best_bid": 0.65,
-   "best_ask": 0.85,
-   "liquidity_usd": 160.0,
+   "best_bid": 0.5,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
    "volume_usd": 12.5,
    "expires_at": "2026-10-10T17:00:00.000Z",
    "group": "fixture",
@@ -263,40 +263,22 @@
     "yes": {
      "bids": [
       {
-       "price": 0.65,
-       "size": 100.0
-      },
-      {
        "price": 0.5,
        "size": 20.0
       }
      ],
-     "asks": [
-      {
-       "price": 0.85,
-       "size": 100.0
-      }
-     ],
-     "last": 0.75
+     "asks": [],
+     "last": 0.5
     },
     "no": {
-     "bids": [
-      {
-       "price": 0.15,
-       "size": 100.0
-      }
-     ],
+     "bids": [],
      "asks": [
-      {
-       "price": 0.35,
-       "size": 100.0
-      },
       {
        "price": 0.5,
        "size": 20.0
       }
      ],
-     "last": 0.25
+     "last": 0.5
     }
    }
   },
@@ -702,9 +684,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4274,
-    "low": 0.3275,
-    "high": 0.5274,
+    "p": 0.4087,
+    "low": 0.3086,
+    "high": 0.5087,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score in every October league match. (4 fixtures)",
@@ -717,7 +699,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 18,
+   "gap_pts": 16,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1062,9 +1044,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.101,
-    "low": 0.001,
-    "high": 0.201,
+    "p": 0.1068,
+    "low": 0.0068,
+    "high": 0.2068,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -1077,7 +1059,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 0,
+   "gap_pts": 1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1172,27 +1154,27 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5304,
-    "low": 0.4304,
-    "high": 0.6304,
+    "p": 0.5219,
+    "low": 0.4219,
+    "high": 0.6219,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
     "inputs": [
      {
-      "label": "Gonzalo: xG 2.33, xA 0.58 in 444 min, 6/5 starts",
+      "label": "Gonzalo: xG 2.33, xA 0.58 in 449 min, 6/5 starts",
       "value": "29% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "King: xG 1.54, xA 0.46 in 444 min, 6/5 starts",
+      "label": "King: xG 1.54, xA 0.46 in 449 min, 6/5 starts",
       "value": "14% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 8,
+   "gap_pts": 7,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1241,9 +1223,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.426,
-    "low": 0.366,
-    "high": 0.486,
+    "p": 0.4274,
+    "low": 0.3674,
+    "high": 0.4874,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1544,9 +1526,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2795,
-    "low": 0.1795,
-    "high": 0.3795,
+    "p": 0.2776,
+    "low": 0.1776,
+    "high": 0.3776,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1557,7 +1539,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Jo\u00e3o Pedro: xG 2.17, xA 0.19 in 375 min, 5/5 starts",
+      "label": "Jo\u00e3o Pedro: xG 2.17, xA 0.19 in 384 min, 5/5 starts",
       "value": "29% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -1738,9 +1720,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5786,
-    "low": 0.4786,
-    "high": 0.6785,
+    "p": 0.5726,
+    "low": 0.4726,
+    "high": 0.6725,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -1773,7 +1755,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 8,
+   "gap_pts": 7,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1939,9 +1921,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0622,
+    "p": 0.0629,
     "low": 0,
-    "high": 0.1623,
+    "high": 0.1629,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
@@ -2025,9 +2007,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4674,
-    "low": 0.3674,
-    "high": 0.5674,
+    "p": 0.4432,
+    "low": 0.3432,
+    "high": 0.5433,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO.",
@@ -2040,7 +2022,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 3,
+   "gap_pts": 0,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2229,7 +2211,7 @@
    "fair": {
     "p": 0.4541,
     "low": 0.3541,
-    "high": 0.5541,
+    "high": 0.5542,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2741,9 +2723,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5926,
-    "low": 0.4926,
-    "high": 0.6926,
+    "p": 0.5018,
+    "low": 0.4018,
+    "high": 0.6018,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Total goals across the 6 league games on 2026-10-10; needs 19+.",
@@ -2756,7 +2738,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 19,
+   "gap_pts": 10,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -2803,9 +2785,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2268,
-    "low": 0.1268,
-    "high": 0.3268,
+    "p": 0.2246,
+    "low": 0.1246,
+    "high": 0.3246,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Coventry score the fewest (or joint-fewest) league goals across MW6-9.",
@@ -2818,7 +2800,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -37,
+   "gap_pts": -38,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2977,15 +2959,15 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2737,
-    "low": 0.1736,
-    "high": 0.3737,
+    "p": 0.2637,
+    "low": 0.1637,
+    "high": 0.3638,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
     "inputs": [
      {
-      "label": "Gro\u00df: xG 1.77, xA 1.02 in 466 min, 6/5 starts",
+      "label": "Gro\u00df: xG 1.77, xA 1.02 in 474 min, 6/5 starts",
       "value": "8% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
@@ -3012,7 +2994,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -23,
+   "gap_pts": -24,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3326,9 +3308,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5133,
-    "low": 0.4133,
-    "high": 0.6133,
+    "p": 0.5104,
+    "low": 0.4104,
+    "high": 0.6104,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -3393,7 +3375,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season totals (Chelsea have conceded 12, Spurs have scored 2): 100%. only goals from now to 1 Nov: 48%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season totals (Chelsea have conceded 12, Spurs have scored 2): 100%. only goals from now to 1 Nov: 46%. They differ too much to show one number.",
    "gap_pts": null,
    "status": "ACTIVE",
    "horizon": "long",
@@ -3443,9 +3425,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4934,
+    "p": 0.4935,
     "low": 0.4335,
-    "high": 0.5534,
+    "high": 0.5535,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -3720,9 +3702,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3225,
-    "low": 0.2225,
-    "high": 0.4225,
+    "p": 0.3171,
+    "low": 0.2171,
+    "high": 0.4171,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES.",
@@ -3798,9 +3780,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4165,
-    "low": 0.3165,
-    "high": 0.5165,
+    "p": 0.4209,
+    "low": 0.3208,
+    "high": 0.5209,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -3971,8 +3953,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9759,
-    "low": 0.8759,
+    "p": 0.9737,
+    "low": 0.8737,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -3991,7 +3973,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 42,
+   "gap_pts": 41,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -4304,9 +4286,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.517,
-    "low": 0.417,
-    "high": 0.6169,
+    "p": 0.5192,
+    "low": 0.4192,
+    "high": 0.6192,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -4561,20 +4543,20 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3214,
-    "low": 0.2214,
-    "high": 0.4214,
+    "p": 0.3167,
+    "low": 0.2167,
+    "high": 0.4167,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-6. A tie counts as NO.",
     "inputs": [
      {
-      "label": "King: xG 1.54, xA 0.46 in 444 min, 6/5 starts",
+      "label": "King: xG 1.54, xA 0.46 in 449 min, 6/5 starts",
       "value": "14% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Gro\u00df: xG 1.77, xA 1.02 in 466 min, 6/5 starts",
+      "label": "Gro\u00df: xG 1.77, xA 1.02 in 474 min, 6/5 starts",
       "value": "8% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -4877,12 +4859,12 @@
   {
    "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
    "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
-   "fair": 0.426,
+   "fair": 0.4274,
    "side": "NO",
-   "ev": 0.6303,
-   "ev_low": -0.4808,
-   "ev_high": 1.7415,
-   "roi": 0.063,
+   "ev": 0.6044,
+   "ev_low": -0.5068,
+   "ev_high": 1.7156,
+   "roi": 0.0604,
    "buy_price": 0.53,
    "fillable": 10.0
   },
@@ -4901,12 +4883,12 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.4934,
+   "fair": 0.4935,
    "side": "YES",
-   "ev": 0.2535,
+   "ev": 0.2554,
    "ev_low": -0.8767,
-   "ev_high": 1.3856,
-   "roi": 0.028,
+   "ev_high": 1.3875,
+   "roi": 0.0282,
    "buy_price": 0.47,
    "fillable": 9.0559
   }
