@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-10T04:35:17Z)
+# VERIFY — PL Fair Price (2026-10-10T04:45:12Z)
 
 GW6 deadline 2026-10-10T10:00:00Z. 87 XO PL markets; 44 priced (high 4, medium 6, low 34).
 
@@ -6,20 +6,20 @@ GW6 deadline 2026-10-10T10:00:00Z. 87 XO PL markets; 44 priced (high 4, medium 6
 
 | Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|
-| ARS-LEE | 6 | 69.5/19.5/10.5 | 69.8/19.6/10.6 | 69.8/19.6/10.6 | 2.11-0.69 | $197,646 |
-| SUN-BHA | 6 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.7/27.6/41.7 | 1.16-1.40 | $243,473 |
+| ARS-LEE | 6 | 69.5/19.5/10.5 | 69.8/19.6/10.6 | 69.8/19.6/10.6 | 2.11-0.69 | $200,642 |
+| SUN-BHA | 6 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.7/27.6/41.7 | 1.16-1.40 | $244,882 |
 | IPS-FUL | 6 | 34.5/27.5/38.5 | 34.3/27.4/38.3 | 34.3/27.4/38.3 | 1.28-1.36 | $34,770 |
-| AVL-BRE | 6 | 35.5/26.5/37.5 | 35.7/26.6/37.7 | 35.7/26.6/37.7 | 1.36-1.41 | $26,383 |
-| CHE-BOU | 6 | 54.5/23.5/21.5 | 54.8/23.6/21.6 | 54.8/23.6/21.6 | 1.87-1.10 | $130,644 |
-| MUN-TOT | 6 | 56.5/22.5/21.5 | 56.2/22.4/21.4 | 56.2/22.4/21.4 | 2.01-1.18 | $120,827 |
+| AVL-BRE | 6 | 35.5/26.5/37.5 | 35.7/26.6/37.7 | 35.7/26.6/37.7 | 1.36-1.41 | $26,413 |
+| CHE-BOU | 6 | 54.5/23.5/21.5 | 54.8/23.6/21.6 | 54.8/23.6/21.6 | 1.87-1.10 | $135,366 |
+| MUN-TOT | 6 | 56.5/22.5/21.5 | 56.2/22.4/21.4 | 56.2/22.4/21.4 | 2.01-1.18 | $120,904 |
 | HUL-EVE | 6 | 26.5/28.5/45.5 | 26.4/28.4/45.3 | 26.4/28.4/45.3 | 1.00-1.39 | $37,303 |
 | CRY-NFO | 6 | 34.5/28.5/36.5 | 34.7/28.6/36.7 | 34.7/28.6/36.7 | 1.20-1.24 | $1,398 |
-| LIV-MCI | 6 | 32.5/25.5/42.5 | 32.3/25.4/42.3 | 32.3/25.4/42.3 | 1.37-1.60 | $90,139 |
+| LIV-MCI | 6 | 32.5/25.5/42.5 | 32.3/25.4/42.3 | 32.3/25.4/42.3 | 1.37-1.60 | $90,215 |
 | COV-NEW | 6 | 28.5/26.5/44.5 | 28.6/26.6/44.7 | 28.6/26.6/44.7 | 1.17-1.52 | $3,046 |
 | EVE-CHE | 7 | 33.5/25.5/42.0 | 33.2/25.2/41.6 | 33.2/25.2/41.6 | 1.41-1.60 | $425 |
 | BRE-LIV | 7 | 34.0/26.0/40.0 | 34.0/26.0/40.0 | 34.0/26.0/40.0 | 1.37-1.50 | $397 |
 | FUL-HUL | 7 | 57.0/23.0/19.0 | 57.6/23.2/19.2 | 57.6/23.2/19.2 | 1.89-1.01 | $23 |
-| MCI-IPS | 7 | 79.5/13.0/6.5 | 80.3/13.1/6.6 | 80.3/13.1/6.6 | 2.83-0.73 | $10,162 |
+| MCI-IPS | 7 | 79.5/13.0/6.5 | 80.3/13.1/6.6 | 80.3/13.1/6.6 | 2.83-0.73 | $10,888 |
 | NEW-AVL | 7 | 46.0/25.5/28.5 | 46.0/25.5/28.5 | 46.0/25.5/28.5 | 1.64-1.24 | $224 |
 | BHA-CRY | 7 | 59.0/22.0/18.5 | 59.3/22.1/18.6 | 59.3/22.1/18.6 | 2.02-1.05 | $2 |
 | BOU-SUN | 7 | 48.0/25.5/27.0 | 47.8/25.4/26.9 | 47.8/25.4/26.9 | 1.66-1.19 | $236 |
@@ -81,7 +81,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 40 | 33.3 | -7 | player_model | Haaland + Saka outscore Tottenham in EPL MW6? | Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES. |
 | low | 47 | 43.2 | -4 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES. |
 | medium | 22 | 8.5 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 54.2 | 21 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 54.6 | 22 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 68.6 | 19 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 40 | 33.8 | -6 | match_model | Will 19+ goals be scored across all Premier League games on 10th October 2026? | Total goals across the 6 league games on 2026-10-10; needs 19+. |
 | low | 24 | 38.6 | 15 | match_model | Will Arsenal fail to score a First-Half goal this Matchweek? | Chance Arsenal don't score before half-time, assuming 45% of goals come in the first half. |
@@ -109,7 +109,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 55 | 54.9 | 0 | match_model | Will Man United earn more PL points than Spurs in Matchweeks 6–9? | Man Utd take more league points than Spurs in MW6-9. A tie counts as NO. |
 | low | 35 | 19.2 | -16 | match_model | Will Man Utd vs Spurs be the lowest-scoring game of the day? | Two readings: joint-lowest of the 6 games that day counts: 19%. only the strict lowest counts: 7%. We show the first, at low confidence. |
 | low | 50 | 44.3 | -6 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
-| low | 5 | 63.2 | 58 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 62.9 | 58 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 16.5 | -34 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
 | low | 9 | 2.6 | -6 | player_model | Will Martin Ødegaard record a G/A in each of Arsenal's next three PL matches from Oct. 10? | Chance Ødegaard score or assist in each of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come fr |
 | low | 50 | 87.9 | 38 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
