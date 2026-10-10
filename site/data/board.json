@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T22:39:21Z",
+ "generated_at": "2026-10-10T22:49:20Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -142,7 +142,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($105,868 traded)",
+      "label": "Polymarket Liverpool v Man City ($132,591 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -1221,9 +1221,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.622,
-    "low": 0.522,
-    "high": 0.722,
+    "p": 0.6203,
+    "low": 0.5203,
+    "high": 0.7203,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1240,7 +1240,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "8.5%",
+      "value": "8.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1250,7 +1250,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "12.2%",
+      "value": "12.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1890,6 +1890,56 @@
    }
   },
   {
+   "slug": "will-fulham-earn-more-pl-points-than-chelsea-in-mw-1335",
+   "title": "Will Fulham earn more PL points than Chelsea in MW6\u20139?",
+   "url": "https://beta.xo.market/event/will-fulham-earn-more-pl-points-than-chelsea-in-mw-1335?r=cryptotan01",
+   "creator": "OmarABKH89",
+   "is_ours": false,
+   "xo_price": 0.35,
+   "best_bid": 0.35,
+   "best_ask": null,
+   "liquidity_usd": 35.2,
+   "volume_usd": 0,
+   "expires_at": "2026-11-02T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "An easier fixture list for Fulham. Injury concerns and most goals conceded in the league by Chelsea. I'm backing YES",
+   "description": "This market resolves based on whether Fulham earns more Premier League points than Chelsea across Matchweeks 6 to 9 of the 2026/27 season, based on official match results. Points earned outside of Matchweeks 6 through 9 do not count toward this comparison. Matches played in other competitions such as domestic cups or European tournaments are excluded. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season or the specific matchweeks are permanently cancelled or abandoned without official records, or either club is expelled or withdrawn from the Premier League competition during the specified matchweeks, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.fulhamfc.com",
+    "https://www.chelseafc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.35,
+       "size": 100.571428
+      }
+     ],
+     "asks": [],
+     "last": 0.35
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.65,
+       "size": 100.571428
+      }
+     ],
+     "last": 0.65
+    }
+   }
+  },
+  {
    "slug": "will-any-premier-league-team-win-with-under-30-pos-1858",
    "title": "Will any Premier League team win with under 30% possession in Matchday 6 or 7?",
    "url": "https://beta.xo.market/event/will-any-premier-league-team-win-with-under-30-pos-1858?r=cryptotan01",
@@ -1954,56 +2004,6 @@
    }
   },
   {
-   "slug": "will-fulham-earn-more-pl-points-than-chelsea-in-mw-1335",
-   "title": "Will Fulham earn more PL points than Chelsea in MW6\u20139?",
-   "url": "https://beta.xo.market/event/will-fulham-earn-more-pl-points-than-chelsea-in-mw-1335?r=cryptotan01",
-   "creator": "OmarABKH89",
-   "is_ours": false,
-   "xo_price": 0.35,
-   "best_bid": 0.35,
-   "best_ask": null,
-   "liquidity_usd": 35.2,
-   "volume_usd": 0,
-   "expires_at": "2026-11-02T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "An easier fixture list for Fulham. Injury concerns and most goals conceded in the league by Chelsea. I'm backing YES",
-   "description": "This market resolves based on whether Fulham earns more Premier League points than Chelsea across Matchweeks 6 to 9 of the 2026/27 season, based on official match results. Points earned outside of Matchweeks 6 through 9 do not count toward this comparison. Matches played in other competitions such as domestic cups or European tournaments are excluded. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season or the specific matchweeks are permanently cancelled or abandoned without official records, or either club is expelled or withdrawn from the Premier League competition during the specified matchweeks, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.fulhamfc.com",
-    "https://www.chelseafc.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.35,
-       "size": 100.571428
-      }
-     ],
-     "asks": [],
-     "last": 0.35
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.65,
-       "size": 100.571428
-      }
-     ],
-     "last": 0.65
-    }
-   }
-  },
-  {
    "slug": "will-erling-haaland-score-vs-liverpool-on-october--3762",
    "title": "Will Erling Haaland score vs Liverpool on October 11, 2026?",
    "url": "https://beta.xo.market/event/will-erling-haaland-score-vs-liverpool-on-october--3762?r=cryptotan01",
@@ -2031,7 +2031,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($105,868 traded)",
+      "label": "Polymarket Liverpool v Man City ($132,591 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -2863,7 +2863,7 @@
    "url": "https://beta.xo.market/event/will-coventry-be-above-tottenham-in-the-premier-le-3599?r=cryptotan01",
    "creator": "chiefduc",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.44,
    "best_bid": 0.44,
    "best_ask": null,
    "liquidity_usd": 10.0,
@@ -2893,7 +2893,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -17,
+   "gap_pts": -11,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2999,7 +2999,7 @@
    "url": "https://beta.xo.market/event/will-chelsea-concede-more-premier-league-goals-tha-9396?r=cryptotan01",
    "creator": "xouser58646",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.55,
    "best_bid": 0.55,
    "best_ask": null,
    "liquidity_usd": 10.0,
@@ -3049,7 +3049,7 @@
    "url": "https://beta.xo.market/event/will-tottenham-be-in-the-premier-league-bottom-thr-3501?r=cryptotan01",
    "creator": "CryptoTan01",
    "is_ours": true,
-   "xo_price": 0.5,
+   "xo_price": 0.47,
    "best_bid": null,
    "best_ask": 0.47,
    "liquidity_usd": 8.87,
@@ -3073,7 +3073,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -8,
+   "gap_pts": -5,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3112,7 +3112,7 @@
    "url": "https://beta.xo.market/event/will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898?r=cryptotan01",
    "creator": "0xshrdlu",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.33,
    "best_bid": 0.33,
    "best_ask": null,
    "liquidity_usd": 10.0,
@@ -3160,7 +3160,7 @@
    "url": "https://beta.xo.market/event/will-arsenal-win-the-202627-premier-league-9148?r=cryptotan01",
    "creator": "Cyberflems",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.46,
    "best_bid": 0.42,
    "best_ask": 0.98,
    "liquidity_usd": 4945.69,
@@ -3184,7 +3184,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 12,
+   "gap_pts": 16,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3233,7 +3233,7 @@
    "url": "https://beta.xo.market/event/manchester-city-over-20-points-docked-in-202627-se-4746?r=cryptotan01",
    "creator": "CryptoTan01",
    "is_ours": true,
-   "xo_price": 0.5,
+   "xo_price": 0.33,
    "best_bid": null,
    "best_ask": 0.33,
    "liquidity_usd": 4.93,
@@ -3242,9 +3242,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5243,
-    "low": 0.4243,
-    "high": 0.6243,
+    "p": 0.5262,
+    "low": 0.4262,
+    "high": 0.6262,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3261,7 +3261,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "8.5%",
+      "value": "8.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3271,7 +3271,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "12.2%",
+      "value": "12.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3287,7 +3287,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 2,
+   "gap_pts": 20,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3326,7 +3326,7 @@
    "url": "https://beta.xo.market/event/haaland-will-score-more-goals-than-tottenham-hotsp-9602?r=cryptotan01",
    "creator": "0xshrdlu",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.47,
    "best_bid": null,
    "best_ask": 0.78,
    "liquidity_usd": 3.9,
@@ -3355,7 +3355,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -4,
+   "gap_pts": -1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3393,7 +3393,7 @@
    "url": "https://beta.xo.market/event/will-tottenham-miss-their-next-penalty-1947?r=cryptotan01",
    "creator": "0xshrdlu",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.57,
    "best_bid": null,
    "best_ask": 0.57,
    "liquidity_usd": 26.51,
@@ -3442,7 +3442,7 @@
    "url": "https://beta.xo.market/event/luke-shaw-injury-within-2-weeks-of-gta-vi-launch-9286?r=cryptotan01",
    "creator": "0xshrdlu",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.27,
    "best_bid": 0.03,
    "best_ask": null,
    "liquidity_usd": 21.5,
@@ -3499,7 +3499,7 @@
    "url": "https://beta.xo.market/event/erling-haaland-vs-bruno-fernandes-more-premier-lea-5450?r=cryptotan01",
    "creator": "Ubik_0",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.56,
    "best_bid": 0.56,
    "best_ask": null,
    "liquidity_usd": 30.0,
@@ -3528,7 +3528,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 49,
+   "gap_pts": 43,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3567,7 +3567,7 @@
    "url": "https://beta.xo.market/event/will-both-ipswich-town-and-coventry-city-be-relega-5411?r=cryptotan01",
    "creator": "just_LilPochita",
    "is_ours": false,
-   "xo_price": 0.5,
+   "xo_price": 0.55,
    "best_bid": 0.55,
    "best_ask": null,
    "liquidity_usd": 20.0,
@@ -3582,16 +3582,16 @@
     "kickoff_utc": "2026-10-17T14:00:00Z"
    },
    "fair": {
-    "p": 0.2211,
-    "low": 0.1211,
-    "high": 0.3211,
+    "p": 0.2228,
+    "low": 0.1228,
+    "high": 0.3228,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "67.0%",
+      "value": "67.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -3602,7 +3602,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -28,
+   "gap_pts": -33,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3768,22 +3768,22 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.839,
-    "low": 0.739,
-    "high": 0.939,
+    "p": 0.849,
+    "low": 0.749,
+    "high": 0.949,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "16.1% (spread 22c, $621 traded on this market)",
+      "value": "15.1% (spread 20c, $621 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 34,
+   "gap_pts": 35,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3841,7 +3841,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/pipeline/ref/captain_odds.json"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($105,868 traded)",
+      "label": "Polymarket Liverpool v Man City ($132,591 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
