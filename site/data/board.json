@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T21:19:08Z",
+ "generated_at": "2026-10-10T21:29:36Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -1221,9 +1221,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6244,
-    "low": 0.5244,
-    "high": 0.7244,
+    "p": 0.6234,
+    "low": 0.5234,
+    "high": 0.7234,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1240,7 +1240,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "8.8%",
+      "value": "8.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1250,7 +1250,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "12.4%",
+      "value": "12.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3242,9 +3242,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5236,
-    "low": 0.4236,
-    "high": 0.6236,
+    "p": 0.524,
+    "low": 0.424,
+    "high": 0.624,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3261,7 +3261,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "8.8%",
+      "value": "8.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3271,7 +3271,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "12.4%",
+      "value": "12.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3321,84 +3321,6 @@
    }
   },
   {
-   "slug": "haaland-saka-outscore-tottenham-in-epl-mw6-1027",
-   "title": "Haaland + Saka outscore Tottenham in EPL MW6?",
-   "url": "https://beta.xo.market/event/haaland-saka-outscore-tottenham-in-epl-mw6-1027?r=cryptotan01",
-   "creator": "just_LilPochita",
-   "is_ours": false,
-   "xo_price": 0.4,
-   "best_bid": 0.4,
-   "best_ask": null,
-   "liquidity_usd": 9.33,
-   "volume_usd": 1.67,
-   "expires_at": "2026-10-12T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.2647,
-    "low": 0.1647,
-    "high": 0.3647,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES.",
-    "inputs": [
-     {
-      "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
-      "value": "42% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Saka: xG 3.63, xA 1.04 in 506 min, 6/5 starts",
-      "value": "20% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Man Utd v Spurs",
-      "value": "team ratings (no Polymarket market yet)",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     },
-     {
-      "label": "Model expected goals MUN-TOT",
-      "value": "1.46-1.00",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "gap_pts": -14,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Haaland + Saka outscore Tottenham in EPL MW6?",
-   "description": "This market resolves based on whether the combined goals scored by Erling Haaland and Bukayo Saka in Premier League Matchweek 6 is greater than the total goals scored by Tottenham Hotspur in Matchweek 6 (October 10\u201312, 2026). Goals scored in competitions other than the English Premier League are excluded. Penalty shootouts are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport Football (https://www. bbc. com/sport/football). If the Premier League Matchweek 6 fixtures involving Manchester City, Arsenal, or Tottenham Hotspur are abandoned or not completed, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.com/sport/football"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.4,
-       "size": 23.333335
-      }
-     ],
-     "asks": [],
-     "last": 0.4
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.6,
-       "size": 23.333335
-      }
-     ],
-     "last": 0.6
-    }
-   }
-  },
-  {
    "slug": "haaland-will-score-more-goals-than-tottenham-hotsp-9602",
    "title": "Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026?",
    "url": "https://beta.xo.market/event/haaland-will-score-more-goals-than-tottenham-hotsp-9602?r=cryptotan01",
@@ -3413,9 +3335,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4707,
-    "low": 0.3707,
-    "high": 0.5706,
+    "p": 0.4676,
+    "low": 0.3676,
+    "high": 0.5676,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 5) vs Spurs (now 2). Strictly more counts as YES.",
@@ -3660,16 +3582,16 @@
     "kickoff_utc": "2026-10-17T14:00:00Z"
    },
    "fair": {
-    "p": 0.2228,
-    "low": 0.1228,
-    "high": 0.3228,
+    "p": 0.2211,
+    "low": 0.1211,
+    "high": 0.3211,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "67.5%",
+      "value": "67.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -3969,9 +3891,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.165,
-    "low": 0.065,
-    "high": 0.265,
+    "p": 0.1628,
+    "low": 0.0628,
+    "high": 0.2629,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-6. A tie counts as NO.",
@@ -4093,6 +4015,74 @@
    "resolution_sources": [
     "https://www.premierleague.com",
     "https://www.bbc.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
+  },
+  {
+   "slug": "haaland-saka-outscore-tottenham-in-epl-mw6-1027",
+   "title": "Haaland + Saka outscore Tottenham in EPL MW6?",
+   "url": "https://beta.xo.market/event/haaland-saka-outscore-tottenham-in-epl-mw6-1027?r=cryptotan01",
+   "creator": "just_LilPochita",
+   "is_ours": false,
+   "xo_price": 0.4,
+   "best_bid": null,
+   "best_ask": null,
+   "liquidity_usd": 0,
+   "volume_usd": 25.0,
+   "expires_at": "2026-10-12T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.2631,
+    "low": 0.1631,
+    "high": 0.3631,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Haaland's and Saka's GW6 goals combined vs Spurs' GW6 goals; strictly more counts as YES.",
+    "inputs": [
+     {
+      "label": "Haaland: xG 4.42, xA 0.53 in 450 min, 5/5 starts",
+      "value": "42% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Saka: xG 3.63, xA 1.04 in 506 min, 6/5 starts",
+      "value": "20% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Man Utd v Spurs",
+      "value": "team ratings (no Polymarket market yet)",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     },
+     {
+      "label": "Model expected goals MUN-TOT",
+      "value": "1.46-1.00",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "gap_pts": -14,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Haaland + Saka outscore Tottenham in EPL MW6?",
+   "description": "This market resolves based on whether the combined goals scored by Erling Haaland and Bukayo Saka in Premier League Matchweek 6 is greater than the total goals scored by Tottenham Hotspur in Matchweek 6 (October 10\u201312, 2026). Goals scored in competitions other than the English Premier League are excluded. Penalty shootouts are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport Football (https://www. bbc. com/sport/football). If the Premier League Matchweek 6 fixtures involving Manchester City, Arsenal, or Tottenham Hotspur are abandoned or not completed, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport/football"
    ],
    "books": {
     "yes": {
