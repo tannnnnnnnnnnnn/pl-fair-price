@@ -158,6 +158,8 @@ def pprice(m):
 
 poly = load("poly_events.json")
 POLY_EV = {e["title"]: e for e in poly}
+# In-play prices already include the score, and the live sim adds the score again; fit pre-match odds only.
+STARTED = {(TEAMS[x["team_h"]], TEAMS[x["team_a"]]) for x in fixtures if x.get("started")}
 odds = {}
 for e in poly:
     t = e["title"]
@@ -165,7 +167,7 @@ for e in poly:
         continue
     hn, an = (s.strip() for s in t.split(" vs. "))
     h, a = code(hn), code(an)
-    if not h or not a or h not in SHORT or a not in SHORT:
+    if not h or not a or h not in SHORT or a not in SHORT or (h, a) in STARTED:
         continue
     got = {}
     for m in e["markets"]:
