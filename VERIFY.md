@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-10T21:09:04Z)
+# VERIFY — PL Fair Price (2026-10-10T21:19:08Z)
 
 GW7 deadline 2026-10-17T10:00:00Z. 70 XO PL markets; 34 priced (high 1, medium 5, low 28).
 
@@ -6,9 +6,9 @@ GW7 deadline 2026-10-17T10:00:00Z. 70 XO PL markets; 34 priced (high 1, medium 5
 
 | Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|
-| HUL-EVE | 6 | 26.5/28.5/45.5 | 26.4/28.4/45.3 | 26.4/28.4/45.3 | 1.00-1.39 | $39,764 |
-| CRY-NFO | 6 | 34.5/28.5/37.5 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 1.21-1.27 | $2,513 |
-| LIV-MCI | 6 | 31.5/25.5/42.5 | 31.7/25.6/42.7 | 31.7/25.6/42.7 | 1.33-1.58 | $102,309 |
+| HUL-EVE | 6 | 26.5/28.5/45.5 | 26.4/28.4/45.3 | 26.4/28.4/45.3 | 1.00-1.39 | $40,335 |
+| CRY-NFO | 6 | 34.5/28.5/37.5 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 1.21-1.27 | $2,542 |
+| LIV-MCI | 6 | 31.5/25.5/42.5 | 31.7/25.6/42.7 | 31.7/25.6/42.7 | 1.33-1.58 | $102,603 |
 | COV-NEW | 6 | 29.5/26.5/44.5 | 29.4/26.4/44.3 | 29.4/26.4/44.3 | 1.21-1.54 | $4,101 |
 | EVE-CHE | 7 | 30.5/25.5/44.0 | 30.5/25.5/44.0 | 30.5/25.5/44.0 | 1.31-1.61 | $652 |
 | BRE-LIV | 7 | 35.5/26.0/38.5 | 35.5/26.0/38.5 | 35.5/26.0/38.5 | 1.41-1.48 | $454 |
@@ -17,7 +17,7 @@ GW7 deadline 2026-10-17T10:00:00Z. 70 XO PL markets; 34 priced (high 1, medium 5
 | NEW-AVL | 7 | 45.5/25.0/29.5 | 45.5/25.0/29.5 | 45.5/25.0/29.5 | 1.68-1.31 | $253 |
 | BHA-CRY | 7 | 61.0/22.0/17.5 | 60.7/21.9/17.4 | 60.7/21.9/17.4 | 2.03-1.00 | $364 |
 | BOU-SUN | 7 | 47.0/26.5/26.5 | 47.0/26.5/26.5 | 47.0/26.5/26.5 | 1.55-1.11 | $325 |
-| LEE-MUN | 7 | 38.0/26.5/35.5 | 38.0/26.5/35.5 | 38.0/26.5/35.5 | 1.42-1.37 | $808 |
+| LEE-MUN | 7 | 38.0/26.5/35.5 | 38.0/26.5/35.5 | 38.0/26.5/35.5 | 1.42-1.37 | $829 |
 | NFO-ARS | 7 | 15.5/24.5/62.0 | 15.2/24.0/60.8 | 15.2/24.0/60.8 | 0.76-1.76 | $2,743 |
 | TOT-COV | 7 | 65.5/20.5/14.0 | 65.5/20.5/14.0 | 65.5/20.5/14.0 | 2.12-0.88 | $246 |
 | IPS-NFO | 8 | 34.0/28.0/38.0 | 34.0/28.0/38.0 | 34.0/28.0/38.0 | 1.23-1.31 | $0 |
@@ -103,7 +103,7 @@ qg 0.416, qa 0.051, plays 0.95; xG 4.42, xA 0.53, 450 min, 5/5 starts.
 | low | 65 | 92.8 | 28 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
 | low | 66 | 26.5 | -40 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 6.5 | -4 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
-| low | 55 | 22.1 | -33 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 22.3 | -33 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 37 | - |  | - | Arsenal < 1.20 combined xG conceded vs Leeds & Forest? | Fair price coming: not modelled yet. |
 | - | 40 | - |  | - | Arsenal managed 2.32 xG vs Leeds. Can Man City do better against Liverpool? | Fair price coming: not modelled yet. |
 | - | 57 | - |  | - | Both teams to score before two-goal lead in Liverpool vs Man City? | Depends on the order of goals, which our model doesn't track. |

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T21:09:04Z",
+ "generated_at": "2026-10-10T21:19:08Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -142,7 +142,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($102,309 traded)",
+      "label": "Polymarket Liverpool v Man City ($102,603 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -1221,9 +1221,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6242,
-    "low": 0.5242,
-    "high": 0.7242,
+    "p": 0.6244,
+    "low": 0.5244,
+    "high": 0.7244,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1726,8 +1726,8 @@
    "xo_price": 0.425,
    "best_bid": 0.4,
    "best_ask": 0.45,
-   "liquidity_usd": 3.66,
-   "volume_usd": 30.98,
+   "liquidity_usd": 1.92,
+   "volume_usd": 34.85,
    "expires_at": "2026-10-25T22:00:00.000Z",
    "group": "season",
    "fixture": null,
@@ -1767,7 +1767,7 @@
      "asks": [
       {
        "price": 0.45,
-       "size": 6.66667
+       "size": 2.800007
       }
      ],
      "last": 0.425
@@ -1776,7 +1776,7 @@
      "bids": [
       {
        "price": 0.55,
-       "size": 6.66667
+       "size": 2.800007
       }
      ],
      "asks": [
@@ -2031,7 +2031,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($102,309 traded)",
+      "label": "Polymarket Liverpool v Man City ($102,603 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
@@ -3242,9 +3242,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5239,
-    "low": 0.4239,
-    "high": 0.6239,
+    "p": 0.5236,
+    "low": 0.4236,
+    "high": 0.6236,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3660,16 +3660,16 @@
     "kickoff_utc": "2026-10-17T14:00:00Z"
    },
    "fair": {
-    "p": 0.2211,
-    "low": 0.1211,
-    "high": 0.3211,
+    "p": 0.2228,
+    "low": 0.1228,
+    "high": 0.3228,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "67.0%",
+      "value": "67.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -3919,7 +3919,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/pipeline/ref/captain_odds.json"
      },
      {
-      "label": "Polymarket Liverpool v Man City ($102,309 traded)",
+      "label": "Polymarket Liverpool v Man City ($102,603 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-liv-mac-2026-10-11"
      },
