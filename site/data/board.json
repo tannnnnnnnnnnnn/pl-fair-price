@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T19:38:58Z",
+ "generated_at": "2026-10-10T19:48:51Z",
  "name": "PL Fair Price",
  "tagline": "What every Premier League market on XO should cost, priced from the markets with real money.",
  "gw": {
@@ -13,10 +13,10 @@
    "url": "https://beta.xo.market/event/will-joelinton-play-30-minutes-at-coventry-on-mond-5857?r=cryptotan01",
    "creator": "EmilOnTheBall",
    "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
+   "xo_price": 0.475,
+   "best_bid": 0.45,
    "best_ask": 0.5,
-   "liquidity_usd": 10.0,
+   "liquidity_usd": 14.5,
    "volume_usd": 0,
    "expires_at": "2026-10-12T17:45:00.000Z",
    "group": "season",
@@ -35,14 +35,19 @@
    ],
    "books": {
     "yes": {
-     "bids": [],
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 10.0
+      }
+     ],
      "asks": [
       {
        "price": 0.5,
        "size": 20.0
       }
      ],
-     "last": 0.5
+     "last": 0.475
     },
     "no": {
      "bids": [
@@ -51,8 +56,13 @@
        "size": 20.0
       }
      ],
-     "asks": [],
-     "last": 0.5
+     "asks": [
+      {
+       "price": 0.55,
+       "size": 10.0
+      }
+     ],
+     "last": 0.525
     }
    }
   },
@@ -1196,9 +1206,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.624,
-    "low": 0.524,
-    "high": 0.724,
+    "p": 0.6263,
+    "low": 0.5263,
+    "high": 0.7263,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1215,7 +1225,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "8.6%",
+      "value": "9.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1241,7 +1251,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 57,
+   "gap_pts": 58,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1339,9 +1349,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0977,
-    "low": 0,
-    "high": 0.1976,
+    "p": 0.1019,
+    "low": 0.0019,
+    "high": 0.202,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1352,7 +1362,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Jo\u00e3o Pedro: xG 2.75, xA 0.21 in 431 min, 5/5 starts",
+      "label": "Jo\u00e3o Pedro: xG 2.77, xA 0.29 in 431 min, 5/5 starts",
       "value": "32% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -1543,9 +1553,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5236,
-    "low": 0.4236,
-    "high": 0.6236,
+    "p": 0.5194,
+    "low": 0.4194,
+    "high": 0.6194,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -1563,7 +1573,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": -5,
+   "gap_pts": -6,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1621,9 +1631,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5738,
-    "low": 0.4738,
-    "high": 0.6738,
+    "p": 0.5741,
+    "low": 0.4741,
+    "high": 0.6741,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2024,9 +2034,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4617,
-    "low": 0.3617,
-    "high": 0.5617,
+    "p": 0.461,
+    "low": 0.361,
+    "high": 0.561,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 1+ of the next 1 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -3184,7 +3194,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "62.5% (spread 1c, $1,186,933 traded on this market)",
+      "value": "62.5% (spread 1c, $1,186,935 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -3248,9 +3258,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5261,
-    "low": 0.4261,
-    "high": 0.6261,
+    "p": 0.5229,
+    "low": 0.4229,
+    "high": 0.6229,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -3267,7 +3277,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "8.6%",
+      "value": "9.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3293,7 +3303,7 @@
     ]
    },
    "fair_reason": null,
-   "gap_pts": 20,
+   "gap_pts": 19,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3852,22 +3862,22 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.839,
-    "low": 0.739,
-    "high": 0.939,
+    "p": 0.849,
+    "low": 0.749,
+    "high": 0.949,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "16.1% (spread 22c, $621 traded on this market)",
+      "value": "15.1% (spread 20c, $621 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
-   "gap_pts": 34,
+   "gap_pts": 35,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
