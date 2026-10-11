@@ -391,12 +391,12 @@ function startPolling() {
 const BANKROLL = 1000, KELLY = 0.25, CAP = 0.05, FEE = 0.04;
 const BAND = { high: 0.03, medium: 0.06, low: 0.10 };  // same as the engine
 const ret = (x) => `${x >= 0 ? '+' : '−'}${Math.round(Math.abs(x) * 100)}%`;
-function sizeBet(ours, cost, conf, won, most = Infinity) {
+function sizeBet(ours, cost, conf, won) {
   const p = ours - (BAND[conf] || BAND.low);
   // like PolymarketAI: no bet when the cautious edge is under 2 points
   if (p - cost < 0.02 || cost <= 0 || cost >= 1) return { bet: false, cautious: p };
   const f = (p - cost) / (1 - cost);
-  const stake = Math.min(BANKROLL * Math.min(KELLY * f, CAP), most);
+  const stake = BANKROLL * Math.min(KELLY * f, CAP);
   return { bet: true, cautious: p, stake, capped: KELLY * f > CAP, pnl: won ? stake * (1 / cost - 1) : -stake };
 }
 function callFor(r) {
@@ -413,40 +413,10 @@ function renderReceipts() {
   const sec = document.getElementById('receipts');
   const all = (state.board.receipts || []).filter((r) => r && (r.outcome === 'YES' || r.outcome === 'NO'));
   const rows = all.filter((r) => num(r.xo_close) !== null && num(r.fair_close) !== null);
-  const picks = all.flatMap((r) => (r.picks || []).map((p) => ({ r, p })));
-  sec.hidden = !rows.length && !picks.length;
+  sec.hidden = !rows.length;
   if (sec.hidden) return;
   const slot = document.getElementById('rc-deek-slot');
   if (slot) slot.replaceWith(h('img', { class: 'rc-deek', src: 'assets/deek/deek-receipts.webp', width: 60, height: 80, alt: '', decoding: 'async' }));
-
-  const ps = state.board.pick_summary;
-  const day = (iso) => new Date(iso).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
-  document.getElementById('rc-picks').replaceChildren(...(picks.length && ps ? [
-    h('h3', { class: 'rc-sub', text: 'Best value picks' }),
-    ...(() => {
-      // a pick's cost per share is what $10 really paid, fee included
-      const sized = picks.map(({ r, p }) => ({ r, p, ours: p.side === 'YES' ? p.fair : 1 - p.fair,
-        // when $10 emptied the order book, that is all the stake could have filled
-        ...sizeBet(p.side === 'YES' ? p.fair : 1 - p.fair, p.cost / p.shares, p.confidence || r.confidence, p.won, p.cost < 9.99 ? p.cost : Infinity) }));
-      const t = totals(sized.filter((x) => x.bet));
-      const skipped = sized.length - t.n;
-      return [
-        h('p', { class: 'rc-line', text: t.n ? `${money(t.pnl, true)} on a $1,000 bankroll (${ret(t.pnl / BANKROLL)})` : 'No settled bets yet' }),
-        h('p', { class: 'rc-note', text: [
-          t.n ? `${t.won} of ${t.n} bets won, staking ${money(t.staked)}.` : null,
-          skipped ? `${skipped} settled pick${skipped === 1 ? ' was' : 's were'} too close to bet.` : null,
-          ps.open ? `${ps.open} still open.` : null,
-          'A pick is the first time a market and side made Best value, sized with the rule below.'].filter(Boolean).join(' ') }),
-        h('div', { class: 'list' }, ...sized.map((x) => h('article', { class: 'rcard' },
-          h('div', { class: 'rc-main' },
-            h('h3', { class: 'q' }, marketLink(x.r, 'market-title')),
-            h('p', { class: 'rc-text', text: `On ${day(x.p.flagged_at)} we flagged ${x.p.side} at ${pct(x.p.buy_price)}. Our price ${pct(x.ours)}, an edge of ${Math.round((x.ours - x.p.buy_price) * 100)} pts.` }),
-            h('p', { class: 'rc-text' }, h('b', { text: `Result: ${x.r.outcome}.` }),
-              x.bet ? ` Stake ${money(x.stake)}, ${x.pnl > 0 ? 'won' : 'lost'} ${money(Math.abs(x.pnl))}.` : ' Too small an edge to stake.')),
-          h('span', { class: 'outcome ' + (!x.bet ? 'flat' : x.pnl > 0 ? 'yes' : 'no'), text: x.bet ? money(x.pnl, true) : 'No bet' })))),
-      ];
-    })(),
-  ] : []));
 
   const calls = rows.map((r) => ({ r, c: callFor(r) }));
   const t = totals(calls.filter((x) => x.c.bet).map((x) => x.c));
