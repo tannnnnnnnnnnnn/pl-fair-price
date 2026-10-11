@@ -111,7 +111,7 @@ def stake_result(stake, side, asks, fee_base, fair):
         f, lo, hi = 1 - f, 1 - hi, 1 - lo
     return dict(side=side.upper(), ev=shares * f - cost, ev_low=shares * lo - cost,
                 ev_high=shares * hi - cost, roi=(shares * f - cost) / cost if cost else 0,
-                buy_price=fill_cost / shares if shares else None, fillable=cost)
+                buy_price=fill_cost / shares if shares else None, fillable=cost, shares=shares)
 
 
 # ---------------------------------------------------------------- FPL data
@@ -121,17 +121,46 @@ TNAME = {t["short_name"]: t["name"] for t in boot["teams"]}
 SHORT = sorted(TEAMS.values())
 NEXT = next(e for e in boot["events"] if e["is_next"])
 GW, DEADLINE = NEXT["id"], ts(NEXT["deadline_time"])
-done = [x for x in fixtures if x["finished"]]
-todo = sorted((x for x in fixtures if not x["finished"] and x["kickoff_time"] and x["event"]),
+# FPL sets "finished" only once bonus is confirmed, often a day later; the provisional flag comes at full time.
+fin = lambda x: bool(x["finished"] or x.get("finished_provisional"))
+CUR = next((e for e in boot["events"] if e["is_current"]), None)
+# FPL's "next" gameweek flips at the deadline; the board stays on the gameweek being played until its last match ends.
+BGW = CUR["id"] if CUR and any(not fin(x) for x in fixtures if x["event"] == CUR["id"]) else GW
+# XO trial markets opened in the break before GW6, so windowed markets ("in October", "next 4") count from GW6.
+# Finished matches from GW6 on stay in the simulation as fixed results; `table` holds only what came before.
+FIRST_GW = 6
+done = [x for x in fixtures if fin(x)]
+todo = sorted((x for x in fixtures if x["kickoff_time"] and x["event"] and (not fin(x) or x["event"] >= FIRST_GW)),
               key=lambda x: x["kickoff_time"])
 
-table = {s: dict(p=0, w=0, pts=0, gf=0, ga=0) for s in SHORT}
-for x in done:
-    h, a = TEAMS[x["team_h"]], TEAMS[x["team_a"]]
-    for t, gf, ga in ((h, x["team_h_score"], x["team_a_score"]), (a, x["team_a_score"], x["team_h_score"])):
-        r = table[t]
-        r["p"] += 1; r["gf"] += gf; r["ga"] += ga
-        r["w"] += gf > ga; r["pts"] += 3 if gf > ga else 1 if gf == ga else 0
+
+def standings(rows):
+    t_ = {s: dict(p=0, w=0, pts=0, gf=0, ga=0) for s in SHORT}
+    for x in rows:
+        h, a = TEAMS[x["team_h"]], TEAMS[x["team_a"]]
+        for t, gf, ga in ((h, x["team_h_score"], x["team_a_score"]), (a, x["team_a_score"], x["team_h_score"])):
+            r = t_[t]
+            r["p"] += 1; r["gf"] += gf; r["ga"] += ga
+            r["w"] += gf > ga; r["pts"] += 3 if gf > ga else 1 if gf == ga else 0
+    return t_
+
+
+table = standings(x for x in done if x["event"] < FIRST_GW)  # simulations add GW6+ results from FX
+table_now = standings(done)  # what the league table shows today
+NOW = dt.datetime.now(dt.timezone.utc)
+GW_START = {}
+for x in fixtures:
+    if x["event"] and x["kickoff_time"]:
+        GW_START[x["event"]] = min(GW_START.get(x["event"], ts(x["kickoff_time"])), ts(x["kickoff_time"]))
+
+
+def lock_time(expires, ko=None):
+    """When a market's result starts being decided: its match's kickoff, else the first kickoff of the gameweek it
+    expires in. Receipts keep the prices from before this, and Best value drops the market from this point."""
+    if ko:
+        return min(ko, expires)
+    return max((k for k in GW_START.values() if k < expires), default=expires)
+
 
 # ---------------------------------------------------------------- Polymarket
 POLY_NAMES = [("Manchester City", "MCI"), ("Manchester United", "MUN"), ("Arsenal", "ARS"), ("Aston Villa", "AVL"),
@@ -252,11 +281,14 @@ for x in todo:
     h, a = TEAMS[x["team_h"]], TEAMS[x["team_a"]]
     o = odds.get((h, a))
     lh, la = o["lam"] if o else rated(h, a)
-    live = bool(x.get("started"))
-    left = max(0.0, 1 - (x.get("minutes") or 0) / 90) if live else 1.0
+    started, over = bool(x.get("started")), fin(x)
+    left = 0.0 if over else max(0.0, 1 - (x.get("minutes") or 0) / 90) if started else 1.0
+    # finished matches carry who scored, assisted and played, so player markets count what really happened
+    st = {s["identifier"]: {r["element"]: r["value"] for r in s["h"] + s["a"]} for s in x.get("stats") or []} if over else {}
     FX.append(dict(gw=x["event"], h=h, a=a, ko=ts(x["kickoff_time"]), lh=lh, la=la,
-                   vol=o["vol"] if o else 0, url=o["url"] if o else None, live=live, left=left,
-                   base=(x.get("team_h_score") or 0, x.get("team_a_score") or 0) if live else (0, 0)))
+                   vol=o["vol"] if o else 0, url=o["url"] if o else None, live=started and not over, left=left,
+                   base=(x.get("team_h_score") or 0, x.get("team_a_score") or 0) if started else (0, 0),
+                   done=over, goals=st.get("goals_scored", {}), assists=st.get("assists", {}), played=set(st.get("bps", {}))))
 GH, GA = np.zeros((N, len(FX)), np.int16), np.zeros((N, len(FX)), np.int16)
 for _i, _z in enumerate(FX):  # sample exact scores from each fixture's Dixon-Coles grid
     if _z["left"] > 0.01:
@@ -291,7 +323,7 @@ def points(team, ix):
 
 
 def next_fx(team):
-    return sel(team=team, first=1)[0]
+    return next(i for i in sel(team=team) if not FX[i]["done"])
 
 
 def table_after(gw):
@@ -336,7 +368,7 @@ def flag_start(p, regular):
 def player(pid):
     p = EL[pid]
     t, pos = TEAMS[p["team"]], p["element_type"]
-    g = max(table[t]["p"], 1)
+    g = max(table_now[t]["p"], 1)
     # Rates from xG/xA only (actual goals are too noisy over 5 games): this season plus 2025/26 at 60% weight,
     # shrunk toward a positional prior worth 4 matches. The team's xG per game is shrunk toward the league
     # average (5 matches' weight), so a team that has barely scored can't inflate one player's share.
@@ -376,6 +408,9 @@ def psim(pid, ix):
     first = next_fx(m["team"])
     G, AS = np.zeros((N, len(ix)), np.int16), np.zeros((N, len(ix)), np.int16)
     for k, i in enumerate(ix):
+        if FX[i]["done"]:
+            G[:, k], AS[:, k] = FX[i]["goals"].get(pid, 0), FX[i]["assists"].get(pid, 0)
+            continue
         tg = gf(m["team"], i).astype(np.int64)
         played = RNG.random(N) < (m["p_next"] if i == first else m["p_later"])
         g = RNG.binomial(tg, m["qg"]) * played
@@ -384,11 +419,17 @@ def psim(pid, ix):
     return G, AS, m
 
 
+def pre_goals(pid):
+    """League goals before GW6; psim already counts goals from finished GW6+ matches."""
+    return EL[pid]["goals_scored"] - sum(z["goals"].get(pid, 0) for z in FX if z["done"])
+
+
 def fpl_points(pid, ix):
     G, AS, m = psim(pid, ix)
     tot = np.zeros(N, np.int32)
     for k, i in enumerate(ix):
-        played = (G[:, k] + AS[:, k] > 0) | (RNG.random(N) < (m["p_next"] if i == next_fx(m["team"]) else m["p_later"]))
+        played = (np.full(N, pid in FX[i]["played"]) if FX[i]["done"] else
+                  (G[:, k] + AS[:, k] > 0) | (RNG.random(N) < (m["p_next"] if i == next_fx(m["team"]) else m["p_later"])))
         cs = ga(m["team"], i) == 0
         tot += played * (2 + CS_PTS[m["pos"]] * cs) + G[:, k] * GOAL_PTS[m["pos"]] + AS[:, k] * 3
     return tot, m
@@ -414,14 +455,15 @@ def fx_in(i):
 
 
 def fx_conf(ix):
+    ix = [i for i in ix if not FX[i]["done"]]  # a finished match is certain, not thin
     if all(FX[i]["vol"] > 20000 for i in ix):
         return "high"
     # medium needs a real Polymarket price ($1,000+ traded) on every fixture; thin or ratings-only fixtures are low
     return "medium" if all(FX[i]["url"] and FX[i]["vol"] >= 1000 for i in ix) else "low"
 
 
-def team_fx(team, gw=GW):
-    return sel(team=team, gws={gw})[0]
+def team_fx(team, gw=None):
+    return sel(team=team, gws={gw or BGW})[0]
 
 
 def p_in(m):
@@ -522,10 +564,10 @@ def m_player_total(name, team, need, until):
         return unp(f"{name} not found in FPL data")
     ix = sel(team=team, until=until)
     G, _, m = psim(pid, ix)
-    have = EL[pid]["goals_scored"]
+    have, have0 = EL[pid]["goals_scored"], pre_goals(pid)
     v = (G.sum(axis=1) >= need).mean()
-    if have > 0:
-        return readings((have + G.sum(axis=1) >= need).mean(), v, f"season total (he has {have} already)",
+    if have0 > 0:
+        return readings((have0 + G.sum(axis=1) >= need).mean(), v, f"season total (he has {have} already)",
                         "only goals from now", "low", "player_model", [p_in(m)]) | dict(pid=pid)
     return res(v, "low", "player_model",
                f"Chance {m['name']} scores {need}+ more league goals by {until:%d %b} across {len(ix)} fixtures. He has {have} already; the market opened during the international break, so we count only new goals (our reading).",
@@ -540,8 +582,8 @@ def m_player_vs(a, ta, b, tb, until=None, gws=None, ga_=False, season=False):
     ia, ib = sel(team=ta, until=until, gws=gws), sel(team=tb, until=until, gws=gws)
     Ga, Aa, ma = psim(pa, ia)
     Gb, Ab, mb = psim(pb, ib)
-    sa = Ga.sum(1) + (Aa.sum(1) if ga_ else 0) + (EL[pa]["goals_scored"] if season else 0)
-    sb = Gb.sum(1) + (Ab.sum(1) if ga_ else 0) + (EL[pb]["goals_scored"] if season else 0)
+    sa = Ga.sum(1) + (Aa.sum(1) if ga_ else 0) + (pre_goals(pa) if season else 0)
+    sb = Gb.sum(1) + (Ab.sum(1) if ga_ else 0) + (pre_goals(pb) if season else 0)
     span = f"by {until:%d %b}" if until else f"in GW{min(gws)}-{max(gws)}"
     what = "goals + assists" if ga_ else "goals"
     return res((sa > sb).mean(), "low", "player_model",
@@ -553,8 +595,8 @@ def m_player_vs_team(name, pteam, team, until):
     pid = find(name, pteam)
     ix_p, ix_t = sel(team=pteam, until=until), sel(team=team, until=until)
     G, _, m = psim(pid, ix_p)
-    have_p, have_t = EL[pid]["goals_scored"], table[team]["gf"]
-    v = (have_p + G.sum(1) > have_t + goals(team, ix_t)).mean()
+    have_p, have_t = EL[pid]["goals_scored"], table_now[team]["gf"]
+    v = (pre_goals(pid) + G.sum(1) > table[team]["gf"] + goals(team, ix_t)).mean()
     return res(v, "low", "player_model",
                f"Season league goals {until:%d %b}: {m['name']} (now {have_p}) vs {TNAME[team]} (now {have_t}). Strictly more counts as YES.",
                [p_in(m), dict(label=f"{TNAME[team]} goals so far", value=str(have_t), source_url=FPL_FIX)]) | dict(pid=pid)
@@ -617,16 +659,16 @@ BOXING = dt.datetime(2026, 12, 26, 23, 59, tzinfo=dt.timezone.utc)
 
 
 def m_london_north():
-    ix = sel(gws={GW})
+    ix = sel(gws={BGW})
     lon = sum((goals(t, [i for i in ix if t in (FX[i]["h"], FX[i]["a"])]) for t in LONDON), np.zeros(N, np.int32))
     nor = sum((goals(t, [i for i in ix if t in (FX[i]["h"], FX[i]["a"])]) for t in NORTH), np.zeros(N, np.int32))
     return res((lon > nor).mean(), fx_conf(ix), "match_model",
-               f"GW{GW} goals by London clubs ({', '.join(LONDON)}) vs northern clubs ({', '.join(NORTH)}); strictly more counts as YES. Club lists are our reading of the question.",
+               f"GW{BGW} goals by London clubs ({', '.join(LONDON)}) vs northern clubs ({', '.join(NORTH)}); strictly more counts as YES. Club lists are our reading of the question.",
                [dict(label="All GW6 matches", value="Polymarket 1X2 prices", source_url=POLY)])
 
 
 def m_lowest_game():
-    i = sel(team="MUN", gws={GW})[0]
+    i = sel(team="MUN", gws={BGW})[0]
     ix = sel(date=FX[i]["ko"].date().isoformat())
     tot = {j: GH[:, j].astype(np.int32) + GA[:, j] for j in ix}
     others = np.min(np.array([tot[j] for j in ix if j != i]), axis=0)
@@ -687,7 +729,7 @@ def m_any_cs_oct():
 
 
 def m_any_big3_lose():
-    i1, i2 = sel(team="MCI", gws={GW})[0], sel(team="MUN", gws={GW})[0]
+    i1, i2 = sel(team="MCI", gws={BGW})[0], sel(team="MUN", gws={BGW})[0]
     lose_mci = ga("MCI", i1) > gf("MCI", i1)
     lose_liv = ga("LIV", i1) > gf("LIV", i1) if "LIV" in (FX[i1]["h"], FX[i1]["a"]) else np.zeros(N, bool)
     lose_mun = ga("MUN", i2) > gf("MUN", i2)
@@ -712,7 +754,7 @@ def m_chelsea_spurs():
     sc = goals("TOT", t)
     season = ((table["CHE"]["ga"] + conc) > (table["TOT"]["gf"] + sc)).mean()
     fresh = (conc > sc).mean()
-    return readings(season, fresh, f"season totals (Chelsea have conceded {table['CHE']['ga']}, Spurs have scored {table['TOT']['gf']})",
+    return readings(season, fresh, f"season totals (Chelsea have conceded {table_now['CHE']['ga']}, Spurs have scored {table_now['TOT']['gf']})",
                     "only goals from now to 1 Nov", "low", "match_model",
                     [dict(label="Fixtures to 1 Nov", value=f"{len(c)} Chelsea, {len(t)} Spurs", source_url=FPL_FIX)])
 
@@ -809,7 +851,7 @@ SPECS = [
     (r"Haaland will score more goals than Tottenham Hotspurs by Boxing Day", lambda: m_player_vs_team("Haaland", "MCI", "TOT", BOXING)),
     (r"Miss Their Next Penalty", lambda: U("pen")),
     (r"Haaland vs Bruno Fernandes", lambda: m_player_vs("Haaland", "MCI", "Fernandes", "MUN", until=XMAS, season=True)),
-    (r"fewer than 4 Premier League wins by Christmas", lambda: m_team_count("TOT", "wins_lt", 4, sel(team="TOT", until=XMAS), f"Spurs (now {table['TOT']['w']} wins) have fewer than 4 league wins by Christmas.")),
+    (r"fewer than 4 Premier League wins by Christmas", lambda: m_team_count("TOT", "wins_lt", 4, sel(team="TOT", until=XMAS), f"Spurs (now {table_now['TOT']['w']} wins) have fewer than 4 league wins by Christmas.")),
     (r"Man Utd win fewer than 2 Premier League matches in October", lambda: (lambda ix: res(
         (sum((gf("MUN", i) > ga("MUN", i) for i in ix), np.zeros(N, np.int32)) < 2).mean(), fx_conf(ix), "match_model",
         f"Man Utd win 0 or 1 of their {len(ix)} October league matches.",
@@ -826,7 +868,7 @@ xo = [r for r in load("xo_convictions.json")
       if any(c.get("id") == 27 for c in (r.get("market") or {}).get("categoryPath") or [])
       and (r.get("market") or {}).get("status") == "ACTIVE"]
 board, verify_rows, player_links = [], [], {}
-gw_idx = [i for i, z in enumerate(FX) if z["gw"] == GW]
+gw_idx = [i for i, z in enumerate(FX) if z["gw"] == BGW]
 ALIASES = {s: {fold(TNAME[s]), s.lower()} for s in SHORT}
 for s_, extra in {"MUN": ["man utd", "man united", "manchester united", "united"], "MCI": ["man city", "manchester city", "city"],
                   "TOT": ["tottenham", "spurs"], "NFO": ["forest"], "BHA": ["brighton"], "NEW": ["newcastle"],
@@ -863,7 +905,7 @@ for r in xo:
         b = BAND[out["conf"]]
         fair = dict(p=round(p, 4), low=round(max(p - b, 0), 4), high=round(min(p + b, 1), 4), confidence=out["conf"],
                     method=out["method"], method_text=out["text"], inputs=out["inputs"])
-        if out.get("fx") is not None and FX[out["fx"]]["gw"] == GW:
+        if out.get("fx") is not None and FX[out["fx"]]["gw"] == BGW:
             z = FX[out["fx"]]
             fx = dict(home=z["h"], away=z["a"], home_name=TNAME[z["h"]], away_name=TNAME[z["a"]],
                       kickoff_utc=z["ko"].isoformat().replace("+00:00", "Z"))
@@ -876,6 +918,7 @@ for r in xo:
             z = FX[hits[0]]
             fx = dict(home=z["h"], away=z["a"], home_name=TNAME[z["h"]], away_name=TNAME[z["a"]],
                       kickoff_utc=z["ko"].isoformat().replace("+00:00", "Z"))
+    lock = lock_time(ts(mk["expiresAt"]), FX[out["fx"]]["ko"] if out.get("fx") is not None else None)
     horizon = "weekend" if ts(mk["expiresAt"]) <= max(FX[i]["ko"] for i in gw_idx) + dt.timedelta(days=1) else "long"
     row = dict(slug=r["slug"], title=r["title"], url=f'https://beta.xo.market/event/{r["slug"]}?r={REF}',
                creator=mk["creator"]["username"], is_ours=mk["creator"]["username"].lower() == REF,
@@ -883,7 +926,7 @@ for r in xo:
                liquidity_usd=round(num(book.get("totalLiquidity")) or 0, 2),
                volume_usd=round(num(mk.get("totalVolumeInUSD")) or 0, 2), expires_at=mk["expiresAt"],
                group="fixture" if fx else "season", fixture=fx, fair=fair,
-               fair_reason=None if fair else out.get("reason"),
+               fair_reason=None if fair else out.get("reason"), lock_at=lock.isoformat().replace("+00:00", "Z"),
                gap_pts=round((fair["p"] - xo_p) * 100) if fair and xo_p is not None else None, status=mk["status"],
                horizon=horizon, taker_fee_bps=int((mk.get("effectiveFeeConfig") or {}).get("takerFeeBps") or 0),
                pitch=r.get("description") or "",
@@ -894,7 +937,7 @@ for r in xo:
 
 best_value = []
 for b in board:
-    if not b["fair"] or b["fair"]["confidence"] not in ("high", "medium"):
+    if not b["fair"] or b["fair"]["confidence"] not in ("high", "medium") or ts(b["lock_at"]) <= NOW:
         continue
     fee_base = b["taker_fee_bps"] / 10000
     choices = [stake_result(10, side, b["books"][side]["asks"], fee_base, b["fair"]) for side in ("yes", "no")]
@@ -911,9 +954,28 @@ receipts = json.loads(receipts_path.read_text()) if receipts_path.exists() else 
 ids = {r["slug"]: r["market"]["id"] for r in xo}
 for b in board:
     tracked[b["slug"]] = dict(id=ids[b["slug"]], title=b["title"], url=b["url"], creator=b["creator"], is_ours=b["is_ours"],
-                              expires_at=b["expires_at"], xo=b["xo_price"],
+                              expires_at=b["expires_at"], lock_at=b["lock_at"], xo=b["xo_price"],
                               fair=b["fair"]["p"] if b["fair"] else tracked.get(b["slug"], {}).get("fair"),
                               confidence=b["fair"]["confidence"] if b["fair"] else None)
+picks_path = OUT / "picks.json"
+picks = json.loads(picks_path.read_text()) if picks_path.exists() else []
+seen = {(p_["slug"], p_["side"]) for p_ in picks}
+for v in best_value[:5]:  # the first time a market and side make Best value, record the $10 trade the site showed
+    if (v["slug"], v["side"]) not in seen:
+        picks.append(dict(slug=v["slug"], side=v["side"], flagged_at=GEN, buy_price=v["buy_price"], shares=v["shares"],
+                          cost=v["fillable"], fair=v["fair"], ev=v["ev"]))
+def settle(pk, yes):
+    won = (pk["side"] == "YES") == yes
+    pay = pk["shares"] if won else 0.0
+    return pk | dict(won=won, payout=round(pay, 2), pnl=round(pay - pk["cost"], 2))
+
+
+past = {}
+if (OUT / "history.jsonl").exists():
+    for line in (OUT / "history.jsonl").read_text().splitlines():
+        if line.strip():
+            h_ = json.loads(line)
+            past.setdefault(h_["slug"], []).append(h_)
 done_slugs = {r["slug"] for r in receipts}
 for slug, t in tracked.items():
     f = RAW / "closed" / f'{t["id"]}.json'
@@ -924,11 +986,21 @@ for slug, t in tracked.items():
     if not win:
         continue
     yes = win.strip().lower() == "yes"
-    receipts.append(dict(slug=slug, title=t["title"], url=t["url"], creator=t["creator"], is_ours=t["is_ours"],
-                         outcome="YES" if yes else "NO", xo_close=t["xo"], fair_close=t["fair"], confidence=t["confidence"],
-                         resolved_at=d.get("resolvedAt")))
+    # Prices from the last refresh before the market's lock or the start of the gameweek it resolved in, whichever
+    # came first, so a receipt never shows a price set once the result was known.
+    cut = min(ts(t.get("lock_at") or d.get("resolvedAt") or GEN), lock_time(ts(d.get("resolvedAt") or GEN)))
+    h_ = ([x for x in past.get(slug, []) if ts(x["ts"]) < cut] or [{}])[-1]
+    r = dict(slug=slug, title=t["title"], url=t["url"], creator=t["creator"], is_ours=t["is_ours"],
+             outcome="YES" if yes else "NO", xo_close=h_.get("xo_price"), fair_close=h_.get("fair"),
+             confidence=h_.get("conf", t["confidence"]) if h_.get("fair") is not None else None,
+             resolved_at=d.get("resolvedAt"))
+    mine = [settle(p_, yes) for p_ in picks if p_["slug"] == slug]
+    if mine:
+        r["picks"] = mine
+    receipts.append(r)
 receipts.sort(key=lambda r: r.get("resolved_at") or "", reverse=True)
 tracked_path.write_text(json.dumps(tracked))
+picks_path.write_text(json.dumps(picks, indent=1))
 receipts_path.write_text(json.dumps(receipts, indent=1))
 scored = [r for r in receipts if r["xo_close"] is not None and r["fair_close"] is not None]
 o = lambda r: 1.0 if r["outcome"] == "YES" else 0.0
@@ -936,12 +1008,17 @@ RECEIPT_SUMMARY = dict(resolved=len(receipts), compared=len(scored),
                        fair_closer=sum(abs(r["fair_close"] - o(r)) < abs(r["xo_close"] - o(r)) for r in scored),
                        brier_fair=round(float(np.mean([(r["fair_close"] - o(r)) ** 2 for r in scored])), 4) if scored else None,
                        brier_xo=round(float(np.mean([(r["xo_close"] - o(r)) ** 2 for r in scored])), 4) if scored else None)
+settled = [p_ for r in receipts for p_ in r.get("picks") or []]
+PICK_SUMMARY = dict(settled=len(settled), won=sum(p_["won"] for p_ in settled),
+                    staked=round(sum(p_["cost"] for p_ in settled), 2), returned=round(sum(p_["payout"] for p_ in settled), 2),
+                    pnl=round(sum(p_["pnl"] for p_ in settled), 2),
+                    open=sum(p_["slug"] not in {r["slug"] for r in receipts} for p_ in picks))
 OUT.mkdir(parents=True, exist_ok=True)
 (OUT / "board.json").write_text(json.dumps(dict(
     generated_at=GEN, name="PL Fair Price",
     tagline="What every Premier League market on XO should cost, priced from the markets with real money.",
     gw=dict(id=GW, deadline_utc=NEXT["deadline_time"]), markets=board, receipts=receipts,
-    receipt_summary=RECEIPT_SUMMARY, best_value=best_value[:5],
+    receipt_summary=RECEIPT_SUMMARY, pick_summary=PICK_SUMMARY, best_value=best_value[:5],
     live=[f'{z["h"]}-{z["a"]}' for z in FX if z["live"]]), indent=1))
 
 # ---------------------------------------------------------------- projections
@@ -1035,7 +1112,8 @@ history_path.write_text(json.dumps(history, indent=1))
 # Legacy compact history continues to feed receipts.
 hist_path = OUT / "history.jsonl"
 hist = [json.loads(l) for l in hist_path.read_text().splitlines() if l.strip()] if hist_path.exists() else []
-hist += [dict(ts=GEN, slug=b["slug"], xo_price=b["xo_price"], fair=b["fair"]["p"] if b["fair"] else None) for b in board]
+hist += [dict(ts=GEN, slug=b["slug"], xo_price=b["xo_price"], fair=b["fair"]["p"] if b["fair"] else None,
+              conf=b["fair"]["confidence"] if b["fair"] else None) for b in board]
 kept, lastk = [], {}
 for h in hist:
     prev = lastk.get(h["slug"])
@@ -1068,8 +1146,8 @@ L += ["", f"League average {LEAGUE_AVG:.2f} goals per game from {len(done)} fini
       f"mean fitted total {np.mean([sum(o['lam']) for o in odds.values()]):.2f}."]
 L += ["", f"Team-ratings refit error on the priced matches: mean |Δlog λ| {np.mean(rating_err):.3f}, max {max(rating_err):.3f}.",
       "", "## Current table (from finished FPL fixtures)", "", "| Team | P | W | Pts | GF | GA |", "|---|---|---|---|---|---|"]
-for s in sorted(SHORT, key=lambda s: (-table[s]["pts"], -(table[s]["gf"] - table[s]["ga"]), -table[s]["gf"])):
-    t = table[s]
+for s in sorted(SHORT, key=lambda s: (-table_now[s]["pts"], -(table_now[s]["gf"] - table_now[s]["ga"]), -table_now[s]["gf"])):
+    t = table_now[s]
     L.append(f"| {s} | {t['p']} | {t['w']} | {t['pts']} | {t['gf']} | {t['ga']} |")
 L += ["", "## Table sim after MW9", "", "| Team | P(1st) | P(bottom 3) | mean pts |", "|---|---|---|---|"]
 for s in ("MCI", "ARS", "LIV", "TOT", "COV", "IPS"):

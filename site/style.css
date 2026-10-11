@@ -234,6 +234,9 @@ button { font: inherit; color: inherit; }
 .rc-head > div { min-width: 0; }
 .rc-deek { width: 60px; height: 80px; flex: none; }
 .rc-line { margin-bottom: 8px; font: 800 16px/1.3 'Rubik', sans-serif; }
+.rc-sub { margin: 0 0 8px; font: 800 14px/1.3 'Rubik', sans-serif; }
+.rc-note { margin: -4px 0 10px; font-size: 12.5px; color: var(--ink-2); }
+#rc-picks:not(:empty) { margin-bottom: 22px; }
 .brier { margin: 0 0 12px; }
 .brier summary { display: block; width: fit-content; cursor: pointer; list-style: none; font-size: 12.5px; font-weight: 700; color: var(--ink-2); }
 .brier summary::-webkit-details-marker { display: none; }

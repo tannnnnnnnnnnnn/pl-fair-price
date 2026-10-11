@@ -193,7 +193,9 @@ function marketRow(m, extra, openWhy) {
 
 function renderGaps() {
   const sec = document.getElementById('gaps');
-  const list = state.markets.filter((m) => m.fair && ['high', 'medium'].includes(m.fair.confidence)).map((m) => {
+  // a market leaves Best value at its lock: kickoff, or the start of the gameweek that decides it
+  const open = (m) => !m.lock_at || Date.parse(m.lock_at) > Date.now();
+  const list = state.markets.filter((m) => m.fair && ['high', 'medium'].includes(m.fair.confidence) && open(m)).map((m) => {
     const choices = ['yes', 'no'].map((side) => ({ side, r: calculateStake(10, side, levels(m, side, 'asks'), m.taker_fee_bps / 10000, m.fair) }));
     return { m, ...choices.sort((a, b) => (b.r.ev || -Infinity) - (a.r.ev || -Infinity))[0] };
   }).filter((x) => x.r.ev > 0).sort((a, b) => b.r.ev - a.r.ev).slice(0, 5);
@@ -385,15 +387,33 @@ function startPolling() {
 
 function renderReceipts() {
   const sec = document.getElementById('receipts');
-  const rows = (state.board.receipts || []).filter((r) => r && (r.outcome === 'YES' || r.outcome === 'NO') && num(r.xo_close) !== null);
-  sec.hidden = !rows.length;
-  if (!rows.length) return;
+  const all = (state.board.receipts || []).filter((r) => r && (r.outcome === 'YES' || r.outcome === 'NO'));
+  const rows = all.filter((r) => num(r.xo_close) !== null);
+  const picks = all.flatMap((r) => (r.picks || []).map((p) => ({ r, p })));
+  sec.hidden = !rows.length && !picks.length;
+  if (sec.hidden) return;
   const slot = document.getElementById('rc-deek-slot');
   if (slot) slot.replaceWith(h('img', { class: 'rc-deek', src: 'assets/deek/deek-receipts.webp', width: 60, height: 80, alt: '', decoding: 'async' }));
 
+  const ps = state.board.pick_summary;
+  const day = (iso) => new Date(iso).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+  document.getElementById('rc-picks').replaceChildren(...(picks.length && ps ? [
+    h('h3', { class: 'rc-sub', text: 'Best value picks' }),
+    h('p', { class: 'rc-line', text: `$10 on each settled pick: ${money(ps.pnl, true)}` }),
+    h('p', { class: 'rc-note', text: `${ps.won} of ${ps.settled} won${ps.open ? ` · ${ps.open} still open` : ''}. A pick is the first time a market and side made Best value, at the price you could buy then.` }),
+    h('div', { class: 'list' }, ...picks.map(({ r, p }) => h('article', { class: 'rcard' },
+      h('div', { class: 'rc-main' },
+        h('h3', { class: 'q' }, marketLink(r, 'market-title')),
+        h('div', { class: 'rc-nums' },
+          h('span', { text: `${p.side} at ${pct(p.buy_price)} on ${day(p.flagged_at)}` }),
+          h('span', { text: `Our price ${pct(p.side === 'YES' ? p.fair : 1 - p.fair)}` }),
+          h('b', { class: 'pnl', text: `${money(p.cost)} → ${money(p.payout)} (${money(p.pnl, true)})` }))),
+      h('span', { class: 'outcome ' + r.outcome.toLowerCase(), text: r.outcome })))),
+  ] : []));
+
   const sum = state.board.receipt_summary;
   const sumEl = document.getElementById('rc-sum');
-  const parts = [];
+  const parts = picks.length && rows.length ? [h('h3', { class: 'rc-sub', text: 'Every resolved market' })] : [];
   if (sum && num(sum.compared) > 0) {
     parts.push(h('p', { class: 'rc-line', text: `Our price was closer on ${sum.fair_closer} of ${sum.compared} resolved markets` }));
     if (num(sum.brier_fair) !== null && num(sum.brier_xo) !== null) {
