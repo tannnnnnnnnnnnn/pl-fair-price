@@ -89,7 +89,7 @@ function xoChips(p) {
   const chips = (Array.isArray(p.xo_markets) ? p.xo_markets : []).map((s) => state.bySlug[s]).filter(Boolean).map((m) => {
     const t = m.title.toLowerCase();
     const kind = /\bstart\b/.test(t) ? 'Starts' : /\bvs\b/.test(t) && /(more|most|outscore)/.test(t) ? 'Head to head' : /assist/.test(t) ? 'Assist' : /clean sheet/.test(t) ? 'Clean sheet' : /(score|goal)/.test(t) ? 'Goal' : /captain/.test(t) ? 'Captain' : 'Market';
-    return h('a', { class: 'xchip', href: tradeUrl(m), target: '_blank', rel: 'noopener', title: m.title },
+    return h('a', { class: 'xchip', href: tradeUrl(m), target: '_blank', rel: 'noopener', title: m.title, 'data-goatcounter-click': 'xo-gw-chip' },
       `${kind} · XO ${m.xo_price !== null ? pct(m.xo_price) : 'no trades'}`);
   });
   return chips.length ? h('div', { class: 'xchips' }, chips) : null;
@@ -354,7 +354,7 @@ function renderGoals(proj) {
         h('i', { class: 'home', style: `flex:${f.p_home}` }), h('i', { class: 'draw', style: `flex:${f.p_draw}` }), h('i', { class: 'away', style: `flex:${f.p_away}` })),
       h('div', { class: 'gm-p' }, h('span', { text: `${hn} ${pct0(f.p_home)}` }), h('span', { text: `Draw ${pct0(f.p_draw)}` }), h('span', { text: `${an} ${pct0(f.p_away)}` })),
       elevenLine(et),
-      h('p', { class: 'gm-note' }, volText, safeUrl(f.source_url) ? h('a', { href: safeUrl(f.source_url), target: '_blank', rel: 'noopener', text: ' source' }) : null));
+      h('p', { class: 'gm-note' }, volText));
     attachTip(li, [`${Number(f.lam_home).toFixed(2)} to ${Number(f.lam_away).toFixed(2)} expected goals`, `${hn} ${pct0(f.p_home)} · Draw ${pct0(f.p_draw)} · ${an} ${pct0(f.p_away)}`]);
     return li;
   }));

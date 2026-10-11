@@ -3,10 +3,12 @@
 
 const CONFIG = {
   name: 'PL Fair Price',
-  tagline: 'What every Premier League market on XO should cost, priced from the markets with real money.',
+  tagline: 'Our fair price beside every Premier League market on XO, from Polymarket odds and FPL data.',
   ref: 'cryptotan01',
   minGapPts: 8,
 };
+
+const GOATCOUNTER = '';  // GoatCounter site code; empty = no tracking
 
 const CHANGELOG = [
   { version: 'v1', date: 'Thu 8 Oct 2026', notes: 'First public version: our price beside every Premier League market on XO, GW numbers for FPL managers.' },
@@ -313,4 +315,17 @@ function startCountdown(labelEl, boxEl, wrapEl, endIso, gwId) {
   };
   draw();
   setInterval(draw, 20000);
+}
+
+/* ---------- click tracking, off until GOATCOUNTER is set ---------- */
+
+// GoatCounter binds clicks once at load, so rows drawn later are missed. Its own binding is switched off
+// and one delegated listener counts every [data-goatcounter-click] link instead.
+if (GOATCOUNTER) {
+  window.goatcounter = { no_events: true };
+  document.head.append(h('script', { async: true, src: 'https://gc.zgo.at/count.js', 'data-goatcounter': `https://${GOATCOUNTER}.goatcounter.com/count` }));
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('[data-goatcounter-click]');
+    if (link && window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: link.dataset.goatcounterClick, event: true });
+  });
 }

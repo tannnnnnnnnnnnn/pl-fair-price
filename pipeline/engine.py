@@ -1026,7 +1026,7 @@ PICK_SUMMARY = dict(settled=len(settled), won=sum(p_["won"] for p_ in settled),
 OUT.mkdir(parents=True, exist_ok=True)
 (OUT / "board.json").write_text(json.dumps(dict(
     generated_at=GEN, name="PL Fair Price",
-    tagline="What every Premier League market on XO should cost, priced from the markets with real money.",
+    tagline="Our fair price beside every Premier League market on XO, from Polymarket odds and FPL data.",
     gw=dict(id=GW, deadline_utc=NEXT["deadline_time"]), markets=board, receipts=receipts,
     receipt_summary=RECEIPT_SUMMARY, pick_summary=PICK_SUMMARY, best_value=best_value[:5],
     live=[f'{z["h"]}-{z["a"]}' for z in FX if z["live"]]), indent=1))

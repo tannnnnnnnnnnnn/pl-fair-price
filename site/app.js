@@ -31,6 +31,8 @@ async function init() {
 /* ---------- market row ---------- */
 
 const isRough = (m) => !!m.fair && m.fair.confidence === 'low';
+// A market stops trading at its lock: kickoff, or the start of the gameweek that decides it.
+const isOpen = (m) => !m.lock_at || Date.parse(m.lock_at) > Date.now();
 
 function closesText(exp) {
   if (!exp) return null;
@@ -124,8 +126,14 @@ function safeLink(url, text, cls) {
   return u ? h('a', { href: u, target: '_blank', rel: 'noopener', class: cls || null, text }) : null;
 }
 
-function marketLink(m, cls) {
-  return h('a', { href: tradeUrl(m), target: '_blank', rel: 'noopener', class: cls || null, text: m.title });
+function marketLink(m, cls, track) {
+  return h('a', { href: tradeUrl(m), target: '_blank', rel: 'noopener', class: cls || null, text: m.title, 'data-goatcounter-click': track || 'xo-market' });
+}
+
+// A locked market has no trade link: a neutral badge instead.
+function tradePill(m, cls) {
+  return isOpen(m) ? h('a', { class: cls, href: tradeUrl(m), target: '_blank', rel: 'noopener', 'aria-label': 'Trade on XO', 'data-goatcounter-click': 'xo-market' }, 'Trade on', wordmark('wm'))
+    : h('span', { class: 'in-play', text: 'In play' });
 }
 
 function pricePair(m) {
@@ -183,7 +191,7 @@ function marketRow(m, extra, openWhy) {
     isRough(m) ? h('span', { class: 'rough-tag' }, explain('Rough', 'rough')) : null);
   const act = h('div', { class: 'act' },
     h('button', { type: 'button', class: 'win', text: 'What would I win?', onclick: (e) => { const d = e.currentTarget.closest('.mrow').querySelector('.market-details'); d.open = true; d.scrollIntoView({ block: 'nearest' }); } }),
-    h('a', { class: 'trade', href: tradeUrl(m), target: '_blank', rel: 'noopener', 'aria-label': 'Trade on XO' }, 'Trade on', wordmark('wm')),
+    tradePill(m, 'trade'),
   );
   return h('article', { id: m.slug, class: 'mrow' + (extra ? ' ' + extra : '') + (m.is_ours ? ' is-ours' : '') },
     q, closes ? h('p', { class: 'closes', text: closes }) : null, pricePair(m), verdict(m), act, whyDetails(m, openWhy));
@@ -193,9 +201,7 @@ function marketRow(m, extra, openWhy) {
 
 function renderGaps() {
   const sec = document.getElementById('gaps');
-  // a market leaves Best value at its lock: kickoff, or the start of the gameweek that decides it
-  const open = (m) => !m.lock_at || Date.parse(m.lock_at) > Date.now();
-  const list = state.markets.filter((m) => m.fair && ['high', 'medium'].includes(m.fair.confidence) && open(m)).map((m) => {
+  const list = state.markets.filter((m) => m.fair && ['high', 'medium'].includes(m.fair.confidence) && isOpen(m)).map((m) => {
     const choices = ['yes', 'no'].map((side) => ({ side, r: calculateStake(10, side, levels(m, side, 'asks'), m.taker_fee_bps / 10000, m.fair) }));
     return { m, ...choices.sort((a, b) => (b.r.ev || -Infinity) - (a.r.ev || -Infinity))[0] };
   }).filter((x) => x.r.ev > 0).sort((a, b) => b.r.ev - a.r.ev).slice(0, 5);
@@ -203,7 +209,7 @@ function renderGaps() {
   const el = document.getElementById('gaps-list');
   if (!list.length) { el.replaceChildren(h('p', { class: 'empty', text: 'No positive-value trades right now' })); return; }
   el.replaceChildren(...list.map(({ m, side, r }) => h('article', { class: 'value-row' },
-    marketLink(m),
+    marketLink(m, null, 'xo-best-value'),
     h('b', { text: side.toUpperCase() }),
     h('span', { text: `You'd buy at ${pct(r.averagePrice)} · our price ${pct(side === 'yes' ? m.fair.p : 1 - m.fair.p)}` }),
     h('span', null, explain('Expected value', 'ev'), ` ${money(r.ev, true)} per $10`),
@@ -228,7 +234,7 @@ function renderMyMarkets() {
       h('div', { class: 'my-body' },
         m.pitch ? h('div', { class: 'my-call' }, h('h3', { text: 'My call when I made it' }), h('p', { text: m.pitch })) : null,
         pricePair(m),
-        h('div', { class: 'my-actions' }, h('a', { class: 'trade', href: tradeUrl(m), target: '_blank', rel: 'noopener' }, 'Trade on', wordmark('wm'))),
+        h('div', { class: 'my-actions' }, tradePill(m, 'trade')),
         stakePanel(m),
         poster ? h('img', { class: 'market-poster', src: poster, alt: `Poster for ${m.title}`, width: 1080, height: 1350, loading: 'lazy', decoding: 'async' }) : null));
     return card;
@@ -258,21 +264,26 @@ function groupBest(rows) {
   return `Best: ${pick.side.toUpperCase()} ${money(pick.r.ev, true)} per $10`;
 }
 
+// The match group that opened by default on the last render.
+let defaultOpen = null;
+
 function renderMarkets() {
   const root = document.getElementById('mk-list');
   const all = state.markets.filter((m) => !state.query || `${m.title} ${m.fixture ? `${m.fixture.home_name} ${m.fixture.away_name}` : ''}`.toLowerCase().includes(state.query));
-  document.getElementById('mk-count').textContent = `${all.length} live market${all.length === 1 ? '' : 's'} on XO`;
+  const openN = all.filter(isOpen).length;
+  document.getElementById('mk-count').textContent = `${openN} market${openN === 1 ? '' : 's'} open on XO${openN < all.length ? ` · ${all.length - openN} in play` : ''}`;
   if (!all.length) { root.replaceChildren(h('p', { class: 'empty', text: 'No markets match' })); return; }
   const frag = document.createDocumentFragment();
-  const addGroup = (left, meta, rows, note) => {
+  const addGroup = (left, meta, rows, note, key, startOpen) => {
     const bestText = groupBest(rows);
     const head = groupHead(left, [meta, bestText].filter(Boolean).join(' · '));
-    frag.append(h('details', { class: 'group', open: state.query ? true : null }, head, note || null,
+    frag.append(h('details', { class: 'group', 'data-key': key || null, open: state.query || startOpen ? true : null }, head, note || null,
       rows.length ? h('div', { class: 'list' }, rows.map((m) => marketRow(m))) : null));
   };
   const plural = (n) => `${n} market${n === 1 ? '' : 's'}`;
 
   if (state.sort === 'closing') {
+    defaultOpen = null;
     const now = new Date();
     const sorted = [...all].sort((a, b) => (a.exp ?? Infinity) - (b.exp ?? Infinity));
     const groups = new Map();
@@ -303,16 +314,25 @@ function renderMarkets() {
     } else if (m.horizon === 'weekend') weekend.push(m);
     else long.push(m);
   });
-  [...fixtures.values()].sort((a, b) => new Date(a.f.kickoff_utc) - new Date(b.f.kickoff_utc)).forEach(({ f, rows }) => {
+  // Each refresh rebuilds this list, so a group keeps the open or closed state the reader left it in.
+  // The soonest match that has not kicked off opens by default, and again whenever that match changes.
+  const was = new Map([...root.querySelectorAll('.group[data-key]')].map((x) => [x.dataset.key, x.open]));
+  const ordered = [...fixtures.values()].sort((a, b) => new Date(a.f.kickoff_utc) - new Date(b.f.kickoff_utc));
+  const next = ordered.find(({ f }) => Date.parse(f.kickoff_utc) > Date.now());
+  const nextKey = next ? `${next.f.home}-${next.f.away}` : null;
+  const moved = nextKey !== defaultOpen;
+  defaultOpen = nextKey;
+  ordered.forEach(({ f, rows }) => {
     rows.sort(byOursPriced);
+    const key = `${f.home}-${f.away}`;
     const left = h('span', { class: 'gmatch' }, crest(f.home, 24), h('span', { class: 'gname', text: `${f.home_name || teamName(f.home)} v ${f.away_name || teamName(f.away)}` }), crest(f.away, 24));
     const isLive = state.live.has(`${f.home}-${f.away}`);
     const et = elevenText(f.home, f.away);
     const note = h('div', { class: 'group-notes' },
-      isLive ? h('p', { class: 'gnote', text: 'Prices update every 20 minutes during matches.' }) : null,
+      isLive ? h('p', { class: 'gnote', text: 'Our prices refresh every 10 minutes. XO prices on this page update live every 30 seconds.' }) : null,
       elevenLine(et));
     addGroup(isLive ? h('span', { class: 'gmatch' }, left, h('span', { class: 'live' }, 'Live')) : left,
-      `${f.kickoff_utc ? kickoffFmt(f.kickoff_utc) + ' · ' : ''}${plural(rows.length)}`, rows, note);
+      `${f.kickoff_utc ? kickoffFmt(f.kickoff_utc) + ' · ' : ''}${plural(rows.length)}`, rows, note, key, (moved && key === nextKey) || !!was.get(key));
   });
   if (weekend.length) { weekend.sort(byOursPriced); addGroup(h('span', { class: 'gname', text: 'Across the weekend' }), plural(weekend.length), weekend); }
   if (long.length) {
