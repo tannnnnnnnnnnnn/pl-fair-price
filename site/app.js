@@ -429,9 +429,14 @@ function renderReceipts() {
         // when $10 emptied the order book, that is all the stake could have filled
         ...sizeBet(p.side === 'YES' ? p.fair : 1 - p.fair, p.cost / p.shares, p.confidence || r.confidence, p.won, p.cost < 9.99 ? p.cost : Infinity) }));
       const t = totals(sized.filter((x) => x.bet));
+      const skipped = sized.length - t.n;
       return [
-        h('p', { class: 'rc-line', text: `${money(t.pnl, true)} on a $1,000 bankroll (${ret(t.pnl / BANKROLL)})` }),
-        h('p', { class: 'rc-note', text: `${t.won} of ${t.n} settled picks won, staking ${money(t.staked)} in total${ps.open ? ` · ${ps.open} still open` : ''}. A pick is the first time a market and side made Best value, at the price you could buy then.` }),
+        h('p', { class: 'rc-line', text: t.n ? `${money(t.pnl, true)} on a $1,000 bankroll (${ret(t.pnl / BANKROLL)})` : 'No settled bets yet' }),
+        h('p', { class: 'rc-note', text: [
+          t.n ? `${t.won} of ${t.n} bets won, staking ${money(t.staked)}.` : null,
+          skipped ? `${skipped} settled pick${skipped === 1 ? ' was' : 's were'} too close to bet.` : null,
+          ps.open ? `${ps.open} still open.` : null,
+          'A pick is the first time a market and side made Best value, sized with the rule below.'].filter(Boolean).join(' ') }),
         h('div', { class: 'list' }, ...sized.map((x) => h('article', { class: 'rcard' },
           h('div', { class: 'rc-main' },
             h('h3', { class: 'q' }, marketLink(x.r, 'market-title')),
