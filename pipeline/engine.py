@@ -1032,6 +1032,9 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------- projections
 gw_fx = [i for i, z in enumerate(FX) if z["gw"] == GW]
+# The GW page links only markets still running when its gameweek starts (no GW6 markets on the GW7 page).
+gw_board = [b for b in board if ts(b["expires_at"]) >= GW_START.get(GW, NOW)]
+gw_slugs = {b["slug"] for b in gw_board}
 proj_fx = []
 for i in gw_fx:
     z = FX[i]
@@ -1066,7 +1069,7 @@ for pid, p in EL.items():
                             p_start=round(pp, 3), p_goal=round(p_goal, 4), p_assist=round(p_ast, 4),
                             p_cs=round(pcs, 4), p_defcon=round(m["p_dc"], 3), xbonus=round(pp * bonus, 2),
                             xpts=round(xpts, 2), p_blank=round(blank, 4), fpl_ep=num(p.get("ep_next")),
-                            xo_markets=player_links.get(pid, [])))
+                            xo_markets=[s_ for s_ in player_links.get(pid, []) if s_ in gw_slugs]))
 players.sort(key=lambda x: -x["xpts"])
 captain = [dict(id=x["id"], name=x["name"], team=x["team"], xpts=x["xpts"], p_goal=x["p_goal"],
                 p_assist=x["p_assist"], p_blank=x["p_blank"], p_defcon=x["p_defcon"], xbonus=x["xbonus"],
@@ -1092,13 +1095,13 @@ for pid, p in EL.items():
     m = player(pid)
     flags.append(dict(id=pid, name=m["name"], team=m["team"], pos=POS[m["pos"]], owned_pct=num(p["selected_by_percent"]),
                       fpl_chance=c, news=p["news"], regular=m["regular"],
-                      xo_markets=[b["slug"] for b in board if fold(p["web_name"]) in fold(b["title"])
+                      xo_markets=[b["slug"] for b in gw_board if fold(p["web_name"]) in fold(b["title"])
                                   or fold(f'{p["first_name"]} {p["second_name"]}') in fold(b["title"])]))
 flags.sort(key=lambda x: -x["owned_pct"])
 xg_table = sorted((dict(id=p["id"], name=p["web_name"], team=TEAMS[p["team"]], pos=POS[p["element_type"]], minutes=p["minutes"],
                         goals=p["goals_scored"], xg=round(num(p["expected_goals"]) or 0, 2), assists=p["assists"],
                         xa=round(num(p["expected_assists"]) or 0, 2), owned_pct=num(p["selected_by_percent"]),
-                        xo_markets=[b["slug"] for b in board
+                        xo_markets=[b["slug"] for b in gw_board
                                     if re.search(rf'\b{re.escape(fold(p["web_name"]))}\b', fold(b["title"]))
                                     or fold(f'{p["first_name"]} {p["second_name"]}') in fold(b["title"])])
                    for p in EL.values() if p["minutes"] >= 180), key=lambda x: -(x["xg"] + x["xa"]))
