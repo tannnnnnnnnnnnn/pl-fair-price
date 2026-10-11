@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-11T23:16:28Z)
+# VERIFY — PL Fair Price (2026-10-11T23:26:31Z)
 
 GW7 deadline 2026-10-17T10:00:00Z. 62 XO PL markets; 31 priced (high 1, medium 7, low 23).
 
@@ -6,7 +6,7 @@ GW7 deadline 2026-10-17T10:00:00Z. 62 XO PL markets; 31 priced (high 1, medium 7
 
 | Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|
-| COV-NEW | 6 | 29.5/26.5/43.5 | 29.6/26.6/43.7 | 29.6/26.6/43.7 | 1.20-1.51 | $18,509 |
+| COV-NEW | 6 | 29.5/26.5/43.5 | 29.6/26.6/43.7 | 29.6/26.6/43.7 | 1.20-1.51 | $18,512 |
 | EVE-CHE | 7 | 29.5/25.5/44.5 | 29.6/25.6/44.7 | 29.6/25.6/44.7 | 1.27-1.61 | $5,110 |
 | BRE-LIV | 7 | 39.0/26.0/35.5 | 38.8/25.9/35.3 | 38.8/25.9/35.3 | 1.49-1.41 | $1,536 |
 | FUL-HUL | 7 | 57.5/23.5/19.5 | 57.2/23.4/19.4 | 57.2/23.4/19.4 | 1.88-1.01 | $748 |
@@ -101,7 +101,7 @@ qg 0.417, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | low | 65 | 93.8 | 29 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
 | low | 66 | 26.5 | -40 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 8.8 | -1 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
-| low | 55 | 19.6 | -35 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 20.0 | -35 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 37 | - |  | - | Arsenal < 1.20 combined xG conceded vs Leeds & Forest? | Fair price coming: not modelled yet. |
 | - | 45 | - |  | - | Fulham to sack or replace head coach before 1 November 2026 | No Polymarket market prices this manager's job by this date. |
 | - | 50 | - |  | - | Haaland vs Bruno: Most FPL points in GW6? | Fair price coming: not modelled yet. |
