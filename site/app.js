@@ -422,7 +422,7 @@ function renderReceipts() {
   const t = totals(calls.filter((x) => x.c.bet).map((x) => x.c));
   const parts = [];
   if (t.n) {
-    parts.push(h('h3', { class: 'rc-sub', text: 'Betting our prices against XO\'s' }));
+    parts.push(h('h3', { class: 'rc-sub', text: 'Trading on XO with our prices' }));
     parts.push(h('p', { class: 'rc-line', text: `${money(t.pnl, true)} on a $1,000 bankroll (${ret(t.pnl / BANKROLL)})` }));
     parts.push(h('p', { class: 'rc-note', text: `${t.n} bets, ${t.won} won, ${money(t.staked)} staked (${ret(t.pnl / t.staked)} on what was staked). Each bet is a quarter of the Kelly stake, at most 5% of the bankroll, using our price minus its 3–10 point range, at XO's price before kickoff with XO's 4% fee. Still early, so the sample is small.` }));
   }
