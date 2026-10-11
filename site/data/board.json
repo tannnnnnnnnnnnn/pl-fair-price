@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T19:12:30Z",
+ "generated_at": "2026-10-11T19:15:51Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from Polymarket odds and FPL data.",
  "gw": {
@@ -16,8 +16,8 @@
    "xo_price": 0.54,
    "best_bid": 0.5,
    "best_ask": 0.58,
-   "liquidity_usd": 6.97,
-   "volume_usd": 66.88,
+   "liquidity_usd": 4.97,
+   "volume_usd": 70.88,
    "expires_at": "2026-10-18T22:00:00.000Z",
    "group": "season",
    "fixture": null,
@@ -58,7 +58,7 @@
      "bids": [
       {
        "price": 0.5,
-       "size": 4.720014
+       "size": 0.720016
       },
       {
        "price": 0.45,
@@ -83,7 +83,7 @@
      "asks": [
       {
        "price": 0.5,
-       "size": 4.720014
+       "size": 0.720016
       },
       {
        "price": 0.55,
@@ -210,9 +210,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8239,
-    "low": 0.7239,
-    "high": 0.9239,
+    "p": 0.8276,
+    "low": 0.7276,
+    "high": 0.9276,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -231,7 +231,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 1,
+   "gap_pts": 2,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -504,9 +504,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.432,
-    "low": 0.372,
-    "high": 0.492,
+    "p": 0.4323,
+    "low": 0.3723,
+    "high": 0.4923,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -733,9 +733,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.725,
-    "low": 0.625,
-    "high": 0.825,
+    "p": 0.7251,
+    "low": 0.6251,
+    "high": 0.8251,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
@@ -749,7 +749,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 22,
+   "gap_pts": 23,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -799,8 +799,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9342,
-    "low": 0.8342,
+    "p": 0.9341,
+    "low": 0.8341,
     "high": 1,
     "confidence": "low",
     "method": "match_model",
@@ -933,9 +933,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0857,
+    "p": 0.0858,
     "low": 0,
-    "high": 0.1857,
+    "high": 0.1858,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -1144,9 +1144,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5078,
-    "low": 0.4078,
-    "high": 0.6078,
+    "p": 0.5067,
+    "low": 0.4067,
+    "high": 0.6067,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1158,7 +1158,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "3.9%",
+      "value": "4.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1288,9 +1288,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0282,
+    "p": 0.0293,
     "low": 0,
-    "high": 0.1282,
+    "high": 0.1293,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1400,6 +1400,108 @@
       {
        "price": 0.45,
        "size": 10.0
+      }
+     ],
+     "last": 0.45
+    }
+   }
+  },
+  {
+   "slug": "will-haaland-score-in-at-least-2-of-man-citys-next-5947",
+   "title": "Will Haaland score in at least 2 of Man City's next 3 Premier League matches?",
+   "url": "https://beta.xo.market/event/will-haaland-score-in-at-least-2-of-man-citys-next-5947?r=cryptotan01",
+   "creator": "xouser56971",
+   "is_ours": false,
+   "xo_price": 0.55,
+   "best_bid": 0.5,
+   "best_ask": 0.6,
+   "liquidity_usd": 16.7,
+   "volume_usd": 57.24,
+   "expires_at": "2026-10-24T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.8336,
+    "low": 0.7336,
+    "high": 0.9335,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
+    "inputs": [
+     {
+      "label": "Haaland: xG 4.58, xA 0.54 in 529 min, 6/6 starts",
+      "value": "41% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Liverpool v Man City",
+      "value": "team ratings (no Polymarket market yet)",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     },
+     {
+      "label": "Model expected goals LIV-MCI",
+      "value": "0.90-1.34",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     },
+     {
+      "label": "Polymarket Man City v Ipswich Town ($13,468 traded)",
+      "value": "1X2 prices",
+      "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
+     },
+     {
+      "label": "Model expected goals MCI-IPS",
+      "value": "2.87-0.81",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-23T19:00:00Z",
+   "gap_pts": 28,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Two scoring games out of three. Easy for Haaland? I'm backing NO. City fans, which two does he score in?",
+   "description": "This market concerns Erling Haaland scoring in the following three Manchester City Premier League fixtures: Liverpool vs Manchester City , scheduled for October 11, 2026. Manchester City vs Ipswich Town, scheduled for October 17, 2026. Aston Villa vs Manchester City , scheduled for October 24, 2026. Resolve YES if Haaland scores at least one goal in at least two of these three specified fixtures. Resolve NO if he scores in zero or one of these fixtures. Count the number of separate fixtures in which he scores, not his total number of goals. Two or more goals in one fixture count as one scoring fixture. Goals officially credited to Haaland during regulation time, including stoppage time and penalties, count. Own goals do not count. He does not have to start. A substitute appearance counts. If he does not play in a specified fixture, that fixture counts as a non-scoring fixture. Do not replace it with a later appearance. Match results do not matter: a goal counts whether Manchester City win, draw or lose. Only the three listed Premier League fixtures count. Exclude all other competitions and fixtures. All three fixtures must be completed by October 24, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Settlement is scheduled after the listed fixtures. Source: official Premier League match results and goalscorer records available at the resolution deadline.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://theanalyst.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 2.0
+      },
+      {
+       "price": 0.15,
+       "size": 20.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.6,
+       "size": 21.16667
+      }
+     ],
+     "last": 0.55
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.4,
+       "size": 21.16667
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 2.0
+      },
+      {
+       "price": 0.85,
+       "size": 20.0
       }
      ],
      "last": 0.45
@@ -1523,7 +1625,7 @@
    "fair": {
     "p": 0.3604,
     "low": 0.2604,
-    "high": 0.4604,
+    "high": 0.4605,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO.",
@@ -1659,8 +1761,8 @@
    "fixture": null,
    "fair": {
     "p": 0.3705,
-    "low": 0.2705,
-    "high": 0.4706,
+    "low": 0.2704,
+    "high": 0.4705,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
@@ -2170,9 +2272,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1684,
-    "low": 0.0684,
-    "high": 0.2684,
+    "p": 0.1679,
+    "low": 0.0679,
+    "high": 0.268,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Coventry score the fewest (or joint-fewest) league goals across MW6-9.",
@@ -2233,9 +2335,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0722,
+    "p": 0.0721,
     "low": 0,
-    "high": 0.1722,
+    "high": 0.1721,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -2297,9 +2399,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5986,
-    "low": 0.4986,
-    "high": 0.6986,
+    "p": 0.5997,
+    "low": 0.4997,
+    "high": 0.6997,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2431,9 +2533,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5263,
-    "low": 0.4264,
-    "high": 0.6263,
+    "p": 0.5273,
+    "low": 0.4273,
+    "high": 0.6273,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
@@ -2571,9 +2673,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5745,
-    "low": 0.4745,
-    "high": 0.6745,
+    "p": 0.5727,
+    "low": 0.4728,
+    "high": 0.6727,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -2813,9 +2915,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4582,
-    "low": 0.3582,
-    "high": 0.5582,
+    "p": 0.4572,
+    "low": 0.3572,
+    "high": 0.5572,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2827,7 +2929,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "3.9%",
+      "value": "4.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2907,9 +3009,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4285,
-    "low": 0.3286,
-    "high": 0.5285,
+    "p": 0.4328,
+    "low": 0.3327,
+    "high": 0.5328,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -3083,8 +3185,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9919,
-    "low": 0.8919,
+    "p": 0.9932,
+    "low": 0.8932,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -3357,108 +3459,6 @@
    }
   },
   {
-   "slug": "will-haaland-score-in-at-least-2-of-man-citys-next-5947",
-   "title": "Will Haaland score in at least 2 of Man City's next 3 Premier League matches?",
-   "url": "https://beta.xo.market/event/will-haaland-score-in-at-least-2-of-man-citys-next-5947?r=cryptotan01",
-   "creator": "xouser56971",
-   "is_ours": false,
-   "xo_price": 0.55,
-   "best_bid": 0.5,
-   "best_ask": 0.6,
-   "liquidity_usd": 16.7,
-   "volume_usd": 57.24,
-   "expires_at": "2026-10-24T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.831,
-    "low": 0.731,
-    "high": 0.931,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
-    "inputs": [
-     {
-      "label": "Haaland: xG 4.58, xA 0.54 in 529 min, 6/6 starts",
-      "value": "41% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Liverpool v Man City",
-      "value": "team ratings (no Polymarket market yet)",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     },
-     {
-      "label": "Model expected goals LIV-MCI",
-      "value": "0.90-1.34",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     },
-     {
-      "label": "Polymarket Man City v Ipswich Town ($13,456 traded)",
-      "value": "1X2 prices",
-      "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
-     },
-     {
-      "label": "Model expected goals MCI-IPS",
-      "value": "2.87-0.81",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-23T19:00:00Z",
-   "gap_pts": 28,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Two scoring games out of three. Easy for Haaland? I'm backing NO. City fans, which two does he score in?",
-   "description": "This market concerns Erling Haaland scoring in the following three Manchester City Premier League fixtures: Liverpool vs Manchester City , scheduled for October 11, 2026. Manchester City vs Ipswich Town, scheduled for October 17, 2026. Aston Villa vs Manchester City , scheduled for October 24, 2026. Resolve YES if Haaland scores at least one goal in at least two of these three specified fixtures. Resolve NO if he scores in zero or one of these fixtures. Count the number of separate fixtures in which he scores, not his total number of goals. Two or more goals in one fixture count as one scoring fixture. Goals officially credited to Haaland during regulation time, including stoppage time and penalties, count. Own goals do not count. He does not have to start. A substitute appearance counts. If he does not play in a specified fixture, that fixture counts as a non-scoring fixture. Do not replace it with a later appearance. Match results do not matter: a goal counts whether Manchester City win, draw or lose. Only the three listed Premier League fixtures count. Exclude all other competitions and fixtures. All three fixtures must be completed by October 24, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Settlement is scheduled after the listed fixtures. Source: official Premier League match results and goalscorer records available at the resolution deadline.",
-   "resolution_sources": [
-    "https://premierleague.com",
-    "https://theanalyst.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 2.0
-      },
-      {
-       "price": 0.15,
-       "size": 20.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.6,
-       "size": 21.16667
-      }
-     ],
-     "last": 0.55
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.4,
-       "size": 21.16667
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 2.0
-      },
-      {
-       "price": 0.85,
-       "size": 20.0
-      }
-     ],
-     "last": 0.45
-    }
-   }
-  },
-  {
    "slug": "will-fpls-most-captained-player-score-3-or-fewer-p-6410",
    "title": "Will FPL's most-captained player score 3 or fewer points in Gameweek 6?",
    "url": "https://beta.xo.market/event/will-fpls-most-captained-player-score-3-or-fewer-p-6410?r=cryptotan01",
@@ -3497,7 +3497,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/pipeline/ref/captain_odds.json"
      },
      {
-      "label": "Polymarket Man City v Ipswich Town ($13,456 traded)",
+      "label": "Polymarket Man City v Ipswich Town ($13,468 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -3556,7 +3556,7 @@
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Polymarket Man City v Ipswich Town ($13,456 traded)",
+      "label": "Polymarket Man City v Ipswich Town ($13,468 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -3646,9 +3646,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6652,
-    "low": 0.5652,
-    "high": 0.7651,
+    "p": 0.665,
+    "low": 0.565,
+    "high": 0.765,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -4156,13 +4156,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.432,
+   "fair": 0.4323,
    "confidence": "medium",
    "side": "NO",
-   "ev": 1.081,
-   "ev_low": 0.481,
-   "ev_high": 1.681,
-   "roi": 0.2351,
+   "ev": 1.078,
+   "ev_low": 0.478,
+   "ev_high": 1.678,
+   "roi": 0.2344,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
