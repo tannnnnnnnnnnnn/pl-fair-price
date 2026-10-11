@@ -945,7 +945,7 @@ for b in board:
     choices = [stake_result(10, side, b["books"][side]["asks"], fee_base, b["fair"]) for side in ("yes", "no")]
     pick = max(choices, key=lambda x: x["ev"])
     if pick["ev"] > 0:
-        best_value.append(dict(slug=b["slug"], title=b["title"], fair=b["fair"]["p"], **{
+        best_value.append(dict(slug=b["slug"], title=b["title"], fair=b["fair"]["p"], confidence=b["fair"]["confidence"], **{
             k: (round(v, 4) if isinstance(v, float) else v) for k, v in pick.items()}))
 best_value.sort(key=lambda x: x["ev"], reverse=True)
 
@@ -965,7 +965,7 @@ seen = {(p_["slug"], p_["side"]) for p_ in picks}
 for v in best_value[:5]:  # the first time a market and side make Best value, record the $10 trade the site showed
     if (v["slug"], v["side"]) not in seen:
         picks.append(dict(slug=v["slug"], side=v["side"], flagged_at=GEN, buy_price=v["buy_price"], shares=v["shares"],
-                          cost=v["fillable"], fair=v["fair"], ev=v["ev"]))
+                          cost=v["fillable"], fair=v["fair"], ev=v["ev"], confidence=v["confidence"]))
 def settle(pk, yes):
     won = (pk["side"] == "YES") == yes
     pay = pk["shares"] if won else 0.0

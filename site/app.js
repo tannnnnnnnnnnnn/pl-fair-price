@@ -385,19 +385,29 @@ function startPolling() {
 
 /* ---------- Receipts ---------- */
 
-// Track-record maths from PolymarketAI: a call is the side our price favours when it is 5+ points from XO's,
-// bought at XO's price before kickoff. Expected profit per $1 = our chance / price - 1; a win returns
-// (1 - price) / price, a loss -100%. Before fees.
-const MIN_EDGE = 0.05;
+// Bet sizing (PolymarketAI's rule, made cautious): quarter Kelly on a $1,000 bankroll, capped at 5% per bet.
+// The win chance is our price minus its range (3, 6 or 10 points by confidence), so rough prices bet less,
+// and the cost per share includes XO's 4% taker fee. A bet that pays only if it wins at cost c returns 1/c per $1.
+const BANKROLL = 1000, KELLY = 0.25, CAP = 0.05, FEE = 0.04;
+const BAND = { high: 0.03, medium: 0.06, low: 0.10 };  // same as the engine
 const ret = (x) => `${x >= 0 ? '+' : '−'}${Math.round(Math.abs(x) * 100)}%`;
+function sizeBet(ours, cost, conf, won, most = Infinity) {
+  const p = ours - (BAND[conf] || BAND.low);
+  // like PolymarketAI: no bet when the cautious edge is under 2 points
+  if (p - cost < 0.02 || cost <= 0 || cost >= 1) return { bet: false, cautious: p };
+  const f = (p - cost) / (1 - cost);
+  const stake = Math.min(BANKROLL * Math.min(KELLY * f, CAP), most);
+  return { bet: true, cautious: p, stake, capped: KELLY * f > CAP, pnl: won ? stake * (1 / cost - 1) : -stake };
+}
 function callFor(r) {
   const xo = num(r.xo_close), us = num(r.fair_close);
   const side = us >= xo ? 'YES' : 'NO';
-  const entry = side === 'YES' ? xo : 1 - xo, ours = side === 'YES' ? us : 1 - us;
-  const c = { side, entry, ours, edge: ours - entry, call: ours - entry >= MIN_EDGE && entry > 0 && entry < 1 };
-  if (c.call) Object.assign(c, { won: r.outcome === side, ev: ours / entry - 1, ret: r.outcome === side ? (1 - entry) / entry : -1 });
-  return c;
+  const price = side === 'YES' ? xo : 1 - xo, ours = side === 'YES' ? us : 1 - us;
+  return { side, price, ours, edge: ours - price, won: r.outcome === side,
+    ...sizeBet(ours, price + FEE * price * (1 - price), r.confidence, r.outcome === side) };
 }
+const totals = (xs) => ({ n: xs.length, won: xs.filter((x) => x.pnl > 0).length,
+  staked: xs.reduce((t, x) => t + x.stake, 0), pnl: xs.reduce((t, x) => t + x.pnl, 0) });
 
 function renderReceipts() {
   const sec = document.getElementById('receipts');
@@ -413,30 +423,33 @@ function renderReceipts() {
   const day = (iso) => new Date(iso).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
   document.getElementById('rc-picks').replaceChildren(...(picks.length && ps ? [
     h('h3', { class: 'rc-sub', text: 'Best value picks' }),
-    h('p', { class: 'rc-line', text: `$10 on each settled pick: ${money(ps.pnl, true)}${ps.staked ? ` (${ret(ps.pnl / ps.staked)})` : ''}` }),
-    h('p', { class: 'rc-note', text: `${ps.won} of ${ps.settled} won${ps.open ? ` · ${ps.open} still open` : ''}. A pick is the first time a market and side made Best value, at the price you could buy then, after XO's fee.` }),
-    h('div', { class: 'list' }, ...picks.map(({ r, p }) => {
-      const ours = p.side === 'YES' ? p.fair : 1 - p.fair;
-      return h('article', { class: 'rcard' },
-        h('div', { class: 'rc-main' },
-          h('h3', { class: 'q' }, marketLink(r, 'market-title')),
-          h('p', { class: 'rc-text', text: `On ${day(p.flagged_at)} we flagged ${p.side} at ${pct(p.buy_price)}. Our price ${pct(ours)}, an edge of ${Math.round((ours - p.buy_price) * 100)} pts.` }),
-          h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }),
-            p.won ? ` ${money(p.cost)} returned ${money(p.payout)}.` : ` ${money(p.cost)} lost.`)),
-        h('span', { class: 'outcome ' + (p.won ? 'yes' : 'no'), text: ret(p.pnl / p.cost) }));
-    })),
+    ...(() => {
+      // a pick's cost per share is what $10 really paid, fee included
+      const sized = picks.map(({ r, p }) => ({ r, p, ours: p.side === 'YES' ? p.fair : 1 - p.fair,
+        // when $10 emptied the order book, that is all the stake could have filled
+        ...sizeBet(p.side === 'YES' ? p.fair : 1 - p.fair, p.cost / p.shares, p.confidence || r.confidence, p.won, p.cost < 9.99 ? p.cost : Infinity) }));
+      const t = totals(sized.filter((x) => x.bet));
+      return [
+        h('p', { class: 'rc-line', text: `${money(t.pnl, true)} on a $1,000 bankroll (${ret(t.pnl / BANKROLL)})` }),
+        h('p', { class: 'rc-note', text: `${t.won} of ${t.n} settled picks won, staking ${money(t.staked)} in total${ps.open ? ` · ${ps.open} still open` : ''}. A pick is the first time a market and side made Best value, at the price you could buy then.` }),
+        h('div', { class: 'list' }, ...sized.map((x) => h('article', { class: 'rcard' },
+          h('div', { class: 'rc-main' },
+            h('h3', { class: 'q' }, marketLink(x.r, 'market-title')),
+            h('p', { class: 'rc-text', text: `On ${day(x.p.flagged_at)} we flagged ${x.p.side} at ${pct(x.p.buy_price)}. Our price ${pct(x.ours)}, an edge of ${Math.round((x.ours - x.p.buy_price) * 100)} pts.` }),
+            h('p', { class: 'rc-text' }, h('b', { text: `Result: ${x.r.outcome}.` }),
+              x.bet ? ` Stake ${money(x.stake)}, ${x.pnl > 0 ? 'won' : 'lost'} ${money(Math.abs(x.pnl))}.` : ' Too small an edge to stake.')),
+          h('span', { class: 'outcome ' + (!x.bet ? 'flat' : x.pnl > 0 ? 'yes' : 'no'), text: x.bet ? money(x.pnl, true) : 'No bet' })))),
+      ];
+    })(),
   ] : []));
 
   const calls = rows.map((r) => ({ r, c: callFor(r) }));
-  const made = calls.filter((x) => x.c.call);
+  const t = totals(calls.filter((x) => x.c.bet).map((x) => x.c));
   const parts = [];
-  if (made.length) {
-    const won = made.filter((x) => x.c.won).length;
-    const avg = made.reduce((t, x) => t + x.c.ret, 0) / made.length;
-    const exp = made.reduce((t, x) => t + x.c.ev, 0) / made.length;
-    parts.push(h('h3', { class: 'rc-sub', text: 'Our calls at XO\'s price' }));
-    parts.push(h('p', { class: 'rc-line', text: `$10 on each of our ${made.length} calls: ${money(avg * 10 * made.length, true)} (${ret(avg)})` }));
-    parts.push(h('p', { class: 'rc-note', text: `${won} of ${made.length} won. Expected profit before kickoff: ${ret(exp)}. A call is the side our price favoured when it was 5+ points from XO's, bought at XO's price before kickoff, before fees. Still early, so the sample is small.` }));
+  if (t.n) {
+    parts.push(h('h3', { class: 'rc-sub', text: 'Betting our prices against XO\'s' }));
+    parts.push(h('p', { class: 'rc-line', text: `${money(t.pnl, true)} on a $1,000 bankroll (${ret(t.pnl / BANKROLL)})` }));
+    parts.push(h('p', { class: 'rc-note', text: `${t.n} bets, ${t.won} won, ${money(t.staked)} staked (${ret(t.pnl / t.staked)} on what was staked). Each bet is a quarter of the Kelly stake, at most 5% of the bankroll, using our price minus its 3–10 point range, at XO's price before kickoff with XO's 4% fee. Still early, so the sample is small.` }));
   }
   document.getElementById('rc-sum').replaceChildren(...parts);
   const all_ = document.getElementById('rc-all');
@@ -444,16 +457,15 @@ function renderReceipts() {
   document.getElementById('rc-all-sum').textContent = `Show all ${rows.length} results`;
   document.getElementById('rc-list').replaceChildren(...calls.map(({ r, c }) => {
     const rough = r.confidence === 'low' ? ' (rough)' : '';
-    const line = c.call
-      ? `Our call: ${c.side} at XO's ${pct(c.entry)}. Our price ${pct(c.ours)}${rough}: an edge of ${Math.round(c.edge * 100)} pts, expected profit ${ret(c.ev)}.`
-      : `XO ${pct(num(r.xo_close))} YES, our price ${pct(num(r.fair_close))}${rough}. Under 5 points apart, so no call.`;
+    const line = `XO ${pct(c.price)} on ${c.side}, our price ${pct(c.ours)}${rough}: an edge of ${Math.round(c.edge * 100)} pts.`;
+    const size = c.bet ? ` Stake ${money(c.stake)}${c.capped ? ' (5% cap)' : ''}, ${c.won ? 'won' : 'lost'} ${money(Math.abs(c.pnl))}.`
+      : ' No bet: after our price range and the fee, the edge is under 2 points.';
     return h('article', { class: 'rcard' },
       h('div', { class: 'rc-main' },
         h('h3', { class: 'q' }, marketLink(r, 'market-title')),
         h('p', { class: 'rc-text', text: line }),
-        h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }),
-          c.call ? (c.won ? ` $10 returned ${money(10 / c.entry)}.` : ' $10 lost.') : null)),
-      h('span', { class: 'outcome ' + (!c.call ? 'flat' : c.won ? 'yes' : 'no'), text: c.call ? ret(c.ret) : 'No call' }));
+        h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }), size)),
+      h('span', { class: 'outcome ' + (!c.bet ? 'flat' : c.won ? 'yes' : 'no'), text: c.bet ? money(c.pnl, true) : 'No bet' }));
   }));
 }
 
