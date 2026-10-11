@@ -58,7 +58,9 @@ python3 - <<'PY'
 import datetime as dt, json, os, subprocess
 tp, rp = "../site/data/tracked.json", "../site/data/receipts.json"
 tracked = json.load(open(tp)) if os.path.exists(tp) else {}
-done = {r["slug"] for r in json.load(open(rp))} if os.path.exists(rp) else set()
+# XO can re-resolve a market after a dispute, so results from the last 3 days are checked again.
+recent = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=3)).isoformat()
+done = {r["slug"] for r in json.load(open(rp)) if (r.get("resolved_at") or "") < recent} if os.path.exists(rp) else set()
 active = {r["slug"] for r in json.load(open("raw/xo_convictions.json"))}
 now = dt.datetime.now(dt.timezone.utc).isoformat()
 os.makedirs("raw/closed", exist_ok=True)

@@ -869,8 +869,10 @@ xo = [r for r in load("xo_convictions.json")
       and (r.get("market") or {}).get("status") == "ACTIVE"]
 board, verify_rows, player_links = [], [], {}
 gw_idx = [i for i, z in enumerate(FX) if z["gw"] == BGW]
+# match groups: every match still to finish in the gameweek being played and the next one
+show_idx = [i for i, z in enumerate(FX) if z["gw"] in (BGW, GW) and not z["done"]]
 ALIASES = {s: {fold(TNAME[s]), s.lower()} for s in SHORT}
-for s_, extra in {"MUN": ["man utd", "man united", "manchester united", "united"], "MCI": ["man city", "manchester city", "city"],
+for s_, extra in {"MUN": ["man utd", "man united", "manchester united"], "MCI": ["man city", "manchester city"],
                   "TOT": ["tottenham", "spurs"], "NFO": ["forest"], "BHA": ["brighton"], "NEW": ["newcastle"],
                   "CRY": ["palace"], "AVL": ["villa"], "LIV": ["liverpool"], "LEE": ["leeds"], "COV": ["coventry"],
                   "IPS": ["ipswich"], "HUL": ["hull"], "SUN": ["sunderland"], "BOU": ["bournemouth"], "CHE": ["chelsea"],
@@ -905,7 +907,7 @@ for r in xo:
         b = BAND[out["conf"]]
         fair = dict(p=round(p, 4), low=round(max(p - b, 0), 4), high=round(min(p + b, 1), 4), confidence=out["conf"],
                     method=out["method"], method_text=out["text"], inputs=out["inputs"])
-        if out.get("fx") is not None and FX[out["fx"]]["gw"] == BGW:
+        if out.get("fx") is not None and out["fx"] in show_idx:
             z = FX[out["fx"]]
             fx = dict(home=z["h"], away=z["a"], home_name=TNAME[z["h"]], away_name=TNAME[z["a"]],
                       kickoff_utc=z["ko"].isoformat().replace("+00:00", "Z"))
@@ -913,7 +915,7 @@ for r in xo:
             if out.get(k):
                 player_links.setdefault(out[k], []).append(r["slug"])
     if fx is None:  # unpriced or multi-match markets: attach the GW fixture when the title names both clubs
-        hits = [i for i in gw_idx if all(any(al in fold(r["title"]) for al in ALIASES[t]) for t in (FX[i]["h"], FX[i]["a"]))]
+        hits = [i for i in show_idx if all(any(al in fold(r["title"]) for al in ALIASES[t]) for t in (FX[i]["h"], FX[i]["a"]))]
         if len(hits) == 1:
             z = FX[hits[0]]
             fx = dict(home=z["h"], away=z["a"], home_name=TNAME[z["h"]], away_name=TNAME[z["a"]],
@@ -976,16 +978,23 @@ if (OUT / "history.jsonl").exists():
         if line.strip():
             h_ = json.loads(line)
             past.setdefault(h_["slug"], []).append(h_)
-done_slugs = {r["slug"] for r in receipts}
+done_slugs = {r["slug"]: r for r in receipts}
 for slug, t in tracked.items():
     f = RAW / "closed" / f'{t["id"]}.json'
-    if slug in done_slugs or not f.exists():
+    if not f.exists():
         continue
     d = json.loads(f.read_text())
     win = (d.get("winningOutcome") or {}).get("title")
     if not win:
         continue
     yes = win.strip().lower() == "yes"
+    if slug in done_slugs:  # XO can change a result after a dispute; keep the receipt and its picks in line
+        r = done_slugs[slug]
+        if r["outcome"] != ("YES" if yes else "NO"):
+            r.update(outcome="YES" if yes else "NO", resolved_at=d.get("resolvedAt"))
+            if r.get("picks"):
+                r["picks"] = [settle(p_, yes) for p_ in r["picks"]]
+        continue
     # Prices from the last refresh before the market's lock or the start of the gameweek it resolved in, whichever
     # came first, so a receipt never shows a price set once the result was known.
     cut = min(ts(t.get("lock_at") or d.get("resolvedAt") or GEN), lock_time(ts(d.get("resolvedAt") or GEN)))

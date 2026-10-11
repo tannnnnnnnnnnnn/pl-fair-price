@@ -388,7 +388,7 @@ function startPolling() {
 function renderReceipts() {
   const sec = document.getElementById('receipts');
   const all = (state.board.receipts || []).filter((r) => r && (r.outcome === 'YES' || r.outcome === 'NO'));
-  const rows = all.filter((r) => num(r.xo_close) !== null);
+  const rows = all.filter((r) => num(r.xo_close) !== null && num(r.fair_close) !== null);
   const picks = all.flatMap((r) => (r.picks || []).map((p) => ({ r, p })));
   sec.hidden = !rows.length && !picks.length;
   if (sec.hidden) return;
@@ -404,40 +404,32 @@ function renderReceipts() {
     h('div', { class: 'list' }, ...picks.map(({ r, p }) => h('article', { class: 'rcard' },
       h('div', { class: 'rc-main' },
         h('h3', { class: 'q' }, marketLink(r, 'market-title')),
-        h('div', { class: 'rc-nums' },
-          h('span', { text: `${p.side} at ${pct(p.buy_price)} on ${day(p.flagged_at)}` }),
-          h('span', { text: `Our price ${pct(p.side === 'YES' ? p.fair : 1 - p.fair)}` }),
-          h('b', { class: 'pnl', text: `${money(p.cost)} → ${money(p.payout)} (${money(p.pnl, true)})` }))),
-      h('span', { class: 'outcome ' + r.outcome.toLowerCase(), text: r.outcome })))),
+        h('p', { class: 'rc-text', text: `On ${day(p.flagged_at)} we flagged ${p.side} at ${pct(p.buy_price)}. Our price for ${p.side} was ${pct(p.side === 'YES' ? p.fair : 1 - p.fair)}.` }),
+        h('p', { class: 'rc-text' }, `Result: ${r.outcome}. `,
+          h('b', { text: p.won ? `Won ${money(p.pnl)} (${money(p.cost)} became ${money(p.payout)})` : `Lost ${money(p.cost)}` }))),
+      h('span', { class: 'outcome ' + (p.won ? 'yes' : 'no'), text: p.won ? 'Won' : 'Lost' })))),
   ] : []));
 
   const sum = state.board.receipt_summary;
-  const sumEl = document.getElementById('rc-sum');
-  const parts = picks.length && rows.length ? [h('h3', { class: 'rc-sub', text: 'Every resolved market' })] : [];
-  if (sum && num(sum.compared) > 0) {
-    parts.push(h('p', { class: 'rc-line', text: `Our price was closer on ${sum.fair_closer} of ${sum.compared} resolved markets` }));
-    if (num(sum.brier_fair) !== null && num(sum.brier_xo) !== null) {
-      parts.push(h('details', { class: 'brier' },
-        h('summary', { text: 'Brier score' }),
-        h('p', { text: `Brier score: ours ${Number(sum.brier_fair).toFixed(3)} vs XO ${Number(sum.brier_xo).toFixed(3)} (lower is better)` }),
-        h('p', { class: 'brier-note', text: 'The average squared gap between a price and what happened. 0 is perfect.' })));
-    }
+  const parts = [];
+  if (rows.length && sum && num(sum.compared) > 0) {
+    parts.push(h('h3', { class: 'rc-sub', text: 'Us vs XO' }));
+    parts.push(h('p', { class: 'rc-line', text: `We were closer than XO on ${sum.fair_closer} of ${sum.compared} results` }));
   }
-  sumEl.replaceChildren(...parts);
-
+  document.getElementById('rc-sum').replaceChildren(...parts);
+  const all_ = document.getElementById('rc-all');
+  all_.hidden = !rows.length;
+  document.getElementById('rc-all-sum').textContent = `Show all ${rows.length} results`;
   document.getElementById('rc-list').replaceChildren(...rows.map((r) => {
-    const y = r.outcome === 'YES' ? 1 : 0;
-    const xo = num(r.xo_close), fair = num(r.fair_close);
-    let closer = null;
-    if (fair !== null) closer = Math.abs(y - fair) < Math.abs(y - xo) ? 'fair' : Math.abs(y - xo) < Math.abs(y - fair) ? 'xo' : null;
-    const tick = h('i', { class: 'tick', title: 'Closer to the result', role: 'img', 'aria-label': 'closer to the result' });
+    // both prices as the chance each side gave what actually happened
+    const got = (p) => (r.outcome === 'YES' ? p : 1 - p);
+    const xo = got(num(r.xo_close)), us = got(num(r.fair_close));
+    const verdict = us > xo ? 'We were closer' : xo > us ? 'XO was closer' : 'Level';
     return h('article', { class: 'rcard' },
       h('div', { class: 'rc-main' },
         h('h3', { class: 'q' }, marketLink(r, 'market-title')),
-        h('div', { class: 'rc-nums' },
-          h('span', { class: 'v-xo' }, `XO said ${pct(xo)}`, closer === 'xo' ? tick.cloneNode() : null),
-          h('span', { class: 'v-fair' + (fair === null ? ' none' : '') }, fair !== null ? `${r.confidence === 'low' ? 'Our rough price' : 'Our price'} said ${pct(fair)}` : 'No price from us', closer === 'fair' ? tick.cloneNode() : null))),
-      h('span', { class: 'outcome ' + r.outcome.toLowerCase(), text: r.outcome }));
+        h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }), ` Chance given to that: us ${pct(us)}${r.confidence === 'low' ? ' (rough)' : ''}, XO ${pct(xo)}.`)),
+      h('span', { class: 'outcome ' + (us > xo ? 'yes' : 'no'), text: verdict }));
   }));
 }
 
