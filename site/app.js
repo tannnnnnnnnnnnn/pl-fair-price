@@ -414,7 +414,7 @@ function renderReceipts() {
   const parts = [];
   if (rows.length && sum && num(sum.compared) > 0) {
     parts.push(h('h3', { class: 'rc-sub', text: 'Us vs XO' }));
-    parts.push(h('p', { class: 'rc-line', text: `We were closer than XO on ${sum.fair_closer} of ${sum.compared} results` }));
+    parts.push(h('p', { class: 'rc-line', text: `We beat XO on ${sum.fair_closer} of ${sum.compared} results` }));
   }
   document.getElementById('rc-sum').replaceChildren(...parts);
   const all_ = document.getElementById('rc-all');
@@ -424,11 +424,11 @@ function renderReceipts() {
     // both prices as the chance each side gave what actually happened
     const got = (p) => (r.outcome === 'YES' ? p : 1 - p);
     const xo = got(num(r.xo_close)), us = got(num(r.fair_close));
-    const verdict = us > xo ? 'We were closer' : xo > us ? 'XO was closer' : 'Level';
+    const verdict = us > xo ? 'We beat XO' : xo > us ? 'XO beat us' : 'Level';
     return h('article', { class: 'rcard' },
       h('div', { class: 'rc-main' },
         h('h3', { class: 'q' }, marketLink(r, 'market-title')),
-        h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }), ` Chance given to that: us ${pct(us)}${r.confidence === 'low' ? ' (rough)' : ''}, XO ${pct(xo)}.`)),
+        h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }), ` We gave ${r.outcome} ${pct(us)}${r.confidence === 'low' ? ' (rough)' : ''}, XO gave it ${pct(xo)}.`)),
       h('span', { class: 'outcome ' + (us > xo ? 'yes' : 'no'), text: verdict }));
   }));
 }
