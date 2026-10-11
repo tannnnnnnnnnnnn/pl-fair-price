@@ -66,7 +66,7 @@ function h(tag, props, ...kids) {
 }
 
 const EXPLAINERS = {
-  fair_price: 'Our estimate of the real chance of YES, using stronger outside markets and our model.',
+  fair_price: 'Our estimate of the real chance of YES, built from Polymarket odds and our own model.',
   rough: 'A useful estimate with bigger assumptions. Treat it with more caution than our other prices.',
   ev: 'What this bet is worth on average if our fair price is right. Positive = good value.',
   buy_sell_last: 'Buy is the cheapest price available now. Sell is the best current bid; Last is the most recent trade.',
