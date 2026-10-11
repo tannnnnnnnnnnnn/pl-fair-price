@@ -350,6 +350,7 @@ EL = {p["id"]: p for p in boot["elements"]}
 POS = {1: "GK", 2: "DEF", 3: "MID", 4: "FWD"}
 GOAL_PTS, CS_PTS = {1: 6, 2: 6, 3: 5, 4: 4}, {1: 4, 2: 4, 3: 1, 4: 0}
 PRIOR_G, PRIOR_A = {1: 0.0, 2: 0.04, 3: 0.15, 4: 0.38}, {1: 0.01, 2: 0.06, 3: 0.15, 4: 0.12}
+PRIOR_YC, PRIOR_SV = {1: 0.05, 2: 0.18, 3: 0.18, 4: 0.13}, 3.0  # yellow cards and keeper saves per 90 (assumption)
 team_xg = {s: 0.0 for s in SHORT}
 for p in boot["elements"]:
     team_xg[TEAMS[p["team"]]] += num(p["expected_goals"]) or 0
@@ -388,7 +389,7 @@ def player(pid):
     thr = BONUS["defcon_threshold"]["DEF" if pos == 2 else "MID"]
     p_dc = 0.0 if pos == 1 or p["minutes"] < 90 else DC_CAL * float(1 - poisson_cdf(thr - 1, dc90 * mpg))
     return dict(id=pid, name=p["web_name"], team=t, pos=pos, p_dc=p_dc, qg=min(xg90 / txg, 0.8) * mpg,
-                qa=min(xa90 / txg, 0.6) * mpg, p_next=nxt, p_later=base, flag_note=why,
+                qa=min(xa90 / txg, 0.6) * mpg, mpg=mpg, p_next=nxt, p_later=base, flag_note=why,
                 xg=num(p["expected_goals"]) or 0, xa=num(p["expected_assists"]) or 0, mins=p["minutes"],
                 starts=p["starts"], team_games=g, regular=regular)
 
@@ -1045,6 +1046,10 @@ for i in gw_fx:
                         p_draw=round(pd, 4), p_away=round(pa, 4), lam_home=round(z["lh"], 3), lam_away=round(z["la"], 3),
                         cs_home=round(g[:, 0].sum(), 4), cs_away=round(g[0, :].sum(), 4),
                         poly_volume=round(z["vol"]), source_url=z["url"]))
+# FPL credits more assists than xA predicts (rebounds, deflections, penalties won): 1.45x this season. FPL points
+# use this season's FPL ratio (last season's file counts official assists); XO markets resolve on official assists,
+# so their pricing keeps plain xA.
+FPL_AST = sum(e["assists"] for e in EL.values()) / max(sum(num(e["expected_assists"]) or 0 for e in EL.values()), 1)
 players = []
 for pid, p in EL.items():
     t = TEAMS[p["team"]]
@@ -1053,13 +1058,25 @@ for pid, p in EL.items():
         continue
     m, z = player(pid), FX[ix[0]]
     lam_t, lam_o = (z["lh"], z["la"]) if z["h"] == t else (z["la"], z["lh"])
-    pp, lg, la_ = m["p_next"], lam_t * m["qg"], lam_t * m["qa"]
+    pp, lg, la_ = m["p_next"], lam_t * m["qg"], lam_t * m["qa"] * FPL_AST
     _g = grid(z["lh"], z["la"])
     pcs = float(_g[:, 0].sum() if z["h"] == t else _g[0, :].sum())
     p_goal, p_ast = pp * (1 - math.exp(-lg)), pp * (1 - math.exp(-la_))
     cs_def = pcs if m["pos"] in (1, 2) else 0.0
     bonus = max(0.0, BONUS["const"] + BONUS["goal"] * lg + BONUS["assist"] * la_ + BONUS["cs_def"] * cs_def + BONUS["defcon"] * m["p_dc"])
-    xpts = pp * (2 + lg * GOAL_PTS[m["pos"]] + la_ * 3 + pcs * CS_PTS[m["pos"]] + 2 * m["p_dc"] + bonus)
+    # FPL rules the first version left out: 2 appearance points and clean sheets need 60+ minutes, keepers and
+    # defenders lose 1 per 2 goals conceded while on, yellow cards cost 1, keepers get 1 per 3 saves.
+    mpg, n90_ = m["mpg"], p["minutes"] / 90
+    p60 = min(max((90 * mpg - 30) / 50, 0.0), 0.97)  # from his average minutes per appearance
+    conc_d = _g.sum(axis=0) if z["h"] == t else _g.sum(axis=1)
+    conc = float(sum((k // 2) * conc_d[k] for k in range(len(conc_d)))) * mpg if m["pos"] in (1, 2) else 0.0
+    yc = (p["yellow_cards"] + 4 * PRIOR_YC[m["pos"]]) / (n90_ + 4) * mpg
+    sv = 0.0
+    if m["pos"] == 1:
+        sv_l = (p["saves"] + 4 * PRIOR_SV) / (n90_ + 4) * mpg * lam_o / (LEAGUE_AVG / 2)
+        sv = float(sum((k // 3) * pr_ for k, pr_ in enumerate(_poisson.pmf(np.arange(30), sv_l))))
+    xpts = pp * (1 + p60 + lg * GOAL_PTS[m["pos"]] + la_ * 3 + pcs * CS_PTS[m["pos"]] * p60 + 2 * m["p_dc"] + bonus
+                 - conc - yc + sv)
     blank = (1 - pp) + pp * math.exp(-lg - la_) * ((1 - pcs) if CS_PTS[m["pos"]] >= 4 else 1) * (1 - m["p_dc"])
     own = num(p["selected_by_percent"]) or 0
     if p_goal > 0.03 or own > 5 or m["pos"] in (1, 2) and pp > 0.5 and own > 1:
