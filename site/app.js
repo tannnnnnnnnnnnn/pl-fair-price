@@ -385,6 +385,20 @@ function startPolling() {
 
 /* ---------- Receipts ---------- */
 
+// Track-record maths from PolymarketAI: a call is the side our price favours when it is 5+ points from XO's,
+// bought at XO's price before kickoff. Expected profit per $1 = our chance / price - 1; a win returns
+// (1 - price) / price, a loss -100%. Before fees.
+const MIN_EDGE = 0.05;
+const ret = (x) => `${x >= 0 ? '+' : '−'}${Math.round(Math.abs(x) * 100)}%`;
+function callFor(r) {
+  const xo = num(r.xo_close), us = num(r.fair_close);
+  const side = us >= xo ? 'YES' : 'NO';
+  const entry = side === 'YES' ? xo : 1 - xo, ours = side === 'YES' ? us : 1 - us;
+  const c = { side, entry, ours, edge: ours - entry, call: ours - entry >= MIN_EDGE && entry > 0 && entry < 1 };
+  if (c.call) Object.assign(c, { won: r.outcome === side, ev: ours / entry - 1, ret: r.outcome === side ? (1 - entry) / entry : -1 });
+  return c;
+}
+
 function renderReceipts() {
   const sec = document.getElementById('receipts');
   const all = (state.board.receipts || []).filter((r) => r && (r.outcome === 'YES' || r.outcome === 'NO'));
@@ -399,37 +413,47 @@ function renderReceipts() {
   const day = (iso) => new Date(iso).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
   document.getElementById('rc-picks').replaceChildren(...(picks.length && ps ? [
     h('h3', { class: 'rc-sub', text: 'Best value picks' }),
-    h('p', { class: 'rc-line', text: `$10 on each settled pick: ${money(ps.pnl, true)}` }),
-    h('p', { class: 'rc-note', text: `${ps.won} of ${ps.settled} won${ps.open ? ` · ${ps.open} still open` : ''}. A pick is the first time a market and side made Best value, at the price you could buy then.` }),
-    h('div', { class: 'list' }, ...picks.map(({ r, p }) => h('article', { class: 'rcard' },
-      h('div', { class: 'rc-main' },
-        h('h3', { class: 'q' }, marketLink(r, 'market-title')),
-        h('p', { class: 'rc-text', text: `On ${day(p.flagged_at)} we flagged ${p.side} at ${pct(p.buy_price)}. Our price for ${p.side} was ${pct(p.side === 'YES' ? p.fair : 1 - p.fair)}.` }),
-        h('p', { class: 'rc-text' }, `Result: ${r.outcome}. `,
-          h('b', { text: p.won ? `Won ${money(p.pnl)} (${money(p.cost)} became ${money(p.payout)})` : `Lost ${money(p.cost)}` }))),
-      h('span', { class: 'outcome ' + (p.won ? 'yes' : 'no'), text: p.won ? 'Won' : 'Lost' })))),
+    h('p', { class: 'rc-line', text: `$10 on each settled pick: ${money(ps.pnl, true)}${ps.staked ? ` (${ret(ps.pnl / ps.staked)})` : ''}` }),
+    h('p', { class: 'rc-note', text: `${ps.won} of ${ps.settled} won${ps.open ? ` · ${ps.open} still open` : ''}. A pick is the first time a market and side made Best value, at the price you could buy then, after XO's fee.` }),
+    h('div', { class: 'list' }, ...picks.map(({ r, p }) => {
+      const ours = p.side === 'YES' ? p.fair : 1 - p.fair;
+      return h('article', { class: 'rcard' },
+        h('div', { class: 'rc-main' },
+          h('h3', { class: 'q' }, marketLink(r, 'market-title')),
+          h('p', { class: 'rc-text', text: `On ${day(p.flagged_at)} we flagged ${p.side} at ${pct(p.buy_price)}. Our price ${pct(ours)}, an edge of ${Math.round((ours - p.buy_price) * 100)} pts.` }),
+          h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }),
+            p.won ? ` ${money(p.cost)} returned ${money(p.payout)}.` : ` ${money(p.cost)} lost.`)),
+        h('span', { class: 'outcome ' + (p.won ? 'yes' : 'no'), text: ret(p.pnl / p.cost) }));
+    })),
   ] : []));
 
-  const sum = state.board.receipt_summary;
+  const calls = rows.map((r) => ({ r, c: callFor(r) }));
+  const made = calls.filter((x) => x.c.call);
   const parts = [];
-  if (rows.length && sum && num(sum.compared) > 0) {
-    parts.push(h('h3', { class: 'rc-sub', text: 'Us vs XO' }));
-    parts.push(h('p', { class: 'rc-line', text: `We beat XO on ${sum.fair_closer} of ${sum.compared} results` }));
+  if (made.length) {
+    const won = made.filter((x) => x.c.won).length;
+    const avg = made.reduce((t, x) => t + x.c.ret, 0) / made.length;
+    const exp = made.reduce((t, x) => t + x.c.ev, 0) / made.length;
+    parts.push(h('h3', { class: 'rc-sub', text: 'Our calls at XO\'s price' }));
+    parts.push(h('p', { class: 'rc-line', text: `$10 on each of our ${made.length} calls: ${money(avg * 10 * made.length, true)} (${ret(avg)})` }));
+    parts.push(h('p', { class: 'rc-note', text: `${won} of ${made.length} won. Expected profit before kickoff: ${ret(exp)}. A call is the side our price favoured when it was 5+ points from XO's, bought at XO's price before kickoff, before fees. Still early, so the sample is small.` }));
   }
   document.getElementById('rc-sum').replaceChildren(...parts);
   const all_ = document.getElementById('rc-all');
   all_.hidden = !rows.length;
   document.getElementById('rc-all-sum').textContent = `Show all ${rows.length} results`;
-  document.getElementById('rc-list').replaceChildren(...rows.map((r) => {
-    // both prices as the chance each side gave what actually happened
-    const got = (p) => (r.outcome === 'YES' ? p : 1 - p);
-    const xo = got(num(r.xo_close)), us = got(num(r.fair_close));
-    const verdict = us > xo ? 'We beat XO' : xo > us ? 'XO beat us' : 'Level';
+  document.getElementById('rc-list').replaceChildren(...calls.map(({ r, c }) => {
+    const rough = r.confidence === 'low' ? ' (rough)' : '';
+    const line = c.call
+      ? `Our call: ${c.side} at XO's ${pct(c.entry)}. Our price ${pct(c.ours)}${rough}: an edge of ${Math.round(c.edge * 100)} pts, expected profit ${ret(c.ev)}.`
+      : `XO ${pct(num(r.xo_close))} YES, our price ${pct(num(r.fair_close))}${rough}. Under 5 points apart, so no call.`;
     return h('article', { class: 'rcard' },
       h('div', { class: 'rc-main' },
         h('h3', { class: 'q' }, marketLink(r, 'market-title')),
-        h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }), ` We gave ${r.outcome} ${pct(us)}${r.confidence === 'low' ? ' (rough)' : ''}, XO gave it ${pct(xo)}.`)),
-      h('span', { class: 'outcome ' + (us > xo ? 'yes' : 'no'), text: verdict }));
+        h('p', { class: 'rc-text', text: line }),
+        h('p', { class: 'rc-text' }, h('b', { text: `Result: ${r.outcome}.` }),
+          c.call ? (c.won ? ` $10 returned ${money(10 / c.entry)}.` : ' $10 lost.') : null)),
+      h('span', { class: 'outcome ' + (!c.call ? 'flat' : c.won ? 'yes' : 'no'), text: c.call ? ret(c.ret) : 'No call' }));
   }));
 }
 

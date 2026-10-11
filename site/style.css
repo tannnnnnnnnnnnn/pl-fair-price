@@ -258,6 +258,7 @@ button { font: inherit; color: inherit; }
 .outcome { flex: none; padding: 6px 13px; border-radius: 999px; font: 800 12px/1 'Rubik', sans-serif; }
 .outcome.yes { background: var(--pink); color: #000; }
 .outcome.no { background: #000; color: #fff; }
+.outcome.flat { background: var(--panel); color: var(--ink-2); }
 
 /* live match marker */
 .live { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px 3px 8px; border-radius: 999px; background: var(--pink); color: #000; font: 800 10.5px/1 'Rubik', sans-serif; letter-spacing: .08em; text-transform: uppercase; animation: pulse 1.6s ease-out infinite; }
