@@ -444,7 +444,7 @@ function renderReceipts() {
   if (t.n) {
     parts.push(h('h3', { class: 'rc-sub', text: 'Trading on XO with our prices' }));
     parts.push(h('p', { class: 'rc-line', text: `${money(t.pnl, true)} on a $1,000 bankroll (${ret(t.pnl / BANKROLL)})` }));
-    parts.push(h('p', { class: 'rc-note', text: `${t.n} bets, ${t.won} won, ${money(t.staked)} staked (${ret(t.pnl / t.staked)} on what was staked). Each bet is a quarter of the Kelly stake, at most 5% of the bankroll, using our price minus its 3–10 point range, at XO's price before kickoff with XO's 4% fee. Still early, so the sample is small.` }));
+    parts.push(h('p', { class: 'rc-note', text: `${t.n} bets, ${t.won} won, ${money(t.staked)} staked (${ret(t.pnl / t.staked)} on what was staked). Bets were bigger when our price was further from XO's, never more than $50, at XO's price before kickoff with XO's 4% fee. Still early, so the sample is small.` }));
   }
   document.getElementById('rc-sum').replaceChildren(...parts);
   const all_ = document.getElementById('rc-all');
@@ -452,9 +452,9 @@ function renderReceipts() {
   document.getElementById('rc-all-sum').textContent = `Show all ${rows.length} results`;
   document.getElementById('rc-list').replaceChildren(...calls.map(({ r, c }) => {
     const rough = r.confidence === 'low' ? ' (rough)' : '';
-    const line = `XO ${pct(c.price)} on ${c.side}, our price ${pct(c.ours)}${rough}: an edge of ${Math.round(c.edge * 100)} pts.`;
+    const line = `XO ${pct(c.price)} on ${c.side}, our price ${pct(c.ours)}${rough}: a gap of ${Math.round(c.edge * 100)} pts.`;
     const size = c.bet ? ` Stake ${money(c.stake)}${c.capped ? ' (5% cap)' : ''}, ${c.won ? 'won' : 'lost'} ${money(Math.abs(c.pnl))}.`
-      : ' No bet: after our price range and the fee, the edge is under 2 points.';
+      : ' No bet: after our price range and the fee, the gap is under 2 points.';
     return h('article', { class: 'rcard' },
       h('div', { class: 'rc-main' },
         h('h3', { class: 'q' }, marketLink(r, 'market-title')),
