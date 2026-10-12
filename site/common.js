@@ -8,7 +8,7 @@ const CONFIG = {
   minGapPts: 8,
 };
 
-const GOATCOUNTER = '';  // GoatCounter site code; empty = no tracking
+const GOATCOUNTER = 'tan';  // GoatCounter site code (tan.goatcounter.com); empty = no tracking
 
 const CHANGELOG = [
   { version: 'v1', date: 'Thu 8 Oct 2026', notes: 'First public version: our price beside every Premier League market on XO, GW numbers for FPL managers.' },
