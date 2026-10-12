@@ -1,29 +1,29 @@
-# VERIFY — PL Fair Price (2026-10-12T07:19:05Z)
+# VERIFY — PL Fair Price (2026-10-12T07:29:17Z)
 
-GW7 deadline 2026-10-17T10:00:00Z. 62 XO PL markets; 31 priced (high 2, medium 6, low 23).
+GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 31 priced (high 2, medium 6, low 23).
 
 ## 1X2 fit (Polymarket de-vigged vs Poisson model), max error 0.0 pts
 
 | Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|
-| COV-NEW | 6 | 29.5/27.5/43.5 | 29.4/27.4/43.3 | 29.4/27.4/43.3 | 1.16-1.46 | $55,808 |
-| EVE-CHE | 7 | 30.0/25.5/44.5 | 30.0/25.5/44.5 | 30.0/25.5/44.5 | 1.31-1.64 | $5,486 |
-| BRE-LIV | 7 | 38.5/26.0/35.5 | 38.5/26.0/35.5 | 38.5/26.0/35.5 | 1.50-1.43 | $1,574 |
+| COV-NEW | 6 | 29.5/27.5/43.5 | 29.4/27.4/43.3 | 29.4/27.4/43.3 | 1.16-1.46 | $56,230 |
+| EVE-CHE | 7 | 30.0/25.5/44.5 | 30.0/25.5/44.5 | 30.0/25.5/44.5 | 1.31-1.64 | $5,508 |
+| BRE-LIV | 7 | 38.5/26.0/35.5 | 38.5/26.0/35.5 | 38.5/26.0/35.5 | 1.50-1.43 | $1,801 |
 | FUL-HUL | 7 | 57.5/23.5/19.5 | 57.2/23.4/19.4 | 57.2/23.4/19.4 | 1.90-1.03 | $751 |
-| MCI-IPS | 7 | 79.5/13.5/7.5 | 79.1/13.4/7.5 | 79.1/13.4/7.5 | 2.90-0.83 | $14,012 |
+| MCI-IPS | 7 | 79.5/13.5/7.5 | 79.1/13.4/7.5 | 79.1/13.4/7.5 | 2.90-0.83 | $14,142 |
 | NEW-AVL | 7 | 45.0/25.5/29.5 | 45.0/25.5/29.5 | 45.0/25.5/29.5 | 1.65-1.30 | $939 |
-| BHA-CRY | 7 | 61.5/21.5/17.5 | 61.2/21.4/17.4 | 61.2/21.4/17.4 | 2.12-1.05 | $712 |
+| BHA-CRY | 7 | 61.5/21.5/17.5 | 61.2/21.4/17.4 | 61.2/21.4/17.4 | 2.12-1.05 | $728 |
 | BOU-SUN | 7 | 47.5/26.5/26.5 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 1.59-1.13 | $329 |
-| LEE-MUN | 7 | 38.0/26.5/35.5 | 38.0/26.5/35.5 | 38.0/26.5/35.5 | 1.45-1.39 | $3,020 |
-| NFO-ARS | 7 | 14.0/23.5/62.5 | 14.0/23.5/62.5 | 14.0/23.5/62.5 | 0.74-1.82 | $3,493 |
+| LEE-MUN | 7 | 38.0/26.5/35.5 | 38.0/26.5/35.5 | 38.0/26.5/35.5 | 1.45-1.39 | $3,160 |
+| NFO-ARS | 7 | 14.0/23.5/62.5 | 14.0/23.5/62.5 | 14.0/23.5/62.5 | 0.74-1.82 | $3,629 |
 | TOT-COV | 7 | 66.5/20.0/14.0 | 66.2/19.9/13.9 | 66.2/19.9/13.9 | 2.23-0.93 | $373 |
 | IPS-NFO | 8 | 33.0/27.0/40.0 | 33.0/27.0/40.0 | 33.0/27.0/40.0 | 1.29-1.44 | $24 |
-| AVL-MCI | 8 | 18.5/22.0/59.0 | 18.6/22.1/59.3 | 18.6/22.1/59.3 | 1.07-2.04 | $505 |
-| ARS-EVE | 8 | 71.0/20.0/9.5 | 70.6/19.9/9.5 | 70.6/19.9/9.5 | 2.06-0.62 | $48 |
+| AVL-MCI | 8 | 18.5/22.0/59.0 | 18.6/22.1/59.3 | 18.6/22.1/59.3 | 1.07-2.04 | $558 |
+| ARS-EVE | 8 | 71.0/20.0/9.5 | 70.6/19.9/9.5 | 70.6/19.9/9.5 | 2.06-0.62 | $76 |
 | COV-FUL | 8 | 32.5/27.0/40.5 | 32.5/27.0/40.5 | 32.5/27.0/40.5 | 1.28-1.45 | $163 |
-| CHE-TOT | 8 | 52.5/23.5/24.5 | 52.2/23.4/24.4 | 52.2/23.4/24.4 | 1.92-1.26 | $73 |
+| CHE-TOT | 8 | 52.5/23.5/24.5 | 52.2/23.4/24.4 | 52.2/23.4/24.4 | 1.92-1.26 | $111 |
 | CRY-NEW | 8 | 36.5/26.5/37.0 | 36.5/26.5/37.0 | 36.5/26.5/37.0 | 1.41-1.42 | $0 |
-| LIV-BHA | 8 | 48.0/24.0/28.5 | 47.8/23.9/28.4 | 47.8/23.9/28.4 | 1.85-1.39 | $0 |
+| LIV-BHA | 8 | 48.0/24.0/28.5 | 47.8/23.9/28.4 | 47.8/23.9/28.4 | 1.85-1.39 | $41 |
 | MUN-BOU | 8 | 52.5/23.5/24.0 | 52.5/23.5/24.0 | 52.5/23.5/24.0 | 1.91-1.24 | $0 |
 | HUL-BRE | 8 | 20.5/23.5/55.5 | 20.6/23.6/55.8 | 20.6/23.6/55.8 | 1.07-1.88 | $0 |
 | SUN-LEE | 8 | 35.0/28.5/36.5 | 35.0/28.5/36.5 | 35.0/28.5/36.5 | 1.24-1.27 | $0 |
@@ -100,7 +100,7 @@ qg 0.417, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | low | 50 | 68.2 | 18 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
 | low | 5 | 53.4 | 48 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | medium | 50 | 18.4 | -32 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
-| low | 50 | 71.1 | 21 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
+| low | 50 | 71.2 | 21 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | low | 50 | 59.5 | 10 | player_model | Will Pascal Groß score or assist in at least 2 of Brighton's next 4 Premier League matches? | Chance Groß score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the |
 | medium | 47 | 38.8 | -8 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 65 | 94.2 | 29 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
@@ -109,7 +109,6 @@ qg 0.417, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | low | 55 | 20.1 | -35 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 37 | - |  | - | Arsenal < 1.20 combined xG conceded vs Leeds & Forest? | Fair price coming: not modelled yet. |
 | - | 45 | - |  | - | Fulham to sack or replace head coach before 1 November 2026 | No Polymarket market prices this manager's job by this date. |
-| - | 50 | - |  | - | Haaland vs Bruno: Most FPL points in GW6? | Fair price coming: not modelled yet. |
 | - | 38 | - |  | - | Isak vs Haaland: More goals in next 3 league games? | Fair price coming: not modelled yet. |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
 | - | 65 | - |  | - | Man United: 12+ corners in next 2 matches? | Fair price coming: not modelled yet. |
