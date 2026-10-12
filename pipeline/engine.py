@@ -27,6 +27,9 @@ TOOL = Path(__file__).resolve().parent.parent
 RAW, OUT = TOOL / "pipeline" / "raw", TOOL / "site" / "data"
 REFD = TOOL / "pipeline" / "ref"
 REF = "cryptotan01"
+# Tan's four trial markets; his pre-trial City deduction market is not one of them
+TRIAL = {"will-joo-pedro-start-for-chelsea-vs-bournemouth-9641", "will-fpls-most-captained-player-score-3-or-fewer-p-6410",
+         "will-man-city-be-3-points-clear-at-the-top-of-the--8494", "will-tottenham-be-in-the-premier-league-bottom-thr-3501"}
 N = 20000
 RNG = np.random.default_rng(20261008)
 FH_SHARE = 0.45  # share of goals scored in the first half (assumption)
@@ -924,7 +927,7 @@ for r in xo:
     lock = lock_time(ts(mk["expiresAt"]), FX[out["fx"]]["ko"] if out.get("fx") is not None else None)
     horizon = "weekend" if ts(mk["expiresAt"]) <= max(FX[i]["ko"] for i in gw_idx) + dt.timedelta(days=1) else "long"
     row = dict(slug=r["slug"], title=r["title"], url=f'https://beta.xo.market/event/{r["slug"]}?r={REF}',
-               creator=mk["creator"]["username"], is_ours=mk["creator"]["username"].lower() == REF,
+               creator=mk["creator"]["username"], is_ours=r["slug"] in TRIAL,
                xo_price=None if xo_p is None else round(xo_p, 4), best_bid=bb, best_ask=ba,
                liquidity_usd=round(num(book.get("totalLiquidity")) or 0, 2),
                volume_usd=round(num(mk.get("totalVolumeInUSD")) or 0, 2), expires_at=mk["expiresAt"],
