@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T02:18:16Z",
+ "generated_at": "2026-10-12T02:27:44Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from Polymarket odds and FPL data.",
  "gw": {
@@ -361,55 +361,6 @@
    }
   },
   {
-   "slug": "isak-vs-haaland-more-goals-in-next-3-league-games-3296",
-   "title": "Isak vs Haaland: More goals in next 3 league games?",
-   "url": "https://beta.xo.market/event/isak-vs-haaland-more-goals-in-next-3-league-games-3296?r=cryptotan01",
-   "creator": "IdrtZaky",
-   "is_ours": false,
-   "xo_price": 0.38,
-   "best_bid": 0.38,
-   "best_ask": null,
-   "liquidity_usd": 3.87,
-   "volume_usd": 16.13,
-   "expires_at": "2026-11-01T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Will Isak score more goals vs Haaland in the next 3 Premier League Games? I think he has a decent chance",
-   "description": "This market resolves based on whether Alexander Isak or Erling Haaland scores more goals in Premier League matchweeks 6\u20138 after October 8, 2026, as recorded by the official Premier League source. Only those three matchweeks count. Goals in domestic cups, European competitions, or international fixtures do not count. If a player does not appear in a match, he is recorded as 0 goals, 0 assists, and 0 minutes for that match. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season is cancelled or permanently abandoned before both players\u2019 matchweek 6-8 fixtures are completed, or official statistics are permanently retracted without revision, the market voids and all positions resolve equally. The player with more goals wins. If the goal totals are equal, the player with more assists across those matches wins. If both also have 0 assists, the player with more time spent actively on the pitch across the three matches wins. Minutes are those recorded by the Premier League, including added time. Own goals do not count. If that is still tied, the market voids.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.38,
-       "size": 10.186761
-      }
-     ],
-     "asks": [],
-     "last": 0.38
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.62,
-       "size": 10.186761
-      }
-     ],
-     "last": 0.62
-    }
-   }
-  },
-  {
    "slug": "will-tottenham-sack-roberto-de-zerbi-before-11-nov-3885",
    "title": "Will Tottenham sack Roberto De Zerbi before 11 November 2026?",
    "url": "https://beta.xo.market/event/will-tottenham-sack-roberto-de-zerbi-before-11-nov-3885?r=cryptotan01",
@@ -571,6 +522,57 @@
      ],
      "asks": [],
      "last": 0.5
+    }
+   }
+  },
+  {
+   "slug": "will-any-premier-league-manager-leave-his-post-bef-1715",
+   "title": "Will any Premier League manager leave his post before November 9, 2026?",
+   "url": "https://beta.xo.market/event/will-any-premier-league-manager-leave-his-post-bef-1715?r=cryptotan01",
+   "creator": "IdrtZaky",
+   "is_ours": false,
+   "xo_price": 0.38,
+   "best_bid": 0.38,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-11-09T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-11-06T20:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "The first P: managerial departure historically lands in Oct/Nov, and return from international break is classic trigger",
+   "description": "This market resolves Yes if a Premier League club officially announces, before November 9, 2026, 23:59:59 UTC, that its manager is leaving via sacking, resignation, or mutual agreement. The announcement time counts, not the date the manager actually stops working. An announcement before the cutoff counts even if the departure takes effect on or after November 9, 2026. An announcement on or after the cutoff does not count, even if the departure was agreed earlier. The announcement must come from the club or the Premier League. Primary source: Premier League (https://www. premierleague. com). If that source is unavailable, incomplete, or inconsistent, BBC (https://www. bbc. com) or Sky Sports (https://www. skysports. com) may be used. The primary source governs. Reports of talks, a caretaker appointment with no departure announced, or a leave of absence do not count. If the announcement is officially retracted before the cutoff, or the Premier League season is cancelled before any qualifying announcement, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com",
+    "https://www.skysports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.38,
+       "size": 26.315789
+      }
+     ],
+     "asks": [],
+     "last": 0.38
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.62,
+       "size": 26.315789
+      }
+     ],
+     "last": 0.62
     }
    }
   },
@@ -1116,9 +1118,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.533,
-    "low": 0.433,
-    "high": 0.633,
+    "p": 0.5325,
+    "low": 0.4325,
+    "high": 0.6325,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1130,7 +1132,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "2.2%",
+      "value": "2.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1848,57 +1850,6 @@
       }
      ],
      "last": 0.525
-    }
-   }
-  },
-  {
-   "slug": "will-any-premier-league-manager-leave-his-post-bef-1715",
-   "title": "Will any Premier League manager leave his post before November 9, 2026?",
-   "url": "https://beta.xo.market/event/will-any-premier-league-manager-leave-his-post-bef-1715?r=cryptotan01",
-   "creator": "IdrtZaky",
-   "is_ours": false,
-   "xo_price": 0.38,
-   "best_bid": 0.38,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-09T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-11-06T20:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "The first P: managerial departure historically lands in Oct/Nov, and return from international break is classic trigger",
-   "description": "This market resolves Yes if a Premier League club officially announces, before November 9, 2026, 23:59:59 UTC, that its manager is leaving via sacking, resignation, or mutual agreement. The announcement time counts, not the date the manager actually stops working. An announcement before the cutoff counts even if the departure takes effect on or after November 9, 2026. An announcement on or after the cutoff does not count, even if the departure was agreed earlier. The announcement must come from the club or the Premier League. Primary source: Premier League (https://www. premierleague. com). If that source is unavailable, incomplete, or inconsistent, BBC (https://www. bbc. com) or Sky Sports (https://www. skysports. com) may be used. The primary source governs. Reports of talks, a caretaker appointment with no departure announced, or a leave of absence do not count. If the announcement is officially retracted before the cutoff, or the Premier League season is cancelled before any qualifying announcement, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.com",
-    "https://www.skysports.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.38,
-       "size": 26.315789
-      }
-     ],
-     "asks": [],
-     "last": 0.38
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.62,
-       "size": 26.315789
-      }
-     ],
-     "last": 0.62
     }
    }
   },
@@ -2887,9 +2838,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4907,
-    "low": 0.3907,
-    "high": 0.5907,
+    "p": 0.4902,
+    "low": 0.3902,
+    "high": 0.5902,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2901,7 +2852,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "2.2%",
+      "value": "2.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -3212,6 +3163,45 @@
    }
   },
   {
+   "slug": "isak-vs-haaland-more-goals-in-next-3-league-games-3296",
+   "title": "Isak vs Haaland: More goals in next 3 league games?",
+   "url": "https://beta.xo.market/event/isak-vs-haaland-more-goals-in-next-3-league-games-3296?r=cryptotan01",
+   "creator": "IdrtZaky",
+   "is_ours": false,
+   "xo_price": 0.38,
+   "best_bid": null,
+   "best_ask": null,
+   "liquidity_usd": 0,
+   "volume_usd": 26.32,
+   "expires_at": "2026-11-01T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will Isak score more goals vs Haaland in the next 3 Premier League Games? I think he has a decent chance",
+   "description": "This market resolves based on whether Alexander Isak or Erling Haaland scores more goals in Premier League matchweeks 6\u20138 after October 8, 2026, as recorded by the official Premier League source. Only those three matchweeks count. Goals in domestic cups, European competitions, or international fixtures do not count. If a player does not appear in a match, he is recorded as 0 goals, 0 assists, and 0 minutes for that match. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season is cancelled or permanently abandoned before both players\u2019 matchweek 6-8 fixtures are completed, or official statistics are permanently retracted without revision, the market voids and all positions resolve equally. The player with more goals wins. If the goal totals are equal, the player with more assists across those matches wins. If both also have 0 assists, the player with more time spent actively on the pitch across the three matches wins. Minutes are those recorded by the Premier League, including added time. Own goals do not count. If that is still tied, the market voids.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
+  },
+  {
    "slug": "will-mainoo-play-at-least-180-minutes-across-man-u-1433",
    "title": "Will Mainoo play at least 180 minutes across Man United\u2019s next 3 PL matches?",
    "url": "https://beta.xo.market/event/will-mainoo-play-at-least-180-minutes-across-man-u-1433?r=cryptotan01",
@@ -3389,23 +3379,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6975,
-    "low": 0.5975,
-    "high": 0.7975,
+    "p": 0.714,
+    "low": 0.614,
+    "high": 0.814,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "30.2% (spread 5c, $654 traded on this market)",
+      "value": "28.6% (spread 8c, $654 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 20,
+   "gap_pts": 21,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
