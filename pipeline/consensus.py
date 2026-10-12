@@ -242,7 +242,7 @@ def build(cached):
 
     sources = [
         dict(key="ours", name="Our model", url=None,
-             note="Match odds from Polymarket, player shares from FPL xG and xA, plus clean sheets, defensive contribution and bonus."),
+             note="Match odds from blended market odds, player shares from FPL xG and xA, plus clean sheets, defensive contribution and bonus."),
         dict(key="eleven", name="elevenify", url="https://www.elevenify.com",
              note="elevenify publishes no points, so this is our points formula run on elevenify's team goals, clean-sheet chances and player goal and assist rates."),
         dict(key="solio", name="Solio Analytics", url=SOLIO_PAGE,

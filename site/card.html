@@ -106,7 +106,7 @@ const h = (tag, cls, text) => { const e = document.createElement(tag); if (cls) 
   const deek = document.createElement('img'); deek.className = 'deek'; deek.src = 'assets/og/deek-og.png'; deek.alt = '';
   const bar = h('div', 'bar'); const l = h('div', 'on'); l.append(document.createTextNode('Markets on '));
   const wm2 = document.createElement('img'); wm2.src = 'assets/logos/xo-wordmark-white.webp'; wm2.alt = 'XO'; l.append(wm2);
-  bar.append(l, h('span', 'src', 'Priced from Polymarket and FPL data'));
+  bar.append(l, h('span', 'src', 'Priced from blended market odds and FPL data'));
 
   card.replaceChildren(...kids, deek, bar);
   await document.fonts.ready;

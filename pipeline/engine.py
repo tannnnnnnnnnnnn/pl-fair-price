@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """PL Fair Price engine.
 
-Reads pipeline/raw/{xo_convictions,poly_events,fpl_bootstrap,fpl_fixtures}.json and writes
+Reads pipeline/raw/{xo_convictions,poly_events,kalshi_epl,fpl_bootstrap,fpl_fixtures}.json and writes
 site/data/board.json, site/data/projections.json, appends site/data/history.jsonl and writes VERIFY.md.
 
-Fair prices come from Polymarket's EPL markets (match 1X2 and season events), a Poisson match
-model fitted to those prices, FPL xG/xA player shares, Tan's FPL flag study and a shared
+Fair prices come from Polymarket's and Kalshi's EPL markets (match 1X2 blended, season events from Polymarket),
+a Poisson match model fitted to those prices, FPL xG/xA player shares, Tan's FPL flag study and a shared
 Monte Carlo simulation of every remaining fixture. Markets without a defensible reference stay unpriced.
 """
 import csv
@@ -192,7 +192,7 @@ poly = load("poly_events.json")
 POLY_EV = {e["title"]: e for e in poly}
 # In-play prices already include the score, and the live sim adds the score again; fit pre-match odds only.
 STARTED = {(TEAMS[x["team_h"]], TEAMS[x["team_a"]]) for x in fixtures if x.get("started")}
-odds = {}
+poly_odds = {}
 for e in poly:
     t = e["title"]
     if " vs. " not in t or " - " in t or len(e.get("markets", [])) != 3:
@@ -209,8 +209,57 @@ for e in poly:
             got[key] = pprice(m)[0]
     if len(got) == 3 and None not in got.values():
         s = got["H"] + got["D"] + got["A"]
-        odds[(h, a)] = dict(p=(got["H"] / s, got["D"] / s, got["A"] / s), raw=(got["H"], got["D"], got["A"]),
-                            vol=e.get("volume") or 0, url=POLY + e["slug"])
+        poly_odds[(h, a)] = dict(p=(got["H"] / s, got["D"] / s, got["A"] / s), raw=(got["H"], got["D"], got["A"]),
+                                 vol=e.get("volume") or 0, url=POLY + e["slug"])
+
+# ---------------------------------------------------------------- Kalshi
+KALSHI = "https://kalshi.com/markets/kxeplgame"
+KALSHI_FILE = RAW / "kalshi_epl.json"
+kalshi_events = json.loads(KALSHI_FILE.read_text())["events"] if KALSHI_FILE.exists() else []
+
+
+def kprice(m):
+    """Kalshi YES price: bid/ask mid when both sides are quoted and the spread is 4c or less, else the last trade."""
+    b, a = num(m.get("yes_bid_dollars")), num(m.get("yes_ask_dollars"))
+    if b and a and 0 <= a - b <= 0.04:
+        return (a + b) / 2
+    return num(m.get("last_price_dollars")) or None
+
+
+kalshi_odds = {}
+for e in kalshi_events:
+    t = e.get("title", "")
+    if " vs " not in t or len(e.get("markets", [])) != 3:
+        continue
+    hn, an = (s.strip() for s in t.split(" vs ", 1))
+    h, a = code(hn), code(an)
+    if not h or not a:
+        print(f"warning: unmapped Kalshi title {t!r}")
+        continue
+    if h not in SHORT or a not in SHORT or (h, a) in STARTED:
+        continue
+    got, dollars = {}, 0.0
+    for m in e["markets"]:
+        sub = (m.get("yes_sub_title") or "").strip()
+        key = "D" if sub.lower() in ("tie", "draw") else "H" if code(sub) == h else "A" if code(sub) == a else None
+        pr = kprice(m) if m.get("status") == "active" else None
+        if key and pr is not None:
+            got[key] = pr
+            dollars += (num(m.get("volume_fp")) or 0) * (num(m.get("last_price_dollars")) or 0)
+    if len(got) == 3:
+        s = got["H"] + got["D"] + got["A"]
+        kalshi_odds[(h, a)] = dict(p=(got["H"] / s, got["D"] / s, got["A"] / s), vol=dollars)
+
+# Blend: equal-weight average of whichever sources price the fixture (Polymarket first, so its order is kept).
+odds = {}
+for k in list(poly_odds) + [k for k in kalshi_odds if k not in poly_odds]:
+    pm, km = poly_odds.get(k), kalshi_odds.get(k)
+    parts = [x["p"] for x in (pm, km) if x]
+    odds[k] = dict(p=tuple(sum(v) / len(parts) for v in zip(*parts)), raw=pm["raw"] if pm else None,
+                   poly=pm["p"] if pm else None, kalshi=km["p"] if km else None,
+                   vol=(pm["vol"] if pm else 0) + (km["vol"] if km else 0),
+                   sources=[n for n, x in (("Polymarket", pm), ("Kalshi", km)) if x],
+                   url=pm["url"] if pm else KALSHI, kalshi_url=KALSHI if km else None)
 
 # ---------------------------------------------------------------- match model
 K = np.arange(11)
@@ -250,7 +299,7 @@ for o in odds.values():
     o["lam"] = fit_pair(o["p"])
     o["fit"] = hda(grid(*o["lam"]))
 
-# Team ratings (ridge regression on the fitted log-lambdas) price fixtures Polymarket doesn't list yet.
+# Team ratings (ridge regression on the fitted log-lambdas) price fixtures no market lists yet.
 idx = {s: i for i, s in enumerate(SHORT)}
 nT = len(SHORT)
 rows, ys = [], []
@@ -259,7 +308,7 @@ for (h, a), o in odds.items():
     r1[0] = r1[1] = 1; r1[2 + idx[h]] = 1; r1[2 + nT + idx[a]] = -1
     r2[0] = 1; r2[2 + idx[a]] = 1; r2[2 + nT + idx[h]] = -1
     rows += [r1, r2]; ys += [math.log(o["lam"][0]), math.log(o["lam"][1])]
-W_RESULT = 0.25  # weight of one finished match vs one Polymarket-priced match
+W_RESULT = 0.25  # weight of one finished match vs one market-priced match
 for x in done:
     h, a = TEAMS[x["team_h"]], TEAMS[x["team_a"]]
     r1, r2 = np.zeros(2 + 2 * nT), np.zeros(2 + 2 * nT)
@@ -289,7 +338,8 @@ for x in todo:
     # finished matches carry who scored, assisted and played, so player markets count what really happened
     st = {s["identifier"]: {r["element"]: r["value"] for r in s["h"] + s["a"]} for s in x.get("stats") or []} if over else {}
     FX.append(dict(gw=x["event"], h=h, a=a, ko=ts(x["kickoff_time"]), lh=lh, la=la,
-                   vol=o["vol"] if o else 0, url=o["url"] if o else None, live=started and not over, left=left,
+                   vol=o["vol"] if o else 0, url=o["url"] if o else None, srcs=o["sources"] if o else [],
+                   live=started and not over, left=left,
                    base=(x.get("team_h_score") or 0, x.get("team_a_score") or 0) if started else (0, 0),
                    done=over, goals=st.get("goals_scored", {}), assists=st.get("assists", {}), played=set(st.get("bps", {}))))
 GH, GA = np.zeros((N, len(FX)), np.int16), np.zeros((N, len(FX)), np.int16)
@@ -450,10 +500,14 @@ def unp(reason):
 
 def fx_in(i):
     z = FX[i]
-    src = (dict(label=f'Polymarket {TNAME[z["h"]]} v {TNAME[z["a"]]} (${z["vol"]:,.0f} traded)', value="1X2 prices",
-                source_url=z["url"]) if z["url"] else
-           dict(label=f'{TNAME[z["h"]]} v {TNAME[z["a"]]}', value="team ratings (no Polymarket market yet)",
-                source_url=FPL_FIX))
+    names = f'{TNAME[z["h"]]} v {TNAME[z["a"]]}'
+    if not z["url"]:
+        src = dict(label=names, value="team ratings (no market yet)", source_url=FPL_FIX)
+    elif len(z["srcs"]) == 2:
+        src = dict(label=f'Blended market odds {names} (Polymarket + Kalshi, ${z["vol"]:,.0f} traded)', value="1X2 prices",
+                   source_url=z["url"])
+    else:
+        src = dict(label=f'{z["srcs"][0]} {names} (${z["vol"]:,.0f} traded)', value="1X2 prices", source_url=z["url"])
     lam = dict(label=f'Model expected goals {z["h"]}-{z["a"]}', value=f'{z["lh"]:.2f}-{z["la"]:.2f}', source_url=VERIFY_URL)
     return [src, lam]
 
@@ -462,7 +516,7 @@ def fx_conf(ix):
     ix = [i for i in ix if not FX[i]["done"]]  # a finished match is certain, not thin
     if all(FX[i]["vol"] > 20000 for i in ix):
         return "high"
-    # medium needs a real Polymarket price ($1,000+ traded) on every fixture; thin or ratings-only fixtures are low
+    # medium needs a real market price ($1,000+ traded) on every fixture; thin or ratings-only fixtures are low
     return "medium" if all(FX[i]["url"] and FX[i]["vol"] >= 1000 for i in ix) else "low"
 
 
@@ -542,7 +596,7 @@ def m_single_score(team, kind, k=1):
         return res(v, "low", "match_model",
                    f"Chance {TNAME[team]} score none before half-time but at least one after, assuming {FH_SHARE:.0%} of goals come in the first half. No goal at all counts as NO.",
                    fx_in(i), i)
-    return res(v, fx_conf([i]), "match_model", txt + " Poisson model fitted to Polymarket's match prices.", fx_in(i), i)
+    return res(v, fx_conf([i]), "match_model", txt + " Poisson model fitted to blended market odds.", fx_in(i), i)
 
 
 def m_player_goal(name, team, need=1, of=1, ga_=False, each=False):
@@ -618,7 +672,7 @@ def m_team_table(kind):
         v = (TAB8[:, idx["COV"]] < TAB8[:, idx["TOT"]]).mean(); txt = "Coventry above Spurs after GW8."
     return res(v, "medium", "table_sim",
                txt + f" {N:,} simulated seasons from today's table; points, then goal difference, then goals scored.",
-               [dict(label="Matches", value="GW6-7 from Polymarket prices, GW8-9 from fitted team ratings", source_url=FPL_FIX)])
+               [dict(label="Matches", value="GW6-7 from blended market odds, GW8-9 from fitted team ratings", source_url=FPL_FIX)])
 
 
 def m_captain():
@@ -668,7 +722,7 @@ def m_london_north():
     nor = sum((goals(t, [i for i in ix if t in (FX[i]["h"], FX[i]["a"])]) for t in NORTH), np.zeros(N, np.int32))
     return res((lon > nor).mean(), fx_conf(ix), "match_model",
                f"GW{BGW} goals by London clubs ({', '.join(LONDON)}) vs northern clubs ({', '.join(NORTH)}); strictly more counts as YES. Club lists are our reading of the question.",
-               [dict(label="All GW6 matches", value="Polymarket 1X2 prices", source_url=POLY)])
+               [dict(label="All GW6 matches", value="blended market 1X2 odds", source_url=VERIFY_URL)])
 
 
 def m_lowest_game():
@@ -684,7 +738,7 @@ def m_goals_on(date, need):
     ix, tot = gw_day(date)
     return res((tot >= need).mean(), fx_conf(ix), "match_model",
                f"Total goals across the {len(ix)} league games on {date}; needs {need}+.",
-               [dict(label=f"{len(ix)} matches", value="Polymarket 1X2 prices", source_url=POLY)])
+               [dict(label=f"{len(ix)} matches", value="blended market 1X2 odds", source_url=VERIFY_URL)])
 
 
 def m_cov_lowest():
@@ -693,7 +747,7 @@ def m_cov_lowest():
     others = np.min(np.array([g[t] for t in SHORT if t != "COV"]), axis=0)
     return res((g["COV"] <= others).mean(), fx_conf(ix), "match_model",
                "Coventry score the fewest (or joint-fewest) league goals across MW6-9.",
-               [dict(label="MW6-9 fixtures", value="Polymarket prices (GW6-7) and team ratings (GW8-9)", source_url=FPL_FIX)])
+               [dict(label="MW6-9 fixtures", value="blended market odds (GW6-7) and team ratings (GW8-9)", source_url=FPL_FIX)])
 
 
 def m_team_count(team, kind, need=None, ix=None, txt=""):
@@ -1029,7 +1083,7 @@ PICK_SUMMARY = dict(settled=len(settled), won=sum(p_["won"] for p_ in settled),
 OUT.mkdir(parents=True, exist_ok=True)
 (OUT / "board.json").write_text(json.dumps(dict(
     generated_at=GEN, name="PL Fair Price",
-    tagline="Our fair price beside every Premier League market on XO, from Polymarket odds and FPL data.",
+    tagline="Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
     gw=dict(id=GW, deadline_utc=NEXT["deadline_time"]), markets=board, receipts=receipts,
     receipt_summary=RECEIPT_SUMMARY, pick_summary=PICK_SUMMARY, best_value=best_value[:5],
     live=[f'{z["h"]}-{z["a"]}' for z in FX if z["live"]]), indent=1))
@@ -1048,7 +1102,7 @@ for i in gw_fx:
                         kickoff_utc=z["ko"].isoformat().replace("+00:00", "Z"), p_home=round(ph, 4),
                         p_draw=round(pd, 4), p_away=round(pa, 4), lam_home=round(z["lh"], 3), lam_away=round(z["la"], 3),
                         cs_home=round(g[:, 0].sum(), 4), cs_away=round(g[0, :].sum(), 4),
-                        poly_volume=round(z["vol"]), source_url=z["url"]))
+                        market_volume=round(z["vol"]), source_url=z["url"]))
 # FPL credits more assists than xA predicts (rebounds, deflections, penalties won): 1.45x this season. FPL points
 # use this season's FPL ratio (last season's file counts official assists); XO markets resolve on official assists,
 # so their pricing keeps plain xA.
@@ -1168,12 +1222,13 @@ L = [f"# VERIFY — PL Fair Price ({GEN})", "",
      f"(high {sum(1 for b in board if b['fair'] and b['fair']['confidence'] == 'high')}, "
      f"medium {sum(1 for b in board if b['fair'] and b['fair']['confidence'] == 'medium')}, "
      f"low {sum(1 for b in board if b['fair'] and b['fair']['confidence'] == 'low')}).", "",
-     f"## 1X2 fit (Polymarket de-vigged vs Poisson model), max error {fit_err:.1f} pts", "",
-     "| Fixture | GW | Poly raw H/D/A | Market H/D/A | Model H/D/A | λ | Volume |", "|---|---|---|---|---|---|---|"]
+     f"## 1X2 fit (blended market odds vs Poisson model), max error {fit_err:.1f} pts", "",
+     "| Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |", "|---|---|---|---|---|---|---|---|---|"]
+trio = lambda t: "-" if t is None else "/".join(f"{x*100:.1f}" for x in t)
 for (h, a), o in sorted(odds.items(), key=lambda kv: next((z["ko"] for z in FX if (z["h"], z["a"]) == kv[0]), DEADLINE)):
     gwn = next((z["gw"] for z in FX if (z["h"], z["a"]) == (h, a)), "-")
-    L.append(f"| {h}-{a} | {gwn} | {'/'.join(f'{x*100:.1f}' for x in o['raw'])} | {'/'.join(f'{x*100:.1f}' for x in o['p'])} | "
-             f"{'/'.join(f'{x*100:.1f}' for x in o['fit'])} | {o['lam'][0]:.2f}-{o['lam'][1]:.2f} | ${o['vol']:,.0f} |")
+    L.append(f"| {h}-{a} | {gwn} | {trio(o['raw'])} | {trio(o['poly'])} | {trio(o['kalshi'])} | {trio(o['p'])} | "
+             f"{trio(o['fit'])} | {o['lam'][0]:.2f}-{o['lam'][1]:.2f} | ${o['vol']:,.0f} |")
 L += ["", f"League average {LEAGUE_AVG:.2f} goals per game from {len(done)} finished matches; Dixon-Coles rho {RHO}; "
       f"mean fitted total {np.mean([sum(o['lam']) for o in odds.values()]):.2f}."]
 L += ["", f"Team-ratings refit error on the priced matches: mean |Δlog λ| {np.mean(rating_err):.3f}, max {max(rating_err):.3f}.",

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Fetch live XO, Polymarket and FPL data into raw/. Each file is replaced only when the new download is valid JSON.
+# Fetch live XO, Polymarket, Kalshi and FPL data into raw/. Each file is replaced only when the new download is valid JSON.
 set -euo pipefail
 cd "$(dirname "$0")"; mkdir -p raw; tmp=$(mktemp -d)
 get() { curl -sf --retry 3 --max-time 30 -A "pl-fair-price/1.0" "$1"; }
@@ -85,6 +85,23 @@ while True:
 json.dump(ev, open(sys.argv[1], "w"))
 PY
 valid "$tmp/poly.json" && mv "$tmp/poly.json" raw/poly_events.json
+
+# Kalshi: open EPL match events, paged (public, no key). A failed download keeps the previous file; the engine then
+# prices from Polymarket alone, so this must not abort the fetch.
+python3 - "$tmp/kalshi.json" <<'PY' && valid "$tmp/kalshi.json" && mv "$tmp/kalshi.json" raw/kalshi_epl.json || echo "warning: Kalshi fetch failed; keeping previous raw/kalshi_epl.json"
+import json, subprocess, sys
+from urllib.parse import urlencode
+ev, cursor = [], ""
+while True:
+    q = dict(series_ticker="KXEPLGAME", status="open", with_nested_markets="true", limit=200)
+    if cursor: q["cursor"] = cursor
+    out = subprocess.run(["curl", "-sf", "--retry", "3", "--retry-all-errors", "--max-time", "30", "-A", "pl-fair-price/1.0",
+                          "https://api.elections.kalshi.com/trade-api/v2/events?" + urlencode(q)], capture_output=True, check=True)
+    d = json.loads(out.stdout); ev += d.get("events", [])
+    cursor = d.get("cursor") or ""
+    if not cursor: break
+json.dump(dict(events=ev), open(sys.argv[1], "w"))
+PY
 
 # FPL
 get https://fantasy.premierleague.com/api/bootstrap-static/ > "$tmp/b.json" && valid "$tmp/b.json" && mv "$tmp/b.json" raw/fpl_bootstrap.json

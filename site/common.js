@@ -3,7 +3,7 @@
 
 const CONFIG = {
   name: 'PL Fair Price',
-  tagline: 'Our fair price beside every Premier League market on XO, from Polymarket odds and FPL data.',
+  tagline: 'Our fair price beside every Premier League market on XO, from blended market odds and FPL data.',
   ref: 'cryptotan01',
   minGapPts: 8,
 };
@@ -68,7 +68,8 @@ function h(tag, props, ...kids) {
 }
 
 const EXPLAINERS = {
-  fair_price: 'Our estimate of the real chance of YES, built from Polymarket odds and our own model.',
+  fair_price: 'Our estimate of the real chance of YES, built from blended market odds and our own model.',
+  blended: "An average of two prediction markets, Polymarket and Kalshi, with each one's margin removed.",
   rough: 'A useful estimate with bigger assumptions. Treat it with more caution than our other prices.',
   ev: 'What this bet is worth on average if our fair price is right. Positive = good value.',
   buy_sell_last: 'Buy is the cheapest price available now. Sell is the best current bid; Last is the most recent trade.',
@@ -274,7 +275,10 @@ function elevenLine(text) {
 function setupPage() {
   const name = document.getElementById('site-name'), tag = document.getElementById('site-tagline');
   if (name) name.textContent = CONFIG.name;
-  if (tag) tag.textContent = CONFIG.tagline;
+  if (tag) {  // the tagline's "blended market odds" gets the ? explainer; setting the text would otherwise drop it
+    const [before, after] = CONFIG.tagline.split('blended market odds');
+    tag.replaceChildren(before, explain('blended market odds', 'blended'), after);
+  }
   setupExplainers();
   const cl = document.getElementById('changelog');
   if (cl) cl.replaceChildren(...CHANGELOG.map((e) => h('li', null, h('b', { text: e.version }), ` · ${e.date} · ${e.notes}`)));

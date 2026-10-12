@@ -302,7 +302,7 @@ const elevenLink = () => h('a', { href: 'https://www.elevenify.com', target: '_b
 
 function modelLegend(hasEleven) {
   return h('div', { class: 'model-legend' },
-    h('strong', { text: 'Our model (from Polymarket odds)' }),
+    h('strong', null, 'Our model (from ', explain('blended market odds', 'blended'), ')'),
     hasEleven ? h('span', null, h('span', { class: 'eleven-badge', text: 'elevenify' }), ' separate second opinion') : null);
 }
 
@@ -343,8 +343,8 @@ function renderGoals(proj) {
   const legend = h('div', { class: 'legend2' }, key('home', 'Home'), key('draw', 'Draw'), key('away', 'Away'));
   const list = h('ul', { class: 'gm-list' }, fx.map((f) => {
     const hn = f.home_name || teamName(f.home), an = f.away_name || teamName(f.away);
-    const vol = num(f.poly_volume), et = elevenText(f.home, f.away);
-    const volText = vol === null ? 'Polymarket volume not available' : `${vol < 2000 ? 'Thin market: ' : ''}$${Math.round(vol).toLocaleString('en-US')} traded on Polymarket`;
+    const vol = num(f.market_volume), et = elevenText(f.home, f.away);
+    const volText = vol === null ? 'Market volume not available' : `${vol < 2000 ? 'Thin market: ' : ''}$${Math.round(vol).toLocaleString('en-US')} traded across the blended markets`;
     const li = h('li', { class: 'gm' },
       h('div', { class: 'gm-head' }, h('span', { class: 'gm-teams' }, crest(f.home, 20), h('b', { text: `${hn} v ${an}` }), crest(f.away, 20)), h('span', { class: 'gm-ko', text: f.kickoff_utc ? kickoffFmt(f.kickoff_utc) : '' })),
       h('div', { class: 'gm-xg', 'aria-label': `Expected goals ${Number(f.lam_home).toFixed(1)} to ${Number(f.lam_away).toFixed(1)}` },
@@ -485,7 +485,7 @@ async function init() {
   startCountdown(document.getElementById('dl-label'), document.getElementById('dl-boxes'), document.getElementById('deadline'),
     proj.deadline_utc || (state.board.gw || {}).deadline_utc, gwId);
   if (num(proj.league_avg_goals) !== null) {
-    document.getElementById('how-text').textContent = `Match odds come from Polymarket. Average goals are calibrated to the league's ${Number(proj.league_avg_goals).toFixed(2)} goals per game. Player shares and defensive contributions come from FPL; bonus is modelled from last season.`;
+    document.getElementById('how-text').replaceChildren('Match odds come from ', explain('blended market odds', 'blended'), `. Average goals are calibrated to the league's ${Number(proj.league_avg_goals).toFixed(2)} goals per game. Player shares and defensive contributions come from FPL; bonus is modelled from last season.`);
   }
   const consP = state.mock ? Promise.resolve(null) : getJSON(`data/consensus.json?v=${Math.floor(Date.now() / 60000)}`).catch(() => null);
   renderDoubts(proj);
