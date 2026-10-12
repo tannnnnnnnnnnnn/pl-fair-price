@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T10:30:20Z",
+ "generated_at": "2026-10-12T10:32:48Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from Polymarket odds and FPL data.",
  "gw": {
@@ -1369,7 +1369,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Polymarket Man City v Ipswich Town ($14,874 traded)",
+      "label": "Polymarket Man City v Ipswich Town ($14,877 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -2251,90 +2251,6 @@
    }
   },
   {
-   "slug": "will-pascal-gro-score-or-assist-in-at-least-2-of-b-1609",
-   "title": "Will Pascal Gro\u00df score or assist in at least 2 of Brighton's next 4 Premier League matches?",
-   "url": "https://beta.xo.market/event/will-pascal-gro-score-or-assist-in-at-least-2-of-b-1609?r=cryptotan01",
-   "creator": "CryptoMokado",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-01T00:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.5898,
-    "low": 0.4898,
-    "high": 0.6898,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
-    "inputs": [
-     {
-      "label": "Gro\u00df: xG 2.02, xA 1.05 in 540 min, 6/6 starts",
-      "value": "9% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Sunderland v Brighton",
-      "value": "team ratings (no Polymarket market yet)",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     },
-     {
-      "label": "Model expected goals SUN-BHA",
-      "value": "0.91-2.03",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     },
-     {
-      "label": "Polymarket Brighton v Crystal Palace ($749 traded)",
-      "value": "1X2 prices",
-      "source_url": "https://polymarket.com/event/epl-bri-cry-2026-10-18"
-     },
-     {
-      "label": "Model expected goals BHA-CRY",
-      "value": "2.09-1.01",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 9,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Gro\u00df: 3 league goals from 5 games, penalty duty, every corner. I'm taking him to score or assist in at least 2 out of 4",
-   "description": "This market resolves based on whether Pascal Gro\u00df registers a goal or an assist in at least 2 of Brighton & Hove Albion's next 4 Premier League matches as recorded by official Premier League statistics. Appearances in competitions other than the English Premier League do not count. Matches played outside of Brighton's specified next 4 Premier League fixtures do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to ESPN (https://www. espn. com). The primary source governs. If the named record is retracted or the matches are cancelled or permanently abandoned without official results, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.espn.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "will-a-premier-league-coach-be-sacked-before-novem-4400",
    "title": "Will a Premier League coach be sacked before November 1, 2026?",
    "url": "https://beta.xo.market/event/will-a-premier-league-coach-be-sacked-before-novem-4400?r=cryptotan01",
@@ -2399,9 +2315,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5243,
-    "low": 0.4244,
-    "high": 0.6243,
+    "p": 0.5207,
+    "low": 0.4207,
+    "high": 0.6207,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
@@ -2539,9 +2455,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6068,
-    "low": 0.5068,
-    "high": 0.7068,
+    "p": 0.6138,
+    "low": 0.5138,
+    "high": 0.7137,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -2658,7 +2574,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 66%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 65%. They differ too much to show one number.",
    "lock_at": "2026-12-19T15:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -2771,7 +2687,7 @@
    "title": "Manchester City over 20 points docked in 2026/27 season?",
    "url": "https://beta.xo.market/event/manchester-city-over-20-points-docked-in-202627-se-4746?r=cryptotan01",
    "creator": "CryptoTan01",
-   "is_ours": true,
+   "is_ours": false,
    "xo_price": 0.33,
    "best_bid": null,
    "best_ask": 0.33,
@@ -2983,8 +2899,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9946,
-    "low": 0.8946,
+    "p": 0.9939,
+    "low": 0.8939,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -3102,6 +3018,80 @@
    "resolution_sources": [
     "https://www.premierleague.com",
     "https://www.manutd.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
+  },
+  {
+   "slug": "will-pascal-gro-score-or-assist-in-at-least-2-of-b-1609",
+   "title": "Will Pascal Gro\u00df score or assist in at least 2 of Brighton's next 4 Premier League matches?",
+   "url": "https://beta.xo.market/event/will-pascal-gro-score-or-assist-in-at-least-2-of-b-1609?r=cryptotan01",
+   "creator": "CryptoMokado",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": null,
+   "liquidity_usd": 0,
+   "volume_usd": 20.0,
+   "expires_at": "2026-11-01T00:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.5886,
+    "low": 0.4886,
+    "high": 0.6885,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
+    "inputs": [
+     {
+      "label": "Gro\u00df: xG 2.02, xA 1.05 in 540 min, 6/6 starts",
+      "value": "9% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Sunderland v Brighton",
+      "value": "team ratings (no Polymarket market yet)",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     },
+     {
+      "label": "Model expected goals SUN-BHA",
+      "value": "0.91-2.03",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     },
+     {
+      "label": "Polymarket Brighton v Crystal Palace ($749 traded)",
+      "value": "1X2 prices",
+      "source_url": "https://polymarket.com/event/epl-bri-cry-2026-10-18"
+     },
+     {
+      "label": "Model expected goals BHA-CRY",
+      "value": "2.09-1.01",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": 9,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Gro\u00df: 3 league goals from 5 games, penalty duty, every corner. I'm taking him to score or assist in at least 2 out of 4",
+   "description": "This market resolves based on whether Pascal Gro\u00df registers a goal or an assist in at least 2 of Brighton & Hove Albion's next 4 Premier League matches as recorded by official Premier League statistics. Appearances in competitions other than the English Premier League do not count. Matches played outside of Brighton's specified next 4 Premier League fixtures do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to ESPN (https://www. espn. com). The primary source governs. If the named record is retracted or the matches are cancelled or permanently abandoned without official results, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.espn.com"
    ],
    "books": {
     "yes": {
@@ -3318,7 +3308,7 @@
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Polymarket Man City v Ipswich Town ($14,874 traded)",
+      "label": "Polymarket Man City v Ipswich Town ($14,877 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -3408,9 +3398,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4732,
-    "low": 0.3731,
-    "high": 0.5732,
+    "p": 0.4697,
+    "low": 0.3697,
+    "high": 0.5697,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
