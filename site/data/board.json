@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T15:29:12Z",
+ "generated_at": "2026-10-13T15:39:23Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -30,7 +30,7 @@
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $115,170 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $115,190 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -1276,7 +1276,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $115,170 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $115,190 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -3087,23 +3087,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.664,
-    "low": 0.564,
-    "high": 0.764,
+    "p": 0.6525,
+    "low": 0.5525,
+    "high": 0.7525,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "33.6% (spread 12c, $715 traded on this market)",
+      "value": "34.8% (spread 10c, $715 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 16,
+   "gap_pts": 15,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3355,16 +3355,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1904,
-    "low": 0.0904,
-    "high": 0.2904,
+    "p": 0.192,
+    "low": 0.092,
+    "high": 0.292,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "59.5%",
+      "value": "60.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
