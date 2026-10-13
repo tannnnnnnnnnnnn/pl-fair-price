@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T12:48:23Z",
+ "generated_at": "2026-10-13T12:58:39Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,9 +22,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.208,
-    "low": 0.148,
-    "high": 0.268,
+    "p": 0.2126,
+    "low": 0.1526,
+    "high": 0.2726,
     "confidence": "medium",
     "method": "match_model",
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
@@ -62,6 +62,80 @@
      "bids": [],
      "asks": [],
      "last": null
+    }
+   }
+  },
+  {
+   "slug": "will-man-united-earn-more-pl-points-than-spurs-in--6054",
+   "title": "Will Man United earn more PL points than Spurs in Matchweeks 6\u20139?",
+   "url": "https://beta.xo.market/event/will-man-united-earn-more-pl-points-than-spurs-in--6054?r=cryptotan01",
+   "creator": "EmilOnTheBall",
+   "is_ours": false,
+   "xo_price": 0.385,
+   "best_bid": 0.36,
+   "best_ask": 0.41,
+   "liquidity_usd": 25.7,
+   "volume_usd": 24.66,
+   "expires_at": "2026-11-01T23:59:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.382,
+    "low": 0.282,
+    "high": 0.4819,
+    "confidence": "low",
+    "method": "match_model",
+    "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
+    "inputs": [
+     {
+      "label": "Fixtures",
+      "value": "4 for MUN, 4 for TOT",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": 0,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Everyone sees 5 vs 2. I see Spurs hosting Coventry and Palace while United go to Leeds. Both still visit Chelsea.",
+   "description": "Resolves YES if Manchester United earn more Premier League points than Tottenham Hotspur across Matchweeks 6\u20139 of the 2026/27 season. Otherwise resolves NO. Matches counted: Man United: Spurs (H) 10 Oct, Leeds (A) 18 Oct, Bournemouth (H) 25 Oct, Chelsea (A) 31 OctSpurs: Man United (A) 10 Oct, Coventry (H) 19 Oct, Chelsea (A) 24 Oct, Crystal Palace (H) 31 OctPoints: win = 3, draw = 1, loss = 0, official results only. Any points deduction applied to either club is ignored. Only the seven specified matches completed by 23:59 UTC on 1 November 2026 count. Any match not completed by this deadline is excluded. If both clubs have played the same number of counted matches, YES requires Manchester United to earn strictly more total points than Tottenham. If the clubs have played different numbers of counted matches, YES requires Manchester United to earn strictly more points per counted match than Tottenham. Points per match are compared without rounding. A tie in total points, or in points per match where applicable, resolves NO.",
+   "resolution_sources": [
+    "https://www.premierleague.com/results",
+    "https://www.bbc.com/sport/football/premier-league/scores-fixtures"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.36,
+       "size": 40.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.41,
+       "size": 27.56098
+      }
+     ],
+     "last": 0.385
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.59,
+       "size": 27.56098
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.64,
+       "size": 40.0
+      }
+     ],
+     "last": 0.615
     }
    }
   },
@@ -125,80 +199,6 @@
       }
      ],
      "last": 0.6
-    }
-   }
-  },
-  {
-   "slug": "will-man-united-earn-more-pl-points-than-spurs-in--6054",
-   "title": "Will Man United earn more PL points than Spurs in Matchweeks 6\u20139?",
-   "url": "https://beta.xo.market/event/will-man-united-earn-more-pl-points-than-spurs-in--6054?r=cryptotan01",
-   "creator": "EmilOnTheBall",
-   "is_ours": false,
-   "xo_price": 0.385,
-   "best_bid": 0.36,
-   "best_ask": 0.41,
-   "liquidity_usd": 26.7,
-   "volume_usd": 22.22,
-   "expires_at": "2026-11-01T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.3834,
-    "low": 0.2833,
-    "high": 0.4834,
-    "confidence": "low",
-    "method": "match_model",
-    "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
-    "inputs": [
-     {
-      "label": "Fixtures",
-      "value": "4 for MUN, 4 for TOT",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 0,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Everyone sees 5 vs 2. I see Spurs hosting Coventry and Palace while United go to Leeds. Both still visit Chelsea.",
-   "description": "Resolves YES if Manchester United earn more Premier League points than Tottenham Hotspur across Matchweeks 6\u20139 of the 2026/27 season. Otherwise resolves NO. Matches counted: Man United: Spurs (H) 10 Oct, Leeds (A) 18 Oct, Bournemouth (H) 25 Oct, Chelsea (A) 31 OctSpurs: Man United (A) 10 Oct, Coventry (H) 19 Oct, Chelsea (A) 24 Oct, Crystal Palace (H) 31 OctPoints: win = 3, draw = 1, loss = 0, official results only. Any points deduction applied to either club is ignored. Only the seven specified matches completed by 23:59 UTC on 1 November 2026 count. Any match not completed by this deadline is excluded. If both clubs have played the same number of counted matches, YES requires Manchester United to earn strictly more total points than Tottenham. If the clubs have played different numbers of counted matches, YES requires Manchester United to earn strictly more points per counted match than Tottenham. Points per match are compared without rounding. A tie in total points, or in points per match where applicable, resolves NO.",
-   "resolution_sources": [
-    "https://www.premierleague.com/results",
-    "https://www.bbc.com/sport/football/premier-league/scores-fixtures"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.36,
-       "size": 40.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.41,
-       "size": 30.0
-      }
-     ],
-     "last": 0.385
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.59,
-       "size": 30.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.64,
-       "size": 40.0
-      }
-     ],
-     "last": 0.615
     }
    }
   },
@@ -402,8 +402,8 @@
    "fixture": null,
    "fair": {
     "p": 0.4924,
-    "low": 0.3924,
-    "high": 0.5925,
+    "low": 0.3923,
+    "high": 0.5924,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score in every October league match. (4 fixtures)",
@@ -516,9 +516,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4405,
-    "low": 0.3805,
-    "high": 0.5006,
+    "p": 0.4391,
+    "low": 0.3791,
+    "high": 0.4991,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -737,72 +737,6 @@
    }
   },
   {
-   "slug": "will-man-utd-win-fewer-than-2-premier-league-match-3055",
-   "title": "Will Man Utd win fewer than 2 Premier League matches in October 2026?",
-   "url": "https://beta.xo.market/event/will-man-utd-win-fewer-than-2-premier-league-match-3055?r=cryptotan01",
-   "creator": "aaditpatadia",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-10-31T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.68,
-    "low": 0.58,
-    "high": 0.78,
-    "confidence": "low",
-    "method": "match_model",
-    "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
-    "inputs": [
-     {
-      "label": "October fixtures",
-      "value": "MUN-TOT, LEE-MUN, MUN-BOU, CHE-MUN",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 18,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Four PL games. Spurs, Leeds, Bournemouth, Chelsea. What is your take ?",
-   "description": "This market resolves based on whether Manchester United wins fewer than 2 Premier League matches during October 2026 according to official league results. Matches in competitions other than the Premier League (such as European competitions or domestic cups) do not count toward the win total. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official Premier League competition is permanently abandoned or cancelled before all scheduled October 2026 matches are played, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.manutd.com",
-    "https://www.premierleague.com",
-    "https://Manchester United Premier League fixtures and results",
-    "https://Manchester United 2026/27 fixtures"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "will-any-premier-league-club-keep-a-clean-sheet-in-9459",
    "title": "Will any Premier League club keep a clean sheet in all four October gameweeks?",
    "url": "https://beta.xo.market/event/will-any-premier-league-club-keep-a-clean-sheet-in-9459?r=cryptotan01",
@@ -817,9 +751,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0453,
+    "p": 0.0454,
     "low": 0,
-    "high": 0.1453,
+    "high": 0.1454,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -979,9 +913,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5366,
-    "low": 0.4366,
-    "high": 0.6366,
+    "p": 0.5364,
+    "low": 0.4364,
+    "high": 0.6364,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1018,7 +952,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "15.3%",
+      "value": "15.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1123,9 +1057,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0901,
+    "p": 0.0889,
     "low": 0,
-    "high": 0.1901,
+    "high": 0.1889,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1256,9 +1190,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8588,
-    "low": 0.7588,
-    "high": 0.9588,
+    "p": 0.8576,
+    "low": 0.7576,
+    "high": 0.9576,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -1340,9 +1274,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3708,
-    "low": 0.2708,
-    "high": 0.4708,
+    "p": 0.3767,
+    "low": 0.2767,
+    "high": 0.4767,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO.",
@@ -1356,7 +1290,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-23T19:00:00Z",
-   "gap_pts": -8,
+   "gap_pts": -7,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1389,6 +1323,75 @@
    }
   },
   {
+   "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
+   "title": "Will Gyokeres outscore Bruno Fernandes across Premier League Matchweeks 6\u20137?",
+   "url": "https://beta.xo.market/event/will-gyokeres-outscore-bruno-fernandes-across-prem-4590?r=cryptotan01",
+   "creator": "xouser56971",
+   "is_ours": false,
+   "xo_price": 0.58,
+   "best_bid": 0.58,
+   "best_ask": null,
+   "liquidity_usd": 2.8,
+   "volume_usd": 98.57,
+   "expires_at": "2026-10-18T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.0358,
+    "low": 0,
+    "high": 0.1358,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
+    "inputs": [
+     {
+      "label": "Gy\u00f6keres: xG 0.00, xA 0.39 in 56 min, 0/6 starts",
+      "value": "9% of team goals, plays 31% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "B.Fernandes: xG 2.58, xA 1.46 in 540 min, 6/6 starts",
+      "value": "19% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-17T11:30:00Z",
+   "gap_pts": -54,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Sweden's scorer or United's captain? I'm backing Gyokeres over two PL games. Bruno fans, prove me wrong. Ties = NO.",
+   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://theanalyst.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.58,
+       "size": 4.827568
+      }
+     ],
+     "asks": [],
+     "last": 0.58
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.42,
+       "size": 4.827568
+      }
+     ],
+     "last": 0.42
+    }
+   }
+  },
+  {
    "slug": "will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512",
    "title": "Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6\u20139?",
    "url": "https://beta.xo.market/event/will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512?r=cryptotan01",
@@ -1403,9 +1406,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7806,
-    "low": 0.6806,
-    "high": 0.8806,
+    "p": 0.7783,
+    "low": 0.6784,
+    "high": 0.8783,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -1533,9 +1536,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5681,
-    "low": 0.5081,
-    "high": 0.628,
+    "p": 0.5697,
+    "low": 0.5097,
+    "high": 0.6297,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1769,7 +1772,7 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1613,
+    "p": 0.1612,
     "low": 0.0612,
     "high": 0.2612,
     "confidence": "low",
@@ -1883,9 +1886,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.602,
-    "low": 0.502,
-    "high": 0.702,
+    "p": 0.5965,
+    "low": 0.4965,
+    "high": 0.6965,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -2174,9 +2177,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4909,
-    "low": 0.3909,
-    "high": 0.5909,
+    "p": 0.4906,
+    "low": 0.3906,
+    "high": 0.5906,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2213,7 +2216,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "15.3%",
+      "value": "15.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2669,6 +2672,72 @@
    }
   },
   {
+   "slug": "will-man-utd-win-fewer-than-2-premier-league-match-3055",
+   "title": "Will Man Utd win fewer than 2 Premier League matches in October 2026?",
+   "url": "https://beta.xo.market/event/will-man-utd-win-fewer-than-2-premier-league-match-3055?r=cryptotan01",
+   "creator": "aaditpatadia",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": 0.5,
+   "best_ask": null,
+   "liquidity_usd": 9.0,
+   "volume_usd": 2.0,
+   "expires_at": "2026-10-31T23:59:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.6812,
+    "low": 0.5812,
+    "high": 0.7812,
+    "confidence": "low",
+    "method": "match_model",
+    "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
+    "inputs": [
+     {
+      "label": "October fixtures",
+      "value": "MUN-TOT, LEE-MUN, MUN-BOU, CHE-MUN",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": 18,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Four PL games. Spurs, Leeds, Bournemouth, Chelsea. What is your take ?",
+   "description": "This market resolves based on whether Manchester United wins fewer than 2 Premier League matches during October 2026 according to official league results. Matches in competitions other than the Premier League (such as European competitions or domestic cups) do not count toward the win total. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official Premier League competition is permanently abandoned or cancelled before all scheduled October 2026 matches are played, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.premierleague.com",
+    "https://Manchester United Premier League fixtures and results",
+    "https://Manchester United 2026/27 fixtures"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 18.000002
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 18.000002
+      }
+     ],
+     "last": 0.5
+    }
+   }
+  },
+  {
    "slug": "isak-vs-haaland-more-goals-in-next-3-league-games-3296",
    "title": "Isak vs Haaland: More goals in next 3 league games?",
    "url": "https://beta.xo.market/event/isak-vs-haaland-more-goals-in-next-3-league-games-3296?r=cryptotan01",
@@ -2722,8 +2791,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9427,
-    "low": 0.8427,
+    "p": 0.9433,
+    "low": 0.8433,
     "high": 1,
     "confidence": "low",
     "method": "match_model",
@@ -2815,9 +2884,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5876,
-    "low": 0.4876,
-    "high": 0.6876,
+    "p": 0.5894,
+    "low": 0.4894,
+    "high": 0.6894,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -3011,75 +3080,6 @@
    }
   },
   {
-   "slug": "will-gyokeres-outscore-bruno-fernandes-across-prem-4590",
-   "title": "Will Gyokeres outscore Bruno Fernandes across Premier League Matchweeks 6\u20137?",
-   "url": "https://beta.xo.market/event/will-gyokeres-outscore-bruno-fernandes-across-prem-4590?r=cryptotan01",
-   "creator": "xouser56971",
-   "is_ours": false,
-   "xo_price": 0.58,
-   "best_bid": 0.58,
-   "best_ask": null,
-   "liquidity_usd": 2.8,
-   "volume_usd": 98.57,
-   "expires_at": "2026-10-18T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.0353,
-    "low": 0,
-    "high": 0.1353,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
-    "inputs": [
-     {
-      "label": "Gy\u00f6keres: xG 0.00, xA 0.39 in 56 min, 0/6 starts",
-      "value": "9% of team goals, plays 31% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "B.Fernandes: xG 2.58, xA 1.46 in 540 min, 6/6 starts",
-      "value": "19% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-17T11:30:00Z",
-   "gap_pts": -54,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Sweden's scorer or United's captain? I'm backing Gyokeres over two PL games. Bruno fans, prove me wrong. Ties = NO.",
-   "description": "This market compares goals scored by Viktor Gyokeres and Bruno Fernandes in the following Premier League fixtures only. Gyokeres: Arsenal vs Leeds United , scheduled for October 10, 2026. Nottingham Forest vs Arsenal ,scheduled for October 18, 2026. Bruno Fernandes: Manchester United vs Tottenham Hotspur, scheduled for October 10, 2026. Leeds United vs Manchester United, scheduled for October 18, 2026. Resolve YES if Gyokeres scores strictly more goals than Bruno Fernandes across these specified fixtures. Resolve NO if Bruno Fernandes scores more goals, or if their totals are equal, including 0-0. Count goals officially credited to each player during regulation time, including stoppage time and penalties. Exclude own goals and all other fixtures or competitions. A player who does not appear records zero goals for that fixture. Substitute appearances count. Do not replace a missed fixture with a later appearance. The results of the teams' matches do not affect the comparison. All four specified fixtures must be completed by October 18, 2026, at 22:00 UTC. If not, the market is void, subject to XO's applicable settlement rules. Source: official Premier League goalscorer records available at the resolution deadline.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://theanalyst.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.58,
-       "size": 4.827568
-      }
-     ],
-     "asks": [],
-     "last": 0.58
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.42,
-       "size": 4.827568
-      }
-     ],
-     "last": 0.42
-    }
-   }
-  },
-  {
    "slug": "will-coventry-be-above-tottenham-in-the-premier-le-3599",
    "title": "Will Coventry be above Tottenham in the Premier League table after GW8?",
    "url": "https://beta.xo.market/event/will-coventry-be-above-tottenham-in-the-premier-le-3599?r=cryptotan01",
@@ -3100,9 +3100,9 @@
     "kickoff_utc": "2026-10-19T19:00:00Z"
    },
    "fair": {
-    "p": 0.5904,
-    "low": 0.5304,
-    "high": 0.6503,
+    "p": 0.589,
+    "low": 0.5291,
+    "high": 0.649,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -3194,9 +3194,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4678,
-    "low": 0.3678,
-    "high": 0.5678,
+    "p": 0.4638,
+    "low": 0.3639,
+    "high": 0.5638,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -3215,7 +3215,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": 0,
+   "gap_pts": -1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3252,9 +3252,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6501,
-    "low": 0.5501,
-    "high": 0.7501,
+    "p": 0.6502,
+    "low": 0.5503,
+    "high": 0.7502,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -3876,13 +3876,13 @@
   {
    "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
    "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
-   "fair": 0.5681,
+   "fair": 0.5697,
    "confidence": "medium",
    "side": "YES",
-   "ev": 1.3836,
-   "ev_low": 0.7836,
-   "ev_high": 1.9826,
-   "roi": 0.3219,
+   "ev": 1.3996,
+   "ev_low": 0.7996,
+   "ev_high": 1.9996,
+   "roi": 0.3257,
    "buy_price": 0.42,
    "fillable": 4.2974,
    "shares": 10.0
@@ -3890,13 +3890,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.4405,
+   "fair": 0.4391,
    "confidence": "medium",
    "side": "NO",
-   "ev": 0.996,
-   "ev_low": 0.395,
-   "ev_high": 1.596,
-   "roi": 0.2166,
+   "ev": 1.01,
+   "ev_low": 0.41,
+   "ev_high": 1.61,
+   "roi": 0.2196,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
