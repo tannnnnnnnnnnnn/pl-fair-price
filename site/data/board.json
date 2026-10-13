@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T09:37:46Z",
+ "generated_at": "2026-10-13T09:47:30Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -7,6 +7,64 @@
   "deadline_utc": "2026-10-17T10:00:00Z"
  },
  "markets": [
+  {
+   "slug": "will-manchester-city-outscore-chelsea-arsenal-and--1017",
+   "title": "Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7?",
+   "url": "https://beta.xo.market/event/will-manchester-city-outscore-chelsea-arsenal-and--1017?r=cryptotan01",
+   "creator": "xouser58643",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": null,
+   "liquidity_usd": 0,
+   "volume_usd": 20.0,
+   "expires_at": "2026-10-19T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.2117,
+    "low": 0.1517,
+    "high": 0.2717,
+    "confidence": "medium",
+    "method": "match_model",
+    "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
+    "inputs": [
+     {
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $113,968 traded)",
+      "value": "1X2 prices",
+      "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
+     },
+     {
+      "label": "Model expected goals MCI-IPS",
+      "value": "3.03-0.84",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-17T11:30:00Z",
+   "gap_pts": -29,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "City are going to fill their boots against Ipswich. 5+ goals. Difficult away fixtures for MUFC, AFC, CFC.",
+   "description": "This market resolves based on whether Manchester City scores strictly more goals than Chelsea, Arsenal, and Manchester United combined during Gameweek 7 of the 2026/27 Premier League season. Friendly matches, domestic cup competitions, and European fixtures outside of Premier League Gameweek 7 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official match schedule for Gameweek 7 is abandoned or cancelled without a recorded result or official statistics are permanently retracted by the Premier League, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
+  },
   {
    "slug": "will-man-united-earn-more-pl-points-than-spurs-in--6054",
    "title": "Will Man United earn more PL points than Spurs in Matchweeks 6\u20139?",
@@ -22,9 +80,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3784,
-    "low": 0.2784,
-    "high": 0.4784,
+    "p": 0.3828,
+    "low": 0.2828,
+    "high": 0.4828,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
@@ -38,7 +96,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -1,
+   "gap_pts": 0,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -96,9 +154,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5185,
-    "low": 0.4185,
-    "high": 0.6185,
+    "p": 0.5157,
+    "low": 0.4157,
+    "high": 0.6157,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
@@ -280,9 +338,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4867,
-    "low": 0.3867,
-    "high": 0.5867,
+    "p": 0.4884,
+    "low": 0.3883,
+    "high": 0.5884,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score in every October league match. (4 fixtures)",
@@ -395,9 +453,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.438,
-    "low": 0.378,
-    "high": 0.498,
+    "p": 0.4364,
+    "low": 0.3764,
+    "high": 0.4964,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -630,9 +688,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6842,
-    "low": 0.5842,
-    "high": 0.7842,
+    "p": 0.6833,
+    "low": 0.5833,
+    "high": 0.7833,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
@@ -696,9 +754,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0452,
+    "p": 0.0478,
     "low": 0,
-    "high": 0.1452,
+    "high": 0.1477,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -769,55 +827,6 @@
    "description": "This market resolves YES if Brentford FC officially announces that Kevin Schade has signed a new contract or a contract extension with the club after this market\u2019s creation and by 5 November 2026 at 23:59 UTC. The announcement must be published on BrentfordFC. com. Reports of negotiations, offers, verbal agreements or an expected signing do not count. The announcement date determines eligibility, regardless of when the contract takes effect. If no qualifying announcement is published by the deadline, the market resolves NO. Temporary website unavailability does not by itself establish a NO outcome; resolution waits until the announcement record can be verified.",
    "resolution_sources": [
     "https://www.brentfordfc.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    }
-   }
-  },
-  {
-   "slug": "will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305",
-   "title": "Will Roberto De Zerbi still be Spurs manager on November 1?",
-   "url": "https://beta.xo.market/event/will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305?r=cryptotan01",
-   "creator": "xouser58643",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": 0.5,
-   "liquidity_usd": 10.0,
-   "volume_usd": 20.0,
-   "expires_at": "2026-10-31T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "No Polymarket market prices this manager's job by this date.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Spurs have Coventry and Palace before the end of the month. I'm expecting positive results to keep RDZ in his job.",
-   "description": "This market will resolve based on whether Roberto De Zerbi is still manager of Tottenham Hotspur at 11:59 PM UTC on November 1, 2026.\n\nThe market resolves to \u201cYes\u201d if De Zerbi remains Spurs manager through the deadline and no official announcement of his departure has been made by then.\n\nThe market resolves to \u201cNo\u201d if De Zerbi leaves the club at any point between October 6, 2026 and November 1, 2026, 11:59 PM UTC, or if Tottenham officially announces his resignation, dismissal, or mutual departure by the deadline, regardless of when that departure takes effect.\n\nA caretaker, interim, or \u201cuntil a replacement is appointed\u201d arrangement after he has left still counts as No. A poor run of results, fan pressure, or reports that he is under threat do not count unless he actually leaves or an official departure is announced. Rumors and unconfirmed media speculation do not qualify. Timing is decided by the official club announcement. Primary source: Tottenham Hotspur. A consensus of credible reporting will also suffice. If the outcome cannot be reasonably determined, the market will be voided.",
-   "resolution_sources": [
-    "https://www.tottenhamhotspur.com/"
    ],
    "books": {
     "yes": {
@@ -1051,9 +1060,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0854,
+    "p": 0.0925,
     "low": 0,
-    "high": 0.1855,
+    "high": 0.1925,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1190,9 +1199,9 @@
     "kickoff_utc": "2026-10-19T19:00:00Z"
    },
    "fair": {
-    "p": 0.5875,
-    "low": 0.5274,
-    "high": 0.6475,
+    "p": 0.5896,
+    "low": 0.5295,
+    "high": 0.6496,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1307,9 +1316,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3663,
-    "low": 0.2662,
-    "high": 0.4663,
+    "p": 0.3727,
+    "low": 0.2727,
+    "high": 0.4727,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO.",
@@ -1370,9 +1379,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7818,
-    "low": 0.6818,
-    "high": 0.8818,
+    "p": 0.7771,
+    "low": 0.6771,
+    "high": 0.8771,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -1449,9 +1458,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0386,
+    "p": 0.0353,
     "low": 0,
-    "high": 0.1386,
+    "high": 0.1353,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
@@ -1618,9 +1627,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5659,
-    "low": 0.5059,
-    "high": 0.6259,
+    "p": 0.5658,
+    "low": 0.5058,
+    "high": 0.6258,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1905,9 +1914,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1626,
-    "low": 0.0626,
-    "high": 0.2626,
+    "p": 0.1641,
+    "low": 0.0641,
+    "high": 0.2641,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -2019,9 +2028,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5885,
-    "low": 0.4885,
-    "high": 0.6885,
+    "p": 0.5998,
+    "low": 0.4999,
+    "high": 0.6998,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -2040,7 +2049,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 9,
+   "gap_pts": 10,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2087,7 +2096,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season totals (Chelsea have conceded 13, Spurs have scored 3): 100%. only goals from now to 1 Nov: 34%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season totals (Chelsea have conceded 13, Spurs have scored 3): 100%. only goals from now to 1 Nov: 33%. They differ too much to show one number.",
    "lock_at": "2026-10-31T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -2124,6 +2133,55 @@
    }
   },
   {
+   "slug": "will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305",
+   "title": "Will Roberto De Zerbi still be Spurs manager on November 1?",
+   "url": "https://beta.xo.market/event/will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305?r=cryptotan01",
+   "creator": "xouser58643",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": 0.5,
+   "liquidity_usd": 10.0,
+   "volume_usd": 20.0,
+   "expires_at": "2026-10-31T23:59:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "No Polymarket market prices this manager's job by this date.",
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Spurs have Coventry and Palace before the end of the month. I'm expecting positive results to keep RDZ in his job.",
+   "description": "This market will resolve based on whether Roberto De Zerbi is still manager of Tottenham Hotspur at 11:59 PM UTC on November 1, 2026.\n\nThe market resolves to \u201cYes\u201d if De Zerbi remains Spurs manager through the deadline and no official announcement of his departure has been made by then.\n\nThe market resolves to \u201cNo\u201d if De Zerbi leaves the club at any point between October 6, 2026 and November 1, 2026, 11:59 PM UTC, or if Tottenham officially announces his resignation, dismissal, or mutual departure by the deadline, regardless of when that departure takes effect.\n\nA caretaker, interim, or \u201cuntil a replacement is appointed\u201d arrangement after he has left still counts as No. A poor run of results, fan pressure, or reports that he is under threat do not count unless he actually leaves or an official departure is announced. Rumors and unconfirmed media speculation do not qualify. Timing is decided by the official club announcement. Primary source: Tottenham Hotspur. A consensus of credible reporting will also suffice. If the outcome cannot be reasonably determined, the market will be voided.",
+   "resolution_sources": [
+    "https://www.tottenhamhotspur.com/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    }
+   }
+  },
+  {
    "slug": "will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898",
    "title": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
    "url": "https://beta.xo.market/event/will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898?r=cryptotan01",
@@ -2138,7 +2196,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 68%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 67%. They differ too much to show one number.",
    "lock_at": "2026-12-19T15:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -2463,8 +2521,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9936,
-    "low": 0.8936,
+    "p": 0.9941,
+    "low": 0.8942,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -2729,8 +2787,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9465,
-    "low": 0.8465,
+    "p": 0.9419,
+    "low": 0.8419,
     "high": 1,
     "confidence": "low",
     "method": "match_model",
@@ -2745,7 +2803,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 30,
+   "gap_pts": 29,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2822,9 +2880,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5857,
-    "low": 0.4857,
-    "high": 0.6857,
+    "p": 0.5864,
+    "low": 0.4864,
+    "high": 0.6864,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2841,7 +2899,7 @@
      },
      {
       "label": "Model expected goals SUN-BHA",
-      "value": "0.91-2.03",
+      "value": "0.91-2.01",
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
@@ -2851,7 +2909,7 @@
      },
      {
       "label": "Model expected goals BHA-CRY",
-      "value": "2.12-1.03",
+      "value": "2.09-1.01",
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      }
     ]
@@ -3032,9 +3090,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8602,
-    "low": 0.7602,
-    "high": 0.9602,
+    "p": 0.8593,
+    "low": 0.7593,
+    "high": 0.9593,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -3051,7 +3109,7 @@
      },
      {
       "label": "Model expected goals LIV-MCI",
-      "value": "1.10-1.33",
+      "value": "1.10-1.32",
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
@@ -3061,7 +3119,7 @@
      },
      {
       "label": "Model expected goals MCI-IPS",
-      "value": "3.06-0.86",
+      "value": "3.03-0.84",
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      }
     ]
@@ -3077,64 +3135,6 @@
    "resolution_sources": [
     "https://premierleague.com",
     "https://theanalyst.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-manchester-city-outscore-chelsea-arsenal-and--1017",
-   "title": "Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7?",
-   "url": "https://beta.xo.market/event/will-manchester-city-outscore-chelsea-arsenal-and--1017?r=cryptotan01",
-   "creator": "xouser58643",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 20.0,
-   "expires_at": "2026-10-19T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.2097,
-    "low": 0.1497,
-    "high": 0.2697,
-    "confidence": "medium",
-    "method": "match_model",
-    "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
-    "inputs": [
-     {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $113,968 traded)",
-      "value": "1X2 prices",
-      "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
-     },
-     {
-      "label": "Model expected goals MCI-IPS",
-      "value": "3.06-0.86",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-17T11:30:00Z",
-   "gap_pts": -29,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "City are going to fill their boots against Ipswich. 5+ goals. Difficult away fixtures for MUFC, AFC, CFC.",
-   "description": "This market resolves based on whether Manchester City scores strictly more goals than Chelsea, Arsenal, and Manchester United combined during Gameweek 7 of the 2026/27 Premier League season. Friendly matches, domestic cup competitions, and European fixtures outside of Premier League Gameweek 7 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official match schedule for Gameweek 7 is abandoned or cancelled without a recorded result or official statistics are permanently retracted by the Premier League, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
    ],
    "books": {
     "yes": {
@@ -3204,9 +3204,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4568,
-    "low": 0.3568,
-    "high": 0.5568,
+    "p": 0.4704,
+    "low": 0.3704,
+    "high": 0.5705,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -3225,7 +3225,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -1,
+   "gap_pts": 0,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3262,9 +3262,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6462,
-    "low": 0.5463,
-    "high": 0.7462,
+    "p": 0.6486,
+    "low": 0.5486,
+    "high": 0.7486,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -3316,16 +3316,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2013,
-    "low": 0.1013,
-    "high": 0.3013,
+    "p": 0.1996,
+    "low": 0.0996,
+    "high": 0.2996,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "61.0%",
+      "value": "60.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -3886,13 +3886,13 @@
   {
    "slug": "will-coventry-be-above-tottenham-in-the-premier-le-3599",
    "title": "Will Coventry be above Tottenham in the Premier League table after GW8?",
-   "fair": 0.5875,
+   "fair": 0.5896,
    "confidence": "medium",
    "side": "YES",
-   "ev": 2.7529,
-   "ev_low": 1.5509,
-   "ev_high": 3.9529,
-   "roi": 0.306,
+   "ev": 2.7949,
+   "ev_low": 1.5929,
+   "ev_high": 3.9949,
+   "roi": 0.3106,
    "buy_price": 0.44,
    "fillable": 8.9971,
    "shares": 20.0
@@ -3900,13 +3900,13 @@
   {
    "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
    "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
-   "fair": 0.5659,
+   "fair": 0.5658,
    "confidence": "medium",
    "side": "YES",
-   "ev": 1.3616,
-   "ev_low": 0.7616,
-   "ev_high": 1.9616,
-   "roi": 0.3168,
+   "ev": 1.3606,
+   "ev_low": 0.7606,
+   "ev_high": 1.9606,
+   "roi": 0.3166,
    "buy_price": 0.42,
    "fillable": 4.2974,
    "shares": 10.0
@@ -3914,13 +3914,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.438,
+   "fair": 0.4364,
    "confidence": "medium",
    "side": "NO",
-   "ev": 1.021,
-   "ev_low": 0.421,
-   "ev_high": 1.621,
-   "roi": 0.222,
+   "ev": 1.037,
+   "ev_low": 0.437,
+   "ev_high": 1.637,
+   "roi": 0.2255,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
