@@ -1042,10 +1042,13 @@ for slug, t in tracked.items():
     if not f.exists():
         continue
     d = json.loads(f.read_text())
-    win = (d.get("winningOutcome") or {}).get("title")
-    if not win:
+    win = d.get("winningOutcome") or {}
+    if not win.get("title"):
         continue
-    yes = win.strip().lower() == "yes"
+    # Same YES side as the price: the outcome titled "Yes", else the first one ("Haaland vs Bruno" -> Haaland).
+    outs = d.get("outcomes") or []
+    yes_out = next((o for o in outs if str(o.get("title", "")).strip().lower() == "yes"), outs[0] if outs else {})
+    yes = win.get("id") == yes_out.get("id")
     if slug in done_slugs:  # XO can change a result after a dispute; keep the receipt and its picks in line
         r = done_slugs[slug]
         if r["outcome"] != ("YES" if yes else "NO"):

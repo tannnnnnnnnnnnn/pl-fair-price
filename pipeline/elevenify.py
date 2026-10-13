@@ -174,6 +174,29 @@ def parse_chart(text, teams, title):
     raise ValueError(f"unknown chart layout: {head}")
 
 
+def fresh_clean_sheets(matches, clean_sheets):
+    """The clean-sheet chart (MirAO) stopped updating on 30 Sep and covers only GW6-8; the match chart is refreshed every
+    gameweek. Its clean-sheet chances overwrite that gameweek's, found by matching its fixtures to FPL's."""
+    boot = json.loads((RAW / "fpl_bootstrap.json").read_text())
+    ids = {t["id"]: t["short_name"] for t in boot["teams"]}
+    by_gw = {}
+    for f in json.loads((RAW / "fpl_fixtures.json").read_text()):
+        if f.get("event"):
+            by_gw.setdefault(f["event"], set()).add((ids[f["team_h"]], ids[f["team_a"]]))
+    pairs = {(m["home"], m["away"]) for m in matches}
+    gws = [g for g, s in by_gw.items() if pairs <= s]
+    if len(gws) != 1:
+        log(f"match chart fits gameweeks {gws}; clean sheets left as charted")
+        return
+    key, rows = str(gws[0]), {r["team"]: r for r in clean_sheets}
+    plays = [t for p in pairs for t in p]
+    for m in matches:
+        for side in ("home", "away"):
+            r = rows.get(m[side])
+            if r is not None and plays.count(m[side]) == 1 and m[f"cs_{side}"] is not None:
+                r["gw"][key] = m[f"cs_{side}"]
+
+
 # ---------------------------------------------------------------- build
 
 
@@ -188,6 +211,8 @@ def build(cached):
         charts.append(dict(id=cid, title=meta["title"], updated=meta["updated"], kind=kind))
         parts[PART[kind]] = part
         log(f"{cid} {kind}: {len(part)} rows, updated {meta['updated']}, {meta['title']}")
+    if parts.get("matches") and parts.get("clean_sheets"):
+        fresh_clean_sheets(parts["matches"], parts["clean_sheets"])
     RAW.mkdir(parents=True, exist_ok=True)  # raw copies only once every chart has parsed
     for cid, (text, meta) in fetched.items():
         (RAW / f"elevenify_{cid}.csv").write_text(text)
