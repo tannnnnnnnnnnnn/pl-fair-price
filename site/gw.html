@@ -71,13 +71,14 @@
 
   <section class="sec" id="captain" aria-labelledby="cp-h">
     <h2 id="cp-h">Captain picks</h2>
-    <p class="sec-sub">Top 10 by <span data-explain="xpts">xPts</span>; higher means a stronger points forecast.</p>
+    <details class="fold"><summary><span class="fold-t"><h3>Top 10 captain options</h3><span class="fold-sub">Ranked by <span data-explain="xpts">xPts</span>; higher means a stronger points forecast.</span></span><span class="fold-top" id="cp-top"></span></summary><div class="fold-body">
     <div class="mix" id="cp-mix"></div>
     <details class="how projection-how">
       <summary>How we project points</summary>
       <p>Appearance points × chance of playing 60+ minutes; goals × position points; assists × 3; <span data-explain="clean_sheet">clean-sheet chance</span> × position points (60+ minutes only); <span data-explain="defcon">DEFCON</span> chance × 2; plus <span data-explain="expected_bonus">expected bonus</span> and keeper saves; minus goals conceded (keepers and defenders) and yellow cards. Goal and assist chances come from goalscorer odds or each player's share of team <span data-explain="xg">xG</span> and <span data-explain="xa">xA</span>; FPL gives more assists than xA counts, so assists are scaled up to FPL's own rate.</p>
     </details>
     <div id="cp-body"></div>
+    </div></details>
   </section>
 
   <div class="xo-cta">
@@ -103,16 +104,15 @@
     <div id="co-body"><p class="empty">Loading projections…</p></div>
   </section>
 
-  <section class="sec" id="cs" aria-labelledby="cs-h">
-    <h2 id="cs-h"><span data-explain="clean_sheet">Clean-sheet chances</span></h2>
-    <p class="sec-sub">Our model, built on <span data-explain="blended">blended market odds</span>, is the main figure; elevenify is a separate second opinion.</p>
+  <section class="sec" id="matches" aria-labelledby="mt-h">
+    <h2 id="mt-h">Clean sheets and goals</h2>
+    <details class="fold"><summary><span class="fold-t"><h3>Clean-sheet chances and goals expected per match</h3><span class="fold-sub">Our model, built on <span data-explain="blended">blended market odds</span>, is the main figure; elevenify is a separate second opinion.</span></span><span class="fold-top" id="cg-top"></span></summary><div class="fold-body">
+    <h3 class="fold-h" id="cs-h"><span data-explain="clean_sheet">Clean-sheet chances</span></h3>
     <div id="cs-body"></div>
-  </section>
-
-  <section class="sec" id="goals" aria-labelledby="gl-h">
-    <h2 id="gl-h">Goals expected per match</h2>
+    <h3 class="fold-h" id="gl-h">Goals expected per match</h3>
     <p class="sec-sub">The numbers are expected goals for each side; the bar is the chance of a home win, draw or away win.</p>
     <div id="gl-body"></div>
+    </div></details>
   </section>
 
   <section class="sec" id="perf" aria-labelledby="pf-h">

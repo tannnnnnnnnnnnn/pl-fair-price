@@ -121,6 +121,7 @@ function renderCaptain(models, w) {
   const oursOnly = MIX_SRC.every(([k]) => k === 'ours' || !w[k]);
   const rows = models.map((m) => ({ m, v: mixValue(m, w), p: state.players[m.id] || {} })).filter((r) => r.v !== null)
     .sort((a, b) => b.v - a.v).slice(0, 10);
+  document.getElementById('cp-top').textContent = rows.length ? `Top: ${rows[0].m.name} · ${rows[0].v.toFixed(1)} xPts` : '';
   if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: Object.values(w).some((x) => x > 0) ? 'Captain picks appear once the model has run for this gameweek.' : 'Move a slider above 0% to pick a source.' })); return; }
   // elevenify's Fast Fantasy Model stars its captain options for one gameweek; shown only when that is this gameweek.
   const ff = state.eleven && state.eleven.fantasy, gw = state.proj && state.proj.gw;
@@ -318,6 +319,7 @@ function renderCS(proj) {
   });
   if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: 'Clean-sheet chances appear once the match model has run.' })); return; }
   rows.sort((a, b) => b.p - a.p);
+  document.getElementById('cg-top').textContent = `Top: ${rows[0].name} ${pct0(rows[0].p)} clean sheet`;
   rows.forEach((r) => { r.e = elevenTeam('clean_sheets', r.team); });
   const hasE = rows.some((r) => r.e !== null);
   const top = Math.min(1, Math.ceil(Math.max(...rows.map((r) => Math.max(r.p, r.e || 0))) * 10) / 10);
