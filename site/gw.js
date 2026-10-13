@@ -75,12 +75,10 @@ function renderDoubts(proj) {
   const body = document.getElementById('fl-body');
   const flags = ((proj && proj.flags) || []).filter((f) => num(f.fpl_chance) !== null)
     .sort((a, b) => (num(b.owned_pct) || 0) - (num(a.owned_pct) || 0));
+  document.getElementById('fl-top').textContent = flags.length ? `${flags.length} player${flags.length === 1 ? '' : 's'}` : 'None';
   if (!flags.length) { body.replaceChildren(h('p', { class: 'empty', text: 'No injury doubts flagged by FPL for this gameweek.' })); return; }
-  const top = flags.slice(0, 12), rest = flags.slice(12);
-  const kids = [h('p', { class: 'db-legend' }, 'The pill is FPL\'s chance of playing. ', h('span', { class: 'fpl-pill c75', text: '75%' }), h('span', { class: 'fpl-pill c50', text: '50%' }), h('span', { class: 'fpl-pill c25', text: '25%' }), h('span', { class: 'fpl-pill c0', text: '0%' }), ' Greyer is safer, pinker is riskier. Sorted by ownership.'),
-    h('ul', { class: 'db-list' }, top.map(doubtRow))];
-  if (rest.length) kids.push(h('details', { class: 'more' }, h('summary', { text: `${rest.length} more doubt${rest.length === 1 ? '' : 's'}` }), h('ul', { class: 'db-list' }, rest.map(doubtRow))));
-  body.replaceChildren(...kids);
+  body.replaceChildren(h('p', { class: 'db-legend' }, 'The pill is FPL\'s chance of playing. ', h('span', { class: 'fpl-pill c75', text: '75%' }), h('span', { class: 'fpl-pill c50', text: '50%' }), h('span', { class: 'fpl-pill c25', text: '25%' }), h('span', { class: 'fpl-pill c0', text: '0%' }), ' Greyer is safer, pinker is riskier.'),
+    h('ul', { class: 'db-list' }, flags.map(doubtRow)));
 }
 
 /* ---------- (c) captain picks ---------- */
@@ -124,6 +122,9 @@ function renderCaptain(models, w) {
   const rows = models.map((m) => ({ m, v: mixValue(m, w), p: state.players[m.id] || {} })).filter((r) => r.v !== null)
     .sort((a, b) => b.v - a.v).slice(0, 10);
   if (!rows.length) { body.replaceChildren(h('p', { class: 'empty', text: Object.values(w).some((x) => x > 0) ? 'Captain picks appear once the model has run for this gameweek.' : 'Move a slider above 0% to pick a source.' })); return; }
+  // elevenify's Fast Fantasy Model stars its captain options for one gameweek; shown only when that is this gameweek.
+  const ff = state.eleven && state.eleven.fantasy, gw = state.proj && state.proj.gw;
+  const stars = new Set(ff && ff.gw === gw ? (ff.players || []).filter((x) => x.captain).map((x) => x.team + ' ' + x.name) : []);
   const list = h('ol', { class: 'plist' }, rows.map(({ m, v, p }, i) => {
     const sub = [m.team, m.pos, p.price ? '£' + Number(p.price).toFixed(1) + 'm' : null, num(p.owned_pct) !== null ? Math.round(p.owned_pct) + '% owned' : null].filter(Boolean).join(' · ');
     const tag = num(p.owned_pct) >= 25 ? 'Template' : num(p.owned_pct) < 10 ? 'Punt' : null;
@@ -132,7 +133,7 @@ function renderCaptain(models, w) {
     return h('li', { class: 'pcard' },
       h('span', { class: 'prank', text: String(i + 1) }),
       h('div', { class: 'pmain' },
-        h('div', { class: 'pname' }, crest(m.team, 20), h('span', { text: m.name }), tag ? h('span', { class: 'pick-tag' }, explain(tag, 'template_punt')) : null),
+        h('div', { class: 'pname' }, crest(m.team, 20), h('span', { text: m.name }), tag ? h('span', { class: 'pick-tag' }, explain(tag, 'template_punt')) : null, stars.has(m.team + ' ' + m.name) ? h('span', { class: 'eleven-star', title: 'elevenify captain pick', 'aria-label': 'elevenify captain pick', text: '⭐' }) : null),
         h('p', { class: 'psub', text: sub }),
         breakdownBar(p, p),
         h('div', { class: 'stats' },
@@ -149,6 +150,8 @@ function renderCaptain(models, w) {
   const breakdownLegend = h('div', { class: 'break-legend' },
     Object.keys(breakdownLabels).map((x) => h('span', null, h('i', { class: 'xb-' + x }), breakdownLabels[x])));
   body.replaceChildren(h('p', { class: 'note' }, explain('Template / Punt', 'template_punt'), ' tags are based on ownership.', oursOnly ? null : ' The bar and the goal, assist and blank chances come from our model.'), breakdownLegend, list,
+    stars.size ? h('p', { class: 'note' }, `⭐ is elevenify's GW${gw} captain pick in its Fast Fantasy Model 2.0, free for subscribers at `,
+      h('a', { href: 'https://www.elevenify.com/p/premier-league-data', target: '_blank', rel: 'noopener', text: 'elevenify' }), '.') : null,
     tableView(['Player', 'xPts', 'Goal', 'Assist', 'Blank'], rows.map(({ m, v, p }) => [`${m.name} (${m.team})`, v.toFixed(1), num(p.p_goal) !== null ? pct0(p.p_goal) : '–', num(p.p_assist) !== null ? pct0(p.p_assist) : '–', num(p.p_blank) !== null ? pct0(p.p_blank) : '–'])));
 }
 

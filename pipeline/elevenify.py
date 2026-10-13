@@ -9,6 +9,7 @@ version and last-modified time), and writes site/data/elevenify.json:
   wins          team_wins          win chance per team for the next few gameweeks (0 to 1)
   ratings       team_ratings       attack / defence / overall, goals per match vs an average opponent
   players       player_baselines   goal / assist / goal-involvement rates per match vs an average opponent
+  fantasy       fantasy_model      Fast Fantasy Model 2.0: 0-100 "future importance" per player and the gameweek's captain picks
 Only the parts that exist are written. Teams become FPL short codes (ARS, MCI...). Chances are fractions, not percents.
 
 Each chart page redirects to its latest version; that page names the live data file (static.dwcdn.net/data/<ID>.csv),
@@ -35,9 +36,9 @@ RAW, OUT = TOOL / "pipeline" / "raw", TOOL / "site" / "data"
 UA = "pl-fair-price/1.0"
 DW = "https://datawrapper.dwcdn.net"
 SOURCE = dict(name="elevenify", url="https://www.elevenify.com")
-CHARTS = ["tDC0G", "O4DLP", "KB9uj", "MirAO", "rx5q8", "8wCgy"]  # players, ratings, goals, clean sheets, wins, match predictions
+CHARTS = ["tDC0G", "O4DLP", "KB9uj", "MirAO", "rx5q8", "8wCgy", "MmYOs"]  # players, ratings, goals, clean sheets, wins, match predictions, fantasy model
 PART = {"match_predictions": "matches", "team_goals": "goals", "team_clean_sheets": "clean_sheets", "team_wins": "wins",
-        "team_ratings": "ratings", "player_baselines": "players"}
+        "team_ratings": "ratings", "player_baselines": "players", "fantasy_model": "fantasy"}
 # Names not covered by FPL's name / short_name (Polymarket-style long forms).
 ALIASES = {"manchester city": "MCI", "manchester united": "MUN", "manchester utd": "MUN", "tottenham": "TOT",
            "tottenham hotspur": "TOT", "nottingham forest": "NFO", "nottm forest": "NFO", "newcastle united": "NEW",
@@ -141,6 +142,13 @@ def read_rows(text):
 def parse_chart(text, teams, title):
     """-> (kind, part). Raises on a layout we do not know, so a changed chart never produces wrong numbers."""
     head, rows = read_rows(text)
+    if head[:2] == ["Player", "Team"] and "Future Importance" in head:  # Fast Fantasy Model; the team is a code, the badge comes third
+        cap = next(i for i, c in enumerate(head) if re.fullmatch(r"GW\d+ Captaincy Option\?", c))
+        cells = [r for r in csv.reader(io.StringIO(text)) if any(c.strip() for c in r)][1:]
+        part = dict(gw=int(re.search(r"\d+", head[cap]).group()), players=[
+            dict(name=r[0].strip(), team=teams.code(r[1], None), pos=r[head.index("Position")].strip(), importance=num(r[head.index("Future Importance")]),
+                 captain=bool(r[cap].strip())) for r in cells])
+        return "fantasy_model", part
     if head[0] == "Player":
         cols = {c: head.index(c) - 2 for c in ("Goal Baseline", "Assist Baseline", "Goal Involvement Baseline")}
         part = [dict(name=n, team=teams.by_badge[b], goal=num(v[cols["Goal Baseline"]]), assist=num(v[cols["Assist Baseline"]]),
@@ -205,12 +213,12 @@ def build(cached):
     for cid in CHARTS:
         text, meta = get_chart(cid, cached)
         kind, part = parse_chart(text, teams, meta["title"])
-        if kind not in ("player_baselines", "match_predictions") and len({r["team"] for r in part}) != len(teams.by_badge):
+        if kind not in ("player_baselines", "match_predictions", "fantasy_model") and len({r["team"] for r in part}) != len(teams.by_badge):
             raise ValueError(f"{cid}: {kind} has {len({r['team'] for r in part})} teams, expected {len(teams.by_badge)}")
         fetched[cid] = (text, meta)
         charts.append(dict(id=cid, title=meta["title"], updated=meta["updated"], kind=kind))
         parts[PART[kind]] = part
-        log(f"{cid} {kind}: {len(part)} rows, updated {meta['updated']}, {meta['title']}")
+        log(f"{cid} {kind}: {len(part['players'] if kind == 'fantasy_model' else part)} rows, updated {meta['updated']}, {meta['title']}")
     if parts.get("matches") and parts.get("clean_sheets"):
         fresh_clean_sheets(parts["matches"], parts["clean_sheets"])
     RAW.mkdir(parents=True, exist_ok=True)  # raw copies only once every chart has parsed
