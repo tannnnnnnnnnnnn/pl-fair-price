@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T23:51:57Z",
+ "generated_at": "2026-10-14T00:02:30Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -30,7 +30,7 @@
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $119,658 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $119,715 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -962,9 +962,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5322,
-    "low": 0.4322,
-    "high": 0.6322,
+    "p": 0.5354,
+    "low": 0.4354,
+    "high": 0.6354,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1001,14 +1001,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "16.2%",
+      "value": "15.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 48,
+   "gap_pts": 49,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1325,7 +1325,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $119,658 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $119,715 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -2278,9 +2278,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4873,
-    "low": 0.3873,
-    "high": 0.5873,
+    "p": 0.4901,
+    "low": 0.3901,
+    "high": 0.5901,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2317,7 +2317,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "16.2%",
+      "value": "15.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -3394,16 +3394,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1918,
-    "low": 0.0917,
-    "high": 0.2918,
+    "p": 0.1934,
+    "low": 0.0934,
+    "high": 0.2934,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "59.0%",
+      "value": "59.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
