@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-14T17:47:01Z)
+# VERIFY — PL Fair Price (2026-10-14T17:57:03Z)
 
 GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 4, low 23).
 
@@ -9,11 +9,11 @@ GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 4
 | EVE-CHE | 7 | 29.5/26.5/44.5 | 29.4/26.4/44.3 | 29.2/26.2/44.6 | 29.3/26.3/44.4 | 29.3/26.3/44.4 | 1.23-1.57 | $36,816 |
 | BRE-LIV | 7 | 40.5/26.5/33.5 | 40.3/26.4/33.3 | 39.7/26.6/33.7 | 40.0/26.5/33.5 | 40.0/26.5/33.5 | 1.48-1.34 | $15,726 |
 | FUL-HUL | 7 | 55.5/24.5/20.5 | 55.2/24.4/20.4 | 55.8/23.6/20.6 | 55.5/24.0/20.5 | 55.5/24.0/20.5 | 1.84-1.04 | $10,925 |
-| MCI-IPS | 7 | 80.5/12.5/6.5 | 80.9/12.6/6.5 | 80.9/12.6/6.5 | 80.9/12.6/6.5 | 80.9/12.6/6.5 | 2.98-0.79 | $126,654 |
+| MCI-IPS | 7 | 80.5/12.5/6.5 | 80.9/12.6/6.5 | 80.9/12.6/6.5 | 80.9/12.6/6.5 | 80.9/12.6/6.5 | 2.98-0.79 | $126,663 |
 | NEW-AVL | 7 | 42.5/25.5/31.5 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 1.61-1.35 | $7,889 |
 | BHA-CRY | 7 | 63.5/21.5/16.5 | 62.6/21.2/16.3 | 62.2/21.4/16.4 | 62.4/21.3/16.3 | 62.4/21.3/16.3 | 2.11-1.00 | $6,623 |
 | BOU-SUN | 7 | 46.5/26.5/27.5 | 46.3/26.4/27.4 | 46.5/26.5/27.0 | 46.4/26.4/27.2 | 46.4/26.4/27.2 | 1.57-1.15 | $12,730 |
-| LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 40.7/26.6/32.7 | 40.7/26.6/32.7 | 40.7/26.6/32.7 | 1.49-1.31 | $21,990 |
+| LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 40.7/26.6/32.7 | 40.7/26.6/32.7 | 40.7/26.6/32.7 | 1.49-1.31 | $21,819 |
 | NFO-ARS | 7 | 15.5/24.5/60.5 | 15.4/24.4/60.2 | 15.4/24.4/60.2 | 15.4/24.4/60.2 | 15.4/24.4/60.2 | 0.77-1.76 | $28,420 |
 | TOT-COV | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.8/20.6/14.6 | 64.5/20.5/15.0 | 64.5/20.5/15.0 | 2.18-0.96 | $14,124 |
 | IPS-NFO | 8 | 31.0/27.0/42.5 | 30.8/26.9/42.3 | 31.2/26.6/42.2 | 31.0/26.7/42.2 | 31.0/26.7/42.2 | 1.25-1.50 | $120 |
@@ -79,7 +79,7 @@ qg 0.415, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | low | 56 | 99.3 | 43 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 48.6 | 2 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES. |
 | medium | 22 | 4.5 | -18 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 47.7 | 15 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 47.6 | 15 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 65.2 | 15 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 62.5 | 16 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 55 | 37.4 | -18 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
@@ -95,7 +95,7 @@ qg 0.415, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | medium | 51 | 57.7 | 7 | table_sim | Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9? | City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, th |
 | low | 38 | 37.6 | -1 | match_model | Will Man United earn more PL points than Spurs in Matchweeks 6–9? | Man Utd take more league points than Spurs in MW6-9. A tie counts as NO. |
 | low | 50 | 69.7 | 20 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
-| low | 5 | 52.4 | 47 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 52.3 | 47 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 50 | 21.2 | -29 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
 | low | 50 | 73.8 | 24 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | low | 50 | 58.6 | 9 | player_model | Will Pascal Groß score or assist in at least 2 of Brighton's next 4 Premier League matches? | Chance Groß score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the |
