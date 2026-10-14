@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T09:24:19Z",
+ "generated_at": "2026-10-14T09:34:35Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,15 +22,15 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2072,
-    "low": 0.1472,
-    "high": 0.2672,
+    "p": 0.2083,
+    "low": 0.1483,
+    "high": 0.2683,
     "confidence": "medium",
     "method": "match_model",
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $123,406 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $123,430 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -56,12 +56,76 @@
     "yes": {
      "bids": [],
      "asks": [],
-     "last": null
+     "last": 0.0
     },
     "no": {
      "bids": [],
      "asks": [],
-     "last": null
+     "last": 0.0
+    }
+   }
+  },
+  {
+   "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
+   "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
+   "url": "https://beta.xo.market/event/will-man-city-be-3-points-clear-at-the-top-of-the--8494?r=cryptotan01",
+   "creator": "CryptoTan01",
+   "is_ours": true,
+   "xo_price": 0.42,
+   "best_bid": 0.51,
+   "best_ask": null,
+   "liquidity_usd": 25.5,
+   "volume_usd": 31.28,
+   "expires_at": "2026-11-02T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.5725,
+    "low": 0.5125,
+    "high": 0.6324,
+    "confidence": "medium",
+    "method": "table_sim",
+    "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
+    "inputs": [
+     {
+      "label": "Matches",
+      "value": "GW6-7 from blended market odds, GW8-9 from fitted team ratings",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": 15,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Five wins from five, unstoppable form. I think they have a point to prove and Arsenal may stumble.",
+   "description": "This market resolves on the overall Premier League table at premierleague. com/tables (not home/away or form), as shown at 23:59 UTC Mon 2 Nov 2026. The table counts as shown at that time, whether or not every Matchweek 9 match has been played. Any points deductions applied by then count. Primary source: premierleague. com/tables. Secondary: BBC Sport table. If the primary is unavailable at the check time, use the secondary; if they conflict, the primary prevails. If neither can be verified within 48h of the check time, the market is void and settles per XO rules. Later corrections after the check time are ignored.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://www.bbc.co.uk/sport/football/premier-league/table"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.51,
+       "size": 50.0
+      }
+     ],
+     "asks": [],
+     "last": 0.0
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.49,
+       "size": 50.0
+      }
+     ],
+     "last": 0.0
     }
    }
   },
@@ -100,7 +164,7 @@
       }
      ],
      "asks": [],
-     "last": 0.5
+     "last": 0.0
     },
     "no": {
      "bids": [],
@@ -110,7 +174,7 @@
        "size": 14.000002
       }
      ],
-     "last": 0.5
+     "last": 0.0
     }
    }
   },
@@ -149,7 +213,7 @@
       }
      ],
      "asks": [],
-     "last": 0.5
+     "last": 0.0
     },
     "no": {
      "bids": [],
@@ -159,7 +223,7 @@
        "size": 14.000002
       }
      ],
-     "last": 0.5
+     "last": 0.0
     }
    }
   },
@@ -178,9 +242,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3777,
-    "low": 0.2777,
-    "high": 0.4777,
+    "p": 0.3765,
+    "low": 0.2764,
+    "high": 0.4765,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
@@ -218,7 +282,7 @@
        "size": 27.56098
       }
      ],
-     "last": 0.385
+     "last": 0.0
     },
     "no": {
      "bids": [
@@ -233,7 +297,7 @@
        "size": 40.0
       }
      ],
-     "last": 0.615
+     "last": 0.0
     }
    }
   },
@@ -252,9 +316,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6902,
-    "low": 0.5902,
-    "high": 0.7902,
+    "p": 0.6907,
+    "low": 0.5907,
+    "high": 0.7907,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
@@ -289,7 +353,7 @@
       }
      ],
      "asks": [],
-     "last": 0.5
+     "last": 0.0
     },
     "no": {
      "bids": [],
@@ -299,7 +363,7 @@
        "size": 18.000002
       }
      ],
-     "last": 0.5
+     "last": 0.0
     }
    }
   },
@@ -347,7 +411,7 @@
        "size": 14.0
       }
      ],
-     "last": 0.38
+     "last": 0.0
     },
     "no": {
      "bids": [
@@ -362,7 +426,7 @@
        "size": 2.753626
       }
      ],
-     "last": 0.62
+     "last": 0.0
     }
    }
   },
@@ -422,7 +486,7 @@
       }
      ],
      "asks": [],
-     "last": 0.45
+     "last": 0.0
     },
     "no": {
      "bids": [],
@@ -432,7 +496,7 @@
        "size": 25.0
       }
      ],
-     "last": 0.55
+     "last": 0.0
     }
    }
   },
@@ -473,7 +537,7 @@
        "size": 39.998667
       }
      ],
-     "last": 0.75
+     "last": 0.0
     },
     "no": {
      "bids": [
@@ -483,7 +547,7 @@
       }
      ],
      "asks": [],
-     "last": 0.25
+     "last": 0.0
     }
    }
   },
@@ -502,9 +566,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4839,
-    "low": 0.3839,
-    "high": 0.5839,
+    "p": 0.4842,
+    "low": 0.3842,
+    "high": 0.5842,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score in every October league match. (4 fixtures)",
@@ -536,7 +600,7 @@
       }
      ],
      "asks": [],
-     "last": 0.25
+     "last": 0.0
     },
     "no": {
      "bids": [],
@@ -546,71 +610,7 @@
        "size": 34.120004
       }
      ],
-     "last": 0.75
-    }
-   }
-  },
-  {
-   "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
-   "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "url": "https://beta.xo.market/event/will-tottenham-be-in-the-premier-league-bottom-thr-3501?r=cryptotan01",
-   "creator": "CryptoTan01",
-   "is_ours": true,
-   "xo_price": 0.47,
-   "best_bid": 0.55,
-   "best_ask": null,
-   "liquidity_usd": 5.5,
-   "volume_usd": 18.87,
-   "expires_at": "2026-11-02T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.4383,
-    "low": 0.3783,
-    "high": 0.4983,
-    "confidence": "medium",
-    "method": "table_sim",
-    "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
-    "inputs": [
-     {
-      "label": "Matches",
-      "value": "GW6-7 from blended market odds, GW8-9 from fitted team ratings",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -3,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "A \u00a3300m squad doesn't stay bottom for long. Coventry and Palace at home. Spurs climb out by MW9.",
-   "description": "This market resolves on the overall Premier League table at premierleague. com/tables (not home/away or form), as shown at 23:59 UTC Mon 2 Nov 2026. The table counts as shown at that time, whether or not every Matchweek 9 match has been played. Any points deductions applied by then count. Primary source: premierleague. com/tables. Secondary: BBC Sport table. If the primary is unavailable at the check time, use the secondary; if they conflict, the primary prevails. If neither can be verified within 48h of the check time, the market is void and settles per XO rules. Later corrections after the check time are ignored.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.co.uk/sport/football/premier-league/table"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.55,
-       "size": 10.0
-      }
-     ],
-     "asks": [],
-     "last": 0.55
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.45,
-       "size": 10.0
-      }
-     ],
-     "last": 0.45
+     "last": 0.0
     }
    }
   },
@@ -651,7 +651,7 @@
       }
      ],
      "asks": [],
-     "last": 0.38
+     "last": 0.0
     },
     "no": {
      "bids": [],
@@ -661,7 +661,7 @@
        "size": 26.315789
       }
      ],
-     "last": 0.62
+     "last": 0.0
     }
    }
   },
@@ -708,7 +708,7 @@
        "size": 10.0
       }
      ],
-     "last": 0.4
+     "last": 0.0
     },
     "no": {
      "bids": [
@@ -726,7 +726,7 @@
       }
      ],
      "asks": [],
-     "last": 0.6
+     "last": 0.0
     }
    }
   },
@@ -771,7 +771,7 @@
       }
      ],
      "asks": [],
-     "last": 0.37
+     "last": 0.0
     },
     "no": {
      "bids": [],
@@ -781,7 +781,7 @@
        "size": 27.027027
       }
      ],
-     "last": 0.63
+     "last": 0.0
     }
    }
   },
@@ -800,9 +800,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0487,
+    "p": 0.0486,
     "low": 0,
-    "high": 0.1487,
+    "high": 0.1486,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -834,7 +834,7 @@
       }
      ],
      "asks": [],
-     "last": 0.1
+     "last": 0.0
     },
     "no": {
      "bids": [],
@@ -844,7 +844,7 @@
        "size": 100.0
       }
      ],
-     "last": 0.9
+     "last": 0.0
     }
    }
   },
@@ -883,7 +883,7 @@
        "size": 20.0
       }
      ],
-     "last": 0.5
+     "last": 0.0
     },
     "no": {
      "bids": [
@@ -893,7 +893,7 @@
       }
      ],
      "asks": [],
-     "last": 0.5
+     "last": 0.0
     }
    }
   },
@@ -962,9 +962,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5289,
-    "low": 0.4289,
-    "high": 0.6289,
+    "p": 0.5326,
+    "low": 0.4326,
+    "high": 0.6326,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -986,7 +986,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "5.3%",
+      "value": "6.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1106,9 +1106,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0808,
+    "p": 0.0815,
     "low": 0,
-    "high": 0.1808,
+    "high": 0.1815,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1225,6 +1225,56 @@
    }
   },
   {
+   "slug": "total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570",
+   "title": "Total goals after 80th minute in PL Matchweeks 7-9",
+   "url": "https://beta.xo.market/event/total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570?r=cryptotan01",
+   "creator": "NMagalios13",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": 0.5,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-11-02T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Total goals after 80th minute in PL Matchweeks 7-9",
+   "description": "This market resolves based on the total number of goals scored after the 80th minute (from 80.1 minutes onward) across Matchweeks 7, 8, and 9 of the 2026/27 Premier League season, determined using official Premier League fixture data. It resolves to 0-14 if the combined total of goals scored from 80.1 minutes onward in all matches of Matchweeks 7, 8, and 9 is between 0 and 14 inclusive, and resolves to 15+ if that combined total is 15 or more. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to NBC Sports (https://www. nbcsports. com). The primary source governs. If the Premier League season or the specified matchweeks are cancelled or abandoned without official results, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.nbcsports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    }
+   }
+  },
+  {
    "slug": "will-brighton-outscore-arsenal-across-premier-leag-6832",
    "title": "Will Brighton outscore Arsenal across Premier League Matchweeks 6\u20138?",
    "url": "https://beta.xo.market/event/will-brighton-outscore-arsenal-across-premier-leag-6832?r=cryptotan01",
@@ -1302,9 +1352,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8567,
-    "low": 0.7567,
-    "high": 0.9567,
+    "p": 0.8572,
+    "low": 0.7572,
+    "high": 0.9572,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -1321,11 +1371,11 @@
      },
      {
       "label": "Model expected goals LIV-MCI",
-      "value": "1.08-1.32",
+      "value": "1.08-1.31",
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $123,406 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $123,430 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -1386,9 +1436,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7822,
-    "low": 0.6822,
-    "high": 0.8821,
+    "p": 0.7831,
+    "low": 0.6831,
+    "high": 0.8831,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -1554,26 +1604,26 @@
    }
   },
   {
-   "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
-   "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
-   "url": "https://beta.xo.market/event/will-man-city-be-3-points-clear-at-the-top-of-the--8494?r=cryptotan01",
+   "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
+   "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
+   "url": "https://beta.xo.market/event/will-tottenham-be-in-the-premier-league-bottom-thr-3501?r=cryptotan01",
    "creator": "CryptoTan01",
    "is_ours": true,
    "xo_price": 0.47,
-   "best_bid": null,
-   "best_ask": 0.42,
-   "liquidity_usd": 4.2,
-   "volume_usd": 21.28,
-   "expires_at": "2026-11-02T23:59:59.000Z",
+   "best_bid": 0.55,
+   "best_ask": null,
+   "liquidity_usd": 5.5,
+   "volume_usd": 18.87,
+   "expires_at": "2026-11-02T23:59:00.000Z",
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5724,
-    "low": 0.5124,
-    "high": 0.6324,
+    "p": 0.4397,
+    "low": 0.3797,
+    "high": 0.4997,
     "confidence": "medium",
     "method": "table_sim",
-    "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
+    "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
     "inputs": [
      {
       "label": "Matches",
@@ -1584,36 +1634,36 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 10,
+   "gap_pts": -3,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
-   "pitch": "Five wins from five, unstoppable form. I think they have a point to prove and Arsenal may stumble.",
+   "pitch": "A \u00a3300m squad doesn't stay bottom for long. Coventry and Palace at home. Spurs climb out by MW9.",
    "description": "This market resolves on the overall Premier League table at premierleague. com/tables (not home/away or form), as shown at 23:59 UTC Mon 2 Nov 2026. The table counts as shown at that time, whether or not every Matchweek 9 match has been played. Any points deductions applied by then count. Primary source: premierleague. com/tables. Secondary: BBC Sport table. If the primary is unavailable at the check time, use the secondary; if they conflict, the primary prevails. If neither can be verified within 48h of the check time, the market is void and settles per XO rules. Later corrections after the check time are ignored.",
    "resolution_sources": [
-    "https://premierleague.com",
+    "https://www.premierleague.com",
     "https://www.bbc.co.uk/sport/football/premier-league/table"
    ],
    "books": {
     "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.42,
-       "size": 10.0
-      }
-     ],
-     "last": 0.42
-    },
-    "no": {
      "bids": [
       {
-       "price": 0.58,
+       "price": 0.55,
        "size": 10.0
       }
      ],
      "asks": [],
-     "last": 0.58
+     "last": 0.55
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 10.0
+      }
+     ],
+     "last": 0.45
     }
    }
   },
@@ -1804,9 +1854,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1552,
-    "low": 0.0552,
-    "high": 0.2552,
+    "p": 0.1561,
+    "low": 0.0561,
+    "high": 0.2561,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -1918,9 +1968,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6007,
-    "low": 0.5007,
-    "high": 0.7007,
+    "p": 0.6063,
+    "low": 0.5063,
+    "high": 0.7063,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -1939,7 +1989,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 10,
+   "gap_pts": 11,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2086,7 +2136,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 66%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 67%. They differ too much to show one number.",
    "lock_at": "2026-12-19T15:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -2209,9 +2259,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4818,
-    "low": 0.3818,
-    "high": 0.5818,
+    "p": 0.4852,
+    "low": 0.3852,
+    "high": 0.5852,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2233,7 +2283,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "5.3%",
+      "value": "6.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2255,7 +2305,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 15,
+   "gap_pts": 16,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2411,8 +2461,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9947,
-    "low": 0.8947,
+    "p": 0.9941,
+    "low": 0.8942,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -2810,8 +2860,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9406,
-    "low": 0.8406,
+    "p": 0.9387,
+    "low": 0.8387,
     "high": 1,
     "confidence": "low",
     "method": "match_model",
@@ -2903,9 +2953,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5866,
-    "low": 0.4866,
-    "high": 0.6866,
+    "p": 0.5782,
+    "low": 0.4782,
+    "high": 0.6782,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2939,7 +2989,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 9,
+   "gap_pts": 8,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3113,9 +3163,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0382,
+    "p": 0.0369,
     "low": 0,
-    "high": 0.1382,
+    "high": 0.1368,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
@@ -3178,9 +3228,9 @@
     "kickoff_utc": "2026-10-19T19:00:00Z"
    },
    "fair": {
-    "p": 0.5871,
-    "low": 0.5272,
-    "high": 0.6471,
+    "p": 0.5878,
+    "low": 0.5278,
+    "high": 0.6478,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -3272,9 +3322,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4771,
-    "low": 0.3771,
-    "high": 0.5771,
+    "p": 0.476,
+    "low": 0.376,
+    "high": 0.576,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -3330,9 +3380,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6509,
-    "low": 0.5509,
-    "high": 0.7509,
+    "p": 0.6496,
+    "low": 0.5496,
+    "high": 0.7496,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -3952,29 +4002,15 @@
  },
  "best_value": [
   {
-   "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
-   "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
-   "fair": 0.5724,
-   "confidence": "medium",
-   "side": "YES",
-   "ev": 1.4266,
-   "ev_low": 0.8266,
-   "ev_high": 2.0266,
-   "roi": 0.332,
-   "buy_price": 0.42,
-   "fillable": 4.2974,
-   "shares": 10.0
-  },
-  {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.4383,
+   "fair": 0.4397,
    "confidence": "medium",
    "side": "NO",
-   "ev": 1.018,
-   "ev_low": 0.418,
-   "ev_high": 1.618,
-   "roi": 0.2214,
+   "ev": 1.004,
+   "ev_low": 0.404,
+   "ev_high": 1.604,
+   "roi": 0.2183,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
