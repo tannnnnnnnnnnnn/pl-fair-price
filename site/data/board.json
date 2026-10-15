@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T12:21:51Z",
+ "generated_at": "2026-10-15T12:32:00Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -8,126 +8,17 @@
  },
  "markets": [
   {
-   "slug": "will-manchester-city-outscore-chelsea-arsenal-and--1017",
-   "title": "Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7?",
-   "url": "https://beta.xo.market/event/will-manchester-city-outscore-chelsea-arsenal-and--1017?r=cryptotan01",
-   "creator": "xouser58643",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 20.0,
-   "expires_at": "2026-10-19T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.2464,
-    "low": 0.2164,
-    "high": 0.2763,
-    "confidence": "high",
-    "method": "match_model",
-    "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
-    "inputs": [
-     {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $207,208 traded)",
-      "value": "1X2 prices",
-      "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
-     },
-     {
-      "label": "Model expected goals MCI-IPS",
-      "value": "3.25-0.99",
-      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-17T11:30:00Z",
-   "gap_pts": -25,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "City are going to fill their boots against Ipswich. 5+ goals. Difficult away fixtures for MUFC, AFC, CFC.",
-   "description": "This market resolves based on whether Manchester City scores strictly more goals than Chelsea, Arsenal, and Manchester United combined during Gameweek 7 of the 2026/27 Premier League season. Friendly matches, domestic cup competitions, and European fixtures outside of Premier League Gameweek 7 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official match schedule for Gameweek 7 is abandoned or cancelled without a recorded result or official statistics are permanently retracted by the Premier League, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-manchester-city-be-mentioned-at-prime-ministe-6301",
-   "title": "Will Manchester City be mentioned at Prime Minister's Questions before Nov 5?",
-   "url": "https://beta.xo.market/event/will-manchester-city-be-mentioned-at-prime-ministe-6301?r=cryptotan01",
-   "creator": "OmarABKH89",
-   "is_ours": false,
-   "xo_price": 0.55,
-   "best_bid": null,
-   "best_ask": 0.55,
-   "liquidity_usd": 12.22,
-   "volume_usd": 18.18,
-   "expires_at": "2026-11-05T13:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "First PMQs since City's guilty verdict and the PM's own row. Badenoch wants answers. 4 shots, 1 mention needed.",
-   "description": "This market resolves Yes only if the exact letter sequence 'Manchester City' is recorded in the official Hansard transcript of a Prime Minister's Questions session, and that transcript is published before November 5, 2026 at 13:00 UTC. The sequence must appear letter for letter. Any wording that contains 'Manchester City' counts, including 'Manchester City FC' and 'Manchester City Council'. 'Man City', 'the city of Manchester', and any other wording that does not contain that exact sequence do not count. Resolution is based only on the transcript of the Prime Minister's Questions session itself (the Engagements / Prime Minister\u2019s Questions block). Mentions outside that session do not count. Written ministerial statements or questions submitted in writing do not count. Video, subtitles, and other sources do not count. Primary source: Hansard UK (https://hansard. parliament. uk). If the primary source is unavailable, incomplete, or inconsistent at the time of resolution, resolution falls back to the official PMQs transcript on UK Parliament (https://www. parliament. uk). The primary source governs. Video alone does not resolve the market. Resolution is based on the transcript as published before the deadline, including the provisional ('rolling') version if that is the version published before November 5, 2026 at 13:00 UTC. Anything published after that time does not count: a sequence added after the deadline does not resolve the market Yes, and deletion after the deadline of a sequence already published before the deadline does not reverse a Yes. If no published PMQs transcript contains the exact sequence before the deadline, the market resolves No. If the scheduled PMQs sessions are permanently cancelled without taking place, or the official record is permanently retracted before the deadline so that no transcript is published, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.parliament.uk",
-    "https://hansard.parliament.uk",
-    "https://parliament.uk"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.55,
-       "size": 22.220404
-      }
-     ],
-     "last": 0.55
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.45,
-       "size": 22.220404
-      }
-     ],
-     "asks": [],
-     "last": 0.45
-    }
-   }
-  },
-  {
-   "slug": "will-tottenham-finish-october-above-manchester-uni-1701",
-   "title": "Will Tottenham finish October above Manchester United in the Premier League table?",
-   "url": "https://beta.xo.market/event/will-tottenham-finish-october-above-manchester-uni-1701?r=cryptotan01",
+   "slug": "will-chelsea-reach-25-consecutive-premier-league-m-1462",
+   "title": "Will Chelsea reach 25 consecutive Premier League matches without a clean sheet by October 31?",
+   "url": "https://beta.xo.market/event/will-chelsea-reach-25-consecutive-premier-league-m-1462?r=cryptotan01",
    "creator": "eplxgchad",
    "is_ours": false,
    "xo_price": 0.5,
-   "best_bid": null,
+   "best_bid": 0.5,
    "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 20.0,
-   "expires_at": "2026-10-31T12:30:00.000Z",
+   "liquidity_usd": 7.0,
+   "volume_usd": 6.0,
+   "expires_at": "2026-10-31T12:00:00.000Z",
    "group": "season",
    "fixture": null,
    "fair": null,
@@ -137,21 +28,31 @@
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
-   "pitch": "United fans won't like this: even this disastrous Spurs side will finish October above them. Prove me wrong.",
-   "description": "Resolves YES if Tottenham Hotspur are ranked above Manchester United in the official Premier League table as of October 31, 2026, at 11:59 PM UK time (GMT). Rankings are determined by the official league standings, including points, applicable tiebreakers and any points deductions in effect by the deadline. Matches played after the deadline do not count.",
+   "pitch": "22 league games without a clean sheet. Everton, Spurs, United next. I don't see that curse ending this month.",
+   "description": "Chelsea FC enter this market having conceded at least one goal in each of their previous 22 Premier League matches. This market resolves YES if Chelsea concede at least one goal in all three of their remaining October 2026 Premier League fixtures:- October 17: Everton vs Chelsea- October 24: Chelsea vs Tottenham- October 31: Chelsea vs Manchester UnitedOnly official Premier League matches count. Cup and European matches are excluded. Own goals count as goals conceded. All results are determined using the official Premier League match reports at premierleague. com. If any fixture is postponed beyond October 31 and the outcome has not already been determined as NO, the market will be voided.",
    "resolution_sources": [
-    "https://www.premierleague.com/en/tables/premier-league"
+    "https://www.premierleague.com/en/matches"
    ],
    "books": {
     "yes": {
-     "bids": [],
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 14.000002
+      }
+     ],
      "asks": [],
-     "last": null
+     "last": 0.5
     },
     "no": {
      "bids": [],
-     "asks": [],
-     "last": null
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 14.000002
+      }
+     ],
+     "last": 0.5
     }
    }
   },
@@ -170,9 +71,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5587,
-    "low": 0.4987,
-    "high": 0.6187,
+    "p": 0.5589,
+    "low": 0.4989,
+    "high": 0.6189,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -283,9 +184,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3711,
-    "low": 0.2711,
-    "high": 0.4711,
+    "p": 0.371,
+    "low": 0.271,
+    "high": 0.4709,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
@@ -357,9 +258,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6999,
-    "low": 0.5999,
-    "high": 0.7999,
+    "p": 0.7003,
+    "low": 0.6003,
+    "high": 0.8003,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
@@ -601,6 +502,57 @@
      ],
      "asks": [],
      "last": 0.45
+    }
+   }
+  },
+  {
+   "slug": "will-a-premier-league-player-finish-in-the-top-10--8100",
+   "title": "Will a Premier League player finish in the top 10 of the 2026 Ballon d'Or?",
+   "url": "https://beta.xo.market/event/will-a-premier-league-player-finish-in-the-top-10--8100?r=cryptotan01",
+   "creator": "OmarABKH89",
+   "is_ours": false,
+   "xo_price": 0.75,
+   "best_bid": null,
+   "best_ask": 0.75,
+   "liquidity_usd": 30.0,
+   "volume_usd": 13.33,
+   "expires_at": "2026-10-26T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-10-23T19:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will the Premier League get snubbed? I don't think so. I'm backing YES",
+   "description": "This market resolves based on whether A Premier League player finishes in the top 10 of the 2026 Ballon d'Or rankings as announced at the official ceremony on October 26, 2026. Players not currently playing for a Premier League club at the time of the award evaluation do not count. Primary source: Ballon d'Or (https://www. ballondor. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to UEFA (https://www. uefa. com). The primary source governs. If the official Ballon d'Or rankings are permanently withheld or cancelled or the ceremony is permanently cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.uefa.com",
+    "https://www.ballondor.com",
+    "https://www.si.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.75,
+       "size": 39.998667
+      }
+     ],
+     "last": 0.75
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.25,
+       "size": 39.998667
+      }
+     ],
+     "asks": [],
+     "last": 0.25
     }
    }
   },
@@ -855,7 +807,7 @@
    "fair": {
     "p": 0.0357,
     "low": 0,
-    "high": 0.1358,
+    "high": 0.1357,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -951,6 +903,105 @@
    }
   },
   {
+   "slug": "will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305",
+   "title": "Will Roberto De Zerbi still be Spurs manager on November 1?",
+   "url": "https://beta.xo.market/event/will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305?r=cryptotan01",
+   "creator": "xouser58643",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": 0.5,
+   "liquidity_usd": 10.0,
+   "volume_usd": 20.0,
+   "expires_at": "2026-10-31T23:59:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "No Polymarket market prices this manager's job by this date.",
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Spurs have Coventry and Palace before the end of the month. I'm expecting positive results to keep RDZ in his job.",
+   "description": "This market will resolve based on whether Roberto De Zerbi is still manager of Tottenham Hotspur at 11:59 PM UTC on November 1, 2026.\n\nThe market resolves to \u201cYes\u201d if De Zerbi remains Spurs manager through the deadline and no official announcement of his departure has been made by then.\n\nThe market resolves to \u201cNo\u201d if De Zerbi leaves the club at any point between October 6, 2026 and November 1, 2026, 11:59 PM UTC, or if Tottenham officially announces his resignation, dismissal, or mutual departure by the deadline, regardless of when that departure takes effect.\n\nA caretaker, interim, or \u201cuntil a replacement is appointed\u201d arrangement after he has left still counts as No. A poor run of results, fan pressure, or reports that he is under threat do not count unless he actually leaves or an official departure is announced. Rumors and unconfirmed media speculation do not qualify. Timing is decided by the official club announcement. Primary source: Tottenham Hotspur. A consensus of credible reporting will also suffice. If the outcome cannot be reasonably determined, the market will be voided.",
+   "resolution_sources": [
+    "https://www.tottenhamhotspur.com/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    }
+   }
+  },
+  {
+   "slug": "next-premier-league-hat-trick-before-christmas-5957",
+   "title": "Next Premier League Hat-Trick before Christmas?",
+   "url": "https://beta.xo.market/event/next-premier-league-hat-trick-before-christmas-5957?r=cryptotan01",
+   "creator": "0xshrdlu",
+   "is_ours": false,
+   "xo_price": 0.28,
+   "best_bid": 0.28,
+   "best_ask": null,
+   "liquidity_usd": 12.0,
+   "volume_usd": 0,
+   "expires_at": "2026-12-25T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "The question's wording is open to more than one reading.",
+   "lock_at": "2026-12-19T15:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Next Premier League Hat-Trick before Christmas?",
+   "description": "This market resolves based on whether Whether a Premier League hat-trick is scored on or before December 25, 2026, 23:59:59 UTC, as confirmed by the official league records. A hat-trick is three or more goals by the same player in one Premier League match, counted in the official Premier League match report. Hat-tricks scored in other domestic or international competitions (such as the FA Cup, League Cup, or UEFA competitions) do not count. Hat-tricks scored prior to the reference date do not count toward this specific timeframe. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Sky Sports (https://www. skysports. com). The primary source governs. If the official Premier League season is permanently cancelled or records are officially retracted by the league governing body, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.skysports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.28,
+       "size": 42.857142
+      }
+     ],
+     "asks": [],
+     "last": 0.28
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.72,
+       "size": 42.857142
+      }
+     ],
+     "last": 0.72
+    }
+   }
+  },
+  {
    "slug": "will-manchester-city-have-10-or-more-points-deduct-5209",
    "title": "Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season?",
    "url": "https://beta.xo.market/event/will-manchester-city-have-10-or-more-points-deduct-5209?r=cryptotan01",
@@ -965,9 +1016,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4639,
-    "low": 0.3639,
-    "high": 0.5639,
+    "p": 0.4648,
+    "low": 0.3648,
+    "high": 0.5648,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -989,12 +1040,12 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "5.8%",
+      "value": "5.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "3.6%",
+      "value": "4.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1109,9 +1160,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0831,
+    "p": 0.0846,
     "low": 0,
-    "high": 0.1831,
+    "high": 0.1846,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1228,55 +1279,6 @@
    }
   },
   {
-   "slug": "will-chelsea-reach-25-consecutive-premier-league-m-1462",
-   "title": "Will Chelsea reach 25 consecutive Premier League matches without a clean sheet by October 31?",
-   "url": "https://beta.xo.market/event/will-chelsea-reach-25-consecutive-premier-league-m-1462?r=cryptotan01",
-   "creator": "eplxgchad",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 7.0,
-   "volume_usd": 6.0,
-   "expires_at": "2026-10-31T12:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-23T19:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "22 league games without a clean sheet. Everton, Spurs, United next. I don't see that curse ending this month.",
-   "description": "Chelsea FC enter this market having conceded at least one goal in each of their previous 22 Premier League matches. This market resolves YES if Chelsea concede at least one goal in all three of their remaining October 2026 Premier League fixtures:- October 17: Everton vs Chelsea- October 24: Chelsea vs Tottenham- October 31: Chelsea vs Manchester UnitedOnly official Premier League matches count. Cup and European matches are excluded. Own goals count as goals conceded. All results are determined using the official Premier League match reports at premierleague. com. If any fixture is postponed beyond October 31 and the outcome has not already been determined as NO, the market will be voided.",
-   "resolution_sources": [
-    "https://www.premierleague.com/en/matches"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 14.000002
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 14.000002
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570",
    "title": "Total goals after 80th minute in PL Matchweeks 7-9",
    "url": "https://beta.xo.market/event/total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570?r=cryptotan01",
@@ -1341,9 +1343,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8685,
-    "low": 0.7685,
-    "high": 0.9685,
+    "p": 0.8664,
+    "low": 0.7664,
+    "high": 0.9664,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -1364,7 +1366,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $207,208 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $207,218 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -1425,9 +1427,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7895,
-    "low": 0.6895,
-    "high": 0.8895,
+    "p": 0.7891,
+    "low": 0.6891,
+    "high": 0.8891,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -1490,53 +1492,53 @@
    }
   },
   {
-   "slug": "will-a-premier-league-player-finish-in-the-top-10--8100",
-   "title": "Will a Premier League player finish in the top 10 of the 2026 Ballon d'Or?",
-   "url": "https://beta.xo.market/event/will-a-premier-league-player-finish-in-the-top-10--8100?r=cryptotan01",
+   "slug": "will-manchester-city-be-mentioned-at-prime-ministe-6301",
+   "title": "Will Manchester City be mentioned at Prime Minister's Questions before Nov 5?",
+   "url": "https://beta.xo.market/event/will-manchester-city-be-mentioned-at-prime-ministe-6301?r=cryptotan01",
    "creator": "OmarABKH89",
    "is_ours": false,
-   "xo_price": 0.75,
+   "xo_price": 0.55,
    "best_bid": null,
-   "best_ask": 0.75,
-   "liquidity_usd": 30.0,
-   "volume_usd": 13.33,
-   "expires_at": "2026-10-26T22:00:00.000Z",
+   "best_ask": 0.55,
+   "liquidity_usd": 12.22,
+   "volume_usd": 18.18,
+   "expires_at": "2026-11-05T13:00:00.000Z",
    "group": "season",
    "fixture": null,
    "fair": null,
    "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-23T19:00:00Z",
+   "lock_at": "2026-10-31T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
-   "pitch": "Will the Premier League get snubbed? I don't think so. I'm backing YES",
-   "description": "This market resolves based on whether A Premier League player finishes in the top 10 of the 2026 Ballon d'Or rankings as announced at the official ceremony on October 26, 2026. Players not currently playing for a Premier League club at the time of the award evaluation do not count. Primary source: Ballon d'Or (https://www. ballondor. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to UEFA (https://www. uefa. com). The primary source governs. If the official Ballon d'Or rankings are permanently withheld or cancelled or the ceremony is permanently cancelled, the market voids and all positions resolve equally.",
+   "pitch": "First PMQs since City's guilty verdict and the PM's own row. Badenoch wants answers. 4 shots, 1 mention needed.",
+   "description": "This market resolves Yes only if the exact letter sequence 'Manchester City' is recorded in the official Hansard transcript of a Prime Minister's Questions session, and that transcript is published before November 5, 2026 at 13:00 UTC. The sequence must appear letter for letter. Any wording that contains 'Manchester City' counts, including 'Manchester City FC' and 'Manchester City Council'. 'Man City', 'the city of Manchester', and any other wording that does not contain that exact sequence do not count. Resolution is based only on the transcript of the Prime Minister's Questions session itself (the Engagements / Prime Minister\u2019s Questions block). Mentions outside that session do not count. Written ministerial statements or questions submitted in writing do not count. Video, subtitles, and other sources do not count. Primary source: Hansard UK (https://hansard. parliament. uk). If the primary source is unavailable, incomplete, or inconsistent at the time of resolution, resolution falls back to the official PMQs transcript on UK Parliament (https://www. parliament. uk). The primary source governs. Video alone does not resolve the market. Resolution is based on the transcript as published before the deadline, including the provisional ('rolling') version if that is the version published before November 5, 2026 at 13:00 UTC. Anything published after that time does not count: a sequence added after the deadline does not resolve the market Yes, and deletion after the deadline of a sequence already published before the deadline does not reverse a Yes. If no published PMQs transcript contains the exact sequence before the deadline, the market resolves No. If the scheduled PMQs sessions are permanently cancelled without taking place, or the official record is permanently retracted before the deadline so that no transcript is published, the market voids and all positions resolve equally.",
    "resolution_sources": [
-    "https://www.uefa.com",
-    "https://www.ballondor.com",
-    "https://www.si.com"
+    "https://www.parliament.uk",
+    "https://hansard.parliament.uk",
+    "https://parliament.uk"
    ],
    "books": {
     "yes": {
      "bids": [],
      "asks": [
       {
-       "price": 0.75,
-       "size": 39.998667
+       "price": 0.55,
+       "size": 22.220404
       }
      ],
-     "last": 0.75
+     "last": 0.55
     },
     "no": {
      "bids": [
       {
-       "price": 0.25,
-       "size": 39.998667
+       "price": 0.45,
+       "size": 22.220404
       }
      ],
      "asks": [],
-     "last": 0.25
+     "last": 0.45
     }
    }
   },
@@ -1957,9 +1959,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6251,
-    "low": 0.5252,
-    "high": 0.7251,
+    "p": 0.6235,
+    "low": 0.5235,
+    "high": 0.7235,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -1978,7 +1980,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 13,
+   "gap_pts": 12,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2058,105 +2060,6 @@
       }
      ],
      "last": 0.45
-    }
-   }
-  },
-  {
-   "slug": "will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305",
-   "title": "Will Roberto De Zerbi still be Spurs manager on November 1?",
-   "url": "https://beta.xo.market/event/will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305?r=cryptotan01",
-   "creator": "xouser58643",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": 0.5,
-   "liquidity_usd": 10.0,
-   "volume_usd": 20.0,
-   "expires_at": "2026-10-31T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "No Polymarket market prices this manager's job by this date.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Spurs have Coventry and Palace before the end of the month. I'm expecting positive results to keep RDZ in his job.",
-   "description": "This market will resolve based on whether Roberto De Zerbi is still manager of Tottenham Hotspur at 11:59 PM UTC on November 1, 2026.\n\nThe market resolves to \u201cYes\u201d if De Zerbi remains Spurs manager through the deadline and no official announcement of his departure has been made by then.\n\nThe market resolves to \u201cNo\u201d if De Zerbi leaves the club at any point between October 6, 2026 and November 1, 2026, 11:59 PM UTC, or if Tottenham officially announces his resignation, dismissal, or mutual departure by the deadline, regardless of when that departure takes effect.\n\nA caretaker, interim, or \u201cuntil a replacement is appointed\u201d arrangement after he has left still counts as No. A poor run of results, fan pressure, or reports that he is under threat do not count unless he actually leaves or an official departure is announced. Rumors and unconfirmed media speculation do not qualify. Timing is decided by the official club announcement. Primary source: Tottenham Hotspur. A consensus of credible reporting will also suffice. If the outcome cannot be reasonably determined, the market will be voided.",
-   "resolution_sources": [
-    "https://www.tottenhamhotspur.com/"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    }
-   }
-  },
-  {
-   "slug": "next-premier-league-hat-trick-before-christmas-5957",
-   "title": "Next Premier League Hat-Trick before Christmas?",
-   "url": "https://beta.xo.market/event/next-premier-league-hat-trick-before-christmas-5957?r=cryptotan01",
-   "creator": "0xshrdlu",
-   "is_ours": false,
-   "xo_price": 0.28,
-   "best_bid": 0.28,
-   "best_ask": null,
-   "liquidity_usd": 12.0,
-   "volume_usd": 0,
-   "expires_at": "2026-12-25T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "The question's wording is open to more than one reading.",
-   "lock_at": "2026-12-19T15:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Next Premier League Hat-Trick before Christmas?",
-   "description": "This market resolves based on whether Whether a Premier League hat-trick is scored on or before December 25, 2026, 23:59:59 UTC, as confirmed by the official league records. A hat-trick is three or more goals by the same player in one Premier League match, counted in the official Premier League match report. Hat-tricks scored in other domestic or international competitions (such as the FA Cup, League Cup, or UEFA competitions) do not count. Hat-tricks scored prior to the reference date do not count toward this specific timeframe. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Sky Sports (https://www. skysports. com). The primary source governs. If the official Premier League season is permanently cancelled or records are officially retracted by the league governing body, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.skysports.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.28,
-       "size": 42.857142
-      }
-     ],
-     "asks": [],
-     "last": 0.28
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.72,
-       "size": 42.857142
-      }
-     ],
-     "last": 0.72
     }
    }
   },
@@ -2298,9 +2201,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4135,
-    "low": 0.3135,
-    "high": 0.5135,
+    "p": 0.4146,
+    "low": 0.3146,
+    "high": 0.5146,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2322,12 +2225,12 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "5.8%",
+      "value": "5.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "3.6%",
+      "value": "4.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2500,8 +2403,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9946,
-    "low": 0.8946,
+    "p": 0.9945,
+    "low": 0.8945,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -2551,6 +2454,45 @@
       }
      ],
      "last": 0.44
+    }
+   }
+  },
+  {
+   "slug": "will-tottenham-finish-october-above-manchester-uni-1701",
+   "title": "Will Tottenham finish October above Manchester United in the Premier League table?",
+   "url": "https://beta.xo.market/event/will-tottenham-finish-october-above-manchester-uni-1701?r=cryptotan01",
+   "creator": "eplxgchad",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": null,
+   "liquidity_usd": 0,
+   "volume_usd": 20.0,
+   "expires_at": "2026-10-31T12:30:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-10-23T19:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "United fans won't like this: even this disastrous Spurs side will finish October above them. Prove me wrong.",
+   "description": "Resolves YES if Tottenham Hotspur are ranked above Manchester United in the official Premier League table as of October 31, 2026, at 11:59 PM UK time (GMT). Rankings are determined by the official league standings, including points, applicable tiebreakers and any points deductions in effect by the deadline. Matches played after the deadline do not count.",
+   "resolution_sources": [
+    "https://www.premierleague.com/en/tables/premier-league"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
     }
    }
   },
@@ -2860,8 +2802,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9369,
-    "low": 0.8369,
+    "p": 0.9366,
+    "low": 0.8367,
     "high": 1,
     "confidence": "low",
     "method": "match_model",
@@ -2953,9 +2895,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5917,
-    "low": 0.4917,
-    "high": 0.6916,
+    "p": 0.6002,
+    "low": 0.5002,
+    "high": 0.7002,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2989,7 +2931,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 9,
+   "gap_pts": 10,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3163,9 +3105,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0382,
+    "p": 0.0392,
     "low": 0,
-    "high": 0.1383,
+    "high": 0.1392,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
@@ -3228,9 +3170,9 @@
     "kickoff_utc": "2026-10-19T19:00:00Z"
    },
    "fair": {
-    "p": 0.5897,
-    "low": 0.5296,
-    "high": 0.6497,
+    "p": 0.5904,
+    "low": 0.5304,
+    "high": 0.6503,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -3253,6 +3195,64 @@
    "resolution_sources": [
     "https://www.premierleague.com",
     "https://www.nbcsports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
+  },
+  {
+   "slug": "will-manchester-city-outscore-chelsea-arsenal-and--1017",
+   "title": "Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7?",
+   "url": "https://beta.xo.market/event/will-manchester-city-outscore-chelsea-arsenal-and--1017?r=cryptotan01",
+   "creator": "xouser58643",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": null,
+   "best_ask": null,
+   "liquidity_usd": 0,
+   "volume_usd": 20.0,
+   "expires_at": "2026-10-19T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.2464,
+    "low": 0.2164,
+    "high": 0.2763,
+    "confidence": "high",
+    "method": "match_model",
+    "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
+    "inputs": [
+     {
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $207,218 traded)",
+      "value": "1X2 prices",
+      "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
+     },
+     {
+      "label": "Model expected goals MCI-IPS",
+      "value": "3.25-0.99",
+      "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-17T11:30:00Z",
+   "gap_pts": -25,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "City are going to fill their boots against Ipswich. 5+ goals. Difficult away fixtures for MUFC, AFC, CFC.",
+   "description": "This market resolves based on whether Manchester City scores strictly more goals than Chelsea, Arsenal, and Manchester United combined during Gameweek 7 of the 2026/27 Premier League season. Friendly matches, domestic cup competitions, and European fixtures outside of Premier League Gameweek 7 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official match schedule for Gameweek 7 is abandoned or cancelled without a recorded result or official statistics are permanently retracted by the Premier League, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
    ],
    "books": {
     "yes": {
@@ -3322,9 +3322,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.495,
-    "low": 0.395,
-    "high": 0.595,
+    "p": 0.4978,
+    "low": 0.3978,
+    "high": 0.5978,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -3380,9 +3380,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.653,
-    "low": 0.553,
-    "high": 0.753,
+    "p": 0.6541,
+    "low": 0.5541,
+    "high": 0.7541,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
