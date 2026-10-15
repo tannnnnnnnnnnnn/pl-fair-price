@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T12:42:03Z",
+ "generated_at": "2026-10-15T12:52:10Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -7,6 +7,45 @@
   "deadline_utc": "2026-10-17T10:00:00Z"
  },
  "markets": [
+  {
+   "slug": "will-brighton-be-in-the-top-4-after-mw9-3814",
+   "title": "Will Brighton be in the top 4 after MW9?",
+   "url": "https://beta.xo.market/event/will-brighton-be-in-the-top-4-after-mw9-3814?r=cryptotan01",
+   "creator": "OmarABKH89",
+   "is_ours": false,
+   "xo_price": 0.35,
+   "best_bid": null,
+   "best_ask": null,
+   "liquidity_usd": 0,
+   "volume_usd": 51.65,
+   "expires_at": "2026-11-02T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Most goals in the PL vs. two big away days at Anfield and the Etihad. I think Brighton will keep flying high",
+   "description": "This market resolves based on whether Brighton & Hove Albion FC is positioned in the top 4 positions of the English Premier League table upon the conclusion of Matchweek 9 of the 2026/27 season. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season is cancelled or permanently abandoned before Matchweek 9 concludes, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    },
+    "no": {
+     "bids": [],
+     "asks": [],
+     "last": null
+    }
+   }
+  },
   {
    "slug": "will-chelsea-reach-25-consecutive-premier-league-m-1462",
    "title": "Will Chelsea reach 25 consecutive Premier League matches without a clean sheet by October 31?",
@@ -57,6 +96,72 @@
    }
   },
   {
+   "slug": "will-man-utd-win-fewer-than-2-premier-league-match-3055",
+   "title": "Will Man Utd win fewer than 2 Premier League matches in October 2026?",
+   "url": "https://beta.xo.market/event/will-man-utd-win-fewer-than-2-premier-league-match-3055?r=cryptotan01",
+   "creator": "aaditpatadia",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": 0.5,
+   "best_ask": null,
+   "liquidity_usd": 9.0,
+   "volume_usd": 2.0,
+   "expires_at": "2026-10-31T23:59:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.7001,
+    "low": 0.6001,
+    "high": 0.8001,
+    "confidence": "low",
+    "method": "match_model",
+    "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
+    "inputs": [
+     {
+      "label": "October fixtures",
+      "value": "MUN-TOT, LEE-MUN, MUN-BOU, CHE-MUN",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": 20,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Four PL games. Spurs, Leeds, Bournemouth, Chelsea. What is your take ?",
+   "description": "This market resolves based on whether Manchester United wins fewer than 2 Premier League matches during October 2026 according to official league results. Matches in competitions other than the Premier League (such as European competitions or domestic cups) do not count toward the win total. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official Premier League competition is permanently abandoned or cancelled before all scheduled October 2026 matches are played, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.premierleague.com",
+    "https://Manchester United Premier League fixtures and results",
+    "https://Manchester United 2026/27 fixtures"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 18.000002
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 18.000002
+      }
+     ],
+     "last": 0.5
+    }
+   }
+  },
+  {
    "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
    "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
    "url": "https://beta.xo.market/event/will-man-city-be-3-points-clear-at-the-top-of-the--8494?r=cryptotan01",
@@ -71,9 +176,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5589,
-    "low": 0.4989,
-    "high": 0.6189,
+    "p": 0.5582,
+    "low": 0.4982,
+    "high": 0.6182,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -184,9 +289,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.371,
-    "low": 0.271,
-    "high": 0.4709,
+    "p": 0.3726,
+    "low": 0.2726,
+    "high": 0.4727,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
@@ -240,72 +345,6 @@
       }
      ],
      "last": 0.615
-    }
-   }
-  },
-  {
-   "slug": "will-man-utd-win-fewer-than-2-premier-league-match-3055",
-   "title": "Will Man Utd win fewer than 2 Premier League matches in October 2026?",
-   "url": "https://beta.xo.market/event/will-man-utd-win-fewer-than-2-premier-league-match-3055?r=cryptotan01",
-   "creator": "aaditpatadia",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 9.0,
-   "volume_usd": 2.0,
-   "expires_at": "2026-10-31T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.7003,
-    "low": 0.6003,
-    "high": 0.8003,
-    "confidence": "low",
-    "method": "match_model",
-    "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
-    "inputs": [
-     {
-      "label": "October fixtures",
-      "value": "MUN-TOT, LEE-MUN, MUN-BOU, CHE-MUN",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 20,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Four PL games. Spurs, Leeds, Bournemouth, Chelsea. What is your take ?",
-   "description": "This market resolves based on whether Manchester United wins fewer than 2 Premier League matches during October 2026 according to official league results. Matches in competitions other than the Premier League (such as European competitions or domestic cups) do not count toward the win total. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The official Premier League competition is permanently abandoned or cancelled before all scheduled October 2026 matches are played, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.manutd.com",
-    "https://www.premierleague.com",
-    "https://Manchester United Premier League fixtures and results",
-    "https://Manchester United 2026/27 fixtures"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 18.000002
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 18.000002
-      }
-     ],
-     "last": 0.5
     }
    }
   },
@@ -506,57 +545,6 @@
    }
   },
   {
-   "slug": "will-a-premier-league-player-finish-in-the-top-10--8100",
-   "title": "Will a Premier League player finish in the top 10 of the 2026 Ballon d'Or?",
-   "url": "https://beta.xo.market/event/will-a-premier-league-player-finish-in-the-top-10--8100?r=cryptotan01",
-   "creator": "OmarABKH89",
-   "is_ours": false,
-   "xo_price": 0.75,
-   "best_bid": null,
-   "best_ask": 0.75,
-   "liquidity_usd": 30.0,
-   "volume_usd": 13.33,
-   "expires_at": "2026-10-26T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-23T19:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Will the Premier League get snubbed? I don't think so. I'm backing YES",
-   "description": "This market resolves based on whether A Premier League player finishes in the top 10 of the 2026 Ballon d'Or rankings as announced at the official ceremony on October 26, 2026. Players not currently playing for a Premier League club at the time of the award evaluation do not count. Primary source: Ballon d'Or (https://www. ballondor. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to UEFA (https://www. uefa. com). The primary source governs. If the official Ballon d'Or rankings are permanently withheld or cancelled or the ceremony is permanently cancelled, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.uefa.com",
-    "https://www.ballondor.com",
-    "https://www.si.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.75,
-       "size": 39.998667
-      }
-     ],
-     "last": 0.75
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.25,
-       "size": 39.998667
-      }
-     ],
-     "asks": [],
-     "last": 0.25
-    }
-   }
-  },
-  {
    "slug": "will-brighton-score-in-every-premier-league-match--9358",
    "title": "Will Brighton score in every Premier League match they play in October?",
    "url": "https://beta.xo.market/event/will-brighton-score-in-every-premier-league-match--9358?r=cryptotan01",
@@ -571,9 +559,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5087,
-    "low": 0.4087,
-    "high": 0.6087,
+    "p": 0.509,
+    "low": 0.409,
+    "high": 0.609,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Brighton score in every October league match. (4 fixtures)",
@@ -807,7 +795,7 @@
    "fair": {
     "p": 0.0357,
     "low": 0,
-    "high": 0.1357,
+    "high": 0.1356,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -1160,9 +1148,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0846,
+    "p": 0.0869,
     "low": 0,
-    "high": 0.1846,
+    "high": 0.1869,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1181,7 +1169,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -37,
+   "gap_pts": -36,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1343,9 +1331,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8664,
-    "low": 0.7664,
-    "high": 0.9664,
+    "p": 0.865,
+    "low": 0.7651,
+    "high": 0.965,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Haaland score in 2+ of the next 3 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -1362,11 +1350,11 @@
      },
      {
       "label": "Model expected goals LIV-MCI",
-      "value": "1.14-1.33",
+      "value": "1.15-1.34",
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $207,384 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $207,444 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -1379,7 +1367,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-23T19:00:00Z",
-   "gap_pts": 27,
+   "gap_pts": 26,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1427,9 +1415,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7891,
-    "low": 0.6891,
-    "high": 0.8891,
+    "p": 0.7905,
+    "low": 0.6905,
+    "high": 0.8905,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -1488,6 +1476,57 @@
       }
      ],
      "last": 0.19
+    }
+   }
+  },
+  {
+   "slug": "will-a-premier-league-player-finish-in-the-top-10--8100",
+   "title": "Will a Premier League player finish in the top 10 of the 2026 Ballon d'Or?",
+   "url": "https://beta.xo.market/event/will-a-premier-league-player-finish-in-the-top-10--8100?r=cryptotan01",
+   "creator": "OmarABKH89",
+   "is_ours": false,
+   "xo_price": 0.75,
+   "best_bid": null,
+   "best_ask": 0.75,
+   "liquidity_usd": 30.0,
+   "volume_usd": 13.33,
+   "expires_at": "2026-10-26T22:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-10-23T19:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will the Premier League get snubbed? I don't think so. I'm backing YES",
+   "description": "This market resolves based on whether A Premier League player finishes in the top 10 of the 2026 Ballon d'Or rankings as announced at the official ceremony on October 26, 2026. Players not currently playing for a Premier League club at the time of the award evaluation do not count. Primary source: Ballon d'Or (https://www. ballondor. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to UEFA (https://www. uefa. com). The primary source governs. If the official Ballon d'Or rankings are permanently withheld or cancelled or the ceremony is permanently cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.uefa.com",
+    "https://www.ballondor.com",
+    "https://www.si.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.75,
+       "size": 39.998667
+      }
+     ],
+     "last": 0.75
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.25,
+       "size": 39.998667
+      }
+     ],
+     "asks": [],
+     "last": 0.25
     }
    }
   },
@@ -1609,9 +1648,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4435,
-    "low": 0.3835,
-    "high": 0.5035,
+    "p": 0.446,
+    "low": 0.386,
+    "high": 0.506,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1625,7 +1664,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -3,
+   "gap_pts": -2,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1845,9 +1884,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1585,
-    "low": 0.0585,
-    "high": 0.2586,
+    "p": 0.1584,
+    "low": 0.0584,
+    "high": 0.2584,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -1959,9 +1998,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6235,
-    "low": 0.5235,
-    "high": 0.7235,
+    "p": 0.6259,
+    "low": 0.5259,
+    "high": 0.7259,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -1980,7 +2019,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 12,
+   "gap_pts": 13,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2403,8 +2442,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9945,
-    "low": 0.8945,
+    "p": 0.9951,
+    "low": 0.8951,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -2424,7 +2463,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-19T15:00:00Z",
-   "gap_pts": 43,
+   "gap_pts": 44,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2519,45 +2558,6 @@
    "taker_fee_bps": 400,
    "pitch": "Two matchdays. Tempers will flare. But will the refs go red-card crazy? \ud83d\udc40 Discipline or chaos? Let\u2019s see! \ud83d\udea8",
    "description": "This market resolves based on the total number of red cards issued across Matchweek 7 and Matchweek 8 of the Premier League 2026-27 season. \nOver 2.5 resolves if the total number of red cards across Matchweek 7 and Matchweek 8 is 3 or more.\nUnder 2.5 resolves if the total number of red cards across Matchweek 7 and Matchweek 8 is 2 or fewer.\nFriendly matches, pre-season matches, and domestic cup competitions do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official Premier League season or matches are cancelled or permanently abandoned without official statistics, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-brighton-be-in-the-top-4-after-mw9-3814",
-   "title": "Will Brighton be in the top 4 after MW9?",
-   "url": "https://beta.xo.market/event/will-brighton-be-in-the-top-4-after-mw9-3814?r=cryptotan01",
-   "creator": "OmarABKH89",
-   "is_ours": false,
-   "xo_price": 0.35,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 51.65,
-   "expires_at": "2026-11-02T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Most goals in the PL vs. two big away days at Anfield and the Etihad. I think Brighton will keep flying high",
-   "description": "This market resolves based on whether Brighton & Hove Albion FC is positioned in the top 4 positions of the English Premier League table upon the conclusion of Matchweek 9 of the 2026/27 season. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season is cancelled or permanently abandoned before Matchweek 9 concludes, the market voids and all positions resolve equally.",
    "resolution_sources": [
     "https://www.premierleague.com"
    ],
@@ -2802,8 +2802,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9366,
-    "low": 0.8367,
+    "p": 0.9359,
+    "low": 0.8359,
     "high": 1,
     "confidence": "low",
     "method": "match_model",
@@ -2895,9 +2895,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6002,
-    "low": 0.5002,
-    "high": 0.7002,
+    "p": 0.5958,
+    "low": 0.4959,
+    "high": 0.6958,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gro\u00df score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the match model. Bookmakers usually rate star strikers a little higher.",
@@ -2918,7 +2918,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Brighton v Crystal Palace (Polymarket + Kalshi, $9,089 traded)",
+      "label": "Blended market odds Brighton v Crystal Palace (Polymarket + Kalshi, $9,102 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-bri-cry-2026-10-18"
      },
@@ -3105,9 +3105,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0392,
+    "p": 0.0374,
     "low": 0,
-    "high": 0.1392,
+    "high": 0.1373,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Gy\u00f6keres has strictly more goals than B.Fernandes in GW6-7. A tie counts as NO.",
@@ -3170,9 +3170,9 @@
     "kickoff_utc": "2026-10-19T19:00:00Z"
    },
    "fair": {
-    "p": 0.5904,
-    "low": 0.5304,
-    "high": 0.6503,
+    "p": 0.5908,
+    "low": 0.5308,
+    "high": 0.6508,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -3232,7 +3232,7 @@
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $207,384 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $207,444 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -3322,9 +3322,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4978,
-    "low": 0.3978,
-    "high": 0.5978,
+    "p": 0.4956,
+    "low": 0.3956,
+    "high": 0.5957,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES.",
@@ -3382,7 +3382,7 @@
    "fair": {
     "p": 0.6541,
     "low": 0.5541,
-    "high": 0.7541,
+    "high": 0.754,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -4004,13 +4004,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.4435,
+   "fair": 0.446,
    "confidence": "medium",
    "side": "NO",
-   "ev": 0.966,
-   "ev_low": 0.366,
-   "ev_high": 1.566,
-   "roi": 0.21,
+   "ev": 0.941,
+   "ev_low": 0.341,
+   "ev_high": 1.541,
+   "roi": 0.2046,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
