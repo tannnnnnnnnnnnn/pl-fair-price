@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-15T07:31:08Z)
+# VERIFY — PL Fair Price (2026-10-15T07:40:40Z)
 
 GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 4, low 23).
 
@@ -7,12 +7,12 @@ GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 4
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
 | EVE-CHE | 7 | 29.5/26.5/44.5 | 29.4/26.4/44.3 | 28.7/26.2/45.0 | 29.0/26.3/44.7 | 29.0/26.3/44.7 | 1.22-1.57 | $49,537 |
-| BRE-LIV | 7 | 40.5/26.5/33.5 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 1.50-1.35 | $27,573 |
+| BRE-LIV | 7 | 40.5/26.5/33.5 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 1.50-1.35 | $27,619 |
 | FUL-HUL | 7 | 55.5/24.5/20.5 | 55.2/24.4/20.4 | 55.7/23.9/20.4 | 55.5/24.1/20.4 | 55.5/24.1/20.4 | 1.83-1.03 | $14,973 |
 | MCI-IPS | 7 | 80.5/12.5/7.5 | 80.1/12.4/7.5 | 80.9/11.6/7.5 | 80.5/12.0/7.5 | 80.5/12.0/7.5 | 3.25-0.99 | $204,422 |
 | NEW-AVL | 7 | 41.5/25.5/32.5 | 41.7/25.6/32.7 | 41.8/25.9/32.3 | 41.7/25.7/32.5 | 41.7/25.7/32.5 | 1.58-1.37 | $11,453 |
 | BHA-CRY | 7 | 63.5/21.5/16.5 | 62.6/21.2/16.3 | 62.6/21.2/16.3 | 62.6/21.2/16.3 | 62.6/21.2/16.3 | 2.12-1.00 | $9,072 |
-| BOU-SUN | 7 | 46.5/26.5/27.5 | 46.3/26.4/27.4 | 46.3/26.9/26.9 | 46.3/26.6/27.1 | 46.3/26.6/27.1 | 1.56-1.14 | $13,126 |
+| BOU-SUN | 7 | 46.5/26.5/27.5 | 46.3/26.4/27.4 | 46.3/26.9/26.9 | 46.3/26.6/27.1 | 46.3/26.6/27.1 | 1.56-1.14 | $13,145 |
 | LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 40.0/26.5/33.5 | 40.4/26.6/33.1 | 40.4/26.6/33.1 | 1.48-1.32 | $27,373 |
 | NFO-ARS | 7 | 15.5/24.5/60.5 | 15.4/24.4/60.2 | 14.9/24.9/60.2 | 15.2/24.6/60.2 | 15.2/24.6/60.2 | 0.75-1.73 | $40,074 |
 | TOT-COV | 7 | 64.5/20.5/14.5 | 64.8/20.6/14.6 | 64.4/20.3/15.3 | 64.6/20.5/15.0 | 64.6/20.5/15.0 | 2.18-0.97 | $15,361 |
@@ -97,7 +97,7 @@ qg 0.415, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | low | 50 | 70.0 | 20 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
 | low | 5 | 47.3 | 42 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 50 | 24.6 | -25 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
-| low | 50 | 75.3 | 25 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
+| low | 50 | 76.3 | 26 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | low | 50 | 59.7 | 10 | player_model | Will Pascal Groß score or assist in at least 2 of Brighton's next 4 Premier League matches? | Chance Groß score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the |
 | medium | 47 | 44.6 | -2 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 65 | 93.8 | 29 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
