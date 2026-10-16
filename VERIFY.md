@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-16T18:00:14Z)
+# VERIFY — PL Fair Price (2026-10-16T18:07:18Z)
 
 GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 5, low 22).
 
@@ -6,14 +6,14 @@ GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 5
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| EVE-CHE | 7 | 30.5/26.5/43.5 | 30.3/26.4/43.3 | 30.7/25.6/43.7 | 30.5/26.0/43.5 | 30.5/26.0/43.5 | 1.31-1.60 | $211,602 |
-| BRE-LIV | 7 | 39.5/26.5/34.5 | 39.3/26.4/34.3 | 39.3/26.4/34.3 | 39.3/26.4/34.3 | 39.3/26.4/34.3 | 1.50-1.39 | $77,959 |
-| FUL-HUL | 7 | 56.5/24.5/19.5 | 56.2/24.4/19.4 | 55.9/23.8/20.3 | 56.1/24.1/19.9 | 56.1/24.1/19.9 | 1.85-1.02 | $223,191 |
-| MCI-IPS | 7 | 79.5/13.5/7.5 | 79.1/13.4/7.5 | 79.9/12.6/7.5 | 79.5/13.0/7.5 | 79.5/13.0/7.5 | 3.03-0.90 | $313,118 |
-| NEW-AVL | 7 | 41.5/26.5/32.5 | 41.3/26.4/32.3 | 42.1/25.7/32.2 | 41.7/26.1/32.3 | 41.7/26.1/32.3 | 1.57-1.36 | $20,791 |
-| BHA-CRY | 7 | 63.5/21.5/15.5 | 63.2/21.4/15.4 | 62.6/21.2/16.3 | 62.9/21.3/15.8 | 62.9/21.3/15.8 | 2.12-0.98 | $13,366 |
-| BOU-SUN | 7 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.3/27.4/27.4 | 45.5/27.5/27.0 | 45.5/27.5/27.0 | 1.50-1.10 | $30,219 |
-| LEE-MUN | 7 | 41.5/26.5/32.5 | 41.3/26.4/32.3 | 41.1/26.7/32.2 | 41.2/26.6/32.3 | 41.2/26.6/32.3 | 1.52-1.32 | $40,459 |
+| EVE-CHE | 7 | 30.5/26.5/43.5 | 30.3/26.4/43.3 | 30.7/25.6/43.7 | 30.5/26.0/43.5 | 30.5/26.0/43.5 | 1.31-1.60 | $211,650 |
+| BRE-LIV | 7 | 39.5/26.5/34.5 | 39.3/26.4/34.3 | 39.3/26.4/34.3 | 39.3/26.4/34.3 | 39.3/26.4/34.3 | 1.50-1.39 | $78,076 |
+| FUL-HUL | 7 | 56.5/24.5/19.5 | 56.2/24.4/19.4 | 55.9/23.8/20.3 | 56.1/24.1/19.9 | 56.1/24.1/19.9 | 1.85-1.02 | $223,215 |
+| MCI-IPS | 7 | 79.5/13.5/7.5 | 79.1/13.4/7.5 | 79.9/12.6/7.5 | 79.5/13.0/7.5 | 79.5/13.0/7.5 | 3.03-0.90 | $313,158 |
+| NEW-AVL | 7 | 41.5/26.5/32.5 | 41.3/26.4/32.3 | 42.1/25.7/32.2 | 41.7/26.1/32.3 | 41.7/26.1/32.3 | 1.57-1.36 | $20,832 |
+| BHA-CRY | 7 | 63.5/21.5/15.5 | 63.2/21.4/15.4 | 62.6/21.2/16.3 | 62.9/21.3/15.8 | 62.9/21.3/15.8 | 2.12-0.98 | $13,375 |
+| BOU-SUN | 7 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.3/27.4/27.4 | 45.5/27.5/27.0 | 45.5/27.5/27.0 | 1.50-1.10 | $30,220 |
+| LEE-MUN | 7 | 41.5/26.5/32.5 | 41.3/26.4/32.3 | 41.1/26.7/32.2 | 41.2/26.6/32.3 | 41.2/26.6/32.3 | 1.52-1.32 | $40,460 |
 | NFO-ARS | 7 | 15.5/24.5/59.5 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 0.78-1.76 | $62,272 |
 | TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 2.20-0.95 | $18,899 |
 | IPS-NFO | 8 | 30.0/27.0/43.0 | 30.0/27.0/43.0 | 30.2/26.6/43.2 | 30.1/26.8/43.1 | 30.1/26.8/43.1 | 1.24-1.53 | $353 |
@@ -23,7 +23,7 @@ GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 5
 | CHE-TOT | 8 | 52.5/24.0/23.0 | 52.8/24.1/23.1 | 53.2/22.9/23.9 | 53.0/23.5/23.5 | 53.0/23.5/23.5 | 1.93-1.23 | $9,869 |
 | CRY-NEW | 8 | 35.5/27.0/38.0 | 35.3/26.9/37.8 | 36.0/26.0/38.0 | 35.7/26.4/37.9 | 35.7/26.4/37.9 | 1.42-1.47 | $95 |
 | LIV-BHA | 8 | 47.0/24.0/29.0 | 47.0/24.0/29.0 | 47.8/23.6/28.6 | 47.4/23.8/28.8 | 47.4/23.8/28.8 | 1.87-1.43 | $480 |
-| MUN-BOU | 8 | 53.0/23.5/23.0 | 53.3/23.6/23.1 | 53.3/23.1/23.6 | 53.3/23.4/23.4 | 53.3/23.4/23.4 | 1.95-1.24 | $267 |
+| MUN-BOU | 8 | 53.0/23.5/23.0 | 53.3/23.6/23.1 | 53.3/23.1/23.6 | 53.3/23.4/23.4 | 53.3/23.4/23.4 | 1.95-1.24 | $269 |
 | HUL-BRE | 8 | 19.0/24.5/57.0 | 18.9/24.4/56.7 | 19.4/23.4/57.2 | 19.2/23.9/57.0 | 19.2/23.9/57.0 | 1.00-1.87 | $1,828 |
 | SUN-LEE | 8 | 34.0/29.0/37.0 | 34.0/29.0/37.0 | 34.7/28.1/37.2 | 34.3/28.6/37.1 | 34.3/28.6/37.1 | 1.24-1.30 | $702 |
 
@@ -79,7 +79,7 @@ qg 0.415, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | low | 56 | 99.4 | 43 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 48.2 | 1 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 6) vs Spurs (now 3). Strictly more counts as YES. |
 | medium | 22 | 4.0 | -18 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 40.9 | 8 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 40.8 | 8 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 65.3 | 15 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 63.5 | 18 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 55 | 39.1 | -16 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
@@ -101,9 +101,9 @@ qg 0.415, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | low | 50 | 60.0 | 10 | player_model | Will Pascal Groß score or assist in at least 2 of Brighton's next 4 Premier League matches? | Chance Groß score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the |
 | medium | 47 | 44.1 | -3 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 65 | 94.2 | 29 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
-| low | 66 | 26.0 | -40 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
+| low | 66 | 20.0 | -46 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 3.6 | -6 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
-| low | 55 | 18.7 | -36 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 18.9 | -36 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 37 | - |  | - | Arsenal < 1.20 combined xG conceded vs Leeds & Forest? | Fair price coming: not modelled yet. |
 | - | 45 | - |  | - | Fulham to sack or replace head coach before 1 November 2026 | No Polymarket market prices this manager's job by this date. |
 | - | 38 | - |  | - | Isak vs Haaland: More goals in next 3 league games? | Fair price coming: not modelled yet. |

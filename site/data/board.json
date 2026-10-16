@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T18:00:14Z",
+ "generated_at": "2026-10-16T18:07:18Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -199,7 +199,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $313,118 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $313,158 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -975,9 +975,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.456,
-    "low": 0.356,
-    "high": 0.556,
+    "p": 0.4557,
+    "low": 0.3557,
+    "high": 0.5557,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2176,9 +2176,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4088,
-    "low": 0.3088,
-    "high": 0.5088,
+    "p": 0.4085,
+    "low": 0.3085,
+    "high": 0.5085,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2854,7 +2854,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Brighton v Crystal Palace (Polymarket + Kalshi, $13,366 traded)",
+      "label": "Blended market odds Brighton v Crystal Palace (Polymarket + Kalshi, $13,375 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-bri-cry-2026-10-18"
      },
@@ -2985,9 +2985,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.732,
-    "low": 0.672,
-    "high": 0.792,
+    "p": 0.7325,
+    "low": 0.6725,
+    "high": 0.7925,
     "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
@@ -3168,7 +3168,7 @@
     "method_text": "City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $313,118 traded)",
+      "label": "Blended market odds Man City v Ipswich Town (Polymarket + Kalshi, $313,158 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-mac-ips-2026-10-17"
      },
@@ -3258,23 +3258,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.26,
-    "low": 0.16,
-    "high": 0.36,
+    "p": 0.2,
+    "low": 0.1,
+    "high": 0.3,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "26.0% (spread 2c, $3,536 traded on this market)",
+      "value": "20.0% (spread 14c, $3,536 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -40,
+   "gap_pts": -46,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3424,16 +3424,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1869,
-    "low": 0.0869,
-    "high": 0.2869,
+    "p": 0.1885,
+    "low": 0.0885,
+    "high": 0.2885,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "57.5%",
+      "value": "58.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
