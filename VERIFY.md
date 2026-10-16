@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-16T06:57:10Z)
+# VERIFY — PL Fair Price (2026-10-16T07:07:07Z)
 
 GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 4, low 23).
 
@@ -6,14 +6,14 @@ GW7 deadline 2026-10-17T10:00:00Z. 61 XO PL markets; 29 priced (high 2, medium 4
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| EVE-CHE | 7 | 29.5/26.5/44.5 | 29.4/26.4/44.3 | 29.6/25.6/44.7 | 29.5/26.0/44.5 | 29.5/26.0/44.5 | 1.26-1.59 | $75,792 |
-| BRE-LIV | 7 | 40.5/26.5/33.5 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 1.50-1.35 | $54,473 |
+| EVE-CHE | 7 | 29.5/26.5/44.5 | 29.4/26.4/44.3 | 29.6/25.6/44.7 | 29.5/26.0/44.5 | 29.5/26.0/44.5 | 1.26-1.59 | $75,794 |
+| BRE-LIV | 7 | 40.5/26.5/33.5 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 40.3/26.4/33.3 | 1.50-1.35 | $54,650 |
 | FUL-HUL | 7 | 56.5/24.5/19.5 | 56.2/24.4/19.4 | 55.9/23.8/20.3 | 56.1/24.1/19.9 | 56.1/24.1/19.9 | 1.83-1.00 | $218,074 |
-| MCI-IPS | 7 | 79.5/12.5/7.5 | 79.9/12.6/7.5 | 79.9/12.6/7.5 | 79.9/12.6/7.5 | 79.9/12.6/7.5 | 3.11-0.93 | $288,038 |
+| MCI-IPS | 7 | 79.5/12.5/7.5 | 79.9/12.6/7.5 | 79.9/12.6/7.5 | 79.9/12.6/7.5 | 79.9/12.6/7.5 | 3.11-0.93 | $288,078 |
 | NEW-AVL | 7 | 41.5/26.5/32.5 | 41.3/26.4/32.3 | 41.5/26.0/32.5 | 41.4/26.2/32.4 | 41.4/26.2/32.4 | 1.53-1.33 | $15,646 |
 | BHA-CRY | 7 | 63.5/21.5/16.5 | 62.6/21.2/16.3 | 62.6/21.2/16.3 | 62.6/21.2/16.3 | 62.6/21.2/16.3 | 2.12-1.00 | $11,257 |
 | BOU-SUN | 7 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 46.0/26.8/27.3 | 45.8/27.2/27.0 | 45.8/27.2/27.0 | 1.50-1.10 | $27,257 |
-| LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 40.3/26.4/33.3 | 40.5/26.5/33.0 | 40.5/26.5/33.0 | 1.49-1.33 | $34,405 |
+| LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 40.3/26.4/33.3 | 40.5/26.5/33.0 | 40.5/26.5/33.0 | 1.49-1.33 | $34,415 |
 | NFO-ARS | 7 | 15.5/24.5/59.5 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 0.77-1.73 | $50,195 |
 | TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 2.18-0.93 | $17,457 |
 | IPS-NFO | 8 | 30.0/27.0/43.0 | 30.0/27.0/43.0 | 31.0/26.5/42.5 | 30.5/26.8/42.8 | 30.5/26.7/42.8 | 1.24-1.51 | $337 |
@@ -97,7 +97,7 @@ qg 0.415, qa 0.050, plays 0.95; xG 4.82, xA 0.54, 529 min, 6/6 starts.
 | low | 50 | 69.7 | 20 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
 | low | 5 | 46.9 | 42 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 50 | 22.7 | -27 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
-| low | 50 | 72.7 | 23 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
+| low | 50 | 67.0 | 17 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | low | 50 | 59.6 | 10 | player_model | Will Pascal Groß score or assist in at least 2 of Brighton's next 4 Premier League matches? | Chance Groß score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the |
 | medium | 47 | 43.9 | -3 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 65 | 93.7 | 29 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
