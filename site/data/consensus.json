@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T20:36:04Z",
+ "generated_at": "2026-10-17T20:45:48Z",
  "gw": 8,
  "sources": [
   {
@@ -129,7 +129,7 @@
    "pos": "FWD",
    "ours": 4.9,
    "eleven": 5.68,
-   "solio": 5.63,
+   "solio": 5.73,
    "pundit": 6.14,
    "fpl": 4.3
   },
@@ -184,7 +184,7 @@
    "pos": "MID",
    "ours": 4.59,
    "eleven": 5.15,
-   "solio": 4.32,
+   "solio": 4.39,
    "pundit": 3.0,
    "fpl": 3.3
   },
@@ -206,9 +206,20 @@
    "pos": "FWD",
    "ours": 4.52,
    "eleven": 4.04,
-   "solio": 3.73,
+   "solio": 3.75,
    "pundit": 3.67,
    "fpl": 1.0
+  },
+  {
+   "id": 366,
+   "name": "Wirtz",
+   "team": "LIV",
+   "pos": "MID",
+   "ours": 4.47,
+   "eleven": 4.66,
+   "solio": 4.49,
+   "pundit": 4.61,
+   "fpl": 4.3
   },
   {
    "id": 453,
@@ -217,19 +228,8 @@
    "pos": "MID",
    "ours": 4.46,
    "eleven": 4.54,
-   "solio": 4.56,
+   "solio": 4.58,
    "pundit": 4.59,
-   "fpl": 4.3
-  },
-  {
-   "id": 366,
-   "name": "Wirtz",
-   "team": "LIV",
-   "pos": "MID",
-   "ours": 4.44,
-   "eleven": 4.66,
-   "solio": 4.49,
-   "pundit": 4.61,
    "fpl": 4.3
   },
   {
@@ -244,6 +244,17 @@
    "fpl": 2.7
   },
   {
+   "id": 379,
+   "name": "Isak",
+   "team": "LIV",
+   "pos": "FWD",
+   "ours": 4.38,
+   "eleven": 4.61,
+   "solio": 3.86,
+   "pundit": 1.14,
+   "fpl": 5.7
+  },
+  {
    "id": 13,
    "name": "Rice",
    "team": "ARS",
@@ -255,24 +266,13 @@
    "fpl": 2.7
   },
   {
-   "id": 379,
-   "name": "Isak",
-   "team": "LIV",
-   "pos": "FWD",
-   "ours": 4.34,
-   "eleven": 4.61,
-   "solio": 3.86,
-   "pundit": 1.14,
-   "fpl": 5.7
-  },
-  {
    "id": 87,
    "name": "Ajer",
    "team": "BRE",
    "pos": "DEF",
    "ours": 4.32,
    "eleven": 5.16,
-   "solio": 4.66,
+   "solio": 4.73,
    "pundit": 3.0,
    "fpl": 5.3
   },
@@ -393,7 +393,7 @@
    "pos": "GK",
    "ours": 4.07,
    "eleven": 4.12,
-   "solio": 4.28,
+   "solio": null,
    "pundit": 4.41,
    "fpl": 1.3
   },
@@ -490,7 +490,7 @@
    "name": "Virgil",
    "team": "LIV",
    "pos": "DEF",
-   "ours": 3.91,
+   "ours": 3.9,
    "eleven": 4.73,
    "solio": null,
    "pundit": 3.47,
@@ -519,6 +519,17 @@
    "fpl": 6.0
   },
   {
+   "id": 127,
+   "name": "Gomez",
+   "team": "BHA",
+   "pos": "MID",
+   "ours": 3.84,
+   "eleven": 3.85,
+   "solio": null,
+   "pundit": 3.97,
+   "fpl": 4.3
+  },
+  {
    "id": 183,
    "name": "Rudoni",
    "team": "COV",
@@ -528,17 +539,6 @@
    "solio": null,
    "pundit": 3.93,
    "fpl": 4.0
-  },
-  {
-   "id": 127,
-   "name": "Gomez",
-   "team": "BHA",
-   "pos": "MID",
-   "ours": 3.82,
-   "eleven": 3.85,
-   "solio": null,
-   "pundit": 3.97,
-   "fpl": 4.3
   },
   {
    "id": 304,
@@ -666,7 +666,7 @@
    "name": "Jacquet",
    "team": "LIV",
    "pos": "DEF",
-   "ours": 3.57,
+   "ours": 3.55,
    "eleven": 4.39,
    "solio": null,
    "pundit": 3.0,
@@ -756,7 +756,7 @@
    "pos": "DEF",
    "ours": 3.44,
    "eleven": 3.99,
-   "solio": null,
+   "solio": 3.72,
    "pundit": 3.32,
    "fpl": 2.0
   },
@@ -770,17 +770,6 @@
    "solio": null,
    "pundit": 3.0,
    "fpl": 1.0
-  },
-  {
-   "id": 504,
-   "name": "Vuskovic",
-   "team": "BHA",
-   "pos": "DEF",
-   "ours": 3.42,
-   "eleven": 4.13,
-   "solio": 3.44,
-   "pundit": 2.01,
-   "fpl": 5.3
   },
   {
    "id": 259,
@@ -814,6 +803,17 @@
    "solio": null,
    "pundit": 3.23,
    "fpl": 1.3
+  },
+  {
+   "id": 504,
+   "name": "Vuskovic",
+   "team": "BHA",
+   "pos": "DEF",
+   "ours": 3.4,
+   "eleven": 4.12,
+   "solio": 3.44,
+   "pundit": 2.01,
+   "fpl": 5.3
   },
   {
    "id": 254,
@@ -888,7 +888,7 @@
    "pos": "DEF",
    "ours": 3.33,
    "eleven": 4.03,
-   "solio": 3.24,
+   "solio": 3.17,
    "pundit": 2.46,
    "fpl": 2.0
   },
@@ -904,6 +904,17 @@
    "fpl": 1.3
   },
   {
+   "id": 124,
+   "name": "Groß",
+   "team": "BHA",
+   "pos": "MID",
+   "ours": 3.3,
+   "eleven": 3.49,
+   "solio": 4.19,
+   "pundit": 3.4,
+   "fpl": 6.7
+  },
+  {
    "id": 390,
    "name": "Rúben",
    "team": "MCI",
@@ -913,6 +924,17 @@
    "solio": null,
    "pundit": 2.74,
    "fpl": 2.7
+  },
+  {
+   "id": 367,
+   "name": "Gakpo",
+   "team": "LIV",
+   "pos": "MID",
+   "ours": 3.29,
+   "eleven": 4.6,
+   "solio": null,
+   "pundit": 1.21,
+   "fpl": 1.0
   },
   {
    "id": 204,
@@ -948,17 +970,6 @@
    "fpl": 4.0
   },
   {
-   "id": 124,
-   "name": "Groß",
-   "team": "BHA",
-   "pos": "MID",
-   "ours": 3.28,
-   "eleven": 3.49,
-   "solio": 4.19,
-   "pundit": 3.4,
-   "fpl": 6.7
-  },
-  {
    "id": 166,
    "name": "N.Jackson",
    "team": "AVL",
@@ -968,17 +979,6 @@
    "solio": null,
    "pundit": 4.16,
    "fpl": 5.7
-  },
-  {
-   "id": 367,
-   "name": "Gakpo",
-   "team": "LIV",
-   "pos": "MID",
-   "ours": 3.27,
-   "eleven": 4.6,
-   "solio": null,
-   "pundit": 1.21,
-   "fpl": 1.0
   },
   {
    "id": 257,
@@ -1018,7 +1018,7 @@
    "name": "Mac Allister",
    "team": "LIV",
    "pos": "MID",
-   "ours": 3.24,
+   "ours": 3.25,
    "eleven": 3.65,
    "solio": null,
    "pundit": 4.04,
@@ -1124,17 +1124,6 @@
    "fpl": 5.2
   },
   {
-   "id": 115,
-   "name": "De Cuyper",
-   "team": "BHA",
-   "pos": "DEF",
-   "ours": 3.14,
-   "eleven": 3.97,
-   "solio": 3.67,
-   "pundit": 2.55,
-   "fpl": 7.0
-  },
-  {
    "id": 467,
    "name": "Sels",
    "team": "NFO",
@@ -1144,6 +1133,17 @@
    "solio": null,
    "pundit": 3.51,
    "fpl": 1.3
+  },
+  {
+   "id": 115,
+   "name": "De Cuyper",
+   "team": "BHA",
+   "pos": "DEF",
+   "ours": 3.13,
+   "eleven": 3.97,
+   "solio": 3.67,
+   "pundit": 2.55,
+   "fpl": 7.0
   },
   {
    "id": 250,
@@ -1172,7 +1172,7 @@
    "name": "Kostoulas",
    "team": "BHA",
    "pos": "FWD",
-   "ours": 3.08,
+   "ours": 3.1,
    "eleven": 3.29,
    "solio": null,
    "pundit": 3.64,
@@ -1218,7 +1218,7 @@
    "pos": "MID",
    "ours": 3.03,
    "eleven": 3.69,
-   "solio": 4.28,
+   "solio": 4.35,
    "pundit": 4.8,
    "fpl": 5.7
   },
@@ -1256,17 +1256,6 @@
    "fpl": 4.7
   },
   {
-   "id": 358,
-   "name": "Kerkez",
-   "team": "LIV",
-   "pos": "DEF",
-   "ours": 3.01,
-   "eleven": 3.81,
-   "solio": null,
-   "pundit": 2.47,
-   "fpl": 3.0
-  },
-  {
    "id": 429,
    "name": "Rashford",
    "team": "MUN",
@@ -1287,6 +1276,17 @@
    "solio": null,
    "pundit": 2.5,
    "fpl": 5.0
+  },
+  {
+   "id": 358,
+   "name": "Kerkez",
+   "team": "LIV",
+   "pos": "DEF",
+   "ours": 2.99,
+   "eleven": 3.81,
+   "solio": null,
+   "pundit": 2.47,
+   "fpl": 3.0
   },
   {
    "id": 184,
@@ -1366,6 +1366,17 @@
    "fpl": 0.3
   },
   {
+   "id": 377,
+   "name": "Munoz",
+   "team": "LIV",
+   "pos": "MID",
+   "ours": 2.87,
+   "eleven": 3.39,
+   "solio": null,
+   "pundit": 4.12,
+   "fpl": 4.0
+  },
+  {
    "id": 572,
    "name": "Tzolakis",
    "team": "HUL",
@@ -1375,17 +1386,6 @@
    "solio": null,
    "pundit": 2.9,
    "fpl": 3.7
-  },
-  {
-   "id": 377,
-   "name": "Munoz",
-   "team": "LIV",
-   "pos": "MID",
-   "ours": 2.86,
-   "eleven": 3.39,
-   "solio": null,
-   "pundit": 4.12,
-   "fpl": 4.0
   },
   {
    "id": 336,
@@ -1465,17 +1465,6 @@
    "fpl": 0.3
   },
   {
-   "id": 350,
-   "name": "A.Becker",
-   "team": "LIV",
-   "pos": "GK",
-   "ours": 2.81,
-   "eleven": 3.03,
-   "solio": null,
-   "pundit": 3.42,
-   "fpl": 3.7
-  },
-  {
    "id": 398,
    "name": "Foden",
    "team": "MCI",
@@ -1485,6 +1474,17 @@
    "solio": null,
    "pundit": 1.0,
    "fpl": 3.0
+  },
+  {
+   "id": 350,
+   "name": "A.Becker",
+   "team": "LIV",
+   "pos": "GK",
+   "ours": 2.79,
+   "eleven": 3.03,
+   "solio": null,
+   "pundit": 3.42,
+   "fpl": 3.7
   },
   {
    "id": 222,
@@ -1557,7 +1557,7 @@
    "name": "Verbruggen",
    "team": "BHA",
    "pos": "GK",
-   "ours": 2.67,
+   "ours": 2.66,
    "eleven": 2.61,
    "solio": null,
    "pundit": 2.77,
@@ -1645,7 +1645,7 @@
    "name": "Barcola",
    "team": "LIV",
    "pos": "MID",
-   "ours": 2.51,
+   "ours": 2.52,
    "eleven": 4.6,
    "solio": 4.4,
    "pundit": 5.19,
@@ -1865,22 +1865,11 @@
    "name": "Yalcouyé",
    "team": "BHA",
    "pos": "MID",
-   "ours": 2.22,
+   "ours": 2.23,
    "eleven": 2.98,
    "solio": null,
    "pundit": 0.77,
    "fpl": 0.7
-  },
-  {
-   "id": 113,
-   "name": "F.Kadıoğlu",
-   "team": "BHA",
-   "pos": "DEF",
-   "ours": 2.21,
-   "eleven": 3.04,
-   "solio": null,
-   "pundit": 1.88,
-   "fpl": 4.7
   },
   {
    "id": 306,
@@ -1892,6 +1881,17 @@
    "solio": null,
    "pundit": 1.14,
    "fpl": 0.3
+  },
+  {
+   "id": 113,
+   "name": "F.Kadıoğlu",
+   "team": "BHA",
+   "pos": "DEF",
+   "ours": 2.2,
+   "eleven": 3.04,
+   "solio": null,
+   "pundit": 1.88,
+   "fpl": 4.7
   },
   {
    "id": 186,
@@ -2037,17 +2037,6 @@
    "fpl": 0.7
   },
   {
-   "id": 579,
-   "name": "Araujo",
-   "team": "LIV",
-   "pos": "DEF",
-   "ours": 2.0,
-   "eleven": 3.31,
-   "solio": null,
-   "pundit": 2.81,
-   "fpl": 2.7
-  },
-  {
    "id": 593,
    "name": "Dedić",
    "team": "NEW",
@@ -2057,6 +2046,17 @@
    "solio": null,
    "pundit": 2.25,
    "fpl": 0.0
+  },
+  {
+   "id": 579,
+   "name": "Araujo",
+   "team": "LIV",
+   "pos": "DEF",
+   "ours": 1.99,
+   "eleven": 3.31,
+   "solio": null,
+   "pundit": 2.81,
+   "fpl": 2.7
   },
   {
    "id": 514,
@@ -2107,7 +2107,7 @@
    "name": "Dunk",
    "team": "BHA",
    "pos": "DEF",
-   "ours": 1.91,
+   "ours": 1.89,
    "eleven": 2.88,
    "solio": null,
    "pundit": 1.33,
@@ -2252,7 +2252,7 @@
    "pos": "MID",
    "ours": 1.58,
    "eleven": 2.27,
-   "solio": 3.47,
+   "solio": null,
    "pundit": 3.14,
    "fpl": 7.3
   },
@@ -2378,6 +2378,17 @@
    "fpl": 1.7
   },
   {
+   "id": 369,
+   "name": "Ngumoha",
+   "team": "LIV",
+   "pos": "MID",
+   "ours": 1.31,
+   "eleven": 2.25,
+   "solio": null,
+   "pundit": 2.17,
+   "fpl": 0.7
+  },
+  {
    "id": 260,
    "name": "Wilson",
    "team": "LEE",
@@ -2387,17 +2398,6 @@
    "solio": null,
    "pundit": 1.44,
    "fpl": 0.3
-  },
-  {
-   "id": 369,
-   "name": "Ngumoha",
-   "team": "LIV",
-   "pos": "MID",
-   "ours": 1.3,
-   "eleven": 2.25,
-   "solio": null,
-   "pundit": 2.17,
-   "fpl": 0.7
   },
   {
    "id": 313,
@@ -2640,6 +2640,17 @@
    "solio": null,
    "pundit": 1.35,
    "fpl": 0.7
+  },
+  {
+   "id": 125,
+   "name": "Georginio",
+   "team": "BHA",
+   "pos": "FWD",
+   "ours": 0.85,
+   "eleven": 1.44,
+   "solio": null,
+   "pundit": 1.77,
+   "fpl": 1.7
   },
   {
    "id": 14,
@@ -3300,17 +3311,6 @@
    "solio": null,
    "pundit": 2.5,
    "fpl": 3.0
-  },
-  {
-   "id": 125,
-   "name": "Georginio",
-   "team": "BHA",
-   "pos": "FWD",
-   "ours": null,
-   "eleven": null,
-   "solio": null,
-   "pundit": 1.77,
-   "fpl": 1.7
   },
   {
    "id": 158,
@@ -4408,7 +4408,7 @@
    "pos": "DEF",
    "ours": null,
    "eleven": null,
-   "solio": null,
+   "solio": 4.33,
    "pundit": 0.91,
    "fpl": 0.3
   },
