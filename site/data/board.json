@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T17:44:46Z",
+ "generated_at": "2026-10-17T17:54:52Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -895,9 +895,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4086,
-    "low": 0.3086,
-    "high": 0.5086,
+    "p": 0.4054,
+    "low": 0.3054,
+    "high": 0.5054,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -929,7 +929,7 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "23.0%",
+      "value": "22.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1386,9 +1386,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5008,
-    "low": 0.4408,
-    "high": 0.5608,
+    "p": 0.5024,
+    "low": 0.4424,
+    "high": 0.5624,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1984,9 +1984,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3598,
-    "low": 0.2598,
-    "high": 0.4598,
+    "p": 0.3564,
+    "low": 0.2564,
+    "high": 0.4564,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2018,7 +2018,7 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "23.0%",
+      "value": "22.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2701,7 +2701,7 @@
       "source_url": "https://github.com/tannnnnnnnnnnnn/pl-fair-price/blob/main/VERIFY.md"
      },
      {
-      "label": "Blended market odds Brighton v Crystal Palace (Polymarket + Kalshi, $94,753 traded)",
+      "label": "Blended market odds Brighton v Crystal Palace (Polymarket + Kalshi, $94,818 traded)",
       "value": "1X2 prices",
       "source_url": "https://polymarket.com/event/epl-bri-cry-2026-10-18"
      },
@@ -2832,23 +2832,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.74,
-    "low": 0.64,
-    "high": 0.84,
-    "confidence": "low",
+    "p": 0.734,
+    "low": 0.674,
+    "high": 0.794,
+    "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "26.0% (spread 7c, $967 traded on this market)",
+      "value": "26.6% (spread 3c, $967 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 24,
+   "gap_pts": 23,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3865,13 +3865,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.5008,
+   "fair": 0.5024,
    "confidence": "medium",
    "side": "NO",
-   "ev": 0.393,
-   "ev_low": -0.207,
-   "ev_high": 0.993,
-   "roi": 0.0855,
+   "ev": 0.377,
+   "ev_low": -0.223,
+   "ev_high": 0.977,
+   "roi": 0.082,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
