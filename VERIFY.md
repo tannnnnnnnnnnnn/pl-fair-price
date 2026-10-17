@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-17T17:15:00Z)
+# VERIFY — PL Fair Price (2026-10-17T17:16:12Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 59 XO PL markets; 28 priced (high 2, medium 4, low 22).
 
@@ -6,10 +6,10 @@ GW8 deadline 2026-10-23T17:30:00Z. 59 XO PL markets; 28 priced (high 2, medium 4
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| BHA-CRY | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 2.23-1.02 | $94,451 |
+| BHA-CRY | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 2.23-1.02 | $94,629 |
 | BOU-SUN | 7 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.3/27.4/27.4 | 45.5/27.5/27.0 | 45.5/27.5/27.0 | 1.50-1.10 | $33,913 |
 | LEE-MUN | 7 | 41.5/26.5/32.5 | 41.3/26.4/32.3 | 41.3/26.4/32.3 | 41.3/26.4/32.3 | 41.3/26.4/32.3 | 1.54-1.34 | $63,568 |
-| NFO-ARS | 7 | 15.5/24.5/59.5 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 0.78-1.76 | $104,083 |
+| NFO-ARS | 7 | 15.5/24.5/59.5 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 15.6/24.6/59.8 | 0.78-1.76 | $104,229 |
 | TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 65.2/20.4/14.4 | 2.20-0.95 | $49,468 |
 | IPS-NFO | 8 | 30.0/27.5/42.5 | 30.0/27.5/42.5 | 30.3/26.9/42.8 | 30.2/27.2/42.6 | 30.2/27.2/42.6 | 1.22-1.49 | $892 |
 | AVL-MCI | 8 | 21.5/21.5/57.0 | 21.5/21.5/57.0 | 20.9/21.9/57.2 | 21.2/21.7/57.1 | 21.2/21.7/57.1 | 1.27-2.16 | $4,889 |
@@ -58,8 +58,8 @@ Team-ratings refit error on the priced matches: mean |Δlog λ| 0.172, max 0.554
 | MCI | 89.6% | 0.0% | 24.3 |
 | ARS | 7.6% | 0.0% | 20.8 |
 | LIV | 0.0% | 0.0% | 14.8 |
-| TOT | 0.0% | 49.5% | 7.4 |
-| COV | 0.0% | 30.8% | 9.0 |
+| TOT | 0.0% | 49.7% | 7.4 |
+| COV | 0.0% | 30.7% | 9.0 |
 | IPS | 0.0% | 0.5% | 11.1 |
 
 ## Captain inputs (Haaland)
@@ -93,7 +93,7 @@ qg 0.386, qa 0.051, plays 0.95; xG 5.67, xA 0.91, 619 min, 7/7 starts.
 | high | 50 | 4.3 | -46 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
 | low | 50 | 76.8 | 27 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | low | 50 | 61.4 | 11 | player_model | Will Pascal Groß score or assist in at least 2 of Brighton's next 4 Premier League matches? | Chance Groß score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the |
-| medium | 47 | 49.5 | 3 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
+| medium | 47 | 49.7 | 3 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 65 | 94.1 | 29 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
 | low | 66 | 22.5 | -44 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 1.2 | -9 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
