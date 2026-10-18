@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-18T00:16:51Z)
+# VERIFY — PL Fair Price (2026-10-18T00:26:49Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 59 XO PL markets; 28 priced (high 2, medium 6, low 20).
 
@@ -6,12 +6,12 @@ GW8 deadline 2026-10-23T17:30:00Z. 59 XO PL markets; 28 priced (high 2, medium 6
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| BHA-CRY | 7 | 64.5/20.5/14.5 | 64.8/20.6/14.6 | 65.2/19.4/15.4 | 65.0/20.0/15.0 | 65.0/20.0/15.0 | 2.22-0.98 | $130,877 |
-| BOU-SUN | 7 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.0/27.7/27.2 | 45.4/27.7/26.9 | 45.4/27.7/26.9 | 1.44-1.05 | $61,958 |
-| LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 41.3/26.4/32.3 | 41.0/26.5/32.5 | 41.0/26.5/32.5 | 1.48-1.29 | $100,832 |
-| NFO-ARS | 7 | 15.5/24.5/60.5 | 15.4/24.4/60.2 | 15.6/24.6/59.8 | 15.5/24.5/60.0 | 15.5/24.5/60.0 | 0.75-1.72 | $217,446 |
-| TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 64.8/20.6/14.6 | 65.0/20.5/14.5 | 65.0/20.5/14.5 | 2.14-0.91 | $51,989 |
-| IPS-NFO | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 31.2/27.1/41.7 | 30.8/27.2/42.0 | 30.8/27.2/42.0 | 1.19-1.43 | $977 |
+| BHA-CRY | 7 | 64.5/20.5/14.5 | 64.8/20.6/14.6 | 65.2/19.4/15.4 | 65.0/20.0/15.0 | 65.0/20.0/15.0 | 2.22-0.98 | $130,614 |
+| BOU-SUN | 7 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.0/27.7/27.2 | 45.4/27.7/26.9 | 45.4/27.7/26.9 | 1.44-1.05 | $62,024 |
+| LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 41.3/26.4/32.3 | 41.0/26.5/32.5 | 41.0/26.5/32.5 | 1.48-1.29 | $101,111 |
+| NFO-ARS | 7 | 15.5/24.5/60.5 | 15.4/24.4/60.2 | 15.6/24.6/59.8 | 15.5/24.5/60.0 | 15.5/24.5/60.0 | 0.75-1.72 | $218,188 |
+| TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 64.8/20.6/14.6 | 65.0/20.5/14.5 | 65.0/20.5/14.5 | 2.14-0.91 | $59,215 |
+| IPS-NFO | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 31.2/27.1/41.7 | 30.8/27.2/42.0 | 30.8/27.2/42.0 | 1.19-1.43 | $980 |
 | AVL-MCI | 8 | 21.5/22.0/56.5 | 21.5/22.0/56.5 | 21.4/21.4/57.2 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.24-2.11 | $6,618 |
 | ARS-EVE | 8 | 70.5/20.0/9.5 | 70.5/20.0/9.5 | 69.8/20.1/10.1 | 70.2/20.1/9.8 | 70.2/20.1/9.8 | 2.03-0.62 | $2,467 |
 | COV-FUL | 8 | 32.5/27.5/40.5 | 32.3/27.4/40.3 | 32.2/26.6/41.2 | 32.2/27.0/40.8 | 32.2/27.0/40.8 | 1.25-1.43 | $316 |
@@ -90,7 +90,7 @@ qg 0.387, qa 0.051, plays 0.95; xG 5.67, xA 0.91, 619 min, 7/7 starts.
 | medium | 51 | 73.1 | 22 | table_sim | Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9? | City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, th |
 | low | 38 | 35.7 | -3 | match_model | Will Man United earn more PL points than Spurs in Matchweeks 6–9? | Man Utd take more league points than Spurs in MW6-9. A tie counts as NO. |
 | low | 50 | 70.6 | 21 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
-| low | 5 | 40.8 | 36 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 40.7 | 36 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 50 | 4.8 | -45 | match_model | Will Manchester City outscore Chelsea, Arsenal, and Man Utd combined in GW7? | City's GW7 goals vs Chelsea, Arsenal and Man Utd combined; strictly more counts as YES. |
 | medium | 50 | 77.5 | 28 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | low | 50 | 58.6 | 9 | player_model | Will Pascal Groß score or assist in at least 2 of Brighton's next 4 Premier League matches? | Chance Groß score or assist in 2+ of the next 4 league matches. His share of the team's goals comes from FPL xG/xA; team goals come from the |
