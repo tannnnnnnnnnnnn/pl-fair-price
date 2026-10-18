@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-18T18:31:55Z)
+# VERIFY — PL Fair Price (2026-10-18T18:41:53Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 6, low 18).
 
@@ -6,14 +6,14 @@ GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 6
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 64.2/20.4/15.4 | 64.7/20.4/14.9 | 64.7/20.4/14.9 | 2.16-0.95 | $80,268 |
+| TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 64.2/20.4/15.4 | 64.7/20.4/14.9 | 64.7/20.4/14.9 | 2.16-0.95 | $80,381 |
 | IPS-NFO | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 31.0/27.0/42.0 | 30.7/27.2/42.1 | 30.7/27.2/42.1 | 1.19-1.44 | $1,520 |
-| AVL-MCI | 8 | 21.5/22.0/56.5 | 21.5/22.0/56.5 | 21.4/21.4/57.2 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.24-2.11 | $11,739 |
+| AVL-MCI | 8 | 21.5/22.0/56.5 | 21.5/22.0/56.5 | 21.4/21.4/57.2 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.24-2.11 | $11,744 |
 | ARS-EVE | 8 | 70.5/20.0/9.5 | 70.5/20.0/9.5 | 69.2/20.4/10.4 | 69.8/20.2/10.0 | 69.8/20.2/10.0 | 2.02-0.63 | $5,692 |
 | COV-FUL | 8 | 32.5/27.5/40.5 | 32.3/27.4/40.3 | 32.2/26.6/41.2 | 32.2/27.0/40.8 | 32.2/27.0/40.8 | 1.25-1.43 | $328 |
 | CHE-TOT | 8 | 56.5/23.5/21.0 | 55.9/23.3/20.8 | 55.8/22.6/21.6 | 55.9/22.9/21.2 | 55.9/22.9/21.2 | 1.94-1.13 | $14,662 |
 | CRY-NEW | 8 | 33.0/27.0/40.5 | 32.8/26.9/40.3 | 32.7/26.6/40.7 | 32.7/26.7/40.5 | 32.7/26.7/40.5 | 1.28-1.45 | $1,189 |
-| LIV-BHA | 8 | 45.0/24.5/30.5 | 45.0/24.5/30.5 | 45.7/23.9/30.5 | 45.3/24.2/30.5 | 45.3/24.2/30.5 | 1.76-1.42 | $3,606 |
+| LIV-BHA | 8 | 45.0/24.5/30.5 | 45.0/24.5/30.5 | 45.7/23.9/30.5 | 45.3/24.2/30.5 | 45.3/24.2/30.5 | 1.76-1.42 | $3,626 |
 | MUN-BOU | 8 | 51.5/24.5/24.0 | 51.5/24.5/24.0 | 52.3/24.1/23.6 | 51.9/24.3/23.8 | 51.9/24.3/23.8 | 1.79-1.15 | $873 |
 | HUL-BRE | 8 | 22.0/24.5/53.5 | 22.0/24.5/53.5 | 22.0/24.0/54.0 | 22.0/24.2/53.8 | 22.0/24.2/53.8 | 1.07-1.80 | $2,577 |
 | SUN-LEE | 8 | 34.5/30.5/36.0 | 34.2/30.2/35.6 | 34.0/30.0/36.0 | 34.1/30.1/35.8 | 34.1/30.1/35.8 | 1.11-1.14 | $1,083 |
@@ -78,7 +78,7 @@ qg 0.388, qa 0.052, plays 0.95; xG 5.67, xA 0.91, 619 min, 7/7 starts.
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 51.3 | 4 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES. |
 | medium | 22 | 5.7 | -16 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 34.8 | 2 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 34.7 | 2 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 59.1 | 9 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 61.5 | 15 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | medium | 55 | 94.2 | 39 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
