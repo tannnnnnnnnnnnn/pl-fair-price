@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-18T01:26:54Z)
+# VERIFY — PL Fair Price (2026-10-18T01:36:56Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 59 XO PL markets; 28 priced (high 2, medium 5, low 21).
 
@@ -6,11 +6,11 @@ GW8 deadline 2026-10-23T17:30:00Z. 59 XO PL markets; 28 priced (high 2, medium 5
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| BHA-CRY | 7 | 64.5/20.5/14.5 | 64.8/20.6/14.6 | 65.2/19.4/15.4 | 65.0/20.0/15.0 | 65.0/20.0/15.0 | 2.22-0.98 | $133,146 |
-| BOU-SUN | 7 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.0/27.7/27.2 | 45.4/27.7/26.9 | 45.4/27.7/26.9 | 1.44-1.05 | $62,896 |
-| LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 41.3/26.4/32.3 | 41.0/26.5/32.5 | 41.0/26.5/32.5 | 1.48-1.29 | $104,272 |
-| NFO-ARS | 7 | 15.5/24.5/60.5 | 15.4/24.4/60.2 | 15.6/24.6/59.8 | 15.5/24.5/60.0 | 15.5/24.5/60.0 | 0.75-1.72 | $227,977 |
-| TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 64.8/20.6/14.6 | 65.0/20.5/14.5 | 65.0/20.5/14.5 | 2.14-0.91 | $59,440 |
+| BHA-CRY | 7 | 64.5/20.5/14.5 | 64.8/20.6/14.6 | 65.2/19.4/15.4 | 65.0/20.0/15.0 | 65.0/20.0/15.0 | 2.22-0.98 | $133,275 |
+| BOU-SUN | 7 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.0/27.7/27.2 | 45.4/27.7/26.9 | 45.4/27.7/26.9 | 1.44-1.05 | $63,252 |
+| LEE-MUN | 7 | 40.5/26.5/32.5 | 40.7/26.6/32.7 | 41.3/26.4/32.3 | 41.0/26.5/32.5 | 41.0/26.5/32.5 | 1.48-1.29 | $105,688 |
+| NFO-ARS | 7 | 15.5/24.5/60.5 | 15.4/24.4/60.2 | 15.6/24.6/59.8 | 15.5/24.5/60.0 | 15.5/24.5/60.0 | 0.75-1.72 | $236,766 |
+| TOT-COV | 7 | 65.5/20.5/14.5 | 65.2/20.4/14.4 | 64.8/20.6/14.6 | 65.0/20.5/14.5 | 65.0/20.5/14.5 | 2.14-0.91 | $59,466 |
 | IPS-NFO | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 31.2/27.1/41.7 | 30.8/27.2/42.0 | 30.8/27.2/42.0 | 1.19-1.43 | $982 |
 | AVL-MCI | 8 | 21.5/22.0/56.5 | 21.5/22.0/56.5 | 21.3/21.8/56.9 | 21.4/21.9/56.7 | 21.4/21.9/56.7 | 1.22-2.08 | $6,783 |
 | ARS-EVE | 8 | 70.5/20.0/9.5 | 70.5/20.0/9.5 | 69.8/20.1/10.1 | 70.2/20.1/9.8 | 70.2/20.1/9.8 | 2.03-0.62 | $2,477 |
@@ -98,7 +98,7 @@ qg 0.387, qa 0.051, plays 0.95; xG 5.67, xA 0.91, 619 min, 7/7 starts.
 | low | 65 | 93.9 | 29 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
 | low | 66 | 23.0 | -43 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 0.6 | -9 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
-| low | 55 | 19.7 | -35 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 19.4 | -36 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 37 | - |  | - | Arsenal < 1.20 combined xG conceded vs Leeds & Forest? | Fair price coming: not modelled yet. |
 | - | 45 | - |  | - | Fulham to sack or replace head coach before 1 November 2026 | No Polymarket market prices this manager's job by this date. |
 | - | 38 | - |  | - | Isak vs Haaland: More goals in next 3 league games? | Fair price coming: not modelled yet. |
