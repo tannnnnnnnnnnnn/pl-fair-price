@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T15:27:51Z",
+ "generated_at": "2026-10-19T15:37:49Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -766,16 +766,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3585,
-    "low": 0.2585,
-    "high": 0.4585,
+    "p": 0.3571,
+    "low": 0.2571,
+    "high": 0.4571,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "55.0%",
+      "value": "54.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -790,17 +790,17 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "7.7%",
+      "value": "6.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "2.4%",
+      "value": "1.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "27.5%",
+      "value": "29.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1440,9 +1440,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0925,
-    "low": 0.0325,
-    "high": 0.1525,
+    "p": 0.092,
+    "low": 0.032,
+    "high": 0.152,
     "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Manchester City punishment announced by November 6?\"",
@@ -1923,16 +1923,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3314,
-    "low": 0.2314,
-    "high": 0.4314,
+    "p": 0.3313,
+    "low": 0.2313,
+    "high": 0.4313,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "55.0%",
+      "value": "54.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1947,17 +1947,17 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "7.7%",
+      "value": "6.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "2.4%",
+      "value": "1.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "27.5%",
+      "value": "29.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2828,23 +2828,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.23,
-    "low": 0.13,
-    "high": 0.33,
+    "p": 0.225,
+    "low": 0.125,
+    "high": 0.325,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "23.0% (spread 8c, $3,536 traded on this market)",
+      "value": "22.5% (spread 9c, $3,536 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -43,
+   "gap_pts": -44,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2994,16 +2994,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.197,
-    "low": 0.097,
-    "high": 0.297,
+    "p": 0.1935,
+    "low": 0.0935,
+    "high": 0.2935,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "55.5%",
+      "value": "54.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -3015,7 +3015,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -35,
+   "gap_pts": -36,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
