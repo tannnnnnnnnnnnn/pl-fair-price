@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-19T08:15:13Z)
+# VERIFY — PL Fair Price (2026-10-19T08:25:07Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 7, low 17).
 
@@ -6,14 +6,14 @@ GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 7
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| TOT-COV | 7 | 63.5/20.5/15.5 | 63.8/20.6/15.6 | 63.2/20.4/16.4 | 63.5/20.5/16.0 | 63.5/20.5/16.0 | 2.21-1.03 | $199,150 |
+| TOT-COV | 7 | 63.5/20.5/15.5 | 63.8/20.6/15.6 | 63.2/20.4/16.4 | 63.5/20.5/16.0 | 63.5/20.5/16.0 | 2.21-1.03 | $200,302 |
 | IPS-NFO | 8 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.5/27.5/42.0 | 30.6/27.6/41.9 | 30.6/27.6/41.9 | 1.19-1.43 | $2,021 |
-| AVL-MCI | 8 | 21.5/22.0/56.5 | 21.5/22.0/56.5 | 21.3/21.8/56.9 | 21.4/21.9/56.7 | 21.4/21.9/56.7 | 1.24-2.11 | $25,419 |
-| ARS-EVE | 8 | 70.5/20.5/9.5 | 70.1/20.4/9.5 | 69.3/20.6/10.1 | 69.7/20.5/9.8 | 69.7/20.5/9.8 | 2.00-0.61 | $7,389 |
+| AVL-MCI | 8 | 21.5/22.0/56.5 | 21.5/22.0/56.5 | 21.3/21.8/56.9 | 21.4/21.9/56.7 | 21.4/21.9/56.7 | 1.24-2.11 | $25,424 |
+| ARS-EVE | 8 | 70.5/20.5/9.5 | 70.1/20.4/9.5 | 69.3/20.6/10.1 | 69.7/20.5/9.8 | 69.7/20.5/9.8 | 2.00-0.61 | $7,391 |
 | COV-FUL | 8 | 32.5/27.5/40.5 | 32.3/27.4/40.3 | 32.2/26.6/41.2 | 32.2/27.0/40.8 | 32.2/27.0/40.8 | 1.27-1.46 | $536 |
-| CHE-TOT | 8 | 56.5/22.5/22.0 | 55.9/22.3/21.8 | 55.8/22.6/21.6 | 55.9/22.4/21.7 | 55.9/22.4/21.7 | 2.03-1.21 | $18,303 |
+| CHE-TOT | 8 | 56.5/22.5/22.0 | 55.9/22.3/21.8 | 55.8/22.6/21.6 | 55.9/22.4/21.7 | 55.9/22.4/21.7 | 2.03-1.21 | $18,305 |
 | CRY-NEW | 8 | 32.5/27.0/40.5 | 32.5/27.0/40.5 | 32.3/26.9/40.8 | 32.4/26.9/40.6 | 32.4/26.9/40.6 | 1.28-1.46 | $1,260 |
-| LIV-BHA | 8 | 44.5/24.5/30.5 | 44.7/24.6/30.7 | 44.9/24.2/30.8 | 44.8/24.4/30.7 | 44.8/24.4/30.7 | 1.75-1.42 | $6,334 |
+| LIV-BHA | 8 | 44.5/24.5/30.5 | 44.7/24.6/30.7 | 44.9/24.2/30.8 | 44.8/24.4/30.7 | 44.8/24.4/30.7 | 1.75-1.42 | $6,338 |
 | MUN-BOU | 8 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.5/24.0/24.5 | 51.4/24.2/24.4 | 51.4/24.2/24.4 | 1.83-1.20 | $1,371 |
 | HUL-BRE | 8 | 21.0/24.5/54.5 | 21.0/24.5/54.5 | 21.1/24.1/54.8 | 21.1/24.3/54.6 | 21.1/24.3/54.6 | 1.05-1.81 | $10,745 |
 | SUN-LEE | 8 | 32.0/30.0/37.5 | 32.2/30.2/37.7 | 32.0/30.0/38.0 | 32.1/30.1/37.8 | 32.1/30.1/37.8 | 1.08-1.20 | $4,998 |
@@ -80,7 +80,7 @@ qg 0.388, qa 0.052, plays 0.95; xG 5.67, xA 0.91, 619 min, 7/7 starts.
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 41.2 | -6 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES. |
 | medium | 22 | 5.7 | -16 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 31.0 | -2 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 30.9 | -2 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 57.0 | 7 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 60.5 | 14 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | medium | 55 | 94.4 | 39 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
