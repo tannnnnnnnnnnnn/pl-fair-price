@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T04:54:38Z",
+ "generated_at": "2026-10-19T05:04:15Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -61,9 +61,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8641,
-    "low": 0.8041,
-    "high": 0.9242,
+    "p": 0.8647,
+    "low": 0.8047,
+    "high": 0.9246,
     "confidence": "medium",
     "method": "match_model",
     "method_text": "Man Utd win 0 or 1 of their 4 October league matches.",
@@ -113,6 +113,55 @@
    }
   },
   {
+   "slug": "will-any-premier-league-team-win-with-under-30-pos-1858",
+   "title": "Will any Premier League team win with under 30% possession in Matchday 6 or 7?",
+   "url": "https://beta.xo.market/event/will-any-premier-league-team-win-with-under-30-pos-1858?r=cryptotan01",
+   "creator": "NikolaiStromme",
+   "is_ours": false,
+   "xo_price": 0.58,
+   "best_bid": null,
+   "best_ask": 0.5,
+   "liquidity_usd": 18.33,
+   "volume_usd": 36.67,
+   "expires_at": "2026-10-20T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Needs match stats (possession, distance, shots) we don't model.",
+   "lock_at": "2026-10-17T11:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Chelsea beating Brighton recently with just 25% possession was a huge statistical anomaly",
+   "description": "This market resolves based on whether Any Premier League team wins a match with under 30% possession during Matchday 6 or Matchday 7 of the 2026/27 season as recorded by the official Premier League statistics provider. Matches outside of Matchday 6 and Matchday 7 of the 2026/27 Premier League season do not count. Matches in other competitions such as domestic cups or European tournaments do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official match record is permanently retracted or unavailable or the relevant matches are permanently cancelled before a result is declared, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 36.666666
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 36.666666
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    }
+   }
+  },
+  {
    "slug": "will-man-united-earn-more-pl-points-than-spurs-in--6054",
    "title": "Will Man United earn more PL points than Spurs in Matchweeks 6\u20139?",
    "url": "https://beta.xo.market/event/will-man-united-earn-more-pl-points-than-spurs-in--6054?r=cryptotan01",
@@ -127,9 +176,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2858,
-    "low": 0.1857,
-    "high": 0.3858,
+    "p": 0.2877,
+    "low": 0.1877,
+    "high": 0.3877,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
@@ -251,9 +300,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6005,
-    "low": 0.5405,
-    "high": 0.6605,
+    "p": 0.5967,
+    "low": 0.5367,
+    "high": 0.6566,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -315,9 +364,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3189,
-    "low": 0.2189,
-    "high": 0.4189,
+    "p": 0.32,
+    "low": 0.22,
+    "high": 0.42,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
@@ -385,8 +434,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9436,
-    "low": 0.8836,
+    "p": 0.944,
+    "low": 0.884,
     "high": 1,
     "confidence": "medium",
     "method": "match_model",
@@ -448,9 +497,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5249,
-    "low": 0.4649,
-    "high": 0.5849,
+    "p": 0.5188,
+    "low": 0.4588,
+    "high": 0.5788,
     "confidence": "medium",
     "method": "match_model",
     "method_text": "Brighton score in every October league match. (4 fixtures)",
@@ -548,56 +597,6 @@
    }
   },
   {
-   "slug": "will-erling-haaland-win-a-motm-award-with-15-touch-6552",
-   "title": "Will Erling Haaland win a MOTM award with <15 touches?",
-   "url": "https://beta.xo.market/event/will-erling-haaland-win-a-motm-award-with-15-touch-6552?r=cryptotan01",
-   "creator": "NikolaiStromme",
-   "is_ours": false,
-   "xo_price": 0.3,
-   "best_bid": null,
-   "best_ask": 0.3,
-   "liquidity_usd": 4.29,
-   "volume_usd": 0,
-   "expires_at": "2026-11-08T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-11-06T20:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "He\u2019s Haaland, not a phantom. He\u2019ll touch the ball 15 times just tying his laces before winning MOTM",
-   "description": "This market resolves based on whether Erling Haaland wins an official Premier League Man of the Match award while recording fewer than 15 total touches in the same match before the cutoff time. Friendly matches, domestic cup competitions, and European fixtures do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to StatMuse (https://www. statmuse. com). The primary source governs. If The named match is abandoned without an official result or The Premier League retracts or invalidates the match award, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.statmuse.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.3,
-       "size": 14.285714
-      }
-     ],
-     "last": 0.3
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.7,
-       "size": 14.285714
-      }
-     ],
-     "asks": [],
-     "last": 0.7
-    }
-   }
-  },
-  {
    "slug": "will-any-premier-league-club-keep-a-clean-sheet-in-9459",
    "title": "Will any Premier League club keep a clean sheet in all four October gameweeks?",
    "url": "https://beta.xo.market/event/will-any-premier-league-club-keep-a-clean-sheet-in-9459?r=cryptotan01",
@@ -612,9 +611,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0219,
+    "p": 0.0228,
     "low": 0,
-    "high": 0.1219,
+    "high": 0.1229,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
@@ -773,9 +772,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2826,
-    "low": 0.1826,
-    "high": 0.3826,
+    "p": 0.2823,
+    "low": 0.1823,
+    "high": 0.3823,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -797,7 +796,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "4.7%",
+      "value": "4.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -917,9 +916,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1701,
-    "low": 0.0701,
-    "high": 0.2701,
+    "p": 0.1688,
+    "low": 0.0688,
+    "high": 0.2688,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -986,9 +985,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.354,
-    "low": 0.254,
-    "high": 0.454,
+    "p": 0.3579,
+    "low": 0.258,
+    "high": 0.4579,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -1282,9 +1281,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3969,
-    "low": 0.3369,
-    "high": 0.4569,
+    "p": 0.4009,
+    "low": 0.3409,
+    "high": 0.4609,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1383,6 +1382,56 @@
    }
   },
   {
+   "slug": "will-erling-haaland-win-a-motm-award-with-15-touch-6552",
+   "title": "Will Erling Haaland win a MOTM award with <15 touches?",
+   "url": "https://beta.xo.market/event/will-erling-haaland-win-a-motm-award-with-15-touch-6552?r=cryptotan01",
+   "creator": "NikolaiStromme",
+   "is_ours": false,
+   "xo_price": 0.3,
+   "best_bid": null,
+   "best_ask": 0.3,
+   "liquidity_usd": 4.29,
+   "volume_usd": 0,
+   "expires_at": "2026-11-08T23:59:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-11-06T20:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "He\u2019s Haaland, not a phantom. He\u2019ll touch the ball 15 times just tying his laces before winning MOTM",
+   "description": "This market resolves based on whether Erling Haaland wins an official Premier League Man of the Match award while recording fewer than 15 total touches in the same match before the cutoff time. Friendly matches, domestic cup competitions, and European fixtures do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to StatMuse (https://www. statmuse. com). The primary source governs. If The named match is abandoned without an official result or The Premier League retracts or invalidates the match award, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.statmuse.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.3,
+       "size": 14.285714
+      }
+     ],
+     "last": 0.3
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.7,
+       "size": 14.285714
+      }
+     ],
+     "asks": [],
+     "last": 0.7
+    }
+   }
+  },
+  {
    "slug": "man-city-sanctions-announced-before-nov-6-3294",
    "title": "Man City Sanctions announced before Nov 6?",
    "url": "https://beta.xo.market/event/man-city-sanctions-announced-before-nov-6-3294?r=cryptotan01",
@@ -1468,9 +1517,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3168,
-    "low": 0.2168,
-    "high": 0.4168,
+    "p": 0.3183,
+    "low": 0.2183,
+    "high": 0.4183,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -1582,9 +1631,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6119,
-    "low": 0.5119,
-    "high": 0.7118,
+    "p": 0.6244,
+    "low": 0.5244,
+    "high": 0.7244,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES.",
@@ -1603,7 +1652,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 11,
+   "gap_pts": 12,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1656,7 +1705,7 @@
     "kickoff_utc": "2026-10-24T16:30:00Z"
    },
    "fair": null,
-   "fair_reason": "Two readings: season totals (Chelsea have conceded 13, Spurs have scored 3): 100%. only goals from now to 1 Nov: 7%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season totals (Chelsea have conceded 13, Spurs have scored 3): 100%. only goals from now to 1 Nov: 6%. They differ too much to show one number.",
    "lock_at": "2026-10-31T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -1757,7 +1806,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 62%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 61%. They differ too much to show one number.",
    "lock_at": "2026-12-19T15:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -1880,9 +1929,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2568,
-    "low": 0.1568,
-    "high": 0.3568,
+    "p": 0.2566,
+    "low": 0.1566,
+    "high": 0.3566,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1904,7 +1953,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "4.7%",
+      "value": "4.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2389,45 +2438,6 @@
    }
   },
   {
-   "slug": "will-any-premier-league-team-win-with-under-30-pos-1858",
-   "title": "Will any Premier League team win with under 30% possession in Matchday 6 or 7?",
-   "url": "https://beta.xo.market/event/will-any-premier-league-team-win-with-under-30-pos-1858?r=cryptotan01",
-   "creator": "NikolaiStromme",
-   "is_ours": false,
-   "xo_price": 0.4,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 36.67,
-   "expires_at": "2026-10-20T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Needs match stats (possession, distance, shots) we don't model.",
-   "lock_at": "2026-10-17T11:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Chelsea beating Brighton recently with just 25% possession was a huge statistical anomaly",
-   "description": "This market resolves based on whether Any Premier League team wins a match with under 30% possession during Matchday 6 or Matchday 7 of the 2026/27 season as recorded by the official Premier League statistics provider. Matches outside of Matchday 6 and Matchday 7 of the 2026/27 Premier League season do not count. Matches in other competitions such as domestic cups or European tournaments do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the official match record is permanently retracted or unavailable or the relevant matches are permanently cancelled before a result is declared, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
    "slug": "will-tottenham-score-at-least-3-goals-in-october-2-5449",
    "title": "Will Tottenham score at least 3 goals in October 2026 Premier League matches?",
    "url": "https://beta.xo.market/event/will-tottenham-score-at-least-3-goals-in-october-2-5449?r=cryptotan01",
@@ -2442,8 +2452,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9712,
-    "low": 0.8712,
+    "p": 0.9694,
+    "low": 0.8694,
     "high": 1,
     "confidence": "low",
     "method": "match_model",
@@ -2677,9 +2687,9 @@
     "kickoff_utc": "2026-10-19T19:00:00Z"
    },
    "fair": {
-    "p": 0.6099,
-    "low": 0.5498,
-    "high": 0.6699,
+    "p": 0.6113,
+    "low": 0.5513,
+    "high": 0.6713,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -2825,9 +2835,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4126,
-    "low": 0.3126,
-    "high": 0.5126,
+    "p": 0.423,
+    "low": 0.323,
+    "high": 0.5231,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES.",
@@ -2846,7 +2856,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -6,
+   "gap_pts": -5,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2883,9 +2893,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5624,
-    "low": 0.4624,
-    "high": 0.6624,
+    "p": 0.5607,
+    "low": 0.4607,
+    "high": 0.6607,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -2937,16 +2947,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2016,
-    "low": 0.1016,
-    "high": 0.3016,
+    "p": 0.1998,
+    "low": 0.0998,
+    "high": 0.2998,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "56.0%",
+      "value": "55.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -3603,13 +3613,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.3969,
+   "fair": 0.4009,
    "confidence": "medium",
    "side": "NO",
-   "ev": 1.432,
-   "ev_low": 0.832,
-   "ev_high": 2.032,
-   "roi": 0.3114,
+   "ev": 1.392,
+   "ev_low": 0.792,
+   "ev_high": 1.992,
+   "roi": 0.3027,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
@@ -3617,13 +3627,13 @@
   {
    "slug": "will-brighton-outscore-arsenal-across-premier-leag-6832",
    "title": "Will Brighton outscore Arsenal across Premier League Matchweeks 6\u20138?",
-   "fair": 0.9436,
+   "fair": 0.944,
    "confidence": "medium",
    "side": "YES",
-   "ev": 0.2093,
-   "ev_low": 0.1766,
+   "ev": 0.2095,
+   "ev_low": 0.1768,
    "ev_high": 0.2401,
-   "roi": 0.6853,
+   "roi": 0.686,
    "buy_price": 0.55,
    "fillable": 0.3054,
    "shares": 0.5455
