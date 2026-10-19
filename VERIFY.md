@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-19T00:49:48Z)
+# VERIFY — PL Fair Price (2026-10-19T00:53:16Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 6, low 18).
 
@@ -6,9 +6,9 @@ GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 6
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| TOT-COV | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.5/20.5/15.0 | 64.3/20.4/15.2 | 64.3/20.4/15.2 | 2.19-0.98 | $132,617 |
+| TOT-COV | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.5/20.5/15.0 | 64.3/20.4/15.2 | 64.3/20.4/15.2 | 2.19-0.98 | $136,604 |
 | IPS-NFO | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 30.5/27.5/42.0 | 30.4/27.4/42.1 | 30.4/27.4/42.1 | 1.19-1.44 | $1,956 |
-| AVL-MCI | 8 | 21.5/21.5/56.5 | 21.6/21.6/56.8 | 21.3/21.8/56.9 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.26-2.13 | $16,165 |
+| AVL-MCI | 8 | 21.5/21.5/56.5 | 21.6/21.6/56.8 | 21.3/21.8/56.9 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.26-2.13 | $16,148 |
 | ARS-EVE | 8 | 70.5/20.5/9.5 | 70.1/20.4/9.5 | 69.3/20.6/10.1 | 69.7/20.5/9.8 | 69.7/20.5/9.8 | 2.00-0.61 | $6,718 |
 | COV-FUL | 8 | 32.5/27.5/40.5 | 32.3/27.4/40.3 | 32.2/26.6/41.2 | 32.2/27.0/40.8 | 32.2/27.0/40.8 | 1.27-1.46 | $334 |
 | CHE-TOT | 8 | 56.5/22.5/22.0 | 55.9/22.3/21.8 | 55.5/22.5/22.0 | 55.7/22.4/21.9 | 55.7/22.4/21.9 | 2.04-1.22 | $16,477 |
@@ -79,7 +79,7 @@ qg 0.388, qa 0.052, plays 0.95; xG 5.67, xA 0.91, 619 min, 7/7 starts.
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 40.6 | -6 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES. |
 | medium | 22 | 5.7 | -16 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 27.2 | -6 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 27.1 | -6 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 56.1 | 6 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 61.5 | 15 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | medium | 55 | 94.5 | 40 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
