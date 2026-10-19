@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T12:57:00Z",
+ "generated_at": "2026-10-19T13:07:08Z",
  "gw": 8,
  "deadline_utc": "2026-10-23T17:30:00Z",
  "fixtures": [
@@ -32,7 +32,7 @@
    "lam_away": 2.08,
    "cs_home": 0.125,
    "cs_away": 0.2957,
-   "market_volume": 26340,
+   "market_volume": 26438,
    "source_url": "https://polymarket.com/event/epl-ast-mac-2026-10-24"
   },
   {
@@ -48,7 +48,7 @@
    "lam_away": 0.581,
    "cs_home": 0.5591,
    "cs_away": 0.1391,
-   "market_volume": 7736,
+   "market_volume": 7738,
    "source_url": "https://polymarket.com/event/epl-ars-eve-2026-10-24"
   },
   {
@@ -166,31 +166,6 @@
  ],
  "players": [
   {
-   "id": 411,
-   "name": "Haaland",
-   "team": "MCI",
-   "opponent": "AVL",
-   "pos": "FWD",
-   "price": 15.7,
-   "owned_pct": 76.8,
-   "chance_playing": null,
-   "news": "",
-   "p_start": 0.95,
-   "p_goal": 0.5259,
-   "p_assist": 0.1379,
-   "p_cs": 0.2957,
-   "p_defcon": 0.001,
-   "xbonus": 1.14,
-   "xpts": 6.48,
-   "p_blank": 0.4123,
-   "fpl_ep": 8.3,
-   "xo_markets": [
-    "will-haaland-have-more-premier-league-goals-than-t-7197",
-    "erling-haaland-vs-bruno-fernandes-more-premier-lea-5450",
-    "haaland-will-score-more-goals-than-tottenham-hotsp-9602"
-   ]
-  },
-  {
    "id": 12,
    "name": "Saka",
    "team": "ARS",
@@ -218,7 +193,7 @@
    "opponent": "EVE",
    "pos": "DEF",
    "price": 6.0,
-   "owned_pct": 53.5,
+   "owned_pct": 53.6,
    "chance_playing": null,
    "news": "",
    "p_start": 0.95,
@@ -339,6 +314,31 @@
    "fpl_ep": 7.0,
    "xo_markets": [
     "alexander-isak-vs-joo-pedro-most-premier-league-go-4016"
+   ]
+  },
+  {
+   "id": 411,
+   "name": "Haaland",
+   "team": "MCI",
+   "opponent": "AVL",
+   "pos": "FWD",
+   "price": 15.7,
+   "owned_pct": 76.8,
+   "chance_playing": 75,
+   "news": "Unspecified injury - 75% chance of playing",
+   "p_start": 0.712,
+   "p_goal": 0.3944,
+   "p_assist": 0.1034,
+   "p_cs": 0.2957,
+   "p_defcon": 0.001,
+   "xbonus": 0.86,
+   "xpts": 4.86,
+   "p_blank": 0.5592,
+   "fpl_ep": 6.2,
+   "xo_markets": [
+    "will-haaland-have-more-premier-league-goals-than-t-7197",
+    "erling-haaland-vs-bruno-fernandes-more-premier-lea-5450",
+    "haaland-will-score-more-goals-than-tottenham-hotsp-9602"
    ]
   },
   {
@@ -858,7 +858,7 @@
    "opponent": "SUN",
    "pos": "DEF",
    "price": 4.5,
-   "owned_pct": 2.0,
+   "owned_pct": 2.1,
    "chance_playing": null,
    "news": "",
    "p_start": 0.95,
@@ -5377,7 +5377,7 @@
    "opponent": "AVL",
    "pos": "MID",
    "price": 8.3,
-   "owned_pct": 13.8,
+   "owned_pct": 13.7,
    "chance_playing": 0,
    "news": "Knee injury - Unknown return date",
    "p_start": 0.0,
@@ -5414,18 +5414,6 @@
   }
  ],
  "captain": [
-  {
-   "id": 411,
-   "name": "Haaland",
-   "team": "MCI",
-   "xpts": 6.48,
-   "p_goal": 0.5259,
-   "p_assist": 0.1379,
-   "p_blank": 0.4123,
-   "p_defcon": 0.001,
-   "xbonus": 1.14,
-   "fpl_ep": 8.3
-  },
   {
    "id": 12,
    "name": "Saka",
@@ -5511,6 +5499,18 @@
    "fpl_ep": 7.0
   },
   {
+   "id": 411,
+   "name": "Haaland",
+   "team": "MCI",
+   "xpts": 4.86,
+   "p_goal": 0.3944,
+   "p_assist": 0.1034,
+   "p_blank": 0.5592,
+   "p_defcon": 0.001,
+   "xbonus": 0.86,
+   "fpl_ep": 6.2
+  },
+  {
    "id": 106,
    "name": "Thiago",
    "team": "BRE",
@@ -5537,6 +5537,23 @@
  ],
  "flags": [
   {
+   "id": 411,
+   "name": "Haaland",
+   "team": "MCI",
+   "pos": "FWD",
+   "owned_pct": 76.8,
+   "fpl_chance": 75,
+   "news": "Unspecified injury - 75% chance of playing",
+   "regular": true,
+   "xo_markets": [
+    "will-erling-haaland-win-a-motm-award-with-15-touch-6552",
+    "will-haaland-have-more-premier-league-goals-than-t-7197",
+    "erling-haaland-vs-bruno-fernandes-more-premier-lea-5450",
+    "isak-vs-haaland-more-goals-in-next-3-league-games-3296",
+    "haaland-will-score-more-goals-than-tottenham-hotsp-9602"
+   ]
+  },
+  {
    "id": 368,
    "name": "Szoboszlai",
    "team": "LIV",
@@ -5554,7 +5571,7 @@
    "name": "Semenyo",
    "team": "MCI",
    "pos": "MID",
-   "owned_pct": 13.8,
+   "owned_pct": 13.7,
    "fpl_chance": 0,
    "news": "Knee injury - Unknown return date",
    "regular": true,
@@ -6590,7 +6607,7 @@
    "xg": 1.22,
    "assists": 2,
    "xa": 0.98,
-   "owned_pct": 53.5,
+   "owned_pct": 53.6,
    "xo_markets": []
   },
   {
@@ -6800,7 +6817,7 @@
    "xg": 0.34,
    "assists": 3,
    "xa": 1.47,
-   "owned_pct": 13.8,
+   "owned_pct": 13.7,
    "xo_markets": []
   },
   {
@@ -7567,7 +7584,7 @@
    "xg": 0.41,
    "assists": 0,
    "xa": 0.51,
-   "owned_pct": 2.0,
+   "owned_pct": 2.1,
    "xo_markets": []
   },
   {
