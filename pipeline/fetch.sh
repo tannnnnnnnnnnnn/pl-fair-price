@@ -2,7 +2,7 @@
 # Fetch live XO, Polymarket, Kalshi and FPL data into raw/. Each file is replaced only when the new download is valid JSON.
 set -euo pipefail
 cd "$(dirname "$0")"; mkdir -p raw; tmp=$(mktemp -d)
-get() { curl -sf --retry 3 --max-time 30 -A "pl-fair-price/1.0" "$1"; }
+get() { curl -sf --retry 3 --retry-all-errors --max-time 30 -A "pl-fair-price/1.0" "$1"; }
 valid() { python3 -c "import json,sys; d=json.load(open(sys.argv[1])); sys.exit(0 if d else 1)" "$1"; }
 
 # XO: every live conviction market, paged
@@ -10,7 +10,7 @@ python3 - "$tmp/xo.json" <<'PY'
 import json, subprocess, sys
 rows, page = [], 1
 while True:
-    out = subprocess.run(["curl", "-sf", "--retry", "3", "--max-time", "30",
+    out = subprocess.run(["curl", "-sf", "--retry", "3", "--retry-all-errors", "--max-time", "30",
                           f"https://api-mainnet.xo.market/api/convictions?take=50&page={page}"], capture_output=True, check=True)
     d = json.loads(out.stdout); rows += d.get("data", [])
     if not d.get("meta", {}).get("hasNextPage"): break
@@ -37,7 +37,7 @@ for row in rows:
     name = Path(urlparse(uri or "").path).name
     if not uri or not name or not name.endswith(".json") or (cache / name).exists():
         continue
-    out = subprocess.run(["curl", "-sf", "--retry", "3", "--max-time", "30", uri], capture_output=True)
+    out = subprocess.run(["curl", "-sf", "--retry", "3", "--retry-all-errors", "--max-time", "30", uri], capture_output=True)
     if out.returncode != 0:
         print(f"warning: could not fetch XO metadata {uri}")
         continue
@@ -77,7 +77,7 @@ python3 - "$tmp/poly.json" <<'PY'
 import json, subprocess, sys
 ev, off = [], 0
 while True:
-    out = subprocess.run(["curl", "-sf", "--retry", "3", "--max-time", "30",
+    out = subprocess.run(["curl", "-sf", "--retry", "3", "--retry-all-errors", "--max-time", "30",
                           f"https://gamma-api.polymarket.com/events?tag_slug=epl&closed=false&limit=100&offset={off}"], capture_output=True, check=True)
     d = json.loads(out.stdout)
     if not d: break

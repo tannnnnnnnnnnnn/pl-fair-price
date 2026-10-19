@@ -273,6 +273,7 @@ def pois(l):
 def grid(lh, la):
     g = np.outer(pois(lh), pois(la))  # rows: home goals, cols: away goals
     g[0, 0] *= 1 - lh * la * RHO; g[0, 1] *= 1 + lh * RHO; g[1, 0] *= 1 + la * RHO; g[1, 1] *= 1 - RHO
+    g = np.clip(g, 0, None)  # big lambdas can push 1 + lambda*rho below 0
     return g / g.sum()
 
 
