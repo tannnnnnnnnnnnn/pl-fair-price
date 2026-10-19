@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-19T02:33:36Z)
+# VERIFY — PL Fair Price (2026-10-19T02:43:44Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 7, low 17).
 
@@ -6,21 +6,21 @@ GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 7
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| TOT-COV | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 2.20-1.00 | $146,954 |
+| TOT-COV | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 2.20-1.00 | $148,052 |
 | IPS-NFO | 8 | 30.5/27.5/42.0 | 30.5/27.5/42.0 | 30.5/27.5/42.0 | 30.5/27.5/42.0 | 30.5/27.5/42.0 | 1.19-1.44 | $2,000 |
-| AVL-MCI | 8 | 21.5/21.5/56.5 | 21.6/21.6/56.8 | 21.3/21.8/56.9 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.26-2.13 | $17,993 |
-| ARS-EVE | 8 | 70.5/20.5/9.5 | 70.1/20.4/9.5 | 69.3/20.6/10.1 | 69.7/20.5/9.8 | 69.7/20.5/9.8 | 2.00-0.61 | $6,854 |
+| AVL-MCI | 8 | 21.5/21.5/56.5 | 21.6/21.6/56.8 | 21.3/21.8/56.9 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.26-2.13 | $18,013 |
+| ARS-EVE | 8 | 70.5/20.5/9.5 | 70.1/20.4/9.5 | 69.3/20.6/10.1 | 69.7/20.5/9.8 | 69.7/20.5/9.8 | 2.00-0.61 | $6,951 |
 | COV-FUL | 8 | 32.5/27.5/40.5 | 32.3/27.4/40.3 | 32.2/26.6/41.2 | 32.2/27.0/40.8 | 32.2/27.0/40.8 | 1.27-1.46 | $430 |
-| CHE-TOT | 8 | 56.5/22.5/22.0 | 55.9/22.3/21.8 | 55.5/22.5/22.0 | 55.7/22.4/21.9 | 55.7/22.4/21.9 | 2.04-1.22 | $16,828 |
+| CHE-TOT | 8 | 56.5/22.5/22.0 | 55.9/22.3/21.8 | 55.5/22.5/22.0 | 55.7/22.4/21.9 | 55.7/22.4/21.9 | 2.04-1.22 | $16,942 |
 | CRY-NEW | 8 | 33.0/27.0/40.5 | 32.8/26.9/40.3 | 32.3/26.9/40.8 | 32.6/26.9/40.5 | 32.6/26.9/40.5 | 1.29-1.46 | $1,242 |
-| LIV-BHA | 8 | 45.5/24.5/30.5 | 45.3/24.4/30.3 | 46.0/23.7/30.3 | 45.6/24.1/30.3 | 45.6/24.1/30.3 | 1.81-1.44 | $5,015 |
+| LIV-BHA | 8 | 45.5/24.5/30.5 | 45.3/24.4/30.3 | 46.0/23.7/30.3 | 45.6/24.1/30.3 | 45.6/24.1/30.3 | 1.81-1.44 | $5,165 |
 | MUN-BOU | 8 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.5/24.0/24.5 | 51.4/24.2/24.4 | 51.4/24.2/24.4 | 1.83-1.20 | $1,229 |
-| HUL-BRE | 8 | 21.0/24.5/53.5 | 21.2/24.7/54.0 | 21.4/24.4/54.2 | 21.3/24.6/54.1 | 21.3/24.6/54.1 | 1.04-1.78 | $6,779 |
+| HUL-BRE | 8 | 21.0/24.5/53.5 | 21.2/24.7/54.0 | 21.4/24.4/54.2 | 21.3/24.6/54.1 | 21.3/24.6/54.1 | 1.04-1.78 | $6,800 |
 | SUN-LEE | 8 | 32.0/30.5/37.5 | 32.0/30.5/37.5 | 32.0/30.0/38.0 | 32.0/30.2/37.8 | 32.0/30.2/37.8 | 1.07-1.18 | $4,275 |
 | CHE-MUN | 9 | 50.0/24.0/26.0 | 50.0/24.0/26.0 | 48.7/24.6/26.6 | 49.4/24.3/26.3 | 49.4/24.3/26.3 | 1.81-1.27 | $1,028 |
 | COV-SUN | 9 | 33.5/27.5/39.0 | 33.5/27.5/39.0 | 33.3/27.3/39.4 | 33.4/27.4/39.2 | 33.4/27.4/39.2 | 1.27-1.40 | $2 |
 | MCI-BHA | 9 | 56.5/22.0/20.0 | 57.4/22.3/20.3 | 56.2/21.9/21.9 | 56.8/22.1/21.1 | 56.8/22.1/21.1 | 2.07-1.21 | $2,597 |
-| HUL-IPS | 9 | 35.5/27.5/36.5 | 35.7/27.6/36.7 | 36.2/27.6/36.2 | 35.9/27.6/36.4 | 35.9/27.6/36.4 | 1.32-1.33 | $80 |
+| HUL-IPS | 9 | 36.0/27.5/36.5 | 36.0/27.5/36.5 | 36.2/27.6/36.2 | 36.1/27.6/36.3 | 36.1/27.6/36.3 | 1.32-1.33 | $80 |
 | BOU-LEE | 9 | 43.0/27.0/30.0 | 43.0/27.0/30.0 | 43.1/26.9/29.9 | 43.1/27.0/30.0 | 43.1/27.0/30.0 | 1.49-1.21 | $115 |
 | BRE-NFO | 9 | 49.0/25.0/26.5 | 48.8/24.9/26.4 | 48.5/24.7/26.8 | 48.6/24.8/26.6 | 48.6/24.8/26.6 | 1.75-1.24 | $12 |
 | TOT-CRY | 9 | 58.0/22.5/18.5 | 58.6/22.7/18.7 | 58.8/22.6/18.6 | 58.7/22.7/18.6 | 58.7/22.7/18.6 | 1.98-1.03 | $30 |
@@ -75,20 +75,20 @@ qg 0.388, qa 0.052, plays 0.95; xG 5.67, xA 0.91, 619 min, 7/7 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 17.2 | -28 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 17.8 | -27 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 40.5 | -7 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES. |
+| low | 47 | 41.0 | -6 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES. |
 | medium | 22 | 5.7 | -16 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
 | low | 33 | 25.7 | -7 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 56.4 | 6 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
+| low | 50 | 56.3 | 6 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 61.5 | 15 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | medium | 55 | 94.5 | 40 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
 | medium | 25 | 53.4 | 28 | match_model | Will Brighton score in every Premier League match they play in October? | Brighton score in every October league match. (4 fixtures) |
-| low | 38 | 36.0 | -2 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
+| low | 38 | 35.4 | -2 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
 | low | 60 | 0.1 | -60 | match_model | Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9? | Coventry score the fewest (or joint-fewest) league goals across MW6-9. |
 | medium | 44 | 60.7 | 17 | table_sim | Will Coventry be above Tottenham in the Premier League table after GW8? | Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 45 | 32.3 | -13 | fpl_points | Will Gonzalo Garcia outscore Josh King in FPL points across GW6-8? | Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO. |
-| low | 50 | 61.6 | 12 | player_model | Will Haaland have more Premier League goals than Tottenham by November 1? | Season league goals 01 Nov: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES. |
+| low | 50 | 61.3 | 11 | player_model | Will Haaland have more Premier League goals than Tottenham by November 1? | Season league goals 01 Nov: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES. |
 | low | 50 | 31.8 | -18 | match_model | Will Liverpool earn at least 7 points in their next 4 Premier League matches? | Liverpool take 7+ points from their next 4 league matches. (4 fixtures) |
 | medium | 51 | 59.3 | 8 | table_sim | Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9? | City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, th |
 | low | 33 | 28.6 | -4 | match_model | Will Man United earn more PL points than Spurs in Matchweeks 6–9? | Man Utd take more league points than Spurs in MW6-9. A tie counts as NO. |
