@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-19T01:03:15Z)
+# VERIFY — PL Fair Price (2026-10-19T01:13:12Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 7, low 17).
 
@@ -6,10 +6,10 @@ GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 7
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| TOT-COV | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 2.20-1.00 | $138,086 |
+| TOT-COV | 7 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 2.20-1.00 | $138,463 |
 | IPS-NFO | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 30.5/27.5/42.0 | 30.4/27.4/42.1 | 30.4/27.4/42.1 | 1.19-1.44 | $1,956 |
-| AVL-MCI | 8 | 21.5/21.5/56.5 | 21.6/21.6/56.8 | 21.3/21.8/56.9 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.26-2.13 | $16,224 |
-| ARS-EVE | 8 | 70.5/20.5/9.5 | 70.1/20.4/9.5 | 69.3/20.6/10.1 | 69.7/20.5/9.8 | 69.7/20.5/9.8 | 2.00-0.61 | $6,718 |
+| AVL-MCI | 8 | 21.5/21.5/56.5 | 21.6/21.6/56.8 | 21.3/21.8/56.9 | 21.4/21.7/56.9 | 21.4/21.7/56.9 | 1.26-2.13 | $16,353 |
+| ARS-EVE | 8 | 70.5/20.5/9.5 | 70.1/20.4/9.5 | 69.3/20.6/10.1 | 69.7/20.5/9.8 | 69.7/20.5/9.8 | 2.00-0.61 | $6,766 |
 | COV-FUL | 8 | 32.5/27.5/40.5 | 32.3/27.4/40.3 | 32.2/26.6/41.2 | 32.2/27.0/40.8 | 32.2/27.0/40.8 | 1.27-1.46 | $334 |
 | CHE-TOT | 8 | 56.5/22.5/22.0 | 55.9/22.3/21.8 | 55.5/22.5/22.0 | 55.7/22.4/21.9 | 55.7/22.4/21.9 | 2.04-1.22 | $16,477 |
 | CRY-NEW | 8 | 33.0/27.0/40.5 | 32.8/26.9/40.3 | 32.3/26.9/40.8 | 32.6/26.9/40.5 | 32.6/26.9/40.5 | 1.29-1.46 | $1,219 |
@@ -19,12 +19,12 @@ GW8 deadline 2026-10-23T17:30:00Z. 53 XO PL markets; 25 priced (high 1, medium 7
 | SUN-LEE | 8 | 32.0/30.5/37.5 | 32.0/30.5/37.5 | 32.0/30.0/38.0 | 32.0/30.2/37.8 | 32.0/30.2/37.8 | 1.07-1.18 | $3,797 |
 | CHE-MUN | 9 | 50.0/24.0/26.0 | 50.0/24.0/26.0 | 48.7/24.6/26.6 | 49.4/24.3/26.3 | 49.4/24.3/26.3 | 1.81-1.27 | $1,018 |
 | COV-SUN | 9 | 33.0/27.5/39.0 | 33.2/27.6/39.2 | 33.3/27.3/39.4 | 33.2/27.5/39.3 | 33.2/27.5/39.3 | 1.27-1.40 | $2 |
-| MCI-BHA | 9 | 56.5/22.0/20.0 | 57.4/22.3/20.3 | 56.2/21.9/21.9 | 56.8/22.1/21.1 | 56.8/22.1/21.1 | 2.07-1.21 | $2,471 |
+| MCI-BHA | 9 | 56.5/22.0/20.0 | 57.4/22.3/20.3 | 56.2/21.9/21.9 | 56.8/22.1/21.1 | 56.8/22.1/21.1 | 2.07-1.21 | $2,482 |
 | HUL-IPS | 9 | 35.5/27.5/36.5 | 35.7/27.6/36.7 | 36.2/27.6/36.2 | 35.9/27.6/36.4 | 35.9/27.6/36.4 | 1.32-1.33 | $80 |
 | BOU-LEE | 9 | 43.0/27.0/29.5 | 43.2/27.1/29.6 | 43.1/26.9/29.9 | 43.2/27.0/29.8 | 43.2/27.0/29.8 | 1.49-1.20 | $115 |
 | BRE-NFO | 9 | 49.0/25.0/26.5 | 48.8/24.9/26.4 | 48.5/24.7/26.8 | 48.6/24.8/26.6 | 48.6/24.8/26.6 | 1.75-1.24 | $12 |
 | TOT-CRY | 9 | 58.0/22.5/18.5 | 58.6/22.7/18.7 | 59.1/22.2/18.7 | 58.8/22.5/18.7 | 58.8/22.5/18.7 | 2.00-1.05 | $30 |
-| AVL-FUL | 9 | 48.0/25.0/26.5 | 48.2/25.1/26.6 | 46.7/25.6/27.6 | 47.5/25.4/27.1 | 47.5/25.4/27.1 | 1.68-1.22 | $494 |
+| AVL-FUL | 9 | 48.0/25.0/26.5 | 48.2/25.1/26.6 | 46.7/25.6/27.6 | 47.5/25.4/27.1 | 47.5/25.4/27.1 | 1.68-1.22 | $510 |
 | LIV-ARS | 9 | - | - | 29.1/26.1/44.7 | 29.1/26.1/44.7 | 29.1/26.1/44.7 | 1.24-1.59 | $497 |
 
 League average 2.88 goals per game from 69 finished matches; Dixon-Coles rho -0.06; mean fitted total 2.90.
@@ -94,7 +94,7 @@ qg 0.388, qa 0.052, plays 0.95; xG 5.67, xA 0.91, 619 min, 7/7 starts.
 | low | 33 | 28.5 | -5 | match_model | Will Man United earn more PL points than Spurs in Matchweeks 6–9? | Man Utd take more league points than Spurs in MW6-9. A tie counts as NO. |
 | medium | 50 | 86.6 | 37 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
 | low | 5 | 30.7 | 26 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 67.7 | 18 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
+| low | 50 | 67.6 | 18 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | medium | 47 | 39.7 | -7 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 65 | 97.2 | 32 | match_model | Will Tottenham score at least 3 goals in October 2026 Premier League matches? | Spurs score 3+ league goals in October. (4 fixtures) |
 | low | 66 | 23.0 | -43 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
