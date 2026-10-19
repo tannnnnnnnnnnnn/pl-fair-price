@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T12:26:42Z",
+ "generated_at": "2026-10-19T12:36:53Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -106,6 +106,63 @@
       {
        "price": 0.5,
        "size": 18.000002
+      }
+     ],
+     "last": 0.5
+    }
+   }
+  },
+  {
+   "slug": "tottenham-to-score-first-both-teams-to-score-in-ma-9953",
+   "title": "Tottenham to Score First & Both Teams to Score in Match vs Coventry City?",
+   "url": "https://beta.xo.market/event/tottenham-to-score-first-both-teams-to-score-in-ma-9953?r=cryptotan01",
+   "creator": "jupiterbaz",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": 0.5,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-10-19T19:00:00.000Z",
+   "group": "fixture",
+   "fixture": {
+    "home": "TOT",
+    "away": "COV",
+    "home_name": "Spurs",
+    "away_name": "Coventry City",
+    "kickoff_utc": "2026-10-19T19:00:00Z"
+   },
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-10-17T11:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Tottenham to Score First & Both Teams to Score in Match vs Coventry City?",
+   "description": "This market resolves based on whether Tottenham Hotspur score the first goal and both teams score at least one goal each during the regulation match time of the Premier League fixture between Tottenham Hotspur and Coventry City on October 19, 2026. Goals scored in extra time or penalty shootouts do not count unless specified by regulation time rules. Primary source: Premier League (https://premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Goal (https://goal. com). The primary source governs. If the match is abandoned without a declared official result or the match is cancelled or postponed indefinitely, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://tottenhamhotspur.com",
+    "https://premierleague.com",
+    "https://goal.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
       }
      ],
      "last": 0.5
@@ -300,9 +357,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5951,
-    "low": 0.5351,
-    "high": 0.6551,
+    "p": 0.5935,
+    "low": 0.5335,
+    "high": 0.6535,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -316,7 +373,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 9,
+   "gap_pts": 8,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -364,9 +421,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3155,
-    "low": 0.2155,
-    "high": 0.4155,
+    "p": 0.3131,
+    "low": 0.2131,
+    "high": 0.4132,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
@@ -385,7 +442,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-23T19:00:00Z",
-   "gap_pts": -13,
+   "gap_pts": -14,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -709,16 +766,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3415,
-    "low": 0.2415,
-    "high": 0.4415,
+    "p": 0.3377,
+    "low": 0.2377,
+    "high": 0.4377,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "53.0%",
+      "value": "54.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -733,7 +790,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.8%",
+      "value": "9.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -853,9 +910,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1696,
-    "low": 0.0696,
-    "high": 0.2697,
+    "p": 0.1709,
+    "low": 0.0709,
+    "high": 0.271,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -922,9 +979,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3564,
-    "low": 0.2563,
-    "high": 0.4564,
+    "p": 0.3628,
+    "low": 0.2628,
+    "high": 0.4627,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -943,7 +1000,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -2,
+   "gap_pts": -1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1218,9 +1275,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4059,
-    "low": 0.3459,
-    "high": 0.4659,
+    "p": 0.4058,
+    "low": 0.3458,
+    "high": 0.4658,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1454,9 +1511,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3185,
-    "low": 0.2185,
-    "high": 0.4185,
+    "p": 0.3158,
+    "low": 0.2158,
+    "high": 0.4158,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -1568,9 +1625,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6255,
-    "low": 0.5255,
-    "high": 0.7255,
+    "p": 0.6234,
+    "low": 0.5234,
+    "high": 0.7234,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES.",
@@ -1589,7 +1646,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 13,
+   "gap_pts": 12,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1866,16 +1923,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3105,
-    "low": 0.2105,
-    "high": 0.4105,
+    "p": 0.307,
+    "low": 0.207,
+    "high": 0.407,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "53.0%",
+      "value": "54.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1890,7 +1947,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.8%",
+      "value": "9.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2615,9 +2672,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6715,
-    "low": 0.5715,
-    "high": 0.7715,
+    "p": 0.671,
+    "low": 0.571,
+    "high": 0.771,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
@@ -2677,9 +2734,9 @@
     "kickoff_utc": "2026-10-19T19:00:00Z"
    },
    "fair": {
-    "p": 0.617,
-    "low": 0.5571,
-    "high": 0.677,
+    "p": 0.6163,
+    "low": 0.5563,
+    "high": 0.6764,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Coventry above Spurs after GW8. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -2825,9 +2882,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4298,
-    "low": 0.3298,
-    "high": 0.5298,
+    "p": 0.4263,
+    "low": 0.3263,
+    "high": 0.5263,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 3). Strictly more counts as YES.",
@@ -2883,9 +2940,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5677,
-    "low": 0.4677,
-    "high": 0.6677,
+    "p": 0.5679,
+    "low": 0.4679,
+    "high": 0.6679,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 0 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -3603,13 +3660,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.4059,
+   "fair": 0.4058,
    "confidence": "medium",
    "side": "NO",
-   "ev": 1.342,
-   "ev_low": 0.742,
-   "ev_high": 1.942,
-   "roi": 0.2918,
+   "ev": 1.343,
+   "ev_low": 0.743,
+   "ev_high": 1.943,
+   "roi": 0.292,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
