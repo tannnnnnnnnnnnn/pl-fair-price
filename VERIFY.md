@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-20T15:13:19Z)
+# VERIFY — PL Fair Price (2026-10-20T15:21:34Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 50 XO PL markets; 24 priced (high 1, medium 8, low 15).
 
@@ -7,10 +7,10 @@ GW8 deadline 2026-10-23T17:30:00Z. 50 XO PL markets; 24 priced (high 1, medium 8
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
 | IPS-NFO | 8 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.5/28.0/41.5 | 30.6/27.8/41.6 | 30.6/27.8/41.6 | 1.19-1.43 | $2,768 |
-| AVL-MCI | 8 | 21.5/22.5/56.5 | 21.4/22.4/56.2 | 21.2/22.2/56.7 | 21.3/22.3/56.4 | 21.3/22.3/56.4 | 1.22-2.08 | $40,262 |
-| ARS-EVE | 8 | 69.5/20.5/9.5 | 69.8/20.6/9.5 | 69.2/20.4/10.4 | 69.5/20.5/10.0 | 69.5/20.5/10.0 | 2.04-0.64 | $13,162 |
+| AVL-MCI | 8 | 21.5/22.5/56.5 | 21.4/22.4/56.2 | 21.2/22.2/56.7 | 21.3/22.3/56.4 | 21.3/22.3/56.4 | 1.22-2.08 | $39,758 |
+| ARS-EVE | 8 | 69.5/20.5/9.5 | 69.8/20.6/9.5 | 69.2/20.4/10.4 | 69.5/20.5/10.0 | 69.5/20.5/10.0 | 2.04-0.64 | $13,259 |
 | COV-FUL | 8 | 32.5/27.5/40.5 | 32.3/27.4/40.3 | 32.3/27.4/40.3 | 32.3/27.4/40.3 | 32.3/27.4/40.3 | 1.27-1.44 | $630 |
-| CHE-TOT | 8 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 56.4/22.3/21.3 | 56.8/22.3/20.8 | 56.8/22.3/20.8 | 2.07-1.19 | $27,650 |
+| CHE-TOT | 8 | 57.5/22.5/20.5 | 57.2/22.4/20.4 | 56.4/22.3/21.3 | 56.8/22.3/20.8 | 56.8/22.3/20.8 | 2.07-1.19 | $27,660 |
 | CRY-NEW | 8 | 32.5/26.5/40.5 | 32.7/26.6/40.7 | 32.7/26.6/40.7 | 32.7/26.6/40.7 | 32.7/26.6/40.7 | 1.33-1.51 | $1,747 |
 | LIV-BHA | 8 | 44.5/24.5/31.5 | 44.3/24.4/31.3 | 44.7/24.6/30.7 | 44.5/24.5/31.0 | 44.5/24.5/31.0 | 1.77-1.45 | $28,584 |
 | MUN-BOU | 8 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 1.83-1.21 | $1,972 |
@@ -98,7 +98,7 @@ qg 0.391, qa 0.049, plays 0.71; xG 5.69, xA 0.77, 619 min, 7/7 starts.
 | medium | 47 | 23.8 | -23 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 66 | 22.0 | -44 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 2.1 | -8 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
-| low | 55 | 14.2 | -41 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 14.0 | -41 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 45 | - |  | - | Fulham to sack or replace head coach before 1 November 2026 | No Polymarket market prices this manager's job by this date. |
 | - | 38 | - |  | - | Isak vs Haaland: More goals in next 3 league games? | Fair price coming: not modelled yet. |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
