@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T11:36:21Z",
+ "generated_at": "2026-10-20T11:47:01Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -201,9 +201,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4536,
-    "low": 0.3536,
-    "high": 0.5536,
+    "p": 0.4479,
+    "low": 0.3479,
+    "high": 0.5479,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -230,7 +230,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "1.9%",
+      "value": "0.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1100,9 +1100,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2375,
-    "low": 0.1775,
-    "high": 0.2975,
+    "p": 0.2366,
+    "low": 0.1767,
+    "high": 0.2966,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1641,9 +1641,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4318,
-    "low": 0.3318,
-    "high": 0.5318,
+    "p": 0.4259,
+    "low": 0.3259,
+    "high": 0.5259,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1670,7 +1670,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "1.9%",
+      "value": "0.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2549,9 +2549,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1664,
-    "low": 0.0664,
-    "high": 0.2664,
+    "p": 0.1653,
+    "low": 0.0653,
+    "high": 0.2653,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2608,9 +2608,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3714,
-    "low": 0.2713,
-    "high": 0.4714,
+    "p": 0.3722,
+    "low": 0.2722,
+    "high": 0.4722,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 6). Strictly more counts as YES.",
@@ -2666,9 +2666,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4936,
-    "low": 0.3936,
-    "high": 0.5937,
+    "p": 0.4932,
+    "low": 0.3932,
+    "high": 0.5932,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 1 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -2720,21 +2720,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1519,
-    "low": 0.0519,
-    "high": 0.2519,
+    "p": 0.1454,
+    "low": 0.0454,
+    "high": 0.2454,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "51.5%",
+      "value": "51.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "29.5%",
+      "value": "28.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
@@ -3434,13 +3434,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.2375,
+   "fair": 0.2366,
    "confidence": "medium",
    "side": "NO",
-   "ev": 3.026,
-   "ev_low": 2.426,
-   "ev_high": 3.626,
-   "roi": 0.658,
+   "ev": 3.035,
+   "ev_low": 2.435,
+   "ev_high": 3.634,
+   "roi": 0.6599,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
