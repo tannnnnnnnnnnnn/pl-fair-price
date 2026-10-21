@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T03:46:25Z",
+ "generated_at": "2026-10-21T03:56:29Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -196,16 +196,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5171,
-    "low": 0.4171,
-    "high": 0.6171,
+    "p": 0.5167,
+    "low": 0.4167,
+    "high": 0.6167,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "28.5%",
+      "value": "30.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -235,7 +235,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "29.0%",
+      "value": "27.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1570,16 +1570,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4971,
-    "low": 0.3971,
-    "high": 0.5971,
+    "p": 0.4967,
+    "low": 0.3967,
+    "high": 0.5967,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "28.5%",
+      "value": "30.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1609,7 +1609,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "29.0%",
+      "value": "27.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2690,9 +2690,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1465,
-    "low": 0.0465,
-    "high": 0.2465,
+    "p": 0.1389,
+    "low": 0.0389,
+    "high": 0.2389,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
@@ -2704,14 +2704,14 @@
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "29.0%",
+      "value": "27.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -40,
+   "gap_pts": -41,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
