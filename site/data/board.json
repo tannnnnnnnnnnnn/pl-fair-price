@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T06:37:05Z",
+ "generated_at": "2026-10-21T06:46:57Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -2465,16 +2465,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.235,
-    "low": 0.135,
-    "high": 0.335,
+    "p": 0.23,
+    "low": 0.13,
+    "high": 0.33,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "23.5% (spread 13c, $3,638 traded on this market)",
+      "value": "23.0% (spread 12c, $3,638 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
@@ -2690,9 +2690,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.149,
-    "low": 0.049,
-    "high": 0.249,
+    "p": 0.1464,
+    "low": 0.0464,
+    "high": 0.2465,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
@@ -2704,7 +2704,7 @@
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "29.5%",
+      "value": "29.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
