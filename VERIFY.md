@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-21T12:38:27Z)
+# VERIFY — PL Fair Price (2026-10-21T12:48:32Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 50 XO PL markets; 24 priced (high 1, medium 9, low 14).
 
@@ -7,18 +7,18 @@ GW8 deadline 2026-10-23T17:30:00Z. 50 XO PL markets; 24 priced (high 1, medium 9
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
 | IPS-NFO | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 29.8/28.3/41.9 | 30.1/27.8/42.1 | 30.1/27.8/42.1 | 1.17-1.43 | $4,214 |
-| AVL-MCI | 8 | 20.5/22.5/56.5 | 20.6/22.6/56.8 | 20.4/22.4/57.2 | 20.5/22.5/57.0 | 20.5/22.5/57.0 | 1.16-2.04 | $69,260 |
+| AVL-MCI | 8 | 20.5/22.5/56.5 | 20.6/22.6/56.8 | 20.4/22.4/57.2 | 20.5/22.5/57.0 | 20.5/22.5/57.0 | 1.16-2.04 | $69,321 |
 | ARS-EVE | 8 | 69.5/20.5/10.5 | 69.2/20.4/10.4 | 68.8/20.6/10.6 | 69.0/20.5/10.5 | 69.0/20.5/10.5 | 2.06-0.68 | $18,643 |
 | COV-FUL | 8 | 31.5/27.5/40.5 | 31.7/27.6/40.7 | 31.5/27.5/41.0 | 31.6/27.6/40.9 | 31.6/27.6/40.9 | 1.23-1.43 | $1,641 |
 | CHE-TOT | 8 | 57.5/22.5/21.0 | 56.9/22.3/20.8 | 56.8/22.6/20.6 | 56.9/22.4/20.7 | 56.9/22.4/20.7 | 2.05-1.18 | $31,195 |
 | CRY-NEW | 8 | 33.0/26.5/40.5 | 33.0/26.5/40.5 | 33.0/26.5/40.5 | 33.0/26.5/40.5 | 33.0/26.5/40.5 | 1.35-1.51 | $1,826 |
-| LIV-BHA | 8 | 44.5/24.5/31.5 | 44.3/24.4/31.3 | 45.7/24.6/29.6 | 45.0/24.5/30.5 | 45.0/24.5/30.5 | 1.77-1.43 | $50,085 |
+| LIV-BHA | 8 | 44.5/24.5/31.5 | 44.3/24.4/31.3 | 45.7/24.6/29.6 | 45.0/24.5/30.5 | 45.0/24.5/30.5 | 1.77-1.43 | $50,111 |
 | MUN-BOU | 8 | 51.5/25.5/24.5 | 50.7/25.1/24.1 | 50.2/25.4/24.4 | 50.5/25.2/24.3 | 50.5/25.2/24.3 | 1.74-1.14 | $2,361 |
-| HUL-BRE | 8 | 20.5/23.5/56.5 | 20.4/23.4/56.2 | 20.6/23.6/55.8 | 20.5/23.5/56.0 | 20.5/23.5/56.0 | 1.09-1.92 | $19,278 |
+| HUL-BRE | 8 | 20.5/23.5/56.5 | 20.4/23.4/56.2 | 20.6/23.6/55.8 | 20.5/23.5/56.0 | 20.5/23.5/56.0 | 1.09-1.92 | $20,114 |
 | SUN-LEE | 8 | 31.0/29.5/38.5 | 31.3/29.8/38.9 | 31.0/29.9/39.1 | 31.1/29.9/39.0 | 31.1/29.9/39.0 | 1.09-1.25 | $8,761 |
 | CHE-MUN | 9 | 51.5/24.0/25.5 | 51.0/23.8/25.2 | 51.0/23.7/25.3 | 51.0/23.7/25.3 | 51.0/23.7/25.3 | 1.90-1.29 | $1,735 |
 | COV-SUN | 9 | 34.5/28.0/37.5 | 34.5/28.0/37.5 | 34.2/28.1/37.7 | 34.3/28.1/37.6 | 34.3/28.1/37.6 | 1.27-1.34 | $15 |
-| MCI-BHA | 9 | 57.0/21.5/21.0 | 57.3/21.6/21.1 | 57.8/20.6/21.6 | 57.5/21.1/21.4 | 57.5/21.1/21.4 | 2.24-1.33 | $4,506 |
+| MCI-BHA | 9 | 57.0/21.5/21.0 | 57.3/21.6/21.1 | 57.8/20.6/21.6 | 57.5/21.1/21.4 | 57.5/21.1/21.4 | 2.24-1.33 | $4,560 |
 | HUL-IPS | 9 | 36.5/28.0/36.0 | 36.3/27.9/35.8 | 36.2/28.1/35.7 | 36.2/28.0/35.7 | 36.2/28.0/35.7 | 1.32-1.31 | $210 |
 | BOU-LEE | 9 | 44.5/28.0/28.0 | 44.3/27.9/27.9 | 44.7/27.6/27.6 | 44.5/27.7/27.7 | 44.5/27.7/27.7 | 1.47-1.11 | $261 |
 | BRE-NFO | 9 | 49.0/25.0/26.0 | 49.0/25.0/26.0 | 48.2/25.1/26.6 | 48.6/25.1/26.3 | 48.6/25.1/26.3 | 1.75-1.24 | $75 |
@@ -96,7 +96,7 @@ qg 0.391, qa 0.049, plays 0.95; xG 5.69, xA 0.77, 619 min, 7/7 starts.
 | low | 5 | 52.1 | 47 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | medium | 50 | 67.8 | 18 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | medium | 47 | 23.9 | -23 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
-| low | 66 | 24.0 | -42 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
+| low | 66 | 25.0 | -41 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 1.9 | -8 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
 | low | 55 | 14.8 | -40 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 45 | - |  | - | Fulham to sack or replace head coach before 1 November 2026 | No Polymarket market prices this manager's job by this date. |
