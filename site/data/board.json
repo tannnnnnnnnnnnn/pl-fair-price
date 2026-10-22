@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T02:53:04Z",
+ "generated_at": "2026-10-22T03:02:43Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -196,9 +196,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4921,
-    "low": 0.3921,
-    "high": 0.5921,
+    "p": 0.489,
+    "low": 0.389,
+    "high": 0.589,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -235,7 +235,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.9%",
+      "value": "28.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1570,9 +1570,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4719,
-    "low": 0.3719,
-    "high": 0.5719,
+    "p": 0.4689,
+    "low": 0.3689,
+    "high": 0.5689,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1609,7 +1609,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.9%",
+      "value": "28.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2268,16 +2268,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2505,
-    "low": 0.1505,
-    "high": 0.3505,
+    "p": 0.2525,
+    "low": 0.1525,
+    "high": 0.3525,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "75.0% (spread 49c, $1,774 traded on this market)",
+      "value": "74.8% (spread 48c, $1,774 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
@@ -2465,16 +2465,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.245,
-    "low": 0.145,
-    "high": 0.345,
+    "p": 0.24,
+    "low": 0.14,
+    "high": 0.34,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "24.5% (spread 15c, $3,662 traded on this market)",
+      "value": "24.0% (spread 14c, $3,662 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
@@ -2690,9 +2690,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1444,
-    "low": 0.0444,
-    "high": 0.2444,
+    "p": 0.147,
+    "low": 0.047,
+    "high": 0.247,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
@@ -2704,14 +2704,14 @@
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "27.5%",
+      "value": "28.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -41,
+   "gap_pts": -40,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
