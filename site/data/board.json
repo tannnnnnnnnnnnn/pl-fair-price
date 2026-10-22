@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T02:22:26Z",
+ "generated_at": "2026-10-22T02:32:48Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -196,9 +196,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.489,
-    "low": 0.389,
-    "high": 0.589,
+    "p": 0.4913,
+    "low": 0.3913,
+    "high": 0.5913,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -210,7 +210,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -235,7 +235,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.7%",
+      "value": "28.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1570,9 +1570,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.469,
-    "low": 0.369,
-    "high": 0.569,
+    "p": 0.4711,
+    "low": 0.3711,
+    "high": 0.5711,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1584,7 +1584,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1609,7 +1609,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.7%",
+      "value": "28.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2268,16 +2268,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2505,
-    "low": 0.1505,
-    "high": 0.3505,
+    "p": 0.2525,
+    "low": 0.1525,
+    "high": 0.3525,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "75.0% (spread 49c, $1,774 traded on this market)",
+      "value": "74.8% (spread 48c, $1,774 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
@@ -2465,23 +2465,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.235,
-    "low": 0.135,
-    "high": 0.335,
+    "p": 0.245,
+    "low": 0.145,
+    "high": 0.345,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "23.5% (spread 13c, $3,662 traded on this market)",
+      "value": "24.5% (spread 15c, $3,662 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -43,
+   "gap_pts": -42,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
