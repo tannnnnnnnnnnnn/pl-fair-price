@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T15:23:42Z",
+ "generated_at": "2026-10-23T15:33:51Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -127,9 +127,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3624,
-    "low": 0.2623,
-    "high": 0.4624,
+    "p": 0.3585,
+    "low": 0.2585,
+    "high": 0.4586,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -196,9 +196,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4962,
-    "low": 0.3962,
-    "high": 0.5962,
+    "p": 0.5048,
+    "low": 0.4048,
+    "high": 0.6048,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -220,7 +220,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.0%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -235,7 +235,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "29.4%",
+      "value": "28.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -340,9 +340,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6307,
-    "low": 0.5707,
-    "high": 0.6906,
+    "p": 0.629,
+    "low": 0.569,
+    "high": 0.689,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -404,9 +404,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3271,
-    "low": 0.2271,
-    "high": 0.4271,
+    "p": 0.3231,
+    "low": 0.2231,
+    "high": 0.4231,
     "confidence": "low",
     "method": "fpl_points",
     "method_text": "Simulated FPL points (appearance, goals, assists, clean sheets; no bonus or defensive points), GW6-8. A tie counts as NO.",
@@ -425,7 +425,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-23T19:00:00Z",
-   "gap_pts": -12,
+   "gap_pts": -13,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1080,9 +1080,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2364,
-    "low": 0.1764,
-    "high": 0.2964,
+    "p": 0.2363,
+    "low": 0.1763,
+    "high": 0.2963,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1144,16 +1144,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0805,
-    "low": 0.0205,
-    "high": 0.1405,
+    "p": 0.082,
+    "low": 0.022,
+    "high": 0.142,
     "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Manchester City punishment announced by November 6?\"",
     "inputs": [
      {
       "label": "Manchester City punishment announced by November 6?",
-      "value": "8.1% (spread 1c, $3,539 traded on this market)",
+      "value": "8.2% (spread 1c, $3,539 traded on this market)",
       "source_url": "https://polymarket.com/event/manchester-city-punishment-announced-by"
      }
     ]
@@ -1215,9 +1215,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3333,
-    "low": 0.2733,
-    "high": 0.3933,
+    "p": 0.3322,
+    "low": 0.2722,
+    "high": 0.3922,
     "confidence": "medium",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -1329,9 +1329,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4784,
-    "low": 0.3784,
-    "high": 0.5785,
+    "p": 0.4777,
+    "low": 0.3777,
+    "high": 0.5776,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 8) vs Spurs (now 6). Strictly more counts as YES.",
@@ -1570,9 +1570,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4719,
-    "low": 0.3719,
-    "high": 0.5719,
+    "p": 0.4794,
+    "low": 0.3794,
+    "high": 0.5794,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1594,7 +1594,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.0%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1609,14 +1609,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "29.4%",
+      "value": "28.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 14,
+   "gap_pts": 15,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2519,9 +2519,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.175,
-    "low": 0.075,
-    "high": 0.275,
+    "p": 0.1802,
+    "low": 0.0801,
+    "high": 0.2802,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2540,7 +2540,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -28,
+   "gap_pts": -27,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2578,9 +2578,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3942,
-    "low": 0.2942,
-    "high": 0.4941,
+    "p": 0.3922,
+    "low": 0.2922,
+    "high": 0.4922,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 6). Strictly more counts as YES.",
@@ -2636,9 +2636,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4883,
-    "low": 0.3882,
-    "high": 0.5883,
+    "p": 0.4885,
+    "low": 0.3885,
+    "high": 0.5886,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 1 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -3404,13 +3404,13 @@
   {
    "slug": "will-liverpool-earn-at-least-7-points-in-their-nex-3876",
    "title": "Will Liverpool earn at least 7 points in their next 4 Premier League matches?",
-   "fair": 0.3333,
+   "fair": 0.3322,
    "confidence": "medium",
    "side": "NO",
-   "ev": 3.0725,
-   "ev_low": 1.8961,
-   "ev_high": 4.249,
-   "roi": 0.3073,
+   "ev": 3.0941,
+   "ev_low": 1.9176,
+   "ev_high": 4.2706,
+   "roi": 0.3094,
    "buy_price": 0.5,
    "fillable": 10.0,
    "shares": 19.6078
@@ -3418,13 +3418,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.2364,
+   "fair": 0.2363,
    "confidence": "medium",
    "side": "NO",
-   "ev": 3.037,
-   "ev_low": 2.437,
-   "ev_high": 3.637,
-   "roi": 0.6604,
+   "ev": 3.038,
+   "ev_low": 2.438,
+   "ev_high": 3.638,
+   "roi": 0.6606,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
