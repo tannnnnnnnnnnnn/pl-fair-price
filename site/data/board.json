@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T23:29:32Z",
+ "generated_at": "2026-10-23T23:35:20Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -799,9 +799,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1374,
-    "low": 0.0374,
-    "high": 0.2374,
+    "p": 0.1381,
+    "low": 0.0381,
+    "high": 0.2382,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Man Utd take more league points than Spurs in MW6-9. A tie counts as NO.",
@@ -1080,9 +1080,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2109,
-    "low": 0.151,
-    "high": 0.271,
+    "p": 0.2104,
+    "low": 0.1504,
+    "high": 0.2704,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1144,16 +1144,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.077,
-    "low": 0.017,
-    "high": 0.137,
+    "p": 0.0765,
+    "low": 0.0165,
+    "high": 0.1365,
     "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Manchester City punishment announced by November 6?\"",
     "inputs": [
      {
       "label": "Manchester City punishment announced by November 6?",
-      "value": "7.7% (spread 0c, $3,589 traded on this market)",
+      "value": "7.6% (spread 0c, $3,589 traded on this market)",
       "source_url": "https://polymarket.com/event/manchester-city-punishment-announced-by"
      }
     ]
@@ -1329,9 +1329,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4704,
-    "low": 0.3704,
-    "high": 0.5704,
+    "p": 0.4656,
+    "low": 0.3656,
+    "high": 0.5655,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 8) vs Spurs (now 6). Strictly more counts as YES.",
@@ -1447,7 +1447,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 53%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 52%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -2519,9 +2519,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1876,
-    "low": 0.0876,
-    "high": 0.2876,
+    "p": 0.1868,
+    "low": 0.0868,
+    "high": 0.2868,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2578,9 +2578,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4,
-    "low": 0.3,
-    "high": 0.5,
+    "p": 0.3986,
+    "low": 0.2985,
+    "high": 0.4986,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 6). Strictly more counts as YES.",
@@ -2636,9 +2636,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4783,
-    "low": 0.3783,
-    "high": 0.5784,
+    "p": 0.4768,
+    "low": 0.3768,
+    "high": 0.5768,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 1 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -2690,16 +2690,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1984,
-    "low": 0.0984,
-    "high": 0.2984,
+    "p": 0.1967,
+    "low": 0.0967,
+    "high": 0.2967,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "57.5%",
+      "value": "57.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -3404,13 +3404,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.2109,
+   "fair": 0.2104,
    "confidence": "medium",
    "side": "NO",
-   "ev": 3.292,
-   "ev_low": 2.691,
-   "ev_high": 3.891,
-   "roi": 0.7158,
+   "ev": 3.297,
+   "ev_low": 2.697,
+   "ev_high": 3.897,
+   "roi": 0.7169,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
