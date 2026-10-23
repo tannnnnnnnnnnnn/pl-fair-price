@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T19:34:29Z",
+ "generated_at": "2026-10-23T19:44:23Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -196,9 +196,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4932,
-    "low": 0.3932,
-    "high": 0.5932,
+    "p": 0.4967,
+    "low": 0.3967,
+    "high": 0.5967,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -220,7 +220,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.5%",
+      "value": "9.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -242,7 +242,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 44,
+   "gap_pts": 45,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1080,9 +1080,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2417,
-    "low": 0.1817,
-    "high": 0.3017,
+    "p": 0.2436,
+    "low": 0.1836,
+    "high": 0.3036,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1570,9 +1570,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4695,
-    "low": 0.3695,
-    "high": 0.5695,
+    "p": 0.4725,
+    "low": 0.3725,
+    "high": 0.5725,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1594,7 +1594,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.5%",
+      "value": "9.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2690,16 +2690,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.168,
-    "low": 0.068,
-    "high": 0.268,
+    "p": 0.1696,
+    "low": 0.0696,
+    "high": 0.2696,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "52.5%",
+      "value": "53.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -3418,13 +3418,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.2417,
+   "fair": 0.2436,
    "confidence": "medium",
    "side": "NO",
-   "ev": 2.984,
-   "ev_low": 2.384,
-   "ev_high": 3.584,
-   "roi": 0.6488,
+   "ev": 2.965,
+   "ev_low": 2.365,
+   "ev_high": 3.565,
+   "roi": 0.6447,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
