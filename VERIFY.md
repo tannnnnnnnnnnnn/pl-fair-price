@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-23T09:11:40Z)
+# VERIFY — PL Fair Price (2026-10-23T09:21:36Z)
 
 GW8 deadline 2026-10-23T17:30:00Z. 50 XO PL markets; 24 priced (high 2, medium 7, low 15).
 
@@ -6,14 +6,14 @@ GW8 deadline 2026-10-23T17:30:00Z. 50 XO PL markets; 24 priced (high 2, medium 7
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| IPS-NFO | 8 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.3/27.4/42.3 | 30.5/27.5/42.0 | 30.5/27.5/42.0 | 1.21-1.46 | $52,990 |
-| AVL-MCI | 8 | 18.5/21.5/60.5 | 18.4/21.4/60.2 | 18.2/22.2/59.6 | 18.3/21.8/59.9 | 18.3/21.8/59.9 | 1.10-2.11 | $207,329 |
-| ARS-EVE | 8 | 68.5/21.5/10.5 | 68.2/21.4/10.4 | 68.2/21.2/10.6 | 68.2/21.3/10.5 | 68.2/21.3/10.5 | 1.97-0.64 | $71,942 |
+| IPS-NFO | 8 | 30.5/27.5/41.5 | 30.7/27.6/41.7 | 30.3/27.4/42.3 | 30.5/27.5/42.0 | 30.5/27.5/42.0 | 1.21-1.46 | $53,060 |
+| AVL-MCI | 8 | 18.5/21.5/60.5 | 18.4/21.4/60.2 | 18.2/22.2/59.6 | 18.3/21.8/59.9 | 18.3/21.8/59.9 | 1.10-2.11 | $207,542 |
+| ARS-EVE | 8 | 68.5/21.5/10.5 | 68.2/21.4/10.4 | 68.2/21.2/10.6 | 68.2/21.3/10.5 | 68.2/21.3/10.5 | 1.97-0.64 | $71,945 |
 | COV-FUL | 8 | 29.5/27.5/42.5 | 29.6/27.6/42.7 | 29.6/27.6/42.7 | 29.6/27.6/42.7 | 29.6/27.6/42.7 | 1.17-1.46 | $5,108 |
-| CHE-TOT | 8 | 56.5/22.5/20.5 | 56.8/22.6/20.6 | 55.8/22.6/21.6 | 56.3/22.6/21.1 | 56.3/22.6/21.1 | 2.03-1.19 | $73,961 |
+| CHE-TOT | 8 | 56.5/22.5/20.5 | 56.8/22.6/20.6 | 55.8/22.6/21.6 | 56.3/22.6/21.1 | 56.3/22.6/21.1 | 2.03-1.19 | $73,989 |
 | CRY-NEW | 8 | 32.5/26.5/41.5 | 32.3/26.4/41.3 | 32.3/26.4/41.3 | 32.3/26.4/41.3 | 32.3/26.4/41.3 | 1.34-1.54 | $2,570 |
 | LIV-BHA | 8 | 45.5/24.5/30.5 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 1.79-1.44 | $454,027 |
-| MUN-BOU | 8 | 45.5/26.5/28.5 | 45.3/26.4/28.4 | 44.9/26.3/28.8 | 45.1/26.3/28.6 | 45.1/26.3/28.6 | 1.60-1.23 | $29,165 |
+| MUN-BOU | 8 | 45.5/26.5/28.5 | 45.3/26.4/28.4 | 44.9/26.3/28.8 | 45.1/26.3/28.6 | 45.1/26.3/28.6 | 1.60-1.23 | $29,169 |
 | HUL-BRE | 8 | 19.5/23.5/57.5 | 19.4/23.4/57.2 | 19.4/23.4/57.2 | 19.4/23.4/57.2 | 19.4/23.4/57.2 | 1.04-1.93 | $23,753 |
 | SUN-LEE | 8 | 29.5/30.5/40.5 | 29.4/30.3/40.3 | 30.7/29.6/39.7 | 30.0/30.0/40.0 | 30.0/30.0/40.0 | 1.05-1.25 | $14,701 |
 | CHE-MUN | 9 | 54.0/23.0/23.0 | 54.0/23.0/23.0 | 53.3/23.1/23.6 | 53.6/23.1/23.3 | 53.6/23.1/23.3 | 1.99-1.26 | $2,894 |
@@ -94,7 +94,7 @@ qg 0.391, qa 0.049, plays 0.95; xG 5.69, xA 0.77, 619 min, 7/7 starts.
 | low | 41 | 15.1 | -26 | match_model | Will Man United earn more PL points than Spurs in Matchweeks 6–9? | Man Utd take more league points than Spurs in MW6-9. A tie counts as NO. |
 | medium | 50 | 89.3 | 39 | match_model | Will Man Utd win fewer than 2 Premier League matches in October 2026? | Man Utd win 0 or 1 of their 4 October league matches. |
 | low | 5 | 51.1 | 46 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 64.8 | 15 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
+| low | 50 | 51.5 | 2 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | medium | 47 | 23.8 | -23 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 66 | 24.5 | -42 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 10 | 1.8 | -8 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
