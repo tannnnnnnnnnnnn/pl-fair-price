@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T20:30:02Z",
+ "generated_at": "2026-10-24T20:39:59Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -196,9 +196,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4975,
-    "low": 0.3975,
-    "high": 0.5975,
+    "p": 0.5089,
+    "low": 0.4089,
+    "high": 0.6089,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -210,7 +210,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -220,12 +220,12 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.5%",
+      "value": "8.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "7.8%",
+      "value": "7.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -235,14 +235,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "36.0%",
+      "value": "33.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 45,
+   "gap_pts": 46,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -735,6 +735,129 @@
    }
   },
   {
+   "slug": "will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898",
+   "title": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
+   "url": "https://beta.xo.market/event/will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898?r=cryptotan01",
+   "creator": "0xshrdlu",
+   "is_ours": false,
+   "xo_price": 0.33,
+   "best_bid": 0.33,
+   "best_ask": null,
+   "liquidity_usd": 3883.37,
+   "volume_usd": 0,
+   "expires_at": "2026-12-25T00:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 32%. They differ too much to show one number.",
+   "lock_at": "2026-12-19T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
+   "description": "This market resolves based on whether Bukayo Saka scores 3 or more English Premier League goals for Arsenal prior to December 25, 2026 based on official Premier League match statistics. Goals scored in UEFA competitions, domestic cup matches, or international fixtures do not count. Goals scored on or after December 25, 2026 do not count. Primary source: Premier League (https://www. premierleague. com). the primary source governs. If the named record is officially retracted by the Premier League or the season is permanently cancelled before the threshold is met, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.33,
+       "size": 30.30303
+      },
+      {
+       "price": 0.001,
+       "size": 3873369.994
+      }
+     ],
+     "asks": [],
+     "last": 0.33
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.67,
+       "size": 30.30303
+      },
+      {
+       "price": 0.999,
+       "size": 3873369.994
+      }
+     ],
+     "last": 0.67
+    }
+   }
+  },
+  {
+   "slug": "will-tottenham-miss-their-next-penalty-1947",
+   "title": "Will Tottenham Miss Their Next Penalty?",
+   "url": "https://beta.xo.market/event/will-tottenham-miss-their-next-penalty-1947?r=cryptotan01",
+   "creator": "0xshrdlu",
+   "is_ours": false,
+   "xo_price": 0.57,
+   "best_bid": null,
+   "best_ask": 0.57,
+   "liquidity_usd": 28.51,
+   "volume_usd": 0,
+   "expires_at": "2027-06-30T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Too few penalties for a reliable base rate.",
+   "lock_at": "2027-05-30T15:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will Tottenham Miss Their Next Penalty?",
+   "description": "This market resolves Yes if Tottenham Hotspur are awarded a Premier League penalty in the 2026/27 season and miss it, meaning the kick is not scored. The market resolves No if Tottenham score their next awarded Premier League penalty in 2026/27 or if they are not awarded any Premier League penalty for the remainder of the 2026/27 season. Only penalties awarded in Premier League matches count. Penalty shootouts are excluded. Cancelled, overturned or rescinded penalties do not count, and any goals or points arising from such penalties are ignored. If a penalty is ordered to be retaken, only the retake counts. This market will be void if the 2026/27 Premier League season is abandoned, voided or otherwise not completed in a way that prevents a clear official resolution.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.co.uk/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.57,
+       "size": 46.511627
+      },
+      {
+       "price": 0.997,
+       "size": 1.0
+      },
+      {
+       "price": 0.998,
+       "size": 1.0
+      }
+     ],
+     "last": 0.57
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.43,
+       "size": 46.511627
+      },
+      {
+       "price": 0.003,
+       "size": 1.0
+      },
+      {
+       "price": 0.002,
+       "size": 1.0
+      }
+     ],
+     "asks": [],
+     "last": 0.43
+    }
+   }
+  },
+  {
    "slug": "will-man-united-earn-more-pl-points-than-spurs-in--6054",
    "title": "Will Man United earn more PL points than Spurs in Matchweeks 6\u20139?",
    "url": "https://beta.xo.market/event/will-man-united-earn-more-pl-points-than-spurs-in--6054?r=cryptotan01",
@@ -1144,9 +1267,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3355,
-    "low": 0.2355,
-    "high": 0.4355,
+    "p": 0.333,
+    "low": 0.233,
+    "high": 0.433,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -1165,7 +1288,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -16,
+   "gap_pts": -17,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1244,55 +1367,6 @@
       }
      ],
      "last": 0.72
-    }
-   }
-  },
-  {
-   "slug": "will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898",
-   "title": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
-   "url": "https://beta.xo.market/event/will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898?r=cryptotan01",
-   "creator": "0xshrdlu",
-   "is_ours": false,
-   "xo_price": 0.33,
-   "best_bid": 0.33,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-12-25T00:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 31%. They differ too much to show one number.",
-   "lock_at": "2026-12-19T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
-   "description": "This market resolves based on whether Bukayo Saka scores 3 or more English Premier League goals for Arsenal prior to December 25, 2026 based on official Premier League match statistics. Goals scored in UEFA competitions, domestic cup matches, or international fixtures do not count. Goals scored on or after December 25, 2026 do not count. Primary source: Premier League (https://www. premierleague. com). the primary source governs. If the named record is officially retracted by the Premier League or the season is permanently cancelled before the threshold is met, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.33,
-       "size": 30.30303
-      }
-     ],
-     "asks": [],
-     "last": 0.33
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.67,
-       "size": 30.30303
-      }
-     ],
-     "last": 0.67
     }
    }
   },
@@ -1385,9 +1459,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4736,
-    "low": 0.3736,
-    "high": 0.5736,
+    "p": 0.4844,
+    "low": 0.3844,
+    "high": 0.5844,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1399,7 +1473,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1409,12 +1483,12 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.5%",
+      "value": "8.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "7.8%",
+      "value": "7.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1424,14 +1498,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "36.0%",
+      "value": "33.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 14,
+   "gap_pts": 15,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1461,56 +1535,6 @@
      ],
      "asks": [],
      "last": 0.67
-    }
-   }
-  },
-  {
-   "slug": "will-tottenham-miss-their-next-penalty-1947",
-   "title": "Will Tottenham Miss Their Next Penalty?",
-   "url": "https://beta.xo.market/event/will-tottenham-miss-their-next-penalty-1947?r=cryptotan01",
-   "creator": "0xshrdlu",
-   "is_ours": false,
-   "xo_price": 0.57,
-   "best_bid": null,
-   "best_ask": 0.57,
-   "liquidity_usd": 26.51,
-   "volume_usd": 0,
-   "expires_at": "2027-06-30T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Too few penalties for a reliable base rate.",
-   "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Will Tottenham Miss Their Next Penalty?",
-   "description": "This market resolves Yes if Tottenham Hotspur are awarded a Premier League penalty in the 2026/27 season and miss it, meaning the kick is not scored. The market resolves No if Tottenham score their next awarded Premier League penalty in 2026/27 or if they are not awarded any Premier League penalty for the remainder of the 2026/27 season. Only penalties awarded in Premier League matches count. Penalty shootouts are excluded. Cancelled, overturned or rescinded penalties do not count, and any goals or points arising from such penalties are ignored. If a penalty is ordered to be retaken, only the retake counts. This market will be void if the 2026/27 Premier League season is abandoned, voided or otherwise not completed in a way that prevents a clear official resolution.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.co.uk/sport/football"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.57,
-       "size": 46.511627
-      }
-     ],
-     "last": 0.57
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.43,
-       "size": 46.511627
-      }
-     ],
-     "asks": [],
-     "last": 0.43
     }
    }
   },
@@ -2071,23 +2095,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.522,
-    "low": 0.422,
-    "high": 0.622,
+    "p": 0.649,
+    "low": 0.549,
+    "high": 0.749,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "47.8% (spread 51c, $1,871 traded on this market)",
+      "value": "35.1% (spread 25c, $1,871 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 2,
+   "gap_pts": 15,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2376,9 +2400,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4063,
-    "low": 0.3064,
-    "high": 0.5063,
+    "p": 0.4062,
+    "low": 0.3063,
+    "high": 0.5062,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2435,9 +2459,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4112,
-    "low": 0.3112,
-    "high": 0.5112,
+    "p": 0.4066,
+    "low": 0.3066,
+    "high": 0.5066,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
