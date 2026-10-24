@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-24T05:06:40Z)
+# VERIFY — PL Fair Price (2026-10-24T05:16:43Z)
 
 GW9 deadline 2026-10-31T11:00:00Z. 50 XO PL markets; 24 priced (high 2, medium 7, low 15).
 
@@ -6,21 +6,21 @@ GW9 deadline 2026-10-31T11:00:00Z. 50 XO PL markets; 24 priced (high 2, medium 7
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| AVL-MCI | 8 | 18.5/21.5/60.5 | 18.4/21.4/60.2 | 18.4/21.4/60.2 | 18.4/21.4/60.2 | 18.4/21.4/60.2 | 1.09-2.11 | $616,717 |
-| ARS-EVE | 8 | 66.5/21.5/11.5 | 66.8/21.6/11.6 | 66.2/22.4/11.4 | 66.5/22.0/11.5 | 66.5/22.0/11.5 | 1.89-0.65 | $316,238 |
-| COV-FUL | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 30.3/27.4/42.3 | 30.3/27.4/42.3 | 30.3/27.4/42.3 | 1.17-1.43 | $18,539 |
-| CHE-TOT | 8 | 51.5/23.5/23.5 | 52.3/23.9/23.9 | 52.5/24.0/23.5 | 52.4/23.9/23.7 | 52.4/23.9/23.7 | 1.83-1.17 | $867,624 |
-| CRY-NEW | 8 | 33.5/26.5/40.5 | 33.3/26.4/40.3 | 32.7/26.6/40.7 | 33.0/26.5/40.5 | 33.0/26.5/40.5 | 1.31-1.47 | $3,752 |
-| LIV-BHA | 8 | 45.5/24.5/30.5 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 1.74-1.39 | $469,347 |
-| MUN-BOU | 8 | 43.5/26.5/30.5 | 43.3/26.4/30.3 | 42.7/26.6/30.7 | 43.0/26.5/30.5 | 43.0/26.5/30.5 | 1.51-1.24 | $41,657 |
+| AVL-MCI | 8 | 18.5/21.5/60.5 | 18.4/21.4/60.2 | 18.4/21.4/60.2 | 18.4/21.4/60.2 | 18.4/21.4/60.2 | 1.09-2.11 | $635,726 |
+| ARS-EVE | 8 | 66.5/21.5/11.5 | 66.8/21.6/11.6 | 66.5/22.0/11.5 | 66.7/21.8/11.5 | 66.7/21.8/11.5 | 1.91-0.66 | $322,662 |
+| COV-FUL | 8 | 30.5/27.5/42.5 | 30.3/27.4/42.3 | 30.3/27.4/42.3 | 30.3/27.4/42.3 | 30.3/27.4/42.3 | 1.17-1.43 | $19,006 |
+| CHE-TOT | 8 | 51.5/23.5/23.5 | 52.3/23.9/23.9 | 52.5/24.0/23.5 | 52.4/23.9/23.7 | 52.4/23.9/23.7 | 1.83-1.17 | $873,449 |
+| CRY-NEW | 8 | 33.5/26.5/40.5 | 33.3/26.4/40.3 | 32.7/26.6/40.7 | 33.0/26.5/40.5 | 33.0/26.5/40.5 | 1.31-1.47 | $3,774 |
+| LIV-BHA | 8 | 45.5/24.5/30.5 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 45.3/24.4/30.3 | 1.74-1.39 | $469,417 |
+| MUN-BOU | 8 | 43.5/26.5/30.5 | 43.3/26.4/30.3 | 42.7/26.6/30.7 | 43.0/26.5/30.5 | 43.0/26.5/30.5 | 1.51-1.24 | $41,721 |
 | HUL-BRE | 8 | 19.5/23.5/57.5 | 19.4/23.4/57.2 | 19.4/23.4/57.2 | 19.4/23.4/57.2 | 19.4/23.4/57.2 | 1.01-1.88 | $29,292 |
-| SUN-LEE | 8 | 32.5/30.5/38.5 | 32.0/30.0/37.9 | 31.7/29.6/38.7 | 31.8/29.8/38.3 | 31.8/29.8/38.3 | 1.07-1.20 | $22,438 |
+| SUN-LEE | 8 | 32.5/30.5/38.5 | 32.0/30.0/37.9 | 31.7/29.6/38.7 | 31.8/29.8/38.3 | 31.8/29.8/38.3 | 1.07-1.20 | $22,445 |
 | CHE-MUN | 9 | 54.0/23.0/24.0 | 53.5/22.8/23.8 | 53.3/23.1/23.6 | 53.4/22.9/23.7 | 53.4/22.9/23.7 | 1.95-1.25 | $3,070 |
 | COV-SUN | 9 | 34.5/28.5/37.0 | 34.5/28.5/37.0 | 35.2/27.6/37.2 | 34.8/28.1/37.1 | 34.8/28.1/37.1 | 1.24-1.29 | $42 |
-| MCI-BHA | 9 | 58.5/21.0/20.5 | 58.5/21.0/20.5 | 58.5/20.5/21.0 | 58.5/20.8/20.8 | 58.5/20.7/20.8 | 2.24-1.28 | $6,068 |
-| HUL-IPS | 9 | 36.0/28.0/36.0 | 36.0/28.0/36.0 | 36.0/28.0/36.0 | 36.0/28.0/36.0 | 36.0/28.0/36.0 | 1.27-1.27 | $576 |
+| MCI-BHA | 9 | 58.5/21.0/20.5 | 58.5/21.0/20.5 | 58.5/20.5/21.0 | 58.5/20.8/20.8 | 58.5/20.7/20.8 | 2.24-1.28 | $6,141 |
+| HUL-IPS | 9 | 36.0/28.0/36.0 | 36.0/28.0/36.0 | 36.0/28.0/36.0 | 36.0/28.0/36.0 | 36.0/28.0/36.0 | 1.27-1.27 | $637 |
 | BOU-LEE | 9 | 43.5/27.5/29.0 | 43.5/27.5/29.0 | 43.7/28.1/28.1 | 43.6/27.8/28.6 | 43.6/27.8/28.6 | 1.41-1.09 | $4,947 |
-| BRE-NFO | 9 | 49.0/25.0/26.5 | 48.8/24.9/26.4 | 48.2/24.6/27.1 | 48.5/24.7/26.8 | 48.5/24.7/26.8 | 1.73-1.23 | $168 |
+| BRE-NFO | 9 | 49.0/25.0/26.5 | 48.8/24.9/26.4 | 48.2/24.6/27.1 | 48.5/24.7/26.8 | 48.5/24.7/26.8 | 1.73-1.23 | $278 |
 | TOT-CRY | 9 | 60.0/21.5/18.0 | 60.3/21.6/18.1 | 60.1/21.2/18.7 | 60.2/21.4/18.4 | 60.2/21.4/18.4 | 2.11-1.09 | $231 |
 | AVL-FUL | 9 | 48.0/25.0/27.5 | 47.8/24.9/27.4 | 47.7/25.1/27.1 | 47.7/25.0/27.2 | 47.7/25.0/27.2 | 1.70-1.23 | $887 |
 | LIV-ARS | 9 | 31.0/25.0/44.5 | 30.8/24.9/44.3 | 30.3/25.8/43.9 | 30.6/25.3/44.1 | 30.6/25.3/44.1 | 1.32-1.63 | $1,880 |
@@ -60,7 +60,7 @@ Team-ratings refit error on the priced matches: mean |Δlog λ| 0.153, max 0.425
 
 | Team | P(1st) | P(bottom 3) | mean pts |
 |---|---|---|---|
-| MCI | 91.8% | 0.0% | 25.0 |
+| MCI | 91.9% | 0.0% | 25.0 |
 | ARS | 6.3% | 0.0% | 21.8 |
 | LIV | 0.0% | 0.0% | 14.8 |
 | TOT | 0.0% | 20.8% | 9.0 |
@@ -75,14 +75,14 @@ qg 0.391, qa 0.050, plays 0.95; xG 5.69, xA 0.77, 619 min, 7/7 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 19.2 | -26 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 19.7 | -25 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 40.8 | -6 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 6). Strictly more counts as YES. |
+| low | 47 | 41.2 | -6 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 8) vs Spurs (now 6). Strictly more counts as YES. |
 | medium | 22 | 7.6 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
 | low | 33 | 47.1 | 14 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 47.7 | -2 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 1 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
+| low | 50 | 47.8 | -2 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 1 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 62.5 | 16 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| high | 55 | 95.0 | 40 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
+| high | 55 | 94.8 | 40 | match_model | Will Brighton outscore Arsenal across Premier League Matchweeks 6–8? | Brighton score more league goals than Arsenal across MW6-8. A tie counts as NO. |
 | medium | 25 | 54.3 | 29 | match_model | Will Brighton score in every Premier League match they play in October? | Brighton score in every October league match. (4 fixtures) |
 | low | 55 | 36.8 | -18 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
 | low | 60 | 0.1 | -60 | match_model | Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9? | Coventry score the fewest (or joint-fewest) league goals across MW6-9. |
