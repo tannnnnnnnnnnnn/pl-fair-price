@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T22:40:08Z",
+ "generated_at": "2026-10-24T22:49:38Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -196,9 +196,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5252,
-    "low": 0.4252,
-    "high": 0.6252,
+    "p": 0.5299,
+    "low": 0.4299,
+    "high": 0.6299,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -235,7 +235,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.0%",
+      "value": "28.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1267,9 +1267,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3277,
-    "low": 0.2277,
-    "high": 0.4277,
+    "p": 0.3232,
+    "low": 0.2232,
+    "high": 0.4232,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -1288,7 +1288,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -17,
+   "gap_pts": -18,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1459,9 +1459,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4995,
-    "low": 0.3995,
-    "high": 0.5995,
+    "p": 0.504,
+    "low": 0.404,
+    "high": 0.604,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1498,7 +1498,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.0%",
+      "value": "28.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2346,23 +2346,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.26,
-    "low": 0.16,
-    "high": 0.36,
+    "p": 0.27,
+    "low": 0.17,
+    "high": 0.37,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "26.0% (spread 12c, $3,662 traded on this market)",
+      "value": "27.0% (spread 12c, $3,662 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -40,
+   "gap_pts": -39,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2400,9 +2400,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4313,
-    "low": 0.3313,
-    "high": 0.5313,
+    "p": 0.436,
+    "low": 0.336,
+    "high": 0.536,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2421,7 +2421,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -2,
+   "gap_pts": -1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2459,9 +2459,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2974,
-    "low": 0.1973,
-    "high": 0.3973,
+    "p": 0.2993,
+    "low": 0.1993,
+    "high": 0.3992,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -2517,9 +2517,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2036,
-    "low": 0.1036,
-    "high": 0.3036,
+    "p": 0.2044,
+    "low": 0.1044,
+    "high": 0.3044,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
