@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T00:57:11Z",
+ "generated_at": "2026-10-26T01:07:32Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -130,9 +130,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5417,
-    "low": 0.4417,
-    "high": 0.6417,
+    "p": 0.5437,
+    "low": 0.4437,
+    "high": 0.6437,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -144,7 +144,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -154,7 +154,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.3%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1308,23 +1308,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.655,
-    "low": 0.625,
-    "high": 0.685,
+    "p": 0.65,
+    "low": 0.62,
+    "high": 0.68,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "65.5% (spread 1c, $1,253,490 traded on this market)",
+      "value": "65.0% (spread 2c, $1,253,490 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 20,
+   "gap_pts": 19,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1382,9 +1382,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5153,
-    "low": 0.4153,
-    "high": 0.6153,
+    "p": 0.5171,
+    "low": 0.4171,
+    "high": 0.6171,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1396,7 +1396,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1406,7 +1406,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.3%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1908,7 +1908,7 @@
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "77.1% (spread 2c, $3,565 traded on this market)",
+      "value": "77.1% (spread 2c, $3,578 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
@@ -2375,16 +2375,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1984,
-    "low": 0.0984,
-    "high": 0.2984,
+    "p": 0.188,
+    "low": 0.088,
+    "high": 0.288,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "57.5%",
+      "value": "54.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -2396,7 +2396,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -35,
+   "gap_pts": -36,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
