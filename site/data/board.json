@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T11:20:05Z",
+ "generated_at": "2026-10-26T11:29:50Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -130,9 +130,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5329,
-    "low": 0.4329,
-    "high": 0.6329,
+    "p": 0.5361,
+    "low": 0.4361,
+    "high": 0.6361,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -169,14 +169,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.5%",
+      "value": "27.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 48,
+   "gap_pts": 49,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1280,9 +1280,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5069,
-    "low": 0.4069,
-    "high": 0.6069,
+    "p": 0.5099,
+    "low": 0.4099,
+    "high": 0.6099,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1319,7 +1319,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.5%",
+      "value": "27.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1879,23 +1879,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1445,
-    "low": 0.0845,
-    "high": 0.2045,
-    "confidence": "medium",
+    "p": 0.2135,
+    "low": 0.1135,
+    "high": 0.3135,
+    "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "85.5% (spread 1c, $5,389 traded on this market)",
+      "value": "78.6% (spread 7c, $5,737 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -36,
+   "gap_pts": -29,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -2355,16 +2355,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1949,
-    "low": 0.0949,
-    "high": 0.2949,
+    "p": 0.1932,
+    "low": 0.0932,
+    "high": 0.2932,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "56.5%",
+      "value": "56.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
