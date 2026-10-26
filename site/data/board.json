@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T19:42:18Z",
+ "generated_at": "2026-10-26T19:52:20Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -130,9 +130,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5372,
-    "low": 0.4372,
-    "high": 0.6372,
+    "p": 0.5362,
+    "low": 0.4362,
+    "high": 0.6362,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -144,7 +144,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "0.9%",
+      "value": "1.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -154,7 +154,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "10.4%",
+      "value": "10.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -973,9 +973,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3208,
-    "low": 0.2208,
-    "high": 0.4208,
+    "p": 0.3149,
+    "low": 0.2149,
+    "high": 0.4149,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -994,7 +994,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -18,
+   "gap_pts": -19,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -1165,9 +1165,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5107,
-    "low": 0.4107,
-    "high": 0.6107,
+    "p": 0.5097,
+    "low": 0.4097,
+    "high": 0.6097,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1179,7 +1179,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "0.9%",
+      "value": "1.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1189,7 +1189,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "10.4%",
+      "value": "10.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1478,47 +1478,6 @@
    "description": "Resolves YES if Tottenham Hotspur are ranked above Manchester United in the official Premier League table as of October 31, 2026, at 11:59 PM UK time (GMT). Rankings are determined by the official league standings, including points, applicable tiebreakers and any points deductions in effect by the deadline. Matches played after the deadline do not count.",
    "resolution_sources": [
     "https://www.premierleague.com/en/tables/premier-league"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-a-premier-league-player-finish-in-the-top-10--8100",
-   "title": "Will a Premier League player finish in the top 10 of the 2026 Ballon d'Or?",
-   "url": "https://beta.xo.market/event/will-a-premier-league-player-finish-in-the-top-10--8100?r=cryptotan01",
-   "creator": "OmarABKH89",
-   "is_ours": false,
-   "xo_price": 0.75,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 53.33,
-   "expires_at": "2026-10-26T22:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-23T19:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Will the Premier League get snubbed? I don't think so. I'm backing YES",
-   "description": "This market resolves based on whether A Premier League player finishes in the top 10 of the 2026 Ballon d'Or rankings as announced at the official ceremony on October 26, 2026. Players not currently playing for a Premier League club at the time of the award evaluation do not count. Primary source: Ballon d'Or (https://www. ballondor. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to UEFA (https://www. uefa. com). The primary source governs. If the official Ballon d'Or rankings are permanently withheld or cancelled or the ceremony is permanently cancelled, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.uefa.com",
-    "https://www.ballondor.com",
-    "https://www.si.com"
    ],
    "books": {
     "yes": {
@@ -2050,9 +2009,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4143,
-    "low": 0.3144,
-    "high": 0.5143,
+    "p": 0.4194,
+    "low": 0.3195,
+    "high": 0.5194,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2071,7 +2030,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -4,
+   "gap_pts": -3,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2109,9 +2068,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2425,
-    "low": 0.1425,
-    "high": 0.3426,
+    "p": 0.2404,
+    "low": 0.1404,
+    "high": 0.3404,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -2167,9 +2126,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.145,
-    "low": 0.045,
-    "high": 0.245,
+    "p": 0.1444,
+    "low": 0.0444,
+    "high": 0.2444,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -2306,6 +2265,18 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "will-a-premier-league-player-finish-in-the-top-10--8100",
+   "title": "Will a Premier League player finish in the top 10 of the 2026 Ballon d'Or?",
+   "url": "https://beta.xo.market/event/will-a-premier-league-player-finish-in-the-top-10--8100?r=cryptotan01",
+   "creator": "OmarABKH89",
+   "is_ours": false,
+   "outcome": "YES",
+   "xo_close": 0.75,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-10-26T19:50:18.000Z"
+  },
   {
    "slug": "will-gonzalo-garcia-outscore-josh-king-in-fpl-poin-6978",
    "title": "Will Gonzalo Garcia outscore Josh King in FPL points across GW6-8?",
@@ -3070,7 +3041,7 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 56,
+  "resolved": 57,
   "compared": 26,
   "fair_closer": 16,
   "brier_fair": 0.1776,
