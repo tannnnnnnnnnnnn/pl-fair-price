@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-27T07:56:05Z)
+# VERIFY — PL Fair Price (2026-10-27T08:06:08Z)
 
 GW9 deadline 2026-10-31T11:00:00Z. 41 XO PL markets; 18 priced (high 1, medium 6, low 11).
 
@@ -6,9 +6,9 @@ GW9 deadline 2026-10-31T11:00:00Z. 41 XO PL markets; 18 priced (high 1, medium 6
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| CHE-MUN | 9 | 53.5/24.5/22.5 | 53.2/24.4/22.4 | 53.2/24.4/22.4 | 53.2/24.4/22.4 | 53.2/24.4/22.4 | 1.73-1.04 | $25,035 |
+| CHE-MUN | 9 | 53.5/24.5/22.5 | 53.2/24.4/22.4 | 53.2/24.4/22.4 | 53.2/24.4/22.4 | 53.2/24.4/22.4 | 1.73-1.04 | $25,049 |
 | COV-SUN | 9 | 30.5/28.5/41.0 | 30.5/28.5/41.0 | 30.3/28.4/41.3 | 30.4/28.4/41.1 | 30.4/28.4/41.1 | 1.08-1.30 | $4,978 |
-| MCI-BHA | 9 | 58.5/20.5/20.5 | 58.8/20.6/20.6 | 57.8/21.6/20.6 | 58.3/21.1/20.6 | 58.3/21.1/20.6 | 2.13-1.20 | $23,166 |
+| MCI-BHA | 9 | 58.5/20.5/20.5 | 58.8/20.6/20.6 | 57.8/21.6/20.6 | 58.3/21.1/20.6 | 58.3/21.1/20.6 | 2.13-1.20 | $23,199 |
 | HUL-IPS | 9 | 36.5/28.5/35.5 | 36.3/28.4/35.3 | 36.3/28.4/35.3 | 36.3/28.4/35.3 | 36.3/28.4/35.3 | 1.22-1.20 | $1,406 |
 | BOU-LEE | 9 | 45.5/27.5/27.5 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 1.42-1.05 | $9,012 |
 | BRE-NFO | 9 | 48.0/25.5/26.5 | 48.0/25.5/26.5 | 47.5/25.5/27.0 | 47.8/25.5/26.8 | 47.8/25.5/26.8 | 1.60-1.14 | $3,741 |
@@ -87,8 +87,8 @@ qg 0.395, qa 0.049, plays 0.95; xG 6.09, xA 0.77, 709 min, 8/8 starts.
 | low | 50 | 32.9 | -17 | player_model | Will Haaland have more Premier League goals than Tottenham by November 1? | Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
 | medium | 50 | 57.8 | 8 | match_model | Will Liverpool earn at least 7 points in their next 4 Premier League matches? | Liverpool take 7+ points from their next 4 league matches. (4 fixtures) |
 | medium | 51 | 17.8 | -33 | table_sim | Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9? | City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, th |
-| low | 5 | 54.2 | 49 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 56.4 | 6 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
+| low | 5 | 54.3 | 49 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 50 | 56.0 | 6 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | medium | 47 | 0.4 | -47 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 66 | 27.0 | -39 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | medium | 10 | 0.1 | -10 | match_model | Will any Premier League club keep a clean sheet in all four October gameweeks? | Chance at least one club keeps a clean sheet in every one of GW6-9. |
