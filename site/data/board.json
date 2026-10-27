@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T13:27:39Z",
+ "generated_at": "2026-10-27T13:37:52Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -201,23 +201,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.857,
-    "low": 0.797,
-    "high": 0.917,
-    "confidence": "medium",
+    "p": 0.904,
+    "low": 0.804,
+    "high": 1,
+    "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "14.3% (spread 4c, $8,195 traded on this market)",
+      "value": "9.6% (spread 13c, $8,202 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 61,
+   "gap_pts": 65,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -1197,9 +1197,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4904,
-    "low": 0.3904,
-    "high": 0.5904,
+    "p": 0.4941,
+    "low": 0.3941,
+    "high": 0.5941,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1221,7 +1221,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "10.3%",
+      "value": "10.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1236,7 +1236,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "35.0%",
+      "value": "33.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1943,9 +1943,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5161,
-    "low": 0.4161,
-    "high": 0.6161,
+    "p": 0.5198,
+    "low": 0.4198,
+    "high": 0.6198,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1967,7 +1967,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "10.3%",
+      "value": "10.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1982,7 +1982,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "35.0%",
+      "value": "33.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -3101,20 +3101,6 @@
    "buy_price": 0.9,
    "fillable": 10.0,
    "shares": 11.0668
-  },
-  {
-   "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
-   "title": "Will Michael Carrick still be Manchester United manager on 31 October 2026?",
-   "fair": 0.857,
-   "confidence": "medium",
-   "side": "YES",
-   "ev": 0.006,
-   "ev_low": 0.0054,
-   "ev_high": 0.0066,
-   "roi": 2.3282,
-   "buy_price": 0.25,
-   "fillable": 0.0026,
-   "shares": 0.01
   }
  ],
  "live": []
