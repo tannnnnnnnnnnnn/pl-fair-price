@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T22:20:20Z",
+ "generated_at": "2026-10-27T22:30:12Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -319,9 +319,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0035,
+    "p": 0.0036,
     "low": 0,
-    "high": 0.0635,
+    "high": 0.0636,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1005,9 +1005,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.318,
-    "low": 0.218,
-    "high": 0.418,
+    "p": 0.3167,
+    "low": 0.2167,
+    "high": 0.4167,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -1197,9 +1197,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.493,
-    "low": 0.393,
-    "high": 0.593,
+    "p": 0.4975,
+    "low": 0.3975,
+    "high": 0.5975,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1236,14 +1236,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "32.9%",
+      "value": "31.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 16,
+   "gap_pts": 17,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1943,9 +1943,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5186,
-    "low": 0.4186,
-    "high": 0.6186,
+    "p": 0.5234,
+    "low": 0.4234,
+    "high": 0.6234,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1982,7 +1982,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "32.9%",
+      "value": "31.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2027,9 +2027,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4481,
-    "low": 0.3481,
-    "high": 0.5482,
+    "p": 0.448,
+    "low": 0.3479,
+    "high": 0.548,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2086,9 +2086,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2348,
-    "low": 0.1348,
-    "high": 0.3348,
+    "p": 0.2389,
+    "low": 0.1389,
+    "high": 0.3388,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -2107,7 +2107,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -24,
+   "gap_pts": -23,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -3077,13 +3077,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.0035,
+   "fair": 0.0036,
    "confidence": "medium",
    "side": "NO",
-   "ev": 5.366,
-   "ev_low": 4.766,
+   "ev": 5.365,
+   "ev_low": 4.765,
    "ev_high": 5.401,
-   "roi": 1.1668,
+   "roi": 1.1666,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
