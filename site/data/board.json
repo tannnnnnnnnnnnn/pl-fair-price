@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T09:36:33Z",
+ "generated_at": "2026-10-27T09:46:49Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -47,71 +47,68 @@
    }
   },
   {
-   "slug": "will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512",
-   "title": "Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6\u20139?",
-   "url": "https://beta.xo.market/event/will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512?r=cryptotan01",
-   "creator": "EmilOnTheBall",
+   "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
+   "title": "Will Michael Carrick still be Manchester United manager on 31 October 2026?",
+   "url": "https://beta.xo.market/event/will-michael-carrick-still-be-manchester-united-ma-9611?r=cryptotan01",
+   "creator": "aaditpatadia",
    "is_ours": false,
-   "xo_price": 0.55,
+   "xo_price": 0.5,
    "best_bid": null,
-   "best_ask": 0.4,
-   "liquidity_usd": 6.0,
-   "volume_usd": 22.22,
-   "expires_at": "2026-11-02T23:30:00.000Z",
+   "best_ask": 0.25,
+   "liquidity_usd": 6.25,
+   "volume_usd": 20.0,
+   "expires_at": "2026-10-31T23:59:59.000Z",
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0585,
-    "low": 0,
-    "high": 0.1585,
+    "p": 0.502,
+    "low": 0.402,
+    "high": 0.602,
     "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
+    "method": "polymarket",
+    "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
-      "label": "Cherki: xG 1.69, xA 1.74 in 437 min, 6/8 starts",
-      "value": "8% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Wirtz: xG 1.23, xA 1.03 in 621 min, 8/8 starts (FPL: 75% chance of playing)",
-      "value": "14% of team goals, plays 71% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+      "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
+      "value": "49.8% (spread 33c, $7,983 traded on this market)",
+      "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -49,
+   "gap_pts": 0,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
-   "pitch": "\u00a3100m+ Wirtz: 1 G+A. Cherki: 5. But Wirtz starts every game and 3 of 4 are at Anfield. I back Wirtz to match him.",
-   "description": "Resolves YES if Rayan Cherki (Manchester City) records more Premier League goals plus assists than Florian Wirtz (Liverpool) across Matchweeks 6\u20139 of the 2026/27 season. Resolves NO if Wirtz records more, or if both have the same total. Matches counted for Wirtz: Liverpool v Man City, Brentford v Liverpool, Liverpool v Brighton, Liverpool v Arsenal. Matches counted for Cherki: Liverpool v Man City, Man City v Ipswich, Aston Villa v Man City, Man City v Brighton. Goals and assists are counted as credited in official Premier League statistics on premierleague. com; own goals do not count. A player who does not play in a listed match gets 0 for that match. Only listed matches completed by 23:30 UTC on 2 November 2026 count; a listed match not completed by then is excluded. Trading closes at 23:30 UTC on 2 November 2026.",
+   "pitch": "United's next run could be decisive. I think Carrick faces too much pressure to make it through October.",
+   "description": "This market resolves based on whether Michael Carrick is officially the Manchester United men's first-team manager or head coach at 23:59:59 UTC on 31 October 2026. Official Manchester United or Premier League confirmation will be used for resolution. If Carrick has been officially removed, replaced, resigned, or otherwise ceased to hold that role before the resolution time, the market resolves NO. If he remains officially in the role at the resolution time, including in an interim or caretaker capacity, the market resolves YES.",
    "resolution_sources": [
-    "https://www.premierleague.com/stats",
-    "https://www.premierleague.com/results"
+    "https://www.manutd.com/en/man-utd-head-coach-and-staff/michael-carrick",
+    "https://www.theguardian.com",
+    "https://www.skysports.com",
+    "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers"
    ],
    "books": {
     "yes": {
      "bids": [],
      "asks": [
       {
-       "price": 0.4,
-       "size": 15.0
+       "price": 0.25,
+       "size": 25.0
       }
      ],
-     "last": 0.4
+     "last": 0.25
     },
     "no": {
      "bids": [
       {
-       "price": 0.6,
-       "size": 15.0
+       "price": 0.75,
+       "size": 25.0
       }
      ],
      "asks": [],
-     "last": 0.6
+     "last": 0.75
     }
    }
   },
@@ -130,9 +127,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5443,
-    "low": 0.4443,
-    "high": 0.6443,
+    "p": 0.5446,
+    "low": 0.4446,
+    "high": 0.6446,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -154,7 +151,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.3%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -206,69 +203,6 @@
      ],
      "asks": [],
      "last": 0.55
-    }
-   }
-  },
-  {
-   "slug": "will-carrick-or-de-zerbi-be-sacked-by-oct-31-2026-4607",
-   "title": "Will Carrick or De Zerbi be sacked by Oct 31, 2026?",
-   "url": "https://beta.xo.market/event/will-carrick-or-de-zerbi-be-sacked-by-oct-31-2026-4607?r=cryptotan01",
-   "creator": "shreyash108",
-   "is_ours": false,
-   "xo_price": 0.31,
-   "best_bid": 0.31,
-   "best_ask": 0.45,
-   "liquidity_usd": 7.15,
-   "volume_usd": 23.91,
-   "expires_at": "2026-11-01T12:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "No Polymarket market prices this manager's job by this date.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Both got backed by their boards this week. That usually means nothing.",
-   "description": "This market resolves based on whether Michael Carrick (Manchester United) or Roberto De Zerbi (Tottenham Hotspur) officially leaves his post as head coach on or before 23:59 UK time on October 31, 2026. A sacking, resignation, mutual-consent exit or move to another role all count. Media reports or leaks without an official club statement do not count. Temporary leave due to illness or personal reasons does not count. Primary source: official club statements ([www. manutd. com](https://www. manutd. com/), [www. tottenhamhotspur. com](https://www. tottenhamhotspur. com/)). If unavailable, resolution falls back to BBC Sport ([www. bbc. com/sport](https://www. bbc. com/sport)) or Sky Sports ([www. skysports. com](https://www. skysports. com/)). The primary source governs over secondary reporting. If official records are permanently retracted or proven fraudulent, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.manutd.com",
-    "https://www.tottenhamhotspur.com",
-    "https://www.bbc.com",
-    "https://www.skysports.com",
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.31,
-       "size": 2.753626
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.45,
-       "size": 14.0
-      }
-     ],
-     "last": 0.38
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.55,
-       "size": 14.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.69,
-       "size": 2.753626
-      }
-     ],
-     "last": 0.62
     }
    }
   },
@@ -671,6 +605,58 @@
    }
   },
   {
+   "slug": "will-michael-carrick-be-out-as-manchester-united-m-4699",
+   "title": "Will Michael Carrick be out as Manchester United manager by December 31, 2026?",
+   "url": "https://beta.xo.market/event/will-michael-carrick-be-out-as-manchester-united-m-4699?r=cryptotan01",
+   "creator": "AThryver",
+   "is_ours": false,
+   "xo_price": 0.85,
+   "best_bid": 0.85,
+   "best_ask": null,
+   "liquidity_usd": 8.5,
+   "volume_usd": 23.53,
+   "expires_at": "2026-12-31T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-12-29T19:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "2 wins in 12 games across all competitions. Carrick\u2019s time might be running out as Manchester United manager",
+   "description": "This market resolves based on whether Michael Carrick ceases to be the manager or head coach of Manchester United FC on or before December 31, 2026. The date on which Carrick ceases to be manager is the date of the official announcement by Manchester United, or the effective date of departure stated in that announcement, whichever is earlier. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://www. bbc. com) or The Guardian (https://www. theguardian. com). the primary source governs. If the named record is retracted or the event is cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.theguardian.com",
+    "https://www.bbc.com",
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.85,
+       "size": 10.0
+      }
+     ],
+     "asks": [],
+     "last": 0.85
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.15,
+       "size": 10.0
+      }
+     ],
+     "last": 0.15
+    }
+   }
+  },
+  {
    "slug": "will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898",
    "title": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
    "url": "https://beta.xo.market/event/will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898?r=cryptotan01",
@@ -973,9 +959,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3303,
-    "low": 0.2303,
-    "high": 0.4304,
+    "p": 0.3317,
+    "low": 0.2317,
+    "high": 0.4317,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -1165,9 +1151,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5176,
-    "low": 0.4176,
-    "high": 0.6176,
+    "p": 0.5179,
+    "low": 0.4179,
+    "high": 0.6179,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1189,7 +1175,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.3%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1368,48 +1354,6 @@
       }
      ],
      "last": 0.44
-    }
-   }
-  },
-  {
-   "slug": "will-michael-carrick-be-out-as-manchester-united-m-4699",
-   "title": "Will Michael Carrick be out as Manchester United manager by December 31, 2026?",
-   "url": "https://beta.xo.market/event/will-michael-carrick-be-out-as-manchester-united-m-4699?r=cryptotan01",
-   "creator": "AThryver",
-   "is_ours": false,
-   "xo_price": 0.85,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 23.53,
-   "expires_at": "2026-12-31T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-12-29T19:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "2 wins in 12 games across all competitions. Carrick\u2019s time might be running out as Manchester United manager",
-   "description": "This market resolves based on whether Michael Carrick ceases to be the manager or head coach of Manchester United FC on or before December 31, 2026. The date on which Carrick ceases to be manager is the date of the official announcement by Manchester United, or the effective date of departure stated in that announcement, whichever is earlier. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://www. bbc. com) or The Guardian (https://www. theguardian. com). the primary source governs. If the named record is retracted or the event is cancelled, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.manutd.com",
-    "https://www.theguardian.com",
-    "https://www.bbc.com",
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
     }
    }
   },
@@ -1750,58 +1694,71 @@
    }
   },
   {
-   "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
-   "title": "Will Michael Carrick still be Manchester United manager on 31 October 2026?",
-   "url": "https://beta.xo.market/event/will-michael-carrick-still-be-manchester-united-ma-9611?r=cryptotan01",
-   "creator": "aaditpatadia",
+   "slug": "will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512",
+   "title": "Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6\u20139?",
+   "url": "https://beta.xo.market/event/will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512?r=cryptotan01",
+   "creator": "EmilOnTheBall",
    "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
+   "xo_price": 0.55,
+   "best_bid": 0.4,
    "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 20.0,
-   "expires_at": "2026-10-31T23:59:59.000Z",
+   "liquidity_usd": 4.0,
+   "volume_usd": 22.22,
+   "expires_at": "2026-11-02T23:30:00.000Z",
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.506,
-    "low": 0.406,
-    "high": 0.606,
+    "p": 0.0627,
+    "low": 0,
+    "high": 0.1627,
     "confidence": "low",
-    "method": "polymarket",
-    "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
+    "method": "player_model",
+    "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
     "inputs": [
      {
-      "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "49.4% (spread 34c, $7,983 traded on this market)",
-      "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
+      "label": "Cherki: xG 1.69, xA 1.74 in 437 min, 6/8 starts",
+      "value": "8% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Wirtz: xG 1.23, xA 1.03 in 621 min, 8/8 starts (FPL: 75% chance of playing)",
+      "value": "14% of team goals, plays 71% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 1,
+   "gap_pts": -49,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
-   "pitch": "United's next run could be decisive. I think Carrick faces too much pressure to make it through October.",
-   "description": "This market resolves based on whether Michael Carrick is officially the Manchester United men's first-team manager or head coach at 23:59:59 UTC on 31 October 2026. Official Manchester United or Premier League confirmation will be used for resolution. If Carrick has been officially removed, replaced, resigned, or otherwise ceased to hold that role before the resolution time, the market resolves NO. If he remains officially in the role at the resolution time, including in an interim or caretaker capacity, the market resolves YES.",
+   "pitch": "\u00a3100m+ Wirtz: 1 G+A. Cherki: 5. But Wirtz starts every game and 3 of 4 are at Anfield. I back Wirtz to match him.",
+   "description": "Resolves YES if Rayan Cherki (Manchester City) records more Premier League goals plus assists than Florian Wirtz (Liverpool) across Matchweeks 6\u20139 of the 2026/27 season. Resolves NO if Wirtz records more, or if both have the same total. Matches counted for Wirtz: Liverpool v Man City, Brentford v Liverpool, Liverpool v Brighton, Liverpool v Arsenal. Matches counted for Cherki: Liverpool v Man City, Man City v Ipswich, Aston Villa v Man City, Man City v Brighton. Goals and assists are counted as credited in official Premier League statistics on premierleague. com; own goals do not count. A player who does not play in a listed match gets 0 for that match. Only listed matches completed by 23:30 UTC on 2 November 2026 count; a listed match not completed by then is excluded. Trading closes at 23:30 UTC on 2 November 2026.",
    "resolution_sources": [
-    "https://www.manutd.com/en/man-utd-head-coach-and-staff/michael-carrick",
-    "https://www.theguardian.com",
-    "https://www.skysports.com",
-    "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers"
+    "https://www.premierleague.com/stats",
+    "https://www.premierleague.com/results"
    ],
    "books": {
     "yes": {
-     "bids": [],
+     "bids": [
+      {
+       "price": 0.4,
+       "size": 10.0
+      }
+     ],
      "asks": [],
-     "last": null
+     "last": 0.4
     },
     "no": {
      "bids": [],
-     "asks": [],
-     "last": null
+     "asks": [
+      {
+       "price": 0.6,
+       "size": 10.0
+      }
+     ],
+     "last": 0.6
     }
    }
   },
@@ -2009,9 +1966,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4262,
-    "low": 0.3262,
-    "high": 0.5262,
+    "p": 0.4127,
+    "low": 0.3127,
+    "high": 0.5127,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2030,7 +1987,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -2,
+   "gap_pts": -4,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2068,9 +2025,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2445,
-    "low": 0.1445,
-    "high": 0.3445,
+    "p": 0.2473,
+    "low": 0.1473,
+    "high": 0.3473,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -2089,7 +2046,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -23,
+   "gap_pts": -22,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2126,9 +2083,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1446,
-    "low": 0.0446,
-    "high": 0.2446,
+    "p": 0.1445,
+    "low": 0.0445,
+    "high": 0.2445,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
