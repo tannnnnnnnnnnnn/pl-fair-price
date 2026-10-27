@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T10:27:00Z",
+ "generated_at": "2026-10-27T10:36:55Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -132,23 +132,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5165,
-    "low": 0.4165,
-    "high": 0.6165,
+    "p": 0.4435,
+    "low": 0.3435,
+    "high": 0.5435,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "48.4% (spread 36c, $7,983 traded on this market)",
+      "value": "55.6% (spread 21c, $7,983 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 2,
+   "gap_pts": -6,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -321,7 +321,7 @@
    "fair": {
     "p": 0.0031,
     "low": 0,
-    "high": 0.063,
+    "high": 0.0631,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -717,7 +717,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 45%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 44%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -1005,9 +1005,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3177,
-    "low": 0.2177,
-    "high": 0.4177,
+    "p": 0.3185,
+    "low": 0.2185,
+    "high": 0.4184,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -1197,9 +1197,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5187,
-    "low": 0.4187,
-    "high": 0.6187,
+    "p": 0.4823,
+    "low": 0.3823,
+    "high": 0.5823,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1221,7 +1221,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.3%",
+      "value": "10.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1231,19 +1231,19 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "45.0%",
+      "value": "45.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.0%",
+      "value": "38.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 19,
+   "gap_pts": 15,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1943,9 +1943,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5454,
-    "low": 0.4454,
-    "high": 0.6454,
+    "p": 0.5072,
+    "low": 0.4072,
+    "high": 0.6072,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1967,7 +1967,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.3%",
+      "value": "10.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1977,19 +1977,19 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "45.0%",
+      "value": "45.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.0%",
+      "value": "38.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 50,
+   "gap_pts": 46,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2027,9 +2027,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4209,
-    "low": 0.3208,
-    "high": 0.5209,
+    "p": 0.4244,
+    "low": 0.3244,
+    "high": 0.5243,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2086,9 +2086,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2397,
-    "low": 0.1396,
-    "high": 0.3397,
+    "p": 0.2411,
+    "low": 0.1411,
+    "high": 0.3411,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -3081,7 +3081,7 @@
    "confidence": "medium",
    "side": "NO",
    "ev": 5.37,
-   "ev_low": 4.771,
+   "ev_low": 4.77,
    "ev_high": 5.401,
    "roi": 1.1676,
    "buy_price": 0.45,
