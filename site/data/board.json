@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T18:05:15Z",
+ "generated_at": "2026-10-28T18:15:07Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -247,9 +247,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.058,
+    "p": 0.0576,
     "low": 0,
-    "high": 0.158,
+    "high": 0.1576,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -316,8 +316,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9115,
-    "low": 0.8115,
+    "p": 0.9065,
+    "low": 0.8065,
     "high": 1,
     "confidence": "low",
     "method": "polymarket",
@@ -325,7 +325,7 @@
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "8.8% (spread 6c, $8,913 traded on this market)",
+      "value": "9.3% (spread 6c, $8,935 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
@@ -832,7 +832,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 43%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 44%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -1006,9 +1006,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5932,
-    "low": 0.5632,
-    "high": 0.6232,
+    "p": 0.5897,
+    "low": 0.5596,
+    "high": 0.6197,
     "confidence": "high",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -1120,9 +1120,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3151,
-    "low": 0.2151,
-    "high": 0.4152,
+    "p": 0.3125,
+    "low": 0.2125,
+    "high": 0.4125,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -1141,7 +1141,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -18,
+   "gap_pts": -19,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -1312,9 +1312,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5007,
-    "low": 0.4007,
-    "high": 0.6007,
+    "p": 0.5088,
+    "low": 0.4088,
+    "high": 0.6088,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1326,7 +1326,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "0.9%",
+      "value": "1.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1336,7 +1336,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.7%",
+      "value": "8.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1351,14 +1351,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "31.0%",
+      "value": "28.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 17,
+   "gap_pts": 18,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1910,9 +1910,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1875,
-    "low": 0.1275,
-    "high": 0.2475,
+    "p": 0.1847,
+    "low": 0.1247,
+    "high": 0.2447,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -1926,7 +1926,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -32,
+   "gap_pts": -33,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -2058,9 +2058,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5262,
-    "low": 0.4263,
-    "high": 0.6262,
+    "p": 0.5347,
+    "low": 0.4347,
+    "high": 0.6347,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2072,7 +2072,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "0.9%",
+      "value": "1.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2082,7 +2082,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.7%",
+      "value": "8.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2097,7 +2097,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "31.0%",
+      "value": "28.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2142,9 +2142,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4578,
-    "low": 0.3578,
-    "high": 0.5578,
+    "p": 0.4477,
+    "low": 0.3477,
+    "high": 0.5477,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2163,7 +2163,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 1,
+   "gap_pts": 0,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2201,9 +2201,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.244,
-    "low": 0.1439,
-    "high": 0.3439,
+    "p": 0.2394,
+    "low": 0.1394,
+    "high": 0.3394,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -2261,7 +2261,7 @@
    "fair": {
     "p": 0.1436,
     "low": 0.0436,
-    "high": 0.2437,
+    "high": 0.2436,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
