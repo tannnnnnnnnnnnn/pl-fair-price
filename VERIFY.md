@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-28T22:46:12Z)
+# VERIFY — PL Fair Price (2026-10-28T22:56:31Z)
 
 GW9 deadline 2026-10-31T11:00:00Z. 43 XO PL markets; 18 priced (high 2, medium 6, low 10).
 
@@ -6,15 +6,15 @@ GW9 deadline 2026-10-31T11:00:00Z. 43 XO PL markets; 18 priced (high 2, medium 6
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| CHE-MUN | 9 | 52.5/24.5/23.5 | 52.2/24.4/23.4 | 53.3/23.9/22.8 | 52.8/24.1/23.1 | 52.8/24.1/23.1 | 1.76-1.09 | $59,902 |
+| CHE-MUN | 9 | 52.5/24.5/23.5 | 52.2/24.4/23.4 | 53.3/23.9/22.8 | 52.8/24.1/23.1 | 52.8/24.1/23.1 | 1.76-1.09 | $59,128 |
 | COV-SUN | 9 | 30.5/28.5/41.5 | 30.3/28.4/41.3 | 29.6/28.6/41.7 | 30.0/28.5/41.5 | 30.0/28.5/41.5 | 1.06-1.30 | $6,199 |
-| MCI-BHA | 9 | 58.5/21.5/20.5 | 58.2/21.4/20.4 | 57.8/21.6/20.6 | 58.0/21.5/20.5 | 58.0/21.5/20.5 | 2.07-1.16 | $60,040 |
+| MCI-BHA | 9 | 58.5/21.5/20.5 | 58.2/21.4/20.4 | 57.8/21.6/20.6 | 58.0/21.5/20.5 | 58.0/21.5/20.5 | 2.07-1.16 | $59,455 |
 | HUL-IPS | 9 | 35.5/28.5/35.5 | 35.7/28.6/35.7 | 36.0/28.5/35.5 | 35.8/28.6/35.6 | 35.8/28.6/35.6 | 1.19-1.19 | $2,733 |
-| BOU-LEE | 9 | 45.5/27.5/27.5 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 1.42-1.05 | $17,383 |
+| BOU-LEE | 9 | 45.5/27.5/27.5 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 1.42-1.05 | $17,390 |
 | BRE-NFO | 9 | 47.5/25.5/27.5 | 47.3/25.4/27.4 | 47.0/25.5/27.5 | 47.1/25.4/27.4 | 47.1/25.4/27.4 | 1.60-1.17 | $5,059 |
 | TOT-CRY | 9 | 62.5/20.5/16.5 | 62.8/20.6/16.6 | 63.2/20.4/16.4 | 63.0/20.5/16.5 | 63.0/20.5/16.5 | 2.14-1.00 | $7,789 |
 | AVL-FUL | 9 | 50.5/26.5/25.5 | 49.3/25.9/24.9 | 49.3/25.4/25.4 | 49.3/25.6/25.1 | 49.3/25.6/25.1 | 1.60-1.07 | $54,692 |
-| LIV-ARS | 9 | 31.5/27.5/40.5 | 31.7/27.6/40.7 | 31.7/27.6/40.7 | 31.7/27.6/40.7 | 31.7/27.6/40.7 | 1.15-1.34 | $25,519 |
+| LIV-ARS | 9 | 31.5/27.5/40.5 | 31.7/27.6/40.7 | 31.7/27.6/40.7 | 31.7/27.6/40.7 | 31.7/27.6/40.7 | 1.15-1.34 | $26,111 |
 | NEW-EVE | 9 | 41.5/27.5/32.0 | 41.1/27.2/31.7 | 41.7/26.6/31.7 | 41.4/26.9/31.7 | 41.4/26.9/31.7 | 1.41-1.20 | $1,743 |
 | EVE-COV | 10 | 56.0/24.0/20.0 | 56.0/24.0/20.0 | 56.5/23.5/20.0 | 56.2/23.8/20.0 | 56.2/23.8/20.0 | 1.79-0.98 | $1,292 |
 | LEE-TOT | 10 | 36.5/28.0/35.5 | 36.5/28.0/35.5 | 36.2/28.1/35.7 | 36.3/28.1/35.6 | 36.3/28.1/35.6 | 1.24-1.22 | $761 |
@@ -79,7 +79,7 @@ qg 0.395, qa 0.049, plays 0.95; xG 6.09, xA 0.77, 709 min, 8/8 starts.
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 24.0 | -23 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
 | medium | 22 | 7.4 | -15 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 52.5 | 19 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 52.5 | 20 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 14.4 | -36 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 66.5 | 20 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 55 | 5.5 | -49 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
