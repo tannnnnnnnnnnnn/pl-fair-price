@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T22:56:31Z",
+ "generated_at": "2026-10-28T23:06:33Z",
  "gw": 9,
  "deadline_utc": "2026-10-31T11:00:00Z",
  "fixtures": [
@@ -16,7 +16,7 @@
    "lam_away": 1.092,
    "cs_home": 0.3356,
    "cs_away": 0.1714,
-   "market_volume": 59128,
+   "market_volume": 60030,
    "source_url": "https://polymarket.com/event/epl-che-mun-2026-10-31"
   },
   {
@@ -96,7 +96,7 @@
    "lam_away": 1.161,
    "cs_home": 0.3131,
    "cs_away": 0.1262,
-   "market_volume": 59455,
+   "market_volume": 60142,
    "source_url": "https://polymarket.com/event/epl-mac-bri-2026-10-31"
   },
   {
@@ -377,27 +377,6 @@
    "xpts": 4.53,
    "p_blank": 0.5636,
    "fpl_ep": 4.0,
-   "xo_markets": []
-  },
-  {
-   "id": 200,
-   "name": "Lacroix",
-   "team": "CHE",
-   "opponent": "MUN",
-   "pos": "DEF",
-   "price": 5.9,
-   "owned_pct": 6.3,
-   "chance_playing": null,
-   "news": "",
-   "p_start": 0.95,
-   "p_goal": 0.0717,
-   "p_assist": 0.0484,
-   "p_cs": 0.3356,
-   "p_defcon": 0.437,
-   "xbonus": 0.37,
-   "xpts": 4.48,
-   "p_blank": 0.3616,
-   "fpl_ep": 3.7,
    "xo_markets": []
   },
   {
@@ -1813,6 +1792,27 @@
    "xpts": 3.37,
    "p_blank": 0.5381,
    "fpl_ep": 3.3,
+   "xo_markets": []
+  },
+  {
+   "id": 200,
+   "name": "Lacroix",
+   "team": "CHE",
+   "opponent": "MUN",
+   "pos": "DEF",
+   "price": 5.9,
+   "owned_pct": 6.3,
+   "chance_playing": 75,
+   "news": "Hamstring injury - 75% chance of playing",
+   "p_start": 0.712,
+   "p_goal": 0.0538,
+   "p_assist": 0.0363,
+   "p_cs": 0.3356,
+   "p_defcon": 0.437,
+   "xbonus": 0.28,
+   "xpts": 3.36,
+   "p_blank": 0.5212,
+   "fpl_ep": 3.7,
    "xo_markets": []
   },
   {
@@ -3796,7 +3796,7 @@
    "opponent": "BRE",
    "pos": "DEF",
    "price": 5.0,
-   "owned_pct": 6.0,
+   "owned_pct": 5.9,
    "chance_playing": 75,
    "news": "Arm injury - 75% chance of playing",
    "p_start": 0.712,
@@ -5637,11 +5637,22 @@
    "xo_markets": []
   },
   {
+   "id": 200,
+   "name": "Lacroix",
+   "team": "CHE",
+   "pos": "DEF",
+   "owned_pct": 6.3,
+   "fpl_chance": 75,
+   "news": "Hamstring injury - 75% chance of playing",
+   "regular": true,
+   "xo_markets": []
+  },
+  {
    "id": 469,
    "name": "N.Williams",
    "team": "NFO",
    "pos": "DEF",
-   "owned_pct": 6.0,
+   "owned_pct": 5.9,
    "fpl_chance": 75,
    "news": "Arm injury - 75% chance of playing",
    "regular": true,
@@ -6798,7 +6809,7 @@
    "xg": 0.96,
    "assists": 1,
    "xa": 1.11,
-   "owned_pct": 6.0,
+   "owned_pct": 5.9,
    "xo_markets": []
   },
   {
