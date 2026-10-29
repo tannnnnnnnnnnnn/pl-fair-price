@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-29T05:38:34Z)
+# VERIFY — PL Fair Price (2026-10-29T05:48:31Z)
 
 GW9 deadline 2026-10-31T11:00:00Z. 43 XO PL markets; 18 priced (high 2, medium 6, low 10).
 
@@ -6,15 +6,15 @@ GW9 deadline 2026-10-31T11:00:00Z. 43 XO PL markets; 18 priced (high 2, medium 6
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| CHE-MUN | 9 | 52.5/24.5/23.5 | 52.2/24.4/23.4 | 52.2/24.4/23.4 | 52.2/24.4/23.4 | 52.2/24.4/23.4 | 1.74-1.09 | $66,106 |
+| CHE-MUN | 9 | 52.5/24.5/23.5 | 52.2/24.4/23.4 | 52.2/24.4/23.4 | 52.2/24.4/23.4 | 52.2/24.4/23.4 | 1.74-1.09 | $66,260 |
 | COV-SUN | 9 | 30.5/28.5/41.5 | 30.3/28.4/41.3 | 30.0/28.5/41.5 | 30.2/28.4/41.4 | 30.2/28.4/41.4 | 1.07-1.30 | $6,671 |
-| MCI-BHA | 9 | 58.5/21.5/20.5 | 58.2/21.4/20.4 | 57.8/21.6/20.6 | 58.0/21.5/20.5 | 58.0/21.5/20.5 | 2.07-1.16 | $65,314 |
-| HUL-IPS | 9 | 36.0/28.5/35.5 | 36.0/28.5/35.5 | 36.0/28.5/35.5 | 36.0/28.5/35.5 | 36.0/28.5/35.5 | 1.20-1.19 | $2,972 |
-| BOU-LEE | 9 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.3/27.4/27.4 | 45.5/27.5/27.0 | 45.5/27.5/27.0 | 1.41-1.03 | $18,977 |
+| MCI-BHA | 9 | 58.5/21.5/20.5 | 58.2/21.4/20.4 | 57.8/21.6/20.6 | 58.0/21.5/20.5 | 58.0/21.5/20.5 | 2.07-1.16 | $65,366 |
+| HUL-IPS | 9 | 36.0/28.5/35.5 | 36.0/28.5/35.5 | 36.0/28.5/35.5 | 36.0/28.5/35.5 | 36.0/28.5/35.5 | 1.20-1.19 | $2,974 |
+| BOU-LEE | 9 | 45.5/27.5/26.5 | 45.7/27.6/26.6 | 45.3/27.4/27.4 | 45.5/27.5/27.0 | 45.5/27.5/27.0 | 1.41-1.03 | $19,026 |
 | BRE-NFO | 9 | 47.5/25.5/26.5 | 47.7/25.6/26.6 | 47.7/25.6/26.6 | 47.7/25.6/26.6 | 47.7/25.6/26.6 | 1.59-1.13 | $5,888 |
 | TOT-CRY | 9 | 62.5/20.5/16.5 | 62.8/20.6/16.6 | 63.2/20.4/16.4 | 63.0/20.5/16.5 | 63.0/20.5/16.5 | 2.14-1.00 | $8,151 |
 | AVL-FUL | 9 | 49.5/25.5/24.5 | 49.7/25.6/24.6 | 49.3/25.4/25.4 | 49.5/25.5/25.0 | 49.5/25.5/25.0 | 1.61-1.08 | $58,018 |
-| LIV-ARS | 9 | 32.5/28.0/40.5 | 32.2/27.7/40.1 | 31.7/27.6/40.7 | 31.9/27.7/40.4 | 31.9/27.7/40.4 | 1.16-1.34 | $29,456 |
+| LIV-ARS | 9 | 32.5/28.0/40.5 | 32.2/27.7/40.1 | 31.7/27.6/40.7 | 31.9/27.7/40.4 | 31.9/27.7/40.4 | 1.16-1.34 | $29,569 |
 | NEW-EVE | 9 | 41.5/27.5/32.0 | 41.1/27.2/31.7 | 41.4/26.8/31.8 | 41.3/27.0/31.8 | 41.3/27.0/31.8 | 1.40-1.20 | $1,876 |
 | EVE-COV | 10 | 56.0/24.0/20.0 | 56.0/24.0/20.0 | 56.5/23.5/20.0 | 56.2/23.8/20.0 | 56.2/23.8/20.0 | 1.79-0.98 | $1,297 |
 | LEE-TOT | 10 | 37.0/28.0/35.0 | 37.0/28.0/35.0 | 36.8/27.9/35.3 | 36.9/27.9/35.2 | 36.9/27.9/35.2 | 1.26-1.22 | $761 |
@@ -23,7 +23,7 @@ GW9 deadline 2026-10-31T11:00:00Z. 43 XO PL markets; 18 priced (high 2, medium 6
 | NFO-MCI | 10 | 19.0/22.5/59.0 | 18.9/22.4/58.7 | 18.8/22.3/58.9 | 18.8/22.4/58.8 | 18.8/22.4/58.8 | 1.01-1.94 | $1,478 |
 | CRY-LIV | 10 | 20.5/23.0/56.5 | 20.5/23.0/56.5 | 20.0/22.5/57.5 | 20.2/22.7/57.0 | 20.2/22.8/57.0 | 1.05-1.91 | $561 |
 | IPS-BOU | 10 | 25.5/26.0/49.0 | 25.4/25.9/48.8 | 25.4/25.4/49.2 | 25.4/25.6/49.0 | 25.4/25.6/49.0 | 1.08-1.60 | $109 |
-| SUN-CHE | 10 | 28.0/27.0/45.0 | 28.0/27.0/45.0 | 28.1/27.1/44.7 | 28.1/27.1/44.9 | 28.1/27.1/44.9 | 1.09-1.44 | $414 |
+| SUN-CHE | 10 | 27.5/27.0/45.0 | 27.6/27.1/45.2 | 27.8/27.3/44.9 | 27.7/27.2/45.1 | 27.7/27.2/45.1 | 1.07-1.43 | $414 |
 | BHA-BRE | 10 | 51.0/25.0/24.5 | 50.7/24.9/24.4 | 50.8/24.6/24.6 | 50.8/24.7/24.5 | 50.8/24.7/24.5 | 1.69-1.11 | $164 |
 | MUN-AVL | 10 | 44.0/24.0/32.5 | 43.8/23.9/32.3 | 44.0/24.0/32.0 | 43.9/23.9/32.2 | 43.9/23.9/32.2 | 1.72-1.45 | $2,840 |
 
@@ -75,19 +75,19 @@ qg 0.395, qa 0.049, plays 0.95; xG 6.09, xA 0.77, 709 min, 8/8 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 44.2 | -1 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 43.8 | -1 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 23.7 | -23 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
+| low | 47 | 24.1 | -23 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
 | medium | 22 | 7.7 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 53.0 | 20 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 53.3 | 20 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 14.5 | -35 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 66.5 | 20 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 55 | 5.5 | -50 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
+| low | 55 | 5.3 | -50 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
 | medium | 60 | 0.1 | -60 | match_model | Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9? | Coventry score the fewest (or joint-fewest) league goals across MW6-9. |
-| low | 50 | 31.3 | -19 | player_model | Will Haaland have more Premier League goals than Tottenham by November 1? | Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
+| low | 50 | 31.5 | -18 | player_model | Will Haaland have more Premier League goals than Tottenham by November 1? | Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
 | high | 50 | 59.5 | 9 | match_model | Will Liverpool earn at least 7 points in their next 4 Premier League matches? | Liverpool take 7+ points from their next 4 league matches. (4 fixtures) |
 | medium | 51 | 18.3 | -33 | table_sim | Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9? | City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, th |
-| low | 5 | 54.2 | 49 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 54.6 | 50 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | medium | 25 | 93.2 | 68 | polymarket | Will Michael Carrick still be Manchester United manager on 31 October 2026? | Taken straight from Polymarket's matching market: "Will Michael Carrick be out as Manchester United manager by October 31, 2026?" |
 | medium | 47 | 0.3 | -47 | table_sim | Will Tottenham be in the Premier League bottom three after Matchweek 9? | Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored. |
 | low | 66 | 30.0 | -36 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
