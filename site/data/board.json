@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T19:19:42Z",
+ "generated_at": "2026-10-30T19:30:01Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -219,64 +219,6 @@
    }
   },
   {
-   "slug": "will-there-be-over-25-goals-in-liverpool-vs-arsena-6063",
-   "title": "Will there be over 2.5 goals in Liverpool vs Arsenal?",
-   "url": "https://beta.xo.market/event/will-there-be-over-25-goals-in-liverpool-vs-arsena-6063?r=cryptotan01",
-   "creator": "Mayorfae_",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-01T19:00:00.000Z",
-   "group": "fixture",
-   "fixture": {
-    "home": "LIV",
-    "away": "ARS",
-    "home_name": "Liverpool",
-    "away_name": "Arsenal",
-    "kickoff_utc": "2026-11-01T16:30:00Z"
-   },
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Will there be over 2.5 goals in Liverpool vs Arsenal?",
-   "description": "This market resolves based on whether The total number of goals scored in the Premier League match between Liverpool and Arsenal on November 1, 2026, is greater than 2.5 as recorded by the official Premier League match record. Friendly matches or alternative competitions outside the English Premier League do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The match is permanently cancelled or abandoned without an official result declared or The official match record is retracted, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.liverpoolfc.com",
-    "https://www.arsenal.com",
-    "https://www.foxsports.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "chelsea-vs-manchester-united-over-35-goals-9849",
    "title": "Chelsea vs Manchester United: Over 3.5 Goals?",
    "url": "https://beta.xo.market/event/chelsea-vs-manchester-united-over-35-goals-9849?r=cryptotan01",
@@ -348,8 +290,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.955,
-    "low": 0.855,
+    "p": 0.9505,
+    "low": 0.8505,
     "high": 1,
     "confidence": "low",
     "method": "polymarket",
@@ -357,7 +299,7 @@
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "4.5% (spread 5c, $10,153 traded on this market)",
+      "value": "5.0% (spread 4c, $10,153 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
@@ -466,9 +408,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0048,
+    "p": 0.0043,
     "low": 0,
-    "high": 0.0648,
+    "high": 0.0643,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "Spurs 18th, 19th or 20th after MW9. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -580,9 +522,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0795,
-    "low": 0.0195,
-    "high": 0.1395,
+    "p": 0.08,
+    "low": 0.02,
+    "high": 0.14,
     "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Manchester City punishment announced by November 6?\"",
@@ -864,7 +806,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 43%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 44%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -1038,9 +980,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6046,
-    "low": 0.5746,
-    "high": 0.6346,
+    "p": 0.604,
+    "low": 0.574,
+    "high": 0.634,
     "confidence": "high",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -1152,9 +1094,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3637,
-    "low": 0.2637,
-    "high": 0.4637,
+    "p": 0.3591,
+    "low": 0.2591,
+    "high": 0.4591,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -1344,9 +1286,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5394,
-    "low": 0.4394,
-    "high": 0.6394,
+    "p": 0.5383,
+    "low": 0.4383,
+    "high": 0.6383,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1368,7 +1310,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.7%",
+      "value": "9.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1383,7 +1325,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "26.8%",
+      "value": "27.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1547,6 +1489,64 @@
       }
      ],
      "last": 0.44
+    }
+   }
+  },
+  {
+   "slug": "will-there-be-over-25-goals-in-liverpool-vs-arsena-6063",
+   "title": "Will there be over 2.5 goals in Liverpool vs Arsenal?",
+   "url": "https://beta.xo.market/event/will-there-be-over-25-goals-in-liverpool-vs-arsena-6063?r=cryptotan01",
+   "creator": "Mayorfae_",
+   "is_ours": false,
+   "xo_price": 0.5,
+   "best_bid": 0.5,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-11-01T19:00:00.000Z",
+   "group": "fixture",
+   "fixture": {
+    "home": "LIV",
+    "away": "ARS",
+    "home_name": "Liverpool",
+    "away_name": "Arsenal",
+    "kickoff_utc": "2026-11-01T16:30:00Z"
+   },
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Will there be over 2.5 goals in Liverpool vs Arsenal?",
+   "description": "This market resolves based on whether The total number of goals scored in the Premier League match between Liverpool and Arsenal on November 1, 2026, is greater than 2.5 as recorded by the official Premier League match record. Friendly matches or alternative competitions outside the English Premier League do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The match is permanently cancelled or abandoned without an official result declared or The official match record is retracted, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.liverpoolfc.com",
+    "https://www.arsenal.com",
+    "https://www.foxsports.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "asks": [],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 20.0
+      }
+     ],
+     "last": 0.5
     }
    }
   },
@@ -1901,9 +1901,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0555,
+    "p": 0.0558,
     "low": 0,
-    "high": 0.1555,
+    "high": 0.1557,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -2001,9 +2001,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1813,
-    "low": 0.1213,
-    "high": 0.2413,
+    "p": 0.1807,
+    "low": 0.1207,
+    "high": 0.2407,
     "confidence": "medium",
     "method": "table_sim",
     "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
@@ -2149,9 +2149,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5515,
-    "low": 0.4515,
-    "high": 0.6515,
+    "p": 0.5502,
+    "low": 0.4502,
+    "high": 0.6502,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2173,7 +2173,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.7%",
+      "value": "9.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2188,7 +2188,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "26.8%",
+      "value": "27.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2233,9 +2233,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4379,
-    "low": 0.3379,
-    "high": 0.5379,
+    "p": 0.4446,
+    "low": 0.3446,
+    "high": 0.5445,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2292,9 +2292,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2712,
-    "low": 0.1712,
-    "high": 0.3712,
+    "p": 0.2687,
+    "low": 0.1687,
+    "high": 0.3688,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -2350,9 +2350,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1507,
-    "low": 0.0507,
-    "high": 0.2507,
+    "p": 0.1533,
+    "low": 0.0533,
+    "high": 0.2533,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -3283,13 +3283,13 @@
   {
    "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
    "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
-   "fair": 0.0048,
+   "fair": 0.0043,
    "confidence": "medium",
    "side": "NO",
-   "ev": 5.353,
-   "ev_low": 4.753,
+   "ev": 5.358,
+   "ev_low": 4.758,
    "ev_high": 5.401,
-   "roi": 1.1639,
+   "roi": 1.165,
    "buy_price": 0.45,
    "fillable": 4.599,
    "shares": 10.0
