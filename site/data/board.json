@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T21:30:21Z",
+ "generated_at": "2026-10-30T21:40:26Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -272,72 +272,6 @@
      ],
      "asks": [],
      "last": 0.5
-    }
-   }
-  },
-  {
-   "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
-   "title": "Will Michael Carrick still be Manchester United manager on 31 October 2026?",
-   "url": "https://beta.xo.market/event/will-michael-carrick-still-be-manchester-united-ma-9611?r=cryptotan01",
-   "creator": "aaditpatadia",
-   "is_ours": false,
-   "xo_price": 0.25,
-   "best_bid": null,
-   "best_ask": 0.25,
-   "liquidity_usd": 0.0,
-   "volume_usd": 44.99,
-   "expires_at": "2026-10-31T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.953,
-    "low": 0.853,
-    "high": 1,
-    "confidence": "low",
-    "method": "polymarket",
-    "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
-    "inputs": [
-     {
-      "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "4.7% (spread 5c, $10,157 traded on this market)",
-      "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 70,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "United's next run could be decisive. I think Carrick faces too much pressure to make it through October.",
-   "description": "This market resolves based on whether Michael Carrick is officially the Manchester United men's first-team manager or head coach at 23:59:59 UTC on 31 October 2026. Official Manchester United or Premier League confirmation will be used for resolution. If Carrick has been officially removed, replaced, resigned, or otherwise ceased to hold that role before the resolution time, the market resolves NO. If he remains officially in the role at the resolution time, including in an interim or caretaker capacity, the market resolves YES.",
-   "resolution_sources": [
-    "https://www.manutd.com/en/man-utd-head-coach-and-staff/michael-carrick",
-    "https://www.theguardian.com",
-    "https://www.skysports.com",
-    "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.25,
-       "size": 0.01
-      }
-     ],
-     "last": 0.25
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.75,
-       "size": 0.01
-      }
-     ],
-     "asks": [],
-     "last": 0.75
     }
    }
   },
@@ -1094,9 +1028,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.3608,
-    "low": 0.2608,
-    "high": 0.4608,
+    "p": 0.3594,
+    "low": 0.2594,
+    "high": 0.4595,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -1286,9 +1220,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5427,
-    "low": 0.4427,
-    "high": 0.6427,
+    "p": 0.535,
+    "low": 0.435,
+    "high": 0.635,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1310,12 +1244,12 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.3%",
+      "value": "8.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.2%",
+      "value": "7.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1325,14 +1259,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "26.6%",
+      "value": "27.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 21,
+   "gap_pts": 20,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1901,9 +1835,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0532,
+    "p": 0.0561,
     "low": 0,
-    "high": 0.1532,
+    "high": 0.1561,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
@@ -1922,7 +1856,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -50,
+   "gap_pts": -49,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -1942,6 +1876,72 @@
      "bids": [],
      "asks": [],
      "last": null
+    }
+   }
+  },
+  {
+   "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
+   "title": "Will Michael Carrick still be Manchester United manager on 31 October 2026?",
+   "url": "https://beta.xo.market/event/will-michael-carrick-still-be-manchester-united-ma-9611?r=cryptotan01",
+   "creator": "aaditpatadia",
+   "is_ours": false,
+   "xo_price": 0.25,
+   "best_bid": null,
+   "best_ask": 0.25,
+   "liquidity_usd": 0.0,
+   "volume_usd": 45.0,
+   "expires_at": "2026-10-31T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.95,
+    "low": 0.85,
+    "high": 1,
+    "confidence": "low",
+    "method": "polymarket",
+    "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
+    "inputs": [
+     {
+      "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
+      "value": "5.0% (spread 4c, $10,157 traded on this market)",
+      "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": 70,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "United's next run could be decisive. I think Carrick faces too much pressure to make it through October.",
+   "description": "This market resolves based on whether Michael Carrick is officially the Manchester United men's first-team manager or head coach at 23:59:59 UTC on 31 October 2026. Official Manchester United or Premier League confirmation will be used for resolution. If Carrick has been officially removed, replaced, resigned, or otherwise ceased to hold that role before the resolution time, the market resolves NO. If he remains officially in the role at the resolution time, including in an interim or caretaker capacity, the market resolves YES.",
+   "resolution_sources": [
+    "https://www.manutd.com/en/man-utd-head-coach-and-staff/michael-carrick",
+    "https://www.theguardian.com",
+    "https://www.skysports.com",
+    "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.25,
+       "size": 0.01
+      }
+     ],
+     "last": 0.25
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.75,
+       "size": 0.01
+      }
+     ],
+     "asks": [],
+     "last": 0.75
     }
    }
   },
@@ -2149,9 +2149,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5544,
-    "low": 0.4544,
-    "high": 0.6544,
+    "p": 0.5464,
+    "low": 0.4464,
+    "high": 0.6464,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -2173,12 +2173,12 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.3%",
+      "value": "8.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.2%",
+      "value": "7.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2188,7 +2188,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "26.6%",
+      "value": "27.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -2233,9 +2233,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4395,
-    "low": 0.3396,
-    "high": 0.5395,
+    "p": 0.4442,
+    "low": 0.3442,
+    "high": 0.5443,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2292,9 +2292,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2647,
-    "low": 0.1647,
-    "high": 0.3647,
+    "p": 0.2732,
+    "low": 0.1732,
+    "high": 0.3732,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES.",
@@ -2313,7 +2313,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -21,
+   "gap_pts": -20,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2350,9 +2350,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1524,
+    "p": 0.1525,
     "low": 0.0524,
-    "high": 0.2524,
+    "high": 0.2525,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
