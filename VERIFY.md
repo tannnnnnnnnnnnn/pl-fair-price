@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-10-31T15:44:47Z)
+# VERIFY — PL Fair Price (2026-10-31T15:45:56Z)
 
 GW10 deadline 2026-11-06T18:30:00Z. 43 XO PL markets; 18 priced (high 2, medium 3, low 13).
 
@@ -6,8 +6,8 @@ GW10 deadline 2026-11-06T18:30:00Z. 43 XO PL markets; 18 priced (high 2, medium 
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| TOT-CRY | 9 | 58.5/23.5/18.5 | 58.2/23.4/18.4 | 58.2/23.4/18.4 | 58.2/23.4/18.4 | 58.2/23.4/18.4 | 1.82-0.92 | $152,389 |
-| AVL-FUL | 9 | 45.5/27.5/27.5 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 1.42-1.05 | $284,143 |
+| TOT-CRY | 9 | 58.5/23.5/18.5 | 58.2/23.4/18.4 | 58.2/23.4/18.4 | 58.2/23.4/18.4 | 58.2/23.4/18.4 | 1.82-0.92 | $152,011 |
+| AVL-FUL | 9 | 45.5/27.5/27.5 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 45.3/27.4/27.4 | 1.42-1.05 | $284,178 |
 | LIV-ARS | 9 | 33.5/28.5/39.5 | 33.0/28.1/38.9 | 32.7/28.6/38.7 | 32.8/28.4/38.8 | 32.8/28.4/38.8 | 1.14-1.26 | $71,122 |
 | NEW-EVE | 9 | 40.5/27.5/32.5 | 40.3/27.4/32.3 | 39.7/27.6/32.7 | 40.0/27.5/32.5 | 40.0/27.5/32.5 | 1.34-1.18 | $10,484 |
 | EVE-COV | 10 | 56.0/23.0/20.5 | 56.3/23.1/20.6 | 56.8/23.6/19.6 | 56.5/23.4/20.1 | 56.5/23.4/20.1 | 1.84-1.00 | $1,651 |
@@ -63,20 +63,20 @@ Team-ratings refit error on the priced matches: mean |Δlog λ| 0.160, max 0.503
 
 ## Captain inputs (Haaland)
 
-qg 0.386, qa 0.048, plays 0.95; xG 6.23, xA 0.77, 748 min, 9/8 starts.
+qg 0.385, qa 0.047, plays 0.95; xG 6.33, xA 0.77, 753 min, 9/8 starts.
 
 ## Markets
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 56.4 | 11 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 56.5 | 12 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 15.5 | -32 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
+| low | 47 | 15.4 | -32 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
 | medium | 22 | 8.6 | -13 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
 | low | 33 | 50.7 | 18 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 15.7 | -34 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 2 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 65.0 | 19 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 55 | 0.9 | -54 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
+| low | 55 | 0.7 | -54 | player_model | Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6–9? | Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO. |
 | low | 60 | 0.1 | -60 | match_model | Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9? | Coventry score the fewest (or joint-fewest) league goals across MW6-9. |
 | low | 50 | 23.6 | -26 | player_model | Will Haaland have more Premier League goals than Tottenham by November 1? | Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 8). Strictly more counts as YES. |
 | high | 50 | 61.1 | 11 | match_model | Will Liverpool earn at least 7 points in their next 4 Premier League matches? | Liverpool take 7+ points from their next 4 league matches. (4 fixtures) |
