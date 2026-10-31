@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T19:40:38Z",
+ "generated_at": "2026-10-31T22:49:41Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -345,69 +345,6 @@
    }
   },
   {
-   "slug": "will-any-premier-league-club-keep-a-clean-sheet-in-9459",
-   "title": "Will any Premier League club keep a clean sheet in all four October gameweeks?",
-   "url": "https://beta.xo.market/event/will-any-premier-league-club-keep-a-clean-sheet-in-9459?r=cryptotan01",
-   "creator": "YoussefKhezami7",
-   "is_ours": false,
-   "xo_price": 0.1,
-   "best_bid": 0.1,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-03T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.001,
-    "low": 0,
-    "high": 0.031,
-    "confidence": "high",
-    "method": "match_model",
-    "method_text": "Chance at least one club keeps a clean sheet in every one of GW6-9.",
-    "inputs": [
-     {
-      "label": "October gameweeks",
-      "value": "6, 7, 8, 9",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -10,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Will any Premier League club keep a clean sheet in all four October gameweeks?",
-   "description": "This market resolves based on whether any single Premier League club keeps a clean sheet in all four October 2026 gameweeks. A clean sheet means the club concedes zero goals in that Premier League match, as recorded in the official full-time result. Own goals conceded count against a clean sheet. Goals in domestic cups or European competitions do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the competition is cancelled or abandoned before the October fixtures are completed, or official match data for those fixtures is permanently unavailable, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.1,
-       "size": 100.0
-      }
-     ],
-     "asks": [],
-     "last": 0.1
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.9,
-       "size": 100.0
-      }
-     ],
-     "last": 0.9
-    }
-   }
-  },
-  {
    "slug": "will-brentford-announce-a-new-contract-for-kevin-s-1810",
    "title": "Will Brentford announce a new contract for Kevin Schade by November 5, 2026?",
    "url": "https://beta.xo.market/event/will-brentford-announce-a-new-contract-for-kevin-s-1810?r=cryptotan01",
@@ -453,6 +390,56 @@
      ],
      "asks": [],
      "last": 0.5
+    }
+   }
+  },
+  {
+   "slug": "will-a-premier-league-coach-be-sacked-before-novem-4400",
+   "title": "Will a Premier League coach be sacked before November 1, 2026?",
+   "url": "https://beta.xo.market/event/will-a-premier-league-coach-be-sacked-before-novem-4400?r=cryptotan01",
+   "creator": "YoussefKhezami7",
+   "is_ours": false,
+   "xo_price": 0.35,
+   "best_bid": 0.35,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-11-01T00:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "No Polymarket market prices this manager's job by this date.",
+   "lock_at": "2026-10-31T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "weekend",
+   "taker_fee_bps": 400,
+   "pitch": "Will a Premier League coach be sacked before November 1, 2026?",
+   "description": "This market resolves based on whether An official English Premier League manager is dismissed from their position before November 1, 2026, 00:00:00 UTC. Temporary leave of absence due to health or personal reasons without permanent dismissal does not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Squawka (https://www. squawka. com). The primary source governs. If the named record is retracted or the event or season is cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.squawka.com",
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.35,
+       "size": 28.571428
+      }
+     ],
+     "asks": [],
+     "last": 0.35
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.65,
+       "size": 28.571428
+      }
+     ],
+     "last": 0.65
     }
    }
   },
@@ -746,9 +733,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6127,
-    "low": 0.5827,
-    "high": 0.6427,
+    "p": 0.6105,
+    "low": 0.5805,
+    "high": 0.6405,
     "confidence": "high",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -796,56 +783,6 @@
    }
   },
   {
-   "slug": "will-a-premier-league-coach-be-sacked-before-novem-4400",
-   "title": "Will a Premier League coach be sacked before November 1, 2026?",
-   "url": "https://beta.xo.market/event/will-a-premier-league-coach-be-sacked-before-novem-4400?r=cryptotan01",
-   "creator": "YoussefKhezami7",
-   "is_ours": false,
-   "xo_price": 0.35,
-   "best_bid": 0.35,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-01T00:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "No Polymarket market prices this manager's job by this date.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Will a Premier League coach be sacked before November 1, 2026?",
-   "description": "This market resolves based on whether An official English Premier League manager is dismissed from their position before November 1, 2026, 00:00:00 UTC. Temporary leave of absence due to health or personal reasons without permanent dismissal does not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Squawka (https://www. squawka. com). The primary source governs. If the named record is retracted or the event or season is cancelled, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.squawka.com",
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.35,
-       "size": 28.571428
-      }
-     ],
-     "asks": [],
-     "last": 0.35
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.65,
-       "size": 28.571428
-      }
-     ],
-     "last": 0.65
-    }
-   }
-  },
-  {
    "slug": "will-haaland-have-more-premier-league-goals-than-t-7197",
    "title": "Will Haaland have more Premier League goals than Tottenham by November 1?",
    "url": "https://beta.xo.market/event/will-haaland-have-more-premier-league-goals-than-t-7197?r=cryptotan01",
@@ -868,8 +805,8 @@
     "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Haaland: xG 6.65, xA 0.93 in 799 min, 9/9 starts",
-      "value": "39% of team goals, plays 95% next match",
+      "label": "Haaland: xG 6.56, xA 0.85 in 799 min, 9/9 starts",
+      "value": "40% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -987,7 +924,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "64.5% (spread 1c, $1,273,292 traded on this market)",
+      "value": "64.5% (spread 1c, $1,273,501 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -1052,21 +989,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5027,
-    "low": 0.4027,
-    "high": 0.6027,
+    "p": 0.5232,
+    "low": 0.4232,
+    "high": 0.6232,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "25.0%",
+      "value": "23.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "0.9%",
+      "value": "1.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1076,17 +1013,17 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "7.0%",
+      "value": "10.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.2%",
+      "value": "8.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "44.0%",
+      "value": "45.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1098,7 +1035,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 17,
+   "gap_pts": 19,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1212,8 +1149,8 @@
     "method_text": "Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO.",
     "inputs": [
      {
-      "label": "Haaland: xG 6.65, xA 0.93 in 799 min, 9/9 starts",
-      "value": "39% of team goals, plays 95% next match",
+      "label": "Haaland: xG 6.56, xA 0.85 in 799 min, 9/9 starts",
+      "value": "40% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -1719,7 +1656,7 @@
     "method_text": "Chance Cherki has strictly more goals + assists than Wirtz in GW6-9. A tie counts as NO.",
     "inputs": [
      {
-      "label": "Cherki: xG 1.76, xA 1.84 in 472 min, 6/9 starts",
+      "label": "Cherki: xG 1.76, xA 1.81 in 472 min, 6/9 starts",
       "value": "8% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
@@ -1770,23 +1707,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.856,
-    "low": 0.756,
-    "high": 0.956,
-    "confidence": "low",
+    "p": 0.9965,
+    "low": 0.9365,
+    "high": 1,
+    "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
     "inputs": [
      {
       "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "14.4% (spread 19c, $13,514 traded on this market)",
+      "value": "0.4% (spread 0c, $13,974 traded on this market)",
       "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 61,
+   "gap_pts": 75,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -2015,21 +1952,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5436,
-    "low": 0.4436,
-    "high": 0.6436,
+    "p": 0.5657,
+    "low": 0.4657,
+    "high": 0.6657,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "25.0%",
+      "value": "23.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "0.9%",
+      "value": "1.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2039,17 +1976,17 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "7.0%",
+      "value": "10.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.2%",
+      "value": "8.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "44.0%",
+      "value": "45.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -2061,7 +1998,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 49,
+   "gap_pts": 52,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2099,9 +2036,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5886,
-    "low": 0.4886,
-    "high": 0.6886,
+    "p": 0.5903,
+    "low": 0.4903,
+    "high": 0.6903,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2158,16 +2095,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0974,
+    "p": 0.099,
     "low": 0,
-    "high": 0.1974,
+    "high": 0.1991,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
     "inputs": [
      {
-      "label": "Haaland: xG 6.65, xA 0.93 in 799 min, 9/9 starts",
-      "value": "39% of team goals, plays 95% next match",
+      "label": "Haaland: xG 6.56, xA 0.85 in 799 min, 9/9 starts",
+      "value": "40% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -2216,9 +2153,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0591,
+    "p": 0.0586,
     "low": 0,
-    "high": 0.1591,
+    "high": 0.1586,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -2270,9 +2207,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1915,
-    "low": 0.0915,
-    "high": 0.2915,
+    "p": 0.1887,
+    "low": 0.0887,
+    "high": 0.2887,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
@@ -2284,7 +2221,7 @@
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "34.5%",
+      "value": "34.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
@@ -2355,6 +2292,34 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "will-any-premier-league-club-keep-a-clean-sheet-in-9459",
+   "title": "Will any Premier League club keep a clean sheet in all four October gameweeks?",
+   "url": "https://beta.xo.market/event/will-any-premier-league-club-keep-a-clean-sheet-in-9459?r=cryptotan01",
+   "creator": "YoussefKhezami7",
+   "is_ours": false,
+   "outcome": "NO",
+   "xo_close": 0.1,
+   "fair_close": 0.001,
+   "confidence": "high",
+   "resolved_at": "2026-10-31T22:25:22.000Z",
+   "picks": [
+    {
+     "slug": "will-any-premier-league-club-keep-a-clean-sheet-in-9459",
+     "side": "NO",
+     "flagged_at": "2026-10-25T23:06:43Z",
+     "buy_price": 0.9,
+     "shares": 11.0668,
+     "cost": 10.0,
+     "fair": 0.001,
+     "ev": 1.0558,
+     "confidence": "medium",
+     "won": true,
+     "payout": 11.07,
+     "pnl": 1.07
+    }
+   ]
+  },
   {
    "slug": "will-tottenham-finish-october-above-manchester-uni-1701",
    "title": "Will Tottenham finish October above Manchester United in the Premier League table?",
@@ -3155,19 +3120,19 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 59,
-  "compared": 26,
-  "fair_closer": 16,
-  "brier_fair": 0.1776,
-  "brier_xo": 0.2249
+  "resolved": 60,
+  "compared": 27,
+  "fair_closer": 17,
+  "brier_fair": 0.1711,
+  "brier_xo": 0.217
  },
  "pick_summary": {
-  "settled": 6,
-  "won": 2,
-  "staked": 47.34,
-  "returned": 18.1,
-  "pnl": -29.24,
-  "open": 7
+  "settled": 7,
+  "won": 3,
+  "staked": 57.34,
+  "returned": 29.17,
+  "pnl": -28.17,
+  "open": 6
  },
  "best_value": [],
  "live": []
