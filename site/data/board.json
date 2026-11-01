@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T10:28:32Z",
+ "generated_at": "2026-11-01T10:38:33Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -396,74 +396,6 @@
    }
   },
   {
-   "slug": "will-haaland-have-more-premier-league-goals-than-t-7197",
-   "title": "Will Haaland have more Premier League goals than Tottenham by November 1?",
-   "url": "https://beta.xo.market/event/will-haaland-have-more-premier-league-goals-than-t-7197?r=cryptotan01",
-   "creator": "YoussefKhezami7",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-01T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.001,
-    "low": 0,
-    "high": 0.101,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
-    "inputs": [
-     {
-      "label": "Haaland: xG 6.56, xA 0.85 in 799 min, 9/9 starts",
-      "value": "40% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Spurs goals so far",
-      "value": "10",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -50,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Haaland is already outscoring Tottenham by himself 5 to 2, so why stop now?",
-   "description": "This market resolves based on whether Erling Haaland scores more total Premier League goals than Tottenham Hotspur as a team by November 1, 2026, as measured by official Premier League match statistics. Goals scored in competitions outside of the English Premier League do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The Premier League season is cancelled or permanently abandoned before November 1, 2026, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
    "slug": "will-michael-carrick-be-out-as-manchester-united-m-4699",
    "title": "Will Michael Carrick be out as Manchester United manager by December 31, 2026?",
    "url": "https://beta.xo.market/event/will-michael-carrick-be-out-as-manchester-united-m-4699?r=cryptotan01",
@@ -653,9 +585,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6241,
-    "low": 0.5941,
-    "high": 0.6541,
+    "p": 0.6238,
+    "low": 0.5938,
+    "high": 0.6538,
     "confidence": "high",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -841,16 +773,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5008,
-    "low": 0.4008,
-    "high": 0.6008,
+    "p": 0.5036,
+    "low": 0.4036,
+    "high": 0.6036,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "24.5%",
+      "value": "24.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -865,7 +797,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "7.3%",
+      "value": "7.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -880,7 +812,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.3%",
+      "value": "27.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1474,16 +1406,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.285,
-    "low": 0.185,
-    "high": 0.385,
+    "p": 0.28,
+    "low": 0.18,
+    "high": 0.38,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "28.5% (spread 13c, $4,006 traded on this market)",
+      "value": "28.0% (spread 14c, $4,006 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
@@ -1528,16 +1460,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.54,
-    "low": 0.44,
-    "high": 0.64,
+    "p": 0.5429,
+    "low": 0.4429,
+    "high": 0.6429,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "24.5%",
+      "value": "24.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1552,7 +1484,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "7.3%",
+      "value": "7.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1567,7 +1499,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.3%",
+      "value": "27.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1612,9 +1544,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5909,
-    "low": 0.4909,
-    "high": 0.6909,
+    "p": 0.5864,
+    "low": 0.4864,
+    "high": 0.6864,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1671,9 +1603,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1005,
-    "low": 0.0005,
-    "high": 0.2005,
+    "p": 0.106,
+    "low": 0.006,
+    "high": 0.206,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1692,7 +1624,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -37,
+   "gap_pts": -36,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1729,9 +1661,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0597,
+    "p": 0.0591,
     "low": 0,
-    "high": 0.1597,
+    "high": 0.1591,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
