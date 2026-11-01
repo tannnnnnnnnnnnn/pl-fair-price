@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T10:18:27Z",
+ "generated_at": "2026-11-01T10:28:32Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -530,7 +530,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 43%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 42%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -841,9 +841,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5017,
-    "low": 0.4017,
-    "high": 0.6017,
+    "p": 0.5008,
+    "low": 0.4008,
+    "high": 0.6008,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -855,7 +855,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -865,7 +865,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "7.8%",
+      "value": "7.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1528,9 +1528,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.541,
-    "low": 0.441,
-    "high": 0.641,
+    "p": 0.54,
+    "low": 0.44,
+    "high": 0.64,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1542,7 +1542,7 @@
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1552,7 +1552,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "7.8%",
+      "value": "7.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1612,9 +1612,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5903,
-    "low": 0.4903,
-    "high": 0.6903,
+    "p": 0.5909,
+    "low": 0.4909,
+    "high": 0.6909,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1671,9 +1671,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1006,
-    "low": 0.0006,
-    "high": 0.2006,
+    "p": 0.1005,
+    "low": 0.0005,
+    "high": 0.2005,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1729,9 +1729,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0598,
+    "p": 0.0597,
     "low": 0,
-    "high": 0.1598,
+    "high": 0.1597,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -1828,6 +1828,18 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "will-szoboszlai-score-a-direct-free-kick-before-no-3635",
+   "title": "Will Szoboszlai score a direct free kick before November 2026?",
+   "url": "https://beta.xo.market/event/will-szoboszlai-score-a-direct-free-kick-before-no-3635?r=cryptotan01",
+   "creator": "shreyash108",
+   "is_ours": false,
+   "outcome": "NO",
+   "xo_close": 0.25,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-01T10:22:36.000Z"
+  },
   {
    "slug": "will-carrick-or-de-zerbi-be-sacked-by-oct-31-2026-4607",
    "title": "Will Carrick or De Zerbi be sacked by Oct 31, 2026?",
@@ -2732,7 +2744,7 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 65,
+  "resolved": 66,
   "compared": 28,
   "fair_closer": 18,
   "brier_fair": 0.1654,
