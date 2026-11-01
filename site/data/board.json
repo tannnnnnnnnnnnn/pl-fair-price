@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T19:01:05Z",
+ "generated_at": "2026-11-01T19:10:54Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -346,9 +346,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4966,
-    "low": 0.3966,
-    "high": 0.5966,
+    "p": 0.5095,
+    "low": 0.4095,
+    "high": 0.6095,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -380,7 +380,7 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "42.0%",
+      "value": "45.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -392,7 +392,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 17,
+   "gap_pts": 18,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -674,7 +674,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "71.0% (spread 2c, $1,284,347 traded on this market)",
+      "value": "71.0% (spread 2c, $1,284,429 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -1233,9 +1233,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5365,
-    "low": 0.4365,
-    "high": 0.6365,
+    "p": 0.5485,
+    "low": 0.4485,
+    "high": 0.6485,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1267,7 +1267,7 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "42.0%",
+      "value": "45.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1279,7 +1279,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 49,
+   "gap_pts": 50,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1317,8 +1317,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4464,
-    "low": 0.3464,
+    "p": 0.4465,
+    "low": 0.3465,
     "high": 0.5464,
     "confidence": "low",
     "method": "player_model",
@@ -1376,9 +1376,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1008,
-    "low": 0.0008,
-    "high": 0.2008,
+    "p": 0.1038,
+    "low": 0.0038,
+    "high": 0.2038,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1434,9 +1434,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0588,
+    "p": 0.0591,
     "low": 0,
-    "high": 0.1588,
+    "high": 0.1591,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -1488,16 +1488,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.161,
-    "low": 0.061,
-    "high": 0.261,
+    "p": 0.1628,
+    "low": 0.0628,
+    "high": 0.2628,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "46.0%",
+      "value": "46.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
