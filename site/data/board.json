@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T18:20:31Z",
+ "generated_at": "2026-11-01T18:30:40Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -226,16 +226,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.077,
-    "low": 0.017,
-    "high": 0.137,
+    "p": 0.0775,
+    "low": 0.0175,
+    "high": 0.1375,
     "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Manchester City punishment announced by November 6?\"",
     "inputs": [
      {
       "label": "Manchester City punishment announced by November 6?",
-      "value": "7.7% (spread 1c, $4,312 traded on this market)",
+      "value": "7.8% (spread 1c, $4,312 traded on this market)",
       "source_url": "https://polymarket.com/event/manchester-city-punishment-announced-by"
      }
     ]
@@ -492,7 +492,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 39%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 23%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -615,10 +615,10 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0172,
+    "p": 0.001,
     "low": 0,
-    "high": 0.1172,
-    "confidence": "low",
+    "high": 0.031,
+    "confidence": "high",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
     "inputs": [
@@ -631,7 +631,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -48,
+   "gap_pts": -50,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -729,23 +729,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.68,
-    "low": 0.65,
-    "high": 0.71,
+    "p": 0.695,
+    "low": 0.665,
+    "high": 0.725,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "68.0% (spread 2c, $1,280,959 traded on this market)",
+      "value": "69.5% (spread 1c, $1,281,671 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 22,
+   "gap_pts": 23,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -967,14 +967,8 @@
    "liquidity_usd": 10.0,
    "volume_usd": 0,
    "expires_at": "2026-11-01T19:00:00.000Z",
-   "group": "fixture",
-   "fixture": {
-    "home": "LIV",
-    "away": "ARS",
-    "home_name": "Liverpool",
-    "away_name": "Arsenal",
-    "kickoff_utc": "2026-11-01T16:30:00Z"
-   },
+   "group": "season",
+   "fixture": null,
    "fair": null,
    "fair_reason": "Fair price coming: not modelled yet.",
    "lock_at": "2026-10-31T12:30:00Z",
@@ -1111,8 +1105,8 @@
    "fair": {
     "p": 0.001,
     "low": 0,
-    "high": 0.101,
-    "confidence": "low",
+    "high": 0.031,
+    "confidence": "high",
     "method": "match_model",
     "method_text": "Coventry score the fewest (or joint-fewest) league goals across MW6-9.",
     "inputs": [
@@ -1215,8 +1209,8 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Wirtz: xG 1.52, xA 1.09 in 701 min, 9/8 starts",
-      "value": "15% of team goals, plays 95% next match",
+      "label": "Wirtz: xG 1.52, xA 1.09 in 701 min, 9/9 starts",
+      "value": "14% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
     ]
@@ -1439,16 +1433,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5518,
-    "low": 0.4518,
-    "high": 0.6518,
+    "p": 0.4444,
+    "low": 0.3444,
+    "high": 0.5444,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
     "inputs": [
      {
-      "label": "Isak: xG 4.37, xA 0.14 in 652 min, 8/8 starts",
-      "value": "29% of team goals, plays 95% next match",
+      "label": "Isak: xG 4.37, xA 0.26 in 657 min, 8/9 starts",
+      "value": "28% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -1460,7 +1454,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 10,
+   "gap_pts": -1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1498,9 +1492,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.105,
-    "low": 0.0049,
-    "high": 0.205,
+    "p": 0.1026,
+    "low": 0.0025,
+    "high": 0.2026,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1519,7 +1513,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -36,
+   "gap_pts": -37,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1556,9 +1550,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0588,
+    "p": 0.0587,
     "low": 0,
-    "high": 0.1588,
+    "high": 0.1587,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -1610,16 +1604,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.161,
-    "low": 0.061,
-    "high": 0.261,
+    "p": 0.1628,
+    "low": 0.0628,
+    "high": 0.2628,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "46.0%",
+      "value": "46.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -2634,7 +2628,5 @@
   "open": 5
  },
  "best_value": [],
- "live": [
-  "LIV-ARS"
- ]
+ "live": []
 }
