@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T01:46:39Z",
+ "generated_at": "2026-11-01T08:34:49Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -59,17 +59,17 @@
    }
   },
   {
-   "slug": "will-brighton-be-in-the-top-4-after-mw9-3814",
-   "title": "Will Brighton be in the top 4 after MW9?",
-   "url": "https://beta.xo.market/event/will-brighton-be-in-the-top-4-after-mw9-3814?r=cryptotan01",
+   "slug": "will-manchester-city-be-mentioned-at-prime-ministe-6301",
+   "title": "Will Manchester City be mentioned at Prime Minister's Questions before Nov 5?",
+   "url": "https://beta.xo.market/event/will-manchester-city-be-mentioned-at-prime-ministe-6301?r=cryptotan01",
    "creator": "OmarABKH89",
    "is_ours": false,
-   "xo_price": 0.35,
-   "best_bid": 0.35,
-   "best_ask": null,
-   "liquidity_usd": 8.75,
-   "volume_usd": 51.65,
-   "expires_at": "2026-11-02T23:59:59.000Z",
+   "xo_price": 0.55,
+   "best_bid": null,
+   "best_ask": 0.55,
+   "liquidity_usd": 12.22,
+   "volume_usd": 18.18,
+   "expires_at": "2026-11-05T13:00:00.000Z",
    "group": "season",
    "fixture": null,
    "fair": null,
@@ -77,33 +77,35 @@
    "lock_at": "2026-10-31T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "weekend",
+   "horizon": "long",
    "taker_fee_bps": 400,
-   "pitch": "Most goals in the PL vs. two big away days at Anfield and the Etihad. I think Brighton will keep flying high",
-   "description": "This market resolves based on whether Brighton & Hove Albion FC is positioned in the top 4 positions of the English Premier League table upon the conclusion of Matchweek 9 of the 2026/27 season. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season is cancelled or permanently abandoned before Matchweek 9 concludes, the market voids and all positions resolve equally.",
+   "pitch": "First PMQs since City's guilty verdict and the PM's own row. Badenoch wants answers. 4 shots, 1 mention needed.",
+   "description": "This market resolves Yes only if the exact letter sequence 'Manchester City' is recorded in the official Hansard transcript of a Prime Minister's Questions session, and that transcript is published before November 5, 2026 at 13:00 UTC. The sequence must appear letter for letter. Any wording that contains 'Manchester City' counts, including 'Manchester City FC' and 'Manchester City Council'. 'Man City', 'the city of Manchester', and any other wording that does not contain that exact sequence do not count. Resolution is based only on the transcript of the Prime Minister's Questions session itself (the Engagements / Prime Minister\u2019s Questions block). Mentions outside that session do not count. Written ministerial statements or questions submitted in writing do not count. Video, subtitles, and other sources do not count. Primary source: Hansard UK (https://hansard. parliament. uk). If the primary source is unavailable, incomplete, or inconsistent at the time of resolution, resolution falls back to the official PMQs transcript on UK Parliament (https://www. parliament. uk). The primary source governs. Video alone does not resolve the market. Resolution is based on the transcript as published before the deadline, including the provisional ('rolling') version if that is the version published before November 5, 2026 at 13:00 UTC. Anything published after that time does not count: a sequence added after the deadline does not resolve the market Yes, and deletion after the deadline of a sequence already published before the deadline does not reverse a Yes. If no published PMQs transcript contains the exact sequence before the deadline, the market resolves No. If the scheduled PMQs sessions are permanently cancelled without taking place, or the official record is permanently retracted before the deadline so that no transcript is published, the market voids and all positions resolve equally.",
    "resolution_sources": [
-    "https://www.premierleague.com"
+    "https://www.parliament.uk",
+    "https://hansard.parliament.uk",
+    "https://parliament.uk"
    ],
    "books": {
     "yes": {
-     "bids": [
-      {
-       "price": 0.35,
-       "size": 25.0
-      }
-     ],
-     "asks": [],
-     "last": 0.35
-    },
-    "no": {
      "bids": [],
      "asks": [
       {
-       "price": 0.65,
-       "size": 25.0
+       "price": 0.55,
+       "size": 22.220404
       }
      ],
-     "last": 0.65
+     "last": 0.55
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.45,
+       "size": 22.220404
+      }
+     ],
+     "asks": [],
+     "last": 0.45
     }
    }
   },
@@ -288,16 +290,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.085,
-    "low": 0.025,
-    "high": 0.145,
+    "p": 0.077,
+    "low": 0.017,
+    "high": 0.137,
     "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Manchester City punishment announced by November 6?\"",
     "inputs": [
      {
       "label": "Manchester City punishment announced by November 6?",
-      "value": "8.5% (spread 1c, $4,312 traded on this market)",
+      "value": "7.7% (spread 1c, $4,312 traded on this market)",
       "source_url": "https://polymarket.com/event/manchester-city-punishment-announced-by"
      }
     ]
@@ -637,57 +639,6 @@
    }
   },
   {
-   "slug": "will-manchester-city-be-mentioned-at-prime-ministe-6301",
-   "title": "Will Manchester City be mentioned at Prime Minister's Questions before Nov 5?",
-   "url": "https://beta.xo.market/event/will-manchester-city-be-mentioned-at-prime-ministe-6301?r=cryptotan01",
-   "creator": "OmarABKH89",
-   "is_ours": false,
-   "xo_price": 0.55,
-   "best_bid": null,
-   "best_ask": 0.55,
-   "liquidity_usd": 12.22,
-   "volume_usd": 18.18,
-   "expires_at": "2026-11-05T13:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "First PMQs since City's guilty verdict and the PM's own row. Badenoch wants answers. 4 shots, 1 mention needed.",
-   "description": "This market resolves Yes only if the exact letter sequence 'Manchester City' is recorded in the official Hansard transcript of a Prime Minister's Questions session, and that transcript is published before November 5, 2026 at 13:00 UTC. The sequence must appear letter for letter. Any wording that contains 'Manchester City' counts, including 'Manchester City FC' and 'Manchester City Council'. 'Man City', 'the city of Manchester', and any other wording that does not contain that exact sequence do not count. Resolution is based only on the transcript of the Prime Minister's Questions session itself (the Engagements / Prime Minister\u2019s Questions block). Mentions outside that session do not count. Written ministerial statements or questions submitted in writing do not count. Video, subtitles, and other sources do not count. Primary source: Hansard UK (https://hansard. parliament. uk). If the primary source is unavailable, incomplete, or inconsistent at the time of resolution, resolution falls back to the official PMQs transcript on UK Parliament (https://www. parliament. uk). The primary source governs. Video alone does not resolve the market. Resolution is based on the transcript as published before the deadline, including the provisional ('rolling') version if that is the version published before November 5, 2026 at 13:00 UTC. Anything published after that time does not count: a sequence added after the deadline does not resolve the market Yes, and deletion after the deadline of a sequence already published before the deadline does not reverse a Yes. If no published PMQs transcript contains the exact sequence before the deadline, the market resolves No. If the scheduled PMQs sessions are permanently cancelled without taking place, or the official record is permanently retracted before the deadline so that no transcript is published, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.parliament.uk",
-    "https://hansard.parliament.uk",
-    "https://parliament.uk"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.55,
-       "size": 22.220404
-      }
-     ],
-     "last": 0.55
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.45,
-       "size": 22.220404
-      }
-     ],
-     "asks": [],
-     "last": 0.45
-    }
-   }
-  },
-  {
    "slug": "will-liverpool-earn-at-least-7-points-in-their-nex-3876",
    "title": "Will Liverpool earn at least 7 points in their next 4 Premier League matches?",
    "url": "https://beta.xo.market/event/will-liverpool-earn-at-least-7-points-in-their-nex-3876?r=cryptotan01",
@@ -702,9 +653,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6109,
-    "low": 0.5809,
-    "high": 0.641,
+    "p": 0.6224,
+    "low": 0.5924,
+    "high": 0.6524,
     "confidence": "high",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -718,7 +669,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 11,
+   "gap_pts": 12,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -825,7 +776,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "64.5% (spread 1c, $1,274,898 traded on this market)",
+      "value": "64.5% (spread 1c, $1,275,074 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -890,9 +841,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5203,
-    "low": 0.4203,
-    "high": 0.6203,
+    "p": 0.5053,
+    "low": 0.4053,
+    "high": 0.6053,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -909,34 +860,34 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "4.0%",
+      "value": "3.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.2%",
+      "value": "8.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.3%",
+      "value": "8.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "45.5%",
+      "value": "42.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.0%",
+      "value": "27.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 19,
+   "gap_pts": 18,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1333,8 +1284,8 @@
    "fair": {
     "p": 0.001,
     "low": 0,
-    "high": 0.061,
-    "confidence": "medium",
+    "high": 0.031,
+    "confidence": "high",
     "method": "match_model",
     "method_text": "Coventry score the fewest (or joint-fewest) league goals across MW6-9.",
     "inputs": [
@@ -1410,49 +1361,6 @@
    }
   },
   {
-   "slug": "will-carrick-or-de-zerbi-be-sacked-by-oct-31-2026-4607",
-   "title": "Will Carrick or De Zerbi be sacked by Oct 31, 2026?",
-   "url": "https://beta.xo.market/event/will-carrick-or-de-zerbi-be-sacked-by-oct-31-2026-4607?r=cryptotan01",
-   "creator": "shreyash108",
-   "is_ours": false,
-   "xo_price": 0.45,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 82.22,
-   "expires_at": "2026-11-01T12:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "No Polymarket market prices this manager's job by this date.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Both got backed by their boards this week. That usually means nothing.",
-   "description": "This market resolves based on whether Michael Carrick (Manchester United) or Roberto De Zerbi (Tottenham Hotspur) officially leaves his post as head coach on or before 23:59 UK time on October 31, 2026. A sacking, resignation, mutual-consent exit or move to another role all count. Media reports or leaks without an official club statement do not count. Temporary leave due to illness or personal reasons does not count. Primary source: official club statements ([www. manutd. com](https://www. manutd. com/), [www. tottenhamhotspur. com](https://www. tottenhamhotspur. com/)). If unavailable, resolution falls back to BBC Sport ([www. bbc. com/sport](https://www. bbc. com/sport)) or Sky Sports ([www. skysports. com](https://www. skysports. com/)). The primary source governs over secondary reporting. If official records are permanently retracted or proven fraudulent, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.manutd.com",
-    "https://www.tottenhamhotspur.com",
-    "https://www.bbc.com",
-    "https://www.skysports.com",
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
    "slug": "will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512",
    "title": "Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6\u20139?",
    "url": "https://beta.xo.market/event/will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512?r=cryptotan01",
@@ -1497,101 +1405,6 @@
    "resolution_sources": [
     "https://www.premierleague.com/stats",
     "https://www.premierleague.com/results"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-chelsea-concede-more-premier-league-goals-tha-9396",
-   "title": "Will Chelsea concede more Premier League goals than Spurs score by Nov 1, 2026?",
-   "url": "https://beta.xo.market/event/will-chelsea-concede-more-premier-league-goals-tha-9396?r=cryptotan01",
-   "creator": "YoussefKhezami7",
-   "is_ours": false,
-   "xo_price": 0.55,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 18.18,
-   "expires_at": "2026-11-01T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Two readings: season totals (Chelsea have conceded 15, Spurs have scored 10): 100%. only goals from now to 1 Nov: 0%. They differ too much to show one number.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Will Chelsea concede more Premier League goals than Spurs score by Nov 1, 2026?",
-   "description": "This market resolves based on whether Chelsea concedes more Premier League goals than Tottenham Hotspur scores from market launch until November 1, 2026, 23:59 UTC. Only Premier League goals in matches played after market launch count. Goals already scored or conceded before launch, and goals in domestic cups or European matches, do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the Premier League season is officially cancelled or abandoned before November 1, 2026, and the outcome cannot be determined, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.chelseafc.com",
-    "https://www.tottenhamhotspur.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
-   "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
-   "url": "https://beta.xo.market/event/will-man-city-be-3-points-clear-at-the-top-of-the--8494?r=cryptotan01",
-   "creator": "CryptoTan01",
-   "is_ours": true,
-   "xo_price": 0.51,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 81.28,
-   "expires_at": "2026-11-02T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.001,
-    "low": 0,
-    "high": 0.061,
-    "confidence": "medium",
-    "method": "table_sim",
-    "method_text": "City top after MW9 with a lead of 3+ points over second place. 20,000 simulated seasons from today's table; points, then goal difference, then goals scored.",
-    "inputs": [
-     {
-      "label": "Matches",
-      "value": "GW6-7 from blended market odds, GW8-9 from fitted team ratings",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -51,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Five wins from five, unstoppable form. I think they have a point to prove and Arsenal may stumble.",
-   "description": "This market resolves on the overall Premier League table at premierleague. com/tables (not home/away or form), as shown at 23:59 UTC Mon 2 Nov 2026. The table counts as shown at that time, whether or not every Matchweek 9 match has been played. Any points deductions applied by then count. Primary source: premierleague. com/tables. Secondary: BBC Sport table. If the primary is unavailable at the check time, use the secondary; if they conflict, the primary prevails. If neither can be verified within 48h of the check time, the market is void and settles per XO rules. Later corrections after the check time are ignored.",
-   "resolution_sources": [
-    "https://premierleague.com",
-    "https://www.bbc.co.uk/sport/football/premier-league/table"
    ],
    "books": {
     "yes": {
@@ -1715,9 +1528,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5619,
-    "low": 0.4619,
-    "high": 0.6619,
+    "p": 0.5452,
+    "low": 0.4452,
+    "high": 0.6452,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1734,34 +1547,34 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "4.0%",
+      "value": "3.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.2%",
+      "value": "8.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.3%",
+      "value": "8.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "45.5%",
+      "value": "42.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.0%",
+      "value": "27.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 51,
+   "gap_pts": 50,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1799,9 +1612,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5844,
-    "low": 0.4844,
-    "high": 0.6844,
+    "p": 0.5888,
+    "low": 0.4889,
+    "high": 0.6888,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1820,7 +1633,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 13,
+   "gap_pts": 14,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1858,9 +1671,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1002,
-    "low": 0.0002,
-    "high": 0.2002,
+    "p": 0.103,
+    "low": 0.003,
+    "high": 0.203,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1916,9 +1729,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0583,
+    "p": 0.0592,
     "low": 0,
-    "high": 0.1583,
+    "high": 0.1593,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -1970,21 +1783,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1581,
-    "low": 0.0581,
-    "high": 0.2581,
+    "p": 0.1557,
+    "low": 0.0557,
+    "high": 0.2558,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "46.5%",
+      "value": "44.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "34.0%",
+      "value": "35.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
@@ -2015,6 +1828,82 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "will-carrick-or-de-zerbi-be-sacked-by-oct-31-2026-4607",
+   "title": "Will Carrick or De Zerbi be sacked by Oct 31, 2026?",
+   "url": "https://beta.xo.market/event/will-carrick-or-de-zerbi-be-sacked-by-oct-31-2026-4607?r=cryptotan01",
+   "creator": "shreyash108",
+   "is_ours": false,
+   "outcome": "NO",
+   "xo_close": 0.45,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-01T07:47:34.000Z"
+  },
+  {
+   "slug": "will-the-premier-league-announce-a-points-deductio-7531",
+   "title": "Will the Premier League announce a points deduction against Man City by 31 Oct 2026?",
+   "url": "https://beta.xo.market/event/will-the-premier-league-announce-a-points-deductio-7531?r=cryptotan01",
+   "creator": "CryptoMokado",
+   "is_ours": false,
+   "outcome": "NO",
+   "xo_close": 0.05,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-01T07:21:41.000Z"
+  },
+  {
+   "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
+   "title": "Will Michael Carrick still be Manchester United manager on 31 October 2026?",
+   "url": "https://beta.xo.market/event/will-michael-carrick-still-be-manchester-united-ma-9611?r=cryptotan01",
+   "creator": "aaditpatadia",
+   "is_ours": false,
+   "outcome": "YES",
+   "xo_close": 0.25,
+   "fair_close": 0.888,
+   "confidence": "medium",
+   "resolved_at": "2026-11-01T07:10:00.000Z",
+   "picks": [
+    {
+     "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
+     "side": "YES",
+     "flagged_at": "2026-10-27T13:27:39Z",
+     "buy_price": 0.25,
+     "shares": 0.01,
+     "cost": 0.0026,
+     "fair": 0.857,
+     "ev": 0.006,
+     "confidence": "medium",
+     "won": true,
+     "payout": 0.01,
+     "pnl": 0.01
+    }
+   ]
+  },
+  {
+   "slug": "will-brighton-be-in-the-top-4-after-mw9-3814",
+   "title": "Will Brighton be in the top 4 after MW9?",
+   "url": "https://beta.xo.market/event/will-brighton-be-in-the-top-4-after-mw9-3814?r=cryptotan01",
+   "creator": "OmarABKH89",
+   "is_ours": false,
+   "outcome": "YES",
+   "xo_close": 0.35,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-01T06:48:19.000Z"
+  },
+  {
+   "slug": "will-chelsea-concede-more-premier-league-goals-tha-9396",
+   "title": "Will Chelsea concede more Premier League goals than Spurs score by Nov 1, 2026?",
+   "url": "https://beta.xo.market/event/will-chelsea-concede-more-premier-league-goals-tha-9396?r=cryptotan01",
+   "creator": "YoussefKhezami7",
+   "is_ours": false,
+   "outcome": "NO",
+   "xo_close": 0.55,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-01T06:42:43.000Z"
+  },
   {
    "slug": "will-any-premier-league-club-keep-a-clean-sheet-in-9459",
    "title": "Will any Premier League club keep a clean sheet in all four October gameweeks?",
@@ -2843,19 +2732,19 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 60,
-  "compared": 27,
-  "fair_closer": 17,
-  "brier_fair": 0.1711,
-  "brier_xo": 0.217
+  "resolved": 65,
+  "compared": 28,
+  "fair_closer": 18,
+  "brier_fair": 0.1654,
+  "brier_xo": 0.2293
  },
  "pick_summary": {
-  "settled": 7,
-  "won": 3,
+  "settled": 8,
+  "won": 4,
   "staked": 57.34,
-  "returned": 29.17,
-  "pnl": -28.17,
-  "open": 6
+  "returned": 29.18,
+  "pnl": -28.16,
+  "open": 5
  },
  "best_value": [],
  "live": []
