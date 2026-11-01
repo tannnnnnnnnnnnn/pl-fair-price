@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-01T16:40:20Z",
+ "generated_at": "2026-11-01T16:50:12Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -615,9 +615,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5878,
-    "low": 0.4879,
-    "high": 0.6878,
+    "p": 0.2445,
+    "low": 0.1445,
+    "high": 0.3446,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -631,7 +631,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 9,
+   "gap_pts": -26,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
@@ -729,23 +729,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.645,
-    "low": 0.615,
-    "high": 0.675,
+    "p": 0.665,
+    "low": 0.635,
+    "high": 0.695,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "64.5% (spread 1c, $1,275,254 traded on this market)",
+      "value": "66.5% (spread 1c, $1,275,254 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 18,
+   "gap_pts": 20,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1215,7 +1215,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "Wirtz: xG 1.23, xA 1.03 in 624 min, 9/8 starts",
+      "label": "Wirtz: xG 1.23, xA 1.03 in 632 min, 9/8 starts",
       "value": "14% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -1439,15 +1439,15 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5352,
-    "low": 0.4352,
-    "high": 0.6352,
+    "p": 0.538,
+    "low": 0.438,
+    "high": 0.638,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
     "inputs": [
      {
-      "label": "Isak: xG 4.27, xA 0.13 in 570 min, 8/8 starts",
+      "label": "Isak: xG 4.27, xA 0.14 in 578 min, 8/8 starts",
       "value": "28% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
@@ -1498,9 +1498,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1043,
-    "low": 0.0043,
-    "high": 0.2043,
+    "p": 0.1033,
+    "low": 0.0033,
+    "high": 0.2033,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1610,16 +1610,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1668,
-    "low": 0.0668,
-    "high": 0.2668,
+    "p": 0.1651,
+    "low": 0.0651,
+    "high": 0.2651,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "47.0%",
+      "value": "46.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
