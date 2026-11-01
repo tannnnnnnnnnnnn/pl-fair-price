@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T22:49:41Z",
+ "generated_at": "2026-11-01T01:46:39Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -288,9 +288,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0855,
-    "low": 0.0255,
-    "high": 0.1455,
+    "p": 0.085,
+    "low": 0.025,
+    "high": 0.145,
     "confidence": "medium",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Manchester City punishment announced by November 6?\"",
@@ -304,7 +304,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-11-06T20:00:00Z",
-   "gap_pts": -13,
+   "gap_pts": -14,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -394,100 +394,69 @@
    }
   },
   {
-   "slug": "will-a-premier-league-coach-be-sacked-before-novem-4400",
-   "title": "Will a Premier League coach be sacked before November 1, 2026?",
-   "url": "https://beta.xo.market/event/will-a-premier-league-coach-be-sacked-before-novem-4400?r=cryptotan01",
+   "slug": "will-haaland-have-more-premier-league-goals-than-t-7197",
+   "title": "Will Haaland have more Premier League goals than Tottenham by November 1?",
+   "url": "https://beta.xo.market/event/will-haaland-have-more-premier-league-goals-than-t-7197?r=cryptotan01",
    "creator": "YoussefKhezami7",
    "is_ours": false,
-   "xo_price": 0.35,
-   "best_bid": 0.35,
+   "xo_price": 0.5,
+   "best_bid": 0.5,
    "best_ask": null,
    "liquidity_usd": 10.0,
    "volume_usd": 0,
-   "expires_at": "2026-11-01T00:00:00.000Z",
+   "expires_at": "2026-11-01T23:59:59.000Z",
    "group": "season",
    "fixture": null,
-   "fair": null,
-   "fair_reason": "No Polymarket market prices this manager's job by this date.",
+   "fair": {
+    "p": 0.001,
+    "low": 0,
+    "high": 0.101,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
+    "inputs": [
+     {
+      "label": "Haaland: xG 6.56, xA 0.85 in 799 min, 9/9 starts",
+      "value": "40% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Spurs goals so far",
+      "value": "10",
+      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
+     }
+    ]
+   },
+   "fair_reason": null,
    "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
+   "gap_pts": -50,
    "status": "ACTIVE",
    "horizon": "weekend",
    "taker_fee_bps": 400,
-   "pitch": "Will a Premier League coach be sacked before November 1, 2026?",
-   "description": "This market resolves based on whether An official English Premier League manager is dismissed from their position before November 1, 2026, 00:00:00 UTC. Temporary leave of absence due to health or personal reasons without permanent dismissal does not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Squawka (https://www. squawka. com). The primary source governs. If the named record is retracted or the event or season is cancelled, the market voids and all positions resolve equally.",
+   "pitch": "Haaland is already outscoring Tottenham by himself 5 to 2, so why stop now?",
+   "description": "This market resolves based on whether Erling Haaland scores more total Premier League goals than Tottenham Hotspur as a team by November 1, 2026, as measured by official Premier League match statistics. Goals scored in competitions outside of the English Premier League do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The Premier League season is cancelled or permanently abandoned before November 1, 2026, the market voids and all positions resolve equally.",
    "resolution_sources": [
-    "https://www.squawka.com",
     "https://www.premierleague.com"
    ],
    "books": {
     "yes": {
      "bids": [
       {
-       "price": 0.35,
-       "size": 28.571428
-      }
-     ],
-     "asks": [],
-     "last": 0.35
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.65,
-       "size": 28.571428
-      }
-     ],
-     "last": 0.65
-    }
-   }
-  },
-  {
-   "slug": "will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305",
-   "title": "Will Roberto De Zerbi still be Spurs manager on November 1?",
-   "url": "https://beta.xo.market/event/will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305?r=cryptotan01",
-   "creator": "xouser58643",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": 0.5,
-   "liquidity_usd": 10.0,
-   "volume_usd": 20.0,
-   "expires_at": "2026-10-31T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "No Polymarket market prices this manager's job by this date.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Spurs have Coventry and Palace before the end of the month. I'm expecting positive results to keep RDZ in his job.",
-   "description": "This market will resolve based on whether Roberto De Zerbi is still manager of Tottenham Hotspur at 11:59 PM UTC on November 1, 2026.\n\nThe market resolves to \u201cYes\u201d if De Zerbi remains Spurs manager through the deadline and no official announcement of his departure has been made by then.\n\nThe market resolves to \u201cNo\u201d if De Zerbi leaves the club at any point between October 6, 2026 and November 1, 2026, 11:59 PM UTC, or if Tottenham officially announces his resignation, dismissal, or mutual departure by the deadline, regardless of when that departure takes effect.\n\nA caretaker, interim, or \u201cuntil a replacement is appointed\u201d arrangement after he has left still counts as No. A poor run of results, fan pressure, or reports that he is under threat do not count unless he actually leaves or an official departure is announced. Rumors and unconfirmed media speculation do not qualify. Timing is decided by the official club announcement. Primary source: Tottenham Hotspur. A consensus of credible reporting will also suffice. If the outcome cannot be reasonably determined, the market will be voided.",
-   "resolution_sources": [
-    "https://www.tottenhamhotspur.com/"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
        "price": 0.5,
        "size": 20.0
       }
      ],
+     "asks": [],
      "last": 0.5
     },
     "no": {
-     "bids": [
+     "bids": [],
+     "asks": [
       {
        "price": 0.5,
        "size": 20.0
       }
      ],
-     "asks": [],
      "last": 0.5
     }
    }
@@ -733,9 +702,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6105,
-    "low": 0.5805,
-    "high": 0.6405,
+    "p": 0.6109,
+    "low": 0.5809,
+    "high": 0.641,
     "confidence": "high",
     "method": "match_model",
     "method_text": "Liverpool take 7+ points from their next 4 league matches. (4 fixtures)",
@@ -758,74 +727,6 @@
    "resolution_sources": [
     "https://www.premierleague.com",
     "https://www.liverpoolfc.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.5,
-       "size": 20.0
-      }
-     ],
-     "last": 0.5
-    }
-   }
-  },
-  {
-   "slug": "will-haaland-have-more-premier-league-goals-than-t-7197",
-   "title": "Will Haaland have more Premier League goals than Tottenham by November 1?",
-   "url": "https://beta.xo.market/event/will-haaland-have-more-premier-league-goals-than-t-7197?r=cryptotan01",
-   "creator": "YoussefKhezami7",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 10.0,
-   "volume_usd": 0,
-   "expires_at": "2026-11-01T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.001,
-    "low": 0,
-    "high": 0.101,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Season league goals 01 Nov: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
-    "inputs": [
-     {
-      "label": "Haaland: xG 6.56, xA 0.85 in 799 min, 9/9 starts",
-      "value": "40% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Spurs goals so far",
-      "value": "10",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -50,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Haaland is already outscoring Tottenham by himself 5 to 2, so why stop now?",
-   "description": "This market resolves based on whether Erling Haaland scores more total Premier League goals than Tottenham Hotspur as a team by November 1, 2026, as measured by official Premier League match statistics. Goals scored in competitions outside of the English Premier League do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If The Premier League season is cancelled or permanently abandoned before November 1, 2026, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
    ],
    "books": {
     "yes": {
@@ -924,7 +825,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "64.5% (spread 1c, $1,273,501 traded on this market)",
+      "value": "64.5% (spread 1c, $1,274,898 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -989,21 +890,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5232,
-    "low": 0.4232,
-    "high": 0.6232,
+    "p": 0.5203,
+    "low": 0.4203,
+    "high": 0.6203,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "23.5%",
+      "value": "24.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1013,7 +914,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "10.2%",
+      "value": "9.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1023,12 +924,12 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "45.0%",
+      "value": "45.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.3%",
+      "value": "27.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -1375,47 +1276,6 @@
    }
   },
   {
-   "slug": "will-szoboszlai-score-a-direct-free-kick-before-no-3635",
-   "title": "Will Szoboszlai score a direct free kick before November 2026?",
-   "url": "https://beta.xo.market/event/will-szoboszlai-score-a-direct-free-kick-before-no-3635?r=cryptotan01",
-   "creator": "shreyash108",
-   "is_ours": false,
-   "xo_price": 0.25,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 16.0,
-   "expires_at": "2026-10-31T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "4 free kicks last season was the outlier. None this season yet. Love him, but it's a no before November.",
-   "description": "This market resolves based on whether Dominik Szoboszlai scores a goal directly from a free kick after this market opens and before November 1, 2026, 00:00 UTC. Goals scored before the market opens do not count. The primary source is the official match report of the competition in which the goal is scored: the Premier League (premierleague. com), UEFA (uefa. com), or the Carabao Cup via the English Football League (efl. com). If the official report is unavailable or inconsistent, BBC Sport, Sky Sports, ESPN, Flashscore, Sofascore, or The Athletic may be used. Only a direct free kick counts, and the goal must be credited to Szoboszlai. A deflection still counts if the goal is officially awarded to him. Penalties, free-kick routines in which another player scores, and goals from open play do not count. Premier League, UEFA Champions League, and Carabao Cup matches count. Friendlies and Hungary national-team matches do not. The market resolves YES if such a goal is recorded in that window. The market resolves NO if no such goal is recorded in that window. If a match in which a claimed goal was scored is abandoned and the official record does not credit the goal, that goal does not count. If the required sources are unavailable, unverifiable, or the goal cannot be clearly attributed, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.liverpoolfc.com",
-    "https://www.wikipedia.org"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
    "slug": "will-fulham-earn-more-pl-points-than-chelsea-in-mw-1335",
    "title": "Will Fulham earn more PL points than Chelsea in MW6\u20139?",
    "url": "https://beta.xo.market/event/will-fulham-earn-more-pl-points-than-chelsea-in-mw-1335?r=cryptotan01",
@@ -1442,47 +1302,6 @@
     "https://www.premierleague.com",
     "https://www.fulhamfc.com",
     "https://www.chelseafc.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-the-premier-league-announce-a-points-deductio-7531",
-   "title": "Will the Premier League announce a points deduction against Man City by 31 Oct 2026?",
-   "url": "https://beta.xo.market/event/will-the-premier-league-announce-a-points-deductio-7531?r=cryptotan01",
-   "creator": "CryptoMokado",
-   "is_ours": false,
-   "xo_price": 0.05,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 11.1,
-   "expires_at": "2026-10-31T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "No sanctions hearing date yet, a slow process, and a deduction isn't guaranteed. Oct 31 looks too soon.",
-   "description": "This market resolves based on whether The Premier League officially announces a points deduction against Manchester City on or before October 31, 2026. Financial penalties or sanctions that do not involve a direct points deduction do not count toward a Yes resolution. Primary source: Premier League (https://premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://bbc. com) or Sky Sports (https://skysports. com). The primary source governs. If The official Premier League proceedings are permanently cancelled or terminated without a ruling or The governing body officially retracts the announcement made prior to the cutoff, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://premierleague.com",
-    "https://bbc.com",
-    "https://skysports.com"
    ],
    "books": {
     "yes": {
@@ -1678,62 +1497,6 @@
    "resolution_sources": [
     "https://www.premierleague.com/stats",
     "https://www.premierleague.com/results"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "will-michael-carrick-still-be-manchester-united-ma-9611",
-   "title": "Will Michael Carrick still be Manchester United manager on 31 October 2026?",
-   "url": "https://beta.xo.market/event/will-michael-carrick-still-be-manchester-united-ma-9611?r=cryptotan01",
-   "creator": "aaditpatadia",
-   "is_ours": false,
-   "xo_price": 0.25,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 45.0,
-   "expires_at": "2026-10-31T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.9965,
-    "low": 0.9365,
-    "high": 1,
-    "confidence": "medium",
-    "method": "polymarket",
-    "method_text": "Taken straight from Polymarket's matching market: \"Will Michael Carrick be out as Manchester United manager by October 31, 2026?\"",
-    "inputs": [
-     {
-      "label": "Will Michael Carrick be out as Manchester United manager by October 31, 2026?",
-      "value": "0.4% (spread 0c, $13,974 traded on this market)",
-      "source_url": "https://polymarket.com/event/michael-carrick-out-as-manchester-united-manager-by"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": 75,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "United's next run could be decisive. I think Carrick faces too much pressure to make it through October.",
-   "description": "This market resolves based on whether Michael Carrick is officially the Manchester United men's first-team manager or head coach at 23:59:59 UTC on 31 October 2026. Official Manchester United or Premier League confirmation will be used for resolution. If Carrick has been officially removed, replaced, resigned, or otherwise ceased to hold that role before the resolution time, the market resolves NO. If he remains officially in the role at the resolution time, including in an interim or caretaker capacity, the market resolves YES.",
-   "resolution_sources": [
-    "https://www.manutd.com/en/man-utd-head-coach-and-staff/michael-carrick",
-    "https://www.theguardian.com",
-    "https://www.skysports.com",
-    "https://www.premierleague.com/en/news/4325264/list-of-202627-premier-league-club-managers"
    ],
    "books": {
     "yes": {
@@ -1952,21 +1715,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5657,
-    "low": 0.4657,
-    "high": 0.6657,
+    "p": 0.5619,
+    "low": 0.4619,
+    "high": 0.6619,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "23.5%",
+      "value": "24.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 1-9 Premier League points?",
-      "value": "1.1%",
+      "value": "0.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1976,7 +1739,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "10.2%",
+      "value": "9.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1986,19 +1749,19 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "45.0%",
+      "value": "45.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.3%",
+      "value": "27.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 52,
+   "gap_pts": 51,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2036,9 +1799,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5903,
-    "low": 0.4903,
-    "high": 0.6903,
+    "p": 0.5844,
+    "low": 0.4844,
+    "high": 0.6844,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -2057,7 +1820,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 14,
+   "gap_pts": 13,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2095,9 +1858,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.099,
-    "low": 0,
-    "high": 0.1991,
+    "p": 0.1002,
+    "low": 0.0002,
+    "high": 0.2002,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -2153,9 +1916,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0586,
+    "p": 0.0583,
     "low": 0,
-    "high": 0.1586,
+    "high": 0.1583,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -2207,16 +1970,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1887,
-    "low": 0.0887,
-    "high": 0.2887,
+    "p": 0.1581,
+    "low": 0.0581,
+    "high": 0.2581,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "55.5%",
+      "value": "46.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -2228,53 +1991,13 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -36,
+   "gap_pts": -39,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
    "pitch": "Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season?",
    "description": "This market resolves based on whether both Ipswich Town and Coventry City are officially confirmed as relegated from the Premier League in the final standings of the 2026/27 season. Primary source: Official Premier League Website (https://www. premierleague. com). If the 2026/27 season is abandoned before final standings are officially confirmed, the market voids and all positions resolve equally.",
    "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "fulham-to-sack-or-replace-head-coach-before-1-nove-6485",
-   "title": "Fulham to sack or replace head coach before 1 November 2026",
-   "url": "https://beta.xo.market/event/fulham-to-sack-or-replace-head-coach-before-1-nove-6485?r=cryptotan01",
-   "creator": "just_LilPochita",
-   "is_ours": false,
-   "xo_price": 0.45,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 22.22,
-   "expires_at": "2026-11-01T00:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "No Polymarket market prices this manager's job by this date.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Fulham to sack or replace head coach before 1 November 2026",
-   "description": "This market resolves based on whether Fulham FC officially sacks or permanently replaces its head coach before 1 November 2026. Interim appointments acting temporarily without dismissal of the head coach do not count. Primary source: Fulham FC Official Website (https://www. fulhamfc. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to Premier League Official Website (https://www. premierleague. com). The primary source governs over secondary sources. If the club dissolves or ceases operation before the cutoff time, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.fulhamfc.com",
     "https://www.premierleague.com"
    ],
    "books": {
