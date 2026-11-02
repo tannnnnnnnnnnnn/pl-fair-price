@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-02T23:05:27Z)
+# VERIFY — PL Fair Price (2026-11-02T23:15:36Z)
 
 GW10 deadline 2026-11-06T18:30:00Z. 24 XO PL markets; 10 priced (high 1, medium 1, low 8).
 
@@ -8,11 +8,11 @@ GW10 deadline 2026-11-06T18:30:00Z. 24 XO PL markets; 10 priced (high 1, medium 
 |---|---|---|---|---|---|---|---|---|
 | EVE-COV | 10 | 56.5/24.5/19.5 | 56.2/24.4/19.4 | 56.0/24.5/19.5 | 56.1/24.4/19.5 | 56.1/24.4/19.5 | 1.67-0.88 | $4,732 |
 | LEE-TOT | 10 | 36.5/28.5/35.5 | 36.3/28.4/35.3 | 37.3/28.4/34.3 | 36.8/28.4/34.8 | 36.8/28.4/34.8 | 1.19-1.15 | $4,798 |
-| ARS-HUL | 10 | 84.5/11.5/4.7 | 84.0/11.4/4.6 | 84.1/11.4/4.5 | 84.0/11.4/4.5 | 84.0/11.4/4.5 | 2.77-0.52 | $8,200 |
+| ARS-HUL | 10 | 84.5/11.5/4.7 | 84.0/11.4/4.6 | 84.1/11.4/4.5 | 84.0/11.4/4.5 | 84.0/11.4/4.5 | 2.77-0.52 | $8,225 |
 | FUL-NEW | 10 | 47.5/26.0/26.5 | 47.5/26.0/26.5 | 47.5/26.0/26.5 | 47.5/26.0/26.5 | 47.5/26.0/26.5 | 1.51-1.06 | $3,942 |
 | NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 19.7/23.2/57.1 | 19.6/23.4/56.9 | 19.6/23.4/56.9 | 0.94-1.78 | $13,098 |
 | CRY-LIV | 10 | 18.0/22.0/59.5 | 18.1/22.1/59.8 | 17.6/22.6/59.8 | 17.8/22.4/59.8 | 17.8/22.4/59.8 | 0.92-1.88 | $2,206 |
-| IPS-BOU | 10 | 25.5/26.0/49.5 | 25.2/25.7/49.0 | 25.0/25.5/49.5 | 25.1/25.6/49.3 | 25.1/25.6/49.3 | 1.04-1.56 | $1,998 |
+| IPS-BOU | 10 | 25.0/26.0/49.5 | 24.9/25.9/49.3 | 25.0/25.5/49.5 | 24.9/25.7/49.4 | 24.9/25.7/49.4 | 1.03-1.55 | $1,998 |
 | SUN-CHE | 10 | 26.5/26.0/47.5 | 26.5/26.0/47.5 | 25.8/26.3/48.0 | 26.1/26.1/47.7 | 26.1/26.1/47.7 | 1.04-1.50 | $8,745 |
 | BHA-BRE | 10 | 50.5/25.0/26.0 | 49.8/24.6/25.6 | 50.0/24.5/25.5 | 49.9/24.6/25.6 | 49.9/24.6/25.6 | 1.66-1.12 | $1,091 |
 | MUN-AVL | 10 | 42.5/26.0/32.5 | 42.1/25.7/32.2 | 42.1/24.9/33.0 | 42.1/25.3/32.6 | 42.1/25.3/32.6 | 1.51-1.30 | $10,863 |
@@ -65,7 +65,7 @@ qg 0.397, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 43.9 | -1 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 43.5 | -2 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 10.4 | -37 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | medium | 22 | 7.7 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
