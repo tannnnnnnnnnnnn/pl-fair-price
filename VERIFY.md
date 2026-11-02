@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-02T19:54:39Z)
+# VERIFY — PL Fair Price (2026-11-02T19:56:52Z)
 
 GW10 deadline 2026-11-06T18:30:00Z. 26 XO PL markets; 11 priced (high 2, medium 1, low 8).
 
@@ -6,17 +6,17 @@ GW10 deadline 2026-11-06T18:30:00Z. 26 XO PL markets; 11 priced (high 2, medium 
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| NEW-EVE | 9 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.39-1.06 | $1,525,528 |
+| NEW-EVE | 9 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.39-1.06 | $1,537,816 |
 | EVE-COV | 10 | 56.5/24.0/19.5 | 56.5/24.0/19.5 | 56.1/24.2/19.7 | 56.3/24.1/19.6 | 56.3/24.1/19.6 | 1.73-0.92 | $4,480 |
-| LEE-TOT | 10 | 37.0/28.5/35.5 | 36.6/28.2/35.1 | 37.3/28.4/34.3 | 37.0/28.3/34.7 | 37.0/28.3/34.7 | 1.21-1.17 | $4,570 |
+| LEE-TOT | 10 | 37.0/28.5/35.5 | 36.6/28.2/35.1 | 37.3/28.4/34.3 | 37.0/28.3/34.7 | 37.0/28.3/34.7 | 1.21-1.17 | $4,588 |
 | ARS-HUL | 10 | 84.5/11.5/4.6 | 84.0/11.4/4.6 | 84.1/11.4/4.5 | 84.0/11.4/4.5 | 84.0/11.4/4.5 | 2.80-0.53 | $8,122 |
-| FUL-NEW | 10 | 43.5/26.5/30.0 | 43.5/26.5/30.0 | 43.7/26.6/29.6 | 43.6/26.6/29.8 | 43.6/26.6/29.8 | 1.45-1.15 | $1,880 |
+| FUL-NEW | 10 | 43.5/26.5/30.0 | 43.5/26.5/30.0 | 44.0/26.5/29.5 | 43.8/26.5/29.8 | 43.7/26.5/29.8 | 1.45-1.15 | $1,880 |
 | NFO-MCI | 10 | 19.5/23.5/57.5 | 19.4/23.4/57.2 | 19.6/23.6/56.8 | 19.5/23.5/57.0 | 19.5/23.5/57.0 | 0.95-1.79 | $12,630 |
 | CRY-LIV | 10 | 18.5/22.5/59.5 | 18.4/22.4/59.2 | 18.6/22.6/58.8 | 18.5/22.5/59.0 | 18.5/22.5/59.0 | 0.96-1.89 | $2,045 |
 | IPS-BOU | 10 | 25.5/26.0/49.5 | 25.2/25.7/49.0 | 25.0/25.5/49.5 | 25.1/25.6/49.3 | 25.1/25.6/49.3 | 1.06-1.58 | $1,974 |
 | SUN-CHE | 10 | 26.5/26.0/47.5 | 26.5/26.0/47.5 | 25.8/26.3/48.0 | 26.1/26.1/47.7 | 26.1/26.1/47.7 | 1.06-1.52 | $8,157 |
 | BHA-BRE | 10 | 50.5/24.5/26.0 | 50.0/24.3/25.7 | 50.0/24.5/25.5 | 50.0/24.4/25.6 | 50.0/24.4/25.6 | 1.71-1.16 | $1,055 |
-| MUN-AVL | 10 | 42.5/25.5/32.5 | 42.3/25.4/32.3 | 42.6/25.1/32.3 | 42.4/25.3/32.3 | 42.4/25.3/32.3 | 1.54-1.32 | $10,561 |
+| MUN-AVL | 10 | 42.5/25.5/32.5 | 42.3/25.4/32.3 | 42.3/25.0/32.7 | 42.3/25.2/32.5 | 42.3/25.2/32.5 | 1.55-1.33 | $10,750 |
 
 League average 2.72 goals per game from 89 finished matches; Dixon-Coles rho -0.02; mean fitted total 2.72.
 
@@ -66,9 +66,9 @@ qg 0.396, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 44.5 | -1 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 44.0 | -1 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 9.9 | -37 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 47 | 9.8 | -37 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | medium | 22 | 7.5 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
 | low | 33 | 49.5 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 5.6 | -44 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
