@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T21:55:14Z",
+ "generated_at": "2026-11-02T22:05:03Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -77,7 +77,7 @@
    "lock_at": "2026-10-31T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long",
+   "horizon": "weekend",
    "taker_fee_bps": 400,
    "pitch": "First PMQs since City's guilty verdict and the PM's own row. Badenoch wants answers. 4 shots, 1 mention needed.",
    "description": "This market resolves Yes only if the exact letter sequence 'Manchester City' is recorded in the official Hansard transcript of a Prime Minister's Questions session, and that transcript is published before November 5, 2026 at 13:00 UTC. The sequence must appear letter for letter. Any wording that contains 'Manchester City' counts, including 'Manchester City FC' and 'Manchester City Council'. 'Man City', 'the city of Manchester', and any other wording that does not contain that exact sequence do not count. Resolution is based only on the transcript of the Prime Minister's Questions session itself (the Engagements / Prime Minister\u2019s Questions block). Mentions outside that session do not count. Written ministerial statements or questions submitted in writing do not count. Video, subtitles, and other sources do not count. Primary source: Hansard UK (https://hansard. parliament. uk). If the primary source is unavailable, incomplete, or inconsistent at the time of resolution, resolution falls back to the official PMQs transcript on UK Parliament (https://www. parliament. uk). The primary source governs. Video alone does not resolve the market. Resolution is based on the transcript as published before the deadline, including the provisional ('rolling') version if that is the version published before November 5, 2026 at 13:00 UTC. Anything published after that time does not count: a sequence added after the deadline does not resolve the market Yes, and deletion after the deadline of a sequence already published before the deadline does not reverse a Yes. If no published PMQs transcript contains the exact sequence before the deadline, the market resolves No. If the scheduled PMQs sessions are permanently cancelled without taking place, or the official record is permanently retracted before the deadline so that no transcript is published, the market voids and all positions resolve equally.",
@@ -180,7 +180,7 @@
    "lock_at": "2026-11-06T20:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long",
+   "horizon": "weekend",
    "taker_fee_bps": 400,
    "pitch": "He\u2019s Haaland, not a phantom. He\u2019ll touch the ball 15 times just tying his laces before winning MOTM",
    "description": "This market resolves based on whether Erling Haaland wins an official Premier League Man of the Match award while recording fewer than 15 total touches in the same match before the cutoff time. Friendly matches, domestic cup competitions, and European fixtures do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to StatMuse (https://www. statmuse. com). The primary source governs. If The named match is abandoned without an official result or The Premier League retracts or invalidates the match award, the market voids and all positions resolve equally.",
@@ -244,7 +244,7 @@
    "lock_at": "2026-11-06T20:00:00Z",
    "gap_pts": -14,
    "status": "ACTIVE",
-   "horizon": "long",
+   "horizon": "weekend",
    "taker_fee_bps": 400,
    "pitch": "sanction processes like this historically take months after a verdict, so true probability within 30D likely low",
    "description": "This market resolves based on whether Official sanctions against Manchester City are announced by the Premier League or an independent commission before 23:59:59 UTC on November 6, 2026. Unofficial leaks, rumors, or unconfirmed media reports do not count as an official announcement. Primary source: Premier League (https://premierleague. com). The primary source governs. If The official Premier League website becomes inaccessible or permanently retracts the relevant reporting without issuing a definitive announcement, the market voids and all positions resolve equally.",
@@ -301,7 +301,7 @@
    "lock_at": "2026-10-31T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long",
+   "horizon": "weekend",
    "taker_fee_bps": 400,
    "pitch": "Talks don\u2019t mean a done deal. I\u2019m backing no official Schade contract announcement by November 5.",
    "description": "This market resolves YES if Brentford FC officially announces that Kevin Schade has signed a new contract or a contract extension with the club after this market\u2019s creation and by 5 November 2026 at 23:59 UTC. The announcement must be published on BrentfordFC. com. Reports of negotiations, offers, verbal agreements or an expected signing do not count. The announcement date determines eligibility, regardless of when the contract takes effect. If no qualifying announcement is published by the deadline, the market resolves NO. Temporary website unavailability does not by itself establish a NO outcome; resolution waits until the announcement record can be verified.",
@@ -346,9 +346,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5,
-    "low": 0.4,
-    "high": 0.6,
+    "p": 0.5002,
+    "low": 0.4002,
+    "high": 0.6002,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -492,7 +492,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 22%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 23%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -892,46 +892,6 @@
    }
   },
   {
-   "slug": "total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570",
-   "title": "Total goals after 80th minute in PL Matchweeks 7-9",
-   "url": "https://beta.xo.market/event/total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570?r=cryptotan01",
-   "creator": "NMagalios13",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 20.0,
-   "expires_at": "2026-11-02T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Total goals after 80th minute in PL Matchweeks 7-9",
-   "description": "This market resolves based on the total number of goals scored after the 80th minute (from 80.1 minutes onward) across Matchweeks 7, 8, and 9 of the 2026/27 Premier League season, determined using official Premier League fixture data. It resolves to 0-14 if the combined total of goals scored from 80.1 minutes onward in all matches of Matchweeks 7, 8, and 9 is between 0 and 14 inclusive, and resolves to 15+ if that combined total is 15 or more. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to NBC Sports (https://www. nbcsports. com). The primary source governs. If the Premier League season or the specified matchweeks are cancelled or abandoned without official results, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.nbcsports.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
    "slug": "will-any-premier-league-manager-leave-his-post-bef-1715",
    "title": "Will any Premier League manager leave his post before November 9, 2026?",
    "url": "https://beta.xo.market/event/will-any-premier-league-manager-leave-his-post-bef-1715?r=cryptotan01",
@@ -973,59 +933,6 @@
    }
   },
   {
-   "slug": "will-coventry-city-be-the-lowest-or-joint-lowest-s-3849",
-   "title": "Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9?",
-   "url": "https://beta.xo.market/event/will-coventry-city-be-the-lowest-or-joint-lowest-s-3849?r=cryptotan01",
-   "creator": "CryptoMokado",
-   "is_ours": false,
-   "xo_price": 0.6,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 25.0,
-   "expires_at": "2026-11-03T00:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.001,
-    "low": 0,
-    "high": 0.101,
-    "confidence": "low",
-    "method": "match_model",
-    "method_text": "Coventry score the fewest (or joint-fewest) league goals across MW6-9.",
-    "inputs": [
-     {
-      "label": "MW6-9 fixtures",
-      "value": "blended market odds (GW6-7) and team ratings (GW8-9)",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-10-31T12:30:00Z",
-   "gap_pts": -60,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Coventry City have been the lowest scoring team since the beginning of the season. 1 goal in 5 games.",
-   "description": "This market resolves based on whether Coventry City is the lowest or joint lowest-scoring team by total goals across Premier League Matchweeks 6 through 9 of the 2026/27 season. Goals scored outside of Premier League Matchweeks 6 through 9 do not count. Primary source: Premier League (https://www. premierleague. com). The primary source governs. If the named record is retracted or the competition season is cancelled, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
    "slug": "will-frank-lampard-still-be-coventry-citys-manager-2683",
    "title": "Will Frank Lampard still be Coventry City's manager at 23:59 UTC on 6 November 2026?",
    "url": "https://beta.xo.market/event/will-frank-lampard-still-be-coventry-citys-manager-2683?r=cryptotan01",
@@ -1044,7 +951,7 @@
    "lock_at": "2026-11-06T20:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long",
+   "horizon": "weekend",
    "taker_fee_bps": 400,
    "pitch": "YES. First PL win in 25 years bought him time. Nobody sacks the man who won them the Championship.",
    "description": "This market refers to whether Frank Lampard remains Coventry City\u2019s first-team manager through 23:59 UTC on 6 November 2026. It resolves on whether Coventry City or the Premier League has officially announced before that deadline that he is leaving the role.\n\nYes resolves if, at 23:59 UTC on 6 November 2026, Frank Lampard is Coventry City\u2019s first-team manager and no departure has been officially announced. A temporary absence, such as illness or a touchline ban, does not count as leaving.\n\nNo resolves if, before 23:59 UTC on 6 November 2026, Coventry City or the Premier League officially announces that Lampard is leaving the role. This covers being sacked, resigning, or leaving by mutual consent, and it applies even if the departure takes effect after 6 November. \n\nResolution will be based on official announcements from Coventry City or the Premier League as the primary source. BBC Sport or Sky Sports will be used as a secondary source only if the official announcement is not available on the primary sources within a timely manner, and only if they quote or link it. A later reversal or delay does not change the result once a qualifying departure has been announced. If no official record can reasonably establish Lampard\u2019s status by the deadline, the market will be voided.",
@@ -1174,9 +1081,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5432,
-    "low": 0.4432,
-    "high": 0.6432,
+    "p": 0.543,
+    "low": 0.443,
+    "high": 0.643,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1258,9 +1165,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4486,
-    "low": 0.3487,
-    "high": 0.5486,
+    "p": 0.4389,
+    "low": 0.3388,
+    "high": 0.5389,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1279,7 +1186,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 0,
+   "gap_pts": -1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1317,9 +1224,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1011,
-    "low": 0.0011,
-    "high": 0.2011,
+    "p": 0.1007,
+    "low": 0.0006,
+    "high": 0.2006,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1375,9 +1282,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0605,
+    "p": 0.0602,
     "low": 0,
-    "high": 0.1605,
+    "high": 0.1603,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -2517,7 +2424,5 @@
   "open": 4
  },
  "best_value": [],
- "live": [
-  "NEW-EVE"
- ]
+ "live": []
 }
