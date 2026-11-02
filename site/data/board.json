@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T03:39:53Z",
+ "generated_at": "2026-11-02T06:10:25Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -346,9 +346,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4847,
-    "low": 0.3847,
-    "high": 0.5847,
+    "p": 0.4841,
+    "low": 0.3841,
+    "high": 0.5841,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -365,7 +365,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.9%",
+      "value": "4.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -665,16 +665,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7,
-    "low": 0.67,
-    "high": 0.73,
+    "p": 0.705,
+    "low": 0.675,
+    "high": 0.735,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "70.0% (spread 2c, $1,288,540 traded on this market)",
+      "value": "70.5% (spread 1c, $1,288,567 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -1174,9 +1174,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5251,
-    "low": 0.4251,
-    "high": 0.6251,
+    "p": 0.5262,
+    "low": 0.4262,
+    "high": 0.6262,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1193,7 +1193,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.9%",
+      "value": "4.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1258,9 +1258,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.446,
-    "low": 0.346,
-    "high": 0.546,
+    "p": 0.4407,
+    "low": 0.3407,
+    "high": 0.5407,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1279,7 +1279,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 0,
+   "gap_pts": -1,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1317,9 +1317,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1013,
-    "low": 0.0013,
-    "high": 0.2013,
+    "p": 0.1027,
+    "low": 0.0027,
+    "high": 0.2027,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1375,9 +1375,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0566,
+    "p": 0.0563,
     "low": 0,
-    "high": 0.1566,
+    "high": 0.1563,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -1474,6 +1474,18 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305",
+   "title": "Will Roberto De Zerbi still be Spurs manager on November 1?",
+   "url": "https://beta.xo.market/event/will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305?r=cryptotan01",
+   "creator": "xouser58643",
+   "is_ours": false,
+   "outcome": "YES",
+   "xo_close": 0.5,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-02T04:41:31.000Z"
+  },
   {
    "slug": "will-cherki-get-more-pl-goals-assists-than-wirtz-i-8512",
    "title": "Will Cherki get more PL goals + assists than Wirtz in Matchweeks 6\u20139?",
@@ -2490,7 +2502,7 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 73,
+  "resolved": 74,
   "compared": 31,
   "fair_closer": 20,
   "brier_fair": 0.1656,
