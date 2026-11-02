@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-02T21:25:00Z)
+# VERIFY — PL Fair Price (2026-11-02T21:35:10Z)
 
 GW10 deadline 2026-11-06T18:30:00Z. 26 XO PL markets; 11 priced (high 1, medium 1, low 9).
 
@@ -6,20 +6,20 @@ GW10 deadline 2026-11-06T18:30:00Z. 26 XO PL markets; 11 priced (high 1, medium 
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| EVE-COV | 10 | 56.5/24.5/19.5 | 56.2/24.4/19.4 | 56.0/24.5/19.5 | 56.1/24.4/19.5 | 56.1/24.4/19.5 | 1.67-0.88 | $4,604 |
-| LEE-TOT | 10 | 36.5/28.5/35.5 | 36.3/28.4/35.3 | 37.3/28.4/34.3 | 36.8/28.4/34.8 | 36.8/28.4/34.8 | 1.19-1.15 | $4,680 |
-| ARS-HUL | 10 | 84.5/11.5/4.7 | 84.0/11.4/4.6 | 83.9/11.6/4.5 | 83.9/11.5/4.6 | 83.9/11.5/4.6 | 2.76-0.52 | $8,134 |
-| FUL-NEW | 10 | 45.0/26.5/28.5 | 45.0/26.5/28.5 | 45.3/26.4/28.4 | 45.1/26.4/28.4 | 45.1/26.4/28.4 | 1.45-1.10 | $1,895 |
-| NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 19.7/23.2/57.1 | 19.6/23.4/56.9 | 19.6/23.4/56.9 | 0.94-1.78 | $13,163 |
-| CRY-LIV | 10 | 18.0/22.0/59.5 | 18.1/22.1/59.8 | 17.6/22.6/59.8 | 17.8/22.4/59.8 | 17.8/22.4/59.8 | 0.92-1.88 | $2,172 |
-| IPS-BOU | 10 | 25.5/26.0/49.5 | 25.2/25.7/49.0 | 25.0/25.5/49.5 | 25.1/25.6/49.3 | 25.1/25.6/49.3 | 1.04-1.56 | $1,974 |
-| SUN-CHE | 10 | 26.5/26.0/47.5 | 26.5/26.0/47.5 | 25.8/26.3/48.0 | 26.1/26.1/47.7 | 26.1/26.1/47.7 | 1.04-1.50 | $8,561 |
-| BHA-BRE | 10 | 50.5/25.0/26.0 | 49.8/24.6/25.6 | 50.0/24.5/25.5 | 49.9/24.6/25.6 | 49.9/24.6/25.6 | 1.66-1.12 | $1,056 |
-| MUN-AVL | 10 | 42.5/25.5/32.5 | 42.3/25.4/32.3 | 42.1/24.9/33.0 | 42.2/25.1/32.7 | 42.2/25.1/32.7 | 1.53-1.32 | $10,809 |
+| EVE-COV | 10 | 56.5/24.5/19.5 | 56.2/24.4/19.4 | 56.0/24.5/19.5 | 56.1/24.4/19.5 | 56.1/24.4/19.5 | 1.70-0.89 | $4,604 |
+| LEE-TOT | 10 | 36.5/28.5/35.5 | 36.3/28.4/35.3 | 37.3/28.4/34.3 | 36.8/28.4/34.8 | 36.8/28.4/34.8 | 1.21-1.17 | $4,683 |
+| ARS-HUL | 10 | 84.5/11.5/4.7 | 84.0/11.4/4.6 | 83.9/11.6/4.5 | 83.9/11.5/4.6 | 83.9/11.5/4.6 | 2.79-0.53 | $8,089 |
+| FUL-NEW | 10 | 45.5/26.5/27.5 | 45.7/26.6/27.6 | 45.7/26.6/27.6 | 45.7/26.6/27.6 | 45.7/26.6/27.6 | 1.46-1.08 | $1,895 |
+| NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 19.7/23.2/57.1 | 19.6/23.4/56.9 | 19.6/23.4/56.9 | 0.96-1.80 | $13,176 |
+| CRY-LIV | 10 | 18.0/22.0/59.5 | 18.1/22.1/59.8 | 17.6/22.6/59.8 | 17.8/22.4/59.8 | 17.8/22.4/59.8 | 0.94-1.90 | $2,172 |
+| IPS-BOU | 10 | 25.5/26.0/49.5 | 25.2/25.7/49.0 | 25.0/25.5/49.5 | 25.1/25.6/49.3 | 25.1/25.6/49.3 | 1.06-1.58 | $1,974 |
+| SUN-CHE | 10 | 26.5/26.0/47.5 | 26.5/26.0/47.5 | 25.8/26.3/48.0 | 26.1/26.1/47.7 | 26.1/26.1/47.7 | 1.06-1.52 | $8,561 |
+| BHA-BRE | 10 | 50.5/25.0/26.0 | 49.8/24.6/25.6 | 50.0/24.5/25.5 | 49.9/24.6/25.6 | 49.9/24.6/25.6 | 1.69-1.14 | $1,056 |
+| MUN-AVL | 10 | 42.5/25.5/32.5 | 42.3/25.4/32.3 | 42.1/24.9/33.0 | 42.2/25.1/32.7 | 42.2/25.1/32.7 | 1.55-1.34 | $10,809 |
 
-League average 2.72 goals per game from 89 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.70.
+League average 2.72 goals per game from 89 finished matches; Dixon-Coles rho -0.02; mean fitted total 2.74.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.176, max 0.468.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.182, max 0.478.
 
 ## Current table (from finished FPL fixtures)
 
@@ -65,22 +65,22 @@ qg 0.396, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 44.0 | -1 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 43.8 | -1 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 10.1 | -37 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | medium | 22 | 7.6 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
-| low | 33 | 49.6 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 5.6 | -44 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
+| low | 33 | 49.5 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 50 | 5.7 | -44 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 69.5 | 23 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 60 | 0.1 | -60 | match_model | Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9? | Coventry score the fewest (or joint-fewest) league goals across MW6-9. |
-| low | 5 | 53.8 | 49 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 66 | 28.5 | -38 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
+| low | 5 | 53.7 | 49 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 66 | 28.0 | -38 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 16.6 | -38 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
 | - | 50 | - |  | - | Total goals after 80th minute in PL Matchweeks 7-9 | Fair price coming: not modelled yet. |
 | - | 50 | - |  | - | Will Brentford announce a new contract for Kevin Schade by November 5, 2026? | Contract news has no market or data reference. |
-| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 22%. They differ too much to show one number. |
+| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 23%. They differ too much to show one number. |
 | - | 30 | - |  | - | Will Erling Haaland win a MOTM award with <15 touches? | Fair price coming: not modelled yet. |
 | - | 88 | - |  | - | Will Frank Lampard still be Coventry City's manager at 23:59 UTC on 6 November 2026? | No Polymarket market prices this manager's job by this date. |
 | - | 55 | - |  | - | Will Manchester City be mentioned at Prime Minister's Questions before Nov 5? | Fair price coming: not modelled yet. |
