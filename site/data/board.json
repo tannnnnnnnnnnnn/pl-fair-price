@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T22:25:13Z",
+ "generated_at": "2026-11-02T22:35:18Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -346,9 +346,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4984,
-    "low": 0.3984,
-    "high": 0.5984,
+    "p": 0.5013,
+    "low": 0.4013,
+    "high": 0.6013,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -370,12 +370,12 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.8%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "9.2%",
+      "value": "9.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1081,9 +1081,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5414,
-    "low": 0.4414,
-    "high": 0.6414,
+    "p": 0.5442,
+    "low": 0.4442,
+    "high": 0.6442,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1105,12 +1105,12 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "8.8%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "9.2%",
+      "value": "9.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1165,9 +1165,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4377,
-    "low": 0.3377,
-    "high": 0.5377,
+    "p": 0.4369,
+    "low": 0.3369,
+    "high": 0.5369,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1224,9 +1224,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1041,
-    "low": 0.0041,
-    "high": 0.2041,
+    "p": 0.1036,
+    "low": 0.0035,
+    "high": 0.2036,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1381,6 +1381,30 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570",
+   "title": "Total goals after 80th minute in PL Matchweeks 7-9",
+   "url": "https://beta.xo.market/event/total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570?r=cryptotan01",
+   "creator": "NMagalios13",
+   "is_ours": false,
+   "outcome": "YES",
+   "xo_close": 0.5,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-02T22:22:50.000Z"
+  },
+  {
+   "slug": "will-coventry-city-be-the-lowest-or-joint-lowest-s-3849",
+   "title": "Will Coventry City be the lowest or joint lowest-scoring team in PL Matchweeks 6-9?",
+   "url": "https://beta.xo.market/event/will-coventry-city-be-the-lowest-or-joint-lowest-s-3849?r=cryptotan01",
+   "creator": "CryptoMokado",
+   "is_ours": false,
+   "outcome": "NO",
+   "xo_close": 0.6,
+   "fair_close": 0.001,
+   "confidence": "medium",
+   "resolved_at": "2026-11-02T22:16:29.000Z"
+  },
   {
    "slug": "will-roberto-de-zerbi-still-be-spurs-manager-on-no-1305",
    "title": "Will Roberto De Zerbi still be Spurs manager on November 1?",
@@ -2409,11 +2433,11 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 74,
-  "compared": 31,
-  "fair_closer": 20,
-  "brier_fair": 0.1656,
-  "brier_xo": 0.233
+  "resolved": 76,
+  "compared": 32,
+  "fair_closer": 21,
+  "brier_fair": 0.1604,
+  "brier_xo": 0.237
  },
  "pick_summary": {
   "settled": 9,
