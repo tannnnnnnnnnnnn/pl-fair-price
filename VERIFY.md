@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-03T08:22:22Z)
+# VERIFY — PL Fair Price (2026-11-03T08:32:27Z)
 
 GW10 deadline 2026-11-06T18:30:00Z. 24 XO PL markets; 10 priced (high 1, medium 1, low 8).
 
@@ -11,7 +11,7 @@ GW10 deadline 2026-11-06T18:30:00Z. 24 XO PL markets; 10 priced (high 1, medium 
 | ARS-HUL | 10 | 84.5/11.5/4.7 | 83.9/11.4/4.7 | 84.1/11.4/4.5 | 84.0/11.4/4.6 | 84.0/11.4/4.6 | 2.78-0.52 | $9,412 |
 | FUL-NEW | 10 | 47.0/26.0/26.5 | 47.2/26.1/26.6 | 47.0/25.7/27.2 | 47.1/25.9/26.9 | 47.1/25.9/26.9 | 1.51-1.08 | $5,144 |
 | NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 20.4/23.4/56.2 | 20.0/23.5/56.5 | 20.0/23.5/56.5 | 0.95-1.77 | $19,469 |
-| CRY-LIV | 10 | 18.0/22.0/60.5 | 17.9/21.9/60.2 | 17.6/22.6/59.8 | 17.7/22.3/60.0 | 17.7/22.3/60.0 | 0.92-1.89 | $2,287 |
+| CRY-LIV | 10 | 17.5/22.0/60.5 | 17.5/22.0/60.5 | 17.6/22.6/59.8 | 17.5/22.3/60.1 | 17.5/22.3/60.1 | 0.90-1.88 | $2,287 |
 | IPS-BOU | 10 | 25.0/26.0/49.5 | 24.9/25.9/49.3 | 25.0/25.5/49.5 | 24.9/25.7/49.4 | 24.9/25.7/49.4 | 1.03-1.55 | $2,060 |
 | SUN-CHE | 10 | 26.5/26.0/47.5 | 26.5/26.0/47.5 | 25.9/25.9/48.2 | 26.2/25.9/47.9 | 26.2/25.9/47.9 | 1.05-1.52 | $10,940 |
 | BHA-BRE | 10 | 50.5/25.0/26.0 | 49.8/24.6/25.6 | 49.8/24.4/25.9 | 49.8/24.5/25.7 | 49.8/24.5/25.7 | 1.67-1.13 | $1,178 |
@@ -65,7 +65,7 @@ qg 0.397, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 43.5 | -1 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 43.0 | -2 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 10.2 | -37 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | medium | 22 | 7.7 | -14 | polymarket | Man City Sanctions announced before Nov 6? | Taken straight from Polymarket's matching market: "Manchester City punishment announced by November 6?" |
@@ -78,7 +78,7 @@ qg 0.397, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
 | - | 50 | - |  | - | Will Brentford announce a new contract for Kevin Schade by November 5, 2026? | Contract news has no market or data reference. |
-| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 23%. They differ too much to show one number. |
+| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 22%. They differ too much to show one number. |
 | - | 30 | - |  | - | Will Erling Haaland win a MOTM award with <15 touches? | Fair price coming: not modelled yet. |
 | - | 88 | - |  | - | Will Frank Lampard still be Coventry City's manager at 23:59 UTC on 6 November 2026? | No Polymarket market prices this manager's job by this date. |
 | - | 55 | - |  | - | Will Manchester City be mentioned at Prime Minister's Questions before Nov 5? | Fair price coming: not modelled yet. |
