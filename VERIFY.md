@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-03T00:05:44Z)
+# VERIFY — PL Fair Price (2026-11-03T00:15:44Z)
 
 GW10 deadline 2026-11-06T18:30:00Z. 24 XO PL markets; 10 priced (high 1, medium 1, low 8).
 
@@ -13,9 +13,9 @@ GW10 deadline 2026-11-06T18:30:00Z. 24 XO PL markets; 10 priced (high 1, medium 
 | NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 19.7/23.2/57.1 | 19.6/23.4/56.9 | 19.6/23.4/56.9 | 0.94-1.78 | $13,359 |
 | CRY-LIV | 10 | 18.0/22.0/59.5 | 18.1/22.1/59.8 | 17.6/22.6/59.8 | 17.8/22.4/59.8 | 17.8/22.4/59.8 | 0.92-1.88 | $2,227 |
 | IPS-BOU | 10 | 25.0/26.0/49.5 | 24.9/25.9/49.3 | 25.0/25.5/49.5 | 24.9/25.7/49.4 | 24.9/25.7/49.4 | 1.03-1.55 | $1,998 |
-| SUN-CHE | 10 | 26.5/26.0/47.5 | 26.5/26.0/47.5 | 25.8/26.3/48.0 | 26.1/26.1/47.7 | 26.1/26.1/47.7 | 1.04-1.50 | $8,751 |
-| BHA-BRE | 10 | 50.5/25.0/26.0 | 49.8/24.6/25.6 | 50.0/24.5/25.5 | 49.9/24.6/25.6 | 49.9/24.6/25.6 | 1.66-1.12 | $1,096 |
-| MUN-AVL | 10 | 42.5/26.0/32.5 | 42.1/25.7/32.2 | 41.7/25.6/32.7 | 41.9/25.7/32.4 | 41.9/25.7/32.4 | 1.47-1.27 | $10,870 |
+| SUN-CHE | 10 | 26.5/26.0/47.5 | 26.5/26.0/47.5 | 25.8/26.3/48.0 | 26.1/26.1/47.7 | 26.1/26.1/47.7 | 1.04-1.50 | $8,776 |
+| BHA-BRE | 10 | 50.5/25.0/26.0 | 49.8/24.6/25.6 | 50.0/24.5/25.5 | 49.9/24.6/25.6 | 49.9/24.6/25.6 | 1.66-1.12 | $1,106 |
+| MUN-AVL | 10 | 42.5/26.0/32.5 | 42.1/25.7/32.2 | 41.7/25.6/32.7 | 41.9/25.7/32.4 | 41.9/25.7/32.4 | 1.47-1.27 | $10,879 |
 
 League average 2.70 goals per game from 90 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.69.
 
@@ -74,7 +74,7 @@ qg 0.397, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 | high | 46 | 69.5 | 23 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 5 | 54.4 | 49 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 28.0 | -38 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
-| low | 55 | 16.6 | -38 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 16.4 | -39 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
 | - | 50 | - |  | - | Will Brentford announce a new contract for Kevin Schade by November 5, 2026? | Contract news has no market or data reference. |

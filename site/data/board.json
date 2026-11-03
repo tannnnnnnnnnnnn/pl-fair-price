@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T00:05:44Z",
+ "generated_at": "2026-11-03T00:15:44Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -346,9 +346,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5017,
-    "low": 0.4017,
-    "high": 0.6017,
+    "p": 0.5016,
+    "low": 0.4016,
+    "high": 0.6016,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -370,7 +370,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.5%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1091,9 +1091,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5437,
-    "low": 0.4437,
-    "high": 0.6437,
+    "p": 0.5435,
+    "low": 0.4435,
+    "high": 0.6435,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -1115,7 +1115,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "9.5%",
+      "value": "9.4%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -1346,16 +1346,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1662,
-    "low": 0.0662,
-    "high": 0.2662,
+    "p": 0.1645,
+    "low": 0.0645,
+    "high": 0.2645,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "47.5%",
+      "value": "47.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
@@ -1367,7 +1367,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -38,
+   "gap_pts": -39,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1391,6 +1391,87 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
+   "title": "Will Man City be 3+ points clear at the top of the Premier League after Matchweek 9?",
+   "url": "https://beta.xo.market/event/will-man-city-be-3-points-clear-at-the-top-of-the--8494?r=cryptotan01",
+   "creator": "CryptoTan01",
+   "is_ours": true,
+   "outcome": "NO",
+   "xo_close": 0.51,
+   "fair_close": 0.1888,
+   "confidence": "medium",
+   "resolved_at": "2026-11-03T00:12:00.000Z",
+   "picks": [
+    {
+     "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
+     "side": "NO",
+     "flagged_at": "2026-10-10T13:57:21Z",
+     "buy_price": 0.53,
+     "shares": 18.5198,
+     "cost": 10.0,
+     "fair": 0.4439,
+     "ev": 0.2988,
+     "won": true,
+     "payout": 18.52,
+     "pnl": 8.52
+    },
+    {
+     "slug": "will-man-city-be-3-points-clear-at-the-top-of-the--8494",
+     "side": "YES",
+     "flagged_at": "2026-10-11T17:04:48Z",
+     "buy_price": 0.42,
+     "shares": 10.0,
+     "cost": 4.2974,
+     "fair": 0.4562,
+     "ev": 0.2646,
+     "confidence": "medium",
+     "won": false,
+     "payout": 0.0,
+     "pnl": -4.3
+    }
+   ]
+  },
+  {
+   "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
+   "title": "Will Tottenham be in the Premier League bottom three after Matchweek 9?",
+   "url": "https://beta.xo.market/event/will-tottenham-be-in-the-premier-league-bottom-thr-3501?r=cryptotan01",
+   "creator": "CryptoTan01",
+   "is_ours": true,
+   "outcome": "NO",
+   "xo_close": 0.47,
+   "fair_close": 0.0055,
+   "confidence": "medium",
+   "resolved_at": "2026-11-03T00:05:09.000Z",
+   "picks": [
+    {
+     "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
+     "side": "YES",
+     "flagged_at": "2026-10-08T17:55:33Z",
+     "buy_price": 0.47,
+     "shares": 18.8679,
+     "cost": 9.0559,
+     "fair": 0.5506,
+     "ev": 1.3328,
+     "won": false,
+     "payout": 0.0,
+     "pnl": -9.06
+    },
+    {
+     "slug": "will-tottenham-be-in-the-premier-league-bottom-thr-3501",
+     "side": "NO",
+     "flagged_at": "2026-10-11T09:43:21Z",
+     "buy_price": 0.45,
+     "shares": 10.0,
+     "cost": 4.599,
+     "fair": 0.4259,
+     "ev": 1.142,
+     "won": true,
+     "payout": 10.0,
+     "pnl": 5.4
+    }
+   ]
+  },
   {
    "slug": "total-goals-after-80th-minute-in-pl-matchweeks-7-9-3570",
    "title": "Total goals after 80th minute in PL Matchweeks 7-9",
@@ -2443,19 +2524,19 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 76,
-  "compared": 32,
-  "fair_closer": 21,
-  "brier_fair": 0.1604,
-  "brier_xo": 0.237
+  "resolved": 78,
+  "compared": 34,
+  "fair_closer": 23,
+  "brier_fair": 0.152,
+  "brier_xo": 0.2372
  },
  "pick_summary": {
-  "settled": 9,
-  "won": 5,
-  "staked": 67.34,
-  "returned": 48.79,
-  "pnl": -18.55,
-  "open": 4
+  "settled": 13,
+  "won": 7,
+  "staked": 95.29,
+  "returned": 77.31,
+  "pnl": -17.99,
+  "open": 0
  },
  "best_value": [],
  "live": []
