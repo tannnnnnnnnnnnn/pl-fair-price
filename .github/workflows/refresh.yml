@@ -40,4 +40,11 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      - uses: actions/deploy-pages@v4
+      # Pages sometimes hangs in "updating_pages"; retry once instead of failing the run.
+      - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        with:
+          timeout: 300000
+      - if: steps.deploy.outcome == 'failure'
+        uses: actions/deploy-pages@v4
