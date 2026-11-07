@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-07T07:40:13Z)
+# VERIFY — PL Fair Price (2026-11-07T07:50:10Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,24 +6,24 @@ GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| LEE-TOT | 10 | 34.5/28.5/36.5 | 34.7/28.6/36.7 | 34.3/28.4/37.3 | 34.5/28.5/37.0 | 34.5/28.5/37.0 | 1.13-1.18 | $443,802 |
-| ARS-HUL | 10 | 85.5/11.5/4.2 | 84.5/11.4/4.1 | 85.1/10.4/4.5 | 84.8/10.9/4.3 | 84.8/10.9/4.3 | 2.84-0.51 | $344,211 |
-| FUL-NEW | 10 | 47.5/26.5/26.5 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 1.48-1.04 | $45,115 |
-| NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 0.93-1.76 | $641,109 |
-| CRY-LIV | 10 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 0.84-1.85 | $32,685 |
-| IPS-BOU | 10 | 23.5/26.5/50.5 | 23.4/26.4/50.2 | 23.4/25.4/51.2 | 23.4/25.9/50.7 | 23.4/25.9/50.7 | 0.96-1.54 | $18,028 |
-| SUN-CHE | 10 | 25.5/26.5/48.5 | 25.4/26.4/48.3 | 25.5/26.0/48.5 | 25.4/26.2/48.4 | 25.4/26.2/48.4 | 1.01-1.50 | $147,214 |
-| BHA-BRE | 10 | 52.5/24.5/24.5 | 51.7/24.1/24.1 | 51.2/24.4/24.4 | 51.5/24.3/24.3 | 51.5/24.3/24.3 | 1.70-1.09 | $35,397 |
-| MUN-AVL | 10 | 44.5/25.5/30.5 | 44.3/25.4/30.3 | 44.7/24.6/30.7 | 44.5/25.0/30.5 | 44.5/25.0/30.5 | 1.57-1.26 | $44,989 |
+| LEE-TOT | 10 | 34.5/28.5/36.5 | 34.7/28.6/36.7 | 34.3/28.4/37.3 | 34.5/28.5/37.0 | 34.5/28.5/37.0 | 1.13-1.18 | $450,590 |
+| ARS-HUL | 10 | 85.5/11.5/4.1 | 84.6/11.4/4.1 | 85.1/10.4/4.5 | 84.8/10.9/4.3 | 84.8/10.9/4.3 | 2.83-0.51 | $345,486 |
+| FUL-NEW | 10 | 47.5/26.5/26.5 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 1.48-1.04 | $45,917 |
+| NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 0.93-1.76 | $643,031 |
+| CRY-LIV | 10 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 0.84-1.85 | $32,700 |
+| IPS-BOU | 10 | 23.5/26.5/50.5 | 23.4/26.4/50.2 | 23.4/25.4/51.2 | 23.4/25.9/50.7 | 23.4/25.9/50.7 | 0.96-1.54 | $18,075 |
+| SUN-CHE | 10 | 25.5/26.5/48.5 | 25.4/26.4/48.3 | 25.5/26.0/48.5 | 25.4/26.2/48.4 | 25.4/26.2/48.4 | 1.01-1.50 | $147,365 |
+| BHA-BRE | 10 | 52.5/24.5/24.5 | 51.7/24.1/24.1 | 51.2/24.4/24.4 | 51.5/24.3/24.3 | 51.5/24.3/24.3 | 1.70-1.09 | $46,853 |
+| MUN-AVL | 10 | 44.5/25.5/30.5 | 44.3/25.4/30.3 | 44.7/24.6/30.7 | 44.5/25.0/30.5 | 44.5/25.0/30.5 | 1.57-1.26 | $45,116 |
 | MCI-FUL | 11 | - | - | 68.3/18.1/13.6 | 68.3/18.1/13.6 | 68.3/18.1/13.6 | 2.34-0.95 | $178 |
 | AVL-SUN | 11 | - | - | 55.8/24.1/20.1 | 55.8/24.1/20.1 | 55.8/24.1/20.1 | 1.71-0.92 | $36 |
 | BOU-NFO | 11 | - | - | 47.7/26.1/26.1 | 47.7/26.1/26.1 | 47.7/26.1/26.1 | 1.50-1.04 | $8 |
 | CHE-LEE | 11 | - | - | 53.0/25.0/22.0 | 53.0/25.0/22.0 | 53.0/25.0/22.0 | 1.63-0.95 | $106 |
-| COV-CRY | 11 | - | - | 39.8/27.0/33.2 | 39.8/27.0/33.2 | 39.8/27.0/33.2 | 1.33-1.19 | $0 |
+| COV-CRY | 11 | - | - | 39.6/26.9/33.5 | 39.6/26.9/33.5 | 39.6/26.9/33.5 | 1.34-1.21 | $0 |
 | TOT-IPS | 11 | - | - | 64.5/20.5/15.0 | 64.5/20.5/15.0 | 64.5/20.5/15.0 | 2.05-0.87 | $0 |
 | NEW-ARS | 11 | - | - | 16.3/21.9/61.7 | 16.3/21.9/61.7 | 16.3/21.9/61.7 | 0.86-1.90 | $63 |
 
-League average 2.71 goals per game from 91 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.71.
+League average 2.71 goals per game from 91 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.72.
 
 Team-ratings refit error on the priced matches: mean |Δlog λ| 0.147, max 0.454.
 
@@ -71,7 +71,7 @@ qg 0.396, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 42.5 | -3 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 42.5 | -2 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 9.0 | -38 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | low | 33 | 48.6 | 16 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
@@ -82,7 +82,7 @@ qg 0.396, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 | low | 55 | 15.6 | -39 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
-| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 23%. They differ too much to show one number. |
+| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 24%. They differ too much to show one number. |
 | - | 30 | - |  | - | Will Erling Haaland win a MOTM award with <15 touches? | Fair price coming: not modelled yet. |
 | - | 50 | - |  | - | Will Manchester United sack Michael Carrick by December 31, 2026? | Fair price coming: not modelled yet. |
 | - | 50 | - |  | - | Will Manchester United win 3 out of their next 5 Premier League games? | Fair price coming: not modelled yet. |
