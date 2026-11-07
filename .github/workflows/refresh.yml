@@ -40,7 +40,8 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      # Pages sometimes hangs in "updating_pages"; retry once instead of failing the run.
+      # Pages sometimes hangs in "updating_pages" or cancels a deploy; retry once, and never fail the run on it.
+      # The next run redeploys within 10 min, and the local guardian alerts if the live data goes stale.
       - id: deploy
         uses: actions/deploy-pages@v4
         continue-on-error: true
@@ -48,3 +49,4 @@ jobs:
           timeout: 300000
       - if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
+        continue-on-error: true
