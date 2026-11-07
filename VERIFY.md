@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-07T05:09:31Z)
+# VERIFY — PL Fair Price (2026-11-07T05:19:40Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,25 +6,25 @@ GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| LEE-TOT | 10 | 34.5/28.5/37.5 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 1.12-1.18 | $234,102 |
-| ARS-HUL | 10 | 84.5/11.5/4.2 | 84.4/11.5/4.1 | 84.9/10.6/4.5 | 84.6/11.0/4.3 | 84.6/11.0/4.3 | 2.79-0.50 | $232,897 |
-| FUL-NEW | 10 | 47.5/26.5/26.5 | 47.3/26.4/26.4 | 47.5/26.0/26.5 | 47.4/26.2/26.4 | 47.4/26.2/26.4 | 1.47-1.03 | $32,758 |
-| NFO-MCI | 10 | 20.5/23.5/56.5 | 20.4/23.4/56.2 | 19.6/23.6/56.8 | 20.0/23.5/56.5 | 20.0/23.5/56.5 | 0.94-1.75 | $502,188 |
-| CRY-LIV | 10 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 0.82-1.83 | $30,357 |
-| IPS-BOU | 10 | 23.5/26.5/50.5 | 23.4/26.4/50.2 | 23.4/25.4/51.2 | 23.4/25.9/50.7 | 23.4/25.9/50.7 | 0.94-1.52 | $17,330 |
-| SUN-CHE | 10 | 25.5/26.5/48.5 | 25.4/26.4/48.3 | 25.5/26.0/48.5 | 25.4/26.2/48.4 | 25.4/26.2/48.4 | 1.00-1.48 | $140,425 |
-| BHA-BRE | 10 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 1.66-1.07 | $34,165 |
-| MUN-AVL | 10 | 44.5/25.5/30.5 | 44.3/25.4/30.3 | 45.2/24.9/29.9 | 44.7/25.1/30.1 | 44.7/25.1/30.1 | 1.54-1.22 | $42,297 |
-| MCI-FUL | 11 | - | - | 69.3/16.8/13.9 | 69.3/16.8/13.9 | 69.3/16.8/13.9 | 2.54-1.06 | $89 |
-| AVL-SUN | 11 | - | - | 55.8/24.1/20.1 | 55.8/24.1/20.1 | 55.8/24.1/20.1 | 1.68-0.90 | $36 |
-| BOU-NFO | 11 | - | - | 48.0/25.8/26.3 | 48.0/25.8/26.3 | 48.0/25.8/26.3 | 1.51-1.05 | $2 |
-| CHE-LEE | 11 | - | - | 54.0/24.2/21.7 | 54.0/24.2/21.7 | 54.0/24.2/21.7 | 1.68-0.97 | $56 |
-| COV-CRY | 11 | - | - | 39.9/26.8/33.3 | 39.9/26.8/33.3 | 39.9/26.8/33.3 | 1.33-1.19 | $0 |
-| NEW-ARS | 11 | - | - | 16.3/21.3/62.4 | 16.3/21.3/62.4 | 16.3/21.3/62.4 | 0.88-1.95 | $55 |
+| LEE-TOT | 10 | 34.5/28.5/37.5 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 1.14-1.20 | $302,363 |
+| ARS-HUL | 10 | 84.5/11.5/4.2 | 84.4/11.5/4.1 | 84.9/10.6/4.5 | 84.6/11.0/4.3 | 84.6/11.0/4.3 | 2.82-0.51 | $233,525 |
+| FUL-NEW | 10 | 47.5/26.5/26.5 | 47.3/26.4/26.4 | 47.5/26.0/26.5 | 47.4/26.2/26.4 | 47.4/26.2/26.4 | 1.49-1.05 | $33,250 |
+| NFO-MCI | 10 | 20.5/23.5/56.5 | 20.4/23.4/56.2 | 19.6/23.6/56.8 | 20.0/23.5/56.5 | 20.0/23.5/56.5 | 0.95-1.77 | $506,674 |
+| CRY-LIV | 10 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 0.84-1.85 | $30,499 |
+| IPS-BOU | 10 | 23.5/26.5/50.5 | 23.4/26.4/50.2 | 23.4/25.4/51.2 | 23.4/25.9/50.7 | 23.4/25.9/50.7 | 0.96-1.54 | $17,456 |
+| SUN-CHE | 10 | 25.5/26.5/48.5 | 25.4/26.4/48.3 | 25.5/26.0/48.5 | 25.4/26.2/48.4 | 25.4/26.2/48.4 | 1.01-1.50 | $140,661 |
+| BHA-BRE | 10 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 1.69-1.09 | $34,407 |
+| MUN-AVL | 10 | 44.5/25.5/30.5 | 44.3/25.4/30.3 | 44.9/24.7/30.3 | 44.6/25.1/30.3 | 44.6/25.1/30.3 | 1.57-1.25 | $43,150 |
+| MCI-FUL | 11 | - | - | 70.4/17.1/12.6 | 70.4/17.1/12.6 | 70.4/17.1/12.6 | 2.45-0.95 | $94 |
+| AVL-SUN | 11 | - | - | 55.8/24.1/20.1 | 55.8/24.1/20.1 | 55.8/24.1/20.1 | 1.71-0.92 | $36 |
+| BOU-NFO | 11 | - | - | 47.7/26.1/26.1 | 47.7/26.1/26.1 | 47.7/26.1/26.1 | 1.50-1.04 | $2 |
+| CHE-LEE | 11 | - | - | 53.5/24.7/21.7 | 53.5/24.7/21.7 | 53.5/24.7/21.7 | 1.65-0.96 | $56 |
+| COV-CRY | 11 | - | - | 39.7/26.6/33.7 | 39.7/26.6/33.7 | 39.7/26.6/33.7 | 1.36-1.23 | $0 |
+| NEW-ARS | 11 | - | - | 16.8/21.8/61.4 | 16.8/21.8/61.4 | 16.8/21.8/61.4 | 0.89-1.92 | $55 |
 
-League average 2.71 goals per game from 91 finished matches; Dixon-Coles rho 0.0; mean fitted total 2.71.
+League average 2.71 goals per game from 91 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.72.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.154, max 0.448.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.152, max 0.463.
 
 ## Current table (from finished FPL fixtures)
 
@@ -70,9 +70,9 @@ qg 0.396, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 41.7 | -3 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 42.4 | -3 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 13.7 | -33 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 47 | 13.2 | -34 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | low | 33 | 48.4 | 15 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 5.2 | -45 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 69.5 | 23 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
