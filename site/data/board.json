@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T21:39:26Z",
+ "generated_at": "2026-11-07T21:49:31Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -175,9 +175,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4739,
-    "low": 0.3739,
-    "high": 0.5739,
+    "p": 0.469,
+    "low": 0.369,
+    "high": 0.569,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -214,7 +214,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.6%",
+      "value": "31.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -278,7 +278,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "75.0% (spread 2c, $1,341,957 traded on this market)",
+      "value": "75.0% (spread 2c, $1,350,348 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -343,9 +343,9 @@
    "creator": "AThryver",
    "is_ours": false,
    "xo_price": 0.85,
-   "best_bid": 0.501,
+   "best_bid": 0.5,
    "best_ask": 0.8,
-   "liquidity_usd": 32.54,
+   "liquidity_usd": 32.58,
    "volume_usd": 33.53,
    "expires_at": "2026-12-31T23:59:59.000Z",
    "group": "season",
@@ -369,12 +369,8 @@
     "yes": {
      "bids": [
       {
-       "price": 0.501,
-       "size": 3.9
-      },
-      {
        "price": 0.5,
-       "size": 23.526663
+       "size": 27.526663
       }
      ],
      "asks": [
@@ -383,7 +379,7 @@
        "size": 23.526663
       }
      ],
-     "last": 0.651
+     "last": 0.65
     },
     "no": {
      "bids": [
@@ -394,12 +390,8 @@
      ],
      "asks": [
       {
-       "price": 0.499,
-       "size": 3.9
-      },
-      {
        "price": 0.5,
-       "size": 23.526663
+       "size": 27.526663
       }
      ],
      "last": 0.35
@@ -896,9 +888,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5055,
-    "low": 0.4055,
-    "high": 0.6055,
+    "p": 0.5006,
+    "low": 0.4006,
+    "high": 0.6006,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -935,14 +927,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.6%",
+      "value": "31.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 46,
+   "gap_pts": 45,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
