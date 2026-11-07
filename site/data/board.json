@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T03:59:15Z",
+ "generated_at": "2026-11-07T04:08:54Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -175,9 +175,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4829,
-    "low": 0.3829,
-    "high": 0.5829,
+    "p": 0.4835,
+    "low": 0.3835,
+    "high": 0.5835,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -204,7 +204,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.8%",
+      "value": "8.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -343,9 +343,9 @@
    "creator": "AThryver",
    "is_ours": false,
    "xo_price": 0.85,
-   "best_bid": 0.5,
-   "best_ask": null,
-   "liquidity_usd": 11.76,
+   "best_bid": 0.501,
+   "best_ask": 0.999,
+   "liquidity_usd": 33.7,
    "volume_usd": 33.53,
    "expires_at": "2026-12-31T23:59:59.000Z",
    "group": "season",
@@ -369,22 +369,40 @@
     "yes": {
      "bids": [
       {
-       "price": 0.5,
-       "size": 23.526663
-      }
-     ],
-     "asks": [],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [],
-     "asks": [
+       "price": 0.501,
+       "size": 3.9
+      },
       {
        "price": 0.5,
        "size": 23.526663
       }
      ],
-     "last": 0.5
+     "asks": [
+      {
+       "price": 0.999,
+       "size": 20.0
+      }
+     ],
+     "last": 0.75
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.001,
+       "size": 20.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.499,
+       "size": 3.9
+      },
+      {
+       "price": 0.5,
+       "size": 23.526663
+      }
+     ],
+     "last": 0.25
     }
    }
   },
@@ -878,9 +896,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5157,
-    "low": 0.4157,
-    "high": 0.6157,
+    "p": 0.5164,
+    "low": 0.4164,
+    "high": 0.6164,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -907,7 +925,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.8%",
+      "value": "8.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -962,9 +980,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4072,
-    "low": 0.3072,
-    "high": 0.5071,
+    "p": 0.4113,
+    "low": 0.3114,
+    "high": 0.5113,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1021,9 +1039,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0643,
+    "p": 0.0921,
     "low": 0,
-    "high": 0.1643,
+    "high": 0.1921,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1042,7 +1060,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -41,
+   "gap_pts": -38,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1079,9 +1097,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0331,
+    "p": 0.0333,
     "low": 0,
-    "high": 0.1331,
+    "high": 0.1333,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
