@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-07T06:30:02Z)
+# VERIFY — PL Fair Price (2026-11-07T06:39:54Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,24 +6,25 @@ GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| LEE-TOT | 10 | 34.5/28.5/37.5 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 1.14-1.20 | $396,466 |
-| ARS-HUL | 10 | 85.5/11.5/4.0 | 84.6/11.4/4.0 | 85.1/10.4/4.5 | 84.8/10.9/4.2 | 84.8/10.9/4.2 | 2.83-0.51 | $324,353 |
-| FUL-NEW | 10 | 47.5/26.5/26.5 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 1.48-1.04 | $41,288 |
-| NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 0.93-1.76 | $586,293 |
-| CRY-LIV | 10 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 0.84-1.85 | $32,148 |
-| IPS-BOU | 10 | 23.5/26.5/50.5 | 23.4/26.4/50.2 | 23.4/25.4/51.2 | 23.4/25.9/50.7 | 23.4/25.9/50.7 | 0.96-1.54 | $17,793 |
-| SUN-CHE | 10 | 25.5/26.5/48.5 | 25.4/26.4/48.3 | 25.5/26.0/48.5 | 25.4/26.2/48.4 | 25.4/26.2/48.4 | 1.01-1.50 | $142,231 |
-| BHA-BRE | 10 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 1.69-1.09 | $34,893 |
-| MUN-AVL | 10 | 44.5/25.5/30.5 | 44.3/25.4/30.3 | 44.9/24.7/30.3 | 44.6/25.1/30.3 | 44.6/25.1/30.3 | 1.57-1.25 | $44,120 |
-| MCI-FUL | 11 | - | - | 68.6/17.6/13.7 | 68.6/17.6/13.7 | 68.6/17.6/13.7 | 2.42-1.00 | $173 |
+| LEE-TOT | 10 | 34.5/28.5/37.5 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 34.3/28.4/37.3 | 1.14-1.20 | $400,087 |
+| ARS-HUL | 10 | 85.5/11.5/4.0 | 84.6/11.4/4.0 | 85.1/10.4/4.5 | 84.8/10.9/4.2 | 84.8/10.9/4.2 | 2.83-0.51 | $329,036 |
+| FUL-NEW | 10 | 47.5/26.5/26.5 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 47.3/26.4/26.4 | 1.48-1.04 | $41,666 |
+| NFO-MCI | 10 | 19.5/23.5/56.5 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 19.6/23.6/56.8 | 0.93-1.76 | $589,253 |
+| CRY-LIV | 10 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 16.4/22.4/61.2 | 0.84-1.85 | $32,336 |
+| IPS-BOU | 10 | 23.5/26.5/50.5 | 23.4/26.4/50.2 | 23.4/25.4/51.2 | 23.4/25.9/50.7 | 23.4/25.9/50.7 | 0.96-1.54 | $17,799 |
+| SUN-CHE | 10 | 25.5/26.5/48.5 | 25.4/26.4/48.3 | 25.5/26.0/48.5 | 25.4/26.2/48.4 | 25.4/26.2/48.4 | 1.01-1.50 | $142,664 |
+| BHA-BRE | 10 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 1.69-1.09 | $34,906 |
+| MUN-AVL | 10 | 44.5/25.5/30.5 | 44.3/25.4/30.3 | 44.7/24.6/30.7 | 44.5/25.0/30.5 | 44.5/25.0/30.5 | 1.57-1.26 | $44,172 |
+| MCI-FUL | 11 | - | - | 69.0/17.7/13.3 | 69.0/17.7/13.3 | 69.0/17.7/13.3 | 2.38-0.95 | $173 |
 | AVL-SUN | 11 | - | - | 55.8/24.1/20.1 | 55.8/24.1/20.1 | 55.8/24.1/20.1 | 1.71-0.92 | $36 |
 | BOU-NFO | 11 | - | - | 47.7/26.1/26.1 | 47.7/26.1/26.1 | 47.7/26.1/26.1 | 1.50-1.04 | $8 |
-| CHE-LEE | 11 | - | - | 53.3/25.1/21.6 | 53.3/25.1/21.6 | 53.3/25.1/21.6 | 1.61-0.93 | $67 |
+| CHE-LEE | 11 | - | - | 53.0/25.0/22.0 | 53.0/25.0/22.0 | 53.0/25.0/22.0 | 1.63-0.95 | $67 |
 | TOT-IPS | 11 | - | - | 64.5/20.5/15.0 | 64.5/20.5/15.0 | 64.5/20.5/15.0 | 2.05-0.87 | $0 |
+| NEW-ARS | 11 | - | - | 16.3/21.9/61.7 | 16.3/21.9/61.7 | 16.3/21.9/61.7 | 0.86-1.90 | $63 |
 
 League average 2.71 goals per game from 91 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.73.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.158, max 0.451.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.151, max 0.450.
 
 ## Current table (from finished FPL fixtures)
 
@@ -69,9 +70,9 @@ qg 0.396, qa 0.050, plays 0.95; xG 6.56, xA 0.85, 799 min, 9/9 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 41.6 | -3 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 42.3 | -3 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 8.7 | -38 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 47 | 8.9 | -38 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | low | 33 | 48.4 | 15 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 3.3 | -47 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 69.5 | 23 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
