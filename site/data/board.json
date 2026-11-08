@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T16:34:54Z",
+ "generated_at": "2026-11-08T16:44:53Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -336,7 +336,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "76.5% (spread 1c, $1,357,215 traded on this market)",
+      "value": "76.5% (spread 1c, $1,357,221 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -402,8 +402,8 @@
    "is_ours": false,
    "xo_price": 0.85,
    "best_bid": 0.501,
-   "best_ask": null,
-   "liquidity_usd": 13.72,
+   "best_ask": 0.95,
+   "liquidity_usd": 36.07,
    "volume_usd": 33.53,
    "expires_at": "2026-12-31T23:59:59.000Z",
    "group": "season",
@@ -435,11 +435,21 @@
        "size": 23.526663
       }
      ],
-     "asks": [],
-     "last": 0.501
+     "asks": [
+      {
+       "price": 0.95,
+       "size": 23.526663
+      }
+     ],
+     "last": 0.726
     },
     "no": {
-     "bids": [],
+     "bids": [
+      {
+       "price": 0.05,
+       "size": 23.526663
+      }
+     ],
      "asks": [
       {
        "price": 0.499,
@@ -450,7 +460,7 @@
        "size": 23.526663
       }
      ],
-     "last": 0.499
+     "last": 0.275
     }
    }
   },
@@ -655,7 +665,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "B.Fernandes: xG 2.95, xA 1.61 in 720 min, 8/9 starts",
+      "label": "B.Fernandes: xG 2.95, xA 1.61 in 727 min, 9/9 starts",
       "value": "19% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -970,9 +980,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5622,
-    "low": 0.4622,
-    "high": 0.6622,
+    "p": 0.5635,
+    "low": 0.4635,
+    "high": 0.6635,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1029,9 +1039,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1157,
-    "low": 0.0156,
-    "high": 0.2157,
+    "p": 0.1161,
+    "low": 0.0161,
+    "high": 0.2161,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1087,9 +1097,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0765,
+    "p": 0.076,
     "low": 0,
-    "high": 0.1765,
+    "high": 0.1759,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
