@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T18:35:31Z",
+ "generated_at": "2026-11-08T18:45:50Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -135,7 +135,7 @@
    "lock_at": "2026-11-06T20:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long",
+   "horizon": "weekend",
    "taker_fee_bps": 400,
    "pitch": "Spurs have backed De Zerbi after a major rebuild, but continued poor results could change everything.",
    "description": "This market resolves based on whether Tottenham Hotspur officially dismisses or sacks Roberto De Zerbi as head coach before 2026-11-11T23:59:59Z. Voluntary resignation or departure due to health reasons does not count as a sacking. Primary source: Tottenham Hotspur (https://www. tottenhamhotspur. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com) or Sky Sports (https://www. skysports. com). The primary source governs. If The official announcement is officially retracted or The club ceases operations, the market voids and all positions resolve equally.",
@@ -233,9 +233,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4841,
-    "low": 0.3841,
-    "high": 0.5841,
+    "p": 0.4837,
+    "low": 0.3837,
+    "high": 0.5837,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -252,7 +252,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.0%",
+      "value": "3.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -327,16 +327,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.76,
-    "low": 0.73,
-    "high": 0.79,
+    "p": 0.765,
+    "low": 0.735,
+    "high": 0.795,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "76.0% (spread 2c, $1,357,247 traded on this market)",
+      "value": "76.5% (spread 1c, $1,357,247 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -652,8 +652,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9979,
-    "low": 0.8979,
+    "p": 0.999,
+    "low": 0.899,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -665,7 +665,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "B.Fernandes: xG 3.94, xA 1.90 in 810 min, 9/9 starts",
+      "label": "B.Fernandes: xG 3.94, xA 1.90 in 810 min, 9/10 starts",
       "value": "19% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -765,7 +765,7 @@
    "lock_at": "2026-11-06T20:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long",
+   "horizon": "weekend",
    "taker_fee_bps": 400,
    "pitch": "The first P: managerial departure historically lands in Oct/Nov, and return from international break is classic trigger",
    "description": "This market resolves Yes if a Premier League club officially announces, before November 9, 2026, 23:59:59 UTC, that its manager is leaving via sacking, resignation, or mutual agreement. The announcement time counts, not the date the manager actually stops working. An announcement before the cutoff counts even if the departure takes effect on or after November 9, 2026. An announcement on or after the cutoff does not count, even if the departure was agreed earlier. The announcement must come from the club or the Premier League. Primary source: Premier League (https://www. premierleague. com). If that source is unavailable, incomplete, or inconsistent, BBC (https://www. bbc. com) or Sky Sports (https://www. skysports. com) may be used. The primary source governs. Reports of talks, a caretaker appointment with no departure announced, or a leave of absence do not count. If the announcement is officially retracted before the cutoff, or the Premier League season is cancelled before any qualifying announcement, the market voids and all positions resolve equally.",
@@ -806,7 +806,7 @@
    "lock_at": "2026-11-06T20:00:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
-   "horizon": "long",
+   "horizon": "weekend",
    "taker_fee_bps": 400,
    "pitch": "History says yes. I think this year will be an exception. No obvious candidates as the season resumes.",
    "description": "This market resolves based on whether Whether any English Premier League club manager is sacked, leaves by mutual consent, or departs due to managerial change before Matchweek 11 of the 2026/27 season as recorded by the official governing body. Interim or caretaker managers appointed and subsequently leaving do not count unless they were the permanent manager at the start of the relevant window. Departures occurring after Matchweek 11 begins or concludes do not count. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com). The primary source governs. If The official Premier League season is permanently abandoned or cancelled before Matchweek 11 or Official governing body registration data is officially retracted, the market voids and all positions resolve equally.",
@@ -896,9 +896,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5171,
-    "low": 0.4171,
-    "high": 0.6171,
+    "p": 0.5176,
+    "low": 0.4176,
+    "high": 0.6176,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -915,7 +915,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.0%",
+      "value": "3.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -980,15 +980,15 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5774,
-    "low": 0.4774,
-    "high": 0.6774,
+    "p": 0.5718,
+    "low": 0.4718,
+    "high": 0.6718,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
     "inputs": [
      {
-      "label": "Isak: xG 4.88, xA 0.33 in 747 min, 9/10 starts",
+      "label": "Isak: xG 4.88, xA 0.28 in 747 min, 9/10 starts",
       "value": "27% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
@@ -1001,7 +1001,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 13,
+   "gap_pts": 12,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -1039,9 +1039,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1207,
-    "low": 0.0207,
-    "high": 0.2207,
+    "p": 0.1185,
+    "low": 0.0185,
+    "high": 0.2185,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1097,9 +1097,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0747,
+    "p": 0.0771,
     "low": 0,
-    "high": 0.1748,
+    "high": 0.1772,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -1113,7 +1113,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-12T15:00:00Z",
-   "gap_pts": -43,
+   "gap_pts": -42,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2392,7 +2392,5 @@
   "open": 0
  },
  "best_value": [],
- "live": [
-  "MUN-AVL"
- ]
+ "live": []
 }
