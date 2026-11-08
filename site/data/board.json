@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T17:55:11Z",
+ "generated_at": "2026-11-08T18:05:17Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -652,8 +652,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9977,
-    "low": 0.8977,
+    "p": 0.9984,
+    "low": 0.8984,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -665,7 +665,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "B.Fernandes: xG 3.90, xA 1.64 in 777 min, 9/9 starts",
+      "label": "B.Fernandes: xG 3.90, xA 1.66 in 788 min, 9/9 starts",
       "value": "20% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -980,9 +980,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5662,
-    "low": 0.4662,
-    "high": 0.6662,
+    "p": 0.5705,
+    "low": 0.4705,
+    "high": 0.6704,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1039,9 +1039,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1242,
-    "low": 0.0242,
-    "high": 0.2243,
+    "p": 0.1248,
+    "low": 0.0248,
+    "high": 0.2248,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1097,9 +1097,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0756,
+    "p": 0.075,
     "low": 0,
-    "high": 0.1756,
+    "high": 0.175,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -1151,16 +1151,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1921,
-    "low": 0.0921,
-    "high": 0.2921,
+    "p": 0.187,
+    "low": 0.087,
+    "high": 0.287,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "56.5%",
+      "value": "55.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {

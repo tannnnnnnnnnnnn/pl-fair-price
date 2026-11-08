@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-08T17:55:11Z)
+# VERIFY — PL Fair Price (2026-11-08T18:05:17Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,19 +6,19 @@ GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| MCI-FUL | 11 | 66.5/19.0/15.0 | 66.2/18.9/14.9 | 66.8/18.6/14.6 | 66.5/18.7/14.7 | 66.5/18.7/14.7 | 2.22-0.94 | $5,039 |
-| AVL-SUN | 11 | 57.0/24.5/19.5 | 56.4/24.3/19.3 | 56.1/24.2/19.7 | 56.2/24.2/19.5 | 56.2/24.2/19.5 | 1.65-0.85 | $307 |
+| MCI-FUL | 11 | 67.0/19.0/14.5 | 66.7/18.9/14.4 | 66.8/18.1/15.1 | 66.8/18.5/14.8 | 66.8/18.5/14.8 | 2.26-0.96 | $5,067 |
+| AVL-SUN | 11 | 56.0/25.0/20.0 | 55.4/24.8/19.8 | 55.1/24.2/20.7 | 55.2/24.5/20.3 | 55.2/24.5/20.3 | 1.63-0.87 | $409 |
 | COV-CRY | 11 | 39.5/27.0/34.0 | 39.3/26.9/33.8 | 39.5/27.0/33.5 | 39.4/26.9/33.7 | 39.4/26.9/33.7 | 1.29-1.17 | $739 |
-| TOT-IPS | 11 | 62.0/22.0/17.5 | 61.1/21.7/17.2 | 61.5/21.5/17.0 | 61.3/21.6/17.1 | 61.3/21.6/17.1 | 1.90-0.89 | $389 |
+| TOT-IPS | 11 | 62.0/22.0/17.0 | 61.4/21.8/16.8 | 61.5/21.5/17.0 | 61.4/21.6/16.9 | 61.4/21.6/16.9 | 1.89-0.88 | $389 |
 | CHE-LEE | 11 | 53.5/25.5/22.0 | 53.0/25.2/21.8 | 53.8/24.6/21.6 | 53.4/24.9/21.7 | 53.4/24.9/21.7 | 1.59-0.91 | $3,619 |
 | BOU-NFO | 11 | 48.0/27.0/26.0 | 47.5/26.7/25.7 | 47.7/26.4/25.9 | 47.6/26.6/25.8 | 47.6/26.6/25.8 | 1.42-0.97 | $3,100 |
-| NEW-ARS | 11 | 16.0/22.5/62.0 | 15.9/22.4/61.7 | 16.4/21.9/61.7 | 16.2/22.1/61.7 | 16.2/22.1/61.7 | 0.81-1.83 | $4,755 |
-| HUL-BHA | 11 | - | - | 14.9/20.8/64.4 | 14.9/20.8/64.4 | 14.9/20.8/64.4 | 0.81-1.95 | $2,061 |
-| LIV-MUN | 11 | - | - | 54.0/23.7/22.2 | 54.0/23.7/22.2 | 54.0/23.7/22.2 | 1.71-1.00 | $1,627 |
+| NEW-ARS | 11 | 16.0/22.5/62.0 | 15.9/22.4/61.7 | 16.4/21.9/61.7 | 16.2/22.1/61.7 | 16.2/22.1/61.7 | 0.81-1.83 | $4,756 |
+| HUL-BHA | 11 | - | - | 15.2/21.3/63.5 | 15.2/21.3/63.5 | 15.2/21.3/63.5 | 0.80-1.90 | $2,061 |
+| LIV-MUN | 11 | - | - | 55.8/23.1/21.1 | 55.8/23.1/21.1 | 55.8/23.1/21.1 | 1.77-0.99 | $1,627 |
 
 League average 2.68 goals per game from 99 finished matches; Dixon-Coles rho 0.01; mean fitted total 2.66.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.161, max 0.375.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.162, max 0.370.
 
 ## Current table (from finished FPL fixtures)
 
@@ -64,15 +64,15 @@ qg 0.395, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 56.6 | 12 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 57.0 | 12 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.8 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 12.4 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 47 | 12.5 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | low | 33 | 48.4 | 15 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 7.6 | -42 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
+| low | 50 | 7.5 | -42 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.0 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 5 | 51.7 | 47 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 28.0 | -38 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
-| low | 55 | 19.2 | -36 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 18.7 | -36 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
 | - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 10%. They differ too much to show one number. |
