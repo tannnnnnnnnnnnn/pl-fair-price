@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-08T10:43:18Z)
+# VERIFY — PL Fair Price (2026-11-08T10:53:19Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,17 +6,17 @@ GW11 deadline 2026-11-21T11:00:00Z. 20 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| CRY-LIV | 10 | 16.5/21.5/62.5 | 16.4/21.4/62.2 | 16.4/21.4/62.2 | 16.4/21.4/62.2 | 16.4/21.4/62.2 | 0.88-1.94 | $590,606 |
-| IPS-BOU | 10 | 24.5/25.5/50.5 | 24.4/25.4/50.2 | 23.4/25.4/51.2 | 23.9/25.4/50.7 | 23.9/25.4/50.7 | 0.99-1.56 | $105,227 |
-| SUN-CHE | 10 | 23.5/25.5/51.5 | 23.4/25.4/51.2 | 23.4/25.4/51.2 | 23.4/25.4/51.2 | 23.4/25.4/51.2 | 0.97-1.57 | $5,278,138 |
-| BHA-BRE | 10 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 1.66-1.07 | $576,484 |
-| MUN-AVL | 10 | 44.5/25.5/30.5 | 44.3/25.4/30.3 | 44.3/25.4/30.3 | 44.3/25.4/30.3 | 44.3/25.4/30.3 | 1.51-1.21 | $164,038 |
-| MCI-FUL | 11 | 67.0/19.0/14.5 | 66.7/18.9/14.4 | 67.0/18.5/14.5 | 66.8/18.7/14.5 | 66.8/18.7/14.5 | 2.25-0.94 | $2,307 |
+| CRY-LIV | 10 | 16.5/21.5/62.5 | 16.4/21.4/62.2 | 16.4/21.4/62.2 | 16.4/21.4/62.2 | 16.4/21.4/62.2 | 0.88-1.94 | $590,884 |
+| IPS-BOU | 10 | 24.5/25.5/50.5 | 24.4/25.4/50.2 | 23.4/25.4/51.2 | 23.9/25.4/50.7 | 23.9/25.4/50.7 | 0.99-1.56 | $105,799 |
+| SUN-CHE | 10 | 23.5/25.5/51.5 | 23.4/25.4/51.2 | 23.4/25.4/51.2 | 23.4/25.4/51.2 | 23.4/25.4/51.2 | 0.97-1.57 | $5,279,518 |
+| BHA-BRE | 10 | 51.5/24.5/24.5 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 51.2/24.4/24.4 | 1.66-1.07 | $577,253 |
+| MUN-AVL | 10 | 44.5/25.5/30.5 | 44.3/25.4/30.3 | 44.3/25.4/30.3 | 44.3/25.4/30.3 | 44.3/25.4/30.3 | 1.51-1.21 | $164,504 |
+| MCI-FUL | 11 | 67.5/19.0/14.5 | 66.8/18.8/14.4 | 67.0/18.5/14.5 | 66.9/18.7/14.4 | 66.9/18.7/14.4 | 2.25-0.95 | $2,307 |
 | AVL-SUN | 11 | 55.5/24.5/20.0 | 55.5/24.5/20.0 | 55.8/24.1/20.1 | 55.6/24.3/20.1 | 55.6/24.3/20.1 | 1.67-0.89 | $165 |
 | COV-CRY | 11 | 37.5/27.0/35.5 | 37.5/27.0/35.5 | 37.7/26.6/35.7 | 37.6/26.8/35.6 | 37.6/26.8/35.6 | 1.29-1.24 | $4 |
 | TOT-IPS | 11 | 63.0/21.0/16.5 | 62.7/20.9/16.4 | 63.0/21.0/16.0 | 62.8/20.9/16.2 | 62.8/20.9/16.2 | 1.99-0.90 | $106 |
 | CHE-LEE | 11 | 53.0/25.0/22.0 | 53.0/25.0/22.0 | 54.0/24.2/21.7 | 53.5/24.6/21.9 | 53.5/24.6/21.9 | 1.64-0.95 | $758 |
-| BOU-NFO | 11 | 47.0/26.5/27.0 | 46.8/26.4/26.9 | 47.0/26.3/26.8 | 46.9/26.3/26.8 | 46.9/26.3/26.8 | 1.46-1.03 | $1,687 |
+| BOU-NFO | 11 | 47.0/26.5/27.0 | 46.8/26.4/26.9 | 47.0/26.3/26.8 | 46.9/26.3/26.8 | 46.9/26.3/26.8 | 1.46-1.03 | $1,697 |
 | NEW-ARS | 11 | 16.0/23.5/61.5 | 15.8/23.3/60.9 | 16.5/22.5/61.0 | 16.2/22.9/60.9 | 16.2/22.9/60.9 | 0.79-1.78 | $2,113 |
 | LIV-MUN | 11 | - | - | 52.8/24.1/23.1 | 52.8/24.1/23.1 | 52.8/24.1/23.1 | 1.69-1.03 | $175 |
 
@@ -68,13 +68,13 @@ qg 0.394, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 37.5 | -8 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 37.3 | -8 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 10.7 | -36 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
-| low | 33 | 46.8 | 14 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 47 | 10.8 | -36 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 33 | 46.2 | 13 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 6.7 | -43 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 5 | 50.1 | 45 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 49.5 | 44 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 28.0 | -38 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 17.8 | -37 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
