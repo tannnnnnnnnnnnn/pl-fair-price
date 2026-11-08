@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T16:24:48Z",
+ "generated_at": "2026-11-08T16:34:54Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -402,8 +402,8 @@
    "is_ours": false,
    "xo_price": 0.85,
    "best_bid": 0.501,
-   "best_ask": 0.8,
-   "liquidity_usd": 32.54,
+   "best_ask": null,
+   "liquidity_usd": 13.72,
    "volume_usd": 33.53,
    "expires_at": "2026-12-31T23:59:59.000Z",
    "group": "season",
@@ -435,21 +435,11 @@
        "size": 23.526663
       }
      ],
-     "asks": [
-      {
-       "price": 0.8,
-       "size": 23.526663
-      }
-     ],
-     "last": 0.651
+     "asks": [],
+     "last": 0.501
     },
     "no": {
-     "bids": [
-      {
-       "price": 0.2,
-       "size": 23.526663
-      }
-     ],
+     "bids": [],
      "asks": [
       {
        "price": 0.499,
@@ -460,7 +450,7 @@
        "size": 23.526663
       }
      ],
-     "last": 0.35
+     "last": 0.499
     }
    }
   },
@@ -980,9 +970,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5607,
-    "low": 0.4607,
-    "high": 0.6607,
+    "p": 0.5622,
+    "low": 0.4622,
+    "high": 0.6622,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -1039,9 +1029,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1202,
-    "low": 0.0202,
-    "high": 0.2202,
+    "p": 0.1157,
+    "low": 0.0156,
+    "high": 0.2157,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1097,9 +1087,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0764,
+    "p": 0.0765,
     "low": 0,
-    "high": 0.1764,
+    "high": 0.1765,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -2392,5 +2382,7 @@
   "open": 0
  },
  "best_value": [],
- "live": []
+ "live": [
+  "MUN-AVL"
+ ]
 }
