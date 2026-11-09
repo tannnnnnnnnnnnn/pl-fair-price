@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-09T00:47:51Z)
+# VERIFY — PL Fair Price (2026-11-09T00:57:10Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 19 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,7 +6,7 @@ GW11 deadline 2026-11-21T11:00:00Z. 19 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| MCI-FUL | 11 | 66.5/19.0/14.5 | 66.5/19.0/14.5 | 67.3/18.6/14.1 | 66.9/18.8/14.3 | 66.9/18.8/14.3 | 2.26-0.94 | $10,897 |
+| MCI-FUL | 11 | 66.5/19.0/14.5 | 66.5/19.0/14.5 | 67.3/18.6/14.1 | 66.9/18.8/14.3 | 66.9/18.8/14.3 | 2.26-0.94 | $10,974 |
 | AVL-SUN | 11 | 56.0/24.5/20.5 | 55.4/24.3/20.3 | 55.1/24.2/20.7 | 55.2/24.2/20.5 | 55.2/24.2/20.5 | 1.70-0.93 | $890 |
 | COV-CRY | 11 | 39.0/27.0/34.0 | 39.0/27.0/34.0 | 39.6/26.4/34.0 | 39.3/26.7/34.0 | 39.3/26.7/34.0 | 1.35-1.23 | $866 |
 | TOT-IPS | 11 | 62.5/22.0/16.0 | 62.2/21.9/15.9 | 63.4/20.8/15.8 | 62.8/21.3/15.9 | 62.8/21.3/15.9 | 1.96-0.87 | $515 |
@@ -67,7 +67,7 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 | low | 45 | 57.5 | 12 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 11.5 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
-| low | 33 | 50.6 | 18 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 50.5 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 7.4 | -43 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 5 | 53.6 | 49 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
