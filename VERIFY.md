@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-09T16:12:04Z)
+# VERIFY — PL Fair Price (2026-11-09T16:22:15Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 19 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,20 +6,20 @@ GW11 deadline 2026-11-21T11:00:00Z. 19 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| MCI-FUL | 11 | 67.5/18.5/13.5 | 67.8/18.6/13.6 | 68.2/17.7/14.1 | 68.0/18.1/13.9 | 68.0/18.1/13.9 | 2.34-0.96 | $22,866 |
-| AVL-SUN | 11 | 56.0/24.5/20.0 | 55.7/24.4/19.9 | 55.6/24.2/20.2 | 55.6/24.3/20.1 | 55.6/24.3/20.1 | 1.69-0.91 | $1,780 |
-| COV-CRY | 11 | 39.0/27.0/34.0 | 39.0/27.0/34.0 | 39.2/26.6/34.2 | 39.1/26.8/34.1 | 39.1/26.8/34.1 | 1.34-1.23 | $1,027 |
-| TOT-IPS | 11 | 62.5/21.5/16.0 | 62.5/21.5/16.0 | 62.8/21.1/16.1 | 62.7/21.3/16.0 | 62.7/21.3/16.0 | 1.97-0.88 | $853 |
-| CHE-LEE | 11 | 50.5/25.5/24.0 | 50.5/25.5/24.0 | 51.5/25.0/23.5 | 51.0/25.2/23.8 | 51.0/25.2/23.8 | 1.60-1.01 | $5,675 |
-| BOU-NFO | 11 | 47.5/27.0/26.0 | 47.3/26.9/25.9 | 48.0/26.3/25.8 | 47.6/26.6/25.8 | 47.6/26.6/25.8 | 1.47-1.01 | $4,252 |
-| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 16.0/22.0/62.0 | 16.2/22.2/61.6 | 16.2/22.2/61.6 | 0.84-1.87 | $14,159 |
-| HUL-BHA | 11 | 15.0/22.0/63.0 | 15.0/22.0/63.0 | 15.2/21.2/63.6 | 15.1/21.6/63.3 | 15.1/21.6/63.3 | 0.81-1.92 | $2,690 |
-| LIV-MUN | 11 | 56.5/23.0/21.0 | 56.2/22.9/20.9 | 56.2/22.4/21.4 | 56.2/22.6/21.1 | 56.2/22.6/21.1 | 1.88-1.07 | $4,490 |
+| MCI-FUL | 11 | 67.5/18.5/13.5 | 67.8/18.6/13.6 | 68.5/17.8/13.7 | 68.2/18.2/13.6 | 68.2/18.2/13.6 | 2.33-0.94 | $23,215 |
+| AVL-SUN | 11 | 55.5/24.5/20.0 | 55.5/24.5/20.0 | 55.6/24.2/20.2 | 55.5/24.4/20.1 | 55.5/24.4/20.1 | 1.68-0.91 | $1,781 |
+| COV-CRY | 11 | 39.0/27.0/34.0 | 39.0/27.0/34.0 | 39.2/26.6/34.2 | 39.1/26.8/34.1 | 39.1/26.8/34.1 | 1.34-1.23 | $1,028 |
+| TOT-IPS | 11 | 62.5/21.5/16.0 | 62.5/21.5/16.0 | 62.8/21.1/16.1 | 62.7/21.3/16.0 | 62.7/21.3/16.0 | 1.97-0.88 | $854 |
+| CHE-LEE | 11 | 50.5/25.5/24.0 | 50.5/25.5/24.0 | 51.8/25.1/23.1 | 51.1/25.3/23.6 | 51.1/25.3/23.6 | 1.59-1.00 | $5,676 |
+| BOU-NFO | 11 | 47.5/27.0/26.0 | 47.3/26.9/25.9 | 48.0/26.3/25.8 | 47.6/26.6/25.8 | 47.6/26.6/25.8 | 1.47-1.01 | $4,253 |
+| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 16.0/22.0/62.0 | 16.2/22.2/61.6 | 16.2/22.2/61.6 | 0.84-1.87 | $14,160 |
+| HUL-BHA | 11 | 15.0/22.0/63.5 | 14.9/21.9/63.2 | 15.2/21.2/63.6 | 15.0/21.6/63.4 | 15.0/21.6/63.4 | 0.81-1.92 | $2,652 |
+| LIV-MUN | 11 | 56.5/23.0/21.0 | 56.2/22.9/20.9 | 56.5/22.0/21.5 | 56.4/22.4/21.2 | 56.4/22.4/21.2 | 1.90-1.08 | $4,490 |
 | BRE-EVE | 11 | - | - | 47.5/25.5/27.0 | 47.5/25.5/27.0 | 47.5/25.5/27.0 | 1.56-1.11 | $221 |
 
 League average 2.73 goals per game from 100 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.74.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.177, max 0.351.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.177, max 0.360.
 
 ## Current table (from finished FPL fixtures)
 
@@ -67,7 +67,7 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 |---|---|---|---|---|---|---|
 | low | 45 | 58.0 | 13 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 12.2 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 47 | 11.9 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | low | 33 | 49.8 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 7.4 | -43 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
@@ -76,7 +76,7 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 | low | 55 | 18.5 | -36 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
-| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 10%. They differ too much to show one number. |
+| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 11%. They differ too much to show one number. |
 | - | 50 | - |  | - | Will Manchester United sack Michael Carrick by December 31, 2026? | Fair price coming: not modelled yet. |
 | - | 50 | - |  | - | Will Manchester United win 3 out of their next 5 Premier League games? | Fair price coming: not modelled yet. |
 | - | 85 | - |  | - | Will Michael Carrick be out as Manchester United manager by December 31, 2026? | Fair price coming: not modelled yet. |
