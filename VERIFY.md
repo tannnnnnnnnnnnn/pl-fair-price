@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-09T20:03:34Z)
+# VERIFY — PL Fair Price (2026-11-09T20:13:31Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 19 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,20 +6,20 @@ GW11 deadline 2026-11-21T11:00:00Z. 19 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| MCI-FUL | 11 | 67.5/18.5/13.5 | 67.8/18.6/13.6 | 68.5/17.8/13.7 | 68.2/18.2/13.6 | 68.2/18.2/13.6 | 2.33-0.94 | $23,941 |
+| MCI-FUL | 11 | 67.5/18.5/13.5 | 67.8/18.6/13.6 | 68.5/17.8/13.7 | 68.2/18.2/13.6 | 68.2/18.2/13.6 | 2.33-0.94 | $24,111 |
 | AVL-SUN | 11 | 55.5/25.0/20.5 | 55.0/24.8/20.3 | 55.3/24.1/20.6 | 55.1/24.4/20.5 | 55.1/24.4/20.5 | 1.68-0.92 | $1,811 |
 | COV-CRY | 11 | 39.0/27.0/34.5 | 38.8/26.9/34.3 | 39.2/26.6/34.2 | 39.0/26.7/34.2 | 39.0/26.7/34.2 | 1.34-1.24 | $1,399 |
 | TOT-IPS | 11 | 62.5/21.5/16.5 | 62.2/21.4/16.4 | 63.1/21.2/15.7 | 62.7/21.3/16.0 | 62.7/21.3/16.0 | 1.97-0.88 | $1,026 |
 | CHE-LEE | 11 | 50.5/25.5/23.5 | 50.8/25.6/23.6 | 51.3/25.4/23.4 | 51.0/25.5/23.5 | 51.0/25.5/23.5 | 1.57-0.98 | $6,657 |
 | BOU-NFO | 11 | 48.0/27.0/26.0 | 47.5/26.7/25.7 | 48.7/26.1/25.1 | 48.1/26.4/25.4 | 48.1/26.4/25.4 | 1.48-1.00 | $4,349 |
-| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 15.9/21.9/62.2 | 16.2/22.1/61.7 | 16.2/22.1/61.7 | 0.84-1.88 | $16,451 |
+| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 15.9/21.9/62.2 | 16.2/22.1/61.7 | 16.2/22.1/61.7 | 0.84-1.88 | $16,457 |
 | HUL-BHA | 11 | 15.0/21.5/63.5 | 15.0/21.5/63.5 | 14.6/21.1/64.3 | 14.8/21.3/63.9 | 14.8/21.3/63.9 | 0.81-1.94 | $2,750 |
-| LIV-MUN | 11 | 56.5/23.0/21.0 | 56.2/22.9/20.9 | 55.7/23.2/21.2 | 55.9/23.0/21.0 | 55.9/23.0/21.0 | 1.83-1.03 | $4,822 |
+| LIV-MUN | 11 | 56.5/23.0/21.0 | 56.2/22.9/20.9 | 55.9/23.3/20.8 | 56.1/23.1/20.8 | 56.1/23.1/20.8 | 1.82-1.02 | $4,798 |
 | BRE-EVE | 11 | - | - | 47.5/25.3/27.3 | 47.5/25.3/27.3 | 47.5/25.3/27.3 | 1.58-1.14 | $241 |
 
 League average 2.73 goals per game from 100 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.74.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.175, max 0.333.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.175, max 0.326.
 
 ## Current table (from finished FPL fixtures)
 
@@ -65,9 +65,9 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 57.9 | 13 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 57.5 | 12 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 12.4 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 47 | 12.3 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | low | 33 | 50.0 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 7.4 | -43 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
