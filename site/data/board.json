@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T20:33:38Z",
+ "generated_at": "2026-11-09T20:43:44Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -125,9 +125,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5005,
-    "low": 0.4005,
-    "high": 0.6005,
+    "p": 0.4999,
+    "low": 0.3999,
+    "high": 0.5999,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -144,7 +144,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.0%",
+      "value": "3.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -212,8 +212,8 @@
    "is_ours": false,
    "xo_price": 0.46,
    "best_bid": 0.421,
-   "best_ask": 0.999,
-   "liquidity_usd": 2045.67,
+   "best_ask": null,
+   "liquidity_usd": 47.67,
    "volume_usd": 139.31,
    "expires_at": "2027-05-30T23:59:59.000Z",
    "group": "season",
@@ -257,21 +257,11 @@
        "size": 108.784899
       }
      ],
-     "asks": [
-      {
-       "price": 0.999,
-       "size": 2000.0
-      }
-     ],
-     "last": 0.71
+     "asks": [],
+     "last": 0.421
     },
     "no": {
-     "bids": [
-      {
-       "price": 0.001,
-       "size": 2000.0
-      }
-     ],
+     "bids": [],
      "asks": [
       {
        "price": 0.579,
@@ -282,7 +272,7 @@
        "size": 108.784899
       }
      ],
-     "last": 0.29
+     "last": 0.579
     }
    }
   },
@@ -846,9 +836,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5306,
-    "low": 0.4306,
-    "high": 0.6306,
+    "p": 0.5312,
+    "low": 0.4312,
+    "high": 0.6312,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -865,7 +855,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.0%",
+      "value": "3.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
