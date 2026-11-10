@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T16:36:04Z",
+ "generated_at": "2026-11-10T17:16:47Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -125,16 +125,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5018,
-    "low": 0.4018,
-    "high": 0.6018,
+    "p": 0.5005,
+    "low": 0.4005,
+    "high": 0.6005,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "24.0%",
+      "value": "24.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -164,7 +164,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.9%",
+      "value": "30.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -201,6 +201,56 @@
      ],
      "asks": [],
      "last": 0.67
+    }
+   }
+  },
+  {
+   "slug": "will-mauricio-pochettino-be-manchester-uniteds-nex-7320",
+   "title": "Will Mauricio Pochettino be Manchester United's next manager?",
+   "url": "https://beta.xo.market/event/will-mauricio-pochettino-be-manchester-uniteds-nex-7320?r=cryptotan01",
+   "creator": "AThryver",
+   "is_ours": false,
+   "xo_price": 0.4,
+   "best_bid": null,
+   "best_ask": 0.65,
+   "liquidity_usd": 24.38,
+   "volume_usd": 37.5,
+   "expires_at": "2026-12-31T23:59:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-12-29T19:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Carrick\u2019s time as United\u2019s boss is almost up. Will Pochettino succeed him?",
+   "description": "This market resolves YES if Mauricio Pochettino is officially appointed as Manchester United\u2019s permanent or interim first-team manager after Michael Carrick\u2019s departure and on or before December 31, 2026, 23:59 UTC. The appointment must be publicly confirmed by Manchester United through an official announcement. An agreement in principle, negotiations, reported interest, or an announcement that Pochettino will take charge after the deadline does not qualify. If Manchester United appoints another manager, or no qualifying appointment is announced by the deadline, this market resolves NO. Primary resolution source: Official Manchester United announcements. Secondary sources: Reputable sports news outlets, including ESPN, BBC Sport and Sky Sports, may be used for verification.",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.theathletic.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.65,
+       "size": 37.5
+      }
+     ],
+     "last": 0.65
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.35,
+       "size": 37.5
+      }
+     ],
+     "asks": [],
+     "last": 0.35
     }
    }
   },
@@ -637,46 +687,6 @@
    }
   },
   {
-   "slug": "will-mauricio-pochettino-be-manchester-uniteds-nex-7320",
-   "title": "Will Mauricio Pochettino be Manchester United's next manager?",
-   "url": "https://beta.xo.market/event/will-mauricio-pochettino-be-manchester-uniteds-nex-7320?r=cryptotan01",
-   "creator": "AThryver",
-   "is_ours": false,
-   "xo_price": 0.4,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 37.5,
-   "expires_at": "2026-12-31T23:59:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-12-29T19:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Carrick\u2019s time as United\u2019s boss is almost up. Will Pochettino succeed him?",
-   "description": "This market resolves YES if Mauricio Pochettino is officially appointed as Manchester United\u2019s permanent or interim first-team manager after Michael Carrick\u2019s departure and on or before December 31, 2026, 23:59 UTC. The appointment must be publicly confirmed by Manchester United through an official announcement. An agreement in principle, negotiations, reported interest, or an announcement that Pochettino will take charge after the deadline does not qualify. If Manchester United appoints another manager, or no qualifying appointment is announced by the deadline, this market resolves NO. Primary resolution source: Official Manchester United announcements. Secondary sources: Reputable sports news outlets, including ESPN, BBC Sport and Sky Sports, may be used for verification.",
-   "resolution_sources": [
-    "https://www.manutd.com",
-    "https://www.theathletic.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
    "slug": "will-manchester-united-win-3-out-of-their-next-5-p-8440",
    "title": "Will Manchester United win 3 out of their next 5 Premier League games?",
    "url": "https://beta.xo.market/event/will-manchester-united-win-3-out-of-their-next-5-p-8440?r=cryptotan01",
@@ -785,16 +795,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5332,
-    "low": 0.4332,
-    "high": 0.6332,
+    "p": 0.5318,
+    "low": 0.4318,
+    "high": 0.6318,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "24.0%",
+      "value": "24.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -824,7 +834,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.9%",
+      "value": "30.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -869,9 +879,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5802,
-    "low": 0.4802,
-    "high": 0.6802,
+    "p": 0.5865,
+    "low": 0.4865,
+    "high": 0.6865,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -890,7 +900,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 13,
+   "gap_pts": 14,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -928,9 +938,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1186,
-    "low": 0.0185,
-    "high": 0.2186,
+    "p": 0.1178,
+    "low": 0.0178,
+    "high": 0.2178,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -986,9 +996,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0743,
+    "p": 0.0746,
     "low": 0,
-    "high": 0.1743,
+    "high": 0.1746,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
