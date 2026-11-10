@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T10:07:55Z",
+ "generated_at": "2026-11-10T10:17:53Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -125,9 +125,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4997,
-    "low": 0.3997,
-    "high": 0.5997,
+    "p": 0.501,
+    "low": 0.401,
+    "high": 0.601,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -164,7 +164,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.9%",
+      "value": "30.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -201,6 +201,68 @@
      ],
      "asks": [],
      "last": 0.67
+    }
+   }
+  },
+  {
+   "slug": "will-michael-carrick-be-out-as-manchester-united-m-4699",
+   "title": "Will Michael Carrick be out as Manchester United manager by December 31, 2026?",
+   "url": "https://beta.xo.market/event/will-michael-carrick-be-out-as-manchester-united-m-4699?r=cryptotan01",
+   "creator": "AThryver",
+   "is_ours": false,
+   "xo_price": 0.85,
+   "best_bid": 0.5,
+   "best_ask": 0.95,
+   "liquidity_usd": 34.11,
+   "volume_usd": 33.53,
+   "expires_at": "2026-12-31T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2026-12-29T19:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "2 wins in 12 games across all competitions. Carrick\u2019s time might be running out as Manchester United manager",
+   "description": "This market resolves based on whether Michael Carrick ceases to be the manager or head coach of Manchester United FC on or before December 31, 2026. The date on which Carrick ceases to be manager is the date of the official announcement by Manchester United, or the effective date of departure stated in that announcement, whichever is earlier. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://www. bbc. com) or The Guardian (https://www. theguardian. com). the primary source governs. If the named record is retracted or the event is cancelled, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.theguardian.com",
+    "https://www.bbc.com",
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 23.526663
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.95,
+       "size": 23.526663
+      }
+     ],
+     "last": 0.725
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.05,
+       "size": 23.526663
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 23.526663
+      }
+     ],
+     "last": 0.275
     }
    }
   },
@@ -273,76 +335,6 @@
       }
      ],
      "last": 0.579
-    }
-   }
-  },
-  {
-   "slug": "will-michael-carrick-be-out-as-manchester-united-m-4699",
-   "title": "Will Michael Carrick be out as Manchester United manager by December 31, 2026?",
-   "url": "https://beta.xo.market/event/will-michael-carrick-be-out-as-manchester-united-m-4699?r=cryptotan01",
-   "creator": "AThryver",
-   "is_ours": false,
-   "xo_price": 0.85,
-   "best_bid": 0.501,
-   "best_ask": 0.95,
-   "liquidity_usd": 36.07,
-   "volume_usd": 33.53,
-   "expires_at": "2026-12-31T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-12-29T19:30:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "2 wins in 12 games across all competitions. Carrick\u2019s time might be running out as Manchester United manager",
-   "description": "This market resolves based on whether Michael Carrick ceases to be the manager or head coach of Manchester United FC on or before December 31, 2026. The date on which Carrick ceases to be manager is the date of the official announcement by Manchester United, or the effective date of departure stated in that announcement, whichever is earlier. Primary source: Premier League (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC (https://www. bbc. com) or The Guardian (https://www. theguardian. com). the primary source governs. If the named record is retracted or the event is cancelled, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.manutd.com",
-    "https://www.theguardian.com",
-    "https://www.bbc.com",
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.501,
-       "size": 3.9
-      },
-      {
-       "price": 0.5,
-       "size": 23.526663
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.95,
-       "size": 23.526663
-      }
-     ],
-     "last": 0.726
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.05,
-       "size": 23.526663
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.499,
-       "size": 3.9
-      },
-      {
-       "price": 0.5,
-       "size": 23.526663
-      }
-     ],
-     "last": 0.275
     }
    }
   },
@@ -755,9 +747,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5309,
-    "low": 0.4309,
-    "high": 0.6309,
+    "p": 0.5323,
+    "low": 0.4323,
+    "high": 0.6323,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -794,7 +786,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.9%",
+      "value": "30.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -839,9 +831,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.582,
-    "low": 0.482,
-    "high": 0.682,
+    "p": 0.5808,
+    "low": 0.4808,
+    "high": 0.6808,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -898,9 +890,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1213,
-    "low": 0.0213,
-    "high": 0.2213,
+    "p": 0.1257,
+    "low": 0.0257,
+    "high": 0.2257,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -919,7 +911,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -35,
+   "gap_pts": -34,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -956,9 +948,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0746,
+    "p": 0.0747,
     "low": 0,
-    "high": 0.1746,
+    "high": 0.1748,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
