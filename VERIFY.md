@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-10T01:04:09Z)
+# VERIFY — PL Fair Price (2026-11-10T01:05:14Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 17 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -68,7 +68,7 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 | low | 45 | 57.3 | 12 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 12.7 | -34 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
-| low | 33 | 50.0 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 49.9 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 7.3 | -43 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 5 | 53.0 | 48 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
