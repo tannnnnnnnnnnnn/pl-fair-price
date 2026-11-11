@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T16:50:34Z",
+ "generated_at": "2026-11-11T23:15:55Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -15,8 +15,8 @@
    "is_ours": false,
    "xo_price": 0.6,
    "best_bid": null,
-   "best_ask": 0.98,
-   "liquidity_usd": 98.0,
+   "best_ask": 0.95,
+   "liquidity_usd": 114.62,
    "volume_usd": 57.5,
    "expires_at": "2026-12-31T23:59:00.000Z",
    "group": "season",
@@ -39,21 +39,29 @@
      "bids": [],
      "asks": [
       {
+       "price": 0.95,
+       "size": 17.5
+      },
+      {
        "price": 0.98,
        "size": 100.0
       }
      ],
-     "last": 0.98
+     "last": 0.95
     },
     "no": {
      "bids": [
+      {
+       "price": 0.05,
+       "size": 17.5
+      },
       {
        "price": 0.02,
        "size": 100.0
       }
      ],
      "asks": [],
-     "last": 0.02
+     "last": 0.05
     }
    }
   },
@@ -175,9 +183,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5089,
-    "low": 0.4089,
-    "high": 0.6089,
+    "p": 0.5739,
+    "low": 0.4739,
+    "high": 0.6739,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -214,14 +222,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "33.6%",
+      "value": "19.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 18,
+   "gap_pts": 24,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -344,8 +352,8 @@
    "is_ours": false,
    "xo_price": 0.85,
    "best_bid": 0.512,
-   "best_ask": null,
-   "liquidity_usd": 39.31,
+   "best_ask": 0.97,
+   "liquidity_usd": 62.13,
    "volume_usd": 33.53,
    "expires_at": "2026-12-31T23:59:59.000Z",
    "group": "season",
@@ -381,11 +389,21 @@
        "size": 23.526663
       }
      ],
-     "asks": [],
-     "last": 0.512
+     "asks": [
+      {
+       "price": 0.97,
+       "size": 23.526663
+      }
+     ],
+     "last": 0.741
     },
     "no": {
-     "bids": [],
+     "bids": [
+      {
+       "price": 0.03,
+       "size": 23.526663
+      }
+     ],
      "asks": [
       {
        "price": 0.488,
@@ -400,7 +418,7 @@
        "size": 23.526663
       }
      ],
-     "last": 0.488
+     "last": 0.259
     }
    }
   },
@@ -805,9 +823,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5383,
-    "low": 0.4383,
-    "high": 0.6383,
+    "p": 0.6066,
+    "low": 0.5066,
+    "high": 0.7066,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -844,14 +862,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "33.6%",
+      "value": "19.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 49,
+   "gap_pts": 56,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -948,9 +966,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1143,
-    "low": 0.0143,
-    "high": 0.2143,
+    "p": 0.1127,
+    "low": 0.0126,
+    "high": 0.2127,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1006,9 +1024,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0741,
+    "p": 0.0739,
     "low": 0,
-    "high": 0.1741,
+    "high": 0.1739,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
