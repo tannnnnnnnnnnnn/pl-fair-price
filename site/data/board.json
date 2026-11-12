@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T23:15:55Z",
+ "generated_at": "2026-11-12T03:51:20Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -117,58 +117,6 @@
    }
   },
   {
-   "slug": "will-tottenham-sack-roberto-de-zerbi-before-11-nov-3885",
-   "title": "Will Tottenham sack Roberto De Zerbi before 11 November 2026?",
-   "url": "https://beta.xo.market/event/will-tottenham-sack-roberto-de-zerbi-before-11-nov-3885?r=cryptotan01",
-   "creator": "NMagalios13",
-   "is_ours": false,
-   "xo_price": 0.39,
-   "best_bid": null,
-   "best_ask": 0.39,
-   "liquidity_usd": 6.39,
-   "volume_usd": 0,
-   "expires_at": "2026-11-11T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2026-11-06T20:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "weekend",
-   "taker_fee_bps": 400,
-   "pitch": "Spurs have backed De Zerbi after a major rebuild, but continued poor results could change everything.",
-   "description": "This market resolves based on whether Tottenham Hotspur officially dismisses or sacks Roberto De Zerbi as head coach before 2026-11-11T23:59:59Z. Voluntary resignation or departure due to health reasons does not count as a sacking. Primary source: Tottenham Hotspur (https://www. tottenhamhotspur. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com) or Sky Sports (https://www. skysports. com). The primary source governs. If The official announcement is officially retracted or The club ceases operations, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.tottenhamhotspur.com",
-    "https://www.bbc.com",
-    "https://www.skysports.com",
-    "https://www.football.london"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [
-      {
-       "price": 0.39,
-       "size": 16.393442
-      }
-     ],
-     "last": 0.39
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.61,
-       "size": 16.393442
-      }
-     ],
-     "asks": [],
-     "last": 0.61
-    }
-   }
-  },
-  {
    "slug": "manchester-city-over-20-points-docked-in-202627-se-4746",
    "title": "Manchester City over 20 points docked in 2026/27 season?",
    "url": "https://beta.xo.market/event/manchester-city-over-20-points-docked-in-202627-se-4746?r=cryptotan01",
@@ -183,9 +131,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5739,
-    "low": 0.4739,
-    "high": 0.6739,
+    "p": 0.5215,
+    "low": 0.4215,
+    "high": 0.6215,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -212,7 +160,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "9.7%",
+      "value": "9.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -222,14 +170,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "19.1%",
+      "value": "30.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 24,
+   "gap_pts": 19,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -286,7 +234,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "75.5% (spread 1c, $1,370,027 traded on this market)",
+      "value": "75.5% (spread 1c, $1,370,162 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -437,7 +385,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 11%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 10%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -769,23 +717,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.27,
-    "low": 0.17,
-    "high": 0.37,
+    "p": 0.245,
+    "low": 0.145,
+    "high": 0.345,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "27.0% (spread 20c, $4,933 traded on this market)",
+      "value": "24.5% (spread 23c, $4,933 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -39,
+   "gap_pts": -42,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -823,9 +771,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6066,
-    "low": 0.5066,
-    "high": 0.7066,
+    "p": 0.5516,
+    "low": 0.4516,
+    "high": 0.6516,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -852,7 +800,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "9.7%",
+      "value": "9.8%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -862,14 +810,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "19.1%",
+      "value": "30.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 56,
+   "gap_pts": 50,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -907,9 +855,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5803,
-    "low": 0.4803,
-    "high": 0.6803,
+    "p": 0.5786,
+    "low": 0.4786,
+    "high": 0.6786,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -966,9 +914,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1127,
-    "low": 0.0126,
-    "high": 0.2127,
+    "p": 0.115,
+    "low": 0.015,
+    "high": 0.215,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -1024,9 +972,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0739,
+    "p": 0.074,
     "low": 0,
-    "high": 0.1739,
+    "high": 0.174,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -1078,9 +1026,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2008,
-    "low": 0.1008,
-    "high": 0.3008,
+    "p": 0.2035,
+    "low": 0.1035,
+    "high": 0.3035,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
@@ -1092,7 +1040,7 @@
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "36.5%",
+      "value": "37.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
