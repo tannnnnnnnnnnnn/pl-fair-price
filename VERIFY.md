@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-14T20:02:27Z)
+# VERIFY — PL Fair Price (2026-11-14T20:12:30Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,15 +6,15 @@ GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| MCI-FUL | 11 | 67.5/18.5/12.5 | 68.5/18.8/12.7 | 69.5/17.8/12.7 | 69.0/18.3/12.7 | 69.0/18.3/12.7 | 2.30-0.88 | $52,982 |
-| AVL-SUN | 11 | 54.5/25.5/20.5 | 54.2/25.4/20.4 | 54.3/24.9/20.8 | 54.3/25.1/20.6 | 54.3/25.1/20.6 | 1.63-0.91 | $3,416 |
+| MCI-FUL | 11 | 67.5/18.5/12.5 | 68.5/18.8/12.7 | 69.5/17.8/12.7 | 69.0/18.3/12.7 | 69.0/18.3/12.7 | 2.30-0.88 | $52,983 |
+| AVL-SUN | 11 | 54.5/25.5/20.5 | 54.2/25.4/20.4 | 54.3/24.9/20.8 | 54.3/25.1/20.6 | 54.3/25.1/20.6 | 1.63-0.91 | $3,417 |
 | COV-CRY | 11 | 38.5/27.0/34.5 | 38.5/27.0/34.5 | 39.1/26.9/34.0 | 38.8/27.0/34.3 | 38.8/27.0/34.3 | 1.34-1.24 | $2,602 |
 | TOT-IPS | 11 | 63.5/21.5/16.5 | 62.6/21.2/16.3 | 63.1/20.7/16.2 | 62.8/20.9/16.2 | 62.8/20.9/16.2 | 2.04-0.94 | $5,159 |
 | CHE-LEE | 11 | 51.5/25.5/23.5 | 51.2/25.4/23.4 | 51.3/24.9/23.9 | 51.3/25.1/23.6 | 51.3/25.1/23.6 | 1.63-1.03 | $13,242 |
 | BOU-NFO | 11 | 48.5/27.0/25.5 | 48.0/26.7/25.2 | 47.7/26.6/25.6 | 47.9/26.7/25.4 | 47.9/26.7/25.4 | 1.48-1.00 | $7,560 |
-| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 15.6/22.6/61.8 | 16.0/22.5/61.5 | 16.0/22.5/61.5 | 0.83-1.86 | $35,379 |
+| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 15.6/22.6/61.8 | 16.0/22.5/61.5 | 16.0/22.5/61.5 | 0.83-1.86 | $35,437 |
 | HUL-BHA | 11 | 15.0/21.5/64.5 | 14.9/21.3/63.9 | 14.4/20.4/65.2 | 14.6/20.8/64.5 | 14.6/20.8/64.5 | 0.85-2.02 | $7,908 |
-| LIV-MUN | 11 | 54.5/23.5/22.5 | 54.2/23.4/22.4 | 55.0/22.8/22.3 | 54.6/23.1/22.3 | 54.6/23.1/22.3 | 1.86-1.11 | $17,957 |
+| LIV-MUN | 11 | 54.5/23.5/22.5 | 54.2/23.4/22.4 | 55.0/22.8/22.3 | 54.6/23.1/22.3 | 54.6/23.1/22.3 | 1.86-1.11 | $17,958 |
 | BRE-EVE | 11 | 46.5/26.5/28.0 | 46.0/26.2/27.7 | 46.2/26.6/27.1 | 46.1/26.4/27.4 | 46.1/26.4/27.4 | 1.48-1.08 | $810 |
 | NFO-CHE | 12 | - | - | 35.0/27.0/38.0 | 35.0/27.0/38.0 | 35.0/27.0/38.0 | 1.26-1.32 | $1,243 |
 | LEE-COV | 12 | - | - | 61.7/22.4/15.8 | 61.7/22.4/15.8 | 61.7/22.4/15.8 | 1.86-0.82 | $0 |
@@ -75,7 +75,7 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 | low | 33 | 54.0 | 21 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 7.7 | -42 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 75.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 5 | 57.3 | 52 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 57.2 | 52 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 28.0 | -38 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 20.6 | -34 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
