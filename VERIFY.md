@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-14T22:02:58Z)
+# VERIFY — PL Fair Price (2026-11-14T22:13:00Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -12,9 +12,9 @@ GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0
 | TOT-IPS | 11 | 63.5/21.5/16.5 | 62.6/21.2/16.3 | 62.8/21.1/16.1 | 62.7/21.1/16.2 | 62.7/21.1/16.2 | 2.02-0.92 | $5,175 |
 | CHE-LEE | 11 | 51.5/25.5/23.5 | 51.2/25.4/23.4 | 51.8/24.6/23.6 | 51.5/25.0/23.5 | 51.5/25.0/23.5 | 1.65-1.03 | $13,527 |
 | BOU-NFO | 11 | 48.5/27.0/25.5 | 48.0/26.7/25.2 | 47.7/26.6/25.6 | 47.9/26.7/25.4 | 47.9/26.7/25.4 | 1.48-1.00 | $7,635 |
-| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 15.6/22.6/61.8 | 16.0/22.5/61.5 | 16.0/22.5/61.5 | 0.83-1.86 | $35,114 |
+| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 15.6/22.6/61.8 | 16.0/22.5/61.5 | 16.0/22.5/61.5 | 0.83-1.86 | $35,603 |
 | HUL-BHA | 11 | 15.0/21.5/64.5 | 14.9/21.3/63.9 | 14.4/20.4/65.2 | 14.6/20.8/64.5 | 14.6/20.8/64.5 | 0.85-2.02 | $7,908 |
-| LIV-MUN | 11 | 54.5/23.5/22.5 | 54.2/23.4/22.4 | 55.5/23.0/21.5 | 54.9/23.2/21.9 | 54.9/23.2/21.9 | 1.84-1.08 | $17,832 |
+| LIV-MUN | 11 | 54.5/23.5/22.5 | 54.2/23.4/22.4 | 55.5/23.0/21.5 | 54.9/23.2/21.9 | 54.9/23.2/21.9 | 1.84-1.08 | $17,838 |
 | BRE-EVE | 11 | 46.5/26.5/28.0 | 46.0/26.2/27.7 | 46.2/26.6/27.1 | 46.1/26.4/27.4 | 46.1/26.4/27.4 | 1.48-1.08 | $810 |
 | NFO-CHE | 12 | - | - | 35.0/27.0/38.0 | 35.0/27.0/38.0 | 35.0/27.0/38.0 | 1.26-1.32 | $1,271 |
 | LEE-COV | 12 | - | - | 61.7/22.4/15.8 | 61.7/22.4/15.8 | 61.7/22.4/15.8 | 1.86-0.82 | $0 |
@@ -72,10 +72,10 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 | low | 45 | 62.5 | 17 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 12.7 | -34 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
-| low | 33 | 52.2 | 19 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 51.3 | 18 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 7.7 | -42 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 75.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 5 | 55.5 | 50 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 54.5 | 50 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 28.0 | -38 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 20.6 | -34 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
