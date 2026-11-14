@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-14T21:12:43Z)
+# VERIFY — PL Fair Price (2026-11-14T21:22:50Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,7 +6,7 @@ GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| MCI-FUL | 11 | 67.5/18.5/12.5 | 68.5/18.8/12.7 | 69.5/17.8/12.7 | 69.0/18.3/12.7 | 69.0/18.3/12.7 | 2.30-0.88 | $53,672 |
+| MCI-FUL | 11 | 67.5/18.5/12.5 | 68.5/18.8/12.7 | 69.5/17.8/12.7 | 69.0/18.3/12.7 | 69.0/18.3/12.7 | 2.30-0.88 | $53,673 |
 | AVL-SUN | 11 | 54.5/25.5/20.5 | 54.2/25.4/20.4 | 54.5/24.7/20.7 | 54.4/25.1/20.6 | 54.4/25.1/20.6 | 1.64-0.91 | $3,484 |
 | COV-CRY | 11 | 38.5/27.0/34.5 | 38.5/27.0/34.5 | 39.4/26.8/33.8 | 38.9/26.9/34.2 | 38.9/26.9/34.2 | 1.35-1.25 | $2,602 |
 | TOT-IPS | 11 | 63.5/21.5/16.5 | 62.6/21.2/16.3 | 63.1/20.7/16.2 | 62.8/20.9/16.2 | 62.8/20.9/16.2 | 2.04-0.94 | $5,159 |
@@ -18,7 +18,7 @@ GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0
 | BRE-EVE | 11 | 46.5/26.5/28.0 | 46.0/26.2/27.7 | 46.2/26.6/27.1 | 46.1/26.4/27.4 | 46.1/26.4/27.4 | 1.48-1.08 | $810 |
 | NFO-CHE | 12 | - | - | 35.0/27.0/38.0 | 35.0/27.0/38.0 | 35.0/27.0/38.0 | 1.26-1.32 | $1,271 |
 | LEE-COV | 12 | - | - | 61.7/22.4/15.8 | 61.7/22.4/15.8 | 61.7/22.4/15.8 | 1.86-0.82 | $0 |
-| MUN-BRE | 12 | - | - | 48.0/25.3/26.8 | 48.0/25.3/26.8 | 48.0/25.3/26.8 | 1.61-1.14 | $1 |
+| MUN-BRE | 12 | - | - | 48.0/25.3/26.8 | 48.0/25.3/26.8 | 48.0/25.3/26.8 | 1.61-1.14 | $6 |
 | IPS-AVL | 12 | - | - | 27.8/24.2/48.0 | 27.8/24.2/48.0 | 27.8/24.2/48.0 | 1.25-1.71 | $12 |
 
 League average 2.73 goals per game from 100 finished matches; Dixon-Coles rho -0.02; mean fitted total 2.75.
@@ -72,10 +72,10 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 | low | 45 | 62.2 | 17 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 12.8 | -34 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
-| low | 33 | 53.9 | 21 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 53.6 | 21 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 7.7 | -42 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 75.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 5 | 57.2 | 52 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 5 | 56.8 | 52 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 28.0 | -38 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 20.6 | -34 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 27 | - |  | - | Luke Shaw injury within 2 weeks of GTA VI launch | Not a football question we can price. |
