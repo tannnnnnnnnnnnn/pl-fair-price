@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T12:06:49Z",
+ "generated_at": "2026-11-15T12:13:02Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -530,23 +530,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.37,
-    "low": 0.27,
-    "high": 0.47,
+    "p": 0.365,
+    "low": 0.265,
+    "high": 0.465,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "37.0% (spread 14c, $5,033 traded on this market)",
+      "value": "36.5% (spread 15c, $5,033 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -29,
+   "gap_pts": -30,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
