@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T07:25:38Z",
+ "generated_at": "2026-11-15T07:35:29Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,9 +22,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5247,
-    "low": 0.4247,
-    "high": 0.6247,
+    "p": 0.5244,
+    "low": 0.4244,
+    "high": 0.6244,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -41,7 +41,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.0%",
+      "value": "3.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -51,7 +51,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.0%",
+      "value": "8.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -61,7 +61,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.8%",
+      "value": "28.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -98,6 +98,55 @@
      ],
      "asks": [],
      "last": 0.6
+    }
+   }
+  },
+  {
+   "slug": "will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898",
+   "title": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
+   "url": "https://beta.xo.market/event/will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898?r=cryptotan01",
+   "creator": "0xshrdlu",
+   "is_ours": false,
+   "xo_price": 0.33,
+   "best_bid": 0.33,
+   "best_ask": null,
+   "liquidity_usd": 10.0,
+   "volume_usd": 0,
+   "expires_at": "2026-12-25T00:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 10%. They differ too much to show one number.",
+   "lock_at": "2026-12-19T12:30:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
+   "description": "This market resolves based on whether Bukayo Saka scores 3 or more English Premier League goals for Arsenal prior to December 25, 2026 based on official Premier League match statistics. Goals scored in UEFA competitions, domestic cup matches, or international fixtures do not count. Goals scored on or after December 25, 2026 do not count. Primary source: Premier League (https://www. premierleague. com). the primary source governs. If the named record is officially retracted by the Premier League or the season is permanently cancelled before the threshold is met, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.33,
+       "size": 30.30303
+      }
+     ],
+     "asks": [],
+     "last": 0.33
+    },
+    "no": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.67,
+       "size": 30.30303
+      }
+     ],
+     "last": 0.67
     }
    }
   },
@@ -372,8 +421,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.999,
-    "low": 0.899,
+    "p": 0.9986,
+    "low": 0.8986,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -535,9 +584,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5547,
-    "low": 0.4547,
-    "high": 0.6547,
+    "p": 0.5556,
+    "low": 0.4556,
+    "high": 0.6556,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -554,7 +603,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.0%",
+      "value": "3.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -564,7 +613,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "8.0%",
+      "value": "8.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -574,14 +623,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.8%",
+      "value": "28.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 50,
+   "gap_pts": 51,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -619,9 +668,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.6285,
-    "low": 0.5285,
-    "high": 0.7285,
+    "p": 0.71,
+    "low": 0.61,
+    "high": 0.81,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -640,7 +689,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 18,
+   "gap_pts": 26,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -678,9 +727,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1277,
-    "low": 0.0277,
-    "high": 0.2277,
+    "p": 0.1238,
+    "low": 0.0238,
+    "high": 0.2238,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -699,7 +748,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -34,
+   "gap_pts": -35,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -736,9 +785,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0757,
+    "p": 0.0772,
     "low": 0,
-    "high": 0.1758,
+    "high": 0.1773,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
