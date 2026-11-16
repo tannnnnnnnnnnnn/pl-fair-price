@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-16T02:20:35Z)
+# VERIFY — PL Fair Price (2026-11-16T02:30:37Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -12,20 +12,20 @@ GW11 deadline 2026-11-21T11:00:00Z. 14 XO PL markets; 9 priced (high 1, medium 0
 | TOT-IPS | 11 | 63.5/21.5/16.5 | 62.6/21.2/16.3 | 62.7/20.9/16.4 | 62.6/21.0/16.3 | 62.6/21.0/16.3 | 2.04-0.94 | $5,703 |
 | CHE-LEE | 11 | 51.5/25.5/23.5 | 51.2/25.4/23.4 | 51.3/24.9/23.9 | 51.3/25.1/23.6 | 51.3/25.1/23.6 | 1.63-1.03 | $13,917 |
 | BOU-NFO | 11 | 49.5/26.5/25.0 | 49.0/26.2/24.8 | 48.7/26.6/24.6 | 48.9/26.4/24.7 | 48.9/26.4/24.7 | 1.51-0.99 | $29,942 |
-| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 15.6/22.6/61.8 | 16.0/22.5/61.5 | 16.0/22.5/61.5 | 0.83-1.86 | $38,559 |
+| NEW-ARS | 11 | 16.5/22.5/61.5 | 16.4/22.4/61.2 | 15.6/22.6/61.8 | 16.0/22.5/61.5 | 16.0/22.5/61.5 | 0.83-1.86 | $38,084 |
 | HUL-BHA | 11 | 15.0/21.5/64.5 | 14.9/21.3/63.9 | 14.7/20.8/64.5 | 14.8/21.0/64.2 | 14.8/21.0/64.2 | 0.84-2.00 | $8,205 |
 | LIV-MUN | 11 | 55.5/23.5/22.5 | 54.7/23.2/22.2 | 55.2/22.4/22.4 | 55.0/22.8/22.3 | 55.0/22.8/22.3 | 1.89-1.13 | $19,715 |
 | BRE-EVE | 11 | 46.5/26.5/28.0 | 46.0/26.2/27.7 | 46.2/26.6/27.1 | 46.1/26.4/27.4 | 46.1/26.4/27.4 | 1.48-1.08 | $825 |
 | NFO-CHE | 12 | - | - | 34.8/26.8/38.4 | 34.8/26.8/38.4 | 34.8/26.8/38.4 | 1.27-1.35 | $1,745 |
 | LEE-COV | 12 | - | - | 61.9/22.3/15.7 | 61.9/22.3/15.7 | 61.9/22.3/15.7 | 1.87-0.82 | $5 |
 | MUN-BRE | 12 | - | - | 47.7/25.1/27.1 | 47.7/25.1/27.1 | 47.7/25.1/27.1 | 1.62-1.16 | $259 |
-| IPS-AVL | 12 | - | - | 27.6/24.6/47.7 | 27.6/24.6/47.7 | 27.6/24.6/47.7 | 1.21-1.67 | $69 |
+| IPS-AVL | 12 | - | - | 27.8/24.2/48.0 | 27.8/24.2/48.0 | 27.8/24.2/48.0 | 1.25-1.71 | $69 |
 | EVE-LIV | 12 | - | - | 27.7/26.2/46.0 | 27.7/26.2/46.0 | 27.7/26.2/46.0 | 1.11-1.50 | $104 |
 | BHA-NEW | 12 | - | - | 63.4/22.2/14.4 | 63.4/22.2/14.4 | 63.4/22.2/14.4 | 1.87-0.76 | $0 |
 
 League average 2.73 goals per game from 100 finished matches; Dixon-Coles rho -0.02; mean fitted total 2.74.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.181, max 0.352.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.180, max 0.352.
 
 ## Current table (from finished FPL fixtures)
 
@@ -71,10 +71,10 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 71.5 | 26 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 71.5 | 27 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 12.5 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
-| low | 33 | 49.6 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 47 | 12.1 | -35 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 33 | 49.7 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 50 | 7.6 | -42 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.0 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 5 | 52.8 | 48 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
