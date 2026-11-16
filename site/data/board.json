@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T16:35:07Z",
+ "generated_at": "2026-11-16T16:45:05Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,9 +22,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5057,
-    "low": 0.4057,
-    "high": 0.6057,
+    "p": 0.5016,
+    "low": 0.4016,
+    "high": 0.6016,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -61,14 +61,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.6%",
+      "value": "28.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 18,
+   "gap_pts": 17,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -174,7 +174,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "76.5% (spread 1c, $1,391,446 traded on this market)",
+      "value": "76.5% (spread 1c, $1,391,482 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -421,8 +421,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.999,
-    "low": 0.899,
+    "p": 0.9987,
+    "low": 0.8987,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -584,9 +584,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5378,
-    "low": 0.4378,
-    "high": 0.6378,
+    "p": 0.5334,
+    "low": 0.4334,
+    "high": 0.6334,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -623,14 +623,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "27.6%",
+      "value": "28.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 49,
+   "gap_pts": 48,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -668,9 +668,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7206,
-    "low": 0.6206,
-    "high": 0.8206,
+    "p": 0.7229,
+    "low": 0.6229,
+    "high": 0.8229,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -727,9 +727,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0941,
+    "p": 0.0959,
     "low": 0,
-    "high": 0.1941,
+    "high": 0.196,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -748,7 +748,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -38,
+   "gap_pts": -37,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -787,7 +787,7 @@
    "fair": {
     "p": 0.0604,
     "low": 0,
-    "high": 0.1605,
+    "high": 0.1604,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
