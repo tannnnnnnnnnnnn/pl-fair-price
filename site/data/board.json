@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T14:30:35Z",
+ "generated_at": "2026-11-18T14:40:35Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,9 +22,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4985,
-    "low": 0.3985,
-    "high": 0.5985,
+    "p": 0.5214,
+    "low": 0.4214,
+    "high": 0.6214,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -61,14 +61,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "29.1%",
+      "value": "24.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 17,
+   "gap_pts": 19,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -584,9 +584,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5303,
-    "low": 0.4303,
-    "high": 0.6303,
+    "p": 0.5546,
+    "low": 0.4546,
+    "high": 0.6546,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -623,14 +623,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "29.1%",
+      "value": "24.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 48,
+   "gap_pts": 50,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -668,9 +668,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.737,
-    "low": 0.637,
-    "high": 0.837,
+    "p": 0.7355,
+    "low": 0.6355,
+    "high": 0.8355,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -727,9 +727,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1051,
-    "low": 0.005,
-    "high": 0.2051,
+    "p": 0.1091,
+    "low": 0.0091,
+    "high": 0.2092,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -785,9 +785,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0548,
+    "p": 0.055,
     "low": 0,
-    "high": 0.1548,
+    "high": 0.155,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -801,7 +801,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-12T15:00:00Z",
-   "gap_pts": -45,
+   "gap_pts": -44,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
