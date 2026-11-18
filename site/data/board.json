@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T23:23:07Z",
+ "generated_at": "2026-11-18T23:33:12Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,9 +22,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5166,
-    "low": 0.4166,
-    "high": 0.6166,
+    "p": 0.4982,
+    "low": 0.3982,
+    "high": 0.5982,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -61,14 +61,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "23.9%",
+      "value": "28.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 19,
+   "gap_pts": 17,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -526,9 +526,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.55,
-    "low": 0.45,
-    "high": 0.65,
+    "p": 0.5299,
+    "low": 0.4299,
+    "high": 0.6299,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -565,14 +565,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "23.9%",
+      "value": "28.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 50,
+   "gap_pts": 48,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -610,9 +610,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7325,
-    "low": 0.6325,
-    "high": 0.8325,
+    "p": 0.7385,
+    "low": 0.6385,
+    "high": 0.8385,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -631,7 +631,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 28,
+   "gap_pts": 29,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -669,9 +669,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1018,
-    "low": 0.0018,
-    "high": 0.2018,
+    "p": 0.1027,
+    "low": 0.0027,
+    "high": 0.2027,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -727,9 +727,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0557,
+    "p": 0.0556,
     "low": 0,
-    "high": 0.1557,
+    "high": 0.1556,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -826,6 +826,18 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "luke-shaw-injury-within-2-weeks-of-gta-vi-launch-9286",
+   "title": "Luke Shaw injury within 2 weeks of GTA VI launch",
+   "url": "https://beta.xo.market/event/luke-shaw-injury-within-2-weeks-of-gta-vi-launch-9286?r=cryptotan01",
+   "creator": "0xshrdlu",
+   "is_ours": false,
+   "outcome": "NO",
+   "xo_close": 0.27,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-18T23:28:01.000Z"
+  },
   {
    "slug": "will-mauricio-pochettino-be-manchester-uniteds-nex-7320",
    "title": "Will Mauricio Pochettino be Manchester United's next manager?",
@@ -2103,7 +2115,7 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 90,
+  "resolved": 91,
   "compared": 35,
   "fair_closer": 24,
   "brier_fair": 0.1477,
