@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T15:02:26Z",
+ "generated_at": "2026-11-21T15:12:30Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -31,7 +31,7 @@
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "76.5% (spread 1c, $1,394,445 traded on this market)",
+      "value": "76.5% (spread 1c, $1,395,706 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -306,7 +306,7 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9981,
+    "p": 0.998,
     "low": 0.8981,
     "high": 1,
     "confidence": "low",
@@ -592,9 +592,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.7911,
-    "low": 0.6911,
-    "high": 0.8911,
+    "p": 0.785,
+    "low": 0.685,
+    "high": 0.885,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -651,9 +651,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0909,
-    "low": 0,
-    "high": 0.1909,
+    "p": 0.163,
+    "low": 0.063,
+    "high": 0.263,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES.",
@@ -672,7 +672,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -38,
+   "gap_pts": -31,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -709,9 +709,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.1116,
-    "low": 0.0116,
-    "high": 0.2116,
+    "p": 0.1303,
+    "low": 0.0303,
+    "high": 0.2303,
     "confidence": "low",
     "method": "match_model",
     "method_text": "Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
@@ -725,7 +725,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-12T15:00:00Z",
-   "gap_pts": -39,
+   "gap_pts": -37,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -763,9 +763,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2044,
-    "low": 0.1044,
-    "high": 0.3044,
+    "p": 0.2207,
+    "low": 0.1207,
+    "high": 0.3207,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
@@ -777,14 +777,14 @@
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "37.5%",
+      "value": "40.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -35,
+   "gap_pts": -33,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
