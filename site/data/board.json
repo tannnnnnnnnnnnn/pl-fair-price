@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T18:03:26Z",
+ "generated_at": "2026-11-21T18:13:22Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -96,16 +96,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5376,
-    "low": 0.4376,
-    "high": 0.6376,
+    "p": 0.5314,
+    "low": 0.4314,
+    "high": 0.6314,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "25.5%",
+      "value": "26.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -135,14 +135,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "22.9%",
+      "value": "23.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 9,
+   "gap_pts": 8,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -306,8 +306,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9983,
-    "low": 0.8983,
+    "p": 0.9985,
+    "low": 0.8985,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -415,7 +415,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 10%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 9%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -454,16 +454,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5027,
-    "low": 0.4027,
-    "high": 0.6027,
+    "p": 0.4969,
+    "low": 0.3969,
+    "high": 0.5969,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "25.5%",
+      "value": "26.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -493,7 +493,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "22.9%",
+      "value": "23.1%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -651,9 +651,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0357,
+    "p": 0.0382,
     "low": 0,
-    "high": 0.1358,
+    "high": 0.1381,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
@@ -680,60 +680,6 @@
    "description": "This market compares Erling Haaland\u2019s official goals with Tottenham Hotspur\u2019s official team goals from the start of the 2026/27 season through Boxing Day, December 26, 2026, 23:59 UTC.\n\nThe market resolves Yes if Haaland has more official goals than Tottenham by the cutoff.\n\nThe market resolves No if Haaland has the same number of official goals as Tottenham, or fewer.\n\nOnly official goals in first-team matches count (Premier League, domestic cups, and UEFA competitions). Own goals against Tottenham do not count as Tottenham goals. Penalty shootout goals do not count. Goals scored after the cutoff do not count. Primary sources are the official Premier League, Tottenham Hotspur, and Manchester City websites. ESPN or BBC Sport may be used only if a primary source is unavailable. If the totals cannot be reasonably determined from these sources within a reasonable time after the cutoff, the market will be voided. Later revisions after resolution will not change the result.",
    "resolution_sources": [
     "https://www.premierleague.com/"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
-   "slug": "tottenham-hotspur-to-have-fewer-than-4-premier-lea-9167",
-   "title": "Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas",
-   "url": "https://beta.xo.market/event/tottenham-hotspur-to-have-fewer-than-4-premier-lea-9167?r=cryptotan01",
-   "creator": "Aki_Puglord",
-   "is_ours": false,
-   "xo_price": 0.5,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 40.0,
-   "expires_at": "2026-12-18T14:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.001,
-    "low": 0,
-    "high": 0.101,
-    "confidence": "low",
-    "method": "match_model",
-    "method_text": "Spurs (now 4 wins) have fewer than 4 league wins by Christmas. (11 fixtures)",
-    "inputs": [
-     {
-      "label": "Fixtures",
-      "value": "MUN-TOT, TOT-COV, CHE-TOT, TOT-CRY, LEE-TOT, TOT-IPS",
-      "source_url": "https://fantasy.premierleague.com/api/fixtures/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2026-12-12T15:00:00Z",
-   "gap_pts": -50,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas",
-   "description": "This market resolves based on whether Tottenham Hotspur achieves fewer than 4 Premier League wins by Christmas Day. Matches in other competitions such as domestic cups or European tournaments are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. co. uk/sport/football). The primary source governs over secondary sources. If the Premier League season is permanently abandoned before Christmas Day, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.co.uk/sport/football"
    ],
    "books": {
     "yes": {
