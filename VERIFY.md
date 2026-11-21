@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-21T14:52:28Z)
+# VERIFY — PL Fair Price (2026-11-21T15:02:26Z)
 
 GW12 deadline 2026-11-27T18:30:00Z. 13 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,29 +6,24 @@ GW12 deadline 2026-11-27T18:30:00Z. 13 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| AVL-SUN | 11 | 55.5/24.5/19.5 | 55.8/24.6/19.6 | 55.2/24.4/20.4 | 55.5/24.5/20.0 | 55.5/24.5/20.0 | 1.72-0.93 | $368,464 |
-| COV-CRY | 11 | 38.5/28.5/34.5 | 37.9/28.1/34.0 | 38.3/27.4/34.3 | 38.1/27.7/34.2 | 38.1/27.7/34.2 | 1.29-1.21 | $49,779 |
-| TOT-IPS | 11 | 64.5/20.5/15.5 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 64.2/20.4/15.4 | 2.12-0.94 | $1,481,730 |
-| CHE-LEE | 11 | 48.5/26.5/24.5 | 48.7/26.6/24.6 | 49.3/26.4/24.4 | 49.0/26.5/24.5 | 49.0/26.5/24.5 | 1.52-1.00 | $778,920 |
-| BOU-NFO | 11 | 46.5/28.5/25.5 | 46.3/28.4/25.4 | 46.7/27.6/25.6 | 46.5/28.0/25.5 | 46.5/28.0/25.5 | 1.39-0.96 | $2,056,193 |
-| NEW-ARS | 11 | 15.5/22.5/62.5 | 15.4/22.4/62.2 | 14.6/22.6/62.8 | 15.0/22.5/62.5 | 15.0/22.5/62.5 | 0.79-1.87 | $197,770 |
-| HUL-BHA | 11 | 14.5/21.5/64.5 | 14.4/21.4/64.2 | 14.6/21.6/63.8 | 14.5/21.5/64.0 | 14.5/21.5/64.0 | 0.82-1.97 | $30,303 |
-| LIV-MUN | 11 | 56.5/21.5/21.5 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 2.07-1.21 | $95,424 |
-| BRE-EVE | 11 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.41-1.08 | $6,724 |
-| NFO-CHE | 12 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 1.23-1.31 | $2,976 |
-| LEE-COV | 12 | 62.0/21.5/15.5 | 62.6/21.7/15.7 | 62.3/21.6/16.1 | 62.5/21.7/15.9 | 62.5/21.7/15.9 | 1.98-0.89 | $74 |
-| MUN-BRE | 12 | 49.0/24.5/26.5 | 49.0/24.5/26.5 | 49.2/24.6/26.1 | 49.1/24.6/26.3 | 49.1/24.6/26.3 | 1.71-1.19 | $562 |
-| IPS-AVL | 12 | 28.0/25.0/48.0 | 27.7/24.8/47.5 | 27.6/24.1/48.2 | 27.7/24.4/47.9 | 27.7/24.4/47.9 | 1.25-1.71 | $315 |
-| EVE-LIV | 12 | 27.0/25.5/47.0 | 27.1/25.6/47.2 | 26.0/26.5/47.5 | 26.6/26.1/47.4 | 26.6/26.1/47.4 | 1.10-1.55 | $317 |
-| BHA-NEW | 12 | - | - | 61.8/21.1/17.1 | 61.8/21.1/17.1 | 61.8/21.1/17.1 | 2.07-1.00 | $190 |
-| CRY-HUL | 12 | - | - | 52.3/24.6/23.1 | 52.3/24.6/23.1 | 52.3/24.6/23.1 | 1.71-1.06 | $24 |
-| FUL-BOU | 12 | - | - | 36.2/26.6/37.2 | 36.2/26.6/37.2 | 36.2/26.6/37.2 | 1.33-1.35 | $53 |
-| SUN-TOT | 12 | - | - | 29.3/28.3/42.4 | 29.3/28.3/42.4 | 29.3/28.3/42.4 | 1.05-1.32 | $122 |
-| ARS-MCI | 12 | - | - | 49.2/24.6/26.1 | 49.2/24.6/26.1 | 49.2/24.6/26.1 | 1.70-1.18 | $744 |
+| NEW-ARS | 11 | 15.5/22.5/62.5 | 15.4/22.4/62.2 | 14.6/22.6/62.8 | 15.0/22.5/62.5 | 15.0/22.5/62.5 | 0.83-1.91 | $199,246 |
+| HUL-BHA | 11 | 14.5/21.5/64.5 | 14.4/21.4/64.2 | 14.6/21.6/63.8 | 14.5/21.5/64.0 | 14.5/21.5/64.0 | 0.85-2.02 | $30,343 |
+| LIV-MUN | 11 | 56.5/21.5/21.5 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 2.12-1.25 | $95,945 |
+| BRE-EVE | 11 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.45-1.11 | $6,734 |
+| NFO-CHE | 12 | 34.0/27.5/38.0 | 34.2/27.6/38.2 | 34.5/27.5/38.0 | 34.3/27.6/38.1 | 34.3/27.6/38.1 | 1.26-1.34 | $3,068 |
+| LEE-COV | 12 | 62.0/21.5/15.5 | 62.6/21.7/15.7 | 62.0/22.0/16.0 | 62.3/21.9/15.8 | 62.3/21.9/15.8 | 2.00-0.91 | $74 |
+| MUN-BRE | 12 | 49.0/24.5/26.5 | 49.0/24.5/26.5 | 49.2/24.6/26.1 | 49.1/24.6/26.3 | 49.1/24.6/26.3 | 1.75-1.23 | $562 |
+| IPS-AVL | 12 | 28.0/25.0/47.5 | 27.9/24.9/47.3 | 28.1/24.1/47.7 | 28.0/24.5/47.5 | 28.0/24.5/47.5 | 1.30-1.75 | $315 |
+| EVE-LIV | 12 | 27.0/25.5/47.0 | 27.1/25.6/47.2 | 25.5/27.0/47.5 | 26.3/26.3/47.4 | 26.3/26.3/47.4 | 1.11-1.57 | $317 |
+| FUL-BOU | 12 | 50.5/50.5/50.5 | 33.3/33.3/33.3 | 36.0/27.0/37.0 | 34.7/30.2/35.2 | 34.7/30.2/35.2 | 1.11-1.12 | $53 |
+| BHA-NEW | 12 | 50.5/50.5/50.5 | 33.3/33.3/33.3 | 61.8/21.1/17.1 | 47.6/27.2/25.2 | 47.6/27.2/25.2 | 1.50-1.02 | $190 |
+| CRY-HUL | 12 | 50.5/50.5/50.5 | 33.3/33.3/33.3 | 52.3/24.6/23.1 | 42.8/29.0/28.2 | 42.8/29.0/28.2 | 1.32-1.02 | $24 |
+| SUN-TOT | 12 | 50.5/50.5/50.5 | 33.3/33.3/33.3 | 29.0/28.5/42.5 | 31.2/30.9/37.9 | 31.2/30.9/37.9 | 1.00-1.13 | $122 |
+| ARS-MCI | 12 | - | - | 49.2/24.6/26.1 | 49.2/24.6/26.1 | 49.2/24.6/26.1 | 1.75-1.22 | $744 |
 
-League average 2.72 goals per game from 101 finished matches; Dixon-Coles rho -0.03; mean fitted total 2.74.
+League average 2.72 goals per game from 101 finished matches; Dixon-Coles rho -0.05; mean fitted total 2.71.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.185, max 0.468.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.220, max 0.384.
 
 ## Current table (from finished FPL fixtures)
 
@@ -74,13 +69,13 @@ qg 0.397, qa 0.048, plays 0.95; xG 8.06, xA 0.92, 979 min, 11/11 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 75.7 | 31 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 79.1 | 34 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.8 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 4.4 | -43 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
-| low | 33 | 51.5 | 18 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 5.6 | -44 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
+| low | 47 | 9.1 | -38 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 33 | 51.4 | 18 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 50 | 11.2 | -39 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 45 | 55.1 | 10 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 45 | 54.9 | 10 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 35.5 | -31 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 20.4 | -35 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
