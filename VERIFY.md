@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-21T23:24:35Z)
+# VERIFY — PL Fair Price (2026-11-21T23:34:39Z)
 
 GW12 deadline 2026-11-27T18:30:00Z. 12 XO PL markets; 8 priced (high 1, medium 0, low 7).
 
@@ -6,17 +6,17 @@ GW12 deadline 2026-11-27T18:30:00Z. 12 XO PL markets; 8 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| HUL-BHA | 11 | 13.5/21.5/64.5 | 13.6/21.6/64.8 | 14.6/21.6/63.8 | 14.1/21.6/64.3 | 14.1/21.6/64.3 | 0.80-1.97 | $72,906 |
-| LIV-MUN | 11 | 56.5/21.5/21.5 | 56.8/21.6/21.6 | 56.2/22.4/21.4 | 56.5/22.0/21.5 | 56.5/22.0/21.5 | 2.04-1.19 | $130,787 |
-| BRE-EVE | 11 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.43-1.10 | $7,157 |
-| NFO-CHE | 12 | 34.5/27.5/37.5 | 34.7/27.6/37.7 | 34.3/27.4/38.3 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 1.25-1.33 | $3,928 |
-| LEE-COV | 12 | 62.0/22.0/16.0 | 62.0/22.0/16.0 | 61.8/22.1/16.1 | 61.9/22.1/16.0 | 61.9/22.1/16.0 | 1.96-0.89 | $119 |
+| HUL-BHA | 11 | 13.5/21.5/64.5 | 13.6/21.6/64.8 | 14.6/21.6/63.8 | 14.1/21.6/64.3 | 14.1/21.6/64.3 | 0.80-1.97 | $72,985 |
+| LIV-MUN | 11 | 56.5/21.5/21.5 | 56.8/21.6/21.6 | 56.2/22.4/21.4 | 56.5/22.0/21.5 | 56.5/22.0/21.5 | 2.04-1.19 | $131,141 |
+| BRE-EVE | 11 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.43-1.10 | $7,057 |
+| NFO-CHE | 12 | 34.5/27.5/37.5 | 34.7/27.6/37.7 | 34.3/27.4/38.3 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 1.25-1.33 | $3,930 |
+| LEE-COV | 12 | 62.0/22.0/16.0 | 62.0/22.0/16.0 | 61.8/22.1/16.1 | 61.9/22.1/16.0 | 61.9/22.1/16.0 | 1.96-0.89 | $142 |
 | MUN-BRE | 12 | 49.5/24.5/26.0 | 49.5/24.5/26.0 | 49.2/24.6/26.1 | 49.4/24.6/26.1 | 49.4/24.6/26.1 | 1.73-1.20 | $626 |
 | IPS-AVL | 12 | 27.0/24.5/48.0 | 27.1/24.6/48.2 | 26.8/25.3/48.0 | 27.0/24.9/48.1 | 27.0/24.9/48.1 | 1.21-1.69 | $328 |
 | EVE-LIV | 12 | 27.0/26.0/47.0 | 27.0/26.0/47.0 | 25.5/27.0/47.5 | 26.2/26.5/47.2 | 26.3/26.5/47.2 | 1.08-1.53 | $369 |
 | FUL-BOU | 12 | 36.0/27.5/37.0 | 35.8/27.4/36.8 | 35.9/26.8/37.4 | 35.8/27.1/37.1 | 35.8/27.1/37.1 | 1.31-1.34 | $566 |
 | BHA-NEW | 12 | 61.5/21.0/17.0 | 61.8/21.1/17.1 | 62.0/21.0/17.0 | 61.9/21.1/17.0 | 61.9/21.1/17.0 | 2.10-1.02 | $206 |
-| CRY-HUL | 12 | 52.5/24.5/23.0 | 52.5/24.5/23.0 | 53.0/24.2/22.7 | 52.8/24.4/22.9 | 52.8/24.4/22.9 | 1.76-1.08 | $24 |
+| CRY-HUL | 12 | 52.5/24.5/23.0 | 52.5/24.5/23.0 | 53.3/24.1/22.6 | 52.9/24.3/22.8 | 52.9/24.3/22.8 | 1.77-1.09 | $24 |
 | SUN-TOT | 12 | 28.5/29.0/43.5 | 28.2/28.7/43.1 | 28.0/28.5/43.5 | 28.1/28.6/43.3 | 28.1/28.6/43.3 | 1.02-1.33 | $238 |
 | ARS-MCI | 12 | 50.0/25.5/25.0 | 49.8/25.4/24.9 | 50.8/24.4/24.9 | 50.3/24.9/24.9 | 50.3/24.9/24.9 | 1.70-1.13 | $1,542 |
 | CHE-CRY | 13 | - | - | 62.4/19.8/17.8 | 62.4/19.8/17.8 | 62.4/19.8/17.8 | 2.30-1.16 | $24 |
@@ -70,15 +70,15 @@ qg 0.397, qa 0.048, plays 0.95; xG 8.09, xA 0.92, 979 min, 11/11 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 84.0 | 39 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 83.4 | 38 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 4.1 | -43 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
-| low | 33 | 49.1 | 16 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 49.6 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 46 | 73.0 | 27 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 45 | 52.4 | 7 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 45 | 52.9 | 8 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 35.5 | -31 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
-| low | 55 | 22.0 | -33 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
+| low | 55 | 21.8 | -33 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
-| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 5%. They differ too much to show one number. |
+| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 4%. They differ too much to show one number. |
 | - | 50 | - |  | - | Will Manchester United win 3 out of their next 5 Premier League games? | Fair price coming: not modelled yet. |
 | - | 57 | - |  | - | Will Tottenham Miss Their Next Penalty? | Too few penalties for a reliable base rate. |
