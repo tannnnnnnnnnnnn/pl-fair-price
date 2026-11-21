@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-21T10:51:17Z)
+# VERIFY — PL Fair Price (2026-11-21T11:01:21Z)
 
 GW11 deadline 2026-11-21T11:00:00Z. 13 XO PL markets; 9 priced (high 1, medium 0, low 8).
 
@@ -6,15 +6,15 @@ GW11 deadline 2026-11-21T11:00:00Z. 13 XO PL markets; 9 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| MCI-FUL | 11 | 71.5/16.5/11.5 | 71.9/16.6/11.6 | 71.9/16.6/11.6 | 71.9/16.6/11.6 | 71.9/16.6/11.6 | 2.52-0.92 | $570,685 |
-| AVL-SUN | 11 | 54.5/25.5/20.5 | 54.2/25.4/20.4 | 54.8/25.6/19.6 | 54.5/25.5/20.0 | 54.5/25.5/20.0 | 1.60-0.86 | $200,563 |
-| COV-CRY | 11 | 38.5/28.5/34.5 | 37.9/28.1/34.0 | 38.5/28.0/33.5 | 38.2/28.0/33.7 | 38.2/28.0/33.7 | 1.25-1.16 | $33,767 |
-| TOT-IPS | 11 | 64.5/20.5/14.5 | 64.8/20.6/14.6 | 63.5/21.2/15.3 | 64.2/20.9/14.9 | 64.2/20.9/14.9 | 2.02-0.86 | $64,867 |
-| CHE-LEE | 11 | 47.5/27.5/25.5 | 47.3/27.4/25.4 | 47.3/27.4/25.4 | 47.3/27.4/25.4 | 47.3/27.4/25.4 | 1.42-0.97 | $422,492 |
-| BOU-NFO | 11 | 50.5/27.5/23.5 | 49.8/27.1/23.2 | 50.2/27.4/22.4 | 50.0/27.2/22.8 | 50.0/27.2/22.8 | 1.45-0.89 | $155,370 |
-| NEW-ARS | 11 | 15.5/22.5/62.5 | 15.4/22.4/62.2 | 15.4/22.4/62.2 | 15.4/22.4/62.2 | 15.4/22.4/62.2 | 0.80-1.86 | $156,554 |
-| HUL-BHA | 11 | 14.5/21.5/64.5 | 14.4/21.4/64.2 | 14.6/21.6/63.8 | 14.5/21.5/64.0 | 14.5/21.5/64.0 | 0.80-1.94 | $29,103 |
-| LIV-MUN | 11 | 56.5/22.5/21.5 | 56.2/22.4/21.4 | 57.2/21.4/21.4 | 56.7/21.9/21.4 | 56.7/21.9/21.4 | 2.00-1.16 | $93,435 |
+| MCI-FUL | 11 | 71.5/16.5/11.5 | 71.9/16.6/11.6 | 71.5/17.0/11.5 | 71.7/16.8/11.5 | 71.7/16.8/11.5 | 2.48-0.90 | $582,094 |
+| AVL-SUN | 11 | 54.5/25.5/20.5 | 54.2/25.4/20.4 | 54.8/25.6/19.6 | 54.5/25.5/20.0 | 54.5/25.5/20.0 | 1.60-0.86 | $200,891 |
+| COV-CRY | 11 | 38.5/28.5/34.5 | 37.9/28.1/34.0 | 38.5/28.0/33.5 | 38.2/28.0/33.7 | 38.2/28.0/33.7 | 1.25-1.16 | $33,878 |
+| TOT-IPS | 11 | 64.5/20.5/14.5 | 64.8/20.6/14.6 | 63.5/21.2/15.3 | 64.2/20.9/14.9 | 64.2/20.9/14.9 | 2.02-0.86 | $65,010 |
+| CHE-LEE | 11 | 47.5/27.5/25.5 | 47.3/27.4/25.4 | 47.3/27.4/25.4 | 47.3/27.4/25.4 | 47.3/27.4/25.4 | 1.42-0.97 | $423,340 |
+| BOU-NFO | 11 | 50.5/27.5/23.5 | 49.8/27.1/23.2 | 50.2/27.4/22.4 | 50.0/27.2/22.8 | 50.0/27.2/22.8 | 1.45-0.89 | $156,814 |
+| NEW-ARS | 11 | 15.5/22.5/62.5 | 15.4/22.4/62.2 | 15.4/22.4/62.2 | 15.4/22.4/62.2 | 15.4/22.4/62.2 | 0.80-1.86 | $156,771 |
+| HUL-BHA | 11 | 14.5/21.5/64.5 | 14.4/21.4/64.2 | 14.6/21.6/63.8 | 14.5/21.5/64.0 | 14.5/21.5/64.0 | 0.80-1.94 | $29,168 |
+| LIV-MUN | 11 | 56.5/22.5/21.5 | 56.2/22.4/21.4 | 57.2/21.4/21.4 | 56.7/21.9/21.4 | 56.7/21.9/21.4 | 2.00-1.16 | $93,479 |
 | BRE-EVE | 11 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.39-1.06 | $6,119 |
 | NFO-CHE | 12 | 34.0/27.5/38.0 | 34.2/27.6/38.2 | 34.7/27.1/38.2 | 34.4/27.4/38.2 | 34.4/27.4/38.2 | 1.22-1.30 | $3,020 |
 | LEE-COV | 12 | 62.0/21.0/15.5 | 62.9/21.3/15.7 | 62.3/21.6/16.1 | 62.6/21.5/15.9 | 62.6/21.5/15.9 | 1.97-0.88 | $70 |
@@ -75,13 +75,13 @@ qg 0.393, qa 0.049, plays 0.95; xG 7.06, xA 0.87, 889 min, 10/10 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 76.5 | 31 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 76.3 | 31 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 11.5 | -36 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
+| low | 47 | 11.1 | -36 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 10). Strictly more counts as YES. |
 | low | 33 | 52.1 | 19 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| low | 50 | 5.4 | -45 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
+| low | 50 | 5.5 | -45 | match_model | Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas | Spurs (now 3 wins) have fewer than 4 league wins by Christmas. (11 fixtures) |
 | high | 46 | 76.5 | 30 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 45 | 55.5 | 10 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 45 | 55.5 | 11 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 35.5 | -31 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 20.4 | -35 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
