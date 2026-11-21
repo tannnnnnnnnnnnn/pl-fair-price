@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-21T18:33:27Z)
+# VERIFY — PL Fair Price (2026-11-21T18:43:25Z)
 
 GW12 deadline 2026-11-27T18:30:00Z. 12 XO PL markets; 8 priced (high 1, medium 0, low 7).
 
@@ -6,19 +6,19 @@ GW12 deadline 2026-11-27T18:30:00Z. 12 XO PL markets; 8 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| HUL-BHA | 11 | 14.5/21.5/64.5 | 14.4/21.4/64.2 | 14.6/21.6/63.8 | 14.5/21.5/64.0 | 14.5/21.5/64.0 | 0.78-1.92 | $35,720 |
-| LIV-MUN | 11 | 56.5/21.5/21.5 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 2.01-1.17 | $108,106 |
-| BRE-EVE | 11 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.37-1.04 | $6,861 |
-| NFO-CHE | 12 | 34.5/27.5/37.5 | 34.7/27.6/37.7 | 34.3/27.4/38.3 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 1.19-1.27 | $3,847 |
+| HUL-BHA | 11 | 14.5/21.5/64.5 | 14.4/21.4/64.2 | 14.6/21.6/63.8 | 14.5/21.5/64.0 | 14.5/21.5/64.0 | 0.78-1.92 | $35,842 |
+| LIV-MUN | 11 | 56.5/21.5/21.5 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 56.8/21.6/21.6 | 2.01-1.17 | $109,473 |
+| BRE-EVE | 11 | 44.5/27.5/28.5 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 44.3/27.4/28.4 | 1.37-1.04 | $6,875 |
+| NFO-CHE | 12 | 34.5/27.5/37.5 | 34.7/27.6/37.7 | 34.3/27.4/38.3 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 1.19-1.27 | $3,848 |
 | LEE-COV | 12 | 62.0/22.0/16.0 | 62.0/22.0/16.0 | 62.5/21.5/16.0 | 62.3/21.8/16.0 | 62.3/21.7/16.0 | 1.92-0.85 | $95 |
 | MUN-BRE | 12 | 49.5/24.5/26.0 | 49.5/24.5/26.0 | 49.2/24.6/26.1 | 49.4/24.6/26.1 | 49.4/24.6/26.1 | 1.66-1.14 | $584 |
-| IPS-AVL | 12 | 27.5/24.5/48.5 | 27.4/24.4/48.3 | 27.5/24.5/48.0 | 27.4/24.4/48.1 | 27.4/24.4/48.1 | 1.20-1.66 | $327 |
-| EVE-LIV | 12 | 27.0/25.5/47.0 | 27.1/25.6/47.2 | 26.4/26.4/47.3 | 26.8/26.0/47.2 | 26.8/26.0/47.2 | 1.07-1.51 | $369 |
-| FUL-BOU | 12 | 36.5/27.5/37.0 | 36.1/27.2/36.6 | 35.9/26.8/37.4 | 36.0/27.0/37.0 | 36.0/27.0/37.0 | 1.26-1.28 | $526 |
+| IPS-AVL | 12 | 27.5/24.5/49.0 | 27.2/24.3/48.5 | 27.5/24.5/48.0 | 27.4/24.4/48.3 | 27.4/24.4/48.3 | 1.20-1.67 | $333 |
+| EVE-LIV | 12 | 27.0/25.5/47.0 | 27.1/25.6/47.2 | 26.7/26.2/47.0 | 26.9/25.9/47.1 | 26.9/25.9/47.1 | 1.08-1.51 | $369 |
+| FUL-BOU | 12 | 36.5/27.5/37.0 | 36.1/27.2/36.6 | 35.9/26.8/37.4 | 36.0/27.0/37.0 | 36.0/27.0/37.0 | 1.26-1.28 | $557 |
 | BHA-NEW | 12 | 62.0/20.5/16.5 | 62.6/20.7/16.7 | 62.0/21.0/17.0 | 62.3/20.9/16.8 | 62.3/20.9/16.8 | 2.04-0.96 | $200 |
 | CRY-HUL | 12 | 52.5/24.5/23.5 | 52.2/24.4/23.4 | 53.0/24.2/22.7 | 52.6/24.3/23.1 | 52.6/24.3/23.1 | 1.69-1.04 | $24 |
 | SUN-TOT | 12 | 28.0/27.5/43.5 | 28.3/27.8/43.9 | 28.1/28.6/43.2 | 28.2/28.2/43.6 | 28.2/28.2/43.6 | 0.99-1.30 | $156 |
-| ARS-MCI | 12 | 50.0/24.5/25.0 | 50.3/24.6/25.1 | 50.0/23.5/26.5 | 50.1/24.1/25.8 | 50.1/24.1/25.8 | 1.71-1.16 | $878 |
+| ARS-MCI | 12 | 50.0/24.5/25.0 | 50.3/24.6/25.1 | 50.0/23.5/26.5 | 50.1/24.1/25.8 | 50.1/24.1/25.8 | 1.71-1.16 | $880 |
 
 League average 2.73 goals per game from 106 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.71.
 
@@ -68,11 +68,11 @@ qg 0.397, qa 0.048, plays 0.95; xG 8.09, xA 0.92, 979 min, 11/11 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 83.5 | 39 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 83.9 | 39 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.8 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 3.8 | -43 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
+| low | 47 | 4.0 | -43 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
 | low | 33 | 52.4 | 19 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
-| high | 46 | 78.5 | 32 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
+| high | 46 | 78.0 | 32 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 45 | 56.0 | 11 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 35.5 | -31 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 19.6 | -35 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
