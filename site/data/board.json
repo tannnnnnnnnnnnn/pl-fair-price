@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T16:29:01Z",
+ "generated_at": "2026-11-22T16:38:59Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -225,7 +225,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "B.Fernandes: xG 3.94, xA 2.17 in 810 min, 9/10 starts",
+      "label": "B.Fernandes: xG 3.94, xA 2.17 in 813 min, 10/10 starts",
       "value": "19% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -273,9 +273,9 @@
    "creator": "AThryver",
    "is_ours": false,
    "xo_price": 0.55,
-   "best_bid": null,
+   "best_bid": 0.55,
    "best_ask": null,
-   "liquidity_usd": 0,
+   "liquidity_usd": 27.5,
    "volume_usd": 0,
    "expires_at": "2027-05-31T23:59:59.000Z",
    "group": "season",
@@ -295,14 +295,24 @@
    ],
    "books": {
     "yes": {
-     "bids": [],
+     "bids": [
+      {
+       "price": 0.55,
+       "size": 50.0
+      }
+     ],
      "asks": [],
-     "last": null
+     "last": 0.55
     },
     "no": {
      "bids": [],
-     "asks": [],
-     "last": null
+     "asks": [
+      {
+       "price": 0.45,
+       "size": 50.0
+      }
+     ],
+     "last": 0.45
     }
    }
   },
@@ -361,7 +371,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 5%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 6%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -400,9 +410,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5178,
-    "low": 0.4178,
-    "high": 0.6178,
+    "p": 0.516,
+    "low": 0.416,
+    "high": 0.616,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -439,7 +449,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "25.2%",
+      "value": "25.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -538,9 +548,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5502,
-    "low": 0.4502,
-    "high": 0.6502,
+    "p": 0.5482,
+    "low": 0.4482,
+    "high": 0.6482,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -577,7 +587,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "25.2%",
+      "value": "25.6%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -622,15 +632,15 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8244,
-    "low": 0.7244,
-    "high": 0.9244,
+    "p": 0.8263,
+    "low": 0.7263,
+    "high": 0.9263,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
     "inputs": [
      {
-      "label": "Isak: xG 4.88, xA 0.28 in 747 min, 9/10 starts",
+      "label": "Isak: xG 4.88, xA 0.28 in 750 min, 10/10 starts",
       "value": "27% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
@@ -643,7 +653,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 37,
+   "gap_pts": 38,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -681,9 +691,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0647,
+    "p": 0.0684,
     "low": 0,
-    "high": 0.1647,
+    "high": 0.1684,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
@@ -702,7 +712,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -41,
+   "gap_pts": -40,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -2100,5 +2110,7 @@
   "open": 0
  },
  "best_value": [],
- "live": []
+ "live": [
+  "LIV-MUN"
+ ]
 }
