@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T10:47:34Z",
+ "generated_at": "2026-11-22T10:57:28Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,23 +22,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.73,
-    "low": 0.7,
-    "high": 0.76,
+    "p": 0.725,
+    "low": 0.695,
+    "high": 0.755,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "73.0% (spread 2c, $1,433,427 traded on this market)",
+      "value": "72.5% (spread 1c, $1,433,430 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 27,
+   "gap_pts": 26,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -212,8 +212,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9986,
-    "low": 0.8986,
+    "p": 0.9981,
+    "low": 0.8981,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -360,9 +360,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4895,
-    "low": 0.3895,
-    "high": 0.5895,
+    "p": 0.4897,
+    "low": 0.3897,
+    "high": 0.5897,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -498,9 +498,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5226,
-    "low": 0.4226,
-    "high": 0.6226,
+    "p": 0.5224,
+    "low": 0.4224,
+    "high": 0.6224,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -582,9 +582,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8407,
-    "low": 0.7407,
-    "high": 0.9406,
+    "p": 0.8368,
+    "low": 0.7369,
+    "high": 0.9368,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -641,9 +641,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0254,
+    "p": 0.0259,
     "low": 0,
-    "high": 0.1254,
+    "high": 0.1259,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
