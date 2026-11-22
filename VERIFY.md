@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-22T15:28:45Z)
+# VERIFY — PL Fair Price (2026-11-22T15:38:48Z)
 
 GW12 deadline 2026-11-27T18:30:00Z. 13 XO PL markets; 8 priced (high 1, medium 0, low 7).
 
@@ -6,9 +6,9 @@ GW12 deadline 2026-11-27T18:30:00Z. 13 XO PL markets; 8 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| LIV-MUN | 11 | 54.5/22.5/22.5 | 54.8/22.6/22.6 | 54.8/22.6/22.6 | 54.8/22.6/22.6 | 54.8/22.6/22.6 | 2.02-1.24 | $606,409 |
-| BRE-EVE | 11 | 41.5/27.5/30.5 | 41.7/27.6/30.7 | 41.7/27.6/30.7 | 41.7/27.6/30.7 | 41.7/27.6/30.7 | 1.42-1.18 | $17,763 |
-| NFO-CHE | 12 | 34.5/28.0/37.5 | 34.5/28.0/37.5 | 34.7/27.6/37.7 | 34.6/27.8/37.6 | 34.6/27.8/37.6 | 1.27-1.34 | $8,064 |
+| LIV-MUN | 11 | 54.5/22.5/22.5 | 54.8/22.6/22.6 | 54.8/22.6/22.6 | 54.8/22.6/22.6 | 54.8/22.6/22.6 | 2.02-1.24 | $619,533 |
+| BRE-EVE | 11 | 41.5/27.5/30.5 | 41.7/27.6/30.7 | 41.7/27.6/30.7 | 41.7/27.6/30.7 | 41.7/27.6/30.7 | 1.42-1.18 | $17,879 |
+| NFO-CHE | 12 | 34.5/28.0/37.5 | 34.5/28.0/37.5 | 34.7/27.6/37.7 | 34.6/27.8/37.6 | 34.6/27.8/37.6 | 1.27-1.34 | $8,112 |
 | LEE-COV | 12 | 63.5/21.5/15.0 | 63.5/21.5/15.0 | 62.8/21.6/15.6 | 63.2/21.6/15.3 | 63.2/21.6/15.3 | 2.05-0.91 | $237 |
 | MUN-BRE | 12 | 49.5/25.0/26.0 | 49.3/24.9/25.9 | 49.5/24.7/25.8 | 49.4/24.8/25.8 | 49.4/24.8/25.8 | 1.75-1.21 | $752 |
 | IPS-AVL | 12 | 27.5/25.0/48.0 | 27.4/24.9/47.8 | 26.8/25.3/48.0 | 27.1/25.1/47.9 | 27.1/25.1/47.9 | 1.24-1.72 | $381 |
@@ -74,9 +74,9 @@ qg 0.397, qa 0.048, plays 0.95; xG 8.09, xA 0.92, 979 min, 11/11 starts.
 | low | 45 | 83.1 | 38 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.8 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
 | low | 47 | 2.7 | -44 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
-| low | 33 | 49.4 | 16 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 33 | 47.7 | 15 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 46 | 72.5 | 26 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 45 | 52.8 | 8 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 45 | 51.0 | 6 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 35.5 | -31 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 22.6 | -32 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
