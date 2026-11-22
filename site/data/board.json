@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T15:48:47Z",
+ "generated_at": "2026-11-22T15:58:57Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,23 +22,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.725,
-    "low": 0.695,
-    "high": 0.755,
+    "p": 0.735,
+    "low": 0.705,
+    "high": 0.765,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "72.5% (spread 1c, $1,433,432 traded on this market)",
+      "value": "73.5% (spread 1c, $1,433,432 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 26,
+   "gap_pts": 27,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -212,8 +212,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.999,
-    "low": 0.899,
+    "p": 0.9989,
+    "low": 0.8989,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -400,16 +400,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4762,
-    "low": 0.3762,
-    "high": 0.5762,
+    "p": 0.4973,
+    "low": 0.3973,
+    "high": 0.5973,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "25.0%",
+      "value": "25.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -429,12 +429,12 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "5.9%",
+      "value": "5.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "42.5%",
+      "value": "48.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -446,7 +446,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 15,
+   "gap_pts": 17,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -538,16 +538,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5089,
-    "low": 0.4089,
-    "high": 0.6089,
+    "p": 0.5285,
+    "low": 0.4285,
+    "high": 0.6285,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "25.0%",
+      "value": "25.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -567,12 +567,12 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "5.9%",
+      "value": "5.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "42.5%",
+      "value": "48.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -584,7 +584,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 6,
+   "gap_pts": 8,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -622,9 +622,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.835,
-    "low": 0.735,
-    "high": 0.935,
+    "p": 0.8303,
+    "low": 0.7303,
+    "high": 0.9303,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -681,9 +681,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0654,
+    "p": 0.0687,
     "low": 0,
-    "high": 0.1654,
+    "high": 0.1687,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
@@ -739,16 +739,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2255,
-    "low": 0.1255,
-    "high": 0.3255,
+    "p": 0.2278,
+    "low": 0.1278,
+    "high": 0.3278,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "48.5%",
+      "value": "49.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
