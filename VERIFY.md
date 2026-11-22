@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-22T09:07:02Z)
+# VERIFY — PL Fair Price (2026-11-22T09:17:05Z)
 
 GW12 deadline 2026-11-27T18:30:00Z. 12 XO PL markets; 8 priced (high 1, medium 0, low 7).
 
@@ -6,11 +6,11 @@ GW12 deadline 2026-11-27T18:30:00Z. 12 XO PL markets; 8 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| HUL-BHA | 11 | 13.5/21.5/65.5 | 13.4/21.4/65.2 | 13.4/21.4/65.2 | 13.4/21.4/65.2 | 13.4/21.4/65.2 | 0.79-2.00 | $141,766 |
-| LIV-MUN | 11 | 56.5/22.5/21.5 | 56.2/22.4/21.4 | 56.5/22.5/21.0 | 56.4/22.4/21.2 | 56.4/22.4/21.2 | 2.01-1.16 | $275,106 |
-| BRE-EVE | 11 | 41.5/27.5/31.5 | 41.3/27.4/31.3 | 41.7/27.6/30.7 | 41.5/27.5/31.0 | 41.5/27.5/31.0 | 1.41-1.18 | $14,712 |
+| HUL-BHA | 11 | 13.5/21.5/65.5 | 13.4/21.4/65.2 | 13.4/21.4/65.2 | 13.4/21.4/65.2 | 13.4/21.4/65.2 | 0.79-2.00 | $142,750 |
+| LIV-MUN | 11 | 56.5/22.5/21.5 | 56.2/22.4/21.4 | 56.5/22.5/21.0 | 56.4/22.4/21.2 | 56.4/22.4/21.2 | 2.01-1.16 | $279,988 |
+| BRE-EVE | 11 | 41.5/27.5/31.5 | 41.3/27.4/31.3 | 41.5/27.5/31.0 | 41.4/27.4/31.2 | 41.4/27.4/31.2 | 1.41-1.19 | $16,615 |
 | NFO-CHE | 12 | 34.5/27.5/38.0 | 34.5/27.5/38.0 | 34.7/27.6/37.7 | 34.6/27.6/37.8 | 34.6/27.6/37.8 | 1.27-1.34 | $7,531 |
-| LEE-COV | 12 | 63.5/22.0/15.0 | 63.2/21.9/14.9 | 62.8/21.6/15.6 | 63.0/21.7/15.3 | 63.0/21.7/15.3 | 2.00-0.88 | $237 |
+| LEE-COV | 12 | 63.5/22.0/15.5 | 62.9/21.8/15.3 | 62.8/21.6/15.6 | 62.8/21.7/15.5 | 62.8/21.7/15.5 | 2.01-0.90 | $237 |
 | MUN-BRE | 12 | 49.5/25.0/26.5 | 49.0/24.8/26.2 | 49.5/24.7/25.8 | 49.3/24.7/26.0 | 49.3/24.7/26.0 | 1.74-1.21 | $673 |
 | IPS-AVL | 12 | 27.5/25.0/48.0 | 27.4/24.9/47.8 | 26.8/25.3/48.0 | 27.1/25.1/47.9 | 27.1/25.1/47.9 | 1.22-1.69 | $381 |
 | EVE-LIV | 12 | 27.0/26.0/47.0 | 27.0/26.0/47.0 | 26.0/26.5/47.5 | 26.5/26.2/47.2 | 26.5/26.3/47.2 | 1.12-1.58 | $386 |
@@ -25,7 +25,7 @@ GW12 deadline 2026-11-27T18:30:00Z. 12 XO PL markets; 8 priced (high 1, medium 0
 
 League average 2.74 goals per game from 107 finished matches; Dixon-Coles rho -0.05; mean fitted total 2.72.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.228, max 0.524.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.229, max 0.524.
 
 ## Current table (from finished FPL fixtures)
 
@@ -71,9 +71,9 @@ qg 0.397, qa 0.048, plays 0.95; xG 8.09, xA 0.92, 979 min, 11/11 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 83.7 | 39 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 83.2 | 38 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.8 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 2.7 | -44 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
+| low | 47 | 2.5 | -44 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
 | low | 33 | 49.2 | 16 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 46 | 73.5 | 27 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 45 | 52.5 | 8 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
