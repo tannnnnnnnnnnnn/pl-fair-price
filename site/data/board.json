@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T18:29:40Z",
+ "generated_at": "2026-11-22T18:39:40Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -225,7 +225,7 @@
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
-      "label": "B.Fernandes: xG 4.36, xA 2.33 in 900 min, 10/10 starts",
+      "label": "B.Fernandes: xG 4.36, xA 2.33 in 900 min, 10/11 starts",
       "value": "20% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      }
@@ -360,9 +360,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5148,
-    "low": 0.4148,
-    "high": 0.6148,
+    "p": 0.5155,
+    "low": 0.4155,
+    "high": 0.6155,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -379,7 +379,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.1%",
+      "value": "3.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -389,7 +389,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "5.9%",
+      "value": "6.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -406,7 +406,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 18,
+   "gap_pts": 19,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -498,9 +498,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5473,
-    "low": 0.4473,
-    "high": 0.6473,
+    "p": 0.5471,
+    "low": 0.4471,
+    "high": 0.6471,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -517,7 +517,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "3.1%",
+      "value": "3.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -527,7 +527,7 @@
      },
      {
       "label": "Will Manchester City be deducted 30-49 Premier League points?",
-      "value": "5.9%",
+      "value": "6.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -582,16 +582,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.872,
-    "low": 0.772,
-    "high": 0.9719,
+    "p": 0.8209,
+    "low": 0.7209,
+    "high": 0.9209,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
     "inputs": [
      {
-      "label": "Isak: xG 6.19, xA 0.32 in 831 min, 10/10 starts",
-      "value": "28% of team goals, plays 95% next match",
+      "label": "Isak: xG 6.19, xA 0.32 in 831 min, 10/11 starts",
+      "value": "27% of team goals, plays 95% next match",
       "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
      },
      {
@@ -603,7 +603,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 42,
+   "gap_pts": 37,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -641,9 +641,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0706,
+    "p": 0.0691,
     "low": 0,
-    "high": 0.1706,
+    "high": 0.1691,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
@@ -744,6 +744,18 @@
   }
  ],
  "receipts": [
+  {
+   "slug": "will-manchester-united-win-3-out-of-their-next-5-p-8440",
+   "title": "Will Manchester United win 3 out of their next 5 Premier League games?",
+   "url": "https://beta.xo.market/event/will-manchester-united-win-3-out-of-their-next-5-p-8440?r=cryptotan01",
+   "creator": "elnukss",
+   "is_ours": false,
+   "outcome": "NO",
+   "xo_close": 0.5,
+   "fair_close": null,
+   "confidence": null,
+   "resolved_at": "2026-11-22T18:30:51.000Z"
+  },
   {
    "slug": "tottenham-hotspur-to-have-fewer-than-4-premier-lea-9167",
    "title": "Tottenham Hotspur to have fewer than 4 Premier League wins by Christmas",
@@ -2045,7 +2057,7 @@
   }
  ],
  "receipt_summary": {
-  "resolved": 92,
+  "resolved": 93,
   "compared": 36,
   "fair_closer": 25,
   "brier_fair": 0.1437,
@@ -2060,7 +2072,5 @@
   "open": 0
  },
  "best_value": [],
- "live": [
-  "LIV-MUN"
- ]
+ "live": []
 }
