@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T10:37:25Z",
+ "generated_at": "2026-11-22T10:47:34Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,16 +22,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.735,
-    "low": 0.705,
-    "high": 0.765,
+    "p": 0.73,
+    "low": 0.7,
+    "high": 0.76,
     "confidence": "high",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
     "inputs": [
      {
       "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "73.5% (spread 1c, $1,433,420 traded on this market)",
+      "value": "73.0% (spread 2c, $1,433,427 traded on this market)",
       "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
      }
     ]
@@ -212,8 +212,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9979,
-    "low": 0.8979,
+    "p": 0.9986,
+    "low": 0.8986,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -321,7 +321,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 4%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 5%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -360,9 +360,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4912,
-    "low": 0.3912,
-    "high": 0.5912,
+    "p": 0.4895,
+    "low": 0.3895,
+    "high": 0.5895,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -399,7 +399,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.9%",
+      "value": "29.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -498,9 +498,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5244,
-    "low": 0.4244,
-    "high": 0.6244,
+    "p": 0.5226,
+    "low": 0.4226,
+    "high": 0.6226,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -537,7 +537,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.9%",
+      "value": "29.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -582,9 +582,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8333,
-    "low": 0.7333,
-    "high": 0.9333,
+    "p": 0.8407,
+    "low": 0.7407,
+    "high": 0.9406,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -603,7 +603,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 38,
+   "gap_pts": 39,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -641,9 +641,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0258,
+    "p": 0.0254,
     "low": 0,
-    "high": 0.1258,
+    "high": 0.1254,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
