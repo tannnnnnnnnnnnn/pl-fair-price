@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T11:55:01Z",
+ "generated_at": "2026-11-23T12:05:01Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -78,6 +78,65 @@
       }
      ],
      "last": 0.5
+    }
+   }
+  },
+  {
+   "slug": "will-manchester-united-win-the-202627-premier-leag-1779",
+   "title": "Will Manchester United win the 2026/27 Premier League?",
+   "url": "https://beta.xo.market/event/will-manchester-united-win-the-202627-premier-leag-1779?r=cryptotan01",
+   "creator": "Sergo7070s",
+   "is_ours": false,
+   "xo_price": 0.0095,
+   "best_bid": 0.009,
+   "best_ask": 0.01,
+   "liquidity_usd": 3.8,
+   "volume_usd": 0,
+   "expires_at": "2027-05-30T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2027-05-30T15:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will Manchester United win the 2026/27 Premier League?",
+   "description": "This market resolves based on whether Manchester United finishes the 2026/27 Premier League season in 1st place and is officially declared the Premier League champion by the Premier League, as reflected in the official final standings. The scheduled final matchday is May 30, 2027, but the market may resolve earlier if Manchester United is mathematically guaranteed either to finish in 1st place or to be unable to finish in 1st place, with the Premier League officially confirming the relevant outcome. Other domestic cup competitions and European tournaments do not count toward this market. The primary source is the official Premier League website: https://www. premierleague. com. The primary source governs. If the Premier League season is cancelled or permanently abandoned without official final standings or an officially confirmed outcome, or if the Premier League retracts the official result, the market will be voided and all positions will resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.009,
+       "size": 200.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.01,
+       "size": 200.0
+      }
+     ],
+     "last": 0.01
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.99,
+       "size": 200.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.991,
+       "size": 200.0
+      }
+     ],
+     "last": 0.991
     }
    }
   },
@@ -267,65 +326,6 @@
    }
   },
   {
-   "slug": "will-manchester-united-win-the-202627-premier-leag-1779",
-   "title": "Will Manchester United win the 2026/27 Premier League?",
-   "url": "https://beta.xo.market/event/will-manchester-united-win-the-202627-premier-leag-1779?r=cryptotan01",
-   "creator": "Sergo7070s",
-   "is_ours": false,
-   "xo_price": 0.0095,
-   "best_bid": 0.009,
-   "best_ask": 0.01,
-   "liquidity_usd": 3.8,
-   "volume_usd": 0,
-   "expires_at": "2027-05-30T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Will Manchester United win the 2026/27 Premier League?",
-   "description": "This market resolves based on whether Manchester United finishes the 2026/27 Premier League season in 1st place and is officially declared the Premier League champion by the Premier League, as reflected in the official final standings. The scheduled final matchday is May 30, 2027, but the market may resolve earlier if Manchester United is mathematically guaranteed either to finish in 1st place or to be unable to finish in 1st place, with the Premier League officially confirming the relevant outcome. Other domestic cup competitions and European tournaments do not count toward this market. The primary source is the official Premier League website: https://www. premierleague. com. The primary source governs. If the Premier League season is cancelled or permanently abandoned without official final standings or an officially confirmed outcome, or if the Premier League retracts the official result, the market will be voided and all positions will resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.009,
-       "size": 200.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.01,
-       "size": 200.0
-      }
-     ],
-     "last": 0.01
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.99,
-       "size": 200.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.991,
-       "size": 200.0
-      }
-     ],
-     "last": 0.991
-    }
-   }
-  },
-  {
    "slug": "will-manchester-united-win-3-consecutive-epl-match-9674",
    "title": "Will Manchester United win 3 consecutive EPL matches under Pochettino in 2026/27?",
    "url": "https://beta.xo.market/event/will-manchester-united-win-3-consecutive-epl-match-9674?r=cryptotan01",
@@ -419,9 +419,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5326,
-    "low": 0.4326,
-    "high": 0.6326,
+    "p": 0.5345,
+    "low": 0.4345,
+    "high": 0.6345,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -453,7 +453,7 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "48.5%",
+      "value": "49.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -557,9 +557,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5655,
-    "low": 0.4655,
-    "high": 0.6655,
+    "p": 0.5677,
+    "low": 0.4677,
+    "high": 0.6677,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -591,7 +591,7 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "48.5%",
+      "value": "49.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -641,9 +641,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8792,
-    "low": 0.7792,
-    "high": 0.9792,
+    "p": 0.8793,
+    "low": 0.7793,
+    "high": 0.9793,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -700,9 +700,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.034,
+    "p": 0.0356,
     "low": 0,
-    "high": 0.134,
+    "high": 0.1356,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
@@ -721,7 +721,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -44,
+   "gap_pts": -43,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
