@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T07:43:23Z",
+ "generated_at": "2026-11-23T07:53:24Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -360,9 +360,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.536,
-    "low": 0.436,
-    "high": 0.636,
+    "p": 0.5283,
+    "low": 0.4283,
+    "high": 0.6283,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -399,14 +399,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "22.6%",
+      "value": "24.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 21,
+   "gap_pts": 20,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -498,9 +498,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5703,
-    "low": 0.4703,
-    "high": 0.6703,
+    "p": 0.5621,
+    "low": 0.4621,
+    "high": 0.6621,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -537,14 +537,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "22.6%",
+      "value": "24.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 12,
+   "gap_pts": 11,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -582,9 +582,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8829,
-    "low": 0.7829,
-    "high": 0.9829,
+    "p": 0.8839,
+    "low": 0.7839,
+    "high": 0.9839,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -641,9 +641,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0336,
+    "p": 0.0357,
     "low": 0,
-    "high": 0.1336,
+    "high": 0.1357,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
@@ -662,7 +662,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -44,
+   "gap_pts": -43,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -699,16 +699,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.225,
-    "low": 0.125,
-    "high": 0.325,
+    "p": 0.2227,
+    "low": 0.1227,
+    "high": 0.3227,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "50.0%",
+      "value": "49.5%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
