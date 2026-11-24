@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T14:41:48Z",
+ "generated_at": "2026-11-24T14:51:51Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -380,7 +380,7 @@
    "group": "season",
    "fixture": null,
    "fair": null,
-   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 5%. They differ too much to show one number.",
+   "fair_reason": "Two readings: season total (he has 3 already): 100%. only goals from now: 6%. They differ too much to show one number.",
    "lock_at": "2026-12-19T12:30:00Z",
    "gap_pts": null,
    "status": "ACTIVE",
@@ -419,9 +419,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5066,
-    "low": 0.4066,
-    "high": 0.6066,
+    "p": 0.5076,
+    "low": 0.4076,
+    "high": 0.6076,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -458,7 +458,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.8%",
+      "value": "28.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -503,16 +503,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.35,
-    "low": 0.25,
-    "high": 0.45,
+    "p": 0.355,
+    "low": 0.255,
+    "high": 0.455,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "35.0% (spread 16c, $5,043 traded on this market)",
+      "value": "35.5% (spread 17c, $5,043 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
@@ -557,9 +557,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5379,
-    "low": 0.4379,
-    "high": 0.6379,
+    "p": 0.5391,
+    "low": 0.4391,
+    "high": 0.6391,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -596,7 +596,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.8%",
+      "value": "28.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -641,9 +641,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8859,
-    "low": 0.7859,
-    "high": 0.9859,
+    "p": 0.8834,
+    "low": 0.7834,
+    "high": 0.9834,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -662,7 +662,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 44,
+   "gap_pts": 43,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -700,9 +700,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0343,
+    "p": 0.0351,
     "low": 0,
-    "high": 0.1343,
+    "high": 0.1351,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
@@ -721,7 +721,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -44,
+   "gap_pts": -43,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
