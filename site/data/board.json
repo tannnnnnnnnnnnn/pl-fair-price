@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T21:48:40Z",
+ "generated_at": "2026-11-24T04:57:21Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -7,6 +7,80 @@
   "deadline_utc": "2026-11-27T18:30:00Z"
  },
  "markets": [
+  {
+   "slug": "will-arsenal-win-the-202627-premier-league-9148",
+   "title": "Will Arsenal win the 2026/27 Premier League?",
+   "url": "https://beta.xo.market/event/will-arsenal-win-the-202627-premier-league-9148?r=cryptotan01",
+   "creator": "Cyberflems",
+   "is_ours": false,
+   "xo_price": 0.46,
+   "best_bid": 0.001,
+   "best_ask": 0.999,
+   "liquidity_usd": 5000.0,
+   "volume_usd": 139.31,
+   "expires_at": "2027-05-30T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.735,
+    "low": 0.705,
+    "high": 0.765,
+    "confidence": "high",
+    "method": "polymarket",
+    "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
+    "inputs": [
+     {
+      "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
+      "value": "73.5% (spread 1c, $1,456,688 traded on this market)",
+      "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2027-05-30T15:00:00Z",
+   "gap_pts": 27,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will Arsenal win the 2026/27 Premier League?",
+   "description": "This market resolves based on whether Arsenal FC finishes the 2026/27 Premier League season in first place in the official standings. The market will resolve after the final matchweek, or earlier if the outcome is mathematically certain before then. Other domestic or international competitions are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport Football (https://www. bbc. com/sport/football); the primary source governs. If the Premier League season is abandoned before an official winner is declared, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.001,
+       "size": 5000.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.999,
+       "size": 5000.0
+      }
+     ],
+     "last": 0.5
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.001,
+       "size": 5000.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.999,
+       "size": 5000.0
+      }
+     ],
+     "last": 0.5
+    }
+   }
+  },
   {
    "slug": "will-manchester-united-win-the-202627-premier-leag-1779",
    "title": "Will Manchester United win the 2026/27 Premier League?",
@@ -63,80 +137,6 @@
       }
      ],
      "last": 0.991
-    }
-   }
-  },
-  {
-   "slug": "will-arsenal-win-the-202627-premier-league-9148",
-   "title": "Will Arsenal win the 2026/27 Premier League?",
-   "url": "https://beta.xo.market/event/will-arsenal-win-the-202627-premier-league-9148?r=cryptotan01",
-   "creator": "Cyberflems",
-   "is_ours": false,
-   "xo_price": 0.46,
-   "best_bid": 0.001,
-   "best_ask": 0.999,
-   "liquidity_usd": 5000.0,
-   "volume_usd": 139.31,
-   "expires_at": "2027-05-30T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.735,
-    "low": 0.705,
-    "high": 0.765,
-    "confidence": "high",
-    "method": "polymarket",
-    "method_text": "Taken straight from Polymarket's matching market: \"Will Arsenal win the 2026-27 English Premier League (EPL) Championship?\"",
-    "inputs": [
-     {
-      "label": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-      "value": "73.5% (spread 1c, $1,456,682 traded on this market)",
-      "source_url": "https://polymarket.com/event/epl-2027-champion-20260701200428749"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 27,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Will Arsenal win the 2026/27 Premier League?",
-   "description": "This market resolves based on whether Arsenal FC finishes the 2026/27 Premier League season in first place in the official standings. The market will resolve after the final matchweek, or earlier if the outcome is mathematically certain before then. Other domestic or international competitions are excluded. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport Football (https://www. bbc. com/sport/football); the primary source governs. If the Premier League season is abandoned before an official winner is declared, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.com/sport/football"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.001,
-       "size": 5000.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.999,
-       "size": 5000.0
-      }
-     ],
-     "last": 0.5
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.001,
-       "size": 5000.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.999,
-       "size": 5000.0
-      }
-     ],
-     "last": 0.5
     }
    }
   },
@@ -419,16 +419,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5071,
-    "low": 0.4071,
-    "high": 0.6071,
+    "p": 0.512,
+    "low": 0.412,
+    "high": 0.612,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "27.0%",
+      "value": "25.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -443,7 +443,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "6.2%",
+      "value": "6.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -458,7 +458,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "26.0%",
+      "value": "26.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -503,16 +503,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.355,
-    "low": 0.255,
-    "high": 0.455,
+    "p": 0.35,
+    "low": 0.25,
+    "high": 0.45,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "35.5% (spread 17c, $5,043 traded on this market)",
+      "value": "35.0% (spread 16c, $5,043 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
@@ -557,16 +557,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.538,
-    "low": 0.438,
-    "high": 0.638,
+    "p": 0.5432,
+    "low": 0.4432,
+    "high": 0.6432,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "27.0%",
+      "value": "25.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -581,7 +581,7 @@
      },
      {
       "label": "Will Manchester City be deducted 20-29 Premier League points?",
-      "value": "6.2%",
+      "value": "6.0%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -596,7 +596,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "26.0%",
+      "value": "26.2%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -641,9 +641,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8855,
-    "low": 0.7855,
-    "high": 0.9855,
+    "p": 0.8787,
+    "low": 0.7787,
+    "high": 0.9787,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -662,7 +662,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 44,
+   "gap_pts": 43,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -700,9 +700,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0328,
+    "p": 0.0365,
     "low": 0,
-    "high": 0.1328,
+    "high": 0.1365,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
@@ -721,7 +721,7 @@
    },
    "fair_reason": null,
    "lock_at": "2026-12-26T12:30:00Z",
-   "gap_pts": -44,
+   "gap_pts": -43,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -758,21 +758,21 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.2252,
-    "low": 0.1252,
-    "high": 0.3252,
+    "p": 0.23,
+    "low": 0.13,
+    "high": 0.33,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a few points lower (about 21% under a correlated model).",
     "inputs": [
      {
       "label": "Will Coventry City be relegated from the 2026-27 Premier League?",
-      "value": "49.5%",
+      "value": "50.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      },
      {
       "label": "Will Ipswich Town be relegated from the 2026-27 Premier League?",
-      "value": "45.5%",
+      "value": "46.0%",
       "source_url": "https://polymarket.com/event/premier-league-teams-relegated-2026-27"
      }
     ]
@@ -2131,7 +2131,5 @@
   "open": 0
  },
  "best_value": [],
- "live": [
-  "BRE-EVE"
- ]
+ "live": []
 }
