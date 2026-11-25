@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T18:40:29Z",
+ "generated_at": "2026-11-25T18:50:37Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -527,7 +527,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "29.4%",
+      "value": "29.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -572,23 +572,23 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.36,
-    "low": 0.26,
-    "high": 0.46,
+    "p": 0.415,
+    "low": 0.315,
+    "high": 0.515,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Taken straight from Polymarket's matching market: \"Will Manchester City be stripped of a Premier League title by June 30, 2027?\" Polymarket only covers up to 30 Jun 2027 while this XO market runs longer, so treat it as a floor.",
     "inputs": [
      {
       "label": "Will Manchester City be stripped of a Premier League title by June 30, 2027?",
-      "value": "36.0% (spread 18c, $5,043 traded on this market)",
+      "value": "41.5% (spread 29c, $5,043 traded on this market)",
       "source_url": "https://polymarket.com/event/will-manchester-city-be-stripped-of-a-premier-league-title-by-june-30-2027"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": -30,
+   "gap_pts": -25,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -626,9 +626,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5376,
-    "low": 0.4376,
-    "high": 0.6376,
+    "p": 0.538,
+    "low": 0.438,
+    "high": 0.638,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -665,7 +665,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "29.4%",
+      "value": "29.3%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
