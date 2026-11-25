@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T07:16:39Z",
+ "generated_at": "2026-11-25T07:26:47Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -7,6 +7,66 @@
   "deadline_utc": "2026-11-27T18:30:00Z"
  },
  "markets": [
+  {
+   "slug": "will-manchester-united-win-3-consecutive-epl-match-9674",
+   "title": "Will Manchester United win 3 consecutive EPL matches under Pochettino in 2026/27?",
+   "url": "https://beta.xo.market/event/will-manchester-united-win-3-consecutive-epl-match-9674?r=cryptotan01",
+   "creator": "AThryver",
+   "is_ours": false,
+   "xo_price": 0.505,
+   "best_bid": 0.5,
+   "best_ask": 0.51,
+   "liquidity_usd": 50.5,
+   "volume_usd": 0,
+   "expires_at": "2027-05-31T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2027-05-30T15:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "United struggled under Carrick. Pochettino should turn things around",
+   "description": "This market resolves YES if Manchester United wins 3 consecutive English Premier League matches under Mauricio Pochettino during the 2026/27 EPL season, based on official match results. Only EPL matches count. Matches played under any other manager do not count toward the streak. Consecutive means three successive EPL wins while Pochettino is manager, with no draws or losses in between; the streak resets on any non-win. If Pochettino is suspended, injured, or otherwise unavailable for a match but remains Manchester United\u2019s manager, any wins in that match still count. If Pochettino is sacked or leaves Manchester United before achieving a 3-match winning streak, the market resolves NO. If the 2026/27 EPL season is cancelled or abandoned without official final standings, the market resolves VOID. Primary resolution source: https://www. premierleague. com",
+   "resolution_sources": [
+    "https://www.manutd.com",
+    "https://www.premierleague.com"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.5,
+       "size": 50.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.51,
+       "size": 50.0
+      }
+     ],
+     "last": 0.505
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.49,
+       "size": 50.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.5,
+       "size": 50.0
+      }
+     ],
+     "last": 0.495
+    }
+   }
+  },
   {
    "slug": "will-arsenal-win-the-202627-premier-league-9148",
    "title": "Will Arsenal win the 2026/27 Premier League?",
@@ -326,46 +386,6 @@
    }
   },
   {
-   "slug": "will-manchester-united-win-3-consecutive-epl-match-9674",
-   "title": "Will Manchester United win 3 consecutive EPL matches under Pochettino in 2026/27?",
-   "url": "https://beta.xo.market/event/will-manchester-united-win-3-consecutive-epl-match-9674?r=cryptotan01",
-   "creator": "AThryver",
-   "is_ours": false,
-   "xo_price": 0.55,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 0,
-   "expires_at": "2027-05-31T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "United struggled under Carrick. Pochettino should turn things around",
-   "description": "This market resolves YES if Manchester United wins 3 consecutive English Premier League matches under Mauricio Pochettino during the 2026/27 EPL season, based on official match results. Only EPL matches count. Matches played under any other manager do not count toward the streak. Consecutive means three successive EPL wins while Pochettino is manager, with no draws or losses in between; the streak resets on any non-win. If Pochettino is suspended, injured, or otherwise unavailable for a match but remains Manchester United\u2019s manager, any wins in that match still count. If Pochettino is sacked or leaves Manchester United before achieving a 3-match winning streak, the market resolves NO. If the 2026/27 EPL season is cancelled or abandoned without official final standings, the market resolves VOID. Primary resolution source: https://www. premierleague. com",
-   "resolution_sources": [
-    "https://www.manutd.com",
-    "https://www.premierleague.com"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    }
-   }
-  },
-  {
    "slug": "will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898",
    "title": "Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas?",
    "url": "https://beta.xo.market/event/will-bukayo-saka-score-3-epl-goals-for-arsenal-bef-8898?r=cryptotan01",
@@ -419,9 +439,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4986,
-    "low": 0.3986,
-    "high": 0.5986,
+    "p": 0.5161,
+    "low": 0.4161,
+    "high": 0.6161,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -438,7 +458,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "2.8%",
+      "value": "2.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -458,14 +478,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.9%",
+      "value": "26.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 17,
+   "gap_pts": 19,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -557,9 +577,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5275,
-    "low": 0.4275,
-    "high": 0.6275,
+    "p": 0.5472,
+    "low": 0.4472,
+    "high": 0.6472,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -576,7 +596,7 @@
      },
      {
       "label": "Will Manchester City be deducted 10-19 Premier League points?",
-      "value": "2.8%",
+      "value": "2.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -596,14 +616,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "30.9%",
+      "value": "26.7%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 8,
+   "gap_pts": 10,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
