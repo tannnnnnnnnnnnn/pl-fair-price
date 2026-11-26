@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T02:12:49Z",
+ "generated_at": "2026-11-26T02:22:50Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -148,9 +148,9 @@
    "creator": "AlenaChramtsova",
    "is_ours": false,
    "xo_price": 0.4,
-   "best_bid": null,
+   "best_bid": 0.001,
    "best_ask": 0.4,
-   "liquidity_usd": 6.67,
+   "liquidity_usd": 7.19,
    "volume_usd": 0,
    "expires_at": "2027-06-30T22:59:00.000Z",
    "group": "season",
@@ -169,14 +169,19 @@
    ],
    "books": {
     "yes": {
-     "bids": [],
+     "bids": [
+      {
+       "price": 0.001,
+       "size": 520.5
+      }
+     ],
      "asks": [
       {
        "price": 0.4,
        "size": 16.666666
       }
      ],
-     "last": 0.4
+     "last": 0.201
     },
     "no": {
      "bids": [
@@ -185,8 +190,13 @@
        "size": 16.666666
       }
      ],
-     "asks": [],
-     "last": 0.6
+     "asks": [
+      {
+       "price": 0.999,
+       "size": 520.5
+      }
+     ],
+     "last": 0.8
     }
    }
   },
@@ -710,9 +720,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.8881,
-    "low": 0.7881,
-    "high": 0.988,
+    "p": 0.8826,
+    "low": 0.7826,
+    "high": 0.9826,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
@@ -731,7 +741,7 @@
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 44,
+   "gap_pts": 43,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -769,9 +779,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0331,
+    "p": 0.0319,
     "low": 0,
-    "high": 0.1331,
+    "high": 0.132,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
