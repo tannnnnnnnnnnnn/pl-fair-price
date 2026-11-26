@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T10:58:35Z",
+ "generated_at": "2026-11-26T11:05:25Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -197,6 +197,58 @@
       }
      ],
      "last": 0.8
+    }
+   }
+  },
+  {
+   "slug": "will-manchester-united-receive-12-red-cards-in-202-6503",
+   "title": "Will Manchester United receive 12+ red cards in 2026/27?",
+   "url": "https://beta.xo.market/event/will-manchester-united-receive-12-red-cards-in-202-6503?r=cryptotan01",
+   "creator": "KnightPredict",
+   "is_ours": false,
+   "xo_price": 0.65,
+   "best_bid": null,
+   "best_ask": 0.65,
+   "liquidity_usd": 18.57,
+   "volume_usd": 0,
+   "expires_at": "2027-06-15T23:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2027-05-30T15:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will Manchester United receive 12+ red cards in 2026/27?",
+   "description": "This market will resolve based on whether Manchester United\u2019s men\u2019s first team receives at least 12 qualifying red cards in eligible matches on or before 23:00 UTC on 15 June 2027. \n\nIt resolves \u201cYes\u201d if the total is 12 or more, and \u201cNo\u201d if it is 11 or fewer.\n\nEligible matches are all 2026/27 Premier League, UEFA Champions League, FA Cup, and EFL Cup (Carabao Cup) matches involving Manchester United\u2019s men\u2019s first team, including matches played before this market opens. Only matches completed before the cutoff count; replays count separately. Friendlies and youth, reserve, and women\u2019s-team fixtures are excluded.\n\nA qualifying red card is a direct red card or dismissal for a second yellow card shown by the referee before the cutoff to a Manchester United player listed in the starting lineup or among the substitutes on the official match sheet, including unused substitutes and substituted players. Cards shown before kickoff, at halftime, in extra time, during a penalty shootout, or after the final whistle count if officially recorded against that match. Cards shown to opponents, coaches, or other staff, standalone yellow cards, and retrospective sanctions without a red card being shown do not count.\n\nThe primary resolution source is the official match records of the relevant competition organizer. For domestic competitions, published decisions from The FA may be used; for UEFA Champions League matches, published decisions from UEFA may be used. The latest official disciplinary decision published before the cutoff takes priority over the match record. A card is excluded if a decision published before the cutoff rescinds it or upholds a wrongful-dismissal claim; a decision that only changes the suspension length does not affect the count. If a card is officially reassigned, it counts only if the corrected recipient is an eligible Manchester United player.\n\nIf no decision on a card\u2019s status or recipient has been published before the cutoff, the official match record will be used, including where a review or appeal is pending. Decisions published after the cutoff do not affect the count. The final check will be carried out after 23:00 UTC on 15 June 2027. If missing or conflicting official evidence prevents a reasonable determination of whether the total reached 12, the market will resolve as Void.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://www.premierleague.com/en/clubs/1/fixtures",
+    "https://www.uefa.com/uefachampionsleague/clubs/52682--man-united/matches/",
+    "https://www.efl.com/competitions/carabao-cup/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [],
+     "asks": [
+      {
+       "price": 0.65,
+       "size": 28.571428
+      }
+     ],
+     "last": 0.65
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.35,
+       "size": 28.571428
+      }
+     ],
+     "asks": [],
+     "last": 0.35
     }
    }
   },
@@ -498,9 +550,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5065,
-    "low": 0.4065,
-    "high": 0.6065,
+    "p": 0.4922,
+    "low": 0.3922,
+    "high": 0.5922,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -537,14 +589,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "25.5%",
+      "value": "28.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 18,
+   "gap_pts": 16,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -636,9 +688,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5386,
-    "low": 0.4386,
-    "high": 0.6386,
+    "p": 0.5234,
+    "low": 0.4234,
+    "high": 0.6234,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -675,14 +727,14 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "25.5%",
+      "value": "28.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 9,
+   "gap_pts": 7,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
