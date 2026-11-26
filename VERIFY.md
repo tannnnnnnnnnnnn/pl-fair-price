@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-26T09:14:56Z)
+# VERIFY — PL Fair Price (2026-11-26T09:24:55Z)
 
 GW12 deadline 2026-11-27T18:30:00Z. 14 XO PL markets; 8 priced (high 1, medium 0, low 7).
 
@@ -21,7 +21,7 @@ GW12 deadline 2026-11-27T18:30:00Z. 14 XO PL markets; 8 priced (high 1, medium 0
 | HUL-NFO | 13 | 22.5/26.5/51.0 | 22.5/26.5/51.0 | 22.5/26.5/51.0 | 22.5/26.5/51.0 | 22.5/26.5/51.0 | 0.93-1.53 | $53 |
 | CHE-CRY | 13 | 59.0/22.0/20.0 | 58.4/21.8/19.8 | 59.7/20.9/19.4 | 59.1/21.3/19.6 | 59.1/21.3/19.6 | 2.08-1.13 | $116 |
 | LIV-SUN | 13 | 67.0/20.5/13.5 | 66.3/20.3/13.4 | - | 66.3/20.3/13.4 | 66.3/20.3/13.4 | 2.08-0.82 | $0 |
-| NEW-MUN | 13 | 37.0/24.5/38.0 | 37.2/24.6/38.2 | - | 37.2/24.6/38.2 | 37.2/24.6/38.2 | 1.53-1.55 | $0 |
+| NEW-MUN | 13 | 37.5/24.5/38.0 | 37.5/24.5/38.0 | - | 37.5/24.5/38.0 | 37.5/24.5/38.0 | 1.54-1.56 | $0 |
 | BOU-BHA | 13 | 39.0/27.0/35.0 | 38.6/26.7/34.7 | - | 38.6/26.7/34.7 | 38.6/26.7/34.7 | 1.37-1.29 | $0 |
 | AVL-EVE | 13 | 48.0/26.0/26.0 | 48.0/26.0/26.0 | - | 48.0/26.0/26.0 | 48.0/26.0/26.0 | 1.56-1.08 | $0 |
 | BRE-ARS | 13 | 21.0/25.0/53.0 | 21.2/25.3/53.5 | - | 21.2/25.3/53.5 | 21.2/25.3/53.5 | 0.94-1.65 | $9 |
@@ -76,12 +76,12 @@ qg 0.396, qa 0.048, plays 0.95; xG 8.09, xA 0.92, 979 min, 11/11 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 87.7 | 43 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 88.4 | 43 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 2.9 | -44 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
-| low | 33 | 49.9 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 47 | 3.0 | -44 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
+| low | 33 | 49.7 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 46 | 73.5 | 27 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
-| low | 45 | 53.0 | 8 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
+| low | 45 | 52.9 | 8 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | low | 66 | 39.0 | -27 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 23.0 | -32 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
