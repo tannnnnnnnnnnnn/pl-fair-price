@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T15:54:36Z",
+ "generated_at": "2026-11-27T16:04:37Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -7,6 +7,133 @@
   "deadline_utc": "2026-11-27T18:30:00Z"
  },
  "markets": [
+  {
+   "slug": "alexander-isak-vs-joo-pedro-most-premier-league-go-4016",
+   "title": "Alexander Isak vs Jo\u00e3o Pedro: Most Premier League Goals (2026/27)",
+   "url": "https://beta.xo.market/event/alexander-isak-vs-joo-pedro-most-premier-league-go-4016?r=cryptotan01",
+   "creator": "GuigsLuke",
+   "is_ours": false,
+   "xo_price": 0.7495,
+   "best_bid": 0.713,
+   "best_ask": 0.786,
+   "liquidity_usd": 118.96,
+   "volume_usd": 26.0,
+   "expires_at": "2027-05-30T23:59:59.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": {
+    "p": 0.8705,
+    "low": 0.7705,
+    "high": 0.9705,
+    "confidence": "low",
+    "method": "player_model",
+    "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
+    "inputs": [
+     {
+      "label": "Isak: xG 6.20, xA 0.32 in 831 min, 10/11 starts",
+      "value": "27% of team goals, plays 95% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     },
+     {
+      "label": "Jo\u00e3o Pedro: xG 3.05, xA 0.31 in 521 min, 6/11 starts (FPL: 0% chance of playing)",
+      "value": "20% of team goals, plays 0% next match",
+      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
+     }
+    ]
+   },
+   "fair_reason": null,
+   "lock_at": "2027-05-30T15:00:00Z",
+   "gap_pts": 12,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Haaland will likely win the Golden boot, so this is more of a race for 2nd. Both have started the season well",
+   "description": "This market resolves based on whether Alexander Isak or Jo\u00e3o Pedro scores more official Premier League goals during the 2026/27 season (running from August 21, 2026, to May 30, 2027). Goals scored in domestic cup competitions, European competitions, and international fixtures are excluded. Friendly matches are excluded. If both players finish the season with the same number of official Premier League goals, the market voids and all positions resolve equally. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com/sport/football). The primary source governs in all cases. Secondary sources are used only if the primary source is unavailable. If the Premier League season is permanently abandoned before any matches are played or official statistics are permanently unavailable from all designated sources, the market voids and all positions resolve equally.",
+   "resolution_sources": [
+    "https://www.premierleague.com",
+    "https://www.bbc.com/sport/football"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.713,
+       "size": 20.0
+      },
+      {
+       "price": 0.684,
+       "size": 20.0
+      },
+      {
+       "price": 0.654,
+       "size": 20.0
+      },
+      {
+       "price": 0.622,
+       "size": 20.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.786,
+       "size": 20.0
+      },
+      {
+       "price": 0.809,
+       "size": 20.0
+      },
+      {
+       "price": 0.83,
+       "size": 20.0
+      },
+      {
+       "price": 0.85,
+       "size": 20.0
+      }
+     ],
+     "last": 0.75
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.214,
+       "size": 20.0
+      },
+      {
+       "price": 0.191,
+       "size": 20.0
+      },
+      {
+       "price": 0.17,
+       "size": 20.0
+      },
+      {
+       "price": 0.15,
+       "size": 20.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.287,
+       "size": 20.0
+      },
+      {
+       "price": 0.316,
+       "size": 20.0
+      },
+      {
+       "price": 0.346,
+       "size": 20.0
+      },
+      {
+       "price": 0.378,
+       "size": 20.0
+      }
+     ],
+     "last": 0.251
+    }
+   }
+  },
   {
    "slug": "will-manchester-united-win-3-consecutive-epl-match-9674",
    "title": "Will Manchester United win 3 consecutive EPL matches under Pochettino in 2026/27?",
@@ -311,133 +438,6 @@
    }
   },
   {
-   "slug": "alexander-isak-vs-joo-pedro-most-premier-league-go-4016",
-   "title": "Alexander Isak vs Jo\u00e3o Pedro: Most Premier League Goals (2026/27)",
-   "url": "https://beta.xo.market/event/alexander-isak-vs-joo-pedro-most-premier-league-go-4016?r=cryptotan01",
-   "creator": "GuigsLuke",
-   "is_ours": false,
-   "xo_price": 0.7495,
-   "best_bid": 0.713,
-   "best_ask": 0.786,
-   "liquidity_usd": 118.96,
-   "volume_usd": 26.0,
-   "expires_at": "2027-05-30T23:59:59.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": {
-    "p": 0.8774,
-    "low": 0.7774,
-    "high": 0.9774,
-    "confidence": "low",
-    "method": "player_model",
-    "method_text": "Chance Isak has strictly more goals than Jo\u00e3o Pedro by 31 May (season totals). A tie counts as NO.",
-    "inputs": [
-     {
-      "label": "Isak: xG 6.20, xA 0.32 in 831 min, 10/11 starts",
-      "value": "27% of team goals, plays 95% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     },
-     {
-      "label": "Jo\u00e3o Pedro: xG 3.05, xA 0.31 in 521 min, 6/11 starts (FPL: 0% chance of playing)",
-      "value": "20% of team goals, plays 0% next match",
-      "source_url": "https://fantasy.premierleague.com/api/bootstrap-static/"
-     }
-    ]
-   },
-   "fair_reason": null,
-   "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 13,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Haaland will likely win the Golden boot, so this is more of a race for 2nd. Both have started the season well",
-   "description": "This market resolves based on whether Alexander Isak or Jo\u00e3o Pedro scores more official Premier League goals during the 2026/27 season (running from August 21, 2026, to May 30, 2027). Goals scored in domestic cup competitions, European competitions, and international fixtures are excluded. Friendly matches are excluded. If both players finish the season with the same number of official Premier League goals, the market voids and all positions resolve equally. Primary source: Premier League Official Website (https://www. premierleague. com). If the primary source is unavailable, incomplete, or inconsistent, resolution falls back to BBC Sport (https://www. bbc. com/sport/football). The primary source governs in all cases. Secondary sources are used only if the primary source is unavailable. If the Premier League season is permanently abandoned before any matches are played or official statistics are permanently unavailable from all designated sources, the market voids and all positions resolve equally.",
-   "resolution_sources": [
-    "https://www.premierleague.com",
-    "https://www.bbc.com/sport/football"
-   ],
-   "books": {
-    "yes": {
-     "bids": [
-      {
-       "price": 0.713,
-       "size": 20.0
-      },
-      {
-       "price": 0.684,
-       "size": 20.0
-      },
-      {
-       "price": 0.654,
-       "size": 20.0
-      },
-      {
-       "price": 0.622,
-       "size": 20.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.786,
-       "size": 20.0
-      },
-      {
-       "price": 0.809,
-       "size": 20.0
-      },
-      {
-       "price": 0.83,
-       "size": 20.0
-      },
-      {
-       "price": 0.85,
-       "size": 20.0
-      }
-     ],
-     "last": 0.75
-    },
-    "no": {
-     "bids": [
-      {
-       "price": 0.214,
-       "size": 20.0
-      },
-      {
-       "price": 0.191,
-       "size": 20.0
-      },
-      {
-       "price": 0.17,
-       "size": 20.0
-      },
-      {
-       "price": 0.15,
-       "size": 20.0
-      }
-     ],
-     "asks": [
-      {
-       "price": 0.287,
-       "size": 20.0
-      },
-      {
-       "price": 0.316,
-       "size": 20.0
-      },
-      {
-       "price": 0.346,
-       "size": 20.0
-      },
-      {
-       "price": 0.378,
-       "size": 20.0
-      }
-     ],
-     "last": 0.251
-    }
-   }
-  },
-  {
    "slug": "will-manchester-united-win-the-202627-premier-leag-1779",
    "title": "Will Manchester United win the 2026/27 Premier League?",
    "url": "https://beta.xo.market/event/will-manchester-united-win-the-202627-premier-leag-1779?r=cryptotan01",
@@ -735,9 +735,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.4949,
-    "low": 0.3949,
-    "high": 0.5949,
+    "p": 0.4947,
+    "low": 0.3947,
+    "high": 0.5947,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -774,7 +774,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.4%",
+      "value": "28.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -873,9 +873,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5254,
-    "low": 0.4254,
-    "high": 0.6254,
+    "p": 0.5252,
+    "low": 0.4252,
+    "high": 0.6252,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
@@ -912,7 +912,7 @@
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "28.4%",
+      "value": "28.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
@@ -957,9 +957,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0393,
+    "p": 0.0356,
     "low": 0,
-    "high": 0.1393,
+    "high": 0.1356,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
