@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-27T13:13:42Z)
+# VERIFY — PL Fair Price (2026-11-27T13:23:54Z)
 
 GW12 deadline 2026-11-27T18:30:00Z. 15 XO PL markets; 8 priced (high 1, medium 0, low 7).
 
@@ -6,10 +6,10 @@ GW12 deadline 2026-11-27T18:30:00Z. 15 XO PL markets; 8 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| NFO-CHE | 12 | 39.5/28.5/32.5 | 39.3/28.4/32.3 | 39.9/28.1/32.0 | 39.6/28.2/32.2 | 39.6/28.2/32.2 | 1.31-1.15 | $761,537 |
+| NFO-CHE | 12 | 39.5/28.5/32.5 | 39.3/28.4/32.3 | 39.9/28.1/32.0 | 39.6/28.2/32.2 | 39.6/28.2/32.2 | 1.31-1.15 | $762,312 |
 | LEE-COV | 12 | 66.5/20.5/13.5 | 66.2/20.4/13.4 | 65.8/20.6/13.6 | 66.0/20.5/13.5 | 66.0/20.5/13.5 | 2.08-0.83 | $20,801 |
-| MUN-BRE | 12 | 45.5/25.5/30.5 | 44.8/25.1/30.0 | 44.5/25.5/30.0 | 44.7/25.3/30.0 | 44.7/25.3/30.0 | 1.62-1.29 | $44,311 |
-| IPS-AVL | 12 | 26.5/25.5/48.5 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 1.16-1.64 | $5,350 |
+| MUN-BRE | 12 | 45.5/25.5/30.5 | 44.8/25.1/30.0 | 44.3/25.4/30.3 | 44.6/25.2/30.2 | 44.6/25.2/30.2 | 1.62-1.30 | $44,501 |
+| IPS-AVL | 12 | 26.5/25.5/48.5 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 1.16-1.64 | $5,399 |
 | EVE-LIV | 12 | 20.5/24.5/55.5 | 20.4/24.4/55.2 | 19.6/25.6/54.8 | 20.0/25.0/55.0 | 20.0/25.0/55.0 | 0.92-1.69 | $55,976 |
 | FUL-BOU | 12 | 34.5/27.5/39.5 | 34.0/27.1/38.9 | 33.7/27.6/38.7 | 33.8/27.4/38.8 | 33.8/27.4/38.8 | 1.25-1.35 | $29,629 |
 | BHA-NEW | 12 | 62.5/21.5/16.5 | 62.2/21.4/16.4 | 62.0/21.5/16.5 | 62.1/21.4/16.5 | 62.1/21.4/16.5 | 2.04-0.95 | $3,022 |
@@ -77,9 +77,9 @@ qg 0.396, qa 0.048, plays 0.95; xG 8.09, xA 0.92, 979 min, 11/11 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 45 | 90.1 | 45 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 45 | 90.0 | 45 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 3.7 | -43 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
+| low | 47 | 3.9 | -43 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
 | low | 33 | 50.4 | 17 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 46 | 73.5 | 27 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 45 | 53.5 | 8 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
