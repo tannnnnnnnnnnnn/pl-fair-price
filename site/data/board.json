@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T10:42:55Z",
+ "generated_at": "2026-11-27T10:52:56Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -197,6 +197,116 @@
       }
      ],
      "last": 0.5
+    }
+   }
+  },
+  {
+   "slug": "will-manchester-united-receive-12-red-cards-in-202-6503",
+   "title": "Will Manchester United receive 12+ red cards in 2026/27?",
+   "url": "https://beta.xo.market/event/will-manchester-united-receive-12-red-cards-in-202-6503?r=cryptotan01",
+   "creator": "KnightPredict",
+   "is_ours": false,
+   "xo_price": 0.201,
+   "best_bid": 0.165,
+   "best_ask": 0.237,
+   "liquidity_usd": 33.46,
+   "volume_usd": 0,
+   "expires_at": "2027-06-15T23:00:00.000Z",
+   "group": "season",
+   "fixture": null,
+   "fair": null,
+   "fair_reason": "Fair price coming: not modelled yet.",
+   "lock_at": "2027-05-30T15:00:00Z",
+   "gap_pts": null,
+   "status": "ACTIVE",
+   "horizon": "long",
+   "taker_fee_bps": 400,
+   "pitch": "Will Manchester United receive 12+ red cards in 2026/27?",
+   "description": "This market will resolve based on whether Manchester United\u2019s men\u2019s first team receives at least 12 qualifying red cards in eligible matches on or before 23:00 UTC on 15 June 2027. \n\nIt resolves \u201cYes\u201d if the total is 12 or more, and \u201cNo\u201d if it is 11 or fewer.\n\nEligible matches are all 2026/27 Premier League, UEFA Champions League, FA Cup, and EFL Cup (Carabao Cup) matches involving Manchester United\u2019s men\u2019s first team, including matches played before this market opens. Only matches completed before the cutoff count; replays count separately. Friendlies and youth, reserve, and women\u2019s-team fixtures are excluded.\n\nA qualifying red card is a direct red card or dismissal for a second yellow card shown by the referee before the cutoff to a Manchester United player listed in the starting lineup or among the substitutes on the official match sheet, including unused substitutes and substituted players. Cards shown before kickoff, at halftime, in extra time, during a penalty shootout, or after the final whistle count if officially recorded against that match. Cards shown to opponents, coaches, or other staff, standalone yellow cards, and retrospective sanctions without a red card being shown do not count.\n\nThe primary resolution source is the official match records of the relevant competition organizer. For domestic competitions, published decisions from The FA may be used; for UEFA Champions League matches, published decisions from UEFA may be used. The latest official disciplinary decision published before the cutoff takes priority over the match record. A card is excluded if a decision published before the cutoff rescinds it or upholds a wrongful-dismissal claim; a decision that only changes the suspension length does not affect the count. If a card is officially reassigned, it counts only if the corrected recipient is an eligible Manchester United player.\n\nIf no decision on a card\u2019s status or recipient has been published before the cutoff, the official match record will be used, including where a review or appeal is pending. Decisions published after the cutoff do not affect the count. The final check will be carried out after 23:00 UTC on 15 June 2027. If missing or conflicting official evidence prevents a reasonable determination of whether the total reached 12, the market will resolve as Void.",
+   "resolution_sources": [
+    "https://premierleague.com",
+    "https://www.premierleague.com/en/clubs/1/fixtures",
+    "https://www.uefa.com/uefachampionsleague/clubs/52682--man-united/matches/",
+    "https://www.efl.com/competitions/carabao-cup/"
+   ],
+   "books": {
+    "yes": {
+     "bids": [
+      {
+       "price": 0.165,
+       "size": 20.0
+      },
+      {
+       "price": 0.143,
+       "size": 20.0
+      },
+      {
+       "price": 0.123,
+       "size": 20.0
+      },
+      {
+       "price": 0.106,
+       "size": 20.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.237,
+       "size": 20.0
+      },
+      {
+       "price": 0.267,
+       "size": 20.0
+      },
+      {
+       "price": 0.299,
+       "size": 20.0
+      },
+      {
+       "price": 0.333,
+       "size": 20.0
+      }
+     ],
+     "last": 0.201
+    },
+    "no": {
+     "bids": [
+      {
+       "price": 0.763,
+       "size": 20.0
+      },
+      {
+       "price": 0.733,
+       "size": 20.0
+      },
+      {
+       "price": 0.701,
+       "size": 20.0
+      },
+      {
+       "price": 0.667,
+       "size": 20.0
+      }
+     ],
+     "asks": [
+      {
+       "price": 0.835,
+       "size": 20.0
+      },
+      {
+       "price": 0.857,
+       "size": 20.0
+      },
+      {
+       "price": 0.877,
+       "size": 20.0
+      },
+      {
+       "price": 0.894,
+       "size": 20.0
+      }
+     ],
+     "last": 0.799
     }
    }
   },
@@ -441,48 +551,6 @@
       }
      ],
      "last": 0.44
-    }
-   }
-  },
-  {
-   "slug": "will-manchester-united-receive-12-red-cards-in-202-6503",
-   "title": "Will Manchester United receive 12+ red cards in 2026/27?",
-   "url": "https://beta.xo.market/event/will-manchester-united-receive-12-red-cards-in-202-6503?r=cryptotan01",
-   "creator": "KnightPredict",
-   "is_ours": false,
-   "xo_price": 0.65,
-   "best_bid": null,
-   "best_ask": null,
-   "liquidity_usd": 0,
-   "volume_usd": 0,
-   "expires_at": "2027-06-15T23:00:00.000Z",
-   "group": "season",
-   "fixture": null,
-   "fair": null,
-   "fair_reason": "Fair price coming: not modelled yet.",
-   "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": null,
-   "status": "ACTIVE",
-   "horizon": "long",
-   "taker_fee_bps": 400,
-   "pitch": "Will Manchester United receive 12+ red cards in 2026/27?",
-   "description": "This market will resolve based on whether Manchester United\u2019s men\u2019s first team receives at least 12 qualifying red cards in eligible matches on or before 23:00 UTC on 15 June 2027. \n\nIt resolves \u201cYes\u201d if the total is 12 or more, and \u201cNo\u201d if it is 11 or fewer.\n\nEligible matches are all 2026/27 Premier League, UEFA Champions League, FA Cup, and EFL Cup (Carabao Cup) matches involving Manchester United\u2019s men\u2019s first team, including matches played before this market opens. Only matches completed before the cutoff count; replays count separately. Friendlies and youth, reserve, and women\u2019s-team fixtures are excluded.\n\nA qualifying red card is a direct red card or dismissal for a second yellow card shown by the referee before the cutoff to a Manchester United player listed in the starting lineup or among the substitutes on the official match sheet, including unused substitutes and substituted players. Cards shown before kickoff, at halftime, in extra time, during a penalty shootout, or after the final whistle count if officially recorded against that match. Cards shown to opponents, coaches, or other staff, standalone yellow cards, and retrospective sanctions without a red card being shown do not count.\n\nThe primary resolution source is the official match records of the relevant competition organizer. For domestic competitions, published decisions from The FA may be used; for UEFA Champions League matches, published decisions from UEFA may be used. The latest official disciplinary decision published before the cutoff takes priority over the match record. A card is excluded if a decision published before the cutoff rescinds it or upholds a wrongful-dismissal claim; a decision that only changes the suspension length does not affect the count. If a card is officially reassigned, it counts only if the corrected recipient is an eligible Manchester United player.\n\nIf no decision on a card\u2019s status or recipient has been published before the cutoff, the official match record will be used, including where a review or appeal is pending. Decisions published after the cutoff do not affect the count. The final check will be carried out after 23:00 UTC on 15 June 2027. If missing or conflicting official evidence prevents a reasonable determination of whether the total reached 12, the market will resolve as Void.",
-   "resolution_sources": [
-    "https://premierleague.com",
-    "https://www.premierleague.com/en/clubs/1/fixtures",
-    "https://www.uefa.com/uefachampionsleague/clubs/52682--man-united/matches/",
-    "https://www.efl.com/competitions/carabao-cup/"
-   ],
-   "books": {
-    "yes": {
-     "bids": [],
-     "asks": [],
-     "last": null
-    },
-    "no": {
-     "bids": [],
-     "asks": [],
-     "last": null
     }
    }
   },
@@ -762,8 +830,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9312,
-    "low": 0.8312,
+    "p": 0.9288,
+    "low": 0.8288,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -821,9 +889,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0394,
+    "p": 0.0413,
     "low": 0,
-    "high": 0.1394,
+    "high": 0.1414,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
