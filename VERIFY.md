@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-27T20:15:57Z)
+# VERIFY — PL Fair Price (2026-11-27T20:25:59Z)
 
 GW13 deadline 2026-12-01T18:30:00Z. 15 XO PL markets; 8 priced (high 1, medium 0, low 7).
 
@@ -6,15 +6,15 @@ GW13 deadline 2026-12-01T18:30:00Z. 15 XO PL markets; 8 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| LEE-COV | 12 | 65.5/20.5/13.5 | 65.8/20.6/13.6 | 65.8/20.6/13.6 | 65.8/20.6/13.6 | 65.8/20.6/13.6 | 1.97-0.76 | $23,950 |
-| MUN-BRE | 12 | 42.5/25.5/31.5 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 1.47-1.23 | $143,254 |
-| IPS-AVL | 12 | 26.5/25.5/47.5 | 26.6/25.6/47.7 | 26.6/25.6/47.7 | 26.6/25.6/47.7 | 26.6/25.6/47.7 | 1.07-1.52 | $10,373 |
-| EVE-LIV | 12 | 20.5/24.5/55.5 | 20.4/24.4/55.2 | 20.4/25.4/54.2 | 20.4/24.9/54.7 | 20.4/24.9/54.7 | 0.88-1.61 | $58,174 |
-| FUL-BOU | 12 | 33.5/27.5/39.5 | 33.3/27.4/39.3 | 33.0/27.9/39.1 | 33.2/27.6/39.2 | 33.2/27.6/39.2 | 1.13-1.26 | $31,387 |
+| LEE-COV | 12 | 65.5/20.5/13.5 | 65.8/20.6/13.6 | 65.8/20.6/13.6 | 65.8/20.6/13.6 | 65.8/20.6/13.6 | 1.97-0.76 | $23,962 |
+| MUN-BRE | 12 | 42.5/25.5/31.5 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 42.7/25.6/31.7 | 1.47-1.23 | $145,254 |
+| IPS-AVL | 12 | 26.5/25.5/47.5 | 26.6/25.6/47.7 | 26.6/25.6/47.7 | 26.6/25.6/47.7 | 26.6/25.6/47.7 | 1.07-1.52 | $10,763 |
+| EVE-LIV | 12 | 20.5/24.5/55.5 | 20.4/24.4/55.2 | 20.4/25.4/54.2 | 20.4/24.9/54.7 | 20.4/24.9/54.7 | 0.88-1.61 | $58,179 |
+| FUL-BOU | 12 | 32.5/27.5/39.5 | 32.7/27.6/39.7 | 33.0/27.9/39.1 | 32.8/27.8/39.4 | 32.8/27.8/39.4 | 1.12-1.25 | $31,388 |
 | BHA-NEW | 12 | 62.5/21.5/16.5 | 62.2/21.4/16.4 | 62.2/21.4/16.4 | 62.2/21.4/16.4 | 62.2/21.4/16.4 | 1.94-0.88 | $4,915 |
-| CRY-HUL | 12 | 49.5/25.5/24.5 | 49.7/25.6/24.6 | 49.7/25.6/24.6 | 49.7/25.6/24.6 | 49.7/25.6/24.6 | 1.54-1.00 | $12,731 |
-| SUN-TOT | 12 | 23.5/28.5/48.5 | 23.4/28.4/48.3 | 23.6/28.6/47.7 | 23.5/28.5/48.0 | 23.5/28.5/48.0 | 0.82-1.31 | $12,229 |
-| ARS-MCI | 12 | 48.5/26.5/25.5 | 48.3/26.4/25.4 | 48.7/25.6/25.6 | 48.5/26.0/25.5 | 48.5/26.0/25.5 | 1.50-1.01 | $27,546 |
+| CRY-HUL | 12 | 49.5/25.5/24.5 | 49.7/25.6/24.6 | 49.7/25.6/24.6 | 49.7/25.6/24.6 | 49.7/25.6/24.6 | 1.54-1.00 | $12,732 |
+| SUN-TOT | 12 | 23.5/28.5/48.5 | 23.4/28.4/48.3 | 23.6/28.6/47.7 | 23.5/28.5/48.0 | 23.5/28.5/48.0 | 0.82-1.31 | $12,230 |
+| ARS-MCI | 12 | 48.5/26.5/25.5 | 48.3/26.4/25.4 | 48.7/25.6/25.6 | 48.5/26.0/25.5 | 48.5/26.0/25.5 | 1.50-1.01 | $27,597 |
 | COV-IPS | 13 | 42.5/26.5/31.5 | 42.3/26.4/31.3 | 42.7/26.1/31.2 | 42.5/26.2/31.2 | 42.5/26.2/31.2 | 1.41-1.17 | $109 |
 | MCI-LEE | 13 | 61.5/21.0/18.0 | 61.2/20.9/17.9 | 61.8/20.6/17.6 | 61.5/20.7/17.7 | 61.5/20.7/17.7 | 2.05-1.00 | $514 |
 | HUL-NFO | 13 | 22.5/26.5/51.0 | 22.5/26.5/51.0 | 22.4/26.9/50.7 | 22.4/26.7/50.9 | 22.4/26.7/50.9 | 0.87-1.45 | $231 |
@@ -30,12 +30,12 @@ GW13 deadline 2026-12-01T18:30:00Z. 15 XO PL markets; 8 priced (high 1, medium 0
 | BOU-HUL | 14 | 66.5/17.5/16.5 | 66.2/17.4/16.4 | - | 66.2/17.4/16.4 | 66.2/17.4/16.4 | 2.55-1.22 | $0 |
 | LEE-IPS | 14 | 61.5/20.5/18.5 | 61.2/20.4/18.4 | - | 61.2/20.4/18.4 | 61.2/20.4/18.4 | 2.11-1.07 | $0 |
 | MUN-COV | 14 | 59.5/20.5/20.5 | 59.2/20.4/20.4 | - | 59.2/20.4/20.4 | 59.2/20.4/20.4 | 2.14-1.19 | $0 |
-| NFO-BHA | 14 | 30.0/25.5/47.5 | 29.1/24.8/46.1 | - | 29.1/24.8/46.1 | 29.1/24.8/46.1 | 1.21-1.59 | $0 |
+| NFO-BHA | 14 | 30.5/25.5/47.5 | 29.5/24.6/45.9 | - | 29.5/24.6/45.9 | 29.5/24.6/45.9 | 1.23-1.60 | $0 |
 | TOT-ARS | 14 | - | - | 16.1/30.1/53.8 | 16.1/30.1/53.8 | 16.1/30.1/53.8 | 0.54-1.24 | $29 |
 
 League average 2.75 goals per game from 110 finished matches; Dixon-Coles rho 0.0; mean fitted total 2.74.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.194, max 0.471.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.194, max 0.482.
 
 ## Current table (from finished FPL fixtures)
 
@@ -81,9 +81,9 @@ qg 0.396, qa 0.048, plays 0.95; xG 8.09, xA 0.92, 979 min, 11/11 starts.
 
 | Conf | XO | Fair | Gap | Method | Title | Note |
 |---|---|---|---|---|---|---|
-| low | 75 | 86.9 | 12 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
+| low | 75 | 87.0 | 12 | player_model | Alexander Isak vs João Pedro: Most Premier League Goals (2026/27) | Chance Isak has strictly more goals than João Pedro by 31 May (season totals). A tie counts as NO. |
 | low | 56 | 99.9 | 44 | player_model | Erling Haaland vs Bruno Fernandes: More Premier League goals before Christmas 2026 | Chance Haaland has strictly more goals than B.Fernandes by 24 Dec (season totals). A tie counts as NO. |
-| low | 47 | 3.3 | -44 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
+| low | 47 | 3.4 | -44 | player_model | Haaland will score more goals than Tottenham Hotspurs by Boxing Day 2026? | Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES. |
 | low | 33 | 49.4 | 16 | polymarket | Manchester City over 20 points docked in 2026/27 season? | Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
 | high | 46 | 73.5 | 27 | polymarket | Will Arsenal win the 2026/27 Premier League? | Taken straight from Polymarket's matching market: "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?" |
 | low | 45 | 52.4 | 7 | polymarket | Will Manchester City have 10 or more points deducted in the 2026/27 Premier League season? | Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't s |
