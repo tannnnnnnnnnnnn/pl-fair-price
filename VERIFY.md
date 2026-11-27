@@ -1,4 +1,4 @@
-# VERIFY — PL Fair Price (2026-11-27T11:03:06Z)
+# VERIFY — PL Fair Price (2026-11-27T11:13:00Z)
 
 GW12 deadline 2026-11-27T18:30:00Z. 15 XO PL markets; 8 priced (high 1, medium 0, low 7).
 
@@ -6,14 +6,14 @@ GW12 deadline 2026-11-27T18:30:00Z. 15 XO PL markets; 8 priced (high 1, medium 0
 
 | Fixture | GW | Poly raw H/D/A | Poly H/D/A | Kalshi H/D/A | Blend H/D/A | Model H/D/A | λ | Volume |
 |---|---|---|---|---|---|---|---|---|
-| NFO-CHE | 12 | 40.5/28.5/31.5 | 40.3/28.4/31.3 | 40.7/27.6/31.7 | 40.5/28.0/31.5 | 40.5/28.0/31.5 | 1.28-1.09 | $703,257 |
+| NFO-CHE | 12 | 40.5/28.5/31.5 | 40.3/28.4/31.3 | 40.7/27.6/31.7 | 40.5/28.0/31.5 | 40.5/28.0/31.5 | 1.28-1.09 | $703,699 |
 | LEE-COV | 12 | 66.5/20.5/13.5 | 66.2/20.4/13.4 | 65.8/20.6/13.6 | 66.0/20.5/13.5 | 66.0/20.5/13.5 | 2.01-0.78 | $20,375 |
-| MUN-BRE | 12 | 45.5/25.5/30.5 | 44.8/25.1/30.0 | 45.3/25.4/29.4 | 45.1/25.2/29.7 | 45.1/25.2/29.7 | 1.56-1.22 | $26,448 |
+| MUN-BRE | 12 | 45.5/25.5/30.5 | 44.8/25.1/30.0 | 45.0/25.2/29.7 | 44.9/25.2/29.9 | 44.9/25.2/29.9 | 1.56-1.23 | $37,435 |
 | IPS-AVL | 12 | 26.5/25.5/48.5 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 26.4/25.4/48.3 | 1.10-1.57 | $5,296 |
 | EVE-LIV | 12 | 20.5/24.5/55.5 | 20.4/24.4/55.2 | 19.6/25.6/54.8 | 20.0/25.0/55.0 | 20.0/25.0/55.0 | 0.87-1.62 | $55,322 |
-| FUL-BOU | 12 | 34.5/27.5/39.5 | 34.0/27.1/38.9 | 34.3/27.4/38.3 | 34.2/27.2/38.6 | 34.2/27.2/38.6 | 1.20-1.30 | $28,812 |
-| BHA-NEW | 12 | 62.5/21.5/16.5 | 62.2/21.4/16.4 | 62.8/20.6/16.6 | 62.5/21.0/16.5 | 62.5/21.0/16.5 | 2.02-0.93 | $2,966 |
-| CRY-HUL | 12 | 50.5/25.5/24.5 | 50.2/25.4/24.4 | 49.7/25.6/24.6 | 50.0/25.5/24.5 | 50.0/25.5/24.5 | 1.57-1.02 | $11,843 |
+| FUL-BOU | 12 | 34.5/27.5/39.5 | 34.0/27.1/38.9 | 34.3/27.4/38.3 | 34.2/27.2/38.6 | 34.2/27.2/38.6 | 1.20-1.30 | $29,122 |
+| BHA-NEW | 12 | 62.5/21.5/16.5 | 62.2/21.4/16.4 | 62.0/21.5/16.5 | 62.1/21.4/16.5 | 62.1/21.4/16.5 | 1.96-0.90 | $2,966 |
+| CRY-HUL | 12 | 50.5/25.5/24.5 | 50.2/25.4/24.4 | 50.2/25.4/24.4 | 50.2/25.4/24.4 | 50.2/25.4/24.4 | 1.58-1.02 | $11,843 |
 | SUN-TOT | 12 | 25.5/28.5/47.5 | 25.1/28.1/46.8 | 24.4/28.4/47.3 | 24.8/28.2/47.0 | 24.8/28.2/47.0 | 0.89-1.34 | $9,730 |
 | ARS-MCI | 12 | 48.5/25.5/25.5 | 48.7/25.6/25.6 | 49.3/25.4/25.4 | 49.0/25.5/25.5 | 49.0/25.5/25.5 | 1.57-1.06 | $24,122 |
 | COV-IPS | 13 | 42.5/26.0/31.5 | 42.5/26.0/31.5 | 42.7/26.1/31.2 | 42.6/26.1/31.3 | 42.6/26.1/31.3 | 1.45-1.21 | $102 |
@@ -31,7 +31,7 @@ GW12 deadline 2026-11-27T18:30:00Z. 15 XO PL markets; 8 priced (high 1, medium 0
 
 League average 2.75 goals per game from 110 finished matches; Dixon-Coles rho -0.01; mean fitted total 2.74.
 
-Team-ratings refit error on the priced matches: mean |Δlog λ| 0.192, max 0.607.
+Team-ratings refit error on the priced matches: mean |Δlog λ| 0.192, max 0.606.
 
 ## Current table (from finished FPL fixtures)
 
@@ -86,7 +86,7 @@ qg 0.396, qa 0.048, plays 0.95; xG 8.09, xA 0.92, 979 min, 11/11 starts.
 | low | 66 | 35.5 | -31 | polymarket | Will any Man City Premier League title be stripped? | Taken straight from Polymarket's matching market: "Will Manchester City be stripped of a Premier League title by June 30, 2027?" Polymarket  |
 | low | 55 | 23.0 | -32 | polymarket | Will both Ipswich Town and Coventry City be relegated from the Premier League in the 2026/27 season? | Polymarket's relegation prices for each club multiplied together. With only three relegation places the two compete, so the true chance is a |
 | - | 28 | - |  | - | Next Premier League Hat-Trick before Christmas? | The question's wording is open to more than one reading. |
-| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 7%. They differ too much to show one number. |
+| - | 33 | - |  | - | Will Bukayo Saka score 3+ EPL goals for Arsenal before Christmas? | Two readings: season total (he has 3 already): 100%. only goals from now: 6%. They differ too much to show one number. |
 | - | 40 | - |  | - | Will Manchester City be relegated or expelled from the Premier League for 2027/28? | Fair price coming: not modelled yet. |
 | - | 20 | - |  | - | Will Manchester United receive 12+ red cards in 2026/27? | Fair price coming: not modelled yet. |
 | - | 50 | - |  | - | Will Manchester United win 3 consecutive EPL matches under Pochettino in 2026/27? | Fair price coming: not modelled yet. |
