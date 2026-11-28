@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-28T07:28:58Z",
+ "generated_at": "2026-11-28T07:39:03Z",
  "name": "PL Fair Price",
  "tagline": "Our fair price beside every Premier League market on XO, from blended market odds and FPL data.",
  "gw": {
@@ -22,8 +22,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.9175,
-    "low": 0.8175,
+    "p": 0.9179,
+    "low": 0.8179,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -627,8 +627,8 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.999,
-    "low": 0.899,
+    "p": 0.9987,
+    "low": 0.8987,
     "high": 1,
     "confidence": "low",
     "method": "player_model",
@@ -735,16 +735,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5014,
-    "low": 0.4014,
-    "high": 0.6014,
+    "p": 0.5207,
+    "low": 0.4207,
+    "high": 0.6207,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 21+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "28.0%",
+      "value": "23.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -769,19 +769,19 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "48.5%",
+      "value": "49.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "26.9%",
+      "value": "27.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 17,
+   "gap_pts": 19,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -873,16 +873,16 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.5316,
-    "low": 0.4316,
-    "high": 0.6316,
+    "p": 0.5516,
+    "low": 0.4516,
+    "high": 0.6516,
     "confidence": "low",
     "method": "polymarket",
     "method_text": "Sum of Polymarket's deduction buckets at 10+ points, normalised to 100%. Expulsion is not counted as points docked, and Polymarket doesn't say which season a deduction would apply to.",
     "inputs": [
      {
       "label": "Will Manchester City be deducted 0 Premier League points?",
-      "value": "28.0%",
+      "value": "23.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
@@ -907,19 +907,19 @@
      },
      {
       "label": "Will Manchester City be deducted 50 or more Premier League points?",
-      "value": "48.5%",
+      "value": "49.5%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      },
      {
       "label": "Will Manchester City be expelled from the Premier League as a sanction?",
-      "value": "26.9%",
+      "value": "27.9%",
       "source_url": "https://polymarket.com/event/how-many-premier-league-points-will-manchester-city-be-deducted"
      }
     ]
    },
    "fair_reason": null,
    "lock_at": "2027-05-30T15:00:00Z",
-   "gap_pts": 8,
+   "gap_pts": 10,
    "status": "ACTIVE",
    "horizon": "long",
    "taker_fee_bps": 400,
@@ -957,9 +957,9 @@
    "group": "season",
    "fixture": null,
    "fair": {
-    "p": 0.0361,
+    "p": 0.0378,
     "low": 0,
-    "high": 0.1361,
+    "high": 0.1378,
     "confidence": "low",
     "method": "player_model",
     "method_text": "Season league goals 26 Dec: Haaland (now 9) vs Spurs (now 12). Strictly more counts as YES.",
